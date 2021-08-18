@@ -1,0 +1,24 @@
+#All section names and keys must be in lower case characters only
+
+#FlowsToTest: All the flows that are to be validated.
+#Separate multiple flows using delimiter , (comma)
+flowstotest = internal user flow 1, external user flow 1
+
+#MassEmailListId
+massemaillistid = 217
+
+#InternalUser Section used for Mass Email Internal User Test.
+#If SelectedUsers field is populated then Email Ids will be ignored.
+[internal user flow 1]
+selectedusers = APIAutomation User1
+subject = test internal user flow 1
+body = Mass Email Internal User Test Flow 1
+emailids =
+
+#ExternalUser Section used for Mass Email External User Test.
+#If SelectedUsers field is not defined or is empty then it will be ignored and EmailIds will be picked.
+[external user flow 1]
+selectedusers =
+subject = test external user flow 1
+body = Mass Email External User Test Flow 1
+emailids = admin@sirionqa.office

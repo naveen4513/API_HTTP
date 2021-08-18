@@ -1,0 +1,3975 @@
+#RoleGroup
+name: Business Intelligence
+description: Business Intelligence
+supplierName:
+supplierId:
+financialAccess: true
+_financialAccess: on
+businessAccess: true
+_businessAccess: on
+legalAccess: true
+_legalAccess: on
+active: true
+_active: on
+mappingName:
+roles[0].checked: on
+roles[0].id: 350
+roles[0].name: ROLE_CALENDER_SHOW
+roles[0].description: Show Calendar
+roles[0].entityTypeId:
+roles[1].checked: on
+roles[1].id: 351
+roles[1].name: ROLE_TODO_SHOW
+roles[1].description: Show TODO
+roles[1].entityTypeId:
+roles[2].checked: on
+roles[2].id: 738
+roles[2].name: ROLE_UX2.0_PERMISSION
+roles[2].description: Show Toggle (UI 2.0)
+roles[2].entityTypeId:
+roles[3].checked: on
+roles[3].id: 358
+roles[3].name: ROLE_CREATE_STAKEHOLDER
+roles[3].description: Create Stakeholder
+roles[3].entityTypeId:
+roles[4].checked: on
+roles[4].id: 139
+roles[4].name: ROLE_DOWNLOAD_AUDIT_DOC
+roles[4].description: Download Communication Attachments
+roles[4].entityTypeId:
+roles[5].checked: on
+roles[5].id: 347
+roles[5].name: ROLE_PROCESS_HEALTH_CHART_SHOW
+roles[5].description: Governance Score
+roles[5].entityTypeId:
+roles[6].checked: on
+roles[6].id: 348
+roles[6].name: ROLE_SUPPLIER_PERFORMANCE_CHART_SHOW
+roles[6].description: Supplier Score
+roles[6].entityTypeId:
+roles[7].checked: on
+roles[7].id: 355
+roles[7].name: ROLE_CHART
+roles[7].description: Show Dashboards
+roles[7].entityTypeId:
+roles[8].checked: on
+roles[8].id: 356
+roles[8].name: ROLE_REPORT
+roles[8].description: Show Reports
+roles[8].entityTypeId:
+roles[9].checked: on
+roles[9].id: 465
+roles[9].name: ROLE_SAVE_CHART_PREFERRED_VIEW
+roles[9].description: Configure Dashboard Views
+roles[9].entityTypeId:
+roles[10].checked: on
+roles[10].id: 381
+roles[10].name: ROLE_SYSTEM_REPORT
+roles[10].description: System Reports
+roles[10].entityTypeId:
+roles[11].checked: on
+roles[11].id: 463
+roles[11].name: ROLE_DISTRIBUTION_LIST
+roles[11].description: Manage Distribution Lists
+roles[11].entityTypeId:
+roles[12].checked: on
+roles[12].id: 466
+roles[12].name: ROLE_PUBLIC_FILTER
+roles[12].description: Create Public Filter
+roles[12].entityTypeId:
+roles[13].checked: on
+roles[13].id: 462
+roles[13].name: ROLE_MASS_EMAIL
+roles[13].description: Mass Email
+roles[13].entityTypeId:
+roles[14].checked: on
+roles[14].id: 581
+roles[14].name: ROLE_SHARE_CALENDAR
+roles[14].description: Share Calendar
+roles[14].entityTypeId:
+roles[15].checked: on
+roles[15].id: 585
+roles[15].name: ROLE_STAGING_AREA
+roles[15].description: Staging Area
+roles[15].entityTypeId:
+roles[16].checked: on
+roles[16].id: 582
+roles[16].name: ROLE_MANAGE_INACTIVE_SHARED_VIEWS
+roles[16].description: Manage Inactive Shared Views
+roles[16].entityTypeId:
+roles[17].checked: on
+roles[17].id: 627
+roles[17].name: ROLE_FONT_SIZE
+roles[17].description: Show Font Size
+roles[17].entityTypeId:
+roles[18].checked: on
+roles[18].id: 668
+roles[18].name: ROLE_EXTERNAL_EMAIL
+roles[18].description: External E-mails Support
+roles[18].entityTypeId:
+roles[19].checked: on
+roles[19].id: 669
+roles[19].name: ROLE_PRINT_SHOW_PAGE
+roles[19].description: Print / Export
+roles[19].entityTypeId:
+roles[20].checked: on
+roles[20].id: 673
+roles[20].name: ROLE_PRIVATE_COMMUNICATION
+roles[20].description: Private Comment/attachment
+roles[20].entityTypeId:
+roles[21].checked: on
+roles[21].id: 687
+roles[21].name: ROLE_ALERT_NOTIFICATION
+roles[21].description: View Alert Notifications
+roles[21].entityTypeId:
+roles[22].checked: on
+roles[22].id: 688
+roles[22].name: ROLE_CREATE_ALERT_NOTIFICATION
+roles[22].description: Create Alert
+roles[22].entityTypeId:
+roles[23].checked: on
+roles[23].id: 676
+roles[23].name: ROLE_SHOW_HIDDEN_COMMUNICATION
+roles[23].description: View Private Comment/Attachment
+roles[23].entityTypeId:
+roles[24].checked: on
+roles[24].id: 674
+roles[24].name: ROLE_AUDIT_LOG_DOWNLOAD
+roles[24].description: Download Audit Log Tab
+roles[24].entityTypeId:
+roles[25].checked: on
+roles[25].id: 675
+roles[25].name: ROLE_COMMUNICATION_DOWNLOAD
+roles[25].description: Download Communication Tab
+roles[25].entityTypeId:
+roles[26].checked: on
+roles[26].id: 716
+roles[26].name: ROLE_AUTO_EXTRACT_ENTITIES
+roles[26].description: Autoextract Entities
+roles[26].entityTypeId: 61
+roles[27].checked: on
+roles[27].id: 771
+roles[27].name: ROLE_FIELD_LABELS
+roles[27].description: Field Labels
+roles[27].entityTypeId:
+roles[28].checked: on
+roles[28].id: 772
+roles[28].name: ROLE_LANGUAGES
+roles[28].description: Languages
+roles[28].entityTypeId:
+roles[29].checked: on
+roles[29].id: 773
+roles[29].name: ROLE_LANGUAGE_TRANSLATION
+roles[29].description: Language Translation
+roles[29].entityTypeId:
+roles[30].checked: on
+roles[30].id: 854
+roles[30].name: ROLE_PAPER_TYPE
+roles[30].description: Paper Type
+roles[30].entityTypeId:
+roles[31].checked: on
+roles[31].id: 774
+roles[31].name: ROLE_CONFIGURE_SUMMARY_GROUP
+roles[31].description: Configure Summary Group
+roles[31].entityTypeId:
+roles[32].checked: on
+roles[32].id: 896
+roles[32].name: ROLE_METADATA_AUTO_EXTRACT
+roles[32].description: Autoextract Metadata
+roles[32].entityTypeId: 61
+roles[33].checked: on
+roles[33].id: 775
+roles[33].name: ROLE_ADVANCED_ORGANIZATION
+roles[33].description: Advanced Organization
+roles[33].entityTypeId:
+roles[34].checked: on
+roles[34].id: 776
+roles[34].name: ROLE_ORGANIZATION_BRANDING
+roles[34].description: Organization Branding
+roles[34].entityTypeId:
+roles[35].checked: on
+roles[35].id: 853
+roles[35].name: ROLE_TEMPLATE_CATEGORY
+roles[35].description: Template Category
+roles[35].entityTypeId:
+roles[36].checked: on
+roles[36].id: 777
+roles[36].name: ROLE_FUNCTION
+roles[36].description: Function
+roles[36].entityTypeId:
+roles[37].checked: on
+roles[37].id: 778
+roles[37].name: ROLE_DEPARTMENT
+roles[37].description: Department
+roles[37].entityTypeId:
+roles[38].checked: on
+roles[38].id: 779
+roles[38].name: ROLE_COST_CENTER
+roles[38].description: Cost Center
+roles[38].entityTypeId:
+roles[39].checked: on
+roles[39].id: 780
+roles[39].name: ROLE_GEOGRAPHY
+roles[39].description: Geography
+roles[39].entityTypeId:
+roles[40].checked: on
+roles[40].id: 781
+roles[40].name: ROLE_FREQUENCY
+roles[40].description: Frequency
+roles[40].entityTypeId:
+roles[41].checked: on
+roles[41].id: 910
+roles[41].name: ROLE_MASTER_LIST
+roles[41].description: Options Master List
+roles[41].entityTypeId:
+roles[42].checked: on
+roles[42].id: 909
+roles[42].name: ROLE_INTEGRATION_USER
+roles[42].description: Integration User
+roles[42].entityTypeId:
+roles[43].checked: on
+roles[43].id: 908
+roles[43].name: ROLE_LARGE_REPORT_DOWNLOAD
+roles[43].description: Download Large Reports
+roles[43].entityTypeId:
+roles[44].checked: on
+roles[44].id: 898
+roles[44].name: ROLE_DELEGATION
+roles[44].description: Delegation
+roles[44].entityTypeId:
+roles[45].checked: on
+roles[45].id: 852
+roles[45].name: ROLE_TRANSACTION_TYPE
+roles[45].description: Transaction Type
+roles[45].entityTypeId:
+roles[46].checked: on
+roles[46].id: 851
+roles[46].name: ROLE_RISK_TYPE
+roles[46].description: Risk Type
+roles[46].entityTypeId:
+roles[47].checked: on
+roles[47].id: 850
+roles[47].name: ROLE_INDUSTRY_TYPE
+roles[47].description: Industry Type
+roles[47].entityTypeId:
+roles[48].checked: on
+roles[48].id: 856
+roles[48].name: ROLE_BUSINESS_LINE
+roles[48].description: Business Line
+roles[48].entityTypeId:
+roles[49].checked: on
+roles[49].id: 903
+roles[49].name: ROLE_SCOPE_OF_SERVICE_2
+roles[49].description: Scope Of Service 2
+roles[49].entityTypeId:
+roles[50].checked: on
+roles[50].id: 902
+roles[50].name: ROLE_SCOPE_OF_SERVICE_1
+roles[50].description: Scope Of Service 1
+roles[50].entityTypeId:
+roles[51].checked: on
+roles[51].id: 782
+roles[51].name: ROLE_HOLIDAY
+roles[51].description: Holiday
+roles[51].entityTypeId:
+roles[52].checked: on
+roles[52].id: 783
+roles[52].name: ROLE_PROJECT
+roles[52].description: Project
+roles[52].entityTypeId:
+roles[53].checked: on
+roles[53].id: 784
+roles[53].name: ROLE_TIER
+roles[53].description: Tier
+roles[53].entityTypeId:
+roles[54].checked: on
+roles[54].id: 785
+roles[54].name: ROLE_CURRENCY_CONVERSION_MATRIX
+roles[54].description: Currency Conversion Matrix
+roles[54].entityTypeId:
+roles[55].checked: on
+roles[55].id: 786
+roles[55].name: ROLE_ORGANIZATION_PROPERTIES
+roles[55].description: Organization Properties
+roles[55].entityTypeId:
+roles[56].checked: on
+roles[56].id: 787
+roles[56].name: ROLE_SSO_CONFIGURATION
+roles[56].description: SSO Configuration
+roles[56].entityTypeId:
+roles[57].checked: on
+roles[57].id: 788
+roles[57].name: ROLE_PASSWORD_POLICY
+roles[57].description: Password Policy
+roles[57].entityTypeId:
+roles[58].checked: on
+roles[58].id: 789
+roles[58].name: ROLE_TWO_FACTOR_AUTHENTICATION
+roles[58].description: Two Factor Authentication
+roles[58].entityTypeId:
+roles[59].checked: on
+roles[59].id: 790
+roles[59].name: ROLE_NOTIFICATION_ALERTS
+roles[59].description: Notification Alerts
+roles[59].entityTypeId:
+roles[60].checked: on
+roles[60].id: 791
+roles[60].name: ROLE_DROP_DOWN
+roles[60].description: Drop-down
+roles[60].entityTypeId:
+roles[61].checked: on
+roles[61].id: 792
+roles[61].name: ROLE_FILE_ENCRYPTION
+roles[61].description: File Encryption
+roles[61].entityTypeId:
+roles[62].checked: on
+roles[62].id: 793
+roles[62].name: ROLE_CONVERSION_DATA
+roles[62].description: Conversion Data
+roles[62].entityTypeId:
+roles[63].checked: on
+roles[63].id: 849
+roles[63].name: ROLE_DOCUMENT_MOVEMENT_STATUS
+roles[63].description: Document Movement Status
+roles[63].entityTypeId:
+roles[64].checked: on
+roles[64].id: 848
+roles[64].name: ROLE_COMPANY_POSITION
+roles[64].description: Company Position
+roles[64].entityTypeId:
+roles[65].checked: on
+roles[65].id: 847
+roles[65].name: ROLE_TEMPLATE_FORMATTING
+roles[65].description: Template Formatting
+roles[65].entityTypeId:
+roles[66].checked: on
+roles[66].id: 846
+roles[66].name: ROLE_CREDIT_AND_EARNBACK_CLAUSES
+roles[66].description: Credit And Earnback Clauses
+roles[66].entityTypeId:
+roles[67].checked: on
+roles[67].id: 845
+roles[67].name: ROLE_CLAUSE_TYPE
+roles[67].description: Clause Type
+roles[67].entityTypeId:
+roles[68].checked: on
+roles[68].id: 844
+roles[68].name: ROLE_CLAUSE_CATEGORY
+roles[68].description: Clause Category
+roles[68].entityTypeId:
+roles[69].checked: on
+roles[69].id: 843
+roles[69].name: ROLE_AGREEMENT_TYPE
+roles[69].description: Agreement Type
+roles[69].entityTypeId:
+roles[70].checked: on
+roles[70].id: 842
+roles[70].name: ROLE_GOVERNANCE_BODY_TYPE
+roles[70].description: Governance Body Type
+roles[70].entityTypeId:
+roles[71].checked: on
+roles[71].id: 795
+roles[71].name: ROLE_FIELD_PROVISIONING
+roles[71].description: Field Provisioning
+roles[71].entityTypeId:
+roles[72].checked: on
+roles[72].id: 841
+roles[72].name: ROLE_INTERPRETATION_TYPE
+roles[72].description: Interpretation Type
+roles[72].entityTypeId:
+roles[73].checked: on
+roles[73].id: 796
+roles[73].name: ROLE_ROLL_UP_EXPRESSION
+roles[73].description: Roll Up Expression
+roles[73].entityTypeId:
+roles[74].checked: on
+roles[74].id: 797
+roles[74].name: ROLE_SL_MET_STATUS_CONFIGURATION
+roles[74].description: SL Met Status Configuration
+roles[74].entityTypeId:
+roles[75].checked: on
+roles[75].id: 840
+roles[75].name: ROLE_WOR_TYPE
+roles[75].description: WOR Type
+roles[75].entityTypeId:
+roles[76].checked: on
+roles[76].id: 798
+roles[76].name: ROLE_SL_PERFORMANCE_CONFIGURATION
+roles[76].description: SL Performance Configuration
+roles[76].entityTypeId:
+roles[77].checked: on
+roles[77].id: 799
+roles[77].name: ROLE_DOCUMENT_TYPE_CONFIGURATION
+roles[77].description: Document Type Configuration
+roles[77].entityTypeId:
+roles[78].checked: on
+roles[78].id: 800
+roles[78].name: ROLE_TAG_METADATA_MAPPING
+roles[78].description: Tag Metadata Mapping
+roles[78].entityTypeId:
+roles[79].checked: on
+roles[79].id: 801
+roles[79].name: ROLE_TEMPLATE_SUGGESTION_CONFIGURATION
+roles[79].description: Template Suggestion Configuration
+roles[79].entityTypeId:
+roles[80].checked: on
+roles[80].id: 839
+roles[80].name: ROLE_CR_CLASS
+roles[80].description: CR Class
+roles[80].entityTypeId:
+roles[81].checked: on
+roles[81].id: 838
+roles[81].name: ROLE_CR_TYPE
+roles[81].description: CR Type
+roles[81].entityTypeId:
+roles[82].checked: on
+roles[82].id: 802
+roles[82].name: ROLE_AUTO_EXTRACTED_FIELDS_MAPPING
+roles[82].description: Auto-Extracted Fields Mapping
+roles[82].entityTypeId:
+roles[83].checked: on
+roles[83].id: 837
+roles[83].name: ROLE_ISSUE_TYPE
+roles[83].description: Issue Type
+roles[83].entityTypeId:
+roles[84].checked: on
+roles[84].id: 836
+roles[84].name: ROLE_ACTION_TYPE
+roles[84].description: Action Type
+roles[84].entityTypeId:
+roles[85].checked: on
+roles[85].id: 835
+roles[85].name: ROLE_CONTRACT_TYPE
+roles[85].description: Contract Type
+roles[85].entityTypeId:
+roles[86].checked: on
+roles[86].id: 834
+roles[86].name: ROLE_TERM_TYPE
+roles[86].description: Term Type
+roles[86].entityTypeId:
+roles[87].checked: on
+roles[87].id: 833
+roles[87].name: ROLE_VENDOR_CLASSIFICATION
+roles[87].description: Vendor Classification
+roles[87].entityTypeId:
+roles[88].checked: on
+roles[88].id: 832
+roles[88].name: ROLE_CONTRACT_PAPER
+roles[88].description: Contract Paper
+roles[88].entityTypeId:
+roles[89].checked: on
+roles[89].id: 831
+roles[89].name: ROLE_CONTRACT_SERVICE
+roles[89].description: Contract Service
+roles[89].entityTypeId:
+roles[90].checked: on
+roles[90].id: 830
+roles[90].name: ROLE_SERVICE_CATEGORY
+roles[90].description: Service Category
+roles[90].entityTypeId:
+roles[91].checked: on
+roles[91].id: 829
+roles[91].name: ROLE_SL_CATEGORY
+roles[91].description: SL Category
+roles[91].entityTypeId:
+roles[92].checked: on
+roles[92].id: 828
+roles[92].name: ROLE_OB_CATEGORY
+roles[92].description: OB Category
+roles[92].entityTypeId:
+roles[93].checked: on
+roles[93].id: 827
+roles[93].name: ROLE_OB_PHASE
+roles[93].description: OB Phase
+roles[93].entityTypeId:
+roles[94].checked: on
+roles[94].id: 794
+roles[94].name: ROLE_REGION_HUB
+roles[94].description: Region/Hub
+roles[94].entityTypeId:
+roles[95].checked: on
+roles[95].id: 749
+roles[95].name: ROLE_QUICK_LINK_VIEW
+roles[95].description: Quick Link View
+roles[95].entityTypeId:
+roles[96].checked: on
+roles[96].id: 750
+roles[96].name: ROLE_QUICK_LINK_CONTENT_CONTROLS
+roles[96].description: Quick Link Content Controls
+roles[96].entityTypeId:
+roles[97].checked: on
+roles[97].id: 751
+roles[97].name: ROLE_REPORT_VIEW
+roles[97].description: Report View
+roles[97].entityTypeId:
+roles[98].checked: on
+roles[98].id: 752
+roles[98].name: ROLE_REPORT_CONTENT_CONTROLS
+roles[98].description: Report Content Controls
+roles[98].entityTypeId:
+roles[99].checked: on
+roles[99].id: 753
+roles[99].name: ROLE_TAB_LIST_VIEW
+roles[99].description: Tab List View
+roles[99].entityTypeId:
+roles[100].checked: on
+roles[100].id: 754
+roles[100].name: ROLE_TAB_LIST_CONTENT_CONTROLS
+roles[100].description: Tab List Content Controls
+roles[100].entityTypeId:
+roles[101].checked: on
+roles[101].id: 755
+roles[101].name: ROLE_WEEKLY_REMINDER_LIST_VIEW
+roles[101].description: Weekly Reminder List View
+roles[101].entityTypeId:
+roles[102].checked: on
+roles[102].id: 756
+roles[102].name: ROLE_CALENDAR_VIEW
+roles[102].description: Calendar View
+roles[102].entityTypeId:
+roles[103].checked: on
+roles[103].id: 757
+roles[103].name: ROLE_DOCUMENT_VIEWER_LIST_VIEW
+roles[103].description: Document Viewer List View
+roles[103].entityTypeId:
+roles[104].checked: on
+roles[104].id: 758
+roles[104].name: ROLE_DASHBOARD_VIEW
+roles[104].description: Dashboard View
+roles[104].entityTypeId:
+roles[105].checked: on
+roles[105].id: 759
+roles[105].name: ROLE_DASHBOARD_CONTENT_CONTROLS
+roles[105].description: Dashboard Content Controls
+roles[105].entityTypeId:
+roles[106].checked: on
+roles[106].id: 760
+roles[106].name: ROLE_INSIGHT_CONTENT_CONTROLS
+roles[106].description: Insight Content Controls
+roles[106].entityTypeId:
+roles[107].checked: on
+roles[107].id: 761
+roles[107].name: ROLE_TO_DO_(APPROVALS)_CONTENT_CONTROLS
+roles[107].description: To Do (Approvals) Content Controls
+roles[107].entityTypeId:
+roles[108].checked: on
+roles[108].id: 762
+roles[108].name: ROLE_TO_DO_(TASKS)_CONTENT_CONTROLS
+roles[108].description: To Do (Tasks) Content Controls
+roles[108].entityTypeId:
+roles[109].checked: on
+roles[109].id: 855
+roles[109].name: ROLE_BUSINESS_UNIT
+roles[109].description: Business Unit
+roles[109].entityTypeId:
+roles[110].checked: on
+roles[110].id: 735
+roles[110].name: ROLE_SISENSE_WIDGET_ACCESS
+roles[110].description: Show BI Charts In Sirion Analytics
+roles[110].entityTypeId:
+roles[111].checked: on
+roles[111].id: 763
+roles[111].name: ROLE_TO_DO_(TASKS)_DUE_DATE
+roles[111].description: To Do (Tasks) Due Date
+roles[111].entityTypeId:
+roles[112].checked: on
+roles[112].id: 734
+roles[112].name: ROLE_WORD_PLUGIN_DOWNLOAD
+roles[112].description: Download Word Plugin
+roles[112].entityTypeId:
+roles[113].checked: on
+roles[113].id: 733
+roles[113].name: ROLE_SISENSE_ACCESS
+roles[113].description: Business Intelligence
+roles[113].entityTypeId:
+roles[114].checked: on
+roles[114].id: 764
+roles[114].name: ROLE_MEETING_DUE_DATE_CONTENT_CONTROLS
+roles[114].description: Meeting Due Date Content Controls
+roles[114].entityTypeId:
+roles[115].checked: on
+roles[115].id: 765
+roles[115].name: ROLE_CALENDAR_CONTENT_CONTROLS
+roles[115].description: Calendar Content Controls
+roles[115].entityTypeId:
+roles[116].checked: on
+roles[116].id: 766
+roles[116].name: ROLE_CUSTOM_CALENDAR
+roles[116].description: Custom Calendar
+roles[116].entityTypeId:
+roles[117].checked: on
+roles[117].id: 767
+roles[117].name: ROLE_COMPOSITE_RATING_CONTROLS
+roles[117].description: Composite Rating Controls
+roles[117].entityTypeId:
+roles[118].checked: on
+roles[118].id: 768
+roles[118].name: ROLE_COMPOSITE_RATING
+roles[118].description: Composite Rating
+roles[118].entityTypeId:
+roles[119].checked: on
+roles[119].id: 769
+roles[119].name: ROLE_MANUAL_REPORT
+roles[119].description: Manual Report
+roles[119].entityTypeId:
+roles[120].checked: on
+roles[120].id: 770
+roles[120].name: ROLE_MANUAL_DASHBOARD
+roles[120].description: Manual Dashboard
+roles[120].entityTypeId:
+roles[121].checked: on
+roles[121].id: 826
+roles[121].name: ROLE_OB_PERFORMANCE_TYPE
+roles[121].description: OB Performance Type
+roles[121].entityTypeId:
+roles[122].checked: on
+roles[122].id: 825
+roles[122].name: ROLE_USER_LEVEL_TAB_ACCESS
+roles[122].description: User Level Tab Access
+roles[122].entityTypeId:
+roles[123].checked: on
+roles[123].id: 899
+roles[123].name: ROLE_BULK_WORKFLOW_MIGRATION
+roles[123].description: Bulk Workflow Migration
+roles[123].entityTypeId:
+roles[124].checked: on
+roles[124].id: 803
+roles[124].name: ROLE_INTEGRATION
+roles[124].description: Integration
+roles[124].entityTypeId:
+roles[125].checked: on
+roles[125].id: 824
+roles[125].name: ROLE_INVOICE_CREATE_RULES
+roles[125].description: Invoice Create Rules
+roles[125].entityTypeId:
+roles[126].checked: on
+roles[126].id: 804
+roles[126].name: ROLE_PROJECTIONS
+roles[126].description: Projections
+roles[126].entityTypeId:
+roles[127].checked: on
+roles[127].id: 805
+roles[127].name: ROLE_RESPONSIBILITY
+roles[127].description: Responsibility
+roles[127].entityTypeId:
+roles[128].checked: on
+roles[128].id: 806
+roles[128].name: ROLE_USER_DEPARTMENT
+roles[128].description: User Department
+roles[128].entityTypeId:
+roles[129].checked: on
+roles[129].id: 890
+roles[129].name: ROLE_TERMS_OF_USAGE
+roles[129].description: Terms Of Usage
+roles[129].entityTypeId:
+roles[130].checked: on
+roles[130].id: 691
+roles[130].name: ROLE_SLIDE_SHOW
+roles[130].description: Dashboard Slide Show
+roles[130].entityTypeId:
+roles[131].checked: on
+roles[131].id: 692
+roles[131].name: ROLE_SLIDE_SHOW_EXPORT
+roles[131].description: Export Slide Show
+roles[131].entityTypeId:
+roles[132].checked: on
+roles[132].id: 873
+roles[132].name: ROLE_SUPPLIER_ACCESS_AT_VENDOR_HIERARCHY_LEVEL
+roles[132].description: Supplier Access at Vendor Hierarchy Level
+roles[132].entityTypeId:
+roles[133].checked: on
+roles[133].id: 872
+roles[133].name: ROLE_SUPPLIER_ACCESS
+roles[133].description: Supplier Access
+roles[133].entityTypeId:
+roles[134].checked: on
+roles[134].id: 871
+roles[134].name: ROLE_IP_RESTRICTIONS
+roles[134].description: IP Restrictions
+roles[134].entityTypeId:
+roles[135].checked: on
+roles[135].id: 870
+roles[135].name: ROLE_USER_PROFILE_FIELD_ACCESS
+roles[135].description: User Profile Field Access
+roles[135].entityTypeId:
+roles[136].checked: on
+roles[136].id: 869
+roles[136].name: ROLE_USER_LEVEL_FIELD_ACCESS
+roles[136].description: User Level Field Access
+roles[136].entityTypeId:
+roles[137].checked: on
+roles[137].id: 868
+roles[137].name: ROLE_USER_GROUP
+roles[137].description: User Group
+roles[137].entityTypeId:
+roles[138].checked: on
+roles[138].id: 867
+roles[138].name: ROLE_USER_ACCESS_CRITERIA
+roles[138].description: User Access Criteria
+roles[138].entityTypeId:
+roles[139].checked: on
+roles[139].id: 866
+roles[139].name: ROLE_USER_ROLE_GROUP
+roles[139].description: User Role Group
+roles[139].entityTypeId:
+roles[140].checked: on
+roles[140].id: 865
+roles[140].name: ROLE_USER_CONFIGURATION_LIST
+roles[140].description: User Configuration List
+roles[140].entityTypeId:
+roles[141].checked: on
+roles[141].id: 864
+roles[141].name: ROLE_USER_CONFIGURATION
+roles[141].description: User Configuration
+roles[141].entityTypeId:
+roles[142].checked: on
+roles[142].id: 863
+roles[142].name: ROLE_OBLIGATION_SUB_CATEGORY
+roles[142].description: Obligation Sub-Category
+roles[142].entityTypeId:
+roles[143].checked: on
+roles[143].id: 862
+roles[143].name: ROLE_DISPUTE_TYPE
+roles[143].description: Dispute Type
+roles[143].entityTypeId:
+roles[144].checked: on
+roles[144].id: 861
+roles[144].name: ROLE_DISCREPANCY_REASON_TYPE
+roles[144].description: Discrepancy Reason Type
+roles[144].entityTypeId:
+roles[145].checked: on
+roles[145].id: 823
+roles[145].name: ROLE_REMINDER_EMAIL_CONFIGURATION
+roles[145].description: Reminder Email Configuration
+roles[145].entityTypeId:
+roles[146].checked: on
+roles[146].id: 822
+roles[146].name: ROLE_NOTIFICATION_FREQUENCY
+roles[146].description: Notification Frequency
+roles[146].entityTypeId:
+roles[147].checked: on
+roles[147].id: 821
+roles[147].name: ROLE_DISCLAIMERS
+roles[147].description: Disclaimers
+roles[147].entityTypeId:
+roles[148].checked: on
+roles[148].id: 820
+roles[148].name: ROLE_EMAIL
+roles[148].description: Email
+roles[148].entityTypeId:
+roles[149].checked: on
+roles[149].id: 819
+roles[149].name: ROLE_EMAIL_CREATION
+roles[149].description: Email Creation
+roles[149].entityTypeId:
+roles[150].checked: on
+roles[150].id: 818
+roles[150].name: ROLE_ACCESS_RESTRICTIONS
+roles[150].description: Access Restrictions
+roles[150].entityTypeId:
+roles[151].checked: on
+roles[151].id: 817
+roles[151].name: ROLE_CUSTOM_FIELDS
+roles[151].description: Custom Fields
+roles[151].entityTypeId:
+roles[152].checked: on
+roles[152].id: 816
+roles[152].name: ROLE_CUSTOM_GROUPS
+roles[152].description: Custom Groups
+roles[152].entityTypeId:
+roles[153].checked: on
+roles[153].id: 815
+roles[153].name: ROLE_ROLE_GROUP
+roles[153].description: Role Group
+roles[153].entityTypeId:
+roles[154].checked: on
+roles[154].id: 814
+roles[154].name: ROLE_STATUS
+roles[154].description: Status
+roles[154].entityTypeId:
+roles[155].checked: on
+roles[155].id: 813
+roles[155].name: ROLE_STATUS_TYPE
+roles[155].description: Status Type
+roles[155].entityTypeId:
+roles[156].checked: on
+roles[156].id: 857
+roles[156].name: ROLE_TEMPLATE_TYPE
+roles[156].description: Template Type
+roles[156].entityTypeId:
+roles[157].checked: on
+roles[157].id: 858
+roles[157].name: ROLE_DEFINED_TERMS
+roles[157].description: Defined Terms
+roles[157].entityTypeId:
+roles[158].checked: on
+roles[158].id: 807
+roles[158].name: ROLE_NESTED_FIELD_CONFIGURATION
+roles[158].description: Nested Field Configuration
+roles[158].entityTypeId:
+roles[159].checked: on
+roles[159].id: 859
+roles[159].name: ROLE_LINE_ITEM_TYPE
+roles[159].description: Line Item Type
+roles[159].entityTypeId:
+roles[160].checked: on
+roles[160].id: 860
+roles[160].name: ROLE_UNIT_TYPE
+roles[160].description: Unit Type
+roles[160].entityTypeId:
+roles[161].checked: on
+roles[161].id: 891
+roles[161].name: ROLE_QUICK_LINKS_GROUP
+roles[161].description: Quick Links Group
+roles[161].entityTypeId:
+roles[162].checked: on
+roles[162].id: 808
+roles[162].name: ROLE_WORKFLOW_CREATION
+roles[162].description: Workflow Creation
+roles[162].entityTypeId:
+roles[163].checked: on
+roles[163].id: 809
+roles[163].name: ROLE_WORKFLOW_MIGRATION
+roles[163].description: Workflow Migration
+roles[163].entityTypeId:
+roles[164].checked: on
+roles[164].id: 812
+roles[164].name: ROLE_STATE
+roles[164].description: State
+roles[164].entityTypeId:
+roles[165].checked: on
+roles[165].id: 811
+roles[165].name: ROLE_STATE_TYPE
+roles[165].description: State Type
+roles[165].entityTypeId:
+roles[166].checked: on
+roles[166].id: 810
+roles[166].name: ROLE_WORKFLOW_DOWNLOAD
+roles[166].description: Workflow Download
+roles[166].entityTypeId:
+roles[167].checked: on
+roles[167].id: 715
+roles[167].name: ROLE_FULL_DASHBOARD_ACCESS
+roles[167].description: Full Dashboard Access
+roles[167].entityTypeId:
+roles[168].checked: on
+roles[168].id: 469
+roles[168].name: ROLE_VENDOR_HIERARCHY_CREATE
+roles[168].description: Create
+roles[168].entityTypeId: 3
+roles[169].checked: on
+roles[169].id: 470
+roles[169].name: ROLE_VENDOR_HIERARCHY_EDIT
+roles[169].description: Edit
+roles[169].entityTypeId: 3
+roles[170].checked: on
+roles[170].id: 471
+roles[170].name: ROLE_VENDOR_HIERARCHY_SHOW
+roles[170].description: Show
+roles[170].entityTypeId: 3
+roles[171].checked: on
+roles[171].id: 472
+roles[171].name: ROLE_VENDOR_HIERARCHY_LIST
+roles[171].description: Show Quick Link
+roles[171].entityTypeId:
+roles[172].checked: on
+roles[172].id: 568
+roles[172].name: ROLE_VENDOR_HIERARCHY_LIST_DOWNLOAD
+roles[172].description: Download Quick Link
+roles[172].entityTypeId:
+roles[173].checked: on
+roles[173].id: 518
+roles[173].name: ROLE_CONTRACT_DOCUMENT_SEARCH
+roles[173].description: Document Tree
+roles[173].entityTypeId:
+roles[174].checked: on
+roles[174].id: 519
+roles[174].name: ROLE_ATTACHMENT_SEARCH
+roles[174].description: Attachments
+roles[174].entityTypeId:
+roles[175].checked: on
+roles[175].id: 520
+roles[175].name: ROLE_RECORD_SEARCH
+roles[175].description: Metadata
+roles[175].entityTypeId:
+roles[176].checked: on
+roles[176].id: 1
+roles[176].name: ROLE_DOCUMENT_CREATE
+roles[176].description: Create / Clone Contract
+roles[176].entityTypeId: 61
+roles[177].checked: on
+roles[177].id: 901
+roles[177].name: ROLE_AUTOEXTRACTION
+roles[177].description: Auto Extracted Doc Access
+roles[177].entityTypeId: 316
+roles[178].checked: on
+roles[178].id: 885
+roles[178].name: ROLE_CONTRACT_GLOBAL_CREATE
+roles[178].description: Global Create
+roles[178].entityTypeId: 61
+roles[179].checked: on
+roles[179].id: 2
+roles[179].name: ROLE_DOCUMENT_EDIT
+roles[179].description: Edit Contract
+roles[179].entityTypeId: 61
+roles[180].checked: on
+roles[180].id: 521
+roles[180].name: ROLE_BULK_EDIT_CONTRACT
+roles[180].description: Bulk Edit
+roles[180].entityTypeId: 61
+roles[181].checked: on
+roles[181].id: 892
+roles[181].name: ROLE_CONTRACT_BULK_UPDATE
+roles[181].description: Bulk Update (excel)
+roles[181].entityTypeId: 61
+roles[182].checked: on
+roles[182].id: 522
+roles[182].name: ROLE_BULK_ACTION_CONTRACT
+roles[182].description: Bulk Action
+roles[182].entityTypeId: 61
+roles[183].checked: on
+roles[183].id: 124
+roles[183].name: ROLE_DOCUMENT_SHOW
+roles[183].description: Show Contract
+roles[183].entityTypeId: 61
+roles[184].checked: on
+roles[184].id: 144
+roles[184].name: ROLE_DOCUMENT_LIST
+roles[184].description: Show Contract Quick Link
+roles[184].entityTypeId:
+roles[185].checked: on
+roles[185].id: 731
+roles[185].name: ROLE_CONTRACT_INHERIT_FILES
+roles[185].description: Inherit Files
+roles[185].entityTypeId: 61
+roles[186].checked: on
+roles[186].id: 727
+roles[186].name: ROLE_CONTRACT_MOOVE_DOCUMENT_TO_TREE
+roles[186].description: Move to Tree
+roles[186].entityTypeId: 61
+roles[187].checked: on
+roles[187].id: 9
+roles[187].name: ROLE_DOCUMENT_ARCHIVE
+roles[187].description: Archive / Restore
+roles[187].entityTypeId: 61
+roles[188].checked: on
+roles[188].id: 138
+roles[188].name: ROLE_SHOW_VIEWER
+roles[188].description: Show Viewer
+roles[188].entityTypeId:
+roles[189].checked: on
+roles[189].id: 4
+roles[189].name: ROLE_DOCUMENT_DELETE
+roles[189].description: Delete Contract
+roles[189].entityTypeId: 61
+roles[190].checked: on
+roles[190].id: 137
+roles[190].name: ROLE_DOWNLOAD_CONTRACT_DOC
+roles[190].description: Download Document
+roles[190].entityTypeId:
+roles[191].checked: on
+roles[191].id: 181
+roles[191].name: ROLE_SHOW_ATTACHMENT
+roles[191].description: Show Document Tree
+roles[191].entityTypeId:
+roles[192].checked: on
+roles[192].id: 367
+roles[192].name: ROLE_CONTRACT_ON_HOLD
+roles[192].description: On Hold / Activate
+roles[192].entityTypeId: 61
+roles[193].checked: on
+roles[193].id: 368
+roles[193].name: ROLE_CONTRACT_ACTIVATE
+roles[193].description: Activate CONTRACT
+roles[193].entityTypeId: 61
+roles[194].checked: on
+roles[194].id: 370
+roles[194].name: ROLE_CONTRACT_COMMENT
+roles[194].description: Comment
+roles[194].entityTypeId: 61
+roles[195].checked: on
+roles[195].id: 606
+roles[195].name: ROLE_SERVICE_DATA_FORECAST_BULK_UPLOAD
+roles[195].description: Bulk Upload Forecast Data
+roles[195].entityTypeId: 180
+roles[196].checked: on
+roles[196].id: 196
+roles[196].name: ROLE_APPLICATION_CREATE
+roles[196].description: Create Application Group
+roles[196].entityTypeId: 22
+roles[197].checked: on
+roles[197].id: 197
+roles[197].name: ROLE_APPLICATION_EDIT
+roles[197].description: Edit Application Group
+roles[197].entityTypeId: 22
+roles[198].checked: on
+roles[198].id: 135
+roles[198].name: ROLE_APPLICATION_SHOW
+roles[198].description: Show Application Group
+roles[198].entityTypeId: 22
+roles[199].checked: on
+roles[199].id: 199
+roles[199].name: ROLE_APPLICATION_LIST
+roles[199].description: Show Application Group List
+roles[199].entityTypeId:
+roles[200].checked: on
+roles[200].id: 198
+roles[200].name: ROLE_APPLICATION_DELETE
+roles[200].description: Delete Application Group
+roles[200].entityTypeId: 22
+roles[201].checked: on
+roles[201].id: 202
+roles[201].name: ROLE_CREDIT_EARNBACK_CREATE
+roles[201].description: Create Credit & Earnback
+roles[201].entityTypeId: 79
+roles[202].checked: on
+roles[202].id: 206
+roles[202].name: ROLE_CREDIT_EARNBACK_EDIT
+roles[202].description: Edit Credit & Earnback
+roles[202].entityTypeId: 79
+roles[203].checked: on
+roles[203].id: 203
+roles[203].name: ROLE_CREDIT_EARNBACK_SHOW
+roles[203].description: Show Credit & Earnback
+roles[203].entityTypeId: 79
+roles[204].checked: on
+roles[204].id: 204
+roles[204].name: ROLE_CREDIT_EARNBACK_LIST
+roles[204].description: Show Credit Earnback List
+roles[204].entityTypeId:
+roles[205].checked: on
+roles[205].id: 205
+roles[205].name: ROLE_CREDIT_EARNBACK_DELETE
+roles[205].description: Delete Credit & Earnback
+roles[205].entityTypeId: 79
+roles[206].checked: on
+roles[206].id: 563
+roles[206].name: ROLE_DOCUMENT_LIST_DOWNLOAD
+roles[206].description: Download Quick Link
+roles[206].entityTypeId:
+roles[207].checked: on
+roles[207].id: 701
+roles[207].name: ROLE_CONTRACT_DRAFT_DOCUMENT_UPLOAD
+roles[207].description: Upload Contract Document
+roles[207].entityTypeId: 61
+roles[208].checked: on
+roles[208].id: 648
+roles[208].name: ROLE_SUB_CONTRACT_LIST
+roles[208].description: Show Sub Contract List
+roles[208].entityTypeId:
+roles[209].checked: on
+roles[209].id: 744
+roles[209].name: ROLE_CONTRACT_RESTRICT_DRAFT_DOCUMENT_UPLOAD
+roles[209].description: Upload Executed Contract
+roles[209].entityTypeId: 61
+roles[210].checked: on
+roles[210].id: 709
+roles[210].name: ROLE_CONTRACT_DOCUMENT_STATUS_CONTRACT
+roles[210].description: Mark Document as Final/Draft
+roles[210].entityTypeId: 61
+roles[211].checked: on
+roles[211].id: 712
+roles[211].name: ROLE_DOCUMENT_DOMAIN_CONTRACT
+roles[211].description: Document Classification
+roles[211].entityTypeId: 61
+roles[212].checked: on
+roles[212].id: 904
+roles[212].name: ROLE_DOCUMENT_TAG_CONTRACT
+roles[212].description: Document Tags
+roles[212].entityTypeId: 61
+roles[213].checked: on
+roles[213].id: 717
+roles[213].name: ROLE_DOCUMENT_CREATE_GLOBAL
+roles[213].description: Global Create Contract Without Supplier Access
+roles[213].entityTypeId: 61
+roles[214].checked: on
+roles[214].id: 745
+roles[214].name: ROLE_NOVATE_CONTRACT
+roles[214].description: Contract Novation
+roles[214].entityTypeId: 61
+roles[215].checked: on
+roles[215].id: 911
+roles[215].name: ROLE_TREE_DOWNLOAD
+roles[215].description: Tree Download
+roles[215].entityTypeId: 61
+roles[216].checked: on
+roles[216].id: 603
+roles[216].name: ROLE_ACCESS_LIST
+roles[216].description: Show Access List
+roles[216].entityTypeId:
+roles[217].checked: on
+roles[217].id: 711
+roles[217].name: ROLE_CONTRACT_LINK_ENTITY
+roles[217].description: Link Entities
+roles[217].entityTypeId:
+roles[218].checked: on
+roles[218].id: 732
+roles[218].name: ROLE_METADATA_INHERIT
+roles[218].description: Inherit Metadata
+roles[218].entityTypeId: 61
+roles[219].checked: on
+roles[219].id: 111
+roles[219].name: ROLE_DOCUMENT_UNARCHIVE
+roles[219].description: UnArchive Document
+roles[219].entityTypeId: 61
+roles[220].checked: on
+roles[220].id: 164
+roles[220].name: ROLE_DOCUMENT_CLONE
+roles[220].description: Clone Document
+roles[220].entityTypeId: 61
+roles[221].checked: on
+roles[221].id: 10
+roles[221].name: ROLE_DNO_CREATE
+roles[221].description: Create / Clone
+roles[221].entityTypeId: 12
+roles[222].checked: on
+roles[222].id: 875
+roles[222].name: ROLE_DNO_GLOBAL_CREATE
+roles[222].description: Global Create
+roles[222].entityTypeId: 12
+roles[223].checked: on
+roles[223].id: 714
+roles[223].name: ROLE_DNO_BULK_CREATE
+roles[223].description: Bulk Create
+roles[223].entityTypeId: 12
+roles[224].checked: on
+roles[224].id: 165
+roles[224].name: ROLE_DNO_CLONE
+roles[224].description: Clone DNO
+roles[224].entityTypeId: 12
+roles[225].checked: on
+roles[225].id: 11
+roles[225].name: ROLE_DNO_EDIT
+roles[225].description: Edit
+roles[225].entityTypeId: 12
+roles[226].checked: on
+roles[226].id: 523
+roles[226].name: ROLE_BULK_EDIT_DNO
+roles[226].description: Bulk Edit
+roles[226].entityTypeId: 12
+roles[227].checked: on
+roles[227].id: 728
+roles[227].name: ROLE_DNO_BULK_UPDATE
+roles[227].description: Bulk Update (excel)
+roles[227].entityTypeId: 12
+roles[228].checked: on
+roles[228].id: 125
+roles[228].name: ROLE_DNO_SHOW
+roles[228].description: Show
+roles[228].entityTypeId: 12
+roles[229].checked: on
+roles[229].id: 145
+roles[229].name: ROLE_DNO_LIST
+roles[229].description: Show Quick Link
+roles[229].entityTypeId:
+roles[230].checked: on
+roles[230].id: 24
+roles[230].name: ROLE_DNO_ON_HOLD
+roles[230].description: On Hold / Activate
+roles[230].entityTypeId: 12
+roles[231].checked: on
+roles[231].id: 26
+roles[231].name: ROLE_DNO_ACTIVATE
+roles[231].description: Activate DNO
+roles[231].entityTypeId: 12
+roles[232].checked: on
+roles[232].id: 25
+roles[232].name: ROLE_DNO_ARCHIVE
+roles[232].description: Archive / Restore
+roles[232].entityTypeId: 12
+roles[233].checked: on
+roles[233].id: 27
+roles[233].name: ROLE_DNO_UNARCHIVE
+roles[233].description: Unarchive DNO
+roles[233].entityTypeId: 12
+roles[234].checked: on
+roles[234].id: 14
+roles[234].name: ROLE_DNO_DELETE
+roles[234].description: Delete
+roles[234].entityTypeId: 12
+roles[235].checked: on
+roles[235].id: 371
+roles[235].name: ROLE_DNO_COMMENT
+roles[235].description: Comment
+roles[235].entityTypeId: 12
+roles[236].checked: on
+roles[236].id: 524
+roles[236].name: ROLE_BULK_ACTION_DNO
+roles[236].description: Bulk Action
+roles[236].entityTypeId: 12
+roles[237].checked: on
+roles[237].id: 562
+roles[237].name: ROLE_DNO_LIST_DOWNLOAD
+roles[237].description: Download Quick Link
+roles[237].entityTypeId:
+roles[238].checked: on
+roles[238].id: 906
+roles[238].name: ROLE_DOCUMENT_TAG_DNO
+roles[238].description: Document Tags
+roles[238].entityTypeId: 12
+roles[239].checked: on
+roles[239].id: 695
+roles[239].name: ROLE_DNO_CREATE_ADHOC_CHILD_DNO
+roles[239].description: Create Adhoc Child Obligation
+roles[239].entityTypeId: 12
+roles[240].checked: on
+roles[240].id: 28
+roles[240].name: ROLE_CHILDDNO_EDIT
+roles[240].description: Edit
+roles[240].entityTypeId: 13
+roles[241].checked: on
+roles[241].id: 525
+roles[241].name: ROLE_BULK_EDIT_CHILD_DNO
+roles[241].description: Bulk Edit
+roles[241].entityTypeId: 13
+roles[242].checked: on
+roles[242].id: 740
+roles[242].name: ROLE_CHILD_DNO_BULK_UPDATE
+roles[242].description: Bulk Update (excel)
+roles[242].entityTypeId: 13
+roles[243].checked: on
+roles[243].id: 146
+roles[243].name: ROLE_CHILDDNO_LIST
+roles[243].description: Show Quick Link
+roles[243].entityTypeId:
+roles[244].checked: on
+roles[244].id: 126
+roles[244].name: ROLE_CHILDDNO_SHOW
+roles[244].description: Show
+roles[244].entityTypeId: 13
+roles[245].checked: on
+roles[245].id: 30
+roles[245].name: ROLE_CHILDDNO_DELETE
+roles[245].description: Delete
+roles[245].entityTypeId: 13
+roles[246].checked: on
+roles[246].id: 29
+roles[246].name: ROLE_CHILDDNO_ON_HOLD
+roles[246].description: On Hold / Activate
+roles[246].entityTypeId: 13
+roles[247].checked: on
+roles[247].id: 36
+roles[247].name: ROLE_CHILDDNO_ACTIVATE
+roles[247].description: Activate Child DNO
+roles[247].entityTypeId: 13
+roles[248].checked: on
+roles[248].id: 31
+roles[248].name: ROLE_CHILDDNO_ARCHIVE
+roles[248].description: Archive / Restore
+roles[248].entityTypeId: 13
+roles[249].checked: on
+roles[249].id: 37
+roles[249].name: ROLE_CHILDDNO_UNARCHIVE
+roles[249].description: Unarchive Child DNO
+roles[249].entityTypeId: 13
+roles[250].checked: on
+roles[250].id: 373
+roles[250].name: ROLE_CHILD_DNO_COMMENT
+roles[250].description: Comment
+roles[250].entityTypeId: 13
+roles[251].checked: on
+roles[251].id: 907
+roles[251].name: ROLE_DOCUMENT_TAG_CDNO
+roles[251].description: Document Tags
+roles[251].entityTypeId: 13
+roles[252].checked: on
+roles[252].id: 526
+roles[252].name: ROLE_BULK_ACTION_CHILD_DNO
+roles[252].description: Bulk Action
+roles[252].entityTypeId: 13
+roles[253].checked: on
+roles[253].id: 55
+roles[253].name: ROLE_ISSUE_CREATE
+roles[253].description: Create / Clone
+roles[253].entityTypeId: 17
+roles[254].checked: on
+roles[254].id: 878
+roles[254].name: ROLE_ISSUE_GLOBAL_CREATE
+roles[254].description: Global Create
+roles[254].entityTypeId: 17
+roles[255].checked: on
+roles[255].id: 149
+roles[255].name: ROLE_ISSUE_LIST
+roles[255].description: Show Quick Link
+roles[255].entityTypeId:
+roles[256].checked: on
+roles[256].id: 736
+roles[256].name: ROLE_ISSUE_BULK_CREATE
+roles[256].description: Bulk Create
+roles[256].entityTypeId: 17
+roles[257].checked: on
+roles[257].id: 169
+roles[257].name: ROLE_ISSUE_CLONE
+roles[257].description: Clone Issue
+roles[257].entityTypeId: 17
+roles[258].checked: on
+roles[258].id: 564
+roles[258].name: ROLE_ISSUE_LIST_DOWNLOAD
+roles[258].description: Download Quick Link
+roles[258].entityTypeId:
+roles[259].checked: on
+roles[259].id: 112
+roles[259].name: ROLE_ISSUE_EDIT
+roles[259].description: Edit
+roles[259].entityTypeId: 17
+roles[260].checked: on
+roles[260].id: 723
+roles[260].name: ROLE_BULK_EDIT_ISSUE
+roles[260].description: Bulk Edit
+roles[260].entityTypeId: 17
+roles[261].checked: on
+roles[261].id: 129
+roles[261].name: ROLE_ISSUE_SHOW
+roles[261].description: Show
+roles[261].entityTypeId: 17
+roles[262].checked: on
+roles[262].id: 61
+roles[262].name: ROLE_ISSUE_ON_HOLD
+roles[262].description: On Hold / Activate
+roles[262].entityTypeId: 17
+roles[263].checked: on
+roles[263].id: 66
+roles[263].name: ROLE_ISSUE_ACTIVATE
+roles[263].description: Activate Issue
+roles[263].entityTypeId: 17
+roles[264].checked: on
+roles[264].id: 65
+roles[264].name: ROLE_ISSUE_ARCHIVE
+roles[264].description: Archive / Restore
+roles[264].entityTypeId: 17
+roles[265].checked: on
+roles[265].id: 67
+roles[265].name: ROLE_ISSUE_UNARCHIVE
+roles[265].description: Unarchive Issue
+roles[265].entityTypeId: 17
+roles[266].checked: on
+roles[266].id: 200
+roles[266].name: ROLE_ISSUE_DELETE
+roles[266].description: Delete
+roles[266].entityTypeId: 17
+roles[267].checked: on
+roles[267].id: 376
+roles[267].name: ROLE_ISSUE_COMMENT
+roles[267].description: Comment
+roles[267].entityTypeId: 17
+roles[268].checked: on
+roles[268].id: 68
+roles[268].name: ROLE_SLA_CREATE
+roles[268].description: Create / Clone
+roles[268].entityTypeId: 14
+roles[269].checked: on
+roles[269].id: 876
+roles[269].name: ROLE_SLA_GLOBAL_CREATE
+roles[269].description: Global Create
+roles[269].entityTypeId: 14
+roles[270].checked: on
+roles[270].id: 706
+roles[270].name: ROLE_SLA_BULK_CREATE
+roles[270].description: Bulk Create
+roles[270].entityTypeId: 14
+roles[271].checked: on
+roles[271].id: 167
+roles[271].name: ROLE_SLA_CLONE
+roles[271].description: Clone SLA
+roles[271].entityTypeId: 14
+roles[272].checked: on
+roles[272].id: 69
+roles[272].name: ROLE_SLA_EDIT
+roles[272].description: Edit
+roles[272].entityTypeId: 14
+roles[273].checked: on
+roles[273].id: 527
+roles[273].name: ROLE_BULK_EDIT_SLA
+roles[273].description: Bulk Edit
+roles[273].entityTypeId: 14
+roles[274].checked: on
+roles[274].id: 897
+roles[274].name: ROLE_SLA_BULK_UPDATE
+roles[274].description: Bulk Update (excel)
+roles[274].entityTypeId: 14
+roles[275].checked: on
+roles[275].id: 127
+roles[275].name: ROLE_SLA_SHOW
+roles[275].description: Show
+roles[275].entityTypeId: 14
+roles[276].checked: on
+roles[276].id: 147
+roles[276].name: ROLE_SLA_LIST
+roles[276].description: Show Quick Link
+roles[276].entityTypeId:
+roles[277].checked: on
+roles[277].id: 82
+roles[277].name: ROLE_SLA_ON_HOLD
+roles[277].description: On Hold / Activate
+roles[277].entityTypeId: 14
+roles[278].checked: on
+roles[278].id: 84
+roles[278].name: ROLE_SLA_ACTIVATE
+roles[278].description: Activate SLA
+roles[278].entityTypeId: 14
+roles[279].checked: on
+roles[279].id: 83
+roles[279].name: ROLE_SLA_ARCHIVE
+roles[279].description: Archive / Restore
+roles[279].entityTypeId: 14
+roles[280].checked: on
+roles[280].id: 85
+roles[280].name: ROLE_SLA_UNARCHIVE
+roles[280].description: Unarchive SLA
+roles[280].entityTypeId: 14
+roles[281].checked: on
+roles[281].id: 72
+roles[281].name: ROLE_SLA_DELETE
+roles[281].description: Delete
+roles[281].entityTypeId: 14
+roles[282].checked: on
+roles[282].id: 372
+roles[282].name: ROLE_SLA_COMMENT
+roles[282].description: Comment
+roles[282].entityTypeId: 14
+roles[283].checked: on
+roles[283].id: 528
+roles[283].name: ROLE_BULK_ACTION_SLA
+roles[283].description: Bulk Action
+roles[283].entityTypeId: 14
+roles[284].checked: on
+roles[284].id: 576
+roles[284].name: ROLE_SLA_LIST_DOWNLOAD
+roles[284].description: Download Quick Link
+roles[284].entityTypeId:
+roles[285].checked: on
+roles[285].id: 615
+roles[285].name: ROLE_SLA_RAW_DATA_META_DATA_CREATE
+roles[285].description: Create Rawdata Metadata
+roles[285].entityTypeId: 14
+roles[286].checked: on
+roles[286].id: 618
+roles[286].name: ROLE_SLA_CHART
+roles[286].description: SL Performance
+roles[286].entityTypeId: 14
+roles[287].checked: on
+roles[287].id: 741
+roles[287].name: ROLE_SLA_CHARTV2
+roles[287].description: SL Performance V2
+roles[287].entityTypeId: 14
+roles[288].id: 742
+roles[288].name: ROLE_HIDE_BI_TOGGLE
+roles[288].description: Hide BI Toggle
+roles[288].entityTypeId: 14
+roles[289].checked: on
+roles[289].id: 86
+roles[289].name: ROLE_CHILDSLA_EDIT
+roles[289].description: Edit
+roles[289].entityTypeId: 15
+roles[290].checked: on
+roles[290].id: 529
+roles[290].name: ROLE_BULK_EDIT_CHILD_SLA
+roles[290].description: Bulk Edit
+roles[290].entityTypeId: 15
+roles[291].checked: on
+roles[291].id: 737
+roles[291].name: ROLE_CHILD_SLA_BULK_UPDATE
+roles[291].description: Bulk Update (excel)
+roles[291].entityTypeId: 15
+roles[292].checked: on
+roles[292].id: 128
+roles[292].name: ROLE_CHILDSLA_SHOW
+roles[292].description: Show
+roles[292].entityTypeId: 15
+roles[293].checked: on
+roles[293].id: 148
+roles[293].name: ROLE_CHILDSLA_LIST
+roles[293].description: Show Quick Link
+roles[293].entityTypeId:
+roles[294].checked: on
+roles[294].id: 88
+roles[294].name: ROLE_CHILDSLA_DELETE
+roles[294].description: Delete
+roles[294].entityTypeId: 15
+roles[295].checked: on
+roles[295].id: 87
+roles[295].name: ROLE_CHILDSLA_ON_HOLD
+roles[295].description: On Hold / Activate
+roles[295].entityTypeId: 15
+roles[296].checked: on
+roles[296].id: 93
+roles[296].name: ROLE_CHILDSLA_ACTIVATE
+roles[296].description: Activate Child SLA
+roles[296].entityTypeId: 15
+roles[297].checked: on
+roles[297].id: 89
+roles[297].name: ROLE_CHILDSLA_ARCHIVE
+roles[297].description: Archive / Restore
+roles[297].entityTypeId: 15
+roles[298].checked: on
+roles[298].id: 94
+roles[298].name: ROLE_CHILDSLA_UNARCHIVE
+roles[298].description: Unarchive Child SLA
+roles[298].entityTypeId: 15
+roles[299].checked: on
+roles[299].id: 374
+roles[299].name: ROLE_CHILD_SLA_COMMENT
+roles[299].description: Comment
+roles[299].entityTypeId: 15
+roles[300].checked: on
+roles[300].id: 467
+roles[300].name: ROLE_COMPUTATION
+roles[300].description: SL Computation
+roles[300].entityTypeId: 15
+roles[301].checked: on
+roles[301].id: 696
+roles[301].name: ROLE_BULK_SL_COMPUTATION
+roles[301].description: Bulk SL Computation
+roles[301].entityTypeId: 15
+roles[302].checked: on
+roles[302].id: 530
+roles[302].name: ROLE_BULK_ACTION_CHILD_SLA
+roles[302].description: Bulk Action
+roles[302].entityTypeId: 15
+roles[303].checked: on
+roles[303].id: 538
+roles[303].name: ROLE_CHILD_SLA_UPDATE_PERFORMANCE
+roles[303].description: SL Bulk Upload
+roles[303].entityTypeId: 15
+roles[304].checked: on
+roles[304].id: 95
+roles[304].name: ROLE_ACTION_CREATE
+roles[304].description: Create / Clone
+roles[304].entityTypeId: 18
+roles[305].checked: on
+roles[305].id: 877
+roles[305].name: ROLE_ACTION_GLOBAL_CREATE
+roles[305].description: Global Create
+roles[305].entityTypeId: 18
+roles[306].checked: on
+roles[306].id: 739
+roles[306].name: ROLE_ACTION_BULK_CREATE
+roles[306].description: Bulk Create
+roles[306].entityTypeId: 18
+roles[307].checked: on
+roles[307].id: 150
+roles[307].name: ROLE_ACTION_LIST
+roles[307].description: Show Quick Link
+roles[307].entityTypeId:
+roles[308].checked: on
+roles[308].id: 170
+roles[308].name: ROLE_ACTION_CLONE
+roles[308].description: Clone Action
+roles[308].entityTypeId: 18
+roles[309].checked: on
+roles[309].id: 565
+roles[309].name: ROLE_ACTION_LIST_DOWNLOAD
+roles[309].description: Download Quick Link
+roles[309].entityTypeId:
+roles[310].checked: on
+roles[310].id: 113
+roles[310].name: ROLE_ACTION_EDIT
+roles[310].description: Edit
+roles[310].entityTypeId: 18
+roles[311].checked: on
+roles[311].id: 726
+roles[311].name: ROLE_BULK_EDIT_ACTION
+roles[311].description: Bulk Edit
+roles[311].entityTypeId: 18
+roles[312].checked: on
+roles[312].id: 130
+roles[312].name: ROLE_ACTION_SHOW
+roles[312].description: Show
+roles[312].entityTypeId: 18
+roles[313].checked: on
+roles[313].id: 194
+roles[313].name: ROLE_ACTION_ON_HOLD
+roles[313].description: On Hold / Activate
+roles[313].entityTypeId: 18
+roles[314].checked: on
+roles[314].id: 195
+roles[314].name: ROLE_ACTION_ACTIVATE
+roles[314].description: On Hold / Activate
+roles[314].entityTypeId: 18
+roles[315].checked: on
+roles[315].id: 101
+roles[315].name: ROLE_ACTION_ARCHIVE
+roles[315].description: Archive / Restore
+roles[315].entityTypeId: 18
+roles[316].checked: on
+roles[316].id: 103
+roles[316].name: ROLE_ACTION_UNARCHIVE
+roles[316].description: Unarchive Action
+roles[316].entityTypeId: 18
+roles[317].checked: on
+roles[317].id: 102
+roles[317].name: ROLE_ACTION_DELETE
+roles[317].description: Delete
+roles[317].entityTypeId: 18
+roles[318].checked: on
+roles[318].id: 375
+roles[318].name: ROLE_ACTION_COMMENT
+roles[318].description: Comment
+roles[318].entityTypeId: 18
+roles[319].checked: on
+roles[319].id: 104
+roles[319].name: ROLE_INVOICE_GENERATE
+roles[319].description: Create / Clone
+roles[319].entityTypeId: 67
+roles[320].checked: on
+roles[320].id: 880
+roles[320].name: ROLE_INVOICE_GLOBAL_CREATE
+roles[320].description: Global Create
+roles[320].entityTypeId: 67
+roles[321].checked: on
+roles[321].id: 698
+roles[321].name: ROLE_INVOICE_BULK_CREATE
+roles[321].description: Bulk Create
+roles[321].entityTypeId: 67
+roles[322].checked: on
+roles[322].id: 209
+roles[322].name: ROLE_INVOICE_EDIT
+roles[322].description: Edit
+roles[322].entityTypeId: 67
+roles[323].checked: on
+roles[323].id: 724
+roles[323].name: ROLE_BULK_EDIT_INVOICE
+roles[323].description: Bulk Edit
+roles[323].entityTypeId: 67
+roles[324].checked: on
+roles[324].id: 132
+roles[324].name: ROLE_INVOICE_SHOW
+roles[324].description: Show
+roles[324].entityTypeId: 67
+roles[325].checked: on
+roles[325].id: 359
+roles[325].name: ROLE_INVOICE_CLONE
+roles[325].description: Clone Invoice
+roles[325].entityTypeId: 67
+roles[326].checked: on
+roles[326].id: 152
+roles[326].name: ROLE_INVOICE_LIST
+roles[326].description: Show Quick Link
+roles[326].entityTypeId:
+roles[327].checked: on
+roles[327].id: 321
+roles[327].name: ROLE_INVOICE_ON_HOLD
+roles[327].description: On Hold / Activate
+roles[327].entityTypeId: 67
+roles[328].checked: on
+roles[328].id: 323
+roles[328].name: ROLE_INVOICE_ARCHIVE
+roles[328].description: Archive / Restore
+roles[328].entityTypeId: 67
+roles[329].checked: on
+roles[329].id: 324
+roles[329].name: ROLE_INVOICE_RESTORE
+roles[329].description: Restore
+roles[329].entityTypeId: 67
+roles[330].checked: on
+roles[330].id: 219
+roles[330].name: ROLE_INVOICE_DELETE
+roles[330].description: Delete
+roles[330].entityTypeId: 67
+roles[331].checked: on
+roles[331].id: 378
+roles[331].name: ROLE_INVOICE_COMMENT
+roles[331].description: Comment/Attachments
+roles[331].entityTypeId: 67
+roles[332].checked: on
+roles[332].id: 704
+roles[332].name: ROLE_INVOICE_BULK_ATTACHMENT_UPLOAD
+roles[332].description: Bulk Upload Comments/Attachments
+roles[332].entityTypeId: 67
+roles[333].checked: on
+roles[333].id: 574
+roles[333].name: ROLE_INVOICE_LIST_DOWNLOAD
+roles[333].description: Download Quick Link
+roles[333].entityTypeId:
+roles[334].checked: on
+roles[334].id: 616
+roles[334].name: ROLE_REVALIDATE_INVOICE
+roles[334].description: Revalidate Invoice
+roles[334].entityTypeId: 67
+roles[335].checked: on
+roles[335].id: 703
+roles[335].name: ROLE_INVOICE_BULK_ACTION
+roles[335].description: Bulk Action
+roles[335].entityTypeId: 67
+roles[336].checked: on
+roles[336].id: 322
+roles[336].name: ROLE_INVOICE_ACTIVATE
+roles[336].description: Activate
+roles[336].entityTypeId: 67
+roles[337].checked: on
+roles[337].id: 153
+roles[337].name: ROLE_CHANGE_REQUEST_CREATE
+roles[337].description: Create / Clone
+roles[337].entityTypeId: 63
+roles[338].checked: on
+roles[338].id: 881
+roles[338].name: ROLE_CHANGE_REQUEST_GLOBAL_CREATE
+roles[338].description: Global Create
+roles[338].entityTypeId: 63
+roles[339].checked: on
+roles[339].id: 335
+roles[339].name: ROLE_CHANGE_REQUEST_EDIT
+roles[339].description: Edit
+roles[339].entityTypeId: 63
+roles[340].checked: on
+roles[340].id: 155
+roles[340].name: ROLE_CHANGE_REQUEST_LIST
+roles[340].description: Show Quick Link
+roles[340].entityTypeId:
+roles[341].checked: on
+roles[341].id: 154
+roles[341].name: ROLE_CHANGE_REQUEST_SHOW
+roles[341].description: Show
+roles[341].entityTypeId: 63
+roles[342].checked: on
+roles[342].id: 329
+roles[342].name: ROLE_CHANGE_REQUEST_ARCHIVE
+roles[342].description: Archive / Restore
+roles[342].entityTypeId: 63
+roles[343].checked: on
+roles[343].id: 330
+roles[343].name: ROLE_CHANGE_REQUEST_UNARCHIVE
+roles[343].description: UnArchive Change Request
+roles[343].entityTypeId: 63
+roles[344].checked: on
+roles[344].id: 156
+roles[344].name: ROLE_CHANGE_REQUEST_DELETE
+roles[344].description: Delete
+roles[344].entityTypeId: 63
+roles[345].checked: on
+roles[345].id: 361
+roles[345].name: ROLE_CHANGE_REQUEST_CLONE
+roles[345].description: Clone Change Request
+roles[345].entityTypeId: 63
+roles[346].checked: on
+roles[346].id: 365
+roles[346].name: ROLE_CHANGE_REQUEST_ON_HOLD
+roles[346].description: On Hold / Activate
+roles[346].entityTypeId: 63
+roles[347].checked: on
+roles[347].id: 366
+roles[347].name: ROLE_CHANGE_REQUEST_ACTIVATE
+roles[347].description: Activate Change Request
+roles[347].entityTypeId: 63
+roles[348].checked: on
+roles[348].id: 573
+roles[348].name: ROLE_CHANGE_REQUEST_LIST_DOWNLOAD
+roles[348].description: Download Quick Link
+roles[348].entityTypeId:
+roles[349].checked: on
+roles[349].id: 377
+roles[349].name: ROLE_CHANGE_REQUEST_COMMENT
+roles[349].description: Comment
+roles[349].entityTypeId: 63
+roles[350].checked: on
+roles[350].id: 707
+roles[350].name: ROLE_ALLOW_DIGITAL_SIGNATURE_CCR
+roles[350].description: Allow Digital Signature
+roles[350].entityTypeId: 63
+roles[351].checked: on
+roles[351].id: 183
+roles[351].name: ROLE_RELATION_CREATE
+roles[351].description: Create
+roles[351].entityTypeId: 1
+roles[352].checked: on
+roles[352].id: 184
+roles[352].name: ROLE_RELATION_EDIT
+roles[352].description: Edit
+roles[352].entityTypeId: 1
+roles[353].checked: on
+roles[353].id: 697
+roles[353].name: ROLE_BULK_EDIT_RELATION
+roles[353].description: Bulk Edit
+roles[353].entityTypeId: 1
+roles[354].checked: on
+roles[354].id: 121
+roles[354].name: ROLE_RELATION_SHOW
+roles[354].description: Show
+roles[354].entityTypeId: 1
+roles[355].checked: on
+roles[355].id: 141
+roles[355].name: ROLE_RELATION_LIST
+roles[355].description: Show Quick Link
+roles[355].entityTypeId:
+roles[356].checked: on
+roles[356].id: 185
+roles[356].name: ROLE_RELATION_ARCHIVE
+roles[356].description: Archive / Restore
+roles[356].entityTypeId: 1
+roles[357].checked: on
+roles[357].id: 188
+roles[357].name: ROLE_RELATION_UNARCHIVE
+roles[357].description: Unarchive Relation
+roles[357].entityTypeId: 1
+roles[358].checked: on
+roles[358].id: 189
+roles[358].name: ROLE_RELATION_DELETE
+roles[358].description: Delete
+roles[358].entityTypeId: 1
+roles[359].checked: on
+roles[359].id: 186
+roles[359].name: ROLE_RELATION_INACTIVATE
+roles[359].description: Activate / Inactivate
+roles[359].entityTypeId:
+roles[360].checked: on
+roles[360].id: 369
+roles[360].name: ROLE_RELATION_COMMENT
+roles[360].description: Comment
+roles[360].entityTypeId: 1
+roles[361].checked: on
+roles[361].id: 346
+roles[361].name: ROLE_RELATION_COMPOSITE_RATING_EDIT
+roles[361].description: Composite Rating (Supplier Input)
+roles[361].entityTypeId:
+roles[362].checked: on
+roles[362].id: 561
+roles[362].name: ROLE_RELATION_LIST_DOWNLOAD
+roles[362].description: Download Quick Link
+roles[362].entityTypeId:
+roles[363].checked: on
+roles[363].id: 300
+roles[363].name: ROLE_INTERPRETATION_CREATE
+roles[363].description: Create / Clone
+roles[363].entityTypeId: 16
+roles[364].checked: on
+roles[364].id: 882
+roles[364].name: ROLE_INTERPRETATION_GLOBAL_CREATE
+roles[364].description: Global Create
+roles[364].entityTypeId: 16
+roles[365].checked: on
+roles[365].id: 301
+roles[365].name: ROLE_INTERPRETATION_EDIT
+roles[365].description: Edit
+roles[365].entityTypeId: 16
+roles[366].checked: on
+roles[366].id: 315
+roles[366].name: ROLE_INTERPRETATION_LIST
+roles[366].description: Show Quick Link
+roles[366].entityTypeId:
+roles[367].checked: on
+roles[367].id: 316
+roles[367].name: ROLE_INTERPRETATION_SHOW
+roles[367].description: Show
+roles[367].entityTypeId: 16
+roles[368].checked: on
+roles[368].id: 319
+roles[368].name: ROLE_INTERPRETATION_ON_HOLD
+roles[368].description: On Hold / Activate
+roles[368].entityTypeId: 16
+roles[369].checked: on
+roles[369].id: 320
+roles[369].name: ROLE_INTERPRETATION_ACTIVATE
+roles[369].description: Activate
+roles[369].entityTypeId: 16
+roles[370].checked: on
+roles[370].id: 317
+roles[370].name: ROLE_INTERPRETATION_ARCHIVE
+roles[370].description: Archive / Restore
+roles[370].entityTypeId: 16
+roles[371].checked: on
+roles[371].id: 318
+roles[371].name: ROLE_INTERPRETATION_UNARCHIVE
+roles[371].description: Un-Archive
+roles[371].entityTypeId: 16
+roles[372].checked: on
+roles[372].id: 302
+roles[372].name: ROLE_INTERPRETATION_DELETE
+roles[372].description: Delete
+roles[372].entityTypeId: 16
+roles[373].checked: on
+roles[373].id: 380
+roles[373].name: ROLE_INTERPRETATION_COMMENT
+roles[373].description: Comment
+roles[373].entityTypeId: 16
+roles[374].checked: on
+roles[374].id: 362
+roles[374].name: ROLE_INTERPRETATION_CLONE
+roles[374].description: Clone Intptn
+roles[374].entityTypeId: 16
+roles[375].checked: on
+roles[375].id: 566
+roles[375].name: ROLE_INTERPRETATION_LIST_DOWNLOAD
+roles[375].description: Download Quick Link
+roles[375].entityTypeId:
+roles[376].checked: on
+roles[376].id: 338
+roles[376].name: ROLE_WOR_CREATE
+roles[376].description: Create / Clone
+roles[376].entityTypeId: 80
+roles[377].checked: on
+roles[377].id: 883
+roles[377].name: ROLE_WOR_GLOBAL_CREATE
+roles[377].description: Global Create
+roles[377].entityTypeId: 80
+roles[378].checked: on
+roles[378].id: 339
+roles[378].name: ROLE_WOR_UPDATE
+roles[378].description: Edit
+roles[378].entityTypeId: 80
+roles[379].checked: on
+roles[379].id: 340
+roles[379].name: ROLE_WOR_LIST
+roles[379].description: Show Quick Link
+roles[379].entityTypeId:
+roles[380].checked: on
+roles[380].id: 341
+roles[380].name: ROLE_WOR_SHOW
+roles[380].description: Show
+roles[380].entityTypeId: 80
+roles[381].checked: on
+roles[381].id: 343
+roles[381].name: ROLE_WOR_ARCHIVE
+roles[381].description: Archive / Restore
+roles[381].entityTypeId: 80
+roles[382].checked: on
+roles[382].id: 344
+roles[382].name: ROLE_WOR_UNARCHIVE
+roles[382].description: Restore WOR
+roles[382].entityTypeId: 80
+roles[383].checked: on
+roles[383].id: 345
+roles[383].name: ROLE_WOR_ADD_COMMENT
+roles[383].description: Add Comment
+roles[383].entityTypeId:
+roles[384].checked: on
+roles[384].id: 342
+roles[384].name: ROLE_WOR_DELETE
+roles[384].description: Delete
+roles[384].entityTypeId: 80
+roles[385].checked: on
+roles[385].id: 360
+roles[385].name: ROLE_WOR_CLONE
+roles[385].description: Clone Work Order Request
+roles[385].entityTypeId: 80
+roles[386].checked: on
+roles[386].id: 363
+roles[386].name: ROLE_WOR_ON_HOLD
+roles[386].description: On Hold / Activate
+roles[386].entityTypeId: 80
+roles[387].checked: on
+roles[387].id: 364
+roles[387].name: ROLE_WOR_ACTIVATE
+roles[387].description: Activate WOR
+roles[387].entityTypeId: 80
+roles[388].checked: on
+roles[388].id: 379
+roles[388].name: ROLE_WOR_COMMENT
+roles[388].description: Comment
+roles[388].entityTypeId: 80
+roles[389].checked: on
+roles[389].id: 575
+roles[389].name: ROLE_WOR_LIST_DOWNLOAD
+roles[389].description: Download Quick Link
+roles[389].entityTypeId:
+roles[390].checked: on
+roles[390].id: 708
+roles[390].name: ROLE_ALLOW_DIGITAL_SIGNATURE_WOR
+roles[390].description: Allow Digital Signature
+roles[390].entityTypeId: 80
+roles[391].checked: on
+roles[391].id: 501
+roles[391].name: ROLE_CLAUSE_CREATE
+roles[391].description: Create
+roles[391].entityTypeId: 138
+roles[392].checked: on
+roles[392].id: 694
+roles[392].name: ROLE_CLAUSE_BULK_CREATE
+roles[392].description: Bulk Create Clauses
+roles[392].entityTypeId: 138
+roles[393].checked: on
+roles[393].id: 514
+roles[393].name: ROLE_CLAUSE_CLONE
+roles[393].description: Clone Clause
+roles[393].entityTypeId: 138
+roles[394].checked: on
+roles[394].id: 502
+roles[394].name: ROLE_CLAUSE_EDIT
+roles[394].description: Edit
+roles[394].entityTypeId: 138
+roles[395].checked: on
+roles[395].id: 503
+roles[395].name: ROLE_CLAUSE_SHOW
+roles[395].description: Show
+roles[395].entityTypeId: 138
+roles[396].checked: on
+roles[396].id: 474
+roles[396].name: ROLE_CLAUSE_DELETE
+roles[396].description: Delete
+roles[396].entityTypeId: 138
+roles[397].checked: on
+roles[397].id: 475
+roles[397].name: ROLE_CLAUSE_ARCHIVE
+roles[397].description: Archive / Restore
+roles[397].entityTypeId: 138
+roles[398].checked: on
+roles[398].id: 476
+roles[398].name: ROLE_CLAUSE_UNARCHIVE
+roles[398].description: Unarchive
+roles[398].entityTypeId: 138
+roles[399].checked: on
+roles[399].id: 477
+roles[399].name: ROLE_CLAUSE_ON_HOLD
+roles[399].description: On Hold / Activate
+roles[399].entityTypeId: 138
+roles[400].checked: on
+roles[400].id: 478
+roles[400].name: ROLE_CLAUSE_ACTIVATE
+roles[400].description: Activate
+roles[400].entityTypeId: 138
+roles[401].checked: on
+roles[401].id: 479
+roles[401].name: ROLE_CLAUSE_COMMENT
+roles[401].description: Comment
+roles[401].entityTypeId: 138
+roles[402].checked: on
+roles[402].id: 480
+roles[402].name: ROLE_CLAUSE_LIST
+roles[402].description: Show Clause Quick Link
+roles[402].entityTypeId: 138
+roles[403].checked: on
+roles[403].id: 667
+roles[403].name: ROLE_CLAUSE_DOWNLOAD
+roles[403].description: Download Clause
+roles[403].entityTypeId: 138
+roles[404].checked: on
+roles[404].id: 570
+roles[404].name: ROLE_CLAUSE_LIST_DOWNLOAD
+roles[404].description: Download Clause Quick Link
+roles[404].entityTypeId:
+roles[405].checked: on
+roles[405].id: 699
+roles[405].name: ROLE_DEFINITION_LIST
+roles[405].description: Show Definition Quick Link
+roles[405].entityTypeId: 138
+roles[406].checked: on
+roles[406].id: 700
+roles[406].name: ROLE_DEFINITION_LIST_DOWNLOAD
+roles[406].description: Download Definition Quick Link
+roles[406].entityTypeId: 138
+roles[407].checked: on
+roles[407].id: 889
+roles[407].name: ROLE_CLAUSE_BULK_ACTION
+roles[407].description: Bulk Action
+roles[407].entityTypeId: 138
+roles[408].checked: on
+roles[408].id: 400
+roles[408].name: ROLE_GOVERNANCE_BODY_CREATE
+roles[408].description: Create / Clone
+roles[408].entityTypeId: 86
+roles[409].checked: on
+roles[409].id: 884
+roles[409].name: ROLE_GOVERNANCE_BODY_GLOBAL_CREATE
+roles[409].description: Global Create
+roles[409].entityTypeId: 86
+roles[410].checked: on
+roles[410].id: 401
+roles[410].name: ROLE_GOVERNANCE_BODY_EDIT
+roles[410].description: Edit
+roles[410].entityTypeId: 86
+roles[411].checked: on
+roles[411].id: 403
+roles[411].name: ROLE_GOVERNANCE_BODY_LIST
+roles[411].description: Show Quick Link
+roles[411].entityTypeId:
+roles[412].checked: on
+roles[412].id: 402
+roles[412].name: ROLE_GOVERNANCE_BODY_SHOW
+roles[412].description: Show
+roles[412].entityTypeId: 86
+roles[413].checked: on
+roles[413].id: 404
+roles[413].name: ROLE_GOVERNANCE_BODY_DELETE
+roles[413].description: Delete
+roles[413].entityTypeId: 86
+roles[414].checked: on
+roles[414].id: 405
+roles[414].name: ROLE_GOVERNANCE_BODY_ADHOC
+roles[414].description: Schedule Adhoc Governance Body Meeting
+roles[414].entityTypeId: 86
+roles[415].checked: on
+roles[415].id: 450
+roles[415].name: ROLE_GOVERNANCE_BODY_ARCHIVE
+roles[415].description: Archive / Restore
+roles[415].entityTypeId: 86
+roles[416].checked: on
+roles[416].id: 451
+roles[416].name: ROLE_GOVERNANCE_BODY_UNARCHIVE
+roles[416].description: Unarchive GovernanceBody
+roles[416].entityTypeId: 86
+roles[417].checked: on
+roles[417].id: 452
+roles[417].name: ROLE_GOVERNANCE_BODY_ON_HOLD
+roles[417].description: On Hold / Activate
+roles[417].entityTypeId: 86
+roles[418].checked: on
+roles[418].id: 453
+roles[418].name: ROLE_GOVERNANCE_BODY_ACTIVATE
+roles[418].description: Activate GovernanceBody
+roles[418].entityTypeId: 86
+roles[419].checked: on
+roles[419].id: 454
+roles[419].name: ROLE_GOVERNANCE_BODY_CLONE
+roles[419].description: Clone
+roles[419].entityTypeId: 86
+roles[420].checked: on
+roles[420].id: 455
+roles[420].name: ROLE_GOVERNANCE_BODY_COMMENT
+roles[420].description: Comment
+roles[420].entityTypeId: 86
+roles[421].checked: on
+roles[421].id: 567
+roles[421].name: ROLE_GOVERNANCE_BODY_LIST_DOWNLOAD
+roles[421].description: Download Quick Link
+roles[421].entityTypeId:
+roles[422].checked: on
+roles[422].id: 406
+roles[422].name: ROLE_GOVERNANCE_BODY_CHILD_EDIT
+roles[422].description: Edit
+roles[422].entityTypeId: 87
+roles[423].checked: on
+roles[423].id: 407
+roles[423].name: ROLE_GOVERNANCE_BODY_CHILD_SHOW
+roles[423].description: Show
+roles[423].entityTypeId: 87
+roles[424].checked: on
+roles[424].id: 409
+roles[424].name: ROLE_GOVERNANCE_BODY_CHILD_DELETE
+roles[424].description: Delete
+roles[424].entityTypeId: 87
+roles[425].checked: on
+roles[425].id: 410
+roles[425].name: ROLE_GOVERNANCE_BODY_MEETING_MINUTES_WRITE
+roles[425].description: Meeting Minutes Write
+roles[425].entityTypeId: 87
+roles[426].checked: on
+roles[426].id: 670
+roles[426].name: ROLE_GOVERNANCE_BODY_MEETING_MINUTES_READ
+roles[426].description: Meeting Minutes Read
+roles[426].entityTypeId: 87
+roles[427].checked: on
+roles[427].id: 730
+roles[427].name: ROLE_GOVERNANCE_BODY_MEETING_SHARE_EXTERNAL_USER
+roles[427].description: Share Notes To External Users
+roles[427].entityTypeId: 87
+roles[428].checked: on
+roles[428].id: 456
+roles[428].name: ROLE_GOVERNANCE_BODY_CHILD_ARCHIVE
+roles[428].description: Archive / Restore
+roles[428].entityTypeId: 87
+roles[429].checked: on
+roles[429].id: 457
+roles[429].name: ROLE_GOVERNANCE_BODY_CHILD_UNARCHIVE
+roles[429].description: Unarchive GovernanceBodyChild
+roles[429].entityTypeId: 87
+roles[430].checked: on
+roles[430].id: 458
+roles[430].name: ROLE_GOVERNANCE_BODY_CHILD_ON_HOLD
+roles[430].description: On Hold / Activate
+roles[430].entityTypeId: 87
+roles[431].checked: on
+roles[431].id: 459
+roles[431].name: ROLE_GOVERNANCE_BODY_CHILD_ACTIVATE
+roles[431].description: Activate GovernanceBodyChild
+roles[431].entityTypeId: 87
+roles[432].checked: on
+roles[432].id: 460
+roles[432].name: ROLE_GOVERNANCE_BODY_CHILD_CLONE
+roles[432].description: Clone
+roles[432].entityTypeId: 87
+roles[433].checked: on
+roles[433].id: 729
+roles[433].name: ROLE_GOVERNANCE_BODY_CHILD_ADD_EXTERNAL_USER
+roles[433].description: Add External User
+roles[433].entityTypeId: 87
+roles[434].checked: on
+roles[434].id: 461
+roles[434].name: ROLE_GOVERNANCE_BODY_CHILD_COMMENT
+roles[434].description: Comment
+roles[434].entityTypeId: 87
+roles[435].checked: on
+roles[435].id: 481
+roles[435].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_CREATE
+roles[435].description: Create / Clone
+roles[435].entityTypeId: 139
+roles[436].checked: on
+roles[436].id: 482
+roles[436].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_EDIT
+roles[436].description: Edit
+roles[436].entityTypeId: 139
+roles[437].checked: on
+roles[437].id: 515
+roles[437].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_CLONE
+roles[437].description: Clone Contract Template Structure
+roles[437].entityTypeId: 139
+roles[438].checked: on
+roles[438].id: 483
+roles[438].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_SHOW
+roles[438].description: Show
+roles[438].entityTypeId: 139
+roles[439].checked: on
+roles[439].id: 484
+roles[439].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_DELETE
+roles[439].description: Delete
+roles[439].entityTypeId: 139
+roles[440].checked: on
+roles[440].id: 485
+roles[440].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_ARCHIVE
+roles[440].description: Archive / Restore
+roles[440].entityTypeId: 139
+roles[441].checked: on
+roles[441].id: 486
+roles[441].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_UNARCHIVE
+roles[441].description: Unarchive
+roles[441].entityTypeId: 139
+roles[442].checked: on
+roles[442].id: 487
+roles[442].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_ON_HOLD
+roles[442].description: On Hold / Activate
+roles[442].entityTypeId: 139
+roles[443].checked: on
+roles[443].id: 488
+roles[443].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_ACTIVATE
+roles[443].description: Activate
+roles[443].entityTypeId: 139
+roles[444].checked: on
+roles[444].id: 489
+roles[444].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_COMMENT
+roles[444].description: Comment
+roles[444].entityTypeId: 139
+roles[445].checked: on
+roles[445].id: 490
+roles[445].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_LIST
+roles[445].description: Show Quick Link
+roles[445].entityTypeId: 139
+roles[446].checked: on
+roles[446].id: 571
+roles[446].name: ROLE_CONTRACT_TEMPLATE_STRUCTURE_LIST_DOWNLOAD
+roles[446].description: Download Quick Link
+roles[446].entityTypeId:
+roles[447].checked: on
+roles[447].id: 542
+roles[447].name: ROLE_DISPUTE_CREATE
+roles[447].description: Create / Clone
+roles[447].entityTypeId: 28
+roles[448].checked: on
+roles[448].id: 879
+roles[448].name: ROLE_DISPUTE_GLOBAL_CREATE
+roles[448].description: Global Create
+roles[448].entityTypeId: 28
+roles[449].checked: on
+roles[449].id: 719
+roles[449].name: ROLE_DISPUTE_BULK_CREATE
+roles[449].description: Bulk Create
+roles[449].entityTypeId: 28
+roles[450].checked: on
+roles[450].id: 557
+roles[450].name: ROLE_DISPUTE_CLONE
+roles[450].description: Clone Dispute
+roles[450].entityTypeId: 28
+roles[451].checked: on
+roles[451].id: 554
+roles[451].name: ROLE_DISPUTE_EDIT
+roles[451].description: Edit
+roles[451].entityTypeId: 28
+roles[452].checked: on
+roles[452].id: 722
+roles[452].name: ROLE_DISPUTE_BULK_UPDATE
+roles[452].description: Bulk Update (excel)
+roles[452].entityTypeId: 28
+roles[453].checked: on
+roles[453].id: 556
+roles[453].name: ROLE_DISPUTE_LIST
+roles[453].description: Show Quick Link
+roles[453].entityTypeId:
+roles[454].checked: on
+roles[454].id: 555
+roles[454].name: ROLE_DISPUTE_SHOW
+roles[454].description: Show
+roles[454].entityTypeId: 28
+roles[455].checked: on
+roles[455].id: 547
+roles[455].name: ROLE_DISPUTE_ON_HOLD
+roles[455].description: On Hold / Activate
+roles[455].entityTypeId: 28
+roles[456].checked: on
+roles[456].id: 551
+roles[456].name: ROLE_DISPUTE_ACTIVATE
+roles[456].description: Activate Dispute
+roles[456].entityTypeId: 28
+roles[457].checked: on
+roles[457].id: 550
+roles[457].name: ROLE_DISPUTE_ARCHIVE
+roles[457].description: Archive / Restore
+roles[457].entityTypeId: 28
+roles[458].checked: on
+roles[458].id: 552
+roles[458].name: ROLE_DISPUTE_UNARCHIVE
+roles[458].description: Unarchive Dispute
+roles[458].entityTypeId: 28
+roles[459].checked: on
+roles[459].id: 543
+roles[459].name: ROLE_DISPUTE_APPROVE
+roles[459].description: Approve / Reject
+roles[459].entityTypeId:
+roles[460].checked: on
+roles[460].id: 558
+roles[460].name: ROLE_DISPUTE_DELETE
+roles[460].description: Delete
+roles[460].entityTypeId: 28
+roles[461].checked: on
+roles[461].id: 560
+roles[461].name: ROLE_DISPUTE_COMMENT
+roles[461].description: Comment
+roles[461].entityTypeId: 28
+roles[462].checked: on
+roles[462].id: 544
+roles[462].name: ROLE_DISPUTE_REJECT
+roles[462].description: Reject Dispute
+roles[462].entityTypeId:
+roles[463].checked: on
+roles[463].id: 545
+roles[463].name: ROLE_DISPUTE_ASSIGN
+roles[463].description: Assign
+roles[463].entityTypeId:
+roles[464].checked: on
+roles[464].id: 546
+roles[464].name: ROLE_DISPUTE_COMPLETE
+roles[464].description: Close
+roles[464].entityTypeId:
+roles[465].checked: on
+roles[465].id: 559
+roles[465].name: ROLE_DISPUTE_RESOLVED
+roles[465].description: Dispute Resolved
+roles[465].entityTypeId:
+roles[466].checked: on
+roles[466].id: 664
+roles[466].name: ROLE_DISPUTE_LIST_DOWNLOAD
+roles[466].description: Download Quick Link
+roles[466].entityTypeId:
+roles[467].checked: on
+roles[467].id: 553
+roles[467].name: ROLE_DISPUTE_CREATE_ACTION
+roles[467].description: Create Actions
+roles[467].entityTypeId:
+roles[468].checked: on
+roles[468].id: 549
+roles[468].name: ROLE_DISPUTE_PENDING_INTERPRETATION
+roles[468].description: Pending Interpretation
+roles[468].entityTypeId:
+roles[469].checked: on
+roles[469].id: 548
+roles[469].name: ROLE_DISPUTE_PENDING_CR
+roles[469].description: Pending CR
+roles[469].entityTypeId:
+roles[470].checked: on
+roles[470].id: 491
+roles[470].name: ROLE_CONTRACT_TEMPLATE_CREATE
+roles[470].description: Create
+roles[470].entityTypeId: 140
+roles[471].checked: on
+roles[471].id: 693
+roles[471].name: ROLE_CONTRACT_TEMPLATE_BULK_CREATE
+roles[471].description: Bulk Create Contract Templates
+roles[471].entityTypeId: 140
+roles[472].checked: on
+roles[472].id: 492
+roles[472].name: ROLE_CONTRACT_TEMPLATE_EDIT
+roles[472].description: Edit
+roles[472].entityTypeId: 140
+roles[473].checked: on
+roles[473].id: 516
+roles[473].name: ROLE_CONTRACT_TEMPLATE_CLONE
+roles[473].description: Clone Contract Template
+roles[473].entityTypeId: 140
+roles[474].checked: on
+roles[474].id: 493
+roles[474].name: ROLE_CONTRACT_TEMPLATE_SHOW
+roles[474].description: Show
+roles[474].entityTypeId: 140
+roles[475].checked: on
+roles[475].id: 494
+roles[475].name: ROLE_CONTRACT_TEMPLATE_DELETE
+roles[475].description: Delete
+roles[475].entityTypeId: 140
+roles[476].checked: on
+roles[476].id: 495
+roles[476].name: ROLE_CONTRACT_TEMPLATE_ARCHIVE
+roles[476].description: Archive / Restore
+roles[476].entityTypeId: 140
+roles[477].checked: on
+roles[477].id: 496
+roles[477].name: ROLE_CONTRACT_TEMPLATE_UNARCHIVE
+roles[477].description: Unarchive
+roles[477].entityTypeId: 140
+roles[478].checked: on
+roles[478].id: 497
+roles[478].name: ROLE_CONTRACT_TEMPLATE_ON_HOLD
+roles[478].description: On Hold / Activate
+roles[478].entityTypeId: 140
+roles[479].checked: on
+roles[479].id: 498
+roles[479].name: ROLE_CONTRACT_TEMPLATE_ACTIVATE
+roles[479].description: Activate
+roles[479].entityTypeId: 140
+roles[480].checked: on
+roles[480].id: 499
+roles[480].name: ROLE_CONTRACT_TEMPLATE_COMMENT
+roles[480].description: Comment
+roles[480].entityTypeId: 140
+roles[481].checked: on
+roles[481].id: 500
+roles[481].name: ROLE_CONTRACT_TEMPLATE_LIST
+roles[481].description: Show Quick Link
+roles[481].entityTypeId: 140
+roles[482].checked: on
+roles[482].id: 604
+roles[482].name: ROLE_CONTRACT_TEMPLATE_DOWNLOAD
+roles[482].description: Download Contract Template
+roles[482].entityTypeId: 140
+roles[483].checked: on
+roles[483].id: 572
+roles[483].name: ROLE_CONTRACT_TEMPLATE_LIST_DOWNLOAD
+roles[483].description: Download Quick Link
+roles[483].entityTypeId:
+roles[484].checked: on
+roles[484].id: 613
+roles[484].name: ROLE_BULK_UPDATE_CLAUSE
+roles[484].description: Bulk Update Clause
+roles[484].entityTypeId: 140
+roles[485].checked: on
+roles[485].id: 614
+roles[485].name: ROLE_ENABLE_FORMATTING
+roles[485].description: Enable Formatting
+roles[485].entityTypeId: 140
+roles[486].checked: on
+roles[486].id: 912
+roles[486].name: ROLE_ATTACHMENT_ZIP_DOWNLOAD
+roles[486].description: Download Template & Attachments
+roles[486].entityTypeId: 140
+roles[487].checked: on
+roles[487].id: 588
+roles[487].name: ROLE_CONTRACT_ENTITY_SHOW
+roles[487].description: Show
+roles[487].entityTypeId: 72
+roles[488].checked: on
+roles[488].id: 586
+roles[488].name: ROLE_CONTRACT_ENTITY_CREATE
+roles[488].description: Create
+roles[488].entityTypeId: 72
+roles[489].checked: on
+roles[489].id: 587
+roles[489].name: ROLE_CONTRACT_ENTITY_EDIT
+roles[489].description: Edit
+roles[489].entityTypeId: 72
+roles[490].checked: on
+roles[490].id: 589
+roles[490].name: ROLE_CONTRACT_ENTITY_LIST
+roles[490].description: List
+roles[490].entityTypeId: 72
+roles[491].checked: on
+roles[491].id: 504
+roles[491].name: ROLE_CDR_CREATE
+roles[491].description: Create
+roles[491].entityTypeId: 160
+roles[492].checked: on
+roles[492].id: 517
+roles[492].name: ROLE_CDR_CLONE
+roles[492].description: Clone Contract Draft Request
+roles[492].entityTypeId: 160
+roles[493].checked: on
+roles[493].id: 505
+roles[493].name: ROLE_CDR_EDIT
+roles[493].description: Edit
+roles[493].entityTypeId: 160
+roles[494].checked: on
+roles[494].id: 506
+roles[494].name: ROLE_CDR_SHOW
+roles[494].description: Show
+roles[494].entityTypeId: 160
+roles[495].checked: on
+roles[495].id: 507
+roles[495].name: ROLE_CDR_DELETE
+roles[495].description: Delete
+roles[495].entityTypeId: 160
+roles[496].checked: on
+roles[496].id: 508
+roles[496].name: ROLE_CDR_ARCHIVE
+roles[496].description: Archive / Restore
+roles[496].entityTypeId: 160
+roles[497].checked: on
+roles[497].id: 509
+roles[497].name: ROLE_CDR_UNARCHIVE
+roles[497].description: Unarchive
+roles[497].entityTypeId: 160
+roles[498].checked: on
+roles[498].id: 510
+roles[498].name: ROLE_CDR_ON_HOLD
+roles[498].description: On Hold / Activate
+roles[498].entityTypeId: 160
+roles[499].checked: on
+roles[499].id: 511
+roles[499].name: ROLE_CDR_ACTIVATE
+roles[499].description: Activate
+roles[499].entityTypeId: 160
+roles[500].checked: on
+roles[500].id: 512
+roles[500].name: ROLE_CDR_COMMENT
+roles[500].description: Comment
+roles[500].entityTypeId: 160
+roles[501].checked: on
+roles[501].id: 513
+roles[501].name: ROLE_CDR_LIST
+roles[501].description: Show Quick Link
+roles[501].entityTypeId: 160
+roles[502].checked: on
+roles[502].id: 602
+roles[502].name: ROLE_CDR_ADD_REQUEST
+roles[502].description: Add Request
+roles[502].entityTypeId: 160
+roles[503].checked: on
+roles[503].id: 569
+roles[503].name: ROLE_CDR_LIST_DOWNLOAD
+roles[503].description: Download Quick Link
+roles[503].entityTypeId:
+roles[504].checked: on
+roles[504].id: 718
+roles[504].name: ROLE_ALLOW_DIGITAL_SIGNATURE_CDR
+roles[504].description: Allow Digital Signature
+roles[504].entityTypeId: 160
+roles[505].checked: on
+roles[505].id: 610
+roles[505].name: ROLE_CDR_DOWNLOAD_AUDIT_DOC
+roles[505].description: Download Communication Attachments
+roles[505].entityTypeId: 160
+roles[506].checked: on
+roles[506].id: 710
+roles[506].name: ROLE_CONTRACT_DOCUMENT_STATUS_CDR
+roles[506].description: Mark Document as Final/Draft
+roles[506].entityTypeId: 160
+roles[507].checked: on
+roles[507].id: 702
+roles[507].name: ROLE_CDR_DRAFT_DOCUMENT_UPLOAD
+roles[507].description: Upload Contract Document
+roles[507].entityTypeId: 160
+roles[508].checked: on
+roles[508].id: 743
+roles[508].name: ROLE_CDR_DRAFT_RESTRICT_DOCUMENT_UPLOAD
+roles[508].description: Upload Executed Contract
+roles[508].entityTypeId: 160
+roles[509].checked: on
+roles[509].id: 713
+roles[509].name: ROLE_DOCUMENT_DOMAIN_CDR
+roles[509].description: Document Classification
+roles[509].entityTypeId: 160
+roles[510].checked: on
+roles[510].id: 720
+roles[510].name: ROLE_CDR_LINK_ENTITY
+roles[510].description: Link Entities
+roles[510].entityTypeId: 160
+roles[511].checked: on
+roles[511].id: 747
+roles[511].name: ROLE_SHARE_WITH_SUPPLIER_CDR
+roles[511].description: Share with Supplier
+roles[511].entityTypeId: 160
+roles[512].checked: on
+roles[512].id: 905
+roles[512].name: ROLE_DOCUMENT_TAG_CDR
+roles[512].description: Document Tags
+roles[512].entityTypeId: 160
+roles[513].checked: on
+roles[513].id: 590
+roles[513].name: ROLE_PURCHASE_ORDER_CREATE
+roles[513].description: Create / Clone
+roles[513].entityTypeId: 181
+roles[514].checked: on
+roles[514].id: 746
+roles[514].name: ROLE_PURCHASE_ORDER_BULK_CREATE
+roles[514].description: Bulk Create
+roles[514].entityTypeId: 181
+roles[515].checked: on
+roles[515].id: 591
+roles[515].name: ROLE_PURCHASE_ORDER_CLONE
+roles[515].description: Clone
+roles[515].entityTypeId: 181
+roles[516].checked: on
+roles[516].id: 601
+roles[516].name: ROLE_PURCHASE_ORDER_LIST_DOWNLOAD
+roles[516].description: Download Quick Link
+roles[516].entityTypeId:
+roles[517].checked: on
+roles[517].id: 592
+roles[517].name: ROLE_PURCHASE_ORDER_EDIT
+roles[517].description: Edit
+roles[517].entityTypeId: 181
+roles[518].checked: on
+roles[518].id: 593
+roles[518].name: ROLE_PURCHASE_ORDER_SHOW
+roles[518].description: Show
+roles[518].entityTypeId: 181
+roles[519].checked: on
+roles[519].id: 594
+roles[519].name: ROLE_PURCHASE_ORDER_DELETE
+roles[519].description: Delete
+roles[519].entityTypeId: 181
+roles[520].checked: on
+roles[520].id: 595
+roles[520].name: ROLE_PURCHASE_ORDER_ARCHIVE
+roles[520].description: Archive / Restore
+roles[520].entityTypeId: 181
+roles[521].checked: on
+roles[521].id: 596
+roles[521].name: ROLE_PURCHASE_ORDER_UNARCHIVE
+roles[521].description: Unarchive
+roles[521].entityTypeId: 181
+roles[522].checked: on
+roles[522].id: 597
+roles[522].name: ROLE_PURCHASE_ORDER_ON_HOLD
+roles[522].description: On Hold / Activate
+roles[522].entityTypeId: 181
+roles[523].checked: on
+roles[523].id: 598
+roles[523].name: ROLE_PURCHASE_ORDER_ACTIVATE
+roles[523].description: Activate
+roles[523].entityTypeId: 181
+roles[524].checked: on
+roles[524].id: 599
+roles[524].name: ROLE_PURCHASE_ORDER_COMMENT
+roles[524].description: Comment
+roles[524].entityTypeId: 181
+roles[525].checked: on
+roles[525].id: 600
+roles[525].name: ROLE_PURCHASE_ORDER_LIST
+roles[525].description: Show Quick Link
+roles[525].entityTypeId: 181
+roles[526].checked: on
+roles[526].id: 651
+roles[526].name: ROLE_INVOICE_LINE_ITEM_CREATE
+roles[526].description: Create / Clone
+roles[526].entityTypeId: 165
+roles[527].checked: on
+roles[527].id: 652
+roles[527].name: ROLE_INVOICE_LINE_ITEM_CLONE
+roles[527].description: Clone
+roles[527].entityTypeId: 165
+roles[528].checked: on
+roles[528].id: 539
+roles[528].name: ROLE_INVOICE_LINE_ITEM_BULK_CREATE
+roles[528].description: Bulk Create
+roles[528].entityTypeId: 165
+roles[529].checked: on
+roles[529].id: 913
+roles[529].name: ROLE_SELECT_INVOICE_LINE_ITEM
+roles[529].description: Select Invoice Line Items
+roles[529].entityTypeId: 165
+roles[530].checked: on
+roles[530].id: 541
+roles[530].name: ROLE_INVOICE_LINE_ITEM_EDIT
+roles[530].description: Edit
+roles[530].entityTypeId: 165
+roles[531].checked: on
+roles[531].id: 653
+roles[531].name: ROLE_INVOICE_LINE_ITEM_SHOW
+roles[531].description: Show
+roles[531].entityTypeId: 165
+roles[532].checked: on
+roles[532].id: 654
+roles[532].name: ROLE_INVOICE_LINE_ITEM_DELETE
+roles[532].description: Delete
+roles[532].entityTypeId: 165
+roles[533].checked: on
+roles[533].id: 655
+roles[533].name: ROLE_INVOICE_LINE_ITEM_ARCHIVE
+roles[533].description: Archive / Restore
+roles[533].entityTypeId: 165
+roles[534].checked: on
+roles[534].id: 656
+roles[534].name: ROLE_INVOICE_LINE_ITEM_UNARCHIVE
+roles[534].description: Unarchive
+roles[534].entityTypeId: 165
+roles[535].checked: on
+roles[535].id: 657
+roles[535].name: ROLE_INVOICE_LINE_ITEM_ON_HOLD
+roles[535].description: On Hold / Activate
+roles[535].entityTypeId: 165
+roles[536].checked: on
+roles[536].id: 658
+roles[536].name: ROLE_INVOICE_LINE_ITEM_ACTIVATE
+roles[536].description: Activate
+roles[536].entityTypeId: 165
+roles[537].checked: on
+roles[537].id: 659
+roles[537].name: ROLE_INVOICE_LINE_ITEM_COMMENT
+roles[537].description: Comment
+roles[537].entityTypeId: 165
+roles[538].checked: on
+roles[538].id: 660
+roles[538].name: ROLE_INVOICE_LINE_ITEM_LIST
+roles[538].description: Show Quick Link
+roles[538].entityTypeId: 165
+roles[539].checked: on
+roles[539].id: 666
+roles[539].name: ROLE_INVOICE_LINE_ITEM_BULK_ACTION
+roles[539].description: Bulk Action
+roles[539].entityTypeId: 165
+roles[540].checked: on
+roles[540].id: 540
+roles[540].name: ROLE_INVOICE_DOWNLOAD_LINE_ITEM
+roles[540].description: Download Quick Link
+roles[540].entityTypeId: 67
+roles[541].checked: on
+roles[541].id: 157
+roles[541].name: ROLE_CONTRACT_SERVICE_DATA_CREATE
+roles[541].description: Create / Clone
+roles[541].entityTypeId: 64
+roles[542].checked: on
+roles[542].id: 584
+roles[542].name: ROLE_CONTRACT_SERVICE_DATA_BULK_UPLOAD
+roles[542].description: Bulk Create
+roles[542].entityTypeId: 64
+roles[543].checked: on
+roles[543].id: 178
+roles[543].name: ROLE_CONTRACT_SERVICE_DATA_EDIT
+roles[543].description: Edit
+roles[543].entityTypeId: 64
+roles[544].checked: on
+roles[544].id: 725
+roles[544].name: ROLE_BULK_EDIT_SERVICE_DATA
+roles[544].description: Bulk Edit
+roles[544].entityTypeId: 64
+roles[545].checked: on
+roles[545].id: 158
+roles[545].name: ROLE_CONTRACT_SERVICE_DATA_SHOW
+roles[545].description: Show
+roles[545].entityTypeId: 64
+roles[546].checked: on
+roles[546].id: 159
+roles[546].name: ROLE_CONTRACT_SERVICE_DATA_LIST
+roles[546].description: Show Quick Link
+roles[546].entityTypeId: 64
+roles[547].checked: on
+roles[547].id: 721
+roles[547].name: ROLE_CONTRACT_SERVICE_DATA_LIST_DEFAULT
+roles[547].description: Quick Link - Default
+roles[547].entityTypeId: 64
+roles[548].checked: on
+roles[548].id: 160
+roles[548].name: ROLE_CONTRACT_SERVICE_DATA_DELETE
+roles[548].description: Delete
+roles[548].entityTypeId: 64
+roles[549].checked: on
+roles[549].id: 629
+roles[549].name: ROLE_CONTRACT_SERVICE_DATA_ARCHIVE
+roles[549].description: Archive / Restore
+roles[549].entityTypeId: 64
+roles[550].checked: on
+roles[550].id: 630
+roles[550].name: ROLE_CONTRACT_SERVICE_DATA_ON_HOLD
+roles[550].description: On Hold / Activate
+roles[550].entityTypeId: 64
+roles[551].checked: on
+roles[551].id: 643
+roles[551].name: ROLE_CONTRACT_SERVICE_DATA_CLONE
+roles[551].description: Clone Service Data
+roles[551].entityTypeId: 64
+roles[552].checked: on
+roles[552].id: 644
+roles[552].name: ROLE_CONTRACT_SERVICE_DATA_RESTORE
+roles[552].description: Restore Service Data
+roles[552].entityTypeId: 64
+roles[553].checked: on
+roles[553].id: 645
+roles[553].name: ROLE_CONTRACT_SERVICE_DATA_ACTIVATE
+roles[553].description: Activate Service Data
+roles[553].entityTypeId: 64
+roles[554].checked: on
+roles[554].id: 646
+roles[554].name: ROLE_CONTRACT_SERVICE_DATA_LIST_DOWNLOAD
+roles[554].description: Download Quick Link
+roles[554].entityTypeId: 64
+roles[555].checked: on
+roles[555].id: 895
+roles[555].name: ROLE_SERVICE_DATA_COMMENT
+roles[555].description: Comment
+roles[555].entityTypeId: 64
+roles[556].checked: on
+roles[556].id: 690
+roles[556].name: ROLE_CONTRACT_SERVICE_DATA_BULK_ACTION
+roles[556].description: Bulk Action
+roles[556].entityTypeId: 64
+roles[557].checked: on
+roles[557].id: 677
+roles[557].name: ROLE_SERVICE_DATA_CONSUMPTION_SHOW
+roles[557].description: Show
+roles[557].entityTypeId: 176
+roles[558].checked: on
+roles[558].id: 678
+roles[558].name: ROLE_SERVICE_DATA_CONSUMPTION_EDIT
+roles[558].description: Edit
+roles[558].entityTypeId: 176
+roles[559].checked: on
+roles[559].id: 605
+roles[559].name: ROLE_SERVICE_DATA_CONSUMPTION_BULK_UPLOAD
+roles[559].description: Bulk Update (excel)
+roles[559].entityTypeId: 176
+roles[560].checked: on
+roles[560].id: 679
+roles[560].name: ROLE_SERVICE_DATA_CONSUMPTION_DELETE
+roles[560].description: Delete
+roles[560].entityTypeId: 176
+roles[561].checked: on
+roles[561].id: 680
+roles[561].name: ROLE_SERVICE_DATA_CONSUMPTION_ARCHIVE
+roles[561].description: Archive / Restore
+roles[561].entityTypeId: 176
+roles[562].checked: on
+roles[562].id: 681
+roles[562].name: ROLE_SERVICE_DATA_CONSUMPTION_UNARCHIVE
+roles[562].description: Unarchive
+roles[562].entityTypeId: 176
+roles[563].checked: on
+roles[563].id: 682
+roles[563].name: ROLE_SERVICE_DATA_CONSUMPTION_ON_HOLD
+roles[563].description: On Hold / Activate
+roles[563].entityTypeId: 176
+roles[564].checked: on
+roles[564].id: 683
+roles[564].name: ROLE_SERVICE_DATA_CONSUMPTION_ACTIVATE
+roles[564].description: Activate
+roles[564].entityTypeId: 176
+roles[565].checked: on
+roles[565].id: 684
+roles[565].name: ROLE_SERVICE_DATA_CONSUMPTION_COMMENT
+roles[565].description: Comment/Attachments
+roles[565].entityTypeId: 176
+roles[566].checked: on
+roles[566].id: 705
+roles[566].name: ROLE_CONSUMPTION_BULK_ATTACHMENT_UPLOAD
+roles[566].description: Bulk Upload Comments/Attachments
+roles[566].entityTypeId: 176
+roles[567].checked: on
+roles[567].id: 685
+roles[567].name: ROLE_SERVICE_DATA_CONSUMPTION_BULK_ACTION
+roles[567].description: Bulk Action
+roles[567].entityTypeId: 176
+roles[568].checked: on
+roles[568].id: 686
+roles[568].name: ROLE_SERVICE_DATA_CONSUMPTION_LIST
+roles[568].description: Show Quick Link
+roles[568].entityTypeId: 176
+roles[569].checked: on
+roles[569].id: 689
+roles[569].name: ROLE_SERVICE_DATA_CONSUMPTION_LIST_DOWNLOAD
+roles[569].description: Download Quick Link
+roles[569].entityTypeId: 176
+reportRoles[0].checked: on
+reportRoles[0].id: 68
+reportRoles[0].name: Actions - Aging
+reportRoles[1].checked: on
+reportRoles[1].id: 73
+reportRoles[1].name: Actions - Aging Trend
+reportRoles[2].checked: on
+reportRoles[2].id: 70
+reportRoles[2].name: Actions - By Governance Body
+reportRoles[3].checked: on
+reportRoles[3].id: 66
+reportRoles[3].name: Actions - Cycle Time
+reportRoles[4].checked: on
+reportRoles[4].id: 67
+reportRoles[4].name: Actions - Cycle Time Trend
+reportRoles[5].checked: on
+reportRoles[5].id: 65
+reportRoles[5].name: Actions - High Priority
+reportRoles[6].checked: on
+reportRoles[6].id: 1003
+reportRoles[6].name: Actions - Lead Time
+reportRoles[7].checked: on
+reportRoles[7].id: 62
+reportRoles[7].name: Actions - New
+reportRoles[8].checked: on
+reportRoles[8].id: 140
+reportRoles[8].name: Actions - Overdue At Any Point
+reportRoles[9].checked: on
+reportRoles[9].id: 63
+reportRoles[9].name: Actions - Overdue, High Aging
+reportRoles[10].checked: on
+reportRoles[10].id: 141
+reportRoles[10].name: Actions - Rejected At Any Point
+reportRoles[11].checked: on
+reportRoles[11].id: 287
+reportRoles[11].name: Actions - Status Transition Report
+reportRoles[12].checked: on
+reportRoles[12].id: 71
+reportRoles[12].name: Actions - Tracker
+reportRoles[13].checked: on
+reportRoles[13].id: 72
+reportRoles[13].name: Actions - Volume Trend
+reportRoles[14].checked: on
+reportRoles[14].id: 64
+reportRoles[14].name: Actions - With Financial Impact
+reportRoles[15].checked: on
+reportRoles[15].id: 53
+reportRoles[15].name: Child Obligations - Aging
+reportRoles[16].checked: on
+reportRoles[16].id: 54
+reportRoles[16].name: Child Obligations - Aging Trend
+reportRoles[17].checked: on
+reportRoles[17].id: 48
+reportRoles[17].name: Child Obligations - Critical Deliverables
+reportRoles[18].checked: on
+reportRoles[18].id: 45
+reportRoles[18].name: Child Obligations - Cycle Time
+reportRoles[19].checked: on
+reportRoles[19].id: 46
+reportRoles[19].name: Child Obligations - Cycle Time Trend
+reportRoles[20].checked: on
+reportRoles[20].id: 55
+reportRoles[20].name: Child Obligations - Financial Impact
+reportRoles[21].checked: on
+reportRoles[21].id: 56
+reportRoles[21].name: Child Obligations - Financial Impacted Milestones
+reportRoles[22].checked: on
+reportRoles[22].id: 1009
+reportRoles[22].name: Child Obligations - Lead Time
+reportRoles[23].checked: on
+reportRoles[23].id: 50
+reportRoles[23].name: Child Obligations - Overdue
+reportRoles[24].checked: on
+reportRoles[24].id: 107
+reportRoles[24].name: Child Obligations - Overdue At Any Point
+reportRoles[25].checked: on
+reportRoles[25].id: 49
+reportRoles[25].name: Child Obligations - Rejected
+reportRoles[26].checked: on
+reportRoles[26].id: 108
+reportRoles[26].name: Child Obligations - Rejected At Any Point
+reportRoles[27].checked: on
+reportRoles[27].id: 286
+reportRoles[27].name: Child Obligations - Status Transition Report
+reportRoles[28].checked: on
+reportRoles[28].id: 47
+reportRoles[28].name: Child Obligations - Tracker
+reportRoles[29].checked: on
+reportRoles[29].id: 51
+reportRoles[29].name: Child Obligations - Upcoming
+reportRoles[30].checked: on
+reportRoles[30].id: 52
+reportRoles[30].name: Child Obligations - Upcoming and Rejected Milestones
+reportRoles[31].checked: on
+reportRoles[31].id: 162
+reportRoles[31].name: Child Service Level - Detailed Performance
+reportRoles[32].checked: on
+reportRoles[32].id: 266
+reportRoles[32].name: Child Service Level - Performance Trend
+reportRoles[33].checked: on
+reportRoles[33].id: 1005
+reportRoles[33].name: Child Service Levels - Lead Time
+reportRoles[34].checked: on
+reportRoles[34].id: 116
+reportRoles[34].name: Child Service Levels - Overdue
+reportRoles[35].checked: on
+reportRoles[35].id: 112
+reportRoles[35].name: Child Service Levels - Overdue At Any Point
+reportRoles[36].checked: on
+reportRoles[36].id: 94
+reportRoles[36].name: Child Service Levels - Performance
+reportRoles[37].checked: on
+reportRoles[37].id: 117
+reportRoles[37].name: Child Service Levels - Rejected
+reportRoles[38].checked: on
+reportRoles[38].id: 111
+reportRoles[38].name: Child Service Levels - Rejected At Any Point
+reportRoles[39].checked: on
+reportRoles[39].id: 277
+reportRoles[39].name: Child Service Level - Status Transition Report
+reportRoles[40].checked: on
+reportRoles[40].id: 172
+reportRoles[40].name: New donut report - Child SLA Performance
+reportRoles[41].checked: on
+reportRoles[41].id: 1012
+reportRoles[41].name: Consumption - Lead time
+reportRoles[42].checked: on
+reportRoles[42].id: 276
+reportRoles[42].name: Consumption - Status Transition Report
+reportRoles[43].checked: on
+reportRoles[43].id: 274
+reportRoles[43].name: Consumption - Tracker
+reportRoles[44].checked: on
+reportRoles[44].id: 275
+reportRoles[44].name: Consumption - Variance
+reportRoles[45].checked: on
+reportRoles[45].id: 282
+reportRoles[45].name: Contract Approval Report
+reportRoles[46].checked: on
+reportRoles[46].id: 81
+reportRoles[46].name: Contract - Deal summary report
+reportRoles[47].checked: on
+reportRoles[47].id: 262
+reportRoles[47].name: Contract - HSSO 12 MONTH PIPELINE REPORT (X Perpetual)
+reportRoles[48].checked: on
+reportRoles[48].id: 80
+reportRoles[48].name: Contract - PIPELINE REPORT
+reportRoles[49].checked: on
+reportRoles[49].id: 260
+reportRoles[49].name: Contract - PIPELINE REPORT - NEW
+reportRoles[50].checked: on
+reportRoles[50].id: 78
+reportRoles[50].name: Contracts - Expiring Within One Year
+reportRoles[51].checked: on
+reportRoles[51].id: 79
+reportRoles[51].name: Contracts - Financials
+reportRoles[52].checked: on
+reportRoles[52].id: 1000
+reportRoles[52].name: Contracts - Lead Time
+reportRoles[53].checked: on
+reportRoles[53].id: 82
+reportRoles[53].name: Contract - Top deal/monthly status report
+reportRoles[54].checked: on
+reportRoles[54].id: 113
+reportRoles[54].name: Change Requests - Aging
+reportRoles[55].checked: on
+reportRoles[55].id: 191
+reportRoles[55].name: Change Requests - Aging Trend
+reportRoles[56].checked: on
+reportRoles[56].id: 114
+reportRoles[56].name: Change Requests - Cycle Time
+reportRoles[57].checked: on
+reportRoles[57].id: 192
+reportRoles[57].name: Change Requests - Cycle Time Trend
+reportRoles[58].checked: on
+reportRoles[58].id: 120
+reportRoles[58].name: Change Requests - High Priority
+reportRoles[59].checked: on
+reportRoles[59].id: 1007
+reportRoles[59].name: Change Requests - Lead Time
+reportRoles[60].checked: on
+reportRoles[60].id: 270
+reportRoles[60].name: Change Requests - Status Transition Report
+reportRoles[61].checked: on
+reportRoles[61].id: 99
+reportRoles[61].name: Change Requests - Tracker
+reportRoles[62].checked: on
+reportRoles[62].id: 278
+reportRoles[62].name: Change Requests - Workflow Task Details Report
+reportRoles[63].checked: on
+reportRoles[63].id: 284
+reportRoles[63].name: Contract Draft Request Activity Report
+reportRoles[64].checked: on
+reportRoles[64].id: 283
+reportRoles[64].name: Contract Draft Request Approval Report
+reportRoles[65].checked: on
+reportRoles[65].id: 1011
+reportRoles[65].name: Contract Draft Request- Lead Time
+reportRoles[66].checked: on
+reportRoles[66].id: 290
+reportRoles[66].name: Contract Draft Request- Status Transition Report
+reportRoles[67].checked: on
+reportRoles[67].id: 265
+reportRoles[67].name: Contract Draft Request- Tracker
+reportRoles[68].checked: on
+reportRoles[68].id: 91
+reportRoles[68].name: Interpretations - Aging
+reportRoles[69].checked: on
+reportRoles[69].id: 97
+reportRoles[69].name: Interpretations - Cycle Time
+reportRoles[70].checked: on
+reportRoles[70].id: 90
+reportRoles[70].name: Interpretations - FAQ
+reportRoles[71].checked: on
+reportRoles[71].id: 1004
+reportRoles[71].name: Interpretations - Lead Time
+reportRoles[72].checked: on
+reportRoles[72].id: 89
+reportRoles[72].name: Interpretations - Tracker
+reportRoles[73].checked: on
+reportRoles[73].id: 102
+reportRoles[73].name: Interpretations - Volume Trend
+reportRoles[74].checked: on
+reportRoles[74].id: 272
+reportRoles[74].name: Claims Realization Tracker
+reportRoles[75].checked: on
+reportRoles[75].id: 168
+reportRoles[75].name: Dispute - Tracker
+reportRoles[76].checked: on
+reportRoles[76].id: 251
+reportRoles[76].name: Governance Body- Tracker
+reportRoles[77].checked: on
+reportRoles[77].id: 254
+reportRoles[77].name: Governance Body Meeting- Tracker
+reportRoles[78].checked: on
+reportRoles[78].id: 118
+reportRoles[78].name: Invoices - Aging
+reportRoles[79].checked: on
+reportRoles[79].id: 119
+reportRoles[79].name: Invoices - Cycle Time
+reportRoles[80].checked: on
+reportRoles[80].id: 103
+reportRoles[80].name: Invoices - Discrepancy
+reportRoles[81].checked: on
+reportRoles[81].id: 106
+reportRoles[81].name: Invoices - Dispute
+reportRoles[82].checked: on
+reportRoles[82].id: 1008
+reportRoles[82].name: Invoices - Lead Time
+reportRoles[83].checked: on
+reportRoles[83].id: 104
+reportRoles[83].name: Invoices - Payment Overdue
+reportRoles[84].checked: on
+reportRoles[84].id: 105
+reportRoles[84].name: Invoices - Receipt Overdue
+reportRoles[85].checked: on
+reportRoles[85].id: 115
+reportRoles[85].name: Invoices - Rejected
+reportRoles[86].checked: on
+reportRoles[86].id: 241
+reportRoles[86].name: Invoices - Rejected At Any Point
+reportRoles[87].checked: on
+reportRoles[87].id: 285
+reportRoles[87].name: Invoice - Status Transition Report
+reportRoles[88].checked: on
+reportRoles[88].id: 93
+reportRoles[88].name: Invoices - Tracker
+reportRoles[89].checked: on
+reportRoles[89].id: 269
+reportRoles[89].name: Invoice Line Item - Tracker
+reportRoles[90].checked: on
+reportRoles[90].id: 38
+reportRoles[90].name: Issues - Aging
+reportRoles[91].checked: on
+reportRoles[91].id: 39
+reportRoles[91].name: Issues - Aging Trend
+reportRoles[92].checked: on
+reportRoles[92].id: 44
+reportRoles[92].name: Issues - By Governance Body
+reportRoles[93].checked: on
+reportRoles[93].id: 40
+reportRoles[93].name: Issues - Cycle Time
+reportRoles[94].checked: on
+reportRoles[94].id: 41
+reportRoles[94].name: Issues - Cycle Time Trend
+reportRoles[95].checked: on
+reportRoles[95].id: 122
+reportRoles[95].name: ISSUES - ESCALATED TO DISPUTE AT ANY POINT
+reportRoles[96].checked: on
+reportRoles[96].id: 36
+reportRoles[96].name: Issues - High Priority
+reportRoles[97].checked: on
+reportRoles[97].id: 1002
+reportRoles[97].name: Issues - Lead Time
+reportRoles[98].checked: on
+reportRoles[98].id: 32
+reportRoles[98].name: Issues - New
+reportRoles[99].checked: on
+reportRoles[99].id: 124
+reportRoles[99].name: ISSUES - OVERDUE AT ANY POINT
+reportRoles[100].checked: on
+reportRoles[100].id: 33
+reportRoles[100].name: Issues - Overdue, Escalated, High Aging
+reportRoles[101].checked: on
+reportRoles[101].id: 123
+reportRoles[101].name: ISSUES - REJECTED AT ANY POINT
+reportRoles[102].checked: on
+reportRoles[102].id: 35
+reportRoles[102].name: Issues - Tracker
+reportRoles[103].checked: on
+reportRoles[103].id: 42
+reportRoles[103].name: Issues - Volume Trend
+reportRoles[104].checked: on
+reportRoles[104].id: 34
+reportRoles[104].name: Issues - With Financial Impact
+reportRoles[105].checked: on
+reportRoles[105].id: 1001
+reportRoles[105].name: Master Obligations - Lead Time
+reportRoles[106].checked: on
+reportRoles[106].id: 193
+reportRoles[106].name: Master Obligations - Tracker
+reportRoles[107].checked: on
+reportRoles[107].id: 101
+reportRoles[107].name: Master Obligations - Triggered
+reportRoles[108].checked: on
+reportRoles[108].id: 273
+reportRoles[108].name: Purchase Order - Tracker Report
+reportRoles[109].checked: on
+reportRoles[109].id: 288
+reportRoles[109].name: Price Book Report
+reportRoles[110].checked: on
+reportRoles[110].id: 289
+reportRoles[110].name: Service Data - Billing Report
+reportRoles[111].checked: on
+reportRoles[111].id: 267
+reportRoles[111].name: Service Data - Tracker
+reportRoles[112].checked: on
+reportRoles[112].id: 100
+reportRoles[112].name: Master Service Levels - Details
+reportRoles[113].checked: on
+reportRoles[113].id: 1010
+reportRoles[113].name: Master Service Levels - Lead Time
+reportRoles[114].checked: on
+reportRoles[114].id: 171
+reportRoles[114].name: Master Service Levels – Performance Trend
+reportRoles[115].checked: on
+reportRoles[115].id: 76
+reportRoles[115].name: Suppliers - Tracker
+reportRoles[116].checked: on
+reportRoles[116].id: 109
+reportRoles[116].name: Work Order Requests - Aging
+reportRoles[117].checked: on
+reportRoles[117].id: 242
+reportRoles[117].name: Work Order Requests - Aging Trend
+reportRoles[118].checked: on
+reportRoles[118].id: 110
+reportRoles[118].name: Work Order Requests - Cycle Time
+reportRoles[119].checked: on
+reportRoles[119].id: 243
+reportRoles[119].name: Work Order Requests - Cycle Time Trend
+reportRoles[120].checked: on
+reportRoles[120].id: 121
+reportRoles[120].name: WORK ORDER REQUESTS - HIGH PRIORITY
+reportRoles[121].checked: on
+reportRoles[121].id: 1006
+reportRoles[121].name: Work Order Requests - Lead Time
+reportRoles[122].checked: on
+reportRoles[122].id: 271
+reportRoles[122].name: Work Order Requests - Status Transition Report
+reportRoles[123].checked: on
+reportRoles[123].id: 261
+reportRoles[123].name: Work Order Requests - Tracker
+reportRoles[124].checked: on
+reportRoles[124].id: 281
+reportRoles[124].name: Work Order Requests - Workflow Task Details Report
+insightRoles[0].checked: on
+insightRoles[0].id: 14
+insightRoles[0].name: Contracts Successfully Ported
+insightRoles[1].checked: on
+insightRoles[1].id: 15
+insightRoles[1].name: Contracts Ready for Porting
+insightRoles[2].checked: on
+insightRoles[2].id: 16
+insightRoles[2].name: Contract Updated Successfully
+insightRoles[3].checked: on
+insightRoles[3].id: 17
+insightRoles[3].name: Contract Update Rejected
+insightRoles[4].checked: on
+insightRoles[4].id: 18
+insightRoles[4].name: Supplier Successfully Updated
+insightRoles[5].checked: on
+insightRoles[5].id: 35
+insightRoles[5].name: Unallocated LEFs
+insightRoles[6].checked: on
+insightRoles[6].id: 19
+insightRoles[6].name: Supplier Update Rejected
+insightRoles[7].checked: on
+insightRoles[7].id: 20
+insightRoles[7].name: EXPIRING CONTRACTS in Next 365 days
+insightRoles[8].checked: on
+insightRoles[8].id: 21
+insightRoles[8].name: OBLIGATION DUE in Next 90 days
+insightRoles[9].checked: on
+insightRoles[9].id: 4
+insightRoles[9].name: PERPETUAL CONTRACTS
+insightRoles[10].checked: on
+insightRoles[10].id: 2
+insightRoles[10].name: CONTRACT TCV > $1M
+insightRoles[11].checked: on
+insightRoles[11].id: 3
+insightRoles[11].name: EXPIRING CONTRACTS in next 180 days
+insightRoles[12].checked: on
+insightRoles[12].id: 1
+insightRoles[12].name: Fixed Term Contracts
+insightRoles[13].checked: on
+insightRoles[13].id: 5
+insightRoles[13].name: EXPIRING CONTRACTS in next 90 days
+insightRoles[14].checked: on
+insightRoles[14].id: 6
+insightRoles[14].name: Perpetual Contracts - Pending review in next 90 days
+insightRoles[15].checked: on
+insightRoles[15].id: 7
+insightRoles[15].name: Auto-Renew Contracts - Pending review in next 90 days
+insightRoles[16].checked: on
+insightRoles[16].id: 8
+insightRoles[16].name: Contracts having notice lead date in next 90 days
+insightRoles[17].checked: on
+insightRoles[17].id: 13
+insightRoles[17].name: Compliance Obligations Not Met
+insightRoles[18].checked: on
+insightRoles[18].id: 9
+insightRoles[18].name: OVERDUE OBLIGATIONS
+insightRoles[19].checked: on
+insightRoles[19].id: 10
+insightRoles[19].name: REJECTED OBLIGATIONS
+insightRoles[20].checked: on
+insightRoles[20].id: 11
+insightRoles[20].name: OPEN ISSUES > 30 DAYS
+insightRoles[21].checked: on
+insightRoles[21].id: 12
+insightRoles[21].name: CONTRACTS EXPIRING
+insightRoles[22].checked: on
+insightRoles[22].id: 28
+insightRoles[22].name: OVERDUE SERVICE LEVELS
+insightRoles[23].checked: on
+insightRoles[23].id: 29
+insightRoles[23].name: SERVICE LEVELS NOT MET (LAST 6 MONTHS)
+insightRoles[24].checked: on
+insightRoles[24].id: 30
+insightRoles[24].name: REJECTED INVOICES
+insightRoles[25].checked: on
+insightRoles[25].id: 31
+insightRoles[25].name: INVOICE AMOUNT (LAST 12 MONTHS)
+insightRoles[26].checked: on
+insightRoles[26].id: 22
+insightRoles[26].name: OBLIGATION DUE in Next 180 days
+insightRoles[27].checked: on
+insightRoles[27].id: 23
+insightRoles[27].name: VODAFONE OBLIGATION DUE in Next 90 days
+insightRoles[28].checked: on
+insightRoles[28].id: 24
+insightRoles[28].name: VODAFONE OBLIGATION DUE in Next 180 days
+insightRoles[29].checked: on
+insightRoles[29].id: 25
+insightRoles[29].name: MILESTONES DUE in Next 90 days
+insightRoles[30].checked: on
+insightRoles[30].id: 26
+insightRoles[30].name: MILESTONES DUE in Next 180 days
+insightRoles[31].checked: on
+insightRoles[31].id: 33
+insightRoles[31].name: Active Cases
+insightRoles[32].checked: on
+insightRoles[32].id: 34
+insightRoles[32].name: Cases Awaiting Allocation
+insightRoles[33].checked: on
+insightRoles[33].id: 39
+insightRoles[33].name: OPEN ACTIONS > 30 DAYS
+insightRoles[34].checked: on
+insightRoles[34].id: 40
+insightRoles[34].name: OPEN DISPUTES > 30 DAYS
+insightRoles[35].checked: on
+insightRoles[35].id: 41
+insightRoles[35].name: Rejected Change Requests
+insightRoles[36].checked: on
+insightRoles[36].id: 42
+insightRoles[36].name: Open Change Requests > 30 Days
+manualReportRoles[0].checked: on
+manualReportRoles[0].id: 10025
+manualReportRoles[0].name:
+manualReportRoles[1].checked: on
+manualReportRoles[1].id: 10026
+manualReportRoles[1].name:
+manualReportRoles[2].id: 10060
+manualReportRoles[2].name:
+manualReportRoles[3].id: 10061
+manualReportRoles[3].name:
+manualReportRoles[4].id: 10062
+manualReportRoles[4].name:
+manualReportRoles[5].id: 10065
+manualReportRoles[5].name:
+manualReportRoles[6].id: 10117
+manualReportRoles[6].name:
+manualReportRoles[7].checked: on
+manualReportRoles[7].id: 10008
+manualReportRoles[7].name:
+manualReportRoles[8].checked: on
+manualReportRoles[8].id: 10032
+manualReportRoles[8].name:
+manualReportRoles[9].checked: on
+manualReportRoles[9].id: 10010
+manualReportRoles[9].name:
+manualReportRoles[10].id: 10070
+manualReportRoles[10].name:
+manualReportRoles[11].checked: on
+manualReportRoles[11].id: 10023
+manualReportRoles[11].name:
+manualReportRoles[12].id: 10035
+manualReportRoles[12].name:
+manualReportRoles[13].id: 10046
+manualReportRoles[13].name:
+manualReportRoles[14].id: 10052
+manualReportRoles[14].name:
+manualReportRoles[15].id: 10053
+manualReportRoles[15].name:
+manualReportRoles[16].id: 10058
+manualReportRoles[16].name:
+manualReportRoles[17].checked: on
+manualReportRoles[17].id: 10006
+manualReportRoles[17].name:
+manualReportRoles[18].id: 10072
+manualReportRoles[18].name:
+manualReportRoles[19].id: 10074
+manualReportRoles[19].name:
+manualReportRoles[20].id: 10116
+manualReportRoles[20].name:
+manualReportRoles[21].checked: on
+manualReportRoles[21].id: 10015
+manualReportRoles[21].name:
+manualReportRoles[22].id: 10037
+manualReportRoles[22].name:
+manualReportRoles[23].checked: on
+manualReportRoles[23].id: 10020
+manualReportRoles[23].name:
+manualReportRoles[24].id: 10040
+manualReportRoles[24].name:
+manualReportRoles[25].id: 10073
+manualReportRoles[25].name:
+manualReportRoles[26].checked: on
+manualReportRoles[26].id: 10016
+manualReportRoles[26].name:
+manualReportRoles[27].checked: on
+manualReportRoles[27].id: 10012
+manualReportRoles[27].name:
+manualReportRoles[28].checked: on
+manualReportRoles[28].id: 10033
+manualReportRoles[28].name:
+manualReportRoles[29].checked: on
+manualReportRoles[29].id: 10109
+manualReportRoles[29].name:
+manualReportRoles[30].id: 10114
+manualReportRoles[30].name:
+manualReportRoles[31].checked: on
+manualReportRoles[31].id: 10019
+manualReportRoles[31].name:
+manualReportRoles[32].checked: on
+manualReportRoles[32].id: 10018
+manualReportRoles[32].name:
+manualReportRoles[33].checked: on
+manualReportRoles[33].id: 10014
+manualReportRoles[33].name:
+manualReportRoles[34].checked: on
+manualReportRoles[34].id: 10050
+manualReportRoles[34].name:
+manualReportRoles[35].checked: on
+manualReportRoles[35].id: 10067
+manualReportRoles[35].name:
+manualReportRoles[36].checked: on
+manualReportRoles[36].id: 10003
+manualReportRoles[36].name:
+manualReportRoles[37].checked: on
+manualReportRoles[37].id: 10004
+manualReportRoles[37].name:
+manualReportRoles[38].checked: on
+manualReportRoles[38].id: 10011
+manualReportRoles[38].name:
+manualReportRoles[39].checked: on
+manualReportRoles[39].id: 10024
+manualReportRoles[39].name:
+manualReportRoles[40].checked: on
+manualReportRoles[40].id: 10007
+manualReportRoles[40].name:
+manualReportRoles[41].checked: on
+manualReportRoles[41].id: 10031
+manualReportRoles[41].name:
+manualReportRoles[42].checked: on
+manualReportRoles[42].id: 10049
+manualReportRoles[42].name:
+manualReportRoles[43].checked: on
+manualReportRoles[43].id: 10051
+manualReportRoles[43].name:
+manualReportRoles[44].checked: on
+manualReportRoles[44].id: 10066
+manualReportRoles[44].name:
+manualReportRoles[45].id: 10113
+manualReportRoles[45].name:
+manualReportRoles[46].checked: on
+manualReportRoles[46].id: 10017
+manualReportRoles[46].name:
+manualReportRoles[47].checked: on
+manualReportRoles[47].id: 10002
+manualReportRoles[47].name:
+manualReportRoles[48].checked: on
+manualReportRoles[48].id: 10001
+manualReportRoles[48].name:
+manualReportRoles[49].checked: on
+manualReportRoles[49].id: 10022
+manualReportRoles[49].name:
+manualReportRoles[50].checked: on
+manualReportRoles[50].id: 10036
+manualReportRoles[50].name:
+manualReportRoles[51].checked: on
+manualReportRoles[51].id: 10045
+manualReportRoles[51].name:
+manualReportRoles[52].checked: on
+manualReportRoles[52].id: 10009
+manualReportRoles[52].name:
+manualReportRoles[53].checked: on
+manualReportRoles[53].id: 10034
+manualReportRoles[53].name:
+manualReportRoles[54].checked: on
+manualReportRoles[54].id: 10005
+manualReportRoles[54].name:
+manualReportRoles[55].checked: on
+manualReportRoles[55].id: 10029
+manualReportRoles[55].name:
+manualReportRoles[56].checked: on
+manualReportRoles[56].id: 10039
+manualReportRoles[56].name:
+manualReportRoles[57].checked: on
+manualReportRoles[57].id: 10055
+manualReportRoles[57].name:
+manualReportRoles[58].checked: on
+manualReportRoles[58].id: 10057
+manualReportRoles[58].name:
+manualReportRoles[59].checked: on
+manualReportRoles[59].id: 10110
+manualReportRoles[59].name:
+manualReportRoles[60].id: 10111
+manualReportRoles[60].name:
+manualReportRoles[61].checked: on
+manualReportRoles[61].id: 10021
+manualReportRoles[61].name:
+chartRoles[0].checked: on
+chartRoles[0].id: 4
+chartRoles[0].name: Milestones
+chartRoles[1].checked: on
+chartRoles[1].id: 12
+chartRoles[1].name: Service Levels
+chartRoles[2].checked: on
+chartRoles[2].id: 21
+chartRoles[2].name: Service Levels Performance
+chartRoles[3].checked: on
+chartRoles[3].id: 22
+chartRoles[3].name: Overdue Obligations
+chartRoles[4].checked: on
+chartRoles[4].id: 3
+chartRoles[4].name: Open Obligations
+chartRoles[5].checked: on
+chartRoles[5].id: 47
+chartRoles[5].name: SL Performance Trend
+chartRoles[6].checked: on
+chartRoles[6].id: 49
+chartRoles[6].name: TOP TEN SUPPLIERS- SL NOT MET (LAST 12 MONTHS)
+chartRoles[7].checked: on
+chartRoles[7].id: 48
+chartRoles[7].name: Function Services
+chartRoles[8].checked: on
+chartRoles[8].id: 58
+chartRoles[8].name: SL Performance Tree
+chartRoles[9].checked: on
+chartRoles[9].id: 50
+chartRoles[9].name: Upcoming obligations
+chartRoles[10].checked: on
+chartRoles[10].id: 59
+chartRoles[10].name: SL performance by geography
+chartRoles[11].checked: on
+chartRoles[11].id: 63
+chartRoles[11].name: Portfolio Comparison
+chartRoles[12].checked: on
+chartRoles[12].id: 60
+chartRoles[12].name: SL/KPI MISSED BY CATEGORY (CURRENT MONTH)
+chartRoles[13].checked: on
+chartRoles[13].id: 61
+chartRoles[13].name: ACTION TAKEN ON SERVICE LEVELS /KPIS BY CATEGORY (CURRENT_MONTH)
+chartRoles[14].checked: on
+chartRoles[14].id: 46
+chartRoles[14].name: Service Levels / KPIs Performance Trend - Last 12 months / 4 Quarters
+chartRoles[15].checked: on
+chartRoles[15].id: 42
+chartRoles[15].name: Top 10 Not Met Supplier Comparison (Current Month)
+chartRoles[16].checked: on
+chartRoles[16].id: 40
+chartRoles[16].name: Service Levels/ KPIs Performance By Business
+chartRoles[17].checked: on
+chartRoles[17].id: 26
+chartRoles[17].name: SERVICE LEVEL/KPI PERFORMANCE BY GEOGRAPHY
+chartRoles[18].checked: on
+chartRoles[18].id: 27
+chartRoles[18].name: OBLIGATION COMPLIANCE BY GEOGRAPHY
+chartRoles[19].checked: on
+chartRoles[19].id: 51
+chartRoles[19].name: OVERDUE OBLIGATIONS-TOP SUPPLIERS
+chartRoles[20].checked: on
+chartRoles[20].id: 62
+chartRoles[20].name: ACTION TAKEN ON OBLIGATION BY CATEGORY (Current Month)
+chartRoles[21].checked: on
+chartRoles[21].id: 45
+chartRoles[21].name: OVERDUE OBLIGATION-PERFORMANCE TREE
+chartRoles[22].checked: on
+chartRoles[22].id: 64
+chartRoles[22].name: Executive View - SL/KPI Performance
+chartRoles[23].checked: on
+chartRoles[23].id: 65
+chartRoles[23].name: Claims To Supplier Pipeline YTD
+chartRoles[24].checked: on
+chartRoles[24].id: 67
+chartRoles[24].name: Pipeline Of Claims To Supplier (TOP 10) YTD
+chartRoles[25].checked: on
+chartRoles[25].id: 68
+chartRoles[25].name: Pipeline Of Claims To Customer (TOP 10) YTD
+chartRoles[26].checked: on
+chartRoles[26].id: 66
+chartRoles[26].name: Claims To Customer Pipeline YTD
+chartRoles[27].checked: on
+chartRoles[27].id: 72
+chartRoles[27].name: Progress Closing Outstanding Obligations(Cumulative View)
+chartRoles[28].checked: on
+chartRoles[28].id: 76
+chartRoles[28].name: Obligations By Owner
+chartRoles[29].checked: on
+chartRoles[29].id: 75
+chartRoles[29].name: Progress on closing obligations
+chartRoles[30].checked: on
+chartRoles[30].id: 77
+chartRoles[30].name: Percentage of obligations actioned on time(by month)
+chartRoles[31].checked: on
+chartRoles[31].id: 78
+chartRoles[31].name:  Progress on closing service levels
+chartRoles[32].checked: on
+chartRoles[32].id: 81
+chartRoles[32].name: Upcoming Service Levels (Upcoming 3 Months)
+chartRoles[33].checked: on
+chartRoles[33].id: 80
+chartRoles[33].name: Obligation Status
+chartRoles[34].checked: on
+chartRoles[34].id: 82
+chartRoles[34].name: Service Levels Status
+chartRoles[35].checked: on
+chartRoles[35].id: 79
+chartRoles[35].name: Service Levels By Owner
+chartRoles[36].checked: on
+chartRoles[36].id: 85
+chartRoles[36].name: Obligation status by category
+chartRoles[37].checked: on
+chartRoles[37].id: 86
+chartRoles[37].name: Service Levels Status By Category
+chartRoles[38].checked: on
+chartRoles[38].id: 84
+chartRoles[38].name: Service Levels Status By Month
+chartRoles[39].checked: on
+chartRoles[39].id: 71
+chartRoles[39].name: Issue - By Governance Body
+chartRoles[40].checked: on
+chartRoles[40].id: 70
+chartRoles[40].name: Action - By Governance Body
+chartRoles[41].checked: on
+chartRoles[41].id: 88
+chartRoles[41].name: Percentage of Service level approved on time (by month)
+chartRoles[42].checked: on
+chartRoles[42].id: 91
+chartRoles[42].name: Submitted Service Levels By Approver
+chartRoles[43].checked: on
+chartRoles[43].id: 92
+chartRoles[43].name: Submitted Obligations By Approver
+chartRoles[44].checked: on
+chartRoles[44].id: 89
+chartRoles[44].name: Obligation status by month
+chartRoles[45].checked: on
+chartRoles[45].id: 90
+chartRoles[45].name:  Progress On Closing Outstanding Service Levels (cumulative view)
+chartRoles[46].checked: on
+chartRoles[46].id: 94
+chartRoles[46].name: Upcoming Obligation By Obligation Type
+chartRoles[47].checked: on
+chartRoles[47].id: 95
+chartRoles[47].name: Supplier Project Service Level Performance By Scope Of Service
+chartRoles[48].checked: on
+chartRoles[48].id: 96
+chartRoles[48].name: Supplier Project Service Level Performance By Market
+chartRoles[49].checked: on
+chartRoles[49].id: 93
+chartRoles[49].name: OVERDUE OBLIGATIONS BY OBLIGATION TYPE
+chartRoles[50].checked: on
+chartRoles[50].id: 97
+chartRoles[50].name: OVERDUE OBLIGATIONS BY Regions
+chartRoles[51].checked: on
+chartRoles[51].id: 98
+chartRoles[51].name: Legal Engagement Tracker
+chartRoles[52].checked: on
+chartRoles[52].id: 99
+chartRoles[52].name: Supplier Performance by Category
+chartRoles[53].checked: on
+chartRoles[53].id: 103
+chartRoles[53].name: Milestone Approval Trend
+chartRoles[54].checked: on
+chartRoles[54].id: 120
+chartRoles[54].name: Overdue Service Levels By Top 10 Suppliers - Bar and Line Chart
+chartRoles[55].checked: on
+chartRoles[55].id: 104
+chartRoles[55].name: Governance Dashboard
+chartRoles[56].checked: on
+chartRoles[56].id: 17
+chartRoles[56].name: Contracts expiring in next 12 months (By Business Unit)
+chartRoles[57].checked: on
+chartRoles[57].id: 34
+chartRoles[57].name: Contracts with Review Date in next 12 months (By Business Unit)
+chartRoles[58].checked: on
+chartRoles[58].id: 9
+chartRoles[58].name: Open Interpretation
+chartRoles[59].checked: on
+chartRoles[59].id: 35
+chartRoles[59].name: Contracts with Notice Date in next 12 months (By Business Unit)
+chartRoles[60].checked: on
+chartRoles[60].id: 18
+chartRoles[60].name: Contract Status
+chartRoles[61].checked: on
+chartRoles[61].id: 20
+chartRoles[61].name: Perpetual Contracts
+chartRoles[62].checked: on
+chartRoles[62].id: 19
+chartRoles[62].name: Contract tcv
+chartRoles[63].checked: on
+chartRoles[63].id: 37
+chartRoles[63].name: Contracts expiring in next 12 months (By Supplier)
+chartRoles[64].checked: on
+chartRoles[64].id: 38
+chartRoles[64].name: Contracts with Notice Date in next 12 months (By Supplier)
+chartRoles[65].checked: on
+chartRoles[65].id: 39
+chartRoles[65].name: Contracts with Review Date in next 12 months (By Supplier)
+chartRoles[66].checked: on
+chartRoles[66].id: 36
+chartRoles[66].name: Change Request
+chartRoles[67].checked: on
+chartRoles[67].id: 56
+chartRoles[67].name: SUPPLIER TRACKER (Current Month)
+chartRoles[68].checked: on
+chartRoles[68].id: 55
+chartRoles[68].name: CONTRACT TRACKER (Current Month)
+chartRoles[69].checked: on
+chartRoles[69].id: 69
+chartRoles[69].name: Contracts expiring in next 12 month
+chartRoles[70].checked: on
+chartRoles[70].id: 101
+chartRoles[70].name: Contract Draft Request Status
+chartRoles[71].checked: on
+chartRoles[71].id: 118
+chartRoles[71].name: Work Order Requests By Status - Top 10 Suppliers - Donut With Bar
+chartRoles[72].checked: on
+chartRoles[72].id: 119
+chartRoles[72].name: Change Requests By Status - Top 10 Suppliers - Donut With Bar
+chartRoles[73].checked: on
+chartRoles[73].id: 117
+chartRoles[73].name: Work Order Requests Trend By Priority
+chartRoles[74].checked: on
+chartRoles[74].id: 116
+chartRoles[74].name: Change Requests Trend By Priority
+chartRoles[75].checked: on
+chartRoles[75].id: 123
+chartRoles[75].name: Contract Requests By Lawyer
+chartRoles[76].checked: on
+chartRoles[76].id: 122
+chartRoles[76].name: Contract Request Trend With Average Time to Closure
+chartRoles[77].checked: on
+chartRoles[77].id: 15
+chartRoles[77].name: Credits & Earnbacks
+chartRoles[78].checked: on
+chartRoles[78].id: 11
+chartRoles[78].name: Invoice Volume
+chartRoles[79].checked: on
+chartRoles[79].id: 13
+chartRoles[79].name: Unpaid Invoices
+chartRoles[80].checked: on
+chartRoles[80].id: 14
+chartRoles[80].name: Invoice Discrepancy
+chartRoles[81].checked: on
+chartRoles[81].id: 53
+chartRoles[81].name: PO Burn by Spend Category
+chartRoles[82].checked: on
+chartRoles[82].id: 102
+chartRoles[82].name: Invoice Validation
+chartRoles[83].checked: on
+chartRoles[83].id: 108
+chartRoles[83].name: Invoiced Vs Paid Amount Trend
+chartRoles[84].checked: on
+chartRoles[84].id: 110
+chartRoles[84].name: Invoice Submission Trend By Status
+chartRoles[85].checked: on
+chartRoles[85].id: 111
+chartRoles[85].name: Invoice Status By Top 10 Suppliers
+chartRoles[86].checked: on
+chartRoles[86].id: 112
+chartRoles[86].name: Invoice Payment Status (Donut With Bar)
+chartRoles[87].checked: on
+chartRoles[87].id: 113
+chartRoles[87].name: Spend by Region/Country
+chartRoles[88].checked: on
+chartRoles[88].id: 115
+chartRoles[88].name: Approved / Paid Invoices Till Date - Cumulative and Non Cumulative - (Bar and Line Chart)
+chartRoles[89].checked: on
+chartRoles[89].id: 114
+chartRoles[89].name: Spend by Category/Sub Category (Treemap)
+chartRoles[90].checked: on
+chartRoles[90].id: 121
+chartRoles[90].name: Spend by Line Item Type
+chartRoles[91].checked: on
+chartRoles[91].id: 1
+chartRoles[91].name: Open Actions Till Date
+chartRoles[92].checked: on
+chartRoles[92].id: 2
+chartRoles[92].name: Open Issues Till Date
+chartRoles[93].checked: on
+chartRoles[93].id: 24
+chartRoles[93].name: Actions - Overdue
+chartRoles[94].checked: on
+chartRoles[94].id: 29
+chartRoles[94].name: Issues - Overdue
+chartRoles[95].checked: on
+chartRoles[95].id: 105
+chartRoles[95].name: Escalated Issues By Owner
+chartRoles[96].checked: on
+chartRoles[96].id: 106
+chartRoles[96].name: Submitted Actions By Approver
+chartRoles[97].checked: on
+chartRoles[97].id: 109
+chartRoles[97].name: Issue Status (Doughnut)
+chartRoles[98].checked: on
+chartRoles[98].id: 16
+chartRoles[98].name: Open Policy Compliance
+chartRoles[99].checked: on
+chartRoles[99].id: -1554043535
+chartRoles[99].name: _drill_D4
+chartRoles[100].checked: on
+chartRoles[100].id: 334418152
+chartRoles[100].name: D5
+chartRoles[101].checked: on
+chartRoles[101].id: 1095858891
+chartRoles[101].name: Custom Field Service Data
+chartRoles[102].checked: on
+chartRoles[102].id: 2053967233
+chartRoles[102].name: D1
+chartRoles[103].checked: on
+chartRoles[103].id: -183287705
+chartRoles[103].name: Lead Time_CDR
+chartRoles[104].checked: on
+chartRoles[104].id: -345974233
+chartRoles[104].name: D2
+chartRoles[105].checked: on
+chartRoles[105].id: 957775985
+chartRoles[105].name: D3
+chartRoles[106].checked: on
+chartRoles[106].id: -417938094
+chartRoles[106].name: Lead Time_Action
+chartRoles[107].checked: on
+chartRoles[107].id: 1508510248
+chartRoles[107].name: Lead Time_Service Level
+chartRoles[108].checked: on
+chartRoles[108].id: -1720561023
+chartRoles[108].name: Lead Time_Obligation
+chartRoles[109].checked: on
+chartRoles[109].id: -1007508565
+chartRoles[109].name: Lead Time_Invoice
+chartRoles[110].checked: on
+chartRoles[110].id: 1632556874
+chartRoles[110].name: Lead Time_Issue
+chartRoles[111].checked: on
+chartRoles[111].id: 1685309862
+chartRoles[111].name: Lead Time_Dispute
+chartRoles[112].checked: on
+chartRoles[112].id: 319798830
+chartRoles[112].name: Lead Time_Change Request
+manualChartRoles[0].checked: on
+manualChartRoles[0].id: 200030
+manualChartRoles[0].name: Supplier Dashboard
+manualChartRoles[1].checked: on
+manualChartRoles[1].id: 200038
+manualChartRoles[1].name: CSAT MS1
+manualChartRoles[2].checked: on
+manualChartRoles[2].id: 200009
+manualChartRoles[2].name: Base vs Actual
+manualChartRoles[3].checked: on
+manualChartRoles[3].id: 200034
+manualChartRoles[3].name: Contract Changes updated
+manualChartRoles[4].checked: on
+manualChartRoles[4].id: 200037
+manualChartRoles[4].name: Invoice Discrepancy1
+manualChartRoles[5].checked: on
+manualChartRoles[5].id: 200040
+manualChartRoles[5].name: Contract Changes updatedg
+manualChartRoles[6].checked: on
+manualChartRoles[6].id: 200041
+manualChartRoles[6].name: Obligation Change
+manualChartRoles[7].checked: on
+manualChartRoles[7].id: 200111
+manualChartRoles[7].name: Regration
+manualChartRoles[8].checked: on
+manualChartRoles[8].id: 200036
+manualChartRoles[8].name: CSAT MS
+manualChartRoles[9].checked: on
+manualChartRoles[9].id: 200078
+manualChartRoles[9].name: Base Vs. Actual test
+manualChartRoles[10].checked: on
+manualChartRoles[10].id: 200090
+manualChartRoles[10].name: Change request status
+manualChartRoles[11].checked: on
+manualChartRoles[11].id: 200095
+manualChartRoles[11].name: Contract Changes Open Aging (Updated On Nov 30, 2013)
+manualChartRoles[12].checked: on
+manualChartRoles[12].id: 200096
+manualChartRoles[12].name: Work Orders_1
+manualChartRoles[13].checked: on
+manualChartRoles[13].id: 200108
+manualChartRoles[13].name: box6
+manualChartRoles[14].checked: on
+manualChartRoles[14].id: 200109
+manualChartRoles[14].name: rj1
+manualChartRoles[15].checked: on
+manualChartRoles[15].id: 200113
+manualChartRoles[15].name: #Base_Actual12
+manualChartRoles[16].checked: on
+manualChartRoles[16].id: 200114
+manualChartRoles[16].name: #Invoice Discrepancy_1
+manualChartRoles[17].checked: on
+manualChartRoles[17].id: 200115
+manualChartRoles[17].name: Base VS Actual demo
+manualChartRoles[18].checked: on
+manualChartRoles[18].id: 200116
+manualChartRoles[18].name: 1.35Regration
+manualChartRoles[19].checked: on
+manualChartRoles[19].id: 200031
+manualChartRoles[19].name: Contract Changes (Updated On Nov 30, 2013)
+manualChartRoles[20].checked: on
+manualChartRoles[20].id: 200033
+manualChartRoles[20].name: Base Vs. Actual
+manualChartRoles[21].checked: on
+manualChartRoles[21].id: 200039
+manualChartRoles[21].name: Base Vs. Actual Manual Dashboard
+manualChartRoles[22].checked: on
+manualChartRoles[22].id: 200086
+manualChartRoles[22].name: Base Vs. Actual 123
+manualChartRoles[23].checked: on
+manualChartRoles[23].id: 200087
+manualChartRoles[23].name: Base test
+manualChartRoles[24].checked: on
+manualChartRoles[24].id: 200094
+manualChartRoles[24].name: Base Vs. ActualRBI
+manualChartRoles[25].checked: on
+manualChartRoles[25].id: 200104
+manualChartRoles[25].name: chinmaya
+manualChartRoles[26].checked: on
+manualChartRoles[26].id: 200107
+manualChartRoles[26].name: abc@123
+manualChartRoles[27].checked: on
+manualChartRoles[27].id: 200051
+manualChartRoles[27].name: Service data-dasboard
+manualChartRoles[28].checked: on
+manualChartRoles[28].id: 200149
+manualChartRoles[28].name: RJRJ
+manualChartRoles[29].checked: on
+manualChartRoles[29].id: 200029
+manualChartRoles[29].name: Invoice Manual Dashboard 1
+manualChartRoles[30].checked: on
+manualChartRoles[30].id: 200153
+manualChartRoles[30].name: Actions_RC1.37
+manualChartRoles[31].checked: on
+manualChartRoles[31].id: 200010
+manualChartRoles[31].name: Work Orders 2
+manualChartRoles[32].checked: on
+manualChartRoles[32].id: 200011
+manualChartRoles[32].name: Works Orders
+manualChartRoles[33].checked: on
+manualChartRoles[33].id: 200013
+manualChartRoles[33].name: Invoice Discrepancy
+manualChartRoles[34].checked: on
+manualChartRoles[34].id: 200019
+manualChartRoles[34].name: Vendor Performance Dashboard - All Supplier (August - 17)
+manualChartRoles[35].checked: on
+manualChartRoles[35].id: 200093
+manualChartRoles[35].name: Invoice Discrepancy (Updated On Nov 30, 2013)
+manualChartRoles[36].checked: on
+manualChartRoles[36].id: 200110
+manualChartRoles[36].name: kanManualTest
+manualChartRoles[37].checked: on
+manualChartRoles[37].id: 200151
+manualChartRoles[37].name: abc21!
+manualChartRoles[38].checked: on
+manualChartRoles[38].id: 200152
+manualChartRoles[38].name: CSAT123
+id: 1168
+_csrf_token: fc0c59f8-dabf-46fc-9de2-50a18343ff2a
+ajax: true
+history: {"11555":"Business Intelligence","11556":"Business Intelligence","11557":true,"11564":true,"11565":true,"11566":true}

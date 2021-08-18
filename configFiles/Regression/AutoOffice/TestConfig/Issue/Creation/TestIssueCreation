@@ -1,0 +1,135 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = false
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 16
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Issue/Creation
+extrafieldsconfigfilename = ExtraFieldsForIssueCreation.cfg
+
+#TC-C8043: Create Issue with Blank Title
+[flow 1]
+sourceentity = contracts
+sourcename = API Automation Contract for Issue Creation Test
+sourceid = 4005
+expectedresult = failure
+
+#TC-C8049: Create Issue from Supplier
+[flow 2]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+expectedresult = success
+
+#TC-C8049: Create Issue from Contract
+[flow 3]
+sourceentity = contracts
+sourcename = API Automation Contract for Issue Creation Test
+sourceid = 4005
+expectedresult = success
+
+#TC-C8049: Create Issue from Issue
+[flow 4]
+sourceentity = issues
+sourcename = API Automation Issue
+sourceid = 1661
+expectedresult = success
+
+#TC-C8049: Create Issue from Change Request
+[flow 5]
+sourceentity = change requests
+sourcename = API Automation CR
+sourceid = 2695
+expectedresult = success
+
+#TC-C8049: Create Issue from Obligation
+[flow 6]
+sourceentity = obligations
+sourcename = API Automation Obligation
+sourceid = 2468
+expectedresult = success
+
+#TC-C8049: Create Issue from Service Level
+[flow 7]
+sourceentity = service levels
+sourcename = API Automation SL
+sourceid = 5171
+expectedresult = success
+
+#TC-C8049: Create Issue from Child Service Level
+[flow 8]
+sourceentity = child service levels
+sourcename = bulkEditUpdateServiceLevel
+sourceid = 1492
+expectedresult = success
+
+#TC-C8049: Create Issue from Invoice
+[flow 9]
+sourceentity = invoices
+sourcename = API Automation Invoice
+sourceid = 7175
+expectedresult = success
+
+#TC-C8297: Create Issue from GBM
+[flow 10]
+sourceentity = governance body meetings
+sourcename = Executive Governamce Meeting - Berkshire Hathaway
+sourceid = 4222
+expectedresult = success
+
+#TC-C8301 Part 1: Verify Contract field for Issue created from Issue which doesn't have contract.
+[flow 11]
+sourceentity = issues
+sourcename = API Automation Issue created from Supplier
+sourceid = 3424
+expectedresult = success
+
+#TC-C8301 Part 2: Verify Contract field for Issue created from Interpretation which doesn't have contract.
+[flow 12]
+sourceentity = interpretations
+sourcename = API Automation Interpretation for Issue Creation Test
+sourceid = 1160
+expectedresult = success
+
+#TC-C8301 Part 3: Verify Contract field for Issue created from CR which doesn't have contract.
+[flow 13]
+sourceentity = change requests
+sourcename = API Automation CR for Issue Creation Test
+sourceid = 8181
+expectedresult = success
+
+#TC-C90392: Create Issue from Multi Supplier Contract
+[flow 14]
+sourceentity = contracts
+sourcename = API Automation Multi Supplier Contract for Child Creation test
+sourceid = 17708
+multisupplier = true
+multiparentsupplierid = 1027
+expectedresult = success
+
+#Create Issue from CDR
+#[flow 15]
+#sourceentity = contract draft request
+#sourcename = API Automation CDR for Child Entities creation Test
+#sourceid = 4008
+#supplierid = 2530
+#expectedresult = success
+
+
+#C152728
+#Create Issue from Purchase Order
+[flow 16]
+sourceentity = purchase orders
+sourcename = API Create Issue from Purchase Order
+sourceid = 7305
+supplierid = 1347
+expectedresult = success

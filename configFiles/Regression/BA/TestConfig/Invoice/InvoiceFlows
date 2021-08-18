@@ -1,0 +1,1580 @@
+#This file contains all the Flows for TestInvoiceFlow Suite.
+
+#ContractSectionName: This is used only when Create Contract Flag is set to True.
+#Specify the Contract Column Name here which should be used to Create Contract from the Contract Configuration File. Default value is 'default'
+
+#As above property is used for Contract. Similarly above property is used for other Entities as well like (Service Data, Invoice, Invoice Line Item)
+
+#UploadPricing: Whether to upload Pricing or not. Possible values are True or False. Default value is True.
+#If set to True then will upload Pricing and proceed further. Otherwise will skip Pricing Upload and directly create Invoice & Line Item.
+#This flag is set to False for negative cases only.
+
+
+#PricingTemplateFileName: Name of the Pricing Template File. The pricing sheet will be downloaded with this name and then will be uploaded.
+#PricingTemplateSheetName: Name of the Pricing Template Sheet which is to be updated.
+#NumberOfRowsToEdit: No. of rows to edit in Pricing Sheet
+#StartingRowNum: Starting Row No. from where to start editing pricing data.
+#VolumeColumnNum: Column No. where volume is defined.
+#RateColumnNum: Column No. where rate is defined.
+#VolumeColumnValues: All the values of the volumes to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+#RateColumnValues: All the values of the rates to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+
+#Volume Discrepency  Discrepency quantity not null and not zero
+#Amount Discrepency  Discrepency amount not null and not zero
+#Total Discrepency Discrepency Total not null and not zero
+#No Discrepency	 Discrepency quantity Discrepency amount  Discrepency Total  null and zero
+
+
+#ExpectedResult: The final Invoice Line Item Validation Status is to be mentioned here.
+basecontractid = 601715
+invoicestartdate = 03-01-2018
+invoiceenddate = 03-31-2018
+adjustment lineitem type id = 1314
+list columns to validate = invoiceamount,invoicenumber,name,invoicedate,currency,ponumber,paymentterm
+
+[fixed fee flow 1]
+contractsectionname = fixed fee flow 1
+servicedatasectionname = fixed fee flow 1
+invoicesectionname = fixed fee flow 1
+invoicelineitemsectionname = fixed fee flow 1
+
+uploadpricing = true
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 13
+ratecolumnvalues = 10
+
+expectedresult = No Discrepancy
+rate card to disp = true
+exp num of rows = 1
+rate card row 0 = amount->130.00,charge_type->Charges,line_item_amount->130.00,pricingentitytype->,effectivedate->,invoicing_type->Fixed Fee,volume_band->,pricingentityid->,volume->13.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->13,Discrepancy Quantity->0,System Amount->130,Discrepancy Amount->0,System Total->130,Discrepancy Total->0,Discrepancy Rate->0,VALIDATION STATUS->No Discrepancy
+
+
+[fixed fee flow 2]
+contractsectionname = fixed fee flow 2
+servicedatasectionname = fixed fee flow 2
+invoicesectionname = fixed fee flow 2
+invoicelineitemsectionname = fixed fee flow 2
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+expectedresult = Volume Discrepancy
+
+#The rate card window rows
+#This logic is when base volume is set as 10 and rate as 10
+rate card to disp = true
+exp num of rows = 1
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->100.00,pricingentitytype->,effectivedate->,invoicing_type->Fixed Fee,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->10,Discrepancy Quantity->-1,System Amount->100,Discrepancy Amount->0,System Total->100,Discrepancy Total->0,Discrepancy Rate->0,VALIDATION STATUS->Volume Discrepancy
+
+[fixed fee flow 3]
+contractsectionname = fixed fee flow 3
+servicedatasectionname = fixed fee flow 3
+invoicesectionname = fixed fee flow 3
+invoicelineitemsectionname = fixed fee flow 3
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+expectedresult = Pricing Unavailable
+
+#The rate card window rows
+#This logic is when base volume is set as 10 and rate as 10
+rate card to disp = false
+exp num of rows = 1
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->100.00,pricingentitytype->,effectivedate->,invoicing_type->Fixed Fee,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Ravol pricing flow volume discrepancyte->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->10,Discrepancy Quantity->-1,System Amount->100,Discrepancy Amount->0,System Total->100,Discrepancy Total->0,Discrepancy Rate->0,VALIDATION STATUS->Pricing Unavailable
+
+[arc flow 1]
+contractsectionname = arc flow 1
+servicedatasectionname = arc flow 1
+invoicesectionname = arc flow 1
+invoicelineitemsectionname = arc flow 1
+
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+#pricingstemplatesheetname = Pricing  VGE
+
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+#arcsheetname = ARC RRC  VGE
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+expectedresult = No Discrepancy
+
+rate card to disp = true
+exp num of rows = 2
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->500.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->5.00,rate->10.00,service_data_currency->INR
+rate card row 1 = amount->60.00,charge_type->ARC,line_item_amount->300.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->100 - 150,pricingentityid->,volume->5.00,pricingentityname->,currency_conversion_rate->5.00,rate->12.00,service_data_currency->INR
+
+audit log values = System Rate->1.52,System Conversion Rate->5,Discrepancy Conversion Rate->4,System Quantity->105,Discrepancy Quantity->0,System Amount->800,Discrepancy Amount->0,System Total->800,Discrepancy Total->0,System Variance->95,Discrepancy Rate->-8.476190476,Discrepancy Variance->92,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->No Discrepancy
+
+
+# finalconsumptionvalues is value of final consumption that we will put in consumption
+# forecastsheetrownumber row numbers of forecast sheet to be edited (Zero Indexing)
+# forecastsheetcolumnnumber column number of forecast sheet to be edited (Zero Indexing)
+# forecastsheetvalue value that would be put against row number , columnnumber pair in excel sheet
+# clientId will be the client id that we are putting while creating service data
+# this case is when forecast is greater than consumption
+[forecast flow 1]
+contractsectionname = forecast flow 1
+servicedatasectionname = forecast flow 1
+invoicesectionname = forecast flow 1
+invoicelineitemsectionname = forecast flow 1
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Total Discrepancy
+rate card to disp = true
+exp num of rows = 0
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->500.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->5.00,rate->10.00,service_data_currency->INR
+rate card row 1 = amount->60.00,charge_type->ARC,line_item_amount->300.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->100 - 150,pricingentityid->,volume->5.00,pricingentityname->,currency_conversion_rate->5.00,rate->12.00,service_data_currency->INR
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->130,Discrepancy Quantity->0,System Amount->1500,Discrepancy Amount->0,System Total->1500,Discrepancy Total->0,System Variance->-20,Discrepancy Rate->0,Discrepancy Variance->-40,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->Total Discrepancy
+
+
+# this case is when forecast is less than consumption only change is there is invoice line item section
+[forecast flow 2]
+contractsectionname = forecast flow 2
+servicedatasectionname = forecast flow 2
+invoicesectionname = forecast flow 2
+invoicelineitemsectionname = forecast flow 2
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 150
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,130
+
+expectedresult = No Discrepancy
+rate card to disp = true
+exp num of rows = 1
+rate card row 0 = amount->1500.00,charge_type->Charges,line_item_amount->1500.00,pricingentitytype->,effectivedate->,invoicing_type->Forecast,volume_band->,pricingentityid->,volume->150.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->11.54,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->150,Discrepancy Quantity->0,System Amount->1500,Discrepancy Amount->0,System Total->1500,Discrepancy Total->0,System Variance->20,Discrepancy Rate->1.54,Discrepancy Variance->0,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->No Discrepancy
+
+
+# case where consumption from supplier side and consumption from system side is different
+[forecast flow 3]
+contractsectionname = forecast flow 3
+servicedatasectionname = forecast flow 3
+invoicesectionname = forecast flow 3
+invoicelineitemsectionname = forecast flow 3
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 150
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,130
+
+expectedresult = Volume Discrepancy
+
+rate card to disp = true
+exp num of rows = 1
+rate card row 0 = amount->1500.00,charge_type->Charges,line_item_amount->1500.00,pricingentitytype->,effectivedate->,invoicing_type->Forecast,volume_band->,pricingentityid->,volume->150.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->11.54,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->150,Discrepancy Quantity->0,System Amount->1500,Discrepancy Amount->0,System Total->1500,Discrepancy Total->0,System Variance->20,Discrepancy Rate->1.54,Discrepancy Variance->0,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->Volume Discrepancy
+
+
+# case for generating data for invoice line item misc test cases
+#[invoice line item misc]  Not Required
+
+
+
+#rate card test flows added by gaurav bhadani
+#Not Required as covered under heriarchy flows
+#[fixed fee flow rate card]
+
+
+#[forecast flow rate card]
+
+
+#[arc flow rate card]
+
+#Below lines are added on 6 feb as part of full end to end validation
+#To get the invoice line item status of Invalid Service Period
+[fixed fee flow 4]
+contractsectionname = fixed fee flow 4
+servicedatasectionname = fixed fee flow 4
+invoicesectionname = fixed fee flow 4
+invoicelineitemsectionname = fixed fee flow 4
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Invalid Service Period
+
+#The rate card window rows
+#This logic is when base volume is set as 10 and rate as 10
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->100.00,pricingentitytype->,effectivedate->,invoicing_type->Fixed Fee,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->10,Discrepancy Quantity->-1,System Amount->100,Discrepancy Amount->0,System Total->100,Discrepancy Total->0,Discrepancy Rate->0,VALIDATION STATUS->Invalid Service Period
+
+#To get the invoice line item status of currency conversion factor unavailable
+#currency conv matrix not defined in service data and line item currency is diff from service data currency
+[fixed fee flow 5]
+contractsectionname = fixed fee flow 5
+servicedatasectionname = fixed fee flow 5
+invoicesectionname = fixed fee flow 5
+invoicelineitemsectionname = fixed fee flow 5
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Conversion Factor Unavailable
+
+#The rate card window rows
+#This logic is when base volume is set as 10 and rate as 10
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->100.00,pricingentitytype->,effectivedate->,invoicing_type->Fixed Fee,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->10,Discrepancy Quantity->-1,System Amount->100,Discrepancy Amount->0,System Total->100,Discrepancy Total->0,Discrepancy Rate->0,VALIDATION STATUS->Conversion Factor Unavailable
+
+#To get the invoice line item status of currency conversion factor unavailable
+#currency conv matrix defined on service data and line item has currency included in matrix,
+#but on service data currency conv date is not included in date range of matrix
+[fixed fee flow 6]
+contractsectionname = fixed fee flow 6
+servicedatasectionname = fixed fee flow 6
+invoicesectionname = fixed fee flow 6
+invoicelineitemsectionname = fixed fee flow 6
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Conversion Factor Unavailable
+
+#The rate card window rows
+#This logic is when base volume is set as 10 and rate as 10
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->100.00,pricingentitytype->,effectivedate->,invoicing_type->Fixed Fee,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->10,Discrepancy Quantity->-1,System Amount->100,Discrepancy Amount->0,System Total->100,Discrepancy Total->0,Discrepancy Rate->0,VALIDATION STATUS->Conversion Factor Unavailable
+
+#To get the invoice line item status of currency conversion factor unavailable
+#currency conv matrix defined on service data but on line item pe currency is selected which isn't included in matrix
+[fixed fee flow 7]
+contractsectionname = fixed fee flow 7
+servicedatasectionname = fixed fee flow 7
+invoicesectionname = fixed fee flow 7
+invoicelineitemsectionname = fixed fee flow 7
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Conversion Factor Unavailable
+
+#The rate card window rows
+#This logic is when base volume is set as 10 and rate as 10
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->100.00,pricingentitytype->,effectivedate->,invoicing_type->Fixed Fee,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->10,Discrepancy Quantity->-1,System Amount->100,Discrepancy Amount->0,System Total->100,Discrepancy Total->0,Discrepancy Rate->0,VALIDATION STATUS->Conversion Factor Unavailable
+
+
+#To get the invoice line item status of Total discrepancy
+#discrepancy in Total amount
+[fixed fee flow 8]
+contractsectionname = fixed fee flow 8
+servicedatasectionname = fixed fee flow 8
+invoicesectionname = fixed fee flow 8
+invoicelineitemsectionname = fixed fee flow 8
+
+uploadpricing = false
+servicedatatype = fixed fee
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Total discrepancy
+
+#The rate card window rows
+#This logic is when base volume is set as 10 and rate as 10
+rate card to disp = true
+exp num of rows = 1
+rate card row 0 = amount->100.00,charge_type->Charges,line_item_amount->100.00,pricingentitytype->,effectivedate->,invoicing_type->Fixed Fee,volume_band->,pricingentityid->,volume->10.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->10,Discrepancy Quantity->0,System Amount->100,Discrepancy Amount->0,System Total->100,Discrepancy Total->-1000,Discrepancy Rate->0,VALIDATION STATUS->Total Discrepancy
+
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix not defined in service data and line item currency is diff from service data currency
+[arc flow 2]
+contractsectionname = arc flow 2
+servicedatasectionname = arc flow 2
+invoicesectionname = arc flow 2
+invoicelineitemsectionname = arc flow 2
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Conversion Factor Unavailable
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix defined on service data and line item has currency included in matrix,
+#but on service data currency conv date is not included in date range of matrix
+[arc flow 3]
+contractsectionname = arc flow 3
+servicedatasectionname = arc flow 3
+invoicesectionname = arc flow 3
+invoicelineitemsectionname = arc flow 3
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Conversion Factor Unavailable
+
+#To get the invoice line item status of currency conversion factor unavailable
+#currency conv matrix defined on service data but on line item pe currency is selected which isn't included in matrix
+[arc flow 4]
+contractsectionname = arc flow 4
+servicedatasectionname = arc flow 4
+invoicesectionname = arc flow 4
+invoicelineitemsectionname = arc flow 4
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Conversion Factor Unavailable
+
+#ARC Flow Line item is created with validation status as Invalid Service Period
+[arc flow 5]
+contractsectionname = arc flow 5
+servicedatasectionname = arc flow 5
+invoicesectionname = arc flow 5
+invoicelineitemsectionname = arc flow 5
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Invalid Service Period
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Invalid Service Period
+
+#Consumption Unavailable
+[arc flow 6]
+contractsectionname = arc flow 6
+servicedatasectionname = arc flow 6
+invoicesectionname = arc flow 6
+invoicelineitemsectionname = arc flow 6
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Consumption Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Consumption Unavailable
+
+#Consumption Unapproved
+[arc flow 7]
+contractsectionname = arc flow 7
+servicedatasectionname = arc flow 7
+invoicesectionname = arc flow 7
+invoicelineitemsectionname = arc flow 7
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Consumption Not Approved
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Consumption Not Approved
+
+#Total discrepancy
+[arc flow 8]
+contractsectionname = arc flow 8
+servicedatasectionname = arc flow 8
+invoicesectionname = arc flow 8
+invoicelineitemsectionname = arc flow 8
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+expectedresult = Total Discrepancy
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->800.00,charge_type->Charges,line_item_amount->800.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->,pricingentityid->,volume->80.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 1 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->100 - 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 2 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->105 - 130,pricingentityid->,volume->20.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+
+audit log values = System Rate->9.857142857,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->0,System Amount->1035,Discrepancy Amount->0,System Total->1035,Discrepancy Total->935,System Variance->25,Discrepancy Rate->-0.14,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Total Discrepancy
+
+#Volume Discrepancy
+[arc flow 9]
+contractsectionname = arc flow 9
+servicedatasectionname = arc flow 9
+invoicesectionname = arc flow 9
+invoicelineitemsectionname = arc flow 9
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+expectedresult = Volume Discrepancy
+
+rate card to disp = true
+exp num of rows = 4
+rate card row 0 = amount->800.00,charge_type->Charges,line_item_amount->800.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->,pricingentityid->,volume->80.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 1 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->100 - 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 2 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->105 - 130,pricingentityid->,volume->20.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 3 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.857142857,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->95,System Amount->1035,Discrepancy Amount->935,System Total->1035,Discrepancy Total->-65,System Variance->25,Discrepancy Rate->-0.14,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+#Consumption Unavailable
+[forecast flow 4]
+contractsectionname = forecast flow 4
+servicedatasectionname = forecast flow 4
+invoicesectionname = forecast flow 4
+invoicelineitemsectionname = forecast flow 4
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Consumption Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+
+audit log values = System Rate->1.52,System Conversion Rate->5,Discrepancy Conversion Rate->4,System Quantity->105,Discrepancy Quantity->0,System Amount->800,Discrepancy Amount->0,System Total->800,Discrepancy Total->0,System Variance->95,Discrepancy Rate->-8.47,Discrepancy Variance->92,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->Consumption Unavailable
+
+#Consumption Not Approved
+[forecast flow 5]
+contractsectionname = forecast flow 5
+servicedatasectionname = forecast flow 5
+invoicesectionname = forecast flow 5
+invoicelineitemsectionname = forecast flow 5
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Consumption Not Approved
+rate card to disp = false
+exp num of rows = 0
+
+audit log values = System Rate->1.52,System Conversion Rate->5,Discrepancy Conversion Rate->4,System Quantity->105,Discrepancy Quantity->0,System Amount->800,Discrepancy Amount->0,System Total->800,Discrepancy Total->0,System Variance->95,Discrepancy Rate->-8.47,Discrepancy Variance->92,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->Consumption Not Approved
+
+
+#Forecast Unavailable
+[forecast flow 6]
+contractsectionname = forecast flow 6
+servicedatasectionname = forecast flow 6
+invoicesectionname = forecast flow 6
+invoicelineitemsectionname = forecast flow 6
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Forecast Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+audit log values = System Rate->1.52,System Conversion Rate->5,Discrepancy Conversion Rate->4,System Quantity->105,Discrepancy Quantity->0,System Amount->800,Discrepancy Amount->0,System Total->800,Discrepancy Total->0,System Variance->95,Discrepancy Rate->-8.47,Discrepancy Variance->92,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->Forecast Unavailable
+
+
+#Conversion Factor Unavailable
+#currency conv matrix not defined in service data and line item currency is diff from service data currency
+[forecast flow 7]
+contractsectionname = forecast flow 7
+servicedatasectionname = forecast flow 7
+invoicesectionname = forecast flow 7
+invoicelineitemsectionname = forecast flow 7
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Conversion Factor Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+audit log values = System Rate->1.52,System Conversion Rate->5,Discrepancy Conversion Rate->4,System Quantity->105,Discrepancy Quantity->0,System Amount->800,Discrepancy Amount->0,System Total->800,Discrepancy Total->0,System Variance->95,Discrepancy Rate->-8.47,Discrepancy Variance->92,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->Conversion Factor Unavailable
+
+[forecast flow 8]
+contractsectionname = forecast flow 8
+servicedatasectionname = forecast flow 8
+invoicesectionname = forecast flow 8
+invoicelineitemsectionname = forecast flow 8
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Conversion Factor Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Conversion Factor Unavailable
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix defined on service data and line item has currency included in matrix,
+#but on service data currency conv date is not included in date range of matrix
+[forecast flow 9]
+contractsectionname = forecast flow 9
+servicedatasectionname = forecast flow 9
+invoicesectionname = forecast flow 9
+invoicelineitemsectionname = forecast flow 9
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Conversion Factor Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Conversion Factor Unavailable
+
+#Total discrepancy
+[forecast flow 10]
+contractsectionname = forecast flow 10
+servicedatasectionname = forecast flow 10
+invoicesectionname = forecast flow 10
+invoicelineitemsectionname = forecast flow 10
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Total Discrepancy
+
+rate card to disp = true
+exp num of rows = 0
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->130,Discrepancy Quantity->0,System Amount->1500,Discrepancy Amount->-1789,System Total->1500,Discrepancy Total->-1000,System Variance->-20,Discrepancy Rate->0,Discrepancy Variance->-40,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Total Discrepancy
+
+#Invalid Service Period
+[forecast flow 11]
+contractsectionname = forecast flow 11
+servicedatasectionname = forecast flow 11
+invoicesectionname = forecast flow 11
+invoicelineitemsectionname = forecast flow 11
+
+uploadpricing = false
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Invalid Service Period
+
+rate card to disp = false
+exp num of rows = 0
+audit log values = System Rate->1.52,System Conversion Rate->5,Discrepancy Conversion Rate->4,System Quantity->105,Discrepancy Quantity->0,System Amount->800,Discrepancy Amount->0,System Total->800,Discrepancy Total->0,System Variance->95,Discrepancy Rate->-8.47,Discrepancy Variance->92,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->Invalid Service Period
+
+
+[vol pricing flow pricing unavailable]
+contractsectionname = vol pricing flow pricing unavailable
+servicedatasectionname = vol pricing flow pricing unavailable
+invoicesectionname = vol pricing flow pricing unavailable
+invoicelineitemsectionname = vol pricing flow pricing unavailable
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Pricing Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Pricing Unavailable
+
+[vol pricing flow invalid service period]
+contractsectionname = vol pricing flow invalid service period
+servicedatasectionname = vol pricing flow invalid service period
+invoicesectionname = vol pricing flow invalid service period
+invoicelineitemsectionname = vol pricing flow invalid service period
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Invalid Service Period
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Invalid Service Period
+
+#Consumption Unavailable
+[vol pricing flow consumption unavailable]
+contractsectionname = vol pricing flow consumption unavailable
+servicedatasectionname = vol pricing flow consumption unavailable
+invoicesectionname = vol pricing flow consumption unavailable
+invoicelineitemsectionname = vol pricing flow consumption unavailable
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Consumption Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Consumption Unavailable
+
+[vol pricing flow consumption unapproved]
+contractsectionname = vol pricing flow consumption unapproved
+servicedatasectionname = vol pricing flow consumption unapproved
+invoicesectionname = vol pricing flow consumption unapproved
+invoicelineitemsectionname = vol pricing flow consumption unapproved
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Consumption Not Approved
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Consumption Not Approved
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix not defined in service data and line item currency is diff from service data currency
+[vol pricing flow currency conv factor unavailable1]
+contractsectionname = vol pricing flow currency conv factor unavailable1
+servicedatasectionname = vol pricing flow currency conv factor unavailable1
+invoicesectionname = vol pricing flow currency conv factor unavailable1
+invoicelineitemsectionname = vol pricing flow currency conv factor unavailable1
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Conversion Factor Unavailable
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix defined on service data and line item has currency included in matrix,
+#but on service data currency conv date is not included in date range of matrix
+[vol pricing flow currency conv factor unavailable2]
+contractsectionname = vol pricing flow currency conv factor unavailable2
+servicedatasectionname = vol pricing flow currency conv factor unavailable2
+invoicesectionname = vol pricing flow currency conv factor unavailable2
+invoicelineitemsectionname = vol pricing flow currency conv factor unavailable2
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+[vol pricing flow amount discrepancy]
+contractsectionname = vol pricing flow amount discrepancy
+servicedatasectionname = vol pricing flow amount discrepancy
+invoicesectionname = vol pricing flow amount discrepancy
+invoicelineitemsectionname = vol pricing flow amount discrepancy
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 101
+
+expectedresult = Amount Discrepancy
+
+rate card to disp = true
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->5,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->101,Discrepancy Quantity->0,System Amount->505,Discrepancy Amount->-795,System Total->605,Discrepancy Total->505,System Variance->25,Discrepancy Rate->-5,Discrepancy Variance->22,System Base Volume->101,Discrepancy Base Volume->0,System Tax->100,VALIDATION STATUS->Amount Discrepancy
+
+#Total discrepancy
+[vol pricing flow total discrepancy]
+contractsectionname = vol pricing flow total discrepancy
+servicedatasectionname = vol pricing flow total discrepancy
+invoicesectionname = vol pricing flow total discrepancy
+invoicelineitemsectionname = vol pricing flow total discrepancy
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 130
+
+expectedresult = Total Discrepancy
+
+rate card to disp = true
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->10,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->130,Discrepancy Quantity->0,System Amount->1300,Discrepancy Amount->0,System Total->1400,Discrepancy Total->1260,System Variance->0,Discrepancy Rate->0,Discrepancy Variance->0,System Base Volume->0,Discrepancy Base Volume->0,VALIDATION STATUS->Total Discrepancy
+
+#Line item ki currency is not matched with billing service data invoicing currency
+[invalid currency 1]
+contractsectionname = invalid currency 1
+servicedatasectionname = invalid currency 1
+invoicesectionname = invalid currency 1
+invoicelineitemsectionname = invalid currency 1
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Invalid Currency
+
+rate card to disp = false
+exp num of rows = 0
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Invalid Currency
+
+[currency unavailable]
+contractsectionname = arc flow rate card
+servicedatasectionname = currency unavailable
+invoicesectionname = arc flow rate card
+invoicelineitemsectionname = currency unavailable
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Currency Unavailable
+
+rate card to disp = false
+exp num of rows = 0
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+
+[vol pricing flow volume discrepancy]
+contractsectionname = vol pricing flow volume discrepancy
+servicedatasectionname = vol pricing flow volume discrepancy
+invoicesectionname = vol pricing flow volume discrepancy
+invoicelineitemsectionname = vol pricing flow volume discrepancy
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow1Pricing.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 105
+
+expectedresult = Volume Discrepancy
+
+rate card to disp = true
+exp num of rows = 1
+rate card row 0 = amount->525,charge_type->Volume Pricing,line_item_amount->525,pricingentitytype->,effectivedate->,invoicing_type->Volume Pricing,volume_band->100 - 105,pricingentityid->,volume->10.005,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+
+audit log values = System Rate->5,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->95,System Amount->525,Discrepancy Amount->395,System Total->525,Discrepancy Total->395,System Variance->25,Discrepancy Rate->-5,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+#Total discrepancy Calculating System Values
+#C153081
+[arc flow 10]
+contractsectionname = arc flow 10
+servicedatasectionname = arc flow 10
+invoicesectionname = arc flow 10
+invoicelineitemsectionname = arc flow 10
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+expectedresult = Total Discrepancy
+
+#The rate card window rows
+#This logic is when base volume is set as 80 pricing and ARC are set according to
+#"lowerVolume":100,"endDate":"03-31-2018","rate":5,"upperVolume":105,"startDate":"03-01-2018"},
+#"lowerVolume":105,"endDate":"03-31-2018","rate":10,"upperVolume":130,"startDate":"03-01-2018"},
+#"lowerVolume":130,"endDate":"03-31-2018","rate":15,"startDate":"03-01-2018"}],
+
+rate card to disp = true
+exp num of rows = 4
+rate card row 0 = amount->800,charge_type->Charges,line_item_amount->800,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->,pricingentityid->,volume->80,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 1 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->100 - 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 2 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->105 - 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 3 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.86,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->0,System Amount->1035,Discrepancy Amount->0,System Total->1035,Discrepancy Total->895,System Variance->25,Discrepancy Rate->-0.14,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Total Discrepancy
+
+
+#Total discrepancy Calculating System Values
+#C153080
+[arc flow 11]
+contractsectionname = arc flow 11
+servicedatasectionname = arc flow 11
+invoicesectionname = arc flow 11
+invoicelineitemsectionname = arc flow 11
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 70
+
+expectedresult = Volume Discrepancy
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->800,charge_type->Charges,line_item_amount->800,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->,pricingentityid->,volume->80,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 1 = amount->-32,charge_type->RRC,line_item_amount->-32,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->90 - 100,pricingentityid->,volume->-8,pricingentityname->,currency_conversion_rate->1.00,rate->4,service_data_currency->INR
+rate card row 2 = amount->-16,charge_type->RRC,line_item_amount->-16,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->75 - 90,pricingentityid->,volume->-2,pricingentityname->,currency_conversion_rate->1.00,rate->8,service_data_currency->INR
+
+audit log values = System Rate->10.74,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->70,Discrepancy Quantity->57,System Amount->752,Discrepancy Amount->-1272,System Total->752,Discrepancy Total->612,System Variance->-10,Discrepancy Rate->0.74,Discrepancy Variance->-13,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+
+#Total discrepancy Calculating System Values
+#C153082
+[vol pricing flow system values calc 1]
+contractsectionname = vol pricing flow system values calc 1
+servicedatasectionname = vol pricing flow system values calc 1
+invoicesectionname = vol pricing flow system values calc 1
+invoicelineitemsectionname = vol pricing flow system values calc 1
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 105
+
+#The rate card window rows
+#This logic is when base volume is set as 80 and final consumption as 105 pricing and ARC are set according to
+#"lowerVolume":100,"endDate":"03-31-2018","rate":5,"upperVolume":105,"startDate":"03-01-2018"},
+#"lowerVolume":105,"endDate":"03-31-2018","rate":10,"upperVolume":130,"startDate":"03-01-2018"},
+#"lowerVolume":130,"endDate":"03-31-2018","rate":15,"startDate":"03-01-2018"}],
+
+rate card to disp = true
+exp num of rows = 1
+rate card row 0 = amount->525,charge_type->Volume Pricing,line_item_amount->525,pricingentitytype->,effectivedate->,invoicing_type->Volume Pricing,volume_band->100 - 105,pricingentityid->,volume->10.005,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+
+audit log values = System Rate->5,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->0,System Amount->525,Discrepancy Amount->389,System Total->525,Discrepancy Total->389,System Variance->25,Discrepancy Rate->-5,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Amount Discrepancy
+
+expectedresult = Amount Discrepancy
+
+
+#Amount discrepancy Calculating System Values
+#C153090
+[arc flow 12]
+contractsectionname = arc flow 12
+servicedatasectionname = arc flow 12
+invoicesectionname = arc flow 12
+invoicelineitemsectionname = arc flow 12
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 105
+
+#The rate card window rows
+#This logic is when base volume is set as 80 and final consumption as 105 pricing and ARC are set according to
+#"lowerVolume":100,"endDate":"03-31-2018","rate":5,"upperVolume":105,"startDate":"03-01-2018"},
+#"lowerVolume":105,"endDate":"03-31-2018","rate":10,"upperVolume":130,"startDate":"03-01-2018"},
+#"lowerVolume":130,"endDate":"03-31-2018","rate":15,"startDate":"03-01-2018"}],
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->100 - 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->105 - 130,pricingentityid->,volume->20.00,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->0,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Amount Discrepancy
+
+expectedresult = Amount Discrepancy
+
+#When final consumption is out of ARC bands System amount should be zero
+#C153165
+[vol pricing flow system values calc 2]
+contractsectionname = vol pricing flow system values calc 1
+servicedatasectionname = vol pricing flow system values calc 2
+invoicesectionname = vol pricing flow system values calc 2
+invoicelineitemsectionname = vol pricing flow system values calc 2
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 80
+
+expectedresult = Amount Discrepancy
+
+rate card to disp = false
+exp num of rows = 0
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->0,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->80,Discrepancy Quantity->0,System Amount->0,Discrepancy Amount->-136,System Total->0,Discrepancy Total->-136,System Variance->25,Discrepancy Rate->-10,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->80,VALIDATION STATUS->Amount Discrepancy
+
+
+#Service Data hierarchical flow
+#C153161
+[hierarchical flow]
+contractsectionname = hierarchical flow
+servicedatasectionname = hierarchical flow
+invoicesectionname = hierarchical flow
+invoicelineitemsectionname = hierarchical flow
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 105
+
+expectedresult = Volume Discrepancy
+
+#SD Matrix 2
+conv matrix id level 2 = 1028
+#SD Matrix 3
+conv matrix id level 3 = 1029
+#AUD
+currency id level 2 = 3
+#USD
+currency id level 3 = 1
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20.00,charge_type->ARC,line_item_amount->20.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4.00,pricingentityname->,currency_conversion_rate->1.00,rate->5.00,service_data_currency->INR
+rate card row 1 = amount->200.00,charge_type->ARC,line_item_amount->200.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1.00,rate->10.00,service_data_currency->INR
+rate card row 2 = amount->15.00,charge_type->ARC,line_item_amount->15.00,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1.00,pricingentityname->,currency_conversion_rate->1.00,rate->15.00,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy

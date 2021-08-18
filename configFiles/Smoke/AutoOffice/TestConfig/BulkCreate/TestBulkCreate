@@ -1,0 +1,58 @@
+#All section names and keys must be in lower case characters only
+#Section is the Entity Name as in EntityId.cfg
+#Keys are properties for that Entity
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in BulkCreateFlows.cfg file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = false
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = obligations flow 1
+
+#WaitForScheduler: Whether to wait for Scheduler to complete Bulk Create or not. Possible Values are True or False. Default Value is True.
+#If set to True then will wait for the Time specified in property 'SchedulerWaitTimeout'. Otherwise will dump data to file which can be verified later.
+waitforscheduler = true
+
+#KillAllSchedulerTasks: Whether to kill all the Scheduler Tasks before Performing Bulk Create or not. Possible Values are True or False. Default Value is False.
+killallschedulertasks = true
+
+#SchedulerPollingTime: The time interval between requests to Check if Bulk Create Scheduler Job is finished (in milliseconds). Default Value is 5000;
+schedulerpollingtime = 5000
+
+#SchedulerWaitTimeOut: The timeout for the Bulk Create Scheduler (in milliseconds). This property is used only when WaitForScheduler is set to True.
+#Default Value is 1200000 milliseconds.
+schedulerwaittimeout = 60000
+
+#FailTestIfJobNotCompletedWithinSchedulerTimeOut: Whether to fail test If Bulk Create Job not Completed wihtin Scheduler Time Out or not.
+#Possible Values are True or False. Default Value is True.
+failtestifjobnotcompletedwithinschedulertimeout = false
+
+#Bulk Action Flows Config File Details
+flowsconfigfilename = BulkCreateFlows.cfg
+
+#ExcelFilePath: Path where all the excel sheets will be stored for Bulk Create flows.
+excelfilepath = src/test/resources/TestConfig/BulkCreate/ExcelSheets
+
+#MaxNoOfLatestRecordsToSearch: Maximum no. of latest records to consider for searching newly created records. Default value is 5.
+maxnooflatestrecordstosearch = 3
+
+#DeleteNewRecords: Whether to delete newly created records at the end or not. Possible Values are True or False. Default Value is True.
+deletenewrecords = true
+
+#BulkCreateTemplateDownload Section below is to test Bulk Create Template Download. Whether the template is being downloaded successfully or not.
+
+[bulkcreatetemplatedownload]
+templatepath = src/test/resources/TestConfig/BulkCreate
+templatename = bulkCreateTemplateDownloadTest.xlsm
+templateid = 1016
+parententitytypeid = 61
+parentid = 1292
+
+#EntityTemplateSheetNameMapping: Under this section the mapping of Entity Name and the Sheet Name in the Bulk Create Template for that Entity is maintained.
+#For ex. For Obligations Entity, the Bulk Create Template has Sheet named 'Obligation' where all the record details are mentioned.
+#Key here is Entity Name as in BulkCreateFlows.cfg field 'entity' and Value is sheet name. Key must be in lower case characters only
+
+[entitytemplatesheetnamemapping]
+obligations = obligation

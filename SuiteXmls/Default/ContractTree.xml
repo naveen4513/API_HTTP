@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Contract Tree API Suite" thread-count="1">
+
+    <test name="Contract Tree API Test">
+        <classes>
+            <class name="com.sirionlabs.test.TestContractTree"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Tree Filters">
+        <classes>
+            <class name="com.sirionlabs.test.contractTree.TestContractTreeFiltersSIR197141"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Tree View">
+        <classes>
+            <class name="com.sirionlabs.test.contractTree.TestContractTreeViewSIR203600"></class>
+        </classes>
+    </test>
+
+</suite>

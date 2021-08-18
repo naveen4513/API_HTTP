@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke">
+    <parameter name="TestingType" value="smoke"/>
+    <parameter name="Environment" value="Prod/US"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="Configuration.xml"></suite-file>
+        <suite-file path="Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+
+        <suite-file path="LoginApis.xml"></suite-file>
+
+    </suite-files>
+</suite>

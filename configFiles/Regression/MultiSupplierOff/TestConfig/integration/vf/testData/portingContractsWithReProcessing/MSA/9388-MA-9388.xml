@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<master-agreement>
+  <batch-id>9388</batch-id>
+  <id>9388</id>
+  <name>automation regression testing Reprocessing MSA- name</name>
+  <description>automation regression testing Reprocessing MSA- description</description>
+  <scope>automation regression testing Reprocessing MSA- scope</scope>
+  <ccm-segment>
+    <id>3547</id>
+    <name>Full</name>
+  </ccm-segment>
+  <master-agreement-type>
+    <name>Vodafone Procurement Company-VIPA</name>
+  </master-agreement-type>
+  <contract-language>
+    <id>1</id>
+    <name>English</name>
+  </contract-language>
+  <translation-needed>
+    <value>Yes</value>
+  </translation-needed>
+  <vpc-document-class>
+    <id>4247</id>
+    <name>INCA Annex</name>
+  </vpc-document-class>
+  <local-markets-document-class/>
+  <terminal-document-class>
+    <id>GFA / GHA</id>
+    <name>TR_GFA / GHA</name>
+  </terminal-document-class>
+  <vpc-business-area>
+    <id>4254</id>
+    <name>VPC Terminals</name>
+  </vpc-business-area>
+  <contract-spend-type>
+    <id>3397</id>
+    <name>B - Buy-From</name>
+  </contract-spend-type>
+  <document-effective-date>2016-08-24T00:00:00</document-effective-date>
+  <docment-expiry-date>2016-08-30T00:00:00</docment-expiry-date>
+  <payment-term-expiration-date>2012-02-27T00:00:00</payment-term-expiration-date>
+  <payment-term-reminder-date>2012-02-27T00:00:00</payment-term-reminder-date>
+  <last-signature-date>2012-02-27T00:00:00</last-signature-date>
+  <auto-renewal-period>10</auto-renewal-period>
+  <renewal-reminder-date>2016-08-29T00:00:00</renewal-reminder-date>
+  <term-communicated-date>2016-10-26T00:00:00</term-communicated-date>
+  <internal-party-invoicing-terms>Internal Conrracting Party Invoicint Terms</internal-party-invoicing-terms>
+  <internal-party-payment-terms>
+    <code>2</code>
+    <name>0002 - internal party payment term,</name>
+    <definition>Internal Contracting Party Payment Terms</definition>
+    <definition-long-text>defination long term</definition-long-text>
+  </internal-party-payment-terms>
+  <internal-party-late-terms>
+    <code>internalparty</code>
+    <name>internalparty</name>
+    <definition>Exterbal Contracting Party Payment Terms (def)</definition>
+    <definition-long-text>defination for internal party</definition-long-text>
+  </internal-party-late-terms>
+  <internal-party-early-terms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></internal-party-early-terms>
+  <internal-contracting-parties>
+    <company>
+      <id>1009</id>
+      <name>ICP01</name>
+      <legal-name>con party</legal-name>
+    </company>
+  </internal-contracting-parties>
+  <external-party-payment-terms>
+    <code>9303</code>
+    <name>0004 - Baseline date on End of the month</name>
+    <definition>External Contracting Party Payment Terms (def)</definition>
+    <definition-long-text>Baseline date on End of the month,Payable immediately Due net</definition-long-text>
+  </external-party-payment-terms>
+    <external-party-invoicing-terms>external part invoicing terms</external-party-invoicing-terms>
+    <external-contracting-party>
+        <batch-id>9388</batch-id>
+        <id>SAP1</id>
+        <ecc-id>ECP1</ecc-id>
+      <companies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></companies>
+      <name/>
+      <duns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></duns>
+      <vat-country/>
+      <vat-registration-number/>
+      <vendor-registration-number>1234</vendor-registration-number>
+      <replicated xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></replicated>
+      <purchasing-hold xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></purchasing-hold>
+      <qualification-id>123</qualification-id>
+      <qualification-status xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></qualification-status>
+      <supplier-currency/>
+      <payment-block xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></payment-block>
+      <payment-block-function>Pa</payment-block-function>
+      <tax-id>456</tax-id>
+      <tax-number>789</tax-number>
+      <purchasing-organizations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></purchasing-organizations>
+      <addresses>
+        <address/>
+      </addresses>
+      <contacts>
+        <contact/>
+      </contacts>
+	   <fax xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></fax>
+        <telex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></telex>
+        <url xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></url>
+        <business-system xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></business-system>
+        <vendor-account-group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></vendor-account-group>
+        <publish-status xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></publish-status>
+        <publish-date xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></publish-date>
+        <category-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></category-manager>
+        <commercial-contract-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></commercial-contract-manager>
+        <business-contract-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></business-contract-manager>
+        <vssc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></vssc>
+        <business-partner xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></business-partner>
+        <business-executive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></business-executive>
+        <scm-executive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></scm-executive>
+        <finance-team xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></finance-team>
+        <legal-team xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></legal-team>
+        <administrator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></administrator>
+        <supplier-account-manager/>
+        <supplier-commercial-contract-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></supplier-commercial-contract-manager>
+        <supplier-business-contract-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></supplier-business-contract-manager>
+        <inactive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></inactive>
+        <abbreviated-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></abbreviated-name>
+        <alternative-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></alternative-name>
+        <erp-region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></erp-region>
+        <extended-as xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></extended-as>
+    </external-contracting-party>
+    <external-contracting-parties-collection>
+      <vendor>
+        <batch-id>9388</batch-id>
+        <id>SAP1</id>
+        <ecc-id>ECP1</ecc-id>
+        <companies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></companies>
+        <name/>
+        <duns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></duns>
+        <vat-country/>
+        <vat-registration-number/>
+        <vendor-registration-number>1234</vendor-registration-number>
+        <replicated xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></replicated>
+        <purchasing-hold xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></purchasing-hold>
+        <qualification-id xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></qualification-id>
+        <qualification-status xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></qualification-status>
+        <supplier-currency/>
+        <payment-block>true</payment-block>
+        <payment-block-function>pa</payment-block-function>
+        <tax-id>taxid1</tax-id>
+        <tax-number>taxnumber1</tax-number>
+        <purchasing-organizations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></purchasing-organizations>
+        <addresses>
+          <address/>
+        </addresses>
+        <contacts>
+          <contact/>
+        </contacts>
+		<fax xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></fax>
+        <telex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></telex>
+        <url xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></url>
+        <business-system xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></business-system>
+        <vendor-account-group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></vendor-account-group>
+        <publish-status xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></publish-status>
+        <publish-date xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></publish-date>
+        <category-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></category-manager>
+        <commercial-contract-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></commercial-contract-manager>
+        <business-contract-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></business-contract-manager>
+        <vssc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></vssc>
+        <business-partner xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></business-partner>
+        <business-executive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></business-executive>
+        <scm-executive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></scm-executive>
+        <finance-team xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></finance-team>
+        <legal-team xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></legal-team>
+        <administrator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></administrator>
+        <supplier-account-manager/>
+        <supplier-commercial-contract-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></supplier-commercial-contract-manager>
+        <supplier-business-contract-manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></supplier-business-contract-manager>
+        <inactive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></inactive>
+        <abbreviated-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></abbreviated-name>
+        <alternative-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></alternative-name>
+        <erp-region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></erp-region>
+        <extended-as xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></extended-as>
+      </vendor>
+    </external-contracting-parties-collection>
+  <inco-terms>
+    <inco-term>
+      <id>4260</id>
+      <name>Delivered Duty Unpaid DDU</name>
+    </inco-term>
+  </inco-terms>
+  <applicable-law>
+    <id>applicable law id</id>
+    <name>applicable law name</name>
+  </applicable-law>
+  <jurisdiction>
+    <id>2411</id>
+    <name>Courts of England and Wales</name>
+  </jurisdiction>
+  <currency>
+    <id>4264</id>
+    <name>AUD</name>
+    <description>Mozamb Metical (MZN)</description>
+  </currency>
+  <internal-party-currency-clause>internalpartycurrencyclause</internal-party-currency-clause>
+  <external-party-currency-clause>externalcontractingcurrency clause</external-party-currency-clause>
+  <external-party-currency-clause-long>extrenalcontractingpartyclause</external-party-currency-clause-long>
+  <auto-renewal>false</auto-renewal>
+  <perpetual-term>false</perpetual-term>
+  <termination-notice-lead>5</termination-notice-lead>
+  <contract-termination-details-1>CONTRACT TERMINATION DETAIL-1</contract-termination-details-1>
+  <contract-termination-details-2>CONTRACT TERMINATION DETAIL-2</contract-termination-details-2>
+  <forecasting-obligation-description-1>forecasting-obligation-description-1</forecasting-obligation-description-1> 
+  <forecasting-obligation-description-2>forecasting-obligation-description-2</forecasting-obligation-description-2>
+  <forecasting-obligation-with-supplier/>
+  <product-warranty-length>5</product-warranty-length>
+  <product-warranty-information-1>Warranty - 1</product-warranty-information-1>
+  <product-warranty-information-2>Warranty - 2</product-warranty-information-2>
+  <performance-bond xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></performance-bond>
+  <delivery-term>deliveryterm</delivery-term>
+  <status>
+    <id>4277</id>
+    <name>Approved Internally</name>
+  </status>
+  <created-by>
+    <id>4282</id>
+    <name>Vodacom Mozambique</name>
+    <legal-name/>
+  </created-by>
+  <created-for>
+    <id>1015</id>
+    <name>Automation</name>
+    <legal-name/>
+  </created-for>
+  <fx-rate-clause>
+    <value>Yes</value>
+  </fx-rate-clause>
+  <fx-rate-clause-description>fx-rate-clause-description</fx-rate-clause-description>
+  <supply-chain-finance-model>
+    <value>No</value>
+  </supply-chain-finance-model>
+  <free-samples>
+    <value>No</value>
+  </free-samples>
+  <sample-details-1>Samples - 1</sample-details-1>
+  <sample-details-2>Samples - 2</sample-details-2>
+  <free-dummies>
+    <value>Yes</value>
+  </free-dummies>
+  <dummies-details-1>Dummies - 1</dummies-details-1>
+  <dummies-details-2>Dummies - 2</dummies-details-2>
+  <doa-period-length>15</doa-period-length>
+  <doa-information-1>DOA - 1</doa-information-1>
+  <doa-information-2>DOA - 2</doa-information-2>
+  <handling-fee>
+    <value>Yes</value>
+  </handling-fee>
+  <handling-fee-description-1>Handling - 1</handling-fee-description-1>
+  <handling-fee-description-2>Handling - 2</handling-fee-description-2>
+  <stock-protection>
+    <value>Yes</value>
+  </stock-protection>
+  <stock-protection-description-1>Stock Protection - 1</stock-protection-description-1>
+  <stock-protection-description-2>Stock Protection - 2</stock-protection-description-2>
+  <marketing-fund>Fund</marketing-fund>
+  <vendor-management-replenishment>
+    <value>No</value>
+  </vendor-management-replenishment>
+  <vendor-management-inventory>
+    <value>Yes</value>
+  </vendor-management-inventory>
+  <vmi-type>VMI</vmi-type>
+  <frozen-period>
+    <value>Yes</value>
+  </frozen-period>
+  <frozen-period-description-1>Frozen 1</frozen-period-description-1>
+  <frozen-period-description-2>Frozen 2</frozen-period-description-2>
+  <stock-aging-description-1>Ageing</stock-aging-description-1>
+  <enablement-fee-description-1>Fee - 1</enablement-fee-description-1>
+  <enablement-fee-description-2>Fee - 2</enablement-fee-description-2>
+  <lump-sum-description>Sum</lump-sum-description>
+  <parent-agreement>
+    <value>Yes</value>
+  </parent-agreement>
+  <linked-master-agreements>
+    <linked-master-agreement>
+      <ma-name>ParentID</ma-name>
+      <ma-id>9003</ma-id>
+      <relationship>
+        <id>1</id>
+        <name>parent-ma</name>
+      </relationship>
+      <marked-for-deletion>false</marked-for-deletion>
+      <updated>true</updated>
+    </linked-master-agreement>
+  </linked-master-agreements>
+   <master-agreement-attachments>
+	<master-agreement-attachment>
+      <attachment-id>masterrc7</attachment-id>
+      <attachment-name>msa</attachment-name>
+		<date-added>2012-09-13T12:12:12</date-added>
+    </master-agreement-attachment>
+	</master-agreement-attachments>
+	<price-book-attachments> 
+	<price-book-attachment>
+			      <attachment-id>pricebookrc7</attachment-id>
+      	<attachment-name>pba</attachment-name>
+		<date-added>2012-09-13T12:12:12</date-added>
+    </price-book-attachment>
+	</price-book-attachments>
+  <contract-document-attachments>
+   <contract-document-attachment>
+		<contract-document-name>DocumentTree1</contract-document-name>
+		<version>2</version>
+		      <attachment-id>draftdocrc7</attachment-id>
+      <attachment-name>msat</attachment-name>
+		<date-added>2012-12-13T12:12:12</date-added>
+    </contract-document-attachment>
+   </contract-document-attachments>
+   <self-service>
+    <id>7777</id>
+    <name>Yes</name>
+  </self-service>
+  <created-by-user>
+    <id>anuvratatest</id>
+    <name>anuvratatest</name>
+  </created-by-user>
+  <contract-owner>
+    <id>anuvratatest</id>
+    <name>anuvratatest</name>
+  </contract-owner>
+  <question-answer-collection>
+    <question-answer>
+      <request-date>2012-09-13T12:12:12</request-date>
+      <question>question1</question>
+      <answer>answer1</answer>
+      <response-date>2012-09-13T12:12:12</response-date>
+    </question-answer>
+	<question-answer>
+      <request-date>2015-10-10T12:12:12</request-date>
+      <question>first fu question asked whose answer is seeked</question>
+      <answer>first Answer should values as per contract status</answer>
+      <response-date>2015-10-10T12:12:12</response-date>
+    </question-answer>
+	<question-answer>
+      <request-date>2015-10-10T12:12:12</request-date>
+      <question>second fu question asked whose answer is seeked</question>
+      <answer>second Answer should values as per contract status</answer>
+      <response-date>2015-10-10T12:12:12</response-date>
+    </question-answer>
+  </question-answer-collection>
+  <review-collection>
+    <review>
+      <reviewer>
+        <id>anuvratatest</id>
+        <name>anuvratatest</name>
+      </reviewer>
+      <reviewer-department>
+        <id>4214</id>
+        <name>Legal</name>
+      </reviewer-department>
+      <reviewed>true</reviewed>
+    </review>
+  </review-collection>
+  <review-comments-collection>
+    <review-comments>
+      <review-date>2012-09-13T12:12:12</review-date>
+      <review-comment>REVIEW COMMENTS</review-comment>
+    </review-comments>
+  </review-comments-collection>
+  <document-version-collection>
+    <document-version>
+      <contract-document-name>sidDoc</contract-document-name>
+      <version>33</version>
+      <added-by>
+        <id>anuvratatest</id>
+        <name>anuvratatest</name>
+      </added-by>
+      <date-added>2012-09-13T12:12:12</date-added>
+    </document-version>
+  </document-version-collection>
+  <deviation-tax-terms>DEVAITION TAX TERMS</deviation-tax-terms>
+  <deviation-invoicing-terms>DEVIATION INVOICING TERMS</deviation-invoicing-terms>
+  <deviation-financial-terms>DEVIATION FINANCIAL TERMS</deviation-financial-terms>
+  <deviation-delivery-terms>DEVIATION DELIVERY TERMSaaa</deviation-delivery-terms>
+  <hs-policy-provisions>HS POLICY PROVISION</hs-policy-provisions>
+  <deviation-ipr-terms>DEVIATION IPR TERMS</deviation-ipr-terms>
+  <deviation-insurance-terms>DEVIATION INSURANCE TERMS</deviation-insurance-terms>
+  <top-commercial-risks>TOP COMMERCIAL RISKS</top-commercial-risks>
+  <top-legal-risks>TOP LEGAL RISKS</top-legal-risks>
+  <approval-terminal-terms>
+    <id>4216</id>
+    <name>this is a string type in CLM</name>
+  </approval-terminal-terms>
+  <approver-collection>
+    <approver>
+      <role>
+        <id>4218</id>
+        <name>Finanace</name>
+      </role>
+      <approver>
+        <id>anuvratatest</id>
+        <name>anuvratatest</name>
+      </approver>
+      <approver-group>
+        <id>anuvratatest</id>
+        <name>anuvratatest</name>
+      </approver-group>
+      <approver-level-name>
+        <id>4227</id>
+        <name>Legal</name>
+      </approver-level-name>
+      <start-date>2012-09-13T12:12:12</start-date>
+      <end-date>2012-09-13T12:12:12</end-date>
+    </approver>
+  </approver-collection>
+  <vgc-e-signer>
+    <name>vgc e signer</name>
+  </vgc-e-signer>
+  <signature-type>
+    <id>8834</id>
+    <name>Paper</name>
+  </signature-type>
+  <e-sign-comment>e sign comment</e-sign-comment>
+  <local-market-collection>
+    <local-market>
+      <id>4238</id>
+      <name>Allmobility</name>
+    </local-market>
+  </local-market-collection>
+  <deliverable-recipients>deliverable recp</deliverable-recipients>
+  <contract-duration-clause>contract duration</contract-duration-clause>
+  <purchase-order-variation>purchase order</purchase-order-variation>
+  <changing-methodlogy>chnaging methodology</changing-methodlogy>
+  <special-conditions>special conditions</special-conditions>
+  <comments>comments</comments>
+  <additional-currencies>
+    <name>ADP</name>
+  </additional-currencies>
+  <external-party-payment-terms-clause>externalpartypayment terms</external-party-payment-terms-clause>
+  <external-party-late-payment-terms-clause>external party late payment term</external-party-late-payment-terms-clause>
+  <external-party-early-payment-discount>ext party early payment</external-party-early-payment-discount>
+  <retention-comments>retention comment</retention-comments>
+  <last-changed-info-collection>
+    <last-changed-info>
+      <last-changed-by>sid</last-changed-by>
+      <last-changed-by-date>2012-09-13T12:12:12</last-changed-by-date>
+    </last-changed-info>
+  </last-changed-info-collection>
+</master-agreement>

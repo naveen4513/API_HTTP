@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Entity Creation Minor Suite">
+    <parameter name="TestingType" value="minor"/>
+    <parameter name="Environment" value="automation"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+        <listeners>
+            <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+        </listeners>
+
+        <suite-file path="../Regression/EntityCreation.xml"></suite-file>
+
+    </suite-files>
+</suite>

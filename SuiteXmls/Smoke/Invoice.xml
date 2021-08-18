@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Smoke Suite">
+    <listeners>
+        <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Invoice End to End Flow Validation">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.flow.TestInvoiceFlow"></class>
+        </classes>
+    </test>
+
+    <test name="Service Data Validation">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.flow.TestServiceData"></class>
+        </classes>
+    </test>
+
+    <test name="Test Invoice Line Item Creation">
+        <classes>
+            <class name="com.sirionlabs.test.invoiceLineItem.TestInvoiceLineItemCreation"></class>
+        </classes>
+    </test>
+
+</suite>

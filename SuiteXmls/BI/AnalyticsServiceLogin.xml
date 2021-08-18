@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Analytics Service Login" thread-count="1">
+
+    <test name="Analytics Service Login Validation">
+        <classes>
+            <class name="com.sirionlabs.test.sisenseBI.TestAnalyticsServiceLogin"></class>
+        </classes>
+    </test>
+
+</suite>

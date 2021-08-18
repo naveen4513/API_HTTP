@@ -1,0 +1,21 @@
+[envinfo]
+domain = http://qavf.rc.office
+clientadminusername = anay_admin
+clientadminpassword = admin123
+dbhost = 192.168.2.110
+dbport = 5432
+maintenancedb = rc_1.22
+dbusername = postgres
+dbpassword = postgres
+
+[flow1]
+testcasetype=negative
+statuscode = 200
+deletedtest=no
+workflowid = 99990
+
+[flow2]
+testcasetype=negative
+statuscode = 200
+deletedtest=yes
+workflowid = 29

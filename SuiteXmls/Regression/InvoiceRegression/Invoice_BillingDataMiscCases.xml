@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Billing Data Miscellaneous Case">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <!--Test OK On BA 1 Feb fixed fee flow has billing record not generated-->
+        <test name="Test_BillingData Miscellaneous Scenarios">
+            <classes>
+                <class name="com.sirionlabs.test.serviceData.Test_BillDataMiscScenarios"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

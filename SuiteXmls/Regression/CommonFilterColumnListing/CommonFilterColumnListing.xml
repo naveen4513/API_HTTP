@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="delete comment">
+    <test name="Test Column">
+        <classes>
+            <class name="com.sirionlabs.test.CommonColumnFilterAndListing.TestFilterColumnListing"></class>
+        </classes>
+    </test>
+
+
+</suite>

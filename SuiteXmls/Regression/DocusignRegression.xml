@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="mumbaiautomation"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+
+        <!-- Test Suites -->
+        <suite-file path="../Default/DocusignTest.xml"></suite-file>
+
+
+    </suite-files>
+</suite>

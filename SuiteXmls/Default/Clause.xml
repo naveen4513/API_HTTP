@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Clause Suite">
+
+    <test name="Clause Usage Statistics Validation">
+        <classes>
+            <class name="com.sirionlabs.test.clause.TestClauseUsageStatistics"></class>
+        </classes>
+    </test>
+
+</suite>

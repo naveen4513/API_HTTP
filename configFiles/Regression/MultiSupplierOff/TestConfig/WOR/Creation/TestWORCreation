@@ -1,0 +1,327 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 33
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/WOR/Creation
+extrafieldsconfigfilename = ExtraFieldsForWORCreation.cfg
+
+#************ WOR Creation Flows Below *******************
+#TC-C8290: Brief Description having more than 1024 characters
+[flow 1]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8304: Priority field not defined
+[flow 2]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C8400: Creating WOR from Contract of Type WO/SOW
+Removing the flow as workflow not configured
+#[flow 3]
+#sourceentity = contracts
+#sourcename = Work Order - Bloomberg
+#sourceid = 133782
+#parententitytype = sow
+#expectedresult = success
+
+#TC-C44193: Title/Name field having more than 512 characters
+[flow 4]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C44195: Creating WOR without TimeZone
+[flow 5]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C44196: Creating WOR without Currency
+[flow 6]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C44197: Creating WOR without Supplier Access
+#Turning this case off as Supplier Access check is always turned on from the backend.
+#[flow 7]
+#sourceentity = contracts
+#sourcename = Product Sales Agreement - Bloomberg
+#sourceid = 1246
+#parententitytype = psa
+#expectedresult = failure
+
+#TC-C44198: Creating WOR without Tier
+[flow 8]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C44199: Creating WOR without Expiration Date
+[flow 9]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C44200: Creating WOR without Functions
+[flow 10]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C44201: Creating WOR without Services
+[flow 11]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C8273: Creating WOR with 512 characters in Name/Title
+[flow 12]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8286: Creating WOR with special characters in Name/Title and Brief
+[flow 13]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8305: Creating WOR with High Priority
+[flow 14]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8305: Creating WOR with Medium Priority
+[flow 15]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8305: Creating WOR with Low Priority
+[flow 16]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8312: Creating WOR with Responsibility as Supplier
+[flow 17]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8312: Creating WOR with Responsibility as Client
+[flow 18]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8312: Creating WOR with Responsibility as Both Client and Supplier
+[flow 19]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8313: Creating WOR with Single Billing Type
+[flow 20]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8313: Creating WOR with Multiple Billing Type
+[flow 21]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8316: Creating WOR without Delivery Countries
+[flow 22]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8331: Creating WOR without Contracting Entity
+[flow 23]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8337: Creating WOR without Effective Date
+[flow 24]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C8337: Creating WOR with Effective Date less than Expiration Date
+[flow 25]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8337: Creating WOR with Effective Date greater than Expiration Date
+[flow 26]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C8339: Creating WOR with Request Date
+[flow 27]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C8339: Creating WOR with Effective Date less than Request Date
+[flow 28]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8339: Creating WOR with Effective Date greater than Request Date
+[flow 29]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8339: Creating WOR with Effective Date equal to Request Date
+[flow 30]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8348: Creating WOR without Management Regions
+[flow 31]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C8348: Creating WOR with Management Regions with Management countries having only few values from Supplier and not all.
+[flow 32]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8351: Creating WOR with Multiple Stakeholders
+[flow 33]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8365: Creating WOR with Additional Fields like ACV, TCV
+[flow 34]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8365: Creating WOR with Additional Fields like ACV, TCV having more than 18 digits
+[flow 35]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = failure
+
+#TC-C8370: Creating WOR with Comment Field having more than 2000 characters
+[flow 36]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#TC-C8372: Creating WOR with Actual Date.
+#TC-C8376: Creating WOR with Other User
+#TC-C8388: Creating WOR with Change Request
+[flow 37]
+sourceentity = contracts
+sourcename = API Automation Contract for WOR Creation Test
+sourceid = 133770
+parententitytype = psa
+expectedresult = success
+
+#Commenting this flow as there is no check at the API level. The check is only on UI. Hence no point running with API.
+#TC-C8372: Creating WOR with Actual Date greater than current date.
+#[flow 38]
+#sourceentity = contracts
+#sourcename = Product Sales Agreement - Bloomberg
+#sourceid = 1246
+#parententitytype = psa
+#expectedresult = failure

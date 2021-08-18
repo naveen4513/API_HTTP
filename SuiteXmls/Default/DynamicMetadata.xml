@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Dynamic Metadata Suite" thread-count="1">
+
+    <test name="Dynamic Field Sanity Suite">
+        <classes>
+            <class name="com.sirionlabs.test.dynamicMetadata.DynamicFieldSanity"></class>
+        </classes>
+    </test>
+
+</suite>

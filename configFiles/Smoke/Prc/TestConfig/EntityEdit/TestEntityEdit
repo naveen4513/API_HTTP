@@ -1,0 +1,185 @@
+#All keys must be in lower case characters only
+
+#TestAllFlows: Whether all the flows are to be tested or not.
+testallflows = true
+
+#Specify all the flows to be validated. This property is used only when TestAllFlows flag is turned off.
+flowstovalidate = suppliers flow 1
+
+
+#Entity Edit Flows Config file details.
+flowsconfigfilepath = src/test/resources/TestConfig/EntityEdit
+flowsconfigfilename = EntityEditFlows.cfg
+
+#Extra Fields Config file details.
+extrafieldsconfigfilepath = src/test/resources/TestConfig/EntityEdit
+extrafieldsconfigfilename = ExtraFieldsForEntityEdit.cfg
+
+[default]
+#DefaultNoOfFieldsToEdit: If No of Fields to Edit in a flow is not defined then default value will be picked as mentioned against this property. Default Value is 1.
+defaultnooffieldstoedit = 1
+
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = AutoEdit_
+
+defaulttext =
+defaultdate = 03-20-2018
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+
+#FieldsToIgnoreMapping: This section contains mapping of the entities and the fields that should be ignored for that entity for Editing.
+#Key is Entity Name. It is case sensitive and must be in lower case characters only.
+#Value is Field Name. It is case sensitive and must match exactly as in API Response.
+
+[fieldstoignoremapping]
+suppliers = additionalFYCV, additionalTCV, additionalACV, projectId, initiatives, tiers
+contracts = agreementNumber, contractNumber, contractingEntity, governanceBodies, oldSystemId, fieldComment, numberOfRenewals, contractPaper, vendorClassification, contractingHubs, contractingMarkets, contractingClientEntities, contractingCompanyCodes, recipientHubs, recipientMarkets, Internal Contracting Party, recipientCompanyCodes, vendorContractingParty, years, months, days, creditClauses, earnbackClauses, contractCurrencies, rateCardFromDate, rateCardToDate, rateCardsApplicable, rateCard, additionalTCV, additionalACV, additionalFYCV, conversionType, financialImpact, initiatives, projectId, legal, businessCase, globalRegions, expirationNoticePeriod, noticeLeadDays
+obligations = contractReference, clause, pageNumber, documentPageNumber, vendorContractingParty, currency, financialImpactCurrencyValue, financialImpactClause, creditImpactCurrencyValue, creditImpactClause, impactDays, projectId, initiatives
+service levels = regionType, currency, performanceComputationCalculationQuery, performanceDataCalculationQuery, uniqueDataCriteria, pageReference, clause, pageNum, threshold, minimum, expected, sigMinMax, creditClauses, creditClause, invoiceCreditPercentage, categoryCreditPercentage, subCategoryCreditPercentage, lineItemCreditPercentage, earnbackClauses,earnbackClause, categoryEarnbackPercentage, subCategoryEarnbackPercentage, lineItemEarnbackPercentage, continuousImprovementClause, vendorContractingParty, financialImpactCurrencyValue, financialImpactClause, creditImpactCurrencyValue, creditImpactClause, impactDays
+actions = currency
+issues = currency, projectId, initiatives
+disputes = currency
+change requests = contractReferences, assumptions, contractingEntity, originalTcv, originalTcvCurrency, revisedTcv, revisedTcvCurrency, varianceTcv, varianceTcvCurrency, originalAcv, originalAcvCurrency, revisedAcv, revisedAcvCurrency, variance, varianceCurrency, originalFacv, originalFacvCurrency, revisedFacv, revisedFacvCurrency, varianceFacv, varianceTcvCurrency, projectId, initiatives
+interpretations = contractReference, clause, pageNumber, documentPageNumber
+work order requests = currency, contractingEntity, years, months, days, additionalTCV, additionalACV, additionalFACV, initiatives
+contract draft request = clientContractingEntity, counterPartyContractingEntity, transactionTypes, businessLines, currency, acv, tcv, years, months, days, recipientMarkets, createdFor, legal, businessCase
+purchase orders = poNumber, requisitionNumber, trackingNumber, contractingEntity
+invoices = invoiceNumber, poNumber, currency, contractingEntity, invoiceAmount, supplierIdNew, clientIdNew, supplierName, sirionSupplierId, costCenterCode, emailAddress, phoneNumber, previousInvoiceId, creditPeriod, amountApproved, discrepancyAmount, noLineItems, noLineItemsWithDiscrepancy, paidAmount, resolvedDiscrepancy, disputeAmount, projectId, initiatives
+governance body = projectId, initiatives
+
+#*********************** Supplier Edit Flows Below ************************
+
+[suppliers flow 1]
+entity = suppliers
+entityid = 1285
+expectedresult = success
+
+#*********************** End of Supplier Edit Flows ***********************
+
+#*********************** Contract Edit Flows Below ************************
+
+[contracts flow 1]
+entity = contracts
+entityid = 1899
+expectedresult = success
+
+#*********************** End of Contract Edit Flows ***********************
+
+#*********************** Obligation Edit Flows Below ************************
+
+[obligations flow 1]
+entity = obligations
+entityid = 1355
+expectedresult = success
+
+#*********************** End of Obligation Edit Flows ***********************
+
+#*********************** SL Edit Flows Below ************************
+
+[service levels flow 1]
+entity = service levels
+entityid = 1090
+expectedresult = success
+
+#*********************** End of SL Edit Flows ***********************
+
+#*********************** Action Edit Flows Below ************************
+
+[actions flow 1]
+entity = actions
+entityid = 1637
+expectedresult = success
+
+#*********************** End of Action Edit Flows ***********************
+
+#*********************** Issue Edit Flows Below ************************
+
+[issues flow 1]
+entity = issues
+entityid = 1073
+expectedresult = success
+
+#*********************** End of Issue Edit Flows ***********************
+
+#*********************** Dispute Edit Flows Below ************************
+
+[disputes flow 1]
+entity = disputes
+entityid = 1201
+expectedresult = success
+
+#*********************** End of Dispute Edit Flows ***********************
+
+#*********************** Change Request Edit Flows Below ************************
+
+[change requests flow 1]
+entity = change requests
+entityid = 1197
+expectedresult = success
+
+#*********************** End of Change Request Edit Flows ***********************
+
+#*********************** Interpretation Edit Flows Below ************************
+
+[interpretations flow 1]
+entity = interpretations
+entityid = 1160
+expectedresult = success
+
+#*********************** End of Interpretation Edit Flows ***********************
+
+#*********************** WOR Edit Flows Below ************************
+
+[work order requests flow 1]
+entity = work order requests
+entityid = 309
+expectedresult = success
+
+#*********************** End of WOR Edit Flows ***********************
+
+#*********************** CDR Edit Flows Below ************************
+
+[contract draft request flow 1]
+entity = contract draft request
+entityid = 1257
+expectedresult = success
+
+#*********************** End of CDR Edit Flows ***********************
+
+#*********************** PO Edit Flows Below ************************
+
+[purchase orders flow 1]
+entity = purchase orders
+entityid = 1061
+expectedresult = success
+
+#*********************** End of PO Edit Flows ***********************
+
+#*********************** Invoice Edit Flows Below ************************
+
+[invoices flow 1]
+entity = invoices
+entityid = 5430
+expectedresult = success
+
+#*********************** End of Invoice Edit Flows ***********************
+
+#*********************** GB Edit Flows Below ************************
+
+[governance body flow 1]
+entity = governance body
+entityid = 1208
+expectedresult = success
+
+#*********************** End of GB Edit Flows ***********************
+
+#*********************** Application Group Edit Flows Below ************************
+
+[application group flow 1]
+entity = applicationgroups
+entityid = 1034
+expectedresult = success
+
+#*********************** End of Application Group Edit Flows ***********************

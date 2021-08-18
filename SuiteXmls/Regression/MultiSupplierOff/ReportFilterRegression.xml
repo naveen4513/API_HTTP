@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="multi_supplier_off"/>
+    <suite-files>
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <suite-file path="../../Default/ReportListingAndFilters.xml"></suite-file>
+    </suite-files>
+</suite>

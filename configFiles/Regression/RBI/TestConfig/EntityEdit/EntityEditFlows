@@ -1,0 +1,100 @@
+#This file contains all the flows of Entity Edit Suite.
+
+
+#Each Section below represents one flow of Entity Edit Suite where each key/property is defined as:
+#Entity: EntityName. It is case sensitive and must be in lower case characters only
+#EntityId: Id of the Entity
+#NoOfFieldsToTest: No of fields to edit in the flow. If not defined then Default value is picked from DefaultNoOfFieldsToEdit property in TestEntityEdit.cfg file.
+
+[suppliers flow 1]
+entity = suppliers
+entityid = 1285
+nooffieldstoedit = 1
+
+
+[contracts flow 1]
+entity = contracts
+entityid = 1899
+nooffieldstoedit = 1
+
+
+[obligations flow 1]
+entity = obligations
+entityid = 1355
+nooffieldstoedit = 1
+
+
+[service levels flow 1]
+entity = service levels
+entityid = 1090
+nooffieldstoedit = 2
+validateauditlogs = true
+
+
+[actions flow 1]
+entity = actions
+entityid = 1637
+nooffieldstoedit = 1
+
+
+[issues flow 1]
+entity = issues
+entityid = 1073
+nooffieldstoedit = 1
+
+
+[disputes flow 1]
+entity = disputes
+entityid = 1201
+nooffieldstoedit = 1
+validateauditlogs = true
+
+
+[change requests flow 1]
+entity = change requests
+entityid = 1197
+nooffieldstoedit = 1
+
+
+[interpretations flow 1]
+entity = interpretations
+entityid = 1160
+nooffieldstoedit = 1
+validateauditlogs = true
+
+
+[work order requests flow 1]
+entity = work order requests
+entityid = 309
+nooffieldstoedit = 1
+
+
+[contract draft request flow 1]
+entity = contract draft request
+entityid = 1257
+nooffieldstoedit = 1
+validateauditlogs = true
+
+
+[purchase orders flow 1]
+entity = purchase orders
+entityid = 1061
+nooffieldstoedit = 1
+validateauditlogs = true
+
+
+[invoices flow 1]
+entity = invoices
+entityid = 5430
+nooffieldstoedit = 1
+
+
+[governance body flow 1]
+entity = governance body
+entityid = 1208
+nooffieldstoedit = 1
+
+[application group flow 1]
+entity = applicationgroups
+entityid = 1034
+nooffieldstoedit = 2

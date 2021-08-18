@@ -1,0 +1,59 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 16
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Supplier/Creation
+extrafieldsconfigfilename = ExtraFieldsForSupplierCreation.cfg
+
+#TC-22603, TC-22605, TC-22606, TC-22610, TC-22612, TC-22613, TC-22620, TC-22622, TC-22623, TC-22641, TC-22662, TC-22667
+[flow 1]
+sourceentity = vendors
+sourceid = 1249
+expectedresult = success
+
+#TC-22604, TC-22609, TC-22621, TC-22642, TC-22668
+[flow 2]
+sourceentity = vendors
+sourceid = 1249
+expectedresult = success
+
+#TC-22640
+[flow 4]
+sourceentity = vendors
+sourceid = 1249
+expectedresult = success
+
+#TC-22607
+[flow 15]
+sourceentity = vendors
+sourceid = 1249
+expectedresult = success
+
+#TC-22614
+[flow 16]
+sourceentity = vendors
+sourceid = 1249
+expectedresult = success
+
+#TC-22657, TC-22664
+[flow 17]
+sourceentity = vendors
+sourceid = 1249
+expectedresult = success
+
+#TC-22663
+[flow 18]
+sourceentity = vendors
+sourceid = 1249
+expectedresult = success

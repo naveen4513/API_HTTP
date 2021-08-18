@@ -1,0 +1,69 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = suppliers
+sourcename = Supply wisdom test 1
+sourceid = 1233
+parententitytype = psa
+
+[fixed fee flow 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+parententitytype = psa
+
+[performance_flow1]
+sourceentity = suppliers
+sourcename = CISCO
+sourceid = 1303
+parententitytype = psa
+
+[arc flow 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+parententitytype = psa
+
+[tc96956]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+parententitytype = psa
+
+[forecast flow 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+parententitytype = psa
+
+
+[invoice line item misc]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+parententitytype = psa
+
+
+[service data misc]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+parententitytype = psa
+

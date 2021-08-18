@@ -1,0 +1,32 @@
+#All section names & keys must be in lower case characters only (Except for Special Filters)
+
+#DelimiterForValues is used to separate the values
+delimiterforvalues = ,
+
+#dashboard- SL Executive ChartId
+slexecutivechartid = 64
+
+#testSpecificFilters : This flag specify whether to test all the filters or specific given filters. Possible values (true, false). Default value is false.
+testspecificfilters = false
+
+#Boolean flag for validating different combinations of x-axis and y-axis
+validateaxiscombination = true
+
+#ApplyRandomization flag turns on/off Randomization for the Options of All Filters. Possible Values (True, False). Default Value is True
+#Note : This flag is not applicable when testSpecificFilters = true
+applyrandomizationonfilters = true
+
+#MaxRandomOptions: Max no of Random Options to be picked for validation. This will apply only if ApplyRandomization is set to True and only on Non-Special Filters.
+#Default Value is 3
+#Note : This flag is not applicable when testSpecificFilters = true
+maxrandomoptions = 1
+
+#Boolean flag for validation required for clickable charts. Default is true
+validateclickablecharts = false
+
+#provide the below section if the script need to be run only for some specific filters. This is applicable only if testspecificfilters = true.
+#Key name here is specificFilterName i.e. Attribute Name. Values are specific options separated by DelimiterForValues. Values are case-sensitive.
+#If no option is provided for any SpecificFilter then all the options will be picked for validation.
+[specificfilters]
+project = check1,project_test
+

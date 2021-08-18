@@ -1,0 +1,266 @@
+[
+
+  {
+    "testCaseId": "C88709",
+    "enabled": "yes",
+    "testingType": "regression",
+    "description": "In json body request , update the mandatory Fields loginId, firstName, lastName, dynamicMetadataJson with expected data",
+    "payload": [
+      {
+        "loginId": "ajay_user",
+        "firstName": "aja",
+        "lastName": "sur",
+        "contactNo": "989",
+        "dynamicMetadataJson": "{\"105104\": \"CCROS02\", \"105105\": \"CCO_Platform_IT EON\"}"
+      },
+      {
+        "loginId": "akhil_user",
+        "firstName": "rajat",
+        "lastName": "sharma",
+        "contactNo": "123",
+        "dynamicMetadataJson": "{\"105104\": \"CCROS02\", \"105105\": \"CCO_Platform_IT EON\"}"
+      },
+      {
+        "loginId": "ajay_user1",
+        "firstName": "client",
+        "lastName": "sharma",
+        "contactNo": "12345",
+        "dynamicMetadataJson": "{\"105104\": \"CCROS02\", \"105105\": \"CCO_Platform_IT EON\"}"
+      }
+    ],
+    "expectedStatusCode":"204",
+    "expectedResponseMessage": ""
+  },
+  {
+    "testCaseId": "C88770",
+    "enabled": "yes",
+    "testingType": "regression",
+    "description": "Bulk Update Mandatory Fields from Request Body dynamicMetaDataJson with wrong json",
+    "payload": [
+      {
+        "loginId": "ajay_user",
+        "contactNo": "98",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "akhil_user",
+        "firstName": "rajat1234",
+        "lastName": "sh",
+        "contactNo": "1",
+        "dynamicMetadataJson": "\"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "ajay_user1",
+        "firstName": "cl",
+        "lastName": "sh",
+        "contactNo": "1",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      }
+    ],
+    "expectedStatusCode":"400",
+    "expectedResponseMessage": "First name cannot be blank or more than 512 characters"
+  },
+  {
+    "testCaseId": "C88770",
+    "enabled": "yes",
+    "testingType": "regression",
+    "description": "Update the Fields which are mandatory(loginId, FirstName, LastName, dynamicMetadataJson) in Request Body with blank data",
+    "payload": [
+      {
+        "loginId": "",
+        "firstName": "kkkkk",
+        "lastName": "kkkk",
+        "contactNo": "989333",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "ajay_user",
+        "firstName": "rajatww",
+        "lastName": "sharmaww",
+        "contactNo": "123345",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "ajay_user1",
+        "firstName": "clienteee",
+        "lastName": "sharmaeee",
+        "contactNo": "12345444",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      }
+    ],
+    "expectedStatusCode":"400",
+    "expectedResponseMessage": "LoginId cannot be blank or more than 512 characters"
+  },
+
+  {
+    "testCaseId": "C88716",
+    "enabled": "yes",
+    "testingType": "regression",
+    "description": "Bulk Update request is sent for only one user",
+    "payload": [{
+      "loginId": "ajay_user",
+      "firstName": "pertyy",
+      "lastName": "perfrr",
+      "contactNo": "95600213",
+      "dynamicMetadataJson": "{\"105104\": \"CCROS02\", \"105105\": \"CCO_Platform_IT EON\", \"105106\": \"MICJ 254\", \"105107\": \"CCO IT Core Platforms Digitiza\"}"
+
+    }],
+    "expectedStatusCode": "204",
+    "expectedResponseMessage": ""
+  },
+  {
+    "testCaseId": "C88771",
+    "enabled": "no",
+    "testingType": "regression",
+    "description": "Update the LoginId Field in json request with random value which does not exist in the database",
+    "payload": [
+      {
+        "loginId": "ajay",
+        "firstName": "ass",
+        "lastName": "aa",
+        "contactNo": "12",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "ajay_user1",
+        "firstName": "qwe",
+        "lastName": "qweas",
+        "contactNo": "12",
+        "dynamicMetadataJson":"{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+
+      },
+      {
+        "loginId": "akhil_user",
+        "firstName": "qwe",
+        "lastName": "qwesdf",
+        "contactNo": "123",
+        "dynamicMetadataJson":"{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+
+      }
+    ],
+    "expectedStatusCode": "400",
+    "expectedResponseMessage": "LoginId not found"
+  },
+  {
+    "testCaseId": "C88770",
+    "enabled": "yes",
+    "testingType": "regression",
+    "description": "Update the Fields which are mandatory(loginId, FirstName, LastName, dynamicMetadataJson) in Request Body with blank data",
+    "payload": [
+      {
+        "loginId": "ajay_user",
+        "firstName": "",
+        "lastName": "",
+        "contactNo": "9898888",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "ajay_user1",
+        "firstName": "rajatsharma",
+        "lastName": "sharmasharma",
+        "contactNo": "12",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "akhil_user",
+        "firstName": "clientuser",
+        "lastName": "sharmauser",
+        "contactNo": "12",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      }
+    ],
+    "expectedStatusCode":"400",
+    "expectedResponseMessage": "First name cannot be blank or more than 512 characters"
+  },
+  {
+    "testCaseId": "C88770",
+    "enabled": "yes",
+    "testingType": "regression",
+    "description": "Update the Fields which are mandatory(loginId, FirstName, LastName, dynamicMetadataJson) in Request Body with blank data",
+    "payload": [
+      {
+        "loginId": "ajay_user",
+        "firstName": "kkk",
+        "lastName": "",
+        "contactNo": "98988",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "ajay_user1",
+        "firstName": "rajatjjj",
+        "lastName": "sharmakkk",
+        "contactNo": "12377777",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "akhil_user",
+        "firstName": "clientjjj",
+        "lastName": "sharmakkkk",
+        "contactNo": "12345777",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      }
+    ],
+    "expectedStatusCode":"400",
+    "expectedResponseMessage": "Last name cannot be blank or more than 512 characters"
+  },
+  {
+    "testCaseId": "C88770",
+    "enabled": "yes",
+    "testingType": "regression",
+    "description": "login id, first name ,last name fields with character length more than 512",
+    "payload": [
+      {
+        "loginId": "ajay_user",
+        "firstName": "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdbwqhddgwdwgdhgwedhwgdgwgdhwdvdhvwdwevdwdvwwvdwvdvdgggggggggwjhdhwbdwdbdbdbwdbwwbdwbdwwwddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdwedewdbwbdewdbedsdqwkdndwqknuqsdwqkjdnasjdkjwqdbwjdbwqkjbwbdwejbdjkqbdjwqdbqkjdbwqjkdbwqkjdbwqjdbwqkjdbkwjqdqwkjdbwqjdbwqjkdbwqkjdbqwjkdbkjwqdjkwqdkjwqdkjwqnwqdnwqkjdkwjqdqwkjnjwqdjkqwndjkwqndjkwqjkdnkqwjdkjwqnkwqndwqmdnwqjdwqjkndwndwjqdwjqdnwqkjndwqjknwqjwqnsjwqnkjwqwqwqnwqjnkjwqdjkwqndjqwndjwqndjwqndwjndjwqndjwqndwqjndwqndwqjnjwqnwjdnjwndqw",
+        "lastName": "kk",
+        "contactNo": "9",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "ajay_user1",
+        "firstName": "rajat123",
+        "lastName": "shar123",
+        "contactNo": "1",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "akhil_user",
+        "firstName": "client123",
+        "lastName": "sharma123",
+        "contactNo": "1",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      }
+    ],
+    "expectedStatusCode":"400",
+    "expectedResponseMessage": "First name cannot be blank or more than 512 characters"
+  },
+  {
+    "testCaseId": "C88770",
+    "enabled": "yes",
+    "testingType": "regression",
+    "description": "Bulk Update Mandatory Fields from Request Body with null data",
+    "payload": [
+      {
+        "loginId": "ajay_user",
+        "contactNo": "98",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "ajay_user1",
+        "firstName": "rajat1234",
+        "lastName": "sh",
+        "contactNo": "1",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      },
+      {
+        "loginId": "akhil_user",
+        "firstName": "cl",
+        "lastName": "sh",
+        "contactNo": "1",
+        "dynamicMetadataJson": "{\"105106\":\"MICJ 254\", \"105107\":\"CCO IT Core Platforms Digitiza\", \"105105\":\"CCO_Platform_IT EON\", \"105104\":\"CCROS02\"}"
+      }
+    ],
+    "expectedStatusCode":"400",
+    "expectedResponseMessage": "First name cannot be blank or more than 512 characters"
+  }
+]

@@ -1,0 +1,57 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+category = {"name": "category","id":7368,"values":{"name": "Acceptance","id": 1188}}
+group = {"name":"group","id":11837,"values":{"name":"Clause","id":1}}
+
+
+[flow 2]
+name = {"name":"name","id":7367,"values":"API Automation Clause"}
+headerLabel = {"name":"headerLabel","id":11464,"values":"API Automation Clause"}
+subHeader = {"name":"subHeader","id":12036,"values":"API Automation Clause"}
+suppliers = {"name":"suppliers","id":7369,"options":null,"multiEntitySupport":false,"values":[{"name":"Apple Inc","id":1173}]}
+termType = {"name":"termType","id":7372,"options":null,"multiEntitySupport":false,"values":{"name":"Fixed","id":1021}}
+type = {"name":"type","id":7370,"options":null,"multiEntitySupport":false,"values":{"name":"Exchange","id":1042}}
+functions = {"name":"functions","id":11549,"options":null,"multiEntitySupport":false,"values":[{"name":"IT","id":1008}]}
+services = {"name":"services","id":11550,"options":null,"multiEntitySupport":false,"values":[{"name":"Mainframe Services","id":1028,"parentId":1008,"parentName":"IT"},{"name":"Network MNS","id":1029,"parentId":1008,"parentName":"IT"}]}
+riskTypes = {"name":"riskTypes","id":7389,"options":null,"multiEntitySupport":false,"values":[{"name":"Automation","id":1039}]}
+industryTypes = {"name":"industryTypes","id":7373,"options":null,"multiEntitySupport":false,"values":[{"name":"Automobiles & Components","id":1025}]}
+companyPosition = {"name":"companyPosition","id":7374,"options":null,"multiEntitySupport":false,"values":{"name":"Automation","id":1022}}
+agreementTypes = {"name":"agreementTypes","id":7375,"options":null,"multiEntitySupport":false,"values":[{"name":"End User License Agreement","id":1033}]}
+transactionTypes = {"name":"transactionTypes","id":7377,"options":null,"multiEntitySupport":false,"values":[{"name":"Automation","id":1035}]}
+contractServices = {"name":"contractServices","id":7378,"options":null,"multiEntitySupport":false,"values":[{"name":"Connectivity Charge","id":1231}]}
+minTcv = {"name":"minTcv","id":7380,"multiEntitySupport":false,"values":"100"}
+maxTcv = {"name":"maxTcv","id":7381,"multiEntitySupport":false,"values":"500"}
+recipientMarkets ={"name":"recipientMarkets","id":11846,"options":null,"multiEntitySupport":false,"values":[{"name":"Qatar","id":1010}]}
+globalRegions = {"name":"globalRegions","id":7391,"options":null,"multiEntitySupport":false,"values":[{"name":"APAC","id":1017,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":7392,"options":null,"multiEntitySupport":false,"values":[{"name":"Australia","id":15,"parentId":1017,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[flow 3]
+name = {"name":"name","id":7367,"values":""}
+
+[flow 4]
+name = {"name":"name","id":7367,"values":"API Automation !@#%% 987778"}
+functions = {"name":"functions","id":508,"values":[{"name":"IT","id":1008}],"multiEntitySupport":false}
+services = {"name":"services","id":509,"values":[{"name":"Applications Development & Maintenance","id":1025,"parentId":1008},{"name":"Applications Servers","id":1026,"parentId":1008},{"name":"LAN","id":1027,"parentId":1008},{"name":"Mainframe Services","id":1028,"parentId":1008},{"name":"Network MNS","id":1029,"parentId":1008}],"multiEntitySupport":false}
+
+[flow 1]
+functions = {"name":"functions","id":508,"values":[{"name":"IT","id":1008}],"multiEntitySupport":false}
+services = {"name":"services","id":509,"values":[{"name":"Applications Development & Maintenance","id":1025,"parentId":1008},{"name":"Applications Servers","id":1026,"parentId":1008},{"name":"LAN","id":1027,"parentId":1008},{"name":"Mainframe Services","id":1028,"parentId":1008},{"name":"Network MNS","id":1029,"parentId":1008}],"multiEntitySupport":false}

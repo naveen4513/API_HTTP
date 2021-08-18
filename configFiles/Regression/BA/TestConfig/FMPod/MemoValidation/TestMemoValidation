@@ -1,0 +1,60 @@
+#Pricing Template Details
+pricingtemplatefilepath = src/test/resources/TestConfig/Invoice
+invoiceflowsconfigfilepath = src/test/resources/TestConfig/Invoice
+invoiceflowsconfigfilename = InvoiceFlows.cfg
+
+
+#For VPC
+changerequestname = (CR01485) Change Request Created by gaurav bhadani Please Do not touch
+change_request_id = 1596
+
+#For VPC
+approve_steps_invoice = ApproveInvoice
+
+[validation_status_no_memo_found]
+flows to test = fixed fee flow 1
+
+[memo creation with pricing change flows]
+flows to test = fixed fee flow 1
+#arc flow 1
+
+[validation_status_same_as_previous_line_item]
+flows to test = fixed fee flow 1
+
+
+[memo line item status as previous fixed fee flow 1]
+expectedlineitemstatus = Total Discrepancy
+
+[memo creation with pricing change fixed fee flow 1]
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 90
+ratecolumnvalues = 90
+
+[memo creation with pricing change arc flow 1]
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 90
+ratecolumnvalues = 90
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13

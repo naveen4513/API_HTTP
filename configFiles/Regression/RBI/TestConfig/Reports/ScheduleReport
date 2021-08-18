@@ -1,0 +1,56 @@
+#All keys must be in lower case characters only
+#Put Users in comma seperated (ajay_user@sirionqa.office,pradeep@sirionqa.office) othewise it take the first user of All Users as a recipient
+
+schedulebymereportapiurlid = 102
+sharedbymereportapiurld = 103
+sharedwithmereportapiurld = 103
+scheduledjobsapiurlid = 225
+verifyfromemail = true
+
+timezoneId = 8
+selectedusers = shiv_user_dft@sirionqa.office,shiv_user1_dft@sirionqa.office
+frequencytype = REPEATONCE
+
+#subject and date_created is dummy value and will be replaced in test method
+# here to_mail value in column value should belongs to any of selectedusers
+# attachement, body should be at last in tablecolumnnametoselect
+[default]
+schedulereportsforentities = specified
+tablename = system_emails
+parser = ,
+columnname = subject,date_created,to_mail,sent_succesfully
+comparator = like,greaterthan,like,equal
+columnvalue = {},{},%shiv_user_dft@sirionqa.office%,true
+tablecolumnnametoselect = id,to_mail,subject,date_created,attachment,body
+filterrecordsorderbyquery = order by id desc limit 1
+daywindow = -2
+
+#skip report ids are the reports to be skipped , it can contains the id of reports which have download feature , schedule feature etc..
+#each id should be seperated by comma
+skipreportids = 59
+
+[child obligations]
+test = 13
+reportnames = Child Obligations - Tracker
+
+
+[obligations]
+test = 153
+reportnames = Master Obligations - Tracker
+
+
+
+[contract draft request]
+#test = 1011
+test = 324,1011
+reportnames = Contract Draft Request- Tracker,Contract Draft Request- Lead Time
+
+
+
+[contracts]
+test = 222,270
+reportnames = Contract - PIPELINE REPORT,Contract - PIPELINE REPORT - NEW
+
+
+
+

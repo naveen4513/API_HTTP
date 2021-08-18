@@ -1,0 +1,30 @@
+#For Auto Office Env
+client id = 1002
+vendor id = 121502
+
+//Comma seperation according to levels
+rate card id list = 1241,1240,1239
+start date list = 01-01-2016,01-01-2015,01-01-2014
+end date list = 12-31-2018,12-31-2015,12-31-2014
+
+new rate card list 1 = 1241,1241,1241
+new start date list 1 = 01-01-2016,01-01-2016,01-01-2016
+new end date list 1 = 12-31-2026,12-31-2026,12-31-2026
+
+new rate card list 2 = 1239,1239,1239
+new start date list 2 = 01-01-2016,01-01-2016,01-01-2016
+new end date list 2 = 12-31-2026,12-31-2026,12-31-2026
+
+stakeholder id = 1979
+
+rate card start date for eff date null = 01-01-2006
+rate card end date for eff date null = 12-31-2030
+
+#reporting currency ids
+[update contract currencies]
+# 1[USD] 61[Japan] 6[Canada] 8[INR] 49[UAE] 3[AUD] 2[EUR]
+level 1 = 61
+level 2 = 6
+level 3 = 49
+
+

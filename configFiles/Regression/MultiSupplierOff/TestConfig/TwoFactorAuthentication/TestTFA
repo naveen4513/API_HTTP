@@ -1,0 +1,7 @@
+[default]
+username = sarthak_user
+password = admin123
+
+[client admin user details]
+username = anay_admin
+password = admin123

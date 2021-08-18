@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice List Data Download Validation" thread-count="1">
+
+
+    <test name="List Data Download Validation">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestReportDataDownloadValidations"></class>
+        </classes>
+    </test>
+
+
+</suite>

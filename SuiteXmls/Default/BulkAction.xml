@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bulk Action Test">
+
+    <test name="Bulk Action Feature Test">
+        <classes>
+            <class name="com.sirionlabs.test.bulkAction.TestBulkAction"></class>
+        </classes>
+    </test>
+
+    <test name="Bulk Action Client Setup">
+        <classes>
+            <class name="com.sirionlabs.test.bulkAction.TestBulkActionClientSetup"></class>
+        </classes>
+    </test>
+
+    <test name="Bulk Action Client Admin">
+        <classes>
+            <class name="com.sirionlabs.test.bulkAction.TestBulkActionClientAdmin"></class>
+        </classes>
+    </test>
+
+    <test name="Bulk Action End User Tests">
+        <classes>
+            <class name="com.sirionlabs.test.bulkAction.TestBulkActionEndUser"></class>
+        </classes>
+    </test>
+
+</suite>   

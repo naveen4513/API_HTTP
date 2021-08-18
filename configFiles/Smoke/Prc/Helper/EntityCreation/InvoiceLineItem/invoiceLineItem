@@ -1,0 +1,42 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = invoices
+sourcename = Automation_DefaultText318
+sourceid = 5401
+lineitemtypeid = 1066
+
+[fixed fee flow 1]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[performance_flow1]
+sourceentity = invoices
+sourcename = AMDOCS Invoice 1890
+sourceid = 36692
+lineitemtypeid = 1046
+
+[arc flow 1]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067

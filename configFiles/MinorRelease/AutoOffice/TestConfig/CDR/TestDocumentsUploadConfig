@@ -1,0 +1,12 @@
+templatedownloadfilepath = src/test/resources/TestConfig/CDR/Creation
+templatename = testuploadfile.docx
+
+
+contractcreationflow = fixed fee flow 1
+
+contractconfigfilepath = src/test/resources/Helper/EntityCreation/Contract
+contractextrafieldsconfigfilename = contractExtraFields.cfg
+contractconfigfilename = contract.cfg
+
+
+cdridforcustomerfieldinheritance=4011,1024

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="User Access" thread-count="1">
+
+    <test name="Supplier Access Misc">
+        <classes>
+            <class name="com.sirionlabs.test.userAccess.TestSupplierAccessMisc"></class>
+        </classes>
+    </test>
+
+</suite>

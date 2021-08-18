@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="prodparallel"/>
+    <suite-files>
+
+        API  Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <!--  API  Configuration -->
+
+        <!--  Suites Files -->
+
+        <suite-file path="../../Regression/Microservice/EmailMicroservice.xml"></suite-file>
+
+        <!--  Suites Files -->
+    </suite-files>
+</suite>

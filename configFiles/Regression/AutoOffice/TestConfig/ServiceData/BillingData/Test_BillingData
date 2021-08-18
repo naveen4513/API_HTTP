@@ -1,0 +1,84 @@
+#configured according to VPC environment
+#converiosn matrix name
+#automation conversion matrix
+
+flowstovalidate = arc flow 1
+excelfilename = ArcRrcFlow1Pricing.xlsm
+#flowstovalidate = arc flow 1,vol pricing flow amount discrepency
+#excelfilename = ArcRrcFlow1Pricing.xlsm,VolumePricingFlow1Pricing.xlsm,
+
+conversion matrix id = 1039
+
+change request value = (CR01060) Change Request Name
+cdr value = (CDR01160) Used In Automation Please Do not Delete
+
+adj line item type id = 1090
+
+[conv matrix 1]
+#automation conversion matrix
+conversion matrix id = 1039
+#May 2018 to Jun 2019
+conversion data id = 1026
+valid to = Sat May 16 2020 00:00:00 GMT+0530 (India Standard Time)
+valid from = Sat May 16 2020 00:00:00 GMT+0530 (India Standard Time)
+filename = ConversionMatrix1.xlsx
+convrate = 12.00
+
+[conv matrix 2]
+#automation conversion matrix
+conversion matrix id = 1040
+#May 2018 to Jun 2019
+conversion data id = 1026
+valid to = Sat May 16 2020 00:00:00 GMT+0530 (India Standard Time)
+valid from = Sat May 16 2020 00:00:00 GMT+0530 (India Standard Time)
+filename = ConversionMatrix2.xlsx
+#INR TO USD
+convrate = 16.00
+
+[conv matrix 3]
+#automation conversion matrix
+conversion matrix id = 1040
+#May 2018 to Jun 2019
+conversion data id = 1026
+valid to = Sat May 16 2020 00:00:00 GMT+0530 (India Standard Time)
+valid from = Sat May 16 2020 00:00:00 GMT+0530 (India Standard Time)
+filename = ConversionMatrix3.xlsx
+#INR TO USD
+convrate = 20.00
+
+[show page mapping listing page]
+servicedataname = name+serviceclient
+contract = contract
+supplier = suppliers
+servicecategory = service category
+servicesubcategory = servicesubcategory
+unittype = unit
+currency = currency
+invoicingtype =
+region = globalregions
+country = service data countries
+startdate =
+enddate = enddate
+attributevalue =
+chargetype = invoicingtype
+rate =
+quantity =
+amount =
+invoiceid =
+invoicelineitemid =
+invoiced =
+status =
+parentid =
+parentname =
+invoicingcurrency = invoicingcurrency
+conversionrate =
+clientamount =
+lineitemdescription =
+lineitemtype = invoicingtype
+serviceidsupplier = serviceidsupplier
+memoreason =
+amountinservicedatacurrency =
+conversionrateasondate =
+amountininvoicingcurrencyasofdate =
+service data mrole_group = stakeholders
+servicedataid = id

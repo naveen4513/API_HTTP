@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Email Notification" thread-count="1">
+
+    <test name="Test User Account Email Validation">
+        <classes>
+            <!--<class name="com.sirionlabs.test.TestUserAccountEmailNotification"></class>-->
+            <class name="com.sirionlabs.test.TestEmailAttachementData"></class>
+        </classes>
+    </test>
+
+
+</suite>

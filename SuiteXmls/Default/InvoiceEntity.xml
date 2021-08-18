@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Entity" thread-count="1">
+
+    <test name="Listing">
+        <classes>
+            <class name="com.sirionlabs.test.invoiceList.TestInvoiceList"></class>
+            <class name="com.sirionlabs.test.invoiceList.TestInvoiceDownload"></class>
+        </classes>
+    </test>
+
+    <test name="Invoice Create Page Validations">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.TestInvoiceValidationsCreatePage"></class>
+        </classes>
+    </test>
+
+
+
+</suite>

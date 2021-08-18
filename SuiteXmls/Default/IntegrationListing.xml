@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Integration Listing" thread-count="1">
+
+
+    <test name="Test Integration Listing Get Types">
+        <classes>
+            <class name="com.sirionlabs.test.IntegrationListing.TestGetListTypes"></class>
+        </classes>
+    </test>
+
+    <test name="Test Integration Listing">
+        <classes>
+            <class name="com.sirionlabs.test.IntegrationListing.TestIntegrationListing"></class>
+        </classes>
+    </test>
+
+</suite>

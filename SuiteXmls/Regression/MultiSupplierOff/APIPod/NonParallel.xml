@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Misc Tests Suite" thread-count="1" data-provider-thread-count="3">
+
+    <test name="SIR-1460">
+        <classes>
+            <class name="com.sirionlabs.test.api.QRCodeGeneration.TestQRCodeGenerationAPI"></class>
+        </classes>
+    </test>
+
+    <test name="SIR-1312">
+        <classes>
+            <class name="com.sirionlabs.test.api.ValidateAccessTokenAPI.TestValidateAccessTokenAPI"></class>
+        </classes>
+    </test>
+
+    <test name="TFA Validation">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestTwoFactorAuthentication"></class>
+        </classes>
+    </test>
+
+</suite>

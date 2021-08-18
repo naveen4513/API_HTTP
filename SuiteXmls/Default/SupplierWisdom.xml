@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Supplier Wisdom" thread-count="1">
+
+    <test name="Test Supplier Wisdom">
+        <classes>
+            <class name="com.sirionlabs.test.TestSupplierWisdom"></class>
+        </classes>
+    </test>
+
+</suite>

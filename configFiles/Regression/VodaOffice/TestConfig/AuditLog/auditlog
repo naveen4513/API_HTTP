@@ -1,0 +1,14 @@
+
+generatedby=Anay User
+outputfilename = auditlog.xlsx
+outputfilepath = src/test/output
+sheetname = Data
+listid = 61
+
+
+entitytotest = governance body,
+columntoskip = CONDITIONS,TIME OF ACTION,ACTUAL DATE
+
+[filterjson]
+86 = {"filterMap":{"entityTypeId":86,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}}}
+12 = {"filterMap":{"entityTypeId":12,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}}}

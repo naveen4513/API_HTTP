@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Data Suite" data-provider-thread-count="20">
+
+    <test name="Invoice Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.invoiceOld.TestInvoiceOld"></class>
+        </classes>
+    </test>
+
+</suite>

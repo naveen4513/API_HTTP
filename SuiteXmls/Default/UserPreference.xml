@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="UserPreference Suite">
+
+    <test name="List UserPreference Test">
+        <classes>
+            <class name="com.sirionlabs.test.TestUserPreference"></class>
+        </classes>
+    </test>
+
+    <test name="Report UserPreference Test">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestReportUserPreference"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,128 @@
+flowstotest = happy flow
+#consumption avail no flow,pricing avail no flow with effective date
+
+datecolumnids =8054,8055,11345,11346,11858,11859,87
+templatefilepath =src/test/resources/TestConfig/ServiceData/BulkCreate
+templateid =1028
+bulkcreatetemplatefilename =CDR SD BULK2.xlsm
+bulkcreatetemplatefilenamefailed =CDR SD BULK2 fail.xlsm
+cdrpermissions=917,924
+servicedatacreationtimeout=1200000
+supplierid=95333
+unit type = 1073
+
+sheetnames = Service Data 123,Pricing,ARC RRC
+pricing sheet name=Pricing
+arc rrc sheet name=ARC RRC
+
+cdrid = 2895
+
+cdrid wth no effective date = 8788
+#2104
+#3782
+#3728
+
+
+#[happy flow service data]
+[happy flow Service Data 123]
+100000001=1
+11767=VEND 1 SUPP 1 ( SP94461 )
+4038=test name
+8051=Indian Rupee (INR)
+12460=Indian Rupee (INR)
+11333=Yes
+#Basic Information - Consumption Available
+11335=Yes
+#No
+11430=Yes
+11431=Monthly
+11336=ARC/RRC
+#Fixed Fee
+8054=43831.0
+8055=43861.0
+11626=Description
+11657=SD Matrix 1
+12231=Service End Date
+11733=APAC
+11343=India
+11731=Human Resources
+11732=Maintenance Services (Human Resources)
+11330=Workstation Services
+11766=Accounts Receivable
+86 = test
+87 = 43861.0
+88 = Jyoti User
+89 = (CR01035) BILLING CCR 1
+100000002=Yes
+
+#[happy flow pricing]
+[happy flow Pricing]
+100000001=1
+100000003=1
+11345=43831.0
+11346=43861.0
+8052=12
+11348=3
+
+[happy flow ARC RRC]
+100000001=1
+100000003=1
+11858=43831.0
+11859=43861.0
+8061=30
+8062=90
+8063=21
+8064=RRC
+
+[failure mandatory Service Data 123]
+expectedresult=failure
+100000001=1
+11767=Berkshire Hathaway ( SP01004 )
+4038=test name
+8051=Indian Rupee (INR)
+12460=Indian Rupee (INR)
+11333=Yes
+11335=No
+11430=Yes
+11431=Monthly
+11336=Fixed Fee
+8054=43831.0
+11626=Description
+11657=currency conv auto api
+12231=Service End Date
+11733=EMEA
+11343=Bulgaria
+11731=Human Resources
+11732=Projects
+11330=Workstation Services
+11766=Accounts Receivable
+100000002=Yes
+
+
+
+
+[failure mandatory Pricing]
+expectedresult=failure
+100000001=1
+100000003=1
+11345=43831.0
+11346=43861.0
+8052=12
+11348=3
+
+[env]
+host=192.168.2.205
+key=tomcat7@123
+user=tomcat7
+withkey=no
+
+[stakeholder details]
+user id = 1979
+name = Jyoti User
+type = 2
+stakeholder id =rg_2617
+
+[column field id]
+consumption available = 11335
+pricing available = 11430
+invoicing type = 11336

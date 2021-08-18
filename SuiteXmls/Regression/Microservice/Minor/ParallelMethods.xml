@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel Methods" parallel="methods" thread-count="3">
+
+    <groups>
+        <run>
+            <include name="minor"/>
+        </run>
+    </groups>
+
+    <test name="Test Function and Service Progressive Filter">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestFunctionAndServiceProgressiveFilter"></class>
+        </classes>
+    </test>
+
+    <test name="Test VH Suffix">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestVHSuffixForSupplierUsers"></class>
+        </classes>
+    </test>
+
+</suite>

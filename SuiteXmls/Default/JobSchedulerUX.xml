@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Job scheduler suite for SIR-190442">
+
+    <test name="SIR-190442 API Tests">
+        <classes>
+            <class name="com.sirionlabs.test.test_SIR190442"></class>
+        </classes>
+    </test>
+
+</suite>

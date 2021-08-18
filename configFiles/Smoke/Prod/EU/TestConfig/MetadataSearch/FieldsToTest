@@ -1,0 +1,37 @@
+#All section names must be in lower case characters only
+#Section name is the EntityName and must be same as in TestSearchMetadata.cfg
+
+#For Split-Fields, need to specify From and To values. Specify it in format: fromValue to toValue.
+#Ex. for Split-Field of type date. 08-01-2017 to 08-31-2017
+#Ex. for Split-Field of type Number. 10000 to 10000000
+#NOTE: For Split-Fields of Type Date/DateTime the dateFormat must be as specified in TestSearchMetadata.cfg file.
+
+[contracts]
+Status = Newly Created
+Name = test
+Term Type = Auto
+Effective Date
+Regions = Global Region
+
+#********************************************************************************
+
+[suppliers]
+Name = AIRBUS
+Alias = sup
+Tier
+Week Type = Five Day
+Functions = Financial Services
+Services = Collaboration
+Regions = South America
+Countries = Rest of APAC
+Tcv = 100 to 50000
+
+#********************************************************************************
+
+[vendors]
+Name = VH
+Alias = veb
+Functions = IT
+Services = Transition and Transformation
+Regions = Global Region
+Countries = Afghanistan

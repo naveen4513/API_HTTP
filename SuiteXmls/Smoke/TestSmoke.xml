@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke">
+    <parameter name="TestingType" value="smoke"/>
+    <parameter name="Environment" value="automation"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+
+        <!-- Smoke Suite -->
+        <suite-file path="../Default/CalendarTest.xml"></suite-file>
+        <suite-file path="../Default/EntityCreation.xml"></suite-file>
+        <suite-file path="BulkAction.xml"></suite-file>
+        <suite-file path="../Default/BulkEdit.xml"></suite-file>
+        <suite-file path="../Default/Insights.xml"></suite-file>
+        <suite-file path="../Default/MassEmail.xml"></suite-file>
+        <!--<suite-file path="../Default/EditEntity.xml"></suite-file>-->
+        <suite-file path="Invoice.xml"></suite-file>
+        <suite-file path="EntityMisc.xml"></suite-file>
+
+    </suite-files>
+</suite>

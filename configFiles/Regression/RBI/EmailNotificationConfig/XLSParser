@@ -1,0 +1,4 @@
+# DO NOT CHANGE THESE VALUES
+columnmax=15
+columninternalproperties=json_column,type,formate,values
+rowcolinfo=startRow,lastDataRow,startCol,lastDataCol,dateFormate

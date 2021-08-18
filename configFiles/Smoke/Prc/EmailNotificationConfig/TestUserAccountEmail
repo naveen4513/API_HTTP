@@ -1,0 +1,17 @@
+#All keys must be in lower case characters only
+
+username = ajay_user
+useremail = admin.rc.office@sirionqa.office
+subjects = ["Exception occurred!"]
+subjectsdelimiter = ,
+numberofdays = 1
+messagestobesaved = true
+attachmentstobedownload = true
+downloaddirectory = src//test//output//Emails//
+
+# MailExchage server details
+mailboxhost = 192.168.2.115
+mailboxusername = admin@sirionqa.office
+mailboxpassword = admin123
+mailboxisssl = false
+mailboxport = 143

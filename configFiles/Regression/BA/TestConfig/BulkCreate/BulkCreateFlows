@@ -1,0 +1,42 @@
+#This file contains all the Flows for the Bulk Create
+
+#Below are the Flows to best tested Sections. Each Section represents one flow to be tested.
+#Section Property Entity: EntityName as in EntityId.cfg & EntityIdMapping.cfg. For which Entity bulk records are to be created.
+#Description: Test Case Description
+#TemplateId: Template Id for the Bulk Create for that Entity
+#ParentEntityTypeId: Parent Entity Type Id of the Entity.
+#ParentId: Parent Id of the Entity.
+#BaseTemplateName: Complete name of the Base Excel file which is to be used for uploading the template. The path of the file will be picked from Property 'ExcelFilePath' in TestBulkCreate.cfg file.
+
+
+
+[c4050 part 3]
+description = Verify Invoice Line Item Bulk Create from Invoice
+entity = invoice line item
+templateid = 1004
+parententitytypeid = 67
+parentid = 10724
+unique fields = 103548
+basetemplatename = Line Item Bulk Create Template Base_BA.xlsm
+sheet name = Invoice
+
+[purchase order positive flow 1]
+description = Verify that PO entity can be created from Contract
+entity = purchase orders
+templateid = 1024
+parententitytypeid = 61
+parentid = 601157
+basetemplatename = PO Bulk Create Template Contract SOW Base_BA.xlsm
+unique fields = 11383,11384,103540
+sheet name = Purchase Order
+
+
+[service data positive flow 1]
+description = Verify that Service Data entity can be created from Contract
+entity = service data
+templateid = 1001
+parententitytypeid = 61
+parentid = 601157
+basetemplatename = Service Data Bulk Create Template Contract SOW Base_BA.xlsm
+unique fields = 11040,11041,103534
+sheet name = Service Data

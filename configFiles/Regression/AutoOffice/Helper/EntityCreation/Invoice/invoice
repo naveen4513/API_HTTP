@@ -1,0 +1,359 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = contracts
+sourcename = Notification Alert
+sourceid = 129388
+
+[fixed fee flow 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[invoice_delete_comment]
+sourceentity = contracts
+contractname = Master Services Agreement - ABC News
+sourceid = 1025
+
+[fixed fee flow 7]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow 8]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow 3]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[performance_flow1]
+sourceentity = contracts
+sourcename = Instelca S.L.U. Agency VF ES-Elektronic
+sourceid = 3617
+
+[arc flow 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 4]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 5]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 6]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 7]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 8]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 9]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 3]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 4]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 5]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 6]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 7]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 8]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 9]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 10]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 11]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[invoice line item misc]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow rate card]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow rate card]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow rate card]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[invoice line item split service data]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow 4]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow 5]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow 6]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow 7]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 3]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow 9]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[consumption reference tab validation single invoice]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[currency conv defined]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[currency conv not defined]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow amount discrepency]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow system values calc 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow system values calc 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow volume discrepancy]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow pricing unavailable]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow invalid service period]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+
+[vol pricing flow currency conv factor unavailable2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow consumption unavailable]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow consumption unapproved]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow currency conv factor unavailable1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow currency conv factor unavailable2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow amount discrepancy]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[vol pricing flow total discrepancy]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow multiple li 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow multiple li 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow multiple li 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[fixed fee flow multiple li 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[forecast flow multiple li 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow multiple li 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 1 for qa sdbox]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[c8238 part 3]
+sourceentity = contracts
+sourcename = Instelca S.L.U. Agency VF ES-Elektronic
+sourceid = 3617
+
+[fixed fee flow for create rule]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[c10420]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+
+[arc flow 10]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 11]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[arc flow 12]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[hierarchical flow]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431

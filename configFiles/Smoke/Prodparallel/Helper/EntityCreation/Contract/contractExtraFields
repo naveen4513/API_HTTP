@@ -1,0 +1,60 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+#RateCardPayload: It is a special property. It is the payload of the UpdateRateCards API used to Add Rate Card. It is being used for Invoice Flow Test.
+#String '{"body":{"data":' will be used as Prefix to RateCardPayload and String '}}' will be used as Suffix to RateCardPayload.
+#Always mention the Contract Id as "new id" which will be updated with new Contract Id
+
+[default]
+contractDocuments = {"name": "contractDocuments","values": []}
+vendorContractingParty = {"name":"vendorContractingParty","id":4739,"values":[]}
+brief  = {"name":"brief","id":5,"values":""}
+currency = values -> {"name":"Argentine Peso (ARS)", "id":9}
+
+[fixed fee flow 1]
+contractDocuments = {"name": "contractDocuments","values": []}
+vendorContractingParty = {"name":"vendorContractingParty","id":4739,"values":[]}
+brief  = {"name":"brief","id":5,"values":""}
+currency = values -> {"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}
+contractCurrencies = {"name":"contractCurrencies","id":26,"values":[{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}]}
+rateCardFromDate = {"name":"rateCardFromDate","id":30,"values":"03-02-2018 00:00:00"}
+rateCardToDate = {"name":"rateCardToDate","id":31,"values":"03-31-2018 00:00:00"}
+rateCardsApplicable = {"name":"rateCardsApplicable","id":29,"values":{"name":"USD - INR","id":1001}}
+#rateCardPayload = {"rateCard":{"values":{"name":"USD - INR","id":1003}},"rateCardFromDate":{"values":"03-01-2018 00:00:00"},"rateCardToDate":{"values":"03-31-2018 00:00:00"},"contractId":{"values":new id}}
+
+[performance_flow1]
+contractDocuments = {"name": "contractDocuments","values": []}
+vendorContractingParty = {"name":"vendorContractingParty","id":4739,"values":[]}
+brief  = {"name":"brief","id":5,"values":""}
+currency = values -> {"name":"Argentine Peso (ARS)", "id":9}
+
+#For qa.sdbox server configured for invoice create rule
+[fixed fee flow for create rule]
+contractDocuments = {"name": "contractDocuments","values": []}
+vendorContractingParty = {"name":"vendorContractingParty","id":4739,"values":[]}
+brief  = {"name":"brief","id":5,"values":""}
+currency = values -> {"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}
+contractCurrencies = {"name":"contractCurrencies","id":26,"values":[{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}]}
+rateCardFromDate = {"name":"rateCardFromDate","id":30,"values":"03-02-2018 00:00:00"}
+rateCardToDate = {"name":"rateCardToDate","id":31,"values":"03-31-2018 00:00:00"}
+rateCardsApplicable = {"name":"rateCardsApplicable","id":29,"values":{"name":"USD - INR","id":1001}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2052":{"values":[{"name":"Automation User","id":1177,"type":2,"email":"auto_user_mcd@sirionqa.office","properties":{}}],"name":"rg_2052","label":"Contract Manager","userType":[2,1,3,4],"options":null}},"options":null}
+globalRegions = {"name":"globalRegions","id":21,"values":[{"name":"Europe","id":1013,"parentId":1006}]}
+globalCountries = {"name":"globalCountries","id":22,"values":[{"name":"Bulgaria","id":37,"parentId":1013}]}

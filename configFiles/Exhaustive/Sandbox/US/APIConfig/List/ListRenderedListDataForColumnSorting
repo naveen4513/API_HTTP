@@ -1,0 +1,15 @@
+#put the page size here
+#And Put the entity name to test in entitytotest (comma seperated)
+#default size is used for the list Data when first call=true.
+offset=0
+size=100
+defaultsize=20
+orderdirectiondesc="desc nulls last"
+orderdirectionasc="asc nulls first"
+entitysectionsplitter = ,
+testforallentities = true
+entitytotest =  obligations
+allentitytotest = suppliers,vendors,obligations,child obligations,service levels,child service levels,interpretations,issues,actions,disputes,contracts,change requests,invoices,work order requests,governance body,governance body meetings,contract draft request,purchase orders,service data,clauses,contract templates,custom calendar,invoice line item
+columnstoavoid = term,ageing,aging,bulkcheckbox
+
+

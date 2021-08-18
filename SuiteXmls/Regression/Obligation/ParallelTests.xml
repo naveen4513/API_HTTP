@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name=" Obligation Parallel Tests" parallel="tests" thread-count="7" data-provider-thread-count="15">
+
+
+    <test name="TestCOBHistoryTAB">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestCOBHistoryTAB"></class>
+        </classes>
+    </test>
+
+
+    <test name="TestObligationLinkageTab">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestObligationLinkageTab"></class>
+        </classes>
+    </test>
+
+</suite>
+
+
+
+
+
+
+
+
+
+
+

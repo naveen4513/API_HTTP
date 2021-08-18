@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <suite-file path="Invoice.xml"></suite-file>
+        <suite-file path="../Default/PurchaseOrder.xml"></suite-file>
+        <suite-file path="../Default/InvoiceEntity.xml"></suite-file>
+        <suite-file path="../Default/InvoiceLineItem.xml"></suite-file>
+        <suite-file path="../Default/ServiceData.xml"></suite-file>
+        <suite-file path="../Default/Consumptions.xml"></suite-file>
+
+    </suite-files>
+</suite>

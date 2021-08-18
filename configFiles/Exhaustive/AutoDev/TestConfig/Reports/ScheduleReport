@@ -1,0 +1,123 @@
+#All keys must be in lower case characters only
+#Put Users in comma seperated (ajay_user@sirionqa.office,pradeep@sirionqa.office) othewise it take the first user of All Users as a recipient
+
+schedulebymereportapiurlid = 102
+sharedbymereportapiurld = 103
+sharedwithmereportapiurld = 103
+scheduledjobsapiurlid = 225
+verifyfromemail = true
+
+timezoneId = 8
+selectedusers = anay_user_dft@sirionqa.office,anay_user1_dft@sirionqa.office
+frequencytype = REPEATONCE
+
+#subject and date_created is dummy value and will be replaced in test method
+# here to_mail value in column value should belongs to any of selectedusers
+# attachement, body should be at last in tablecolumnnametoselect
+[default]
+schedulereportsforentities = specified
+tablename = system_emails
+parser = ,
+columnname = subject,date_created,to_mail,sent_succesfully
+comparator = like,greaterthan,like,equal
+columnvalue = {},{},%anay_user_dft@sirionqa.office%,true
+tablecolumnnametoselect = id,to_mail,subject,date_created,attachment,body
+filterrecordsorderbyquery = order by id desc limit 1
+daywindow = -2
+
+#skip report ids are the reports to be skipped , it can contains the id of reports which have download feature , schedule feature etc..
+#each id should be seperated by comma
+skipreportids = 59
+
+#this actions report id : 30 "Action Aging Report" would be verified as part of Email Scenario check so never modified this
+[actions]
+test = 30,23
+reportnames = Actions - Tracker
+
+[change requests]
+test = 52
+reportnames = Change Requests - Tracker
+
+[child obligations]
+test = 13
+reportnames = Child Obligations - Tracker
+
+[child service levels]
+test = 91
+
+[contract draft request]
+test = 324
+reportnames = Contract Draft Request- Tracker
+
+[contracts]
+test = 49
+
+[disputes]
+test = 315
+reportnames = Dispute - Tracker
+
+[governance body]
+test = 261
+reportnames = Governance Body- Tracker
+
+[governance body meetings]
+test = 264
+reportnames = Governance Body Meeting- Tracker
+
+[interpretations]
+test = 37
+reportnames = Interpretations - Tracker
+
+[invoices]
+test = 51
+reportnames = Invoices - Tracker
+
+[issues]
+test = 40
+reportnames = Issues - Tracker
+
+[obligations]
+test = 153
+reportnames = Master Obligations - Tracker
+
+[service data]
+test = 355
+reportnames = Service Data - Tracker
+
+[suppliers]
+test = 48
+reportnames = Suppliers - Tracker
+
+[work order requests]
+test = 275
+reportnames = Work Order Requests - Tracker
+
+
+# commented section
+
+#[service levels]
+#test = 330
+
+#[issues]
+#test = 45
+
+#[disputes]
+#test = 315
+
+#[contracts]
+#test = 49
+
+#[invoices]
+#test = 79
+
+#[contract draft request]
+#test = 324
+
+#[invoice line item]
+#test = 324
+
+#[purchase orders]
+#test = 324
+
+#[references]
+#test = 324

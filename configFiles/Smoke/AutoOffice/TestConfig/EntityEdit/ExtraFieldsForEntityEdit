@@ -1,0 +1,134 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#Always give Full JSON object as Value for any key.
+
+#**********************************************************************************
+[entity common extra fields map]
+suppliers = supplier common extra fields
+contracts = contract common extra fields
+obligations = obligations common extra fields
+service levels = service levels common extra fields
+actions = actions common extra fields
+issues = issues common extra fields
+disputes = disputes common extra fields
+change requests = change requests common extra fields
+interpretations = interpretations common extra fields
+work order requests = work order requests common extra fields
+contract draft request = contract draft request common extra fields
+purchase orders = purchase order common extra fields
+invoices = invoice common extra fields
+governance body = governance body common extra fields
+
+#**********************************************************************************
+
+[supplier common extra fields]
+
+[contract common extra fields]
+
+[obligations common extra fields]
+
+[service levels common extra fields]
+
+[actions common extra fields]
+
+[issues common extra fields]
+
+[disputes common extra fields]
+
+[change requests common extra fields]
+
+[interpretations common extra fields]
+
+[work order requests common extra fields]
+
+[contract draft request common extra fields]
+
+[purchase order common extra fields]
+
+[invoice common extra fields]
+
+[governance body common extra fields]
+
+[application group common extra fields]
+
+#**********************************************************************************
+
+[suppliers flow 1]
+name = {"name":"name","id":503,"values":"Entity Edit Suppliers Flow 1"}
+
+#**********************************************************************************
+
+[contracts flow 1]
+timeZone = {"name":"timeZone","id":7,"values":{"name":"Mountain Time (GMT -07:00)","id":31,"timeZone":"America/Denver"}}
+
+#**********************************************************************************
+
+[obligations flow 1]
+outputType = {"name":"outputType","id":307,"values":{"name":"Milestone","id":3}}
+
+#**********************************************************************************
+
+[service levels flow 1]
+threshold = {"name":"threshold","id":216,"options":null,"values":{"name":"Minimum - 2 level","id":7}}
+minimum = {"name":"minimum","id":218,"values":"80"}
+expected = {"name":"expected","id":219,"values":"88"}
+
+#**********************************************************************************
+
+[actions flow 1]
+priority = {"name":"priority","id":114,"values":{"name":"High","id":1}}
+
+#**********************************************************************************
+
+[issues flow 1]
+priority = {"name":"priority","id":114,"values":{"name":"High","id":1}}
+
+#**********************************************************************************
+
+[disputes flow 1]
+priority = {"name":"priority","id":11189,"values":{"name":"High","id":1}}
+
+#**********************************************************************************
+
+[change requests flow 1]
+contractReferences = {"name":"contractReferences","id":803,"values":[{"name":"Integration Services Agreement - Berkshire Hathaway.pdf","id":1026,"metaDataCreated":true,"imageCreated":true,"viewerAvailable":true,"noOfPages":10,"fileId":1026,"extension":"pdf","contractId":1037}]}
+
+#**********************************************************************************
+
+[interpretations flow 1]
+tier = {"name":"tier","id":754,"values":{"name":"Tier - 3","id":1008}}
+
+#**********************************************************************************
+
+[work order requests flow 1]
+briefDescription = {"name":"briefDescription","id":904,"values":"test"}
+
+#**********************************************************************************
+
+[contract draft request flow 1]
+tcv = {"name":"tcv","id":11024,"values":"200","displayValues":"200.00 USD"}
+
+#**********************************************************************************
+
+[purchase orders flow 1]
+tier = {"name":"tier","id":11405,"values":{"name":"Tier - 2","id":1007}}
+
+#**********************************************************************************
+
+[invoices flow 1]
+taxPercentage = {"name":"taxPercentage","id":11087,"values":10}
+
+#**********************************************************************************
+
+[governance body flow 1]
+weekType = {"name":"weekType","id":4707,"values":{"name":"Six Day","id":2}}
+
+#**********************************************************************************
+
+[application group flow 1]
+name = {"name":"name","id":4029,"values":"Test Application Group Entity Edit"}
+active = {"name":"active","id":4031,"values":false}

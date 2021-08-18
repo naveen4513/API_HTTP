@@ -1,0 +1,30 @@
+[envinfo]
+domain = http://qavf.rc.office
+clientadminusername = anay_admin
+clientadminpassword = admin123
+dbhost = 192.168.2.110
+dbport = 5432
+maintenancedb = rc_1.22
+dbusername = postgres
+dbpassword = postgres
+
+[flow1]
+testcasetype = positive
+statuscode = 200
+status = Approved
+taskname = automation_EmailTask
+entitytypeid = 61
+entityname = Contracts
+emailtemplateid = 27540
+emailtemplatename = Approve (Individual)
+
+[flow2]
+testcasetype = negative
+statuscode = 200
+status = Approved
+taskname = automation_EmailTask
+entitytypeid = 61
+entityname = Contracts
+emailtemplateid = 27540
+emailtemplateid = Approve (Individual)
+errormessage = Task with same name already exists

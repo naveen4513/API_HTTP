@@ -1,0 +1,66 @@
+#All keys must be in lower-case characters only.
+
+#TestAllEntities: Whether to Search Attachments for all Entities or not. (True to enable, False to disable). Default Value is True.
+#If this field is false then entities specified against EntitiesToTest field will be picked.
+testallentities = false
+
+#EntitiesToTest: Search Attachments for all the Entities specified against this field. Value must match the Entity Label as on UI.
+#If TestAllEntities is disabled, only then below entities will be picked for Validation.
+entitiestotest = Contract
+
+#ResultsLimit is the Maximum No of Results to Show. Default value is 5.
+resultslimit = 50
+#Offset is the Results Page Offset. Default value is 0.
+offset = 0
+
+#VerifyDownloadResults: Whether to validate download results case or not. Possible values are True or False. Default Value is True.
+verifydownloadresults = false
+
+#Search Download File Details.
+#NOTE: DO NOT Provide file extension. It will always be XLSX.
+downloadfilepath = src/test/resources/TestConfig
+downloadfilename = SearchAttachmentResults
+
+#DefaultFilterText: For all filters of Type AutoComplete, this value would be used and 1st result would be considered for Search
+defaultfiltertext = a
+
+#ApplyRandomization: Whether to apply randomization or not. (True to enable, False to disable). Default value is True.
+applyrandomization = true
+
+#MaxNoOfRecordsToValidate: Randomly pick these many records for validation. Default value is 5. It is picked only if ApplyRandomization is True.
+maxnoofrecordstovalidate = 1
+#MaxNoOfFiltersToValidate: Randomly pick these many filters for validation. Default value is 3. It is picked only if ApplyRandomization is True.
+maxnooffilterstovalidate = 10
+#MaxNoOfFilterOptionsToValidate: Randomly pick these many options from all the Options of a Filter. Default value is 3. It is picked only if ApplyRandomization is True.
+maxnooffilteroptionstovalidate = 10
+
+#QueryText is the Keyword/String that is to be searched.
+#NOTE: List of Multiple Values can be provided against QueryText separated by comma. It will search for Every Value one by one.
+#NOTE: Always write Value Against QueryText within Single Quotes. For ex: 'value1, value 2, "Value 3"'.
+#For every Entity specify the Query Text under the EntityQueryTextMapping Section. Key is Entity Label as on UI and Value is Query Text.
+#NOTE: Key must be in lower-case characters only.
+#NOTE: If value is not provided for an entity then it will pick the default Query Text which is defined against 'default' key.
+[entityquerytextmapping]
+default = 'Test'
+action item management = 'Master , "Test"'
+child obligations = 'Master , "Test"'
+child sla = 'Master , "Test"'
+clause = 'Master , "Test"'
+contract = 'Master , "Test"'
+governance body = 'Master , "Test"'
+obligations = 'Master , "Test"'
+sla = 'Master , "Test"'
+supplier = 'Master , "Test"'
+vendor hierarchy = 'Master , "Test"'
+issue management = 'Master , "Test"'
+purchase order = 'Master , "Test"'s
+
+
+#Attachment Filter Name and Show Page Objects Mapping are to be defined under FilterNameShowPageObjectMapping.
+#On Show Page, it will look for the Show Page Object Name to validate Data. If mapping is not found for a Filter, then it will not validate data on Show Page.
+#Key is Filter Query Name and Value is Show Page Object Name.
+#All keys must be in lower-case characters only
+[filternameshowpageobjectmapping]
+regions = globalregions
+functions = functions
+services = services

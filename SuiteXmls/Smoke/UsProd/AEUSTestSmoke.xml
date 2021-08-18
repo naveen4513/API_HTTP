@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke">
+    <parameter name="TestingType" value="smoke"/>
+    <parameter name="Environment" value="Prod/AEUS"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+
+
+        <test name="AutoExtraction APIs Test">
+            <classes>
+                <!--
+                                To Do - WOrk In progress
+                -->
+<!--             <class name="com.sirionlabs.test.autoExtraction.ProjectUpdate"></class>
+                <class name="com.sirionlabs.test.autoExtraction.InProgressDocWithStages"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ClauseDevaitionAE849"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ValidateCountOnListing"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ServiceLevelExtraction"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TableExtraction"></class>
+                <class name="com.sirionlabs.test.autoExtraction.DefineFieldsToBeExtracted"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestAutoExtractionAPIs"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ProjectCreateAndEditPermission"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AutoExtractionInsights"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ResetPermission"></class>
+                <class name="com.sirionlabs.test.api.AutoExtraction.ContractDocumentGetEntities.ContractDocumentGetEntitiesAPITest"></class>-->
+                <class name="com.sirionlabs.test.autoExtraction.AutoExtractionSmoke"></class>
+
+
+            </classes>
+        </test>
+    </suite-files>
+</suite>

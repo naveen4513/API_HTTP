@@ -1,0 +1,40 @@
+[
+  {
+    "Test Case Id": "1",
+	"Description": "Positive Flow for Version 2.0",
+	"Enabled": "yes",
+	"Testing Type": "Smoke, Regression",
+    "Entity Name": "contracts",
+	"Contract Id": "",
+	"Relation Id": "",
+	"Vendor Id": "",
+	"Version": "2.0",
+	"isFirstCall": "true",
+    "Offset": "0",
+    "Size": "20",
+    "Order by Column Name": "id",
+    "Order Direction": "desc",
+    "Filter Json": "{}",
+	"Selected Columns": "[]",
+	"Expected Status Code": "200"
+  },
+  {
+    "Test Case Id": "2",
+	"Description": "Positive Flow for Version 1",
+	"Enabled": "yes",
+	"Testing Type": "Smoke",
+    "Entity Name": "contracts",
+	"Contract Id": "",
+	"Relation Id": "",
+	"Vendor Id": "",
+	"Version": "1.0",
+	"isFirstCall": "true",
+    "Offset": "0",
+    "Size": "20",
+    "Order by Column Name": "id",
+    "Order Direction": "desc",
+    "Filter Json": "{}",
+	"Selected Columns": "[]",
+	"Expected Status Code": "200"
+  }
+]

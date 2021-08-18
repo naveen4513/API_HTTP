@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CA Pod">
+
+    <test name="Regression Suite">
+        <classes>
+            <class name="com.sirionlabs.test.preSignature.TestPreSignatureNew"></class>
+        </classes>
+    </test>
+
+    <test name="CA Stories">
+        <classes>
+
+            <class name="com.sirionlabs.test.pod.ca.TestColumnsAndFiltersSIR181373"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestSourceOptionsSIR203401"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCDRCreationFromContract"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestSIR149687ActionAndIssueCreationFromCDR"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestAutoPortingCA89"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestSupplierMetadataTagCA77"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCA16"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestFunctionServicesOnCTListingCA1138"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestClauseReviewAndUpdateCA1117"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCDRApprovalReportCA1140"></class>
+            <!--<class name="com.sirionlabs.test.pod.ca.TestCDRContractClausesTabCA1069"></class>-->
+            <class name="com.sirionlabs.test.pod.ca.TestBulkDownloadDocumentsFromContractDocumentTabCA1331"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestDropDownFieldsTagsCA960"></class>
+        </classes>
+    </test>
+
+    <test name="PreSig Legacy Features">
+        <classes>
+            <class name="com.sirionlabs.test.pod.ca.TestCDRAdditionalRequiredFields"></class>
+            <class name="com.sirionlabs.test.preSignature.TestPreSigMisc"></class>
+            <class name="com.sirionlabs.test.clause.TestClauseMisc"></class>
+            <class name="com.sirionlabs.test.cdr.TestCDRMisc"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestTextAreaTypeTags"></class>
+            <class name="com.sirionlabs.test.preSignature.TestPreSignatureLanguage"></class>
+            <class name="com.sirionlabs.test.preSignature.TestDownloadTemplateAndAttachments"></class>
+            <class name="com.sirionlabs.test.preSignature.TestClassificationOptions"></class>
+            <class name="com.sirionlabs.test.preSignature.TestContractDocumentTab"></class>
+            <class name="com.sirionlabs.test.preSignature.TestRelatedContractsTabAndLinkedEntitiesTab"></class>
+            <class name="com.sirionlabs.test.preSignature.TestCDRTrackerReport"></class>
+        </classes>
+    </test>
+
+</suite>

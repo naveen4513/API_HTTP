@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="VPC Migration Activity" thread-count="1">
+
+    <test name="Test VPC Migration Activity">
+
+        <classes>
+            <class name="com.sirionlabs.test.bulkCreate.TestBulkCreateV2"></class>
+        </classes>
+
+        <classes>
+            <class name="com.sirionlabs.test.cdr.TestCDRFlowVPC"></class>
+        </classes>
+
+        <classes>
+            <class name="com.sirionlabs.test.reports.TestReportsDataDownload"></class>
+        </classes>
+
+
+    </test>
+</suite>

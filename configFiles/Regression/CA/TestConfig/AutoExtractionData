@@ -1,0 +1,133 @@
+hosturl = http://qavf.ca.office
+contractid = 132570
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = KAMADALTD_DRSADraftR_3252013.docx
+docid = 120060
+clientid = 1005
+rolegroupid = 1375
+documentid = 200454
+fieldids = 12506
+algoid = 1002
+extractiontypeid = 1001
+score = 90
+clientids = 1005
+categoryid1 = 5006
+categoryid2 = 5007
+categoryid3 = 5008
+categoryid4 = 5009
+documentidna = 2004
+cdrId=2770
+
+[cdr metadata Info]
+cdrIdNoAccess = 2864
+
+[ae metadata Info]
+recordid = 15451
+
+
+[ae1 configration]
+backendconfigration = AE1
+algoid = 1001
+
+
+[ae2 configration]
+backendconfigration = AE2
+algoid = 1002
+
+[searchable pdf document]
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = Searchable_pdf.pdf
+
+[non searchable pdf document]
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = Non_Searchable_pdf.pdf
+
+[image document attachment]
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = test1.jpg
+
+[docx attachment]
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = KAMADALTD_DRSADraftR_3252013.docx
+
+[end user credentials]
+username = karuna_user
+password = admin123
+
+[end user credentials without stakeholder]
+username = akshay_chawla
+password = admin1234
+
+[client admin credentials]
+username = karuna_admin
+password = admin1234
+
+[mongo db credentionals]
+hosturl = 192.168.2.186
+port = 27017
+
+[sirion environment sftp]
+hostname = 192.168.2.164
+port = 22
+scheme = http
+username = tomcat7
+password = tomcat7@123
+downloadpath = /src/test/output/AutoExtractionDownloadedFiles/SirionAppsDownloadedFiles/
+
+[ae environment]
+hostname = 192.168.2.107
+port = 8080
+scheme = http
+
+[ae us production]
+hostname = 172.30.0.136
+port = 8090
+scheme = http
+
+[ae vf production]
+hostname = ECS-VF-Prod-AE-Internal-NLB-ea9232672fe93b5a.elb.eu-central-1.amazonaws.com
+port = 8090
+scheme = http
+
+[ae uk production]
+hostname = 172.31.9.142
+port = 8090
+scheme = http
+
+[ae eu production]
+hostname = 172.31.39.48
+port = 8090
+scheme = http
+
+[ae aus production]
+hostname = AutoExtraction-ECS-AUS-Prod-ba5cf4cf0021417f.elb.ap-southeast-2.amazonaws.com
+port = 8090
+scheme = http
+
+[ae vf sandbox]
+hostname = 172.31.23.121
+port = 8090
+scheme = http
+
+[ae2 environment]
+hostname = 192.168.2.107
+port = 8085
+scheme = http
+
+[scheduler environment]
+hostname = 192.168.2.211
+port = 8080
+scheme = http
+
+[postres sirion db details]
+host = 192.168.2.156
+port = 5432
+dbname = AE_POD_2_20
+username = postgres
+password = postgres
+
+[kafka server details]
+hostname = 192.168.2.174
+port = 22
+username = tomcat7
+password = tomcat7@123

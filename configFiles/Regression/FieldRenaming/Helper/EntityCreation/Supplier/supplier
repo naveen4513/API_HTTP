@@ -1,0 +1,30 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Auto_
+
+defaulttext = Supplier
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = vendors
+sourceid = 1154
+
+[flow 1]
+sourceentity = vendors
+sourceid = 1154
+
+[supplier wisdom]
+sourceentity = vendors
+sourceid = 1159

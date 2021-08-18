@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Supplier Suite" thread-count="1">
+
+    <test name="Supplier Update Validation">
+        <classes>
+            <class name="com.sirionlabs.test.supplier.TestSupplierUpdate"></class>
+        </classes>
+    </test>
+
+    <test name="External Contracting Party Validation">
+        <classes>
+            <class name="com.sirionlabs.test.supplier.TestExternalContractingParty"></class>
+        </classes>
+    </test>
+
+</suite>

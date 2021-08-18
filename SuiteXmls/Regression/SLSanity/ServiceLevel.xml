@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Service Level Test Cases">
+
+
+    <!--    <test name="Service Level Automation Extra Test Cases">-->
+
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="sanity"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+
+    <!--        <classes>-->
+    <!--            <class name="com.sirionlabs.test.serviceLevel.TestServiceLevelExtraTestCases"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test name="Service Level Sanity Tests">
+
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="sanity"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+<!--                <classes>-->
+<!--                    <class name="com.sirionlabs.test.serviceLevel.TestChildServiceLevelAutomation"></class>-->
+<!--                </classes>-->
+
+<!--                <classes>-->
+<!--                    <class name="com.sirionlabs.test.serviceLevel.TestBulkFeatures"></class>-->
+<!--                </classes>-->
+
+        <classes>
+            <class name="com.sirionlabs.test.serviceLevel.TestChildServiceLevelAutomation2"></class>
+        </classes>
+
+    </test>
+    <!---->
+
+</suite>

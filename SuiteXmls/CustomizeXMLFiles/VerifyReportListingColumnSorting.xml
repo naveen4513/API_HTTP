@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Column Sorting" thread-count="1">
+
+    <test name="Verify Report Renderer Column Sorting">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestReportColumnsSorting"></class>
+        </classes>
+    </test>
+
+</suite>

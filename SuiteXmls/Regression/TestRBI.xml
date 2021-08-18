@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression Suites">
+
+    <suite-files>
+        <suite-file path="../Regression/ReportRenderTest.xml"></suite-file>
+        <suite-file path="../CustomizeXMLFiles/VerifyColumnSorting.xml"></suite-file>
+        <suite-file path="../CustomizeXMLFiles/TabListingFieldValidation.xml"></suite-file>
+    </suite-files>
+</suite>

@@ -1,0 +1,127 @@
+#This file contains all the Flows for the Bulk Create
+
+#Below are the Flows to best tested Sections. Each Section represents one flow to be tested.
+#Section Property Entity: EntityName as in EntityId.cfg & EntityIdMapping.cfg. For which Entity bulk records are to be created.
+#Description: Test Case Description
+#TemplateId: Template Id for the Bulk Create for that Entity
+#ParentEntityTypeId: Parent Entity Type Id of the Entity.
+#ParentId: Parent Id of the Entity.
+#BaseTemplateName: Complete name of the Base Excel file which is to be used for uploading the template. The path of the file will be picked from Property 'ExcelFilePath' in TestBulkCreate.cfg file.
+
+#This also covers TC-C3500
+[c3446]
+description = Verify that Action entity can be created from Supplier without Contract
+entity = actions
+templateid = 1023
+parententitytypeid = 1
+parentid = 2635
+basetemplatename = Action Bulk Create Template Base Supplier.xlsm
+
+
+[c3497]
+description = Verify that Action entity can be created from SOW Type Contract
+entity = actions
+templateid = 1023
+parententitytypeid = 61
+parentid = 7472
+basetemplatename = Action Bulk Create Template Base SOW.xlsm
+
+
+[c3499]
+description = Verify that Action entity can be created from OLA Type Contract
+entity = actions
+templateid = 1023
+parententitytypeid = 61
+parentid = 7473
+basetemplatename = Action Bulk Create Template Base OLA.xlsm
+
+
+[c4050 part 1]
+description = Verify Invoice Bulk Create from Supplier
+entity = invoices
+templateid = 1013
+parententitytypeid = 1
+parentid = 2635
+basetemplatename = Invoice Bulk Create Template Supplier Base.xlsm
+
+
+[c4050 part 2]
+description = Verify Invoice Bulk Create from Contract
+entity = invoices
+templateid = 1013
+parententitytypeid = 61
+parentid = 7471
+basetemplatename = Invoice Bulk Create Template Contract Base.xlsm
+
+
+[c4050 part 3]
+description = Verify Invoice Line Item Bulk Create from Invoice
+entity = invoice line item
+templateid = 1004
+parententitytypeid = 67
+parentid = 9559
+basetemplatename = Line Item Bulk Create Template Base.xlsm
+
+
+#[c4017 part 4]
+#description = Verify Invoice & Line Item Bulk Create from Contract
+#entity = invoices
+#templateid = 1013
+#parententitytypeid = 61
+#parentid = 7471
+#basetemplatename = Invoice with Line Item Bulk Create Template Base.xlsm
+#withlineitem = true
+
+
+[issue positive flow 1]
+description = Verify that Issues entity can be created from Contract
+entity = issues
+templateid = 1020
+parententitytypeid = 61
+parentid = 7472
+basetemplatename = Issue Bulk Create Template Contract SOW Base.xlsm
+
+
+[disputes positive flow 1]
+description = Verify that Disputes entity can be created from Contract
+entity = disputes
+templateid = 1017
+parententitytypeid = 61
+parentid = 7472
+basetemplatename = Dispute Bulk Create Template Contract SOW Base.xlsm
+
+
+[purchase order positive flow 1]
+description = Verify that PO entity can be created from Contract
+entity = purchase orders
+templateid = 1024
+parententitytypeid = 61
+parentid = 7472
+basetemplatename = PO Bulk Create Template Contract SOW Base.xlsm
+
+
+[obligation positive flow 1]
+description = Verify that Obligation entity can be created from Contract
+entity = obligations
+templateid = 1016
+parententitytypeid = 61
+parentid = 7472
+basetemplatename = Obligation Bulk Create Template Contract SOW Base.xlsm
+
+
+[sl positive flow 1]
+description = Verify that SL entity can be created from Contract
+entity = service levels
+templateid = 1015
+parententitytypeid = 61
+parentid = 7472
+basetemplatename = SL Bulk Create Template Contract SOW Base.xlsm
+
+
+[service data positive flow 1]
+description = Verify that Service Data entity can be created from Contract
+entity = service data
+templateid = 1001
+parententitytypeid = 61
+parentid = 7472
+basetemplatename = Service Data Bulk Create Template Contract SOW Base.xlsm

@@ -1,0 +1,40 @@
+#put the page size here
+#And Put the entity name to test in entitytotest (comma seperated)
+#default size is used for the list Data when first call=true.
+offset=0
+size=100
+defaultsize=20
+orderdirectiondesc="desc nulls last"
+orderdirectionasc="asc nulls first"
+entitysectionsplitter = ,
+testforallentities = true
+entitytotest =  obligations
+allentitytotest = suppliers,vendors,obligations,child obligations,service levels,child service levels,interpretations,issues,actions,disputes,contracts,change requests,invoices,work order requests,governance body,governance body meetings,contract draft request,purchase orders,service data,clauses,contract templates,invoice line item
+columnstoavoid = term,ageing,aging,bulkcheckbox,name,contract
+
+columnstotest = id,Id,ID
+
+[columnstoavoid]
+suppliers = term,ageing,aging,bulkcheckbox,name,contract
+vendors = term,ageing,aging,bulkcheckbox,name,contract
+obligations = term,ageing,aging,bulkcheckbox,name,contract
+child obligations = term,ageing,aging,bulkcheckbox,name,contract
+service levels = term,ageing,aging,bulkcheckbox,name,contract
+child service levels = ageing,actualdenominator,suppliernumerator,finalnumerator,actualnumerator,finaldenominator,finalperformance,supplierdenominator
+interpretations = term,ageing,aging,bulkcheckbox,name,contract
+issues = cycletime,governancebody_meeting,clientfinancialimpactvalue,term,ageing,aging,bulkcheckbox,name,contract
+actions = cycletime,term,ageing,aging,bulkcheckbox,name,contract
+disputes = cycletime,term,ageing,aging,bulkcheckbox,name,contract
+contracts = vendorhierarchy,documenttitle,term,ageing,aging,bulkcheckbox,name,contract
+change requests = term,ageing,aging,bulkcheckbox,name,contract
+invoices = term,ageing,aging,bulkcheckbox,name,contract
+work order requests = actualname,annualcontractvalue,term,ageing,aging,bulkcheckbox,name,contract
+governance body = term,ageing,aging,bulkcheckbox,name,contract
+governance body meetings = term,ageing,aging,bulkcheckbox,name,contract
+contract draft request = title,document_movement_status,term,ageing,aging,bulkcheckbox,name,contract
+purchase orders = term,ageing,aging,bulkcheckbox,name,contract
+service data = term,ageing,aging,bulkcheckbox,name,contract
+clauses = clause_text,term,ageing,aging,bulkcheckbox,name,contract
+contract templates = term,ageing,aging,bulkcheckbox,name,contract
+invoice line item = term,ageing,aging,bulkcheckbox,name,contract
+

@@ -1,0 +1,58 @@
+[envinfo]
+domain = http://qavf.rc.office
+jwtsecretkey = s3crtF9Z8K19ftE0Ces
+jwtissuer = sirion
+jwtexpirytime = 15
+
+[flow1]
+testcasetype = positive
+statuscode = 200
+authorization = yes
+workflowid = 23
+entitytypeid = 1
+clientid = 1007
+
+[authflow1]
+testcasetype = negative
+statuscode = 401
+authorization = yes
+workflowid = 23
+entitytypeid = 1
+clientid = 1007
+errormessage = unauthorized
+
+[authflow2]
+testcasetype = negative
+statuscode = 401
+authorization = no
+workflowid = 23
+entitytypeid = 1
+clientid = 1007
+errormessage = unauthorized
+
+[negativeflow]
+testcasetype = negative
+statuscode = 200
+authorization = yes
+errormessage = applicationError
+
+[negativeflow1]
+testcasetype = negative
+statuscode = 200
+authorization = yes
+isremovekey = true
+workflowid = 23
+entitytypeid = 1
+clientid = 1007
+errormessage = ["workflow id cannot be null"]
+statusfromresponse = false
+
+[negativeflow2]
+testcasetype = negative
+statuscode = 200
+authorization = yes
+isremovekey = false
+workflowid = 10001
+entitytypeid = 1
+clientid = 1007
+statusfromresponse = true

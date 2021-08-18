@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="JWT" thread-count="1">
+
+    <test name="Refresh Access Token API Validation">
+        <classes>
+            <class name="com.sirionlabs.test.jwt.TestRefreshAccessTokenAPI"></class>
+        </classes>
+    </test>
+
+</suite>

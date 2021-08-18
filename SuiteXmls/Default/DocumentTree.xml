@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Document Tree Search" thread-count="1">
+
+    <test name="DocumentTree Test">
+        <classes>
+            <class name="com.sirionlabs.test.TestSearchDocumentTree"></class>
+        </classes>
+    </test>
+</suite>

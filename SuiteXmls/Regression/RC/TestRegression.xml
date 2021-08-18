@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="rc"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <suite-file path="UserAccess.xml"></suite-file>
+        <suite-file path="../../Default/Clause.xml"></suite-file>
+        <suite-file path="../../Default/ContractTree.xml"></suite-file>
+        <suite-file path="../../Default/ListingData.xml"></suite-file>
+
+    </suite-files>
+</suite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="PreSignature Sanity Test Suite">
+
+    <test name="PreSignature Sanity Test">
+        <classes>
+            <class name="com.sirionlabs.test.preSignature.TestPreSignatureSanity"></class>
+        </classes>
+    </test>
+</suite>

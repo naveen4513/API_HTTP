@@ -1,0 +1,125 @@
+{
+  "Actions": {
+    "0": {
+      "name": "Sl. No.",
+      "type": "incremental",
+      "options": [
+        "1"
+      ]
+    },
+    "1": {
+      "name": "Basic Information - Supplier",
+      "type": "singleselect",
+      "options": [
+        "MCD - Supplier 1 ( SP01395 )"
+      ]
+    },
+    "3": {
+      "name": "Basic Information - Name",
+      "type": "uniquename",
+      "options": [
+        "API_Test"
+      ]
+    },
+    "5": {
+      "name": "Basic Information - Service Id (Client)",
+      "type": "uniquename",
+      "options": [
+        "API_Client"
+      ]
+    },
+    "6": {
+      "name": "Basic Information - Service Id (Supplier)",
+      "type": "uniquename",
+      "options": [
+        "API_Supplier"
+      ]
+    },
+    "7": {
+      "name": "Basic Information - Service Category",
+      "type": "singleselect_catagory",
+      "options": [
+        "Service Category - 1",
+        "Industrial service",
+        "Infrastructure"
+      ]
+    },
+    "8": {
+      "name": "Basic Information - Service Sub Category",
+      "type": "singleselect_subcatagory",
+      "options": [
+        {
+          "Service Category - 1": [
+            "Service Sub-Category - 1"
+          ]
+        },
+        {
+          "Industrial service": [
+            "Industry sub-category1"
+          ]
+        },
+        {
+          "Infrastructure": [
+            "Infrastructure"
+          ]
+        }
+      ]
+    },
+    "18": {
+      "name": "Basic Information - Invoicing Type",
+      "type": "singleselect",
+      "options": [
+        "ARC/RRC",
+        "Fixed Fee",
+        "Forecast"
+      ]
+    },
+    "32": {
+      "name": "STAKEHOLDERS - Recruitment Manager",
+      "type": "multiselect",
+      "options": [
+        "Akhil Gupta",
+        "Ajay S",
+        "Aditya  Dwivedi"
+      ]
+    },
+    "33": {
+      "name": "IMPORTANT DATES - Service Start Date",
+      "type": "date",
+      "options": [
+        "01-jan-2016"
+      ]
+    },
+    "34": {
+      "name": "IMPORTANT DATES - Billing Period",
+      "type": "singleselect",
+      "options": [
+        "Monthly",
+        "Quarterly"
+      ]
+    },
+    "35": {
+      "name": "IMPORTANT DATES - Service End Date",
+      "type": "date",
+      "options": [
+        "31-jan-2016"
+      ]
+    },
+    "38": {
+      "name": "Process",
+      "type": "singleselect",
+      "options": [
+        "Yes"
+      ]
+    },
+    "templateInfo": {
+      "dataSheetName": "Data",
+      "startRow": 5,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -1,
+      "dateFormate": "MM-dd-yyyy",
+      "numberOfRowsToBeCreated": 2
+    }
+  }
+}

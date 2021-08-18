@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="To do Validation" thread-count="1">
+
+
+    <test name="To Do Validation">
+        <classes>
+            <class name="com.sirionlabs.test.todo.TestToDoRussianValidations"></class>
+        </classes>
+    </test>
+
+
+</suite>

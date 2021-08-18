@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel Tests" parallel="tests" thread-count="6">
+
+    <test name="Calendar Misc test cases">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarMisc"></class>
+        </classes>
+    </test>
+
+    <test name="Calendar Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarData"></class>
+        </classes>
+    </test>
+
+    <test name="Calendar Export Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarExportData"></class>
+        </classes>
+    </test>
+
+    <test name="Calendar V1 Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarV1Data"></class>
+        </classes>
+    </test>
+
+    <test name="Calendar Filter Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarFilterData"></class>
+        </classes>
+    </test>
+
+    <test name="Insights Validation">
+        <classes>
+            <class name="com.sirionlabs.test.insights.TestInsights"></class>
+        </classes>
+    </test>
+
+    <test name="Test Date Field Range to 500+ Years SIR-199471">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestDateFieldRangeSIR199471"></class>
+        </classes>
+    </test>
+
+</suite>

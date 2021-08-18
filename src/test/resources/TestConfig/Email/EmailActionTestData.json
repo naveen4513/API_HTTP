@@ -1,0 +1,74 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Contracts",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 61,
+    "responseBody": "[{\"name\":\"Approve (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Approve (Individual)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Archive (Bulk)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Archive (Individual)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Comment\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Delete (Bulk)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Delete (Individual)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"DueDateisToday (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"DueDateisToday (Individual)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Edit (Bulk)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Edit (Individual)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Internal Review Complete (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Internal Review Complete (Individual)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Peer Review Complete (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Peer Review Complete (Individual)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Reject (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Reject (Individual)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Restore (Bulk)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Restore (Individual)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Send For Internal Review (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Send For Internal Review (Individual)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Send For Peer Review (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Send For Peer Review (Individual)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Sent For Client Review (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Sent For Client Review (Individual)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"test2020 (Bulk)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"test2020 (Individual)\",\"isNonWorkFlowEmail\":\"false\"}]"
+  },
+  {
+    "testCaseId": "2",
+    "description": "Actions",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 18,
+    "responseBody": "[{\"name\":\"Activate\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Activate-check\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Approve\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Archive\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Comment\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Create / Save\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Delete\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Edit\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Edit (Bulk)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"On Hold\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Reject\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Restore\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Submit\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"rajnish\",\"isNonWorkFlowEmail\":\"false\"}]"
+  },
+  {
+    "testCaseId": "3",
+    "description": "Disputes",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 28,
+    "responseBody": "[{\"name\":\"Acknowledge\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Activate\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Approve\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Archive\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Assign\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Awaiting Finance Review\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Awaiting Legal Review\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Claim Receive\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Client Signature\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Comment\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Create\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Delete\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Edit\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Edit (Bulk)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Escalate To Dispute\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Impact Analysis\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Issue Acknowledge\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Legal Review Complete\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Log Update\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Negotiate Settlement Agreement\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"On Hold\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Outcome Receive\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Overdue\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Re Submit\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Reject\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Resolve\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Restore\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Signoff\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Supplier Signature\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"default_email_dispute\",\"isNonWorkFlowEmail\":\"false\"}]"
+  },
+  {
+    "testCaseId": "4",
+    "description": "Suppliers",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 1,
+    "responseBody": "[{\"name\":\"Archive\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Comment\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Create / Save\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Delete\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Edit\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Edit (Bulk)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Restore\",\"isNonWorkFlowEmail\":\"true\"}]"
+  },
+  {
+    "testCaseId": "5",
+    "description": "Issues",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 17,
+    "responseBody": "[{\"name\":\"Activate\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Approve\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Archive\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Assigned (After Approved Status)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Assigned (On Newly Created Status)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Close\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Comment\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Create / Save\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Delete\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Dispute Resolved\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Edit\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Edit (Bulk)\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Escalate\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Hide from public view (from checked to uncheck)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Hide from public view (from unchecked to check)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Hide from requester view (From checked to uncheck)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Hide from requester view (From unchecked to check)\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"On Hold\",\"isNonWorkFlowEmail\":\"true\"},{\"name\":\"Reject\",\"isNonWorkFlowEmail\":\"false\"},{\"name\":\"Restore\",\"isNonWorkFlowEmail\":\"true\"}]"
+  },
+  {
+    "testCaseId": "6",
+    "description": "Invalid entityTypeId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 1231313,
+    "responseBody": "[]"
+  },
+  {
+    "testCaseId": "7",
+    "description": "String entityTypeId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 405,
+    "entityTypeId": "sadsadasd",
+    "responseBody": ""
+  },
+  {
+    "testCaseId": "8",
+    "description": "Vendor Hierarchy check",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 3,
+    "responseBody": "[]"
+  }
+]

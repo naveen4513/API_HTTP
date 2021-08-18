@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Workflow Pod" thread-count="1">
+
+    <suite-files>
+
+        <suite-file path="../APITest/WorkflowButtons.xml"></suite-file>
+        <suite-file path="../APITest/WorkflowLayout.xml"></suite-file>
+        <!--<suite-file path="../APITest/WorkflowRuleTemplate.xml"></suite-file>-->
+        <suite-file path="../APITest/WOR-340.xml"></suite-file>
+        <!--<suite-file path="../APITest/WOR-525.xml"></suite-file>-->
+
+    </suite-files>
+
+    <test name="Insight on Listing Page WOR-226">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestInsightOnListingPageWOR226"></class>
+        </classes>
+    </test>
+
+    <test name="Vendor Delete WOR-336">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestVendorDeleteWOR336"></class>
+        </classes>
+    </test>
+
+    <test name="Check Audit Logs">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestAuditLogs"></class>
+        </classes>
+    </test>
+
+    <test name="WF-1188">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestFlowDownBulkFeaturesProvisioning"></class>
+        </classes>
+    </test>
+
+    <test name="WF-630">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestFlowDownContractListingSupport"></class>
+        </classes>
+    </test>
+<test name="work Flow Download">
+    <classes>
+        <class name="com.sirionlabs.test.api.workflowPod.WorkFlowDownload.TestWorkFlowDownload"></class>
+    </classes>
+</test>
+</suite>

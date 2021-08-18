@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Create Tasks API Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_qavfrc"/>
+
+    <test name="Create Task APIs">
+        <classes>
+            <class name="com.sirionlabs.test.microservice.TaskLibraryAPI.CreateGeneralTaskTest"></class>
+            <class name="com.sirionlabs.test.microservice.TaskLibraryAPI.TestCreateEditTask"></class>
+            <class name="com.sirionlabs.test.microservice.TaskLibraryAPI.TestCreateStateTask"></class>
+            <class name="com.sirionlabs.test.microservice.TaskLibraryAPI.TestCreateEmailTask"></class>
+            <class name="com.sirionlabs.test.microservice.TaskLibraryAPI.TestCreateLeadTimeTask"></class>
+            <class name="com.sirionlabs.test.microservice.TaskLibraryAPI.TestCreateValueUpdateTask"></class>
+            <class name="com.sirionlabs.test.microservice.TaskLibraryAPI.TestCreateAutoCreateTask"></class>
+        </classes>
+    </test>
+
+
+</suite>

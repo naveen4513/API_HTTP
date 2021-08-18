@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+<!--        <parameter name="Environment" value="automation"/>-->
+    <parameter name="Environment" value="SLPodEnv"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <test name="Error Messages Scenarios">
+            <classes>
+                <class name="com.sirionlabs.test.SL_Stories.TestErrorMessagesScenarios"></class>
+            </classes>
+        </test>
+
+
+<!--        <test name="Test the Time Line Features Story">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.SL_Stories.test_TimeLineFeatures"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="List Data Download Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.listdatadownload.TestListDataDownloadValidations"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="SIR-4661 Test the Document Viewer - CSL listing support">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.SL_Stories.TestDocumentViewerCSLListingSupport"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="Report Filters Data Validation Suite">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.reports.TestReportFilters"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+
+<!--        <test name="Filter Data Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.filters.TestFilters"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="Currency Fields Rate Card Calculation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.SL_Stories.TestCurrencyFieldConversion"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="Reports Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.SL_Stories.TestSLReports"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+
+    </suite-files>
+</suite>

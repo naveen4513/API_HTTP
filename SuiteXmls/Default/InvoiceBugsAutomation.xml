@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Bugs Automation" thread-count="1">
+
+    <test name="Release 1_36 Bugs">
+        <classes>
+            <class name="com.sirionlabs.test.FM.Test_RC1_36_Bugs"></class>
+        </classes>
+    </test>
+
+</suite>

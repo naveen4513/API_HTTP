@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+<!--    <parameter name="Environment" value="automation"/>-->
+    <parameter name="line item validation" value="yes"/>
+
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <test name="Invoice Details Tab Validation">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.TestInvoiceDetails"></class>
+            </classes>
+        </test>
+
+        <test name="Service Data Charges Validation">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.flow.TestServiceDataCharges"></class>
+            </classes>
+        </test>
+
+        <test name="Tabs Testing Service Data">
+            <classes>
+                <class name="com.sirionlabs.test.serviceData.TestTabListingServiceData"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

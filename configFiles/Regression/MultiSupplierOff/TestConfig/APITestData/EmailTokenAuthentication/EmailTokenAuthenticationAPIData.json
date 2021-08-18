@@ -1,0 +1,20 @@
+[
+  {
+    "expectedStatusCode": "401",
+    "authToken": "",
+    "description": "hit email token authentication API when authToken null",
+    "testingType": "regression",
+    "enabled": "yes",
+    "errorMessage": "Unauthorized",
+    "testCaseId": "1"
+  },
+  {
+    "expectedStatusCode": "401",
+    "authToken": "adcde",
+    "description": "hit email token authentication API when authToken invalid",
+    "testingType": "regression",
+    "enabled": "yes",
+    "errorMessage": "Unauthorized",
+    "testCaseId": "1"
+  }
+]

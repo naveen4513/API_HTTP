@@ -1,0 +1,9 @@
+downloadFileName=file.xlsm
+downloadFilePath=src/test/resources/TestConfig/ServiceData/Pricing/
+
+
+[flows]
+ccrflow=service data version change scenario
+cdrflow=cdr creation from contract
+contractflow=arc flow 1
+sd=arc flow 1

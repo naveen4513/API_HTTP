@@ -1,0 +1,76 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = obligations
+sourcename = SMILE TELECOM LTD Obligation 6323
+sourceid = 32497
+parententitytype = Obligations
+parentname = Kellogg Co.Â -SMILE TELECOM LTD
+parentid = 1508
+
+[flow 1]
+sourceentity = obligations
+sourcename = SMILE TELECOM LTD Obligation 6323
+sourceid = 32497
+parententitytype = Obligations
+parentname = Kellogg Co.Â -SMILE TELECOM LTD
+parentid = 1508
+
+[issue_delete_comment]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+
+[governance_bodies_issue]
+sourceentity = governance body meetings
+sourceid =
+
+[issue creation from cdr]
+sourceentity = contract draft request
+sourcename = API Automation CDR for Action & Issue Creation Test
+sourceid = 2353
+parententitytype = contract draft request
+suppliername = API Automation Supplier for Invoice Bulk Create
+supplierid = 1497
+
+[c63346]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+
+[c8226]
+sourceentity = suppliers
+sourceid =
+
+[c8228]
+sourceentity = service levels
+sourceid =
+
+[c8236]
+sourceentity = change requests
+sourceid =
+
+[c8238 part 2]
+sourceentity = interpretations
+sourceid =
+
+[c8238 part 3]
+sourceentity = invoices
+sourceid =

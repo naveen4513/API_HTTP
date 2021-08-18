@@ -1,0 +1,54 @@
+#All keys must be in lower case characters only
+
+#ListData Details
+#Offset: Default value is 0.
+offset = 0
+#Size: Default value is 20.
+size = 40
+
+#ApplyRandomization: When Set to True then pick some records randomly for Validation. If False then will pick all records for validation. (True to enable, False to disable).
+#Default Value is False. If Set to True then Max. No of Records to be validated will be picked from MaxRecordsToValidate property.
+applyrandomization = true
+
+#MaxRecordsToValidate: These many records will be picked randomly for Validation. (Default value is 3)
+maxrecordstovalidate = 5
+#MaxNoOfFiltersToValidate: Randomly pick these many filters for validation. Default value is 3. It is picked only if ApplyRandomization is True.
+maxnooffilterstovalidate = 30
+#MaxNoOfFilterOptionsToValidate: Randomly pick these many options from all the Options of a Filter. Default value is 3. It is picked only if ApplyRandomization is True.
+maxnooffilteroptionstovalidate = 25
+
+#FiltersToIgnore: All the filters which are to be ignored for validation. Filter Query names are to be provided.
+filterstoignore =
+
+#Default Date Values in Format MM-dd-yyyy
+defaultstartdate = 03-01-2017
+defaultenddate = 03-31-2020
+
+#Expected Date Format on Show Page
+expecteddateformat = MM-dd-yyyy
+
+#Service Data Filter Name and Show Page Objects Mapping are to be defined under FilterNameShowPageObjectMapping.
+#On Show Page, it will look for the Show Page Object Name to validate Data. If mapping is not found for a Filter, then it will not validate data on Show Page.
+#Key is Filter Label and Value is Show Page Object Name.
+#NOTE: This section and keys are case-sensitive.
+
+[filterNameShowPageObjectMapping]
+supplier = suppliers
+contract = contract
+status = status
+regions = globalregions
+functions = functions
+services = services
+startDate = startdate
+endDate = enddate
+currency = currency
+countries = globalcountries
+serviceSubCategory = service sub category
+invoicingType = invoicing type
+serviceCategory = service category
+unitType = unit
+billingPeriod = billing period
+forecastAvailable = forecastingavailable
+pricingAvailable = pricingavailable
+billingAvailable = billingavailable
+consumptionAvailable = consumptionavailable

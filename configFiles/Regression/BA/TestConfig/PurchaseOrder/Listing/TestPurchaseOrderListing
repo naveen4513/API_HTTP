@@ -1,0 +1,30 @@
+#All section names and keys must be in lower case characters only
+
+#Pagination List Data Size: Default Value is 20.
+paginationlistdatasize = 5
+
+#MaxRecordsToValidate: Max no of records to validate on listing page. Default value is 5.
+maxrecordstovalidate = 10
+
+fieldsvalidationlistdataoffset = 0
+fieldsvalidationlistdatasize = 50
+
+
+showpageexpecteddateformat = MMM-dd-yyyy
+
+
+#Fields To Test: All the fields which are to tested in List Data. Use delimiter , (comma). These are the column names in the List Data API.
+fieldstotest = id, ponumber, name, startdate, enddate,currencyname,status,country,service,function
+
+
+[fieldshowpageobjectmapping]
+id = id
+ponumber = ponumber
+name = name
+startdate = startdate
+enddate = enddate
+currencyname = currency short code
+status=status
+country=countries
+service=services
+function=functions

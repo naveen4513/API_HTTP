@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Workflow Request Data API Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="rc_vf"/>
+
+    <test name="Workflow Request Data API">
+        <classes>
+            <class name="com.sirionlabs.test.microservice.workflowTwo.TestWorkflowRequestDataAPI"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,26 @@
+[invoice line item]
+payload = [{"columnId":13882,"columnQueryName":"id"}]
+columnidstoignore= 13883,116492,116491,13906,14499,13884,13885,13886,13887,13888,13889,13890,13919,17121,13922,13896,13897,13901,13903,13923,13924,13925,15790,13900,13914,13915,14306,13920,13904,13905,13909,13912,13907,13910,13913,13917,13918,13916,14500,14501,14502,14503,14504,14505,14506,14507,17255,17256,17747,17748,17749,18171,18172,18175,18460,18461,115498,115502,115522,115627,115897,115917,116279,116280,117101,117204,117208,117212,117216,117220,117224,117228,117233,117234
+#13882,13898,13899
+
+[consumptions]
+payload = [{"columnId":14482,"columnQueryName":"bulkcheckbox"},{"columnId":14430,"columnQueryName":"id"},{"columnId":14431,"columnQueryName":"name"},{"columnId":14432,"columnQueryName":"contract"},{"columnId":14433,"columnQueryName":"supplier"},{"columnId":14440,"columnQueryName":"consumption_startdate"},{"columnId":14441,"columnQueryName":"consumption_enddate"},{"columnId":15783,"columnQueryName":"base_volume"},{"columnId":14434,"columnQueryName":"serviceclient"},{"columnId":17914,"columnQueryName":"base_rate"},{"columnId":14453,"columnQueryName":"final_consumption"},{"columnId":15784,"columnQueryName":"variance"},{"columnId":15785,"columnQueryName":"variance_percentage"},{"columnId":14456,"columnQueryName":"status"},{"columnId":14448,"columnQueryName":"region"},{"columnId":14449,"columnQueryName":"country"},{"columnId":14450,"columnQueryName":"state"},{"columnId":14454,"columnQueryName":"attributetype"},{"columnId":14455,"columnQueryName":"attribute_value"},{"columnId":14442,"columnQueryName":"billingperiod"},{"columnId":14443,"columnQueryName":"invoicingtype"},{"columnId":14444,"columnQueryName":"unittype"},{"columnId":14435,"columnQueryName":"servicesupplier"},{"columnId":14436,"columnQueryName":"startdate"},{"columnId":14437,"columnQueryName":"enddate"},{"columnId":14438,"columnQueryName":"servicecategory"},{"columnId":14439,"columnQueryName":"servicesubcategory"},{"columnId":14445,"columnQueryName":"contracttype"},{"columnId":14446,"columnQueryName":"contractsubtype"},{"columnId":14447,"columnQueryName":"forecastingfrequency"},{"columnId":17247,"columnQueryName":"createdby"},{"columnId":17248,"columnQueryName":"lastmodifiedby"},{"columnId":17885,"columnQueryName":"aging"},{"columnId":17886,"columnQueryName":"cycletime"},{"columnId":18169,"columnQueryName":"datecreated"},{"columnId":18170,"columnQueryName":"datemodified"},{"columnId":115597,"columnQueryName":"ConsumtionROLE_GROUP"},{"columnId":116503,"columnQueryName":"dyn103494"},{"columnId":116504,"columnQueryName":"clientdyn103494"},{"columnId":117105,"columnQueryName":"dyn103532"}]
+columnidstoignore=
+
+[invoice]
+payload = [{"columnId":14556,"columnQueryName":"bulkcheckbox"},{"columnId":203,"columnQueryName":"id"},{"columnId":205,"columnQueryName":"name"}]
+columnidstoignore=
+
+[service data]
+payload = [{"columnId":13882,"columnQueryName":"id"}]
+columnidstoignore= 13883,116492,116491,13906,14499,13884,13885,13886,13887,13888,13889,13890,13919,17121,13922,13896,13897,13901,13903,13923,13924,13925,15790,13900,13914,13915,14306,13920,13904,13905,13909,13912,13907,13910,13913,13917,13918,13916,14500,14501,14502,14503,14504,14505,14506,14507,17255,17256,17747,17748,17749,18171,18172,18175,18460,18461,115498,115502,115522,115627,115897,115917,116279,116280,117101,117204,117208,117212,117216,117220,117224,117228,117233,117234
+#13882,13898,13899
+
+[contracts]
+payload = [{"columnId":11751,"columnQueryName":"bulkcheckbox"},{"columnId":17,"columnQueryName":"id"}]
+columnidstoignore= 13883,116492,116491,13906,14499,13884,13885,13886,13887,13888,13889,13890,13919,17121,13922,13896,13897,13901,13903,13923,13924,13925,15790,13900,13914,13915,14306,13920,13904,13905,13909,13912,13907,13910,13913,13917,13918,13916,14500,14501,14502,14503,14504,14505,14506,14507,17255,17256,17747,17748,17749,18171,18172,18175,18460,18461,115498,115502,115522,115627,115897,115917,116279,116280,117101,117204,117208,117212,117216,117220,117224,117228,117233,117234
+#13882,13898,13899
+
+[obligations]
+payload = {"columnId": 276,"columnQueryName": "bulkcheckbox"},{"columnId": 56,"columnQueryName": "id"}
+columnidstoignore=

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke">
+    <parameter name="TestingType" value="smoke"/>
+    <parameter name="Environment" value="Prod/US"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <test name="Download List Data">
+            <classes>
+                <class name="com.sirionlabs.test.listRenderer.TestDownloadListData"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CreateEntityTestData" parallel="methods" thread-count="10">
+
+    <test name="Create Contracts">
+        <classes>
+            <class name="com.sirionlabs.test.CreateEntityTestData"></class>
+        </classes>
+    </test>
+
+</suite>

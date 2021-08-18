@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BE Test">
+
+
+
+    <!--<test name="SIR220012">
+        <classes>
+            <class name="com.sirionlabs.test.APIPOD.SIR220012"></class>
+        </classes>
+    </test>-->
+   <!-- <test name="statusCheck">
+        <classes>
+            <class name="com.sirionlabs.test.xyz.xyz"></class>
+        </classes>
+    </test>-->
+   <!-- <test name="SIR220012">
+        <classes>
+            <class name="com.sirionlabs.test.xyz.xyz"></class>
+        </classes>
+    </test>-->
+
+
+    <test name="EntityCheck">
+        <classes>
+            <class name="com.sirionlabs.test.TestEntityEdit"></class>
+        </classes>
+    </test>
+
+</suite>

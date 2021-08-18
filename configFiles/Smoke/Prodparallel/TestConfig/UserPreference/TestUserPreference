@@ -1,0 +1,82 @@
+#Section is Entity Name
+#Key is accessRestriction area
+#Value is permission (true) allowed or (false) restricted
+
+entitysectionsplitter = ,
+testforallentities = false
+entitytotest =  contracts,suppliers,vendors
+allentitytotest = change requests,contracts,suppliers,obligations,child obligations,service levels,issues,actions,invoices,interpretations,work order requests,governance body,governance body meetings,vendors,child service levels,contract draft request,purchase orders,disputes
+gridviewentities = definition,clauses
+
+[request_payload]
+offset = 0
+size = 10
+orderbycolumnname = id
+orderdirection = desc
+viewnameprefix=automation
+
+[vendors]
+maxnumberofcolumns = 10
+
+[suppliers]
+maxnumberofcolumns = 10
+
+[obligations]
+maxnumberofcolumns = 10
+
+[child obligations]
+maxnumberofcolumns = 10
+
+[service levels]
+maxnumberofcolumns = 10
+
+[child service levels]
+maxnumberofcolumns = 10
+
+[interpretations]
+maxnumberofcolumns = 10
+
+[issues]
+maxnumberofcolumns = 10
+
+[actions]
+maxnumberofcolumns = 10
+
+[disputes]
+maxnumberofcolumns = 10
+
+[contracts]
+maxnumberofcolumns = 10
+
+[change requests]
+maxnumberofcolumns = 10
+
+[invoices]
+maxnumberofcolumns = 10
+
+[work order requests]
+maxnumberofcolumns = 10
+
+[governance body]
+maxnumberofcolumns = 10
+
+[governance body meetings]
+maxnumberofcolumns = 10
+
+[contract draft request]
+maxnumberofcolumns = 10
+
+[purchase orders]
+maxnumberofcolumns = 10
+
+[clauses]
+maxnumberofcolumns = 10
+
+[definition]
+maxnumberofcolumns = 10
+
+[consumptions]
+maxnumberofcolumns = 10
+
+[invoice line item]
+maxnumberofcolumns = 10

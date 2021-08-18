@@ -1,0 +1,185 @@
+#All section names and keys must be in lower case characters only
+
+#TemplateFilePath: Path where the bulk create template files are placed.
+templatefilepath = src/test/resources/TestConfig/Invoice/Invoice/BulkCreate/DataFiles
+
+#Template Id
+templateid = 1013
+
+#SchedulerJobTimeOut: Maximum TimeOut for Scheduler Job (in milliseconds). Default value is 600000.
+schedulerjobtimeout = 120000
+
+#SchedulerJobPollingTime: Polling Time for Scheduler Job (in milliseconds). Default Value is 5000.
+schedulerjobpollingtime = 5000
+
+#UploadFlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+uploadflowstovalidate = upload flow 1, upload flow 3, upload flow 5
+
+#UploadFlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+processingflowstovalidate = processing flow 2, processing flow 3, processing flow 4, processing flow 7, processing flow 8, processing flow 12, processing flow 13
+
+
+[bulk create link validation]
+contractid = 133786
+supplierid = 1171
+
+[download template validation]
+templatefilename = BulkCreateTemplate.xlsm
+contractid = 133786
+expectedtemplatename = qavf-Invoice
+
+
+[invoices sheet validation]
+expectedfieldsininvoicessheet = Sl. No., BASIC INFORMATION - Supplier, BASIC INFORMATION - Contract, BASIC INFORMATION - Title, BASIC INFORMATION - PO Number, IMPORTANT DATES - Invoice Period Start, IMPORTANT DATES - Invoice Period End, IMPORTANT DATES - Invoice Date, MANAGEMENT GEOGRAPHY - Regions, MANAGEMENT GEOGRAPHY - Country, Process
+missingfieldsininvoicessheet = BASIC INFORMATION - Invoice Amount,
+expectedrulesininvoicessheet = Mandatory
+expectedmandatoryfields = Sl. No.
+
+
+[invoice line items sheet validation]
+expectedfieldsininvoicelineitemssheet = Sl. No., Invoice Sl. No., BASIC INFORMATION - Line Item Description, BASIC INFORMATION - Line Item Type, IMPORTANT DATES - Service Start Date, IMPORTANT DATES - Service End Date
+expectedrulesininvoicelineitemssheet = Only alpha-numeric values are allowed| Please enter a value not having more than 14 digits in integral part and 12 digits in fractional part.|Only Alpha-Numeric Values Are Allowed
+expectedmandatoryfields = Sl. No., Invoice Sl. No.
+
+
+[information sheet validation]
+expecteddownloadedby = Anay User
+expectedsupplier = ABC News(SP01001)
+expectedparententity = do not edit/delete | FM property(CO129123)
+
+
+[master data validation]
+BASIC INFORMATION - Currency = Indian Rupee (INR)
+BASIC INFORMATION - Tier = Tier - 1
+#FUNCTIONS - Functions = 1003::Human Resources
+#FUNCTIONS - Services = 1003::End-User Computing, 1003::Projects, 1003::Service Desk
+Process = No, Yes
+
+
+#******* Upload Flows Below *********************
+
+#TC-100171
+[upload flow 1]
+bulkcreatetemplatefilename = TC-100171.xlsm
+contractid = 133786
+expectedmessage = Template is not correct
+
+#TC-100172
+[upload flow 2]
+bulkcreatetemplatefilename = TC-100172.xlsm
+contractid = 133786
+expectedmessage = uploaded contains excel formulas & functions
+
+#TC-100173
+[upload flow 3]
+bulkcreatetemplatefilename = TC-100173.txt
+contractid = 133786
+expectedmessage = File extension txt not supported
+
+#TC-100173 Part 2
+[upload flow 4]
+bulkcreatetemplatefilename = TC-100173 Part 2.xlsm
+contractid = 133786
+expectedmessage = Incorrect headers
+
+#TC-100176
+[upload flow 5]
+bulkcreatetemplatefilename = TC-100176.xlsm
+contractid = 133784
+expectedmessage = Template is not correct
+
+#******* End of Upload Flows *********************
+
+
+#******* Processing Flows Below *********************
+
+#TC-100143
+#Not running this as Function is no longer a field in Bulk Create Sheet as per latest workflow.
+;[processing flow 1]
+;bulkcreatetemplatefilename = TC-100143.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100147
+;[processing flow 2]
+;bulkcreatetemplatefilename = TC-100147.xlsm
+;contractid = 2190
+;expectedresult = success
+;createlineitem = true
+;
+;#TC-100150, TC-100149, TC-100152
+;[processing flow 3]
+;bulkcreatetemplatefilename = TC-100150.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100153
+;[processing flow 4]
+;bulkcreatetemplatefilename = TC-100153.xlsm
+;contractid = 2190
+;expectedresult = success
+;createlineitem = false
+;
+;#TC-100166
+;#Not running this flow as Comments field is not mandatory as per the latest workflow although it shows mandatory in Bulk Create Template but it is not mandatory.
+;[processing flow 5]
+;bulkcreatetemplatefilename = TC-100166.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100167
+;#Not running this flow as stakeholders field is not present in Bulk Create Template as per the latest workflow.
+;[processing flow 6]
+;bulkcreatetemplatefilename = TC-100167.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100169
+;[processing flow 7]
+;bulkcreatetemplatefilename = TC-100169.xlsm
+;contractid = 2190
+;expectedresult = success
+;createlineitem = false
+;
+;#TC-100170
+;[processing flow 8]
+;bulkcreatetemplatefilename = TC-100170.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100165
+;#Not running this flow as Functions field is not present in Bulk Create Template as per latest flow.
+;[processing flow 9]
+;bulkcreatetemplatefilename = TC-100165.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100141
+;#Not running this flow as Functions field is not present in Bulk Create Template as per latest flow.
+;[processing flow 10]
+;bulkcreatetemplatefilename = TC-100141.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100164
+;#Not running this flow as Functions field is not present in Bulk Create Template as per latest flow.
+;[processing flow 11]
+;bulkcreatetemplatefilename = TC-100164.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100160
+;[processing flow 12]
+;bulkcreatetemplatefilename = TC-100160.xlsm
+;contractid = 2190
+;expectedresult = failure
+;
+;#TC-100144
+;[processing flow 13]
+;bulkcreatetemplatefilename = TC-100144.xlsm
+;contractid = 2190
+;expectedresult = failure
+
+#******* End of Processing Flows *********************

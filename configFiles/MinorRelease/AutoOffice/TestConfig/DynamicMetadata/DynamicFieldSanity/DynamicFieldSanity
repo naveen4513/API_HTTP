@@ -1,0 +1,9 @@
+[default]
+dynamicfieldid = 104431
+expectedvalue = Option10
+
+[contracts flow 1]
+sourceentity = suppliers
+sourceid = 1518
+parententitytype = msa
+expectedresult = success

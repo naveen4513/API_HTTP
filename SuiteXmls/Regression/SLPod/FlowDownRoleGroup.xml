@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Flow Down Role Groups" thread-count="1">
+
+
+    <test name="Flow Down Role Groups SL and CSL Listing">
+        <classes>
+            <class name="com.sirionlabs.test.SL_Stories.Test_RoleGroup_SL_CSL_Listing"></class>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,43 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Positive scenario",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133699,
+    "ruleId": 1329,
+    "responseBody": "\"clientId\":1005,\"entityTypeId\":61,\"entityId\":133699,\"emailRuleId\":1329,\"exception\":null,\"entityData\":\"{}\",\"picked\":true,\"executed\":true"
+  },
+  {
+    "testCaseId": "2",
+    "description": "Invalid entityId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": "sadsad",
+    "ruleId": 1329,
+    "responseBody": "applicationError"
+  },
+  {
+    "testCaseId": "3",
+    "description": "Invalid ruleId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133699,
+    "ruleId": "sadsad",
+    "responseBody": "applicationError"
+  },
+  {
+    "testCaseId": "4",
+    "description": "entity picked but not executed",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133702,
+    "ruleId": 1329,
+    "responseBody": "\"picked\":true,\"executed\":false"
+  }
+]
+

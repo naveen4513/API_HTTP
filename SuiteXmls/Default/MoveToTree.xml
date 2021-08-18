@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Move to Tree" thread-count="1" data-provider-thread-count="3">
+
+    <test name="Test Move to Tree Feature">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestMoveToTree"></class>
+        </classes>
+    </test>
+
+</suite>

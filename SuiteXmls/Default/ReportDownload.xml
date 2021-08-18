@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Reports Suite">
+    <test name ="report is downloadable">
+        <classes>
+            <class name="com.sirionlabs.test.reports.TestReportDownload"></class>
+        </classes>
+    </test>
+
+</suite>

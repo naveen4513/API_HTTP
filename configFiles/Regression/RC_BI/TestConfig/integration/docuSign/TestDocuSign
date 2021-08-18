@@ -1,0 +1,32 @@
+#All key and section name must be in lower case
+
+#comma separated list of entities to test
+entitiestotest = change requests, work order requests
+
+#Waiting time for scheduler to upload the signed document on communication tab. time in seconds
+schedulerwaitingtime = 300
+
+#number of records to display on communication tab listing
+communicationtablistingsize = 2
+
+
+#payload Data for docusign send api
+[change requests]
+entityid = 1372
+entitytypeid = 63
+documentname = New Headers for Show-Pages
+documentid = 269319
+doctype = docx
+recipientsuserid = 1185
+recipientsname = Vijay User
+commtablistid = 65
+
+[work order requests]
+entityid = 369
+entitytypeid = 80
+documentname = New Headers for Show-Pages
+documentid = 269319
+doctype = docx
+recipientsuserid = 1185
+recipientsname = Vijay User
+commtablistid = 65

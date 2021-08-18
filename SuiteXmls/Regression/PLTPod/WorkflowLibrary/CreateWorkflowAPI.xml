@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name=" Create Workflow Data API Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_qavfrc"/>
+
+    <test name="Create workflow Data API">
+        <classes>
+            <class name="com.sirionlabs.test.WorkflowLibraryAPI.TestCreateWorkflowAPI"></class>
+        </classes>
+    </test>
+
+
+</suite>

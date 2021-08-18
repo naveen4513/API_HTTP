@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Misc Tests Suite" thread-count="1" data-provider-thread-count="3">
+
+    <!--<test name="Test Function and Service Progressive Filter">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestFunctionAndServiceProgressiveFilter"></class>
+        </classes>
+    </test>
+
+    <test name="Test VH Suffix">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestVHSuffixForSupplierUsers"></class>
+        </classes>
+    </test>
+
+    <test name="Test Date Field Range to 500+ Years SIR-199471">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestDateFieldRangeSIR199471"></class>
+        </classes>
+    </test>
+
+    <test name="Test Columns and Filters Misc">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestColumnsAndFiltersMisc"></class>
+        </classes>
+    </test>
+-->
+
+</suite>

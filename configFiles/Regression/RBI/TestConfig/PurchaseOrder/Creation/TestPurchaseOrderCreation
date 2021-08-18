@@ -1,0 +1,111 @@
+#All section names and keys must be in lower case characters only
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1, flow 2, flow 3, flow 4, flow 5, flow 6, flow 7, flow 8, flow 9, flow 10, flow 11, flow 12
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/PurchaseOrder/Creation
+extrafieldsconfigfilename = ExtraFieldsForPurchaseOrderCreation.cfg
+
+fieldgroupstoverify = basic information, organization information, important dates, geography, function, financial information
+
+[group fields map]
+basic information = poNumber, name, description, contractingEntity, requisitionNumber, trackingNumber, timeZone, currency, active, tier, contract, supplier
+organization information = businessUnits, departments, costCenters
+important dates = startDate, endDate
+geography = countries, states
+function = functions, services
+financial information = poTotal, expectedPoBurn, poBurn, poAvailable
+
+
+#******************* Creation Flows Below *******************
+
+#Positive flow for Contracts (TC-98605, TC-98606, TC-98608, TC-98610)
+[flow 1]
+sourceentity = contracts
+sourcename = API Automation Contract for Purchase Order
+sourceid = 1953
+expectedresult = success
+
+#Negative flow for Contracts (TC-98607)
+[flow 2]
+sourceentity = contracts
+sourcename = API Automation Contract for Purchase Order
+sourceid = 1953
+expectedresult = failure
+
+#Negative flow for Contracts (TC-98609)
+[flow 3]
+sourceentity = contracts
+sourcename = API Automation Contract for Purchase Order
+sourceid = 1953
+expectedresult = failure
+
+#Positive flow for Contracts (TC-98611, TC-98612)
+[flow 4]
+sourceentity = contracts
+sourcename = API Automation Contract for Purchase Order
+sourceid = 1953
+expectedresult = success
+
+#Positive flow for Contracts SOW/WO (TC-98616, TC-98617, TC-98619, TC-98621, TC-98624)
+[flow 5]
+sourceentity = contracts
+sourcename = API Automation Contract SOW for Purchase Order
+sourceid = 1955
+expectedresult = success
+
+#Negative flow for Contracts SOW/WO (TC-98618)
+[flow 6]
+sourceentity = contracts
+sourcename = API Automation Contract SOW for Purchase Order
+sourceid = 1955
+expectedresult = failure
+
+#Negative flow for Contracts SOW/WO (TC-98620)
+[flow 7]
+sourceentity = contracts
+sourcename = API Automation Contract SOW for Purchase Order
+sourceid = 1955
+expectedresult = failure
+
+#Positive flow for Contracts SOW/WO (TC-98622, TC-98623)
+[flow 8]
+sourceentity = contracts
+sourcename = API Automation Contract SOW for Purchase Order
+sourceid = 1955
+expectedresult = success
+
+#Positive flow for Suppliers (TC-98594, TC-98595, TC-98597, TC-98599, TC-98602)
+[flow 9]
+sourceentity = suppliers
+sourcename = API Automation Supplier for Purchase Order
+sourceid = 1347
+expectedresult = success
+
+#Negative flow for Suppliers (TC-98596)
+[flow 10]
+sourceentity = suppliers
+sourcename = API Automation Supplier for Purchase Order
+sourceid = 1347
+expectedresult = failure
+
+#Negative flow for Suppliers (TC-98598)
+[flow 11]
+sourceentity = suppliers
+sourcename = API Automation Supplier for Purchase Order
+sourceid = 1347
+expectedresult = failure
+
+#Positive flow for Suppliers (TC-98600, TC-98601)
+[flow 12]
+sourceentity = suppliers
+sourcename = API Automation Supplier for Purchase Order
+sourceid = 1347
+expectedresult = success
+
+#******************* End of Creation Flows *******************

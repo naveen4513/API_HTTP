@@ -1,0 +1,37 @@
+[fields]
+category = {"values":{"name":"Intellectual Property","id":1155},"name":"category","id":7368}
+group = {"values":{"name":"Clause","id":1},"name":"group","id":11837}
+agreementTypes = {"values":[{"name":"Software Development Agreement","id":1002}],"name":"agreementTypes","id":7375}
+clauseText = {"values":{"html":"<p>Choice of Law and Forum ClauseContracts will often contain language expressing that they are to be interpreted under the laws of a particular state or jurisdiction, and that any litigation will occur within a specified court system:This agreement shall be interpreted under the laws of the State of California. Any litigation under this agreement shall be resolved in the trial courts of Los Angeles County, State of California.Contract provisions for the choice of law and forum language are not always  enforceable, particularly in relation to consumer contracts, but are likely to be upheld for contracts between sophisticated parties and businesses. When entering into a contract you should assume that the provision will be enforced and consider how the provision might affect the cost and burden of litigation in the event of a later dispute.<\/p>","text":"Choice of Law and Forum ClauseContracts will often contain language expressing that they are to be interpreted under the laws of a particular state or jurisdiction, and that any litigation will occur within a specified court system:This agreement shall be interpreted under the laws of the State of California. Any litigation under this agreement shall be resolved in the trial courts of Los Angeles County, State of California.Contract provisions for the choice of law and forum language are not always  enforceable, particularly in relation to consumer contracts, but are likely to be upheld for contracts between sophisticated parties and businesses. When entering into a contract you should assume that the provision will be enforced and consider how the provision might affect the cost and burden of litigation in the event of a later dispute."},"name":"clauseText","id":7386}
+
+[fields constant values]
+text = Choice of Law and Forum ClauseContracts will often contain language expressing that they are to be interpreted under the laws of a particular state or jurisdiction, and that any litigation will occur within a specified court system:This agreement shall be interpreted under the laws of the State of California. Any litigation under this agreement shall be resolved in the trial courts of Los Angeles County, State of California.Contract provisions for the choice of law and forum language are not always  enforceable, particularly in relation to consumer contracts, but are likely to be upheld for contracts between sophisticated parties and businesses. When entering into a contract you should assume that the provision will be enforced and consider how the provision might affect the cost and burden of litigation in the event of a later dispute.
+html = <p>Choice of Law and Forum ClauseContracts will often contain language expressing that they are to be interpreted under the laws of a particular state or jurisdiction, and that any litigation will occur within a specified court system:This agreement shall be interpreted under the laws of the State of California. Any litigation under this agreement shall be resolved in the trial courts of Los Angeles County, State of California.Contract provisions for the choice of law and forum language are not always  enforceable, particularly in relation to consumer contracts, but are likely to be upheld for contracts between sophisticated parties and businesses. When entering into a contract you should assume that the provision will be enforced and consider how the provision might affect the cost and burden of litigation in the event of a later dispute.</p>
+
+[definition fields]
+definitionCategory = {"values":{"name":"No Waiver","id":1268},"name":"definitionCategory","id":11861}
+group = {"values":{"name":"Definition","id":2},"name":"group","id":11837}
+agreementTypes = {"values":[{"name":"Software Development Agreement","id":1002}],"name":"agreementTypes","id":7375}
+
+[contract template fields]
+templateType = {"values":{"name":"Attachment","id":1006},"name":"templateType","id":11833}
+agreementType = {"values":{"name":"Software Development Agreement","id":1002},"name":"agreementType","id":7412}
+clauses = {"name": "clauses","id": 7419,"multiEntitySupport": false,"values": [{"clauseCategory": {"name": "Intellectual Property","id": "1155"},"clause": {"name": "API Automation 2860721","id": 5269},"clauseGroup": {"name": "Clause","id": 1},"order": 1,"mandatory": null},{"clauseCategory": {"name": "No Waiver","id": "1268"},"clause": {"name": "API Automation 2877778","id": 5270},"clauseGroup": {"name": "Clause","id": 2},"order": 2,"mandatory": null}]}
+
+[contract draft request fields]
+suppliers = {"name":"suppliers","id":11601,"options":null,"multiEntitySupport":false,"values":[{"name":"Akshay_Chawla","id":2530}]}
+
+[contract from cdr]
+parentShortCodeId = {"name":"parentShortCodeId","values":{"name":"SP02340","id":2530},"multiEntitySupport":false}
+sourceEntityId = {"name":"sourceEntityId","values":3180,"multiEntitySupport":false}
+sourceEntityTypeId = {"name":"sourceEntityTypeId","values":160,"multiEntitySupport":false}
+
+[contract draft request fields for supplier inheritance]
+suppliers = {"name":"suppliers","id":11601,"options":null,"multiEntitySupport":false,"values":[{"name":"Akshay_Chawla","id":2530}]}
+
+[contract draft request fields for multiple supplier inheritance]
+suppliers = {"name":"suppliers","id":11601,"options":null,"multiEntitySupport":false,"values":[{"name":"Akshay_Chawla","id":2530},{"name":"ABC News","id":1024}]}
+
+[contract document classification]
+masterrolegroupid = 1001
+

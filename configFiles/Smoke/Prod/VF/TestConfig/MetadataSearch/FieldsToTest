@@ -1,0 +1,56 @@
+#All section names must be in lower case characters only
+#Section name is the EntityName and must be same as in TestSearchMetadata.cfg
+
+#For Split-Fields, need to specify From and To values. Specify it in format: fromValue to toValue.
+#Ex. for Split-Field of type date. 08-01-2017 to 08-31-2017
+#Ex. for Split-Field of type Number. 10000 to 10000000
+#NOTE: For Split-Fields of Type Date/DateTime the dateFormat must be as specified in TestSearchMetadata.cfg file.
+
+[obligations]
+Status = Active
+Title = Test
+Parent Supplier = IBM
+Time Zone
+Currency
+
+#********************************************************************************
+
+[contracts]
+Status = Account Created
+Term Type
+Contract Type
+TCV = 1 to 10000000
+
+#********************************************************************************
+
+[actions]
+Status = Overdue
+Description = Test
+Priority = High
+Countries = Australia
+
+#********************************************************************************
+
+[disputes]
+Status = Archived
+Title
+Type
+Regions
+
+#********************************************************************************
+
+[service levels]
+Contract
+Frequency
+Responsibility
+Priority
+
+#********************************************************************************
+
+[vendors]
+Name = LTD
+Alias = npl
+Material Category Level 1 = Network
+Material Category Level 2 = Accessories
+Continents = Americas
+Countries = Brazil

@@ -1,0 +1,62 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Contracts for workflow action",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 61,
+    "emailId": "Send%20For%20Peer%20Review%20(Individual)",
+    "responseBody": "{\"languages\":[{\"name\":\"11 dec 2017\",\"id\":14},{\"name\":\"Albanian (Shqip)\",\"id\":1009},{\"name\":\"anshul\",\"id\":6},{\"name\":\"arabic\",\"id\":10},{\"name\":\"Bosnian (bosanski jezik)\",\"id\":1010},{\"name\":\"Bulgarian (български език)\",\"id\":1001},{\"name\":\"Croatian (hrvatski jezik)\",\"id\":1003},{\"name\":\"Czech (český jazyk)\",\"id\":1002},{\"name\":\"data template\",\"id\":13},{\"name\":\"Default Langauge Pack\",\"id\":12},{\"name\":\"English 1\",\"id\":4},{\"name\":\"English (English)\",\"id\":1},{\"name\":\"English - UK\",\"id\":3},{\"name\":\"English - United States\",\"id\":11},{\"name\":\"English - US\",\"id\":2},{\"name\":\"Hindi (हिन्दी)\",\"id\":1012},{\"name\":\"Hungarian (magyar)\",\"id\":1004},{\"name\":\"Italian (Italiano)\",\"id\":1013},{\"name\":\"NEW\",\"id\":8},{\"name\":\"new language\",\"id\":7},{\"name\":\"newwwwww\",\"id\":15},{\"name\":\"newwwwwwwww\",\"id\":9},{\"name\":\"Polish (język polski)\",\"id\":1005},{\"name\":\"Romanian (Română)\",\"id\":1006},{\"name\":\"Russian (русский)\",\"id\":1000},{\"name\":\"Serbian (српски језик)\",\"id\":1011},{\"name\":\"Slovak (Slovenský Jazyk)\",\"id\":1007},{\"name\":\"test language\",\"id\":5},{\"name\":\"Ukrainian (Українська)\",\"id\":1008}]}"
+  },
+  {
+    "testCaseId": "2",
+    "description": "Contracts for non-workflow action",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 61,
+    "emailId": "Archive%20(Individual)",
+    "responseBody": "{\"languages\":[{\"name\":\"11 dec 2017\",\"id\":14},{\"name\":\"Albanian (Shqip)\",\"id\":1009},{\"name\":\"anshul\",\"id\":6},{\"name\":\"arabic\",\"id\":10},{\"name\":\"Bosnian (bosanski jezik)\",\"id\":1010},{\"name\":\"Bulgarian (български език)\",\"id\":1001},{\"name\":\"Croatian (hrvatski jezik)\",\"id\":1003},{\"name\":\"Czech (český jazyk)\",\"id\":1002},{\"name\":\"data template\",\"id\":13},{\"name\":\"Default Langauge Pack\",\"id\":12},{\"name\":\"English 1\",\"id\":4},{\"name\":\"English (English)\",\"id\":1},{\"name\":\"English - UK\",\"id\":3},{\"name\":\"English - United States\",\"id\":11},{\"name\":\"English - US\",\"id\":2},{\"name\":\"Hindi (हिन्दी)\",\"id\":1012},{\"name\":\"Hungarian (magyar)\",\"id\":1004},{\"name\":\"Italian (Italiano)\",\"id\":1013},{\"name\":\"NEW\",\"id\":8},{\"name\":\"new language\",\"id\":7},{\"name\":\"newwwwww\",\"id\":15},{\"name\":\"newwwwwwwww\",\"id\":9},{\"name\":\"Polish (język polski)\",\"id\":1005},{\"name\":\"Romanian (Română)\",\"id\":1006},{\"name\":\"Russian (русский)\",\"id\":1000},{\"name\":\"Serbian (српски језик)\",\"id\":1011},{\"name\":\"Slovak (Slovenský Jazyk)\",\"id\":1007},{\"name\":\"test language\",\"id\":5},{\"name\":\"Ukrainian (Українська)\",\"id\":1008}]}"
+  },
+  {
+    "testCaseId": "3",
+    "description": "Invalid entityTypeId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 6121311,
+    "emailId": "Send%20For%20Peer%20Review%20(Individual)",
+    "responseBody": ""
+  },
+  {
+    "testCaseId": "4",
+    "description": "String entityTypeId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 405,
+    "entityTypeId": "sadsadsads",
+    "emailId": "Send%20For%20Peer%20Review%20(Individual)",
+    "responseBody": ""
+  },
+  {
+    "testCaseId": "5",
+    "description": "Invalid emailId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 61,
+    "emailId": "asdsad",
+    "responseBody": ""
+  },
+  {
+    "testCaseId": "6",
+    "description": "Integer emailId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 61,
+    "emailId": 123213,
+    "responseBody": ""
+  }
+]

@@ -1,0 +1,32 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = false
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1, flow 2
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/PurchaseOrder
+extrafieldsconfigfilename = ExtraFieldsForPurchaseOrderFlow.cfg
+
+
+[flow 1]
+sourceentity = contracts
+sourcename = do not edit/delete | FM property
+sourceid = 133786
+
+expectednameonshowpage = PO Test Flow 1
+expectedponumberonshowpage = PO Test Flow 1
+
+
+[flow 2]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1171
+
+expectednameonshowpage = PO Test Flow 2
+expectedponumberonshowpage = PO Test Flow 2

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Fx Function Test Cases">
+
+    <test name="Fx Function Tests">
+        <classes>
+            <class name="com.sirionlabs.test.SL_Stories.FxFunction.TestFxFunctions"></class>
+        </classes>
+    </test>
+
+</suite>
+
+

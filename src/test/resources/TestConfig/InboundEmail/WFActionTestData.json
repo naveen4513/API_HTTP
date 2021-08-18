@@ -1,0 +1,72 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Positive scenario",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 61,
+    "entityId": 132987,
+    "responseBody": "Approve"
+  },
+  {
+    "testCaseId": "2",
+    "description": "Invalid Auth Code",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 400,
+    "entityTypeId": 61,
+    "entityId": 132987,
+    "responseBody": ""
+  },
+  {
+    "testCaseId": "3",
+    "description": "Invalid entityTypeId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 6213131,
+    "entityId": 132987,
+    "responseBody": "DOCTYPE HTML SYSTEM"
+  },
+  {
+    "testCaseId": "4",
+    "description": "String entityTypeId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 400,
+    "entityTypeId": "rgefsd",
+    "entityId": 132987,
+    "responseBody": "DOCTYPE HTML SYSTEM"
+  },
+  {
+    "testCaseId": "5",
+    "description": "Invalid entityId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 61,
+    "entityId": 2131322,
+    "responseBody": "DOCTYPE HTML SYSTEM"
+  },
+  {
+    "testCaseId": "6",
+    "description": "String entityId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 400,
+    "entityTypeId": 61,
+    "entityId": "asdasdsa",
+    "responseBody": "DOCTYPE HTML SYSTEM"
+  },
+  {
+    "testCaseId": "7",
+    "description": "Positive - User is not a stakeHolder",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityTypeId": 61,
+    "entityId": 132980,
+    "responseBody": "{}"
+  }
+]

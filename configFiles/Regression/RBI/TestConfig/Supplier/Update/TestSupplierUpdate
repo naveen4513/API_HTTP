@@ -1,0 +1,114 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Supplier/Update
+extrafieldsconfigfilename = ExtraFieldsForSupplierUpdate.cfg
+
+#TC-22688, TC-22690, TC-22691
+[flow 1]
+supplierid = 1437
+expectedresult = success
+
+#TC-22689
+[flow 2]
+supplierid = 1437
+expectedresult = success
+
+#TC-22692
+[flow 3]
+supplierid = 1437
+expectedresult = success
+
+#TC-22694
+[flow 4]
+supplierid = 1437
+expectedresult = success
+
+#TC-22695, TC-22697, TC-22698
+[flow 5]
+supplierid = 1437
+expectedresult = success
+
+#TC-22696
+[flow 6]
+supplierid = 1437
+expectedresult = failure
+
+#TC-22699
+[flow 7]
+supplierid = 1437
+expectedresult = success
+
+#TC-22705, TC-22707, TC-22708
+[flow 8]
+supplierid = 1437
+expectedresult = success
+
+#TC-22706
+[flow 9]
+supplierid = 1437
+expectedresult = success
+
+#TC-22725
+[flow 10]
+supplierid = 1437
+expectedresult = success
+
+#TC-22726
+[flow 11]
+supplierid = 1437
+expectedresult = success
+
+#TC-22727
+[flow 12]
+supplierid = 1437
+expectedresult = success
+
+#TC-22730
+[flow 13]
+supplierid = 1437
+expectedresult = failure
+
+#TC-22731
+#[flow 14]
+#supplierid = 1437
+#expectedresult = failure
+
+#TC-22734
+[flow 15]
+supplierid = 1437
+expectedresult = failure
+
+#TC-22735
+#[flow 16]
+#supplierid = 1437
+#expectedresult = failure
+
+#TC-22738
+[flow 17]
+supplierid = 1437
+expectedresult = failure
+
+#TC-22739
+#[flow 18]
+#supplierid = 1437
+#expectedresult = failure
+
+#TC-22742, TC-22743, TC-22744, TC-22752
+[flow 19]
+supplierid = 1437
+expectedresult = success
+
+#TC-22710
+[flow 20]
+supplierid = 1437
+expectedresult = success

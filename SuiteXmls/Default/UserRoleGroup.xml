@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="User Role Group" thread-count="1">
+
+    <test name="Test User Role Group">
+        <!--<classes>
+            <class name="com.sirionlabs.test.TestUserRoleGroup"></class>
+        </classes>-->
+        <classes>
+            <class name="com.sirionlabs.test.TestUserRoleGroupForParallelExecution"></class>
+        </classes>
+    </test>
+</suite>

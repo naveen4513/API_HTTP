@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="List Renderer" data-provider-thread-count="1">
+<!--    <listeners>-->
+<!--        <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>-->
+<!--    </listeners>-->
+
+    <test name="Test List Data">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sirionlabs.test.listRenderer.TestListRendererListData"></class>
+        </classes>
+    </test>
+
+</suite>

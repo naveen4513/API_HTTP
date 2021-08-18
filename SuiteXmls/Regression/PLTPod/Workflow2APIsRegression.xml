@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Workflow 2.0 APIs Regression">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="rc_vf"/>
+
+    <suite-files>
+        <!-- Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+
+        <!-- Regression Test Files -->
+        <suite-file path="../PLTPod/TaskRequestData.xml"></suite-file>
+        <suite-file path="../PLTPod/FetchEmailDetails.xml"></suite-file>
+        <suite-file path="../PLTPod/WorkflowRequestDataAPI.xml"></suite-file>
+        <suite-file path="../PLTPod/NodeDataDetailsAPI.xml"></suite-file>
+        <suite-file path="../PLTPod/FetchTimezoneDataAPI.xml"></suite-file>
+    </suite-files>
+</suite>

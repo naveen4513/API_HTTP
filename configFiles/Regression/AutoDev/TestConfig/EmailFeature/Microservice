@@ -1,0 +1,61 @@
+[letterbox]
+domain = http://192.168.2.103:8080
+dbhost = 192.168.2.110
+dbport = 5432
+maintenancedb = letterbox
+dbusername = rouser1
+dbpassword = rouser1@123
+
+[mainapp]
+domain = http://qa.api.office
+
+[email]
+workflowtaskid = 73466
+defaultuseremail = srijan.samanta@sirionlabs.com
+user2email = akhil@sirionqa.office
+englishlanguage = English
+russianlanguage = Russian
+serbianlanguage = Serbian
+expirationdateemailmessage = Expiration Date is in the past
+archiveemailmessage = has been archived
+reviewemailsubject = requires your review
+expectedsubjectclientname = MS Supplier
+expectedbodycontractname = Test MS Automation
+
+[actionsflowdown]
+contractrolegroupid = 2001
+supplierrolegroupid = 2000
+supplierid = 1038
+contractid = 24827
+originalusername = Anay User
+originaluserid = 1044
+changedusername = Naveen User
+changeduserid = 1045
+
+[issuesflowdown]
+contractrolegroupid = 2001
+supplierrolegroupid = 2000
+supplierid = 1038
+contractid = 24827
+originalusername = Anay User
+originaluserid = 1044
+changedusername = Naveen User
+changeduserid = 1045
+
+[todo_1]
+occurrence = weekly
+entitycreation = revamptodoupcoming
+status = Newly Created
+status2 = Submit
+status3 = Close
+status4 = Approve
+entitycreationtier2 = revamptodoupcomingtier2
+
+[todo_2]
+occurrence = daily
+entitycreation = revamptodotoday
+status = Newly Created
+status2 = Submit
+status3 = Close
+status4 = Approve
+entitycreationtier2 = revamptodotodaytier2

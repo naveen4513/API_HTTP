@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sisense Login" thread-count="1">
+
+    <test name="Sisense Login Check">
+        <classes>
+            <class name="com.sirionlabs.api.sisenseBI.SisenseLogin"></class>
+        </classes>
+    </test>
+
+</suite>

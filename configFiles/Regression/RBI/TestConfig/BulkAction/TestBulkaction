@@ -1,0 +1,59 @@
+#All section names and keys must be in lower case characters only
+#Section is the Entity Name as in EntityId.cfg
+#Keys are properties for that Entity
+
+#Maximum No of Records for List Data
+maxrecordsforlistdata = 50
+listdataoffset = 0
+
+#Maximum No of Records on which Bulk Action will be performed
+maxrecordsforbulkaction = 2
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in BulkActionFlows.cfg file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = false
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = consumption flow 1, consumption flow 2, consumption flow 3
+
+#UserIdToIgnore: Used for filtering records.
+useridtoignore = 1044
+
+#CheckShowPageIsBlocked: Whether to check if show page is blocked or not. Possible Values are True or False. Default Value is True.
+checkshowpageisblocked = false
+
+#WaitForScheduler: Whether to wait for Scheduler to complete Bulk Action or not. Possible Values are True or False. Default Value is True.
+#If set to True then will wait for the Time specified in property 'SchedulerWaitTimeout'. Otherwise will dump data to file which can be verified later.
+waitforscheduler = true
+
+#KillAllSchedulerTasks: Whether to kill all the Scheduler Tasks before Performing Bulk Action or not. Possible Values are True or False. Default Value is False.
+killallschedulertasks = true
+
+#SchedulerPollingTime: The time interval between requests to Check if Bulk Action Scheduler Job is finished (in milliseconds). Default Value is 5000;
+schedulerpollingtime = 5000
+
+#SchedulerWaitTimeOut: The timeout for the Bulk Action Scheduler (in milliseconds). This property is used only when WaitForScheduler is set to True.
+#Default Value is 1200000 milliseconds.
+schedulerwaittimeout = 600000
+
+#FailTestIfJobNotCompletedWithinSchedulerTimeOut: Whether to fail test If Bulk Action Job not Completed wihtin Scheduler Time Out or not.
+#Possible Values are True or False. Default Value is True.
+failtestifjobnotcompletedwithinschedulertimeout = false
+
+#Maximum No of Records to validate on Show Page
+maxrecordsforshow = 3
+
+#Bulk Action Flows Config File Details
+flowsconfigfilename = BulkActionFlows.cfg
+
+#EntityShowPageStatusObjectMapping: It is a section that contains the mapping of Entity and Show Page Status Field Object which is used for Bulk Action.
+#Key is Entity Name as in EntityId.cfg file.
+#Value is the Show Page Status Field Object which is used for Bulk Action. The value should be as in Show Field Hierarchy File.
+#For ex. For Obligations, Bulk Action works on 'Performance Status'.
+#If no mapping is present for an Entity then it will pick the default mapping i.e. 'Status'
+
+[entityshowpagestatusobjectmapping]
+child obligations = performanceStatus
+child service levels = performanceStatus

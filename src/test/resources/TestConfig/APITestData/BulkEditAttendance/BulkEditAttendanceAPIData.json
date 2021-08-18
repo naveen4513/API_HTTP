@@ -1,0 +1,74 @@
+[
+  {
+    "testCaseId": "1",
+    "testingType": "regression",
+    "enabled": "yes",
+    "description": "Hit Post API With Valid Header And Payload",
+    "payload":"{\n  \"meetingAttended\": \"true\",\n  \"presenceType\": \"Telephonic\",\n  \"duration\":\"30 Min\",\n  \"governanceBodyChildParticipants\": [\n   {\n      \"governanceBodyChildId\": 21685,\n      \"userId\": 1044,\n      \"mandatory\": false,\n      \"meetingAttended\": \"false\",\n      \"presenceType\": \"\",\n      \"email\": \"srijan.samanta@sirionqa.office\",\n      \"name\": \"Anay User\",\n      \"external\": false\n    }\n  ]\n}",
+    "expectedStatusCode": "200",
+    "expectedResponseMessage": "Attendance Updated"
+  },
+  {
+    "testCaseId": "2",
+    "testingType": "regression",
+    "enabled": "yes",
+    "description": "Hit Post API With Valid Header And Null Payload",
+    "payload":"{}",
+    "expectedStatusCode": "400",
+    "expectedResponseMessage": "Governance Body Child Participants cannot be blank."
+  },
+  {
+    "testCaseId": "3",
+    "testingType": "regression",
+    "enabled": "yes",
+    "description": "Hit Post API With Valid Header And with out meeting Attended Payload",
+    "payload":"{\n  \"presenceType\": \"Telephonic\",\n  \"duration\":\"30 Min\",\n  \"governanceBodyChildParticipants\": [\n   {\n      \"governanceBodyChildId\": 21685,\n      \"userId\": 1044,\n      \"mandatory\": false,\n      \"meetingAttended\": \"false\",\n      \"presenceType\": \"\",\n      \"email\": \"srijan.samanta@sirionqa.office\",\n      \"name\": \"Anay User\",\n      \"external\": false\n    }\n  ]\n}",
+    "expectedStatusCode": "400",
+    "expectedResponseMessage": "Please Enter 'Meeting attended'"
+  },
+  {
+    "testCaseId": "4",
+    "testingType": "regression",
+    "enabled": "yes",
+    "description": "Hit Post API With Valid Header And with out presence type Payload",
+    "payload":"{\n  \"meetingAttended\": \"true\",\n  \"duration\":\"30 Min\",\n  \"governanceBodyChildParticipants\": [\n   {\n      \"governanceBodyChildId\": 21685,\n      \"userId\": 1044,\n      \"mandatory\": false,\n      \"meetingAttended\": \"false\",\n      \"presenceType\": \"\",\n      \"email\": \"srijan.samanta@sirionqa.office\",\n      \"name\": \"Anay User\",\n      \"external\": false\n    }\n  ]\n}",
+    "expectedStatusCode": "400",
+    "expectedResponseMessage": "Please Enter 'Presence Type'"
+  },
+  {
+    "testCaseId": "5",
+    "testingType": "regression",
+    "enabled": "yes",
+    "description": "Hit Post API With Valid Header And with out duration Payload",
+    "payload":"{\n  \"meetingAttended\": \"true\",\n  \"presenceType\": \"Telephonic\",\n  \"governanceBodyChildParticipants\": [\n   {\n      \"governanceBodyChildId\": 21685,\n      \"userId\": 1044,\n      \"mandatory\": false,\n      \"meetingAttended\": \"false\",\n      \"presenceType\": \"\",\n      \"email\": \"srijan.samanta@sirionqa.office\",\n      \"name\": \"Anay User\",\n      \"external\": false\n    }\n  ]\n}",
+    "expectedStatusCode": "400",
+    "expectedResponseMessage": "Please Enter 'Duration'"
+  },
+  {
+    "testCaseId": "6",
+    "testingType": "regression",
+    "enabled": "yes",
+    "description": "Hit Post API With Valid Header And wrong meetingAttended Payload",
+    "payload":"{\n  \"meetingAttended\": \"true123\",\n  \"presenceType\": \"Telephonic\",\n  \"duration\":\"30 Min\",\n  \"governanceBodyChildParticipants\": [\n   {\n      \"governanceBodyChildId\": 21685,\n      \"userId\": 1044,\n      \"mandatory\": false,\n      \"meetingAttended\": \"false\",\n      \"presenceType\": \"\",\n      \"email\": \"srijan.samanta@sirionqa.office\",\n      \"name\": \"Anay User\",\n      \"external\": false\n    }\n  ]\n}",
+    "expectedStatusCode": "400",
+    "expectedResponseMessage": "Required request parameter data is either missing or wrong."
+  },
+  {
+    "testCaseId": "7",
+    "testingType": "regression",
+    "enabled": "yes",
+    "description": "Hit Post API With Valid Header And wrong presenceType Payload",
+    "payload":"{\n  \"meetingAttended\": \"true\",\n  \"presenceType\": \"Telephonic123\",\n  \"duration\":\"30 Min\",\n  \"governanceBodyChildParticipants\": [\n   {\n      \"governanceBodyChildId\": 21685,\n      \"userId\": 1044,\n      \"mandatory\": false,\n      \"meetingAttended\": \"false\",\n      \"presenceType\": \"\",\n      \"email\": \"srijan.samanta@sirionqa.office\",\n      \"name\": \"Anay User\",\n      \"external\": false\n    }\n  ]\n}",
+    "expectedStatusCode": "400",
+    "expectedResponseMessage": "Please Enter 'valid Presence Type'"
+  },
+  {
+    "testCaseId": "8",
+    "testingType": "regression",
+    "enabled": "yes",
+    "description": "Hit Post API With Valid Header And wrong duration Payload",
+    "payload":"{\n  \"meetingAttended\": \"true\",\n  \"presenceType\": \"Telephonic\",\n  \"duration\":\"30 Min123\",\n  \"governanceBodyChildParticipants\": [\n   {\n      \"governanceBodyChildId\": 21685,\n      \"userId\": 1044,\n      \"mandatory\": false,\n      \"meetingAttended\": \"false\",\n      \"presenceType\": \"\",\n      \"email\": \"srijan.samanta@sirionqa.office\",\n      \"name\": \"Anay User\",\n      \"external\": false\n    }\n  ]\n}",
+    "expectedStatusCode": "400",
+    "expectedResponseMessage": "Please Enter 'valid Duration'"
+  }
+]

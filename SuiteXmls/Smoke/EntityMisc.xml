@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Entity Misc Tests Suite" thread-count="1" data-provider-thread-count="3">
+    <listeners>
+        <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Action Misc">
+        <classes>
+            <class name="com.sirionlabs.test.action.TestActionMisc"></class>
+        </classes>
+    </test>
+
+    <test name="Issue Misc">
+        <classes>
+            <class name="com.sirionlabs.test.issue.TestIssueMisc"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Doc Upload">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestContractDocumentDocUpload"></class>
+        </classes>
+    </test>
+
+</suite>

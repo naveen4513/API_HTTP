@@ -1,0 +1,188 @@
+#All section names and keys must be in lower case characters only
+
+#FlowsToValidate: All the flows that are to be validated.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1, flow 2, flow 3, flow 4, flow 5, flow 6, flow 7, flow 8, flow 9
+
+#DeleteEntity: Whether to delete entity or not. Possible values are True or False. Default Value is True.
+deleteentity = true
+
+volumecolumnno = 7
+ratecolumnno = 8
+
+#PricingFileDownloadPath: Directory where the Pricing Template is to be downloaded.
+pricingfiledownloadpath = src/test/resources/TestConfig/Invoice/ServiceDataCharges
+pricingfiledownloadname = ServiceDataPricing.xlsm
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Invoice/ServiceDataCharges
+extrafieldsconfigfilename = ExtraFieldsForServiceDataCharges.cfg
+
+#DateFormat
+showdateformat = MMM-dd-yyyy
+expecteddateformat = MMM-dd-yyyy
+
+#SchedulerWaitTimeOut: Max timeout (in milliseconds) for Scheduler Job to finish Pricing Template Consumption. Default Value is 1200000
+schedulerwaittimeout = 600000
+
+#SchedulerPollingTime: Polling Time (in milliseconds) after which to check whether Scheduler has finished Pricing job or not. Default Value is 10000
+schedulerpollingtime = 5000
+
+#KillAllTasks: Whether to kill all Scheduler Tasks or not. Default Value is True.
+killalltasks = true
+
+#ARC/RRC Sheet Default Values
+[arc rrc sheet details]
+lowerlevelcolumnno = 7
+upperlevelcolumnno = 8
+ratecolumnno = 9
+typecolumnno = 10
+defaultlowerlevelvalue = 100
+defaultupperlevelvalue = 150
+defaultratevalue = 10
+defaultypevalue = ARC
+
+#*************** Entity Creation Flows Below ***************************
+
+[fixed fee creation flow 1]
+sourceentity = contracts
+sourcename = API Automation contract for Service Data Charges
+sourceid = 1947
+
+
+[arc creation flow 1]
+sourceentity = contracts
+sourcename = API Automation contract for Service Data Charges
+sourceid = 1947
+
+
+[forecast creation flow 1]
+sourceentity = contracts
+sourcename = API Automation contract for Service Data Charges
+sourceid = 1947
+
+
+[fixed fee creation flow 2]
+sourceentity = contracts
+sourcename = API Automation Contract for Service Data Charges Test
+sourceid = 2476
+
+
+[arc creation flow 2]
+sourceentity = contracts
+sourcename = API Automation Contract for Service Data Charges Test
+sourceid = 2476
+
+
+[forecast creation flow 2]
+sourceentity = contracts
+sourcename = API Automation Contract for Service Data Charges Test
+sourceid = 2476
+
+
+[fixed fee creation flow 3]
+sourceentity = contracts
+sourcename = API Automation Contract for Service Data Charges Test 2
+sourceid = 2478
+
+
+[arc creation flow 3]
+sourceentity = contracts
+sourcename = API Automation Contract for Service Data Charges Test 2
+sourceid = 2478
+
+
+[forecast creation flow 3]
+sourceentity = contracts
+sourcename = API Automation Contract for Service Data Charges Test 2
+sourceid = 2478
+
+
+#****************** End of Entity Creation Flows *******************************
+
+#NoOfRows in below section will tell how many rows of service data the excel file will have. Currently it is not used in Code.
+#This will be useful in future when multiple rows of Service Data Pricing are to be handled.
+#When in future multiple rows of data are to be handled then multiple values of rate & volume must be separated by comma.
+
+[flow 1]
+creationsection = fixed fee creation flow 1
+servicedatatype = fixed fee
+noofrows = 1
+ratevalue = 10
+volumevalue = 10
+currencyconversionmatrix = USD - INR
+inputcurrency = INR
+
+
+[flow 2]
+creationsection = arc creation flow 1
+servicedatatype = arc
+noofrows = 1
+ratevalue = 10
+volumevalue = 4
+currencyconversionmatrix = USD - INR
+inputcurrency = INR
+
+
+[flow 3]
+creationsection = forecast creation flow 1
+servicedatatype = forecast
+noofrows = 1
+ratevalue = 7
+volumevalue = 10
+currencyconversionmatrix = USD - INR
+inputcurrency = INR
+
+[flow 4]
+creationsection = fixed fee creation flow 2
+servicedatatype = fixed fee
+noofrows = 1
+ratevalue = 5
+volumevalue = 10
+currencyconversionmatrix = USD - INR
+inputcurrency = INR
+
+[flow 5]
+creationsection = arc creation flow 2
+servicedatatype = arc
+noofrows = 1
+ratevalue = 12
+volumevalue = 4
+currencyconversionmatrix = USD - INR
+inputcurrency = INR
+
+[flow 6]
+creationsection = forecast creation flow 2
+servicedatatype = forecast
+noofrows = 1
+ratevalue = 15
+volumevalue = 7
+currencyconversionmatrix = USD - INR
+inputcurrency = INR
+
+[flow 7]
+creationsection = fixed fee creation flow 3
+servicedatatype = fixed fee
+noofrows = 1
+ratevalue = 5
+volumevalue = 10
+currencyconversionmatrix = USD - INR
+inputcurrency = INR
+
+[flow 8]
+creationsection = arc creation flow 3
+servicedatatype = arc
+noofrows = 1
+ratevalue = 5
+volumevalue = 10
+currencyconversionmatrix = default
+inputcurrency = INR
+
+[flow 9]
+creationsection = forecast creation flow 3
+servicedatatype = forecast
+noofrows = 1
+ratevalue = 5
+volumevalue = 10
+currencyconversionmatrix = default
+inputcurrency = INR

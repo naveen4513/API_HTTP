@@ -1,0 +1,38 @@
+#AUS Sandbox
+invoice sheet name = Invoice
+line item sheet name = Invoice Line Item
+template id = 1013
+contract id = 2527
+startdate = 01-01-2019
+enddate = 31-01-2019
+
+[column values invoice bulk create]
+100000001 = 1
+637 = supplier 1.37 ( SP01013 )
+638 = AUTOMATION Contract For Invoice Use Please Do Not Use ( CO01035 )
+602 = Test Automation
+609 = Indian Rupee (INR)
+605 = Mountain Time (GMT -07:00)
+611 = 10-01-2019
+617 = 10-01-2019
+621 = GL Region 1
+622 = Rest of GL Region 1
+100000002 = Yes
+
+[column values line item bulk create]
+100000001 = 1
+100000003 = 1
+11047 = Automation Line Item
+11137 = Base Charges and Passthrough
+11066 = new service data 1 (new supplier id 1)
+11792 = US/Samoa (GMT -11:00)
+11067 = 01-01-2019
+11068 = 31-01-2019
+11052 = United States Dollar (USD)
+11070 = Desktop/Laptop
+11072 = 10
+11054 = 10
+11073 = 10
+11074 = 100
+11057 = 1000
+11063 = 100

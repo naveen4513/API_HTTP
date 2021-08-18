@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Calendar Test" parallel="tests" thread-count="4">
+
+    <test name="Calendar Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarData"></class>
+        </classes>
+    </test>
+
+    <test name="Calendar Export Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarExportData"></class>
+        </classes>
+    </test>
+
+    <test name="Calendar V1 Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarV1Data"></class>
+        </classes>
+    </test>
+
+    <test name="Calendar Filter Data Test">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.TestCalendarFilterData"></class>
+        </classes>
+    </test>
+
+</suite>   

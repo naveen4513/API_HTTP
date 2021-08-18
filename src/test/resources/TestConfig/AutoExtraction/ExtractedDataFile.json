@@ -1,0 +1,53 @@
+[{
+  "clientId": 1005,
+  "docList": [{
+    "documentId": 200454,
+    "fieldIds": [
+      12506
+    ]
+  },
+    {
+      "documentId": 200322,
+      "fieldIds": []
+    },
+    {
+      "documentId": 200346,
+      "fieldIds": [
+        12485,
+        12486,
+        12499,
+        12515,
+        12519
+      ]
+    }
+  ],
+  "algoId": 1002,
+  "extractionTypeId": 1001,
+  "size": null,
+  "fieldVisible": true,
+  "countQuery": false,
+  "offSet": null,
+  "score": 90.0,
+  "categoryIds": null
+}, {
+    "clientId": 1005,
+    "docList": [{
+      "documentId": 200454,
+      "fieldIds": []
+    }, {
+      "documentId": 200322,
+      "fieldIds": []
+    }, {
+      "documentId": 200346,
+      "fieldIds": []
+    }],
+    "algoId": 1002,
+    "extractionTypeId": 1002,
+    "size": null,
+    "fieldVisible": true,
+    "countQuery": false,
+    "offSet": null,
+    "score": 90.0,
+    "categoryIds": [5006, 5007, 5008, 5009]
+  }
+]

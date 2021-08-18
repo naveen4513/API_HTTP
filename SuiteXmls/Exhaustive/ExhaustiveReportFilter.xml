@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Exhaustive Reports Filter Data Validation Suite">
+    <parameter name="TestingType" value="exhaustive"/>
+    <parameter name="Environment" value="automation"/>
+    <parameter name="MultiLingual" value="false"/>
+    <parameter name="ApplyRandomization" value="true"/>
+    <suite-files>
+
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/ReportListingAndFilters.xml"></suite-file>
+
+
+    </suite-files>
+</suite>

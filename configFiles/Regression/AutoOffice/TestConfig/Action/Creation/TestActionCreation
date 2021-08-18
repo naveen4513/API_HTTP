@@ -1,0 +1,148 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = false
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 18
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Action/Creation
+extrafieldsconfigfilename = ExtraFieldsForActionCreation.cfg
+
+#TC-C8347: Create Action from Suppliers
+[flow 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+expectedresult = success
+
+#TC-C8347: Negative Case. Create Action without Mandatory fields.
+[flow 2]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1024
+expectedresult = failure
+
+#TC-C8350: Create Action from Contract of MSA/PSA Type.
+[flow 3]
+sourceentity = contracts
+sourcename = Master Services Agreement - Bloomberg
+sourceid = 1292
+expectedresult = success
+
+#TC-C8350: Negative Case. Create Action without Mandatory fields from Contract of MSA/PSA Type
+[flow 4]
+sourceentity = contracts
+sourcename = Master Services Agreement - Bloomberg
+sourceid = 1292
+expectedresult = failure
+
+#TC-C8352: Create Action from Contract of SOW/WO Type.
+[flow 5]
+sourceentity = contracts
+sourcename = Statement Of Work - Bloomberg
+sourceid = 1119
+expectedresult = success
+
+#TC-C8353: Create Action from Change Request
+[flow 6]
+sourceentity = change requests
+sourcename = Change Request for Entity Creation Test API Automation
+sourceid = 4784
+expectedresult = success
+
+#TC-C8355: Create Action from Action
+[flow 7]
+sourceentity = actions
+sourcename = HPE Engagement Tracker - OB SLGBTraining Log - ABC News
+sourceid = 1001
+expectedresult = success
+
+#TC-C8357: Create Action from Child Obligations
+#[flow 8]
+#sourceentity = child obligations
+#sourcename = Syslog Monitoring - Dell Technologies
+#sourceid = 1244
+#expectedresult = success
+
+#TC-C8358: Create Action from Service Level
+[flow 9]
+sourceentity = service levels
+sourcename = Server Monitoring - ABC News
+sourceid = 1074
+expectedresult = success
+
+#TC-C8359: Create Action from Child Service Level
+#[flow 10]
+#sourceentity = child service levels
+#sourcename = bulkEditUpdateServiceLevel
+#sourceid = 1492
+#expectedresult = success
+
+#TC-C8360: Create Action from Invoices
+[flow 11]
+sourceentity = invoices
+sourcename = Automation_DefaultText9889689
+sourceid = 5477
+expectedresult = success
+
+#TC-C8361: Create Action from WOR
+[flow 12]
+sourceentity = work order requests
+sourcename = L48: Perryton Office Closure - ABC News
+sourceid = 27
+expectedresult = success
+
+#TC-C8362: Create Action from Issue
+[flow 13]
+sourceentity = issues
+sourcename = Mandate 618--EXL deliverables delayed
+sourceid = 1001
+expectedresult = success
+
+#TC-C9029: Create Action from Interpretation
+[flow 14]
+sourceentity = interpretations
+sourcename = test
+sourceid = 1160
+expectedresult = success
+
+#TC-C8297: Create Action from GBM
+[flow 15]
+sourceentity = governance body meetings
+sourcename = Executive Governamce Meeting - Berkshire Hathaway
+sourceid = 4222
+expectedresult = success
+
+#TC-C90145: Create Action from Multi Supplier Contract
+[flow 16]
+sourceentity = contracts
+sourcename = API Automation Multi Supplier Contract for Child Creation test
+sourceid = 17708
+multisupplier = true
+multiparentsupplierid = 1027
+expectedresult = success
+
+#Create Action from CDR
+[flow 17]
+sourceentity = contract draft request
+sourcename = API Automation CDR for Child Entities creation Test
+sourceid = 4008
+supplierid = 1024
+expectedresult = success
+
+#C152456
+#Create Action from Purchase Order
+[flow 18]
+sourceentity = purchase orders
+sourcename = API Automation Action From PO
+sourceid = 7305
+supplierid = 1347
+expectedresult = success

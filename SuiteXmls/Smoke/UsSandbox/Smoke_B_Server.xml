@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke">
+    <parameter name="TestingType" value="smoke"/>
+    <parameter name="Environment" value="autoextraction_sandbox"/>
+    <parameter name="Server" value="B_Server"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Server.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+
+
+        <test name="AutoExtraction APIs Test">
+            <classes>
+
+                <class name="com.sirionlabs.test.autoExtraction.AutoExtractionSmoke"></class>
+                <class name="com.sirionlabs.test.autoExtraction.DownloadDocViewerDocument"></class>
+                <class name="com.sirionlabs.test.autoExtraction.documentUploadFeature"></class>
+                <class name="com.sirionlabs.test.autoExtraction.testWorkBench"></class>
+                <class name="com.sirionlabs.test.autoExtraction.autoExtractionSearch"></class>
+                <class name="com.sirionlabs.test.autoExtraction.Assignment"></class>
+                <class name="com.sirionlabs.test.autoExtraction.BulkEditAutoExtraction"></class>
+                <class name="com.sirionlabs.test.autoExtraction.BatchCreation"></class>
+                <class name="com.sirionlabs.test.autoExtraction.References"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ProjectLevelTrigger"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestDuplicateFeature"></class>
+                <class name="com.sirionlabs.test.autoExtraction.testAutoExtractionTrackerReport"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AETestFilters"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AutoExtractionTestReportListFilters"></class>
+                <class name="com.sirionlabs.test.autoExtraction.QCLevelAllocation"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestCommunication"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AETestWorkflow"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestAEDashboard"></class>
+
+            </classes>
+        </test>
+    </suite-files>
+</suite>

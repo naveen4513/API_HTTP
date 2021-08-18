@@ -1,0 +1,1486 @@
+#This file contains all the Flows for TestInvoiceFlow Suite.
+
+#ContractSectionName: This is used only when Create Contract Flag is set to True.
+#Specify the Contract Column Name here which should be used to Create Contract from the Contract Configuration File. Default value is 'default'
+
+#As above property is used for Contract. Similarly above property is used for other Entities as well like (Service Data, Invoice, Invoice Line Item)
+
+#UploadPricing: Whether to upload Pricing or not. Possible values are True or False. Default value is True.
+#If set to True then will upload Pricing and proceed further. Otherwise will skip Pricing Upload and directly create Invoice & Line Item.
+#This flag is set to False for negative cases only.
+
+#PricingTemplateFileName: Name of the Pricing Template File. The pricing sheet will be downloaded with this name and then will be uploaded.
+#PricingTemplateSheetName: Name of the Pricing Template Sheet which is to be updated.
+#NumberOfRowsToEdit: No. of rows to edit in Pricing Sheet
+#StartingRowNum: Starting Row No. from where to start editing pricing data.
+#VolumeColumnNum: Column No. where volume is defined.
+#RateColumnNum: Column No. where rate is defined.
+#VolumeColumnValues: All the values of the volumes to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+#RateColumnValues: All the values of the rates to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+
+#ExpectedResult: The final Invoice Line Item Validation Status is to be mentioned here.
+basecontractid = 34047
+invoicestartdate = 03-01-2018
+invoiceenddate = 03-31-2018
+
+[fixed fee flow 1]
+contractsectionname = fixed fee flow 1
+servicedatasectionname = fixed fee flow 1
+invoicesectionname = fixed fee flow 1
+invoicelineitemsectionname = fixed fee flow 1
+
+uploadpricing = true
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = No Discrepancy
+
+
+#Volume Discrepancy
+[fixed fee flow 2]
+contractsectionname = fixed fee flow 2
+servicedatasectionname = fixed fee flow 2
+invoicesectionname = fixed fee flow 2
+invoicelineitemsectionname = fixed fee flow 2
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+expectedresult = Volume Discrepancy
+
+
+[fixed fee flow 3]
+contractsectionname = fixed fee flow 3
+servicedatasectionname = fixed fee flow 3
+invoicesectionname = fixed fee flow 3
+invoicelineitemsectionname = fixed fee flow 3
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+expectedresult = Pricing Unavailable
+
+
+[arc flow 1]
+contractsectionname = arc flow 1
+servicedatasectionname = arc flow 1
+invoicesectionname = arc flow 1
+invoicelineitemsectionname = arc flow 1
+
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = No Discrepancy
+
+
+# finalconsumptionvalues is value of final consumption that we will put in consumption
+# forecastsheetrownumber row numbers of forecast sheet to be edited (Zero Indexing)
+# forecastsheetcolumnnumber column number of forecast sheet to be edited (Zero Indexing)
+# forecastsheetvalue value that would be put against row number , columnnumber pair in excel sheet
+# clientId will be the client id that we are putting while creating service data
+# this case is when forecast is greater than consumption
+[forecast flow 1]
+contractsectionname = forecast flow 1
+servicedatasectionname = forecast flow 1
+invoicesectionname = forecast flow 1
+invoicelineitemsectionname = forecast flow 1
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = No Discrepancy
+
+
+# this case is when forecast is less than consumption only change is there is invoice line item section
+[forecast flow 2]
+contractsectionname = forecast flow 2
+servicedatasectionname = forecast flow 2
+invoicesectionname = forecast flow 2
+invoicelineitemsectionname = forecast flow 2
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 150
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,130
+
+expectedresult = No Discrepancy
+
+
+# case where consumption from supplier side and consumption from system side is different
+[forecast flow 3]
+contractsectionname = forecast flow 3
+servicedatasectionname = forecast flow 3
+invoicesectionname = forecast flow 3
+invoicelineitemsectionname = forecast flow 3
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 150
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,130
+
+expectedresult = Volume Discrepancy
+
+
+
+# case for generating data for invoice line item misc test cases
+[invoice line item misc]
+contractsectionname = invoice line item misc
+servicedatasectionname = invoice line item misc
+invoicesectionname = invoice line item misc
+invoicelineitemsectionname = invoice line item misc
+
+uploadpricing = true
+
+pricingstemplatefilename = FixedFeeFlowMiscPricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = No Discrepancy
+
+
+#rate card test flows added by gaurav bhadani
+[fixed fee flow rate card]
+contractsectionname = fixed fee flow rate card
+servicedatasectionname = fixed fee flow rate card
+invoicesectionname = fixed fee flow rate card
+invoicelineitemsectionname = fixed fee flow rate card
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Amount Discrepancy
+
+[forecast flow rate card]
+contractsectionname = forecast flow rate card
+servicedatasectionname = forecast flow rate card
+invoicesectionname = forecast flow rate card
+invoicelineitemsectionname = forecast flow rate card
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Amount Discrepancy
+
+[arc flow rate card]
+contractsectionname = arc flow rate card
+servicedatasectionname = arc flow rate card
+invoicesectionname = arc flow rate card
+invoicelineitemsectionname = arc flow rate card
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Amount Discrepancy
+
+#Below lines are added on 6 feb as part of full end to end validation
+#To get the invoice line item status of Invalid Service Period
+[fixed fee flow 4]
+contractsectionname = fixed fee flow 4
+servicedatasectionname = fixed fee flow 4
+invoicesectionname = fixed fee flow 4
+invoicelineitemsectionname = fixed fee flow 4
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Invalid Service Period
+
+#To get the invoice line item status of currency conversion factor unavailable
+#currency conv matrix not defined in service data and line item currency is diff from service data currency
+[fixed fee flow 5]
+contractsectionname = fixed fee flow 5
+servicedatasectionname = fixed fee flow 5
+invoicesectionname = fixed fee flow 5
+invoicelineitemsectionname = fixed fee flow 5
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Conversion Factor Unavailable
+
+#To get the invoice line item status of currency conversion factor unavailable
+#currency conv matrix defined on service data and line item has currency included in matrix,
+#but on service data currency conv date is not included in date range of matrix
+[fixed fee flow 6]
+contractsectionname = fixed fee flow 6
+servicedatasectionname = fixed fee flow 6
+invoicesectionname = fixed fee flow 6
+invoicelineitemsectionname = fixed fee flow 6
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Conversion Factor Unavailable
+
+#To get the invoice line item status of currency conversion factor unavailable
+#currency conv matrix defined on service data but on line item pe currency is selected which isn't included in matrix
+[fixed fee flow 7]
+contractsectionname = fixed fee flow 7
+servicedatasectionname = fixed fee flow 7
+invoicesectionname = fixed fee flow 7
+invoicelineitemsectionname = fixed fee flow 7
+
+uploadpricing = false
+servicedatatype = fixed fee
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Conversion Factor Unavailable
+
+#To get the invoice line item status of Total discrepancy
+#discrepancy in Total amount
+[fixed fee flow 8]
+contractsectionname = fixed fee flow 8
+servicedatasectionname = fixed fee flow 8
+invoicesectionname = fixed fee flow 8
+invoicelineitemsectionname = fixed fee flow 8
+
+uploadpricing = false
+servicedatatype = fixed fee
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = Total discrepancy
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix not defined in service data and line item currency is diff from service data currency
+[arc flow 2]
+contractsectionname = arc flow 2
+servicedatasectionname = arc flow 2
+invoicesectionname = arc flow 2
+invoicelineitemsectionname = arc flow 2
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix defined on service data and line item has currency included in matrix,
+#but on service data currency conv date is not included in date range of matrix
+[arc flow 3]
+contractsectionname = arc flow 3
+servicedatasectionname = arc flow 3
+invoicesectionname = arc flow 3
+invoicelineitemsectionname = arc flow 3
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+
+#To get the invoice line item status of currency conversion factor unavailable
+#currency conv matrix defined on service data but on line item pe currency is selected which isn't included in matrix
+[arc flow 4]
+contractsectionname = arc flow 4
+servicedatasectionname = arc flow 4
+invoicesectionname = arc flow 4
+invoicelineitemsectionname = arc flow 4
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+
+
+#ARC Flow Line item is created with validation status as Invalid Service Period
+[arc flow 5]
+contractsectionname = arc flow 5
+servicedatasectionname = arc flow 5
+invoicesectionname = arc flow 5
+invoicelineitemsectionname = arc flow 5
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Invalid Service Period
+
+#Consumption Unavailable
+[arc flow 6]
+contractsectionname = arc flow 6
+servicedatasectionname = arc flow 6
+invoicesectionname = arc flow 6
+invoicelineitemsectionname = arc flow 6
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Consumption Unavailable
+
+
+#Consumption Unapproved
+[arc flow 7]
+contractsectionname = arc flow 7
+servicedatasectionname = arc flow 7
+invoicesectionname = arc flow 7
+invoicelineitemsectionname = arc flow 7
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Consumption Not Approved
+
+#Total discrepancy
+[arc flow 8]
+contractsectionname = arc flow 8
+servicedatasectionname = arc flow 8
+invoicesectionname = arc flow 8
+invoicelineitemsectionname = arc flow 8
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+#expectedresult = Volume Discrepancy
+expectedresult = Total Discrepancy
+
+#Volume Discrepancy
+[arc flow 9]
+contractsectionname = arc flow 9
+servicedatasectionname = arc flow 9
+invoicesectionname = arc flow 9
+invoicelineitemsectionname = arc flow 9
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Volume Discrepancy
+
+#Consumption Unavailable
+[forecast flow 4]
+contractsectionname = forecast flow 4
+servicedatasectionname = forecast flow 4
+invoicesectionname = forecast flow 4
+invoicelineitemsectionname = forecast flow 4
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Consumption Unavailable
+
+#Consumption Not Approved
+[forecast flow 5]
+contractsectionname = forecast flow 5
+servicedatasectionname = forecast flow 5
+invoicesectionname = forecast flow 5
+invoicelineitemsectionname = forecast flow 5
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Consumption Not Approved
+
+#Forecast Unavailable
+[forecast flow 6]
+contractsectionname = forecast flow 6
+servicedatasectionname = forecast flow 6
+invoicesectionname = forecast flow 6
+invoicelineitemsectionname = forecast flow 6
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Forecast Unavailable
+
+#Conversion Factor Unavailable
+#currency conv matrix not defined in service data and line item currency is diff from service data currency
+[forecast flow 7]
+contractsectionname = forecast flow 7
+servicedatasectionname = forecast flow 7
+invoicesectionname = forecast flow 7
+invoicelineitemsectionname = forecast flow 7
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Conversion Factor Unavailable
+
+
+[forecast flow 8]
+contractsectionname = forecast flow 8
+servicedatasectionname = forecast flow 8
+invoicesectionname = forecast flow 8
+invoicelineitemsectionname = forecast flow 8
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Conversion Factor Unavailable
+
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix defined on service data and line item has currency included in matrix,
+#but on service data currency conv date is not included in date range of matrix
+[forecast flow 9]
+contractsectionname = forecast flow 9
+servicedatasectionname = forecast flow 9
+invoicesectionname = forecast flow 9
+invoicelineitemsectionname = forecast flow 9
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Conversion Factor Unavailable
+
+#Total discrepancy
+[forecast flow 10]
+contractsectionname = forecast flow 10
+servicedatasectionname = forecast flow 10
+invoicesectionname = forecast flow 10
+invoicelineitemsectionname = forecast flow 10
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = Total Discrepancy
+
+#Pricing Unavailable
+[forecast flow 11]
+contractsectionname = forecast flow 11
+servicedatasectionname = forecast flow 11
+invoicesectionname = forecast flow 11
+invoicelineitemsectionname = forecast flow 11
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+#expectedresult = Pricing Unavailable
+expectedresult = Invalid Service Period
+
+
+[vol pricing flow amount discrepency]
+contractsectionname = vol pricing flow amount discrepency
+servicedatasectionname = vol pricing flow amount discrepency
+invoicesectionname = vol pricing flow amount discrepency
+invoicelineitemsectionname = vol pricing flow amount discrepency
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow1Pricing.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Amount Discrepancy
+
+[vol pricing flow pricing unavailable]
+contractsectionname = vol pricing flow pricing unavailable
+servicedatasectionname = vol pricing flow pricing unavailable
+invoicesectionname = vol pricing flow pricing unavailable
+invoicelineitemsectionname = vol pricing flow pricing unavailable
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Pricing Unavailable
+
+
+[vol pricing flow invalid service period]
+contractsectionname = vol pricing flow invalid service period
+servicedatasectionname = vol pricing flow invalid service period
+invoicesectionname = vol pricing flow invalid service period
+invoicelineitemsectionname = vol pricing flow invalid service period
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Invalid Service Period
+
+#Consumption Unavailable
+[vol pricing flow consumption unavailable]
+contractsectionname = vol pricing flow consumption unavailable
+servicedatasectionname = vol pricing flow consumption unavailable
+invoicesectionname = vol pricing flow consumption unavailable
+invoicelineitemsectionname = vol pricing flow consumption unavailable
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Consumption Unavailable
+
+[vol pricing flow consumption unapproved]
+contractsectionname = vol pricing flow consumption unapproved
+servicedatasectionname = vol pricing flow consumption unapproved
+invoicesectionname = vol pricing flow consumption unapproved
+invoicelineitemsectionname = vol pricing flow consumption unapproved
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Consumption Not Approved
+
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix not defined in service data and line item currency is diff from service data currency
+[vol pricing flow currency conv factor unavailable1]
+contractsectionname = vol pricing flow currency conv factor unavailable1
+servicedatasectionname = vol pricing flow currency conv factor unavailable1
+invoicesectionname = vol pricing flow currency conv factor unavailable1
+invoicelineitemsectionname = vol pricing flow currency conv factor unavailable1
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+
+#Line item is created with validation status as currency conversion factor unavailable
+#currency conv matrix defined on service data and line item has currency included in matrix,
+#but on service data currency conv date is not included in date range of matrix
+[vol pricing flow currency conv factor unavailable2]
+contractsectionname = vol pricing flow currency conv factor unavailable2
+servicedatasectionname = vol pricing flow currency conv factor unavailable2
+invoicesectionname = vol pricing flow currency conv factor unavailable2
+invoicelineitemsectionname = vol pricing flow currency conv factor unavailable2
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Conversion Factor Unavailable
+
+
+[vol pricing flow amount discrepancy]
+contractsectionname = vol pricing flow amount discrepancy
+servicedatasectionname = vol pricing flow amount discrepancy
+invoicesectionname = vol pricing flow amount discrepancy
+invoicelineitemsectionname = vol pricing flow amount discrepancy
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 101
+
+expectedresult = Amount Discrepancy
+
+
+#Total discrepancy
+[vol pricing flow total discrepancy]
+contractsectionname = vol pricing flow total discrepancy
+servicedatasectionname = vol pricing flow total discrepancy
+invoicesectionname = vol pricing flow total discrepancy
+invoicelineitemsectionname = vol pricing flow total discrepancy
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,10,Volume Pricing
+finalconsumptionvalues = 130
+
+expectedresult = Total Discrepancy
+
+[memo flow 1]
+contractsectionname = arc flow 8
+servicedatasectionname = memo flow 1
+invoicesectionname = arc flow 8
+invoicelineitemsectionname = memo flow 1
+
+#Specific to memo
+supplier amount = 36
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Total Discrepancy
+
+[memo flow 2]
+contractsectionname = arc flow rate card
+servicedatasectionname = memo flow 2
+invoicesectionname = arc flow rate card
+invoicelineitemsectionname = memo flow 2
+
+#Specific to memo
+supplier amount = 1788
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Total Discrepancy
+
+[memo flow 3]
+contractsectionname = arc flow rate card
+servicedatasectionname = memo flow 3
+invoicesectionname = arc flow rate card
+invoicelineitemsectionname = memo flow 3
+
+#Specific to memo
+supplier total = 1788
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Total Discrepancy
+
+[memo flow 4]
+contractsectionname = arc flow rate card
+servicedatasectionname = memo flow 4
+invoicesectionname = arc flow rate card
+invoicelineitemsectionname = memo flow 4
+
+#Specific to memo
+supplier total = 100
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Total Discrepancy
+
+#Line item ki currency is not matched with billing service data invoicing currency
+[invalid currency]
+contractsectionname = arc flow rate card
+servicedatasectionname = invalid currency 1
+invoicesectionname = arc flow rate card
+invoicelineitemsectionname = invalid currency
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Invalid Currency
+
+[currency unavailable]
+contractsectionname = arc flow rate card
+servicedatasectionname = currency unavailable
+invoicesectionname = arc flow rate card
+invoicelineitemsectionname = currency unavailable
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = Currency Unavailable
+
+[vol pricing flow volume discrepancy]
+contractsectionname = vol pricing flow volume discrepancy
+servicedatasectionname = vol pricing flow volume discrepancy
+invoicesectionname = vol pricing flow volume discrepancy
+invoicelineitemsectionname = vol pricing flow volume discrepancy
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow1Pricing.xlsm
+
+#No need for pricing
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 13
+
+expectedresult = Volume Discrepancy
+
+#Total discrepancy
+[arc flow 10]
+contractsectionname = arc flow 10
+servicedatasectionname = arc flow 10
+invoicesectionname = arc flow 10
+invoicelineitemsectionname = arc flow 10
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+expectedresult = Total Discrepancy
+
+
+#Total discrepancy
+[arc flow 11]
+contractsectionname = arc flow 11
+servicedatasectionname = arc flow 11
+invoicesectionname = arc flow 11
+invoicelineitemsectionname = arc flow 11
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 70
+
+expectedresult = Total Discrepancy
+
+#Total discrepancy Calculating System Values
+[vol pricing flow system values calc 1]
+contractsectionname = vol pricing flow system values calc 1
+servicedatasectionname = vol pricing flow system values calc 1
+invoicesectionname = vol pricing flow system values calc 1
+invoicelineitemsectionname = vol pricing flow system values calc 1
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 105
+
+expectedresult = Amount Discrepancy
+
+
+#Total discrepancy Calculating System Values
+[arc flow 12]
+contractsectionname = arc flow 12
+servicedatasectionname = arc flow 12
+invoicesectionname = arc flow 12
+invoicelineitemsectionname = arc flow 12
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 105
+
+expectedresult = Amount Discrepancy
+
+#When final consumption is out of ARC bands System amount should be zero
+[vol pricing flow system values calc 2]
+contractsectionname = vol pricing flow system values calc 1
+servicedatasectionname = vol pricing flow system values calc 2
+invoicesectionname = vol pricing flow system values calc 2
+invoicelineitemsectionname = vol pricing flow system values calc 2
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 80
+
+expectedresult = Amount Discrepancy
+
+#Service Data hierarchical flow
+[hierarchical flow]
+contractsectionname = hierarchical flow
+servicedatasectionname = hierarchical flow
+invoicesectionname = hierarchical flow
+invoicelineitemsectionname = hierarchical flow
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 105
+
+expectedresult = Volume Discrepancy
+
+#SD Matrix 2
+conv matrix id level 2 = 1016
+#SD Matrix 3
+conv matrix id level 3 = 1017
+#AUD
+currency id level 2 = 3
+#USD
+currency id level 3 = 1

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Insights" thread-count="1" data-provider-thread-count="25">
+
+    <test name="Insights Validation">
+        <classes>
+            <class name="com.sirionlabs.test.insights.TestInsights"></class>
+        </classes>
+    </test>
+
+<!--    <test name="Insights Filters Validation">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.insights.TestInsightsValidations"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="Environment" value="Prodparallel"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Configuration.xml"></suite-file>
+        <suite-file path="../Login.xml"></suite-file>
+
+        <suite-file path="../CreateEntityTestData.xml"></suite-file>
+
+
+    </suite-files>
+</suite>

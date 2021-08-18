@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Edit Entity" parallel="methods" data-provider-thread-count="1">
+    <listeners>
+        <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+    </listeners>
+    <test name="Entity Edit Test">
+        <classes>
+            <class name="com.sirionlabs.test.TestEntityEdit"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,105 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 30
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/ChangeRequest/Creation
+extrafieldsconfigfilename = ExtraFieldsForCRCreation.cfg
+
+#TC-30602, TC-30607, TC-30608, TC-30610, TC-30616, TC-30621, TC-30623, TC-30631, TC-30639, TC-30649, TC-30653, TC-30659, TC-30662, TC-30669, TC-30672, TC-30679, TC-30682, TC-30693, TC-30696, TC-30700, TC-30701, TC-30715
+[flow 1]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+
+#TC-30673
+[flow 14]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+
+#TC-C7879: Create CR with Responsibility as Supplier
+[flow 36]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+
+#TC-C7903: Create CR without CR Date
+[flow 39]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7910: Create CR without Functions
+[flow 40]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7912: Create CR without Services
+[flow 41]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7936: Create CR with Comment having Special Characters
+#TC-C7937: Create CR with Actual Date
+#TC-C7939: Create CR with Requested By other user
+#TC-C7941: Create CR with Change Request
+[flow 49]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7947: Create CR with Contract of MSA/PSA Type
+[flow 51]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 2241
+parententitytype = contracts
+expectedresult = success
+
+#TC-C7947: Create CR with Contract of SOW/WO Type
+[flow 52]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = success
+
+#TC-C90398: Create CR from Multi Supplier Contract
+[flow 63]
+sourceentity = contracts
+sourcename = API Automation Multi Supplier Contract for Child Creation test
+sourceid = 17708
+parententitytype = contracts
+multisupplier = true
+multiparentsupplierid = 1027
+expectedresult = success

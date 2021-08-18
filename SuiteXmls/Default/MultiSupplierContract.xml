@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Multi Supplier Contract" thread-count="1">
+
+    <test name="Multi Supplier Contract">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestMultiSupplierContract"></class>
+        </classes>
+    </test>
+
+</suite>

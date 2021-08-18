@@ -1,0 +1,59 @@
+#All keys must be in lower case characters only
+#Month starting from 0 to 11
+month = 2
+year = 2018
+
+#ApplyRandomization: When Set to True then pick some records randomly for Validation. If False then will pick all records for validation. (True to enable, False to disable).
+#Default Value is False. If Set to True then Max. No of Records to be validated will be picked from MaxRecordsToValidate property.
+applyrandomization = true
+
+#MaxRecordsToValidate: These many records will be picked randomly for Validation. (Default value is 3)
+maxrecordstovalidate = 1
+#MaxNoOfFiltersToValidate: Randomly pick these many filters for validation. Default value is 3. It is picked only if ApplyRandomization is True.
+maxnooffilterstovalidate = 2
+#MaxNoOfFilterOptionsToValidate: Randomly pick these many options from all the Options of a Filter. Default value is 3. It is picked only if ApplyRandomization is True.
+maxnooffilteroptionstovalidate = 3
+
+#DefaultFilterText: For all filters of Type AutoComplete, this value would be used and 1st result would be considered for Search
+defaultfiltertext = a
+
+#FiltersToIgnore: All the filters which are to be ignored for validation. Filter Query names are to be provided.
+filterstoignore = statuscolors
+
+#Status Color Mapping File Details below.
+#Status Color Mapping is to be maintained in below file.
+statuscolorsmappingfilepath = src/test/resources/TestConfig/Calendar
+statuscolorsmappingfilename = CalendarFilterStatusColorsMapping.cfg
+
+#Calendar Filter Name and Show Page Objects Mapping are to be defined under FilterNameShowPageObjectMapping.
+#On Show Page, it will look for the Show Page Object Name to validate Data. If mapping is not found for a Filter, then it will not validate data on Show Page.
+#Key is Filter Label and Value is Show Page Object Name.
+#All keys must be in lower-case characters only
+
+[filternameshowpageobjectmapping]
+contracts = contracts
+relations = suppliers
+regions = globalregions
+functions = functions
+services = services
+statuscolors = status
+entitytypes = entitytypeid
+
+#For Filter Entity Type, Entity Name and Entity Id are to be defined under EntityTypeNameIdMapping.
+#On Show Page, it will look for the corresponding Entity Type Id to validate Data. If mapping is not found for an entity, then it will not validate data on Show Page.
+#Key is Entity Name and Value is Entity type Id.
+#All keys must be in lower-case characters only.
+
+[entitytypenameidmapping]
+actions = 18
+change requests = 63
+child obligations = 13
+csl_description = 15
+consumption = 176
+contract draft requests = 160
+contracts = 61
+governance body meeting = 87
+interpretations = 16
+invoices = 67
+issues = 17
+work order requestswu sandbox = 80

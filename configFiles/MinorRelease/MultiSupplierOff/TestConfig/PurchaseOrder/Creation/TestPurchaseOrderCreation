@@ -1,0 +1,84 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/PurchaseOrder/Creation
+extrafieldsconfigfilename = ExtraFieldsForPurchaseOrderCreation.cfg
+
+fieldgroupstoverify = basic information, organization information, important dates, geography, function, financial information
+
+basic information = poNumber, name, description, contractingEntity, requisitionNumber, trackingNumber, timeZone, currency, active, tier, contract, supplier
+organization information = businessUnits, departments, costCenters
+important dates = startDate, endDate
+geography = countries, states
+function = functions, services
+financial information = poTotal, expectedPoBurn, poBurn, poAvailable
+
+
+#******************* Creation Flows Below *******************
+
+#Positive flow for Contracts (TC-98605, TC-98606, TC-98608, TC-98610)
+[flow 1]
+sourceentity = contracts
+sourcename = API Automation Contract for Purchase Order
+sourceid = 1953
+expectedresult = success
+
+#Positive flow for Contracts (TC-98611, TC-98612)
+[flow 4]
+sourceentity = contracts
+sourcename = API Automation Contract for Purchase Order
+sourceid = 1953
+expectedresult = success
+
+#Positive flow for Contracts SOW/WO (TC-98616, TC-98617, TC-98619, TC-98621, TC-98624)
+[flow 5]
+sourceentity = contracts
+sourcename = API Automation Contract SOW for Purchase Order
+sourceid = 1955
+expectedresult = success
+
+#Positive flow for Contracts SOW/WO (TC-98622, TC-98623)
+[flow 8]
+sourceentity = contracts
+sourcename = API Automation Contract SOW for Purchase Order
+sourceid = 1955
+expectedresult = success
+
+#Positive flow for Suppliers (TC-98594, TC-98595, TC-98597, TC-98599, TC-98602)
+[flow 9]
+sourceentity = suppliers
+sourcename = API Automation Supplier for Purchase Order
+sourceid = 1347
+expectedresult = success
+
+
+#Positive flow for Suppliers (TC-98600, TC-98601)
+[flow 12]
+sourceentity = suppliers
+sourcename = API Automation Supplier for Purchase Order
+sourceid = 1347
+expectedresult = success
+
+
+#TC-C90400: Create PO from Multi Supplier Contract
+[flow 15]
+sourceentity = contracts
+sourcename = API Automation Multi Supplier Contract for Child Creation test
+sourceid = 17708
+multisupplier = true
+multiparentsupplierid = 1027
+expectedresult = success
+
+#******************* End of Creation Flows *******************

@@ -1,0 +1,71 @@
+#All Section and keys must be in lower case characters only
+#Use Yes to turn on a flag and No to turn it off.
+
+delimiterforvalues = ,
+
+#All Entities specify all the entities to be considered if TestAllEntities is true
+allentities = contracts, actions, child obligations, child service levels, disputes, interpretations, issues, obligations, service levels
+
+#If TestAllEntities is True then it will Pick MaxNoOfEntitiesToTest from all Entities. If False then will pick all Entities from EntitiesToTest
+testallentities = yes
+maxnoofentitiestotest = 25
+
+#Entities to Test. Value must be entity name as in EntityId.cfg and same name should be defined under section fieldspool
+entitiestotest = actions
+
+#If TestAllFields is Yes then it will Pick MaxNoOfFieldsToTest from Fields Pool. If No then will pick all Fields from FieldsToTest File
+testallfields = no
+fieldstotestfilepath = src/test/resources/TestConfig/MetadataSearch
+fieldstotestfilename = FieldsToTest.cfg
+maxnooffieldstotest = 50
+
+#Search Payload Hierarchy File details
+payloadhierarchyfilepath = src/test/resources/TestConfig/MetadataSearch
+payloadhierarchyfilename = SearchPayloadHierarchy
+
+#ListDataOffset. Default Value for List Data Offset is 0.
+listdataoffset = 0
+
+#Maximum No of Records to Show as Result
+maxnoofrecordstoshow = 20
+
+#If UseFieldsPool is True then it will pick Fields only from EntityFieldsPool. If False then it will pick all Fields possible for the Entity
+usefieldspool = no
+defaulttext = Master
+
+#Default Stakeholder Value
+defaultstakeholder = Naveen Gupta
+
+payloaddateformat = MM-dd-yyyy
+
+#Default Dates.
+defaultfromdate = 08-01-2017
+defaulttodate = 08-31-2017
+dateformat = MM-dd-yyyy
+requireddateformat = MMM-dd-yyyy
+
+#Default Number.
+defaultnumber = 5
+defaultfromnumber = 5
+defaulttonumber = 10
+
+#Maximum no of Records to Validate on Show Page
+maxnoofrecordstovalidate = 20
+
+#Fail Test Case if Zero Results found for Search
+failifzerorecords = no
+
+#Entity Fields Pools
+#Section is the Pool
+#Keys are the Entity Names as in EntityId.cfg
+
+[fieldspool]
+actions = Name,Expiration Date, Title
+child obligations = contract_owner
+child service levels = Name,Time Zone,Expiration Date, Title
+contracts = Name
+disputes = Name,Time Zone,Expiration Date, Title
+interpretations = Name,Time Zone,Expiration Date, Title
+issues = Name,Time Zone,Expiration Date, Title
+obligations = Title
+service levels = Name,Time Zone,Expiration Date, Title

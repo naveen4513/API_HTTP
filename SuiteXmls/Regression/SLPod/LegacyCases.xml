@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Legacy Cases">
+
+
+<!--    <test name="Test Cases for SL Listing">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.SL.TestCasesSLListing"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Test Cases for PCQ DCQ UDC Update">
+        <classes>
+            <class name="com.sirionlabs.test.SL.TestPCQDCQUDCUpdate"></class>
+        </classes>
+    </test>
+
+    <test name="Test Cases for Raw Data Upload Different Scenarios">
+        <classes>
+            <class name="com.sirionlabs.test.SL.TestRawDataUploadDifferentScenarios"></class>
+        </classes>
+    </test>
+
+    <test name="Test Cases for Raw Data Tab Filter">
+        <classes>
+            <class name="com.sirionlabs.test.SL.TestRawDataFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Test Cases for Client Admin">
+        <classes>
+            <class name="com.sirionlabs.test.SL.TestClientAdminTests_SL"></class>
+        </classes>
+    </test>
+
+
+
+</suite>

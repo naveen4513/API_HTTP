@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Metadata Search" thread-count="1">
+
+    <test name="MetadataSearch Feature Test">
+        <classes>
+            <class name="com.sirionlabs.test.search.TestSearchMetadata"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke">
+    <parameter name="TestingType" value="smoke"/>
+    <parameter name="Environment" value="Sandbox/EU"/>
+    <suite-files>
+
+        <listeners>
+            <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+        </listeners>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Smoke/ListData.xml"></suite-file>
+        <suite-file path="../../Default/ShowPage.xml"></suite-file>
+        <suite-file path="../MetadataSearch.xml"></suite-file>
+        <suite-file path="../../Default/EntityCreation.xml"></suite-file>
+        <suite-file path="../BulkAction.xml"></suite-file>
+        <suite-file path="Invoice.xml"></suite-file>
+        <suite-file path="../../Default/Insights.xml"></suite-file>
+
+        <suite-file path="../../Default/UserEntityAccess.xml"></suite-file>
+
+    </suite-files>
+</suite>

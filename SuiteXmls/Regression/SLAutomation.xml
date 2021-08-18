@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+<!--    <parameter name="Environment" value="automation"/>-->
+    <parameter name="Environment" value="SLPodEnv"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <suite-file path="../Default/ServiceLevel.xml"></suite-file>
+
+
+    </suite-files>
+</suite>

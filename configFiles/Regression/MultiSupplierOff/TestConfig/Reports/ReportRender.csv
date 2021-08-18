@@ -1,0 +1,110 @@
+Entity Name|Entity Type ID|Sub Report Name|Sub Report ID|isManualReport
+Actions|18|Actions - Aging|30|false
+Actions|18|Actions - Aging Trend|25|false
+Actions|18|Actions - By Governance Body|31|false
+Actions|18|Actions - Cycle Time|32|false
+Actions|18|Actions - Cycle Time Trend|28|false
+Actions|18|Actions - High Priority|33|false
+Actions|18|Actions - Lead Time|1003|false
+Actions|18|Actions - New|29|false
+Actions|18|Actions - Overdue At Any Point|100|false
+Actions|18|Actions - Overdue, High Aging|35|false
+Actions|18|Actions - Rejected At Any Point|101|false
+Actions|18|Actions - Tracker|23|false
+Actions|18|Actions - Volume Trend|24|false
+Actions|18|Actions - With Financial Impact|34|false
+Change Requests|63|Change Requests - Aging|88|false
+Change Requests|63|Change Requests - Aging Trend|151|false
+Change Requests|63|Change Requests - Cycle Time|89|false
+Change Requests|63|Change Requests - Cycle Time Trend|152|false
+Change Requests|63|Change Requests - High Priority|95|false
+Change Requests|63|Change Requests - Lead Time|1007|false
+Change Requests|63|Change Requests - Status Transition Report|378|false
+Change Requests|63|Change Requests - Tracker|52|false
+Child Obligations|13|Child Obligations - Aging|26|false
+Child Obligations|13|Child Obligations - Aging Trend|14|false
+Child Obligations|13|Child Obligations - Critical Deliverables|17|false
+Child Obligations|13|Child Obligations - Cycle Time|21|false
+Child Obligations|13|Child Obligations - Cycle Time Trend|22|false
+Child Obligations|13|Child Obligations - Financial Impact|15|false
+Child Obligations|13|Child Obligations - Financial Impacted Milestones|16|false
+Child Obligations|13|Child Obligations - Lead Time|1009|false
+Child Obligations|13|Child Obligations - Overdue|20|false
+Child Obligations|13|Child Obligations - Overdue At Any Point|82|false
+Child Obligations|13|Child Obligations - Rejected|19|false
+Child Obligations|13|Child Obligations - Rejected At Any Point|83|false
+Child Obligations|13|Child Obligations - Tracker|13|false
+Child Obligations|13|Child Obligations - Upcoming|18|false
+Child Obligations|13|Child Obligations - Upcoming and Rejected Milestones|27|false
+Child Service Levels|15|Child Service Level - Detailed Performance|281|false
+Child Service Levels|15|Child Service Level - Performance Trend|282|false
+Child Service Levels|15|Child Service Levels - Lead Time|1005|false
+Child Service Levels|15|Child Service Levels - Overdue|91|false
+Child Service Levels|15|Child Service Levels - Overdue At Any Point|87|false
+Child Service Levels|15|Child Service Levels - Performance|57|false
+Child Service Levels|15|Child Service Levels - Rejected|92|false
+Child Service Levels|15|Child Service Levels - Rejected At Any Point|86|false
+Child Service Levels|15|New donut report - Child SLA Performance|345|false
+Consumption|176|Consumption - Tracker|385|false
+Contract Draft Request|160|Contract Draft Request- Lead Time|1011|false
+Contract Draft Request|160|Contract Draft Request- Tracker|324|false
+Contracts|61|Contract - Deal summary report|223|false
+Contracts|61|Contract - HSSO 12 MONTH PIPELINE REPORT (X Perpetual)|280|false
+Contracts|61|Contract - PIPELINE REPORT|222|false
+Contracts|61|Contract - PIPELINE REPORT - NEW|270|false
+Contracts|61|Contracts - Expiring Within One Year|50|false
+Contracts|61|Contracts - Financials|49|false
+Contracts|61|Contracts - Lead Time|1000|false
+Contracts|61|Contract - Top deal/monthly status report|224|false
+Disputes|28|Dispute - Tracker|315|false
+Governance Body|86|Governance Body- Tracker|261|false
+Governance Body Meeting|87|Governance Body Meeting- Tracker|264|false
+Interpretations|16|Interpretations - Aging|53|false
+Interpretations|16|Interpretations - Cycle Time|54|false
+Interpretations|16|Interpretations - FAQ|56|false
+Interpretations|16|Interpretations - Lead Time|1004|false
+Interpretations|16|Interpretations - Tracker|37|false
+Interpretations|16|Interpretations - Volume Trend|55|false
+Invoice Line Item|165|Invoice Line Item - Tracker Report|359|false
+Invoices|67|Invoices - Aging|93|false
+Invoices|67|Invoices - Cycle Time|94|false
+Invoices|67|Invoices - Discrepancy|78|false
+Invoices|67|Invoices - Dispute|81|false
+Invoices|67|Invoices - Lead Time|1008|false
+Invoices|67|Invoices - Payment Overdue|79|false
+Invoices|67|Invoices - Receipt Overdue|80|false
+Invoices|67|Invoices - Rejected|90|false
+Invoices|67|Invoices - Rejected At Any Point|201|false
+Invoices|67|Invoices - Tracker|51|false
+Issues|17|Issues - Aging-NN|42|false
+Issues|17|Issues - Aging Trend|45|false
+Issues|17|Issues - By Governance Body|44|false
+Issues|17|Issues - Cycle Time|43|false
+Issues|17|Issues - Cycle Time Trend|46|false
+Issues|17|ISSUES - ESCALATED TO DISPUTE AT ANY POINT|204|false
+Issues|17|Issues - High Priority|41|false
+Issues|17|Issues - Lead Time|1002|false
+Issues|17|Issues - New|36|false
+Issues|17|ISSUES - OVERDUE AT ANY POINT|206|false
+Issues|17|Issues - Overdue, Escalated, High Aging|38|false
+Issues|17|ISSUES - REJECTED AT ANY POINT|205|false
+Issues|17|Issues - Tracker|40|false
+Issues|17|Issues - Volume Trend|47|false
+Issues|17|Issues - With Financial Impact|39|false
+Obligations|12|Master Obligations - Lead Time|1001|false
+Obligations|12|Master Obligations - Tracker|153|false
+Obligations|12|Master Obligations - Triggered|58|false
+Purchase Order|181|Purchase Order - Tracker Report|386|false
+Service Data|64|Service Data - Tracker|355|false
+Service Levels|14|Master Service Levels - Details|59|false
+Service Levels|14|Master Service Levels - Lead Time|1010|false
+Service Levels|14|Master Service Levels – Performance Tren|330|false
+Suppliers|1|Suppliers - Tracker|48|false
+Work Order Requests|80|Work Order Requests - Aging|84|false
+Work Order Requests|80|Work Order Requests - Aging Trend|202|false
+Work Order Requests|80|Work Order Requests - Cycle Time|85|false
+Work Order Requests|80|Work Order Requests - Cycle Time Trend|203|false
+Work Order Requests|80|WORK ORDER REQUESTS - HIGH PRIORITY|96|false
+Work Order Requests|80|Work Order Requests - Lead Time|1006|false
+Work Order Requests|80|Work Order Requests - Status Transition Report|379|false
+Work Order Requests|80|Work Order Requests - Tracker|275|false

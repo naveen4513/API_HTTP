@@ -1,0 +1,93 @@
+
+
+payload = {"body":{"data":{"endDate":{"name":"endDate","id":12422,"multiEntitySupport":false,"values":"${endDateValue}"},"users":{"name":"users","id":12420,"options":null,"multiEntitySupport":false,"values":{"name":"${toUserName}","id":${toUserId}}},"startDate":{"name":"startDate","id":12421,"multiEntitySupport":false,"values":"${startDateValue}"},"delegationRequests":[{"entityTypeId":${entityTypeIdValue},"entityId":${entityIdValue},"roleGroupId":${roleGroupIdValue}, "flowDown":false}]}}}
+
+
+[flow1]
+tousername = Gaurav Bhadani
+touserid = 2173
+enddatevalue = +1
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = success
+expectedmessage = Delegation Created Successfully
+
+
+[flow2]
+tousername = Gaurav Bhadani
+touserid = 2173
+enddatevalue = +1
+startdatevalue = -5
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = applicationError
+expectedmessage = Start Date Should Not Be In The Past
+
+[flow3]
+tousername = Gaurav Bhadani
+touserid = 2173
+enddatevalue = -2
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = applicationError
+expectedmessage = End Date Should Not Be Less Than Start Date
+
+[flow4]
+tousername = Gaurav Bhadani
+touserid = 2173
+enddatevalue = -2
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = applicationError
+expectedmessage = End Date Should Not Be Less Than Start Date
+
+[flow5]
+tousername = Gaurav Bhadani
+touserid = 1245
+enddatevalue =
+startdatevalue =
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = applicationError
+expectedmessage = Start Date Is Empty, End Date Is Empty
+
+[flow6]
+tousername = null
+touserid = null
+enddatevalue =+1
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = applicationError
+expectedmessage = Please Select Delegated User
+
+[flow7]
+tousername = Gaurav Bhadani
+touserid = 2173
+enddatevalue =+1
+startdatevalue = 0
+entitytypeidvalue = null
+entityidvalue = null
+rolegroupidvalue = null
+expectedstatus = applicationError
+expectedmessage = Please Select At Least One Delegation
+
+[flow8]
+tousername = Gaurav Bhadani
+touserid = 2173
+enddatevalue =+1
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue = null
+expectedstatus = applicationError
+expectedmessage = Supplier Does Not Match For Delegation, EntityId, EntityTypeId and RoleGroupId are Required, User Type Does Not Match For Delegation

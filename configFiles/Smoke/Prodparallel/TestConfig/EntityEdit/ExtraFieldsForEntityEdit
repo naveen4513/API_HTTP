@@ -1,0 +1,46 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#Always give Full JSON object as Value for any key.
+
+[suppliers flow 1]
+name = {"name":"name","id":503,"values":"Entity Edit Suppliers Flow 1"}
+
+[contracts flow 1]
+timeZone = {"name":"timeZone","id":7,"values":{"name":"Pacific Time (GMT -08:00)","id":30,"timeZone":"America/Los_Angeles"}}
+
+[obligations flow 1]
+outputType = {"name":"outputType","id":307,"values":{"name":"Deliverable1","id":2}}
+
+[service levels flow 1]
+expected = {"name":"expected","id":219,"values":"50"}
+minimum = {"name":"minimum","id":218,"values":"60"}
+sigMinMax = {"name":"sigMinMax","id":220,"values":"70"}
+
+[actions flow 1]
+functions = {"name":"functions","id":418,"values":[{"name":"Human Resources","id":1007,"active":false,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false}]}
+services = {"name":"services","id":419,"values":[{"name":"End-User Computing","id":1024,"parentId":1007,"active":false,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"parentName":"Human Resources"}]}
+
+[issues flow 1]
+priority = {"name":"priority","id":114,"values":{"name":"Low","id":2}}
+
+[disputes flow 1]
+currency = {"name":"currency","id":11185,"values":{"name":"Australian Dollar (AUD)","id":3,"shortName":"AUD"}}
+
+[change requests flow 1]
+contractReferences = {"name":"contractReferences","id":803,"values":[{"name":"Goffman_Erving_The_Presentation_of_Self_in_Everyday_Life (2).pdf","id":1267,"metaDataCreated":true,"imageCreated":true,"viewerAvailable":true,"noOfPages":173,"fileId":1271,"extension":"pdf","startPageNumber":1,"numberOfPagesToExclude":2,"contractId":1552}]}
+
+[interpretations flow 1]
+requestDate = {"name":"requestDate","id":712,"values":"01-27-2018 00:00:00"}
+
+[work order requests flow 1]
+projectLevels = {"name":"projectLevels","id":4944,"values":[{"name":"Build","id":1001}]}
+
+[purchase orders flow 1]
+poAvailable = {"name":"poAvailable","id":11399,"values":100,"displayValues":"20,000 USD"}
+
+[invoices flow 1]
+stakeHolders = {"name":"stakeHolders","values":{"rg_2212":{"values":[],"name":"rg_2212","label":"Invoice Suppliers","userType":[4]},"rg_2238":{"values":[{"idTypes":[4],"name":"Supplier Users list","id":1010}],"name":"rg_2238","label":"invoice-supplier","userType":[4]},"rg_2214":{"values":[],"name":"rg_2214","label":"Invoice VP","userType":[2]},"rg_2213":{"values":[],"name":"rg_2213","label":"Invoice TL","userType":[2,1,3,4]},"rg_2064":{"values":[{"name":"APIAutomation user","id":2279,"idType":2}],"name":"rg_2064","label":"Invoice Manager","userType":[2,1,3,4]}}}

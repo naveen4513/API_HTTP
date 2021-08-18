@@ -1,0 +1,47 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/WOR/Creation
+extrafieldsconfigfilename = ExtraFieldsForWORCreation.cfg
+
+#************ WOR Creation Flows Below *******************
+#TC-C8290: Brief Description having more than 1024 characters
+[flow 1]
+sourceentity = contracts
+sourcename = Contract for Bulk Create Automation Test
+sourceid = 7471
+parententitytype = msa
+expectedresult = success
+
+
+#TC-C8400: Creating WOR from Contract of Type WO/SOW
+[flow 3]
+sourceentity = contracts
+sourcename = Work Order - Bloomberg
+sourceid = 1119
+parententitytype = sow
+expectedresult = success
+
+#TC-C90399: Create WOR from Multi Supplier Contract
+[flow 39]
+sourceentity = contracts
+sourcename = API Automation Multi Supplier Contract for Child Creation test
+sourceid = 17708
+parententitytype = msa
+multisupplier = true
+multiparentsupplierid = 1027
+expectedresult = success
+
+#************* End of WOR Creation Flows ****************

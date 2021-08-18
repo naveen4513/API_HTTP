@@ -1,0 +1,33 @@
+#All section names and keys must be in lower case characters only
+#Section is the Entity Name as in EntityId.cfg
+#Keys are properties for that Entity
+
+[default]
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in BulkCreateFlows.cfg file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = false
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = issue positive flow 1
+
+#SchedulerPollingTime: The time interval between requests to Check if Bulk Create Scheduler Job is finished (in milliseconds). Default Value is 5000;
+schedulerpollingtime = 15000
+
+#SchedulerWaitTimeOut: The timeout for the Bulk Create Scheduler (in milliseconds). This property is used only when WaitForScheduler is set to True.
+#Default Value is 1200000 milliseconds.
+schedulerwaittimeout = 600000
+
+#Bulk Action Flows Config File Details
+flowsconfigfilename = BulkCreateFlows.cfg
+
+#ExcelFilePath: Path where all the excel sheets will be stored for Bulk Create flows.
+excelfilepath = src/test/resources/TestConfig/BulkCreate/ExcelSheets
+
+#EntityTemplateSheetNameMapping: Under this section the mapping of Entity Name and the Sheet Name in the Bulk Create Template for that Entity is maintained.
+#For ex. For Obligations Entity, the Bulk Create Template has Sheet named 'Obligation' where all the record details are mentioned.
+#Key here is Entity Name as in BulkCreateFlows.cfg field 'entity' and Value is sheet name. Key must be in lower case characters only
+
+[entitytemplatesheetnamemapping]
+obligations = obligation

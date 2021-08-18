@@ -1,0 +1,13 @@
+#All keys must be in lower case characters only
+#Put Users in comma seperated (ajay_user@sirionqa.office,pradeep@sirionqa.office) othewise it take the first user of All Users as a recipient
+
+
+offset = 0
+size = 20
+orderbycolumnname = id
+orderdirection = desc nulls last
+
+
+
+[child obligations]
+test = 13

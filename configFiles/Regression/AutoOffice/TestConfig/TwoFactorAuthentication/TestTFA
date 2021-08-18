@@ -1,0 +1,22 @@
+invalidattemptcount = 3
+
+
+[default]
+username = sarthak_user
+password = admin123
+email = sarthak@sirionqa.office
+fullname = sarthak user
+userid = 2273
+isadmin =  false
+
+[client admin user details]
+username = anay_admin
+password = admin123
+
+[incorrect login attempt client admin]
+username = sarthak_admin
+password = admin123
+email = sarthak_admin@sirionqa.office
+fullname = sarthak admin
+userid = 2371
+isadmin = true

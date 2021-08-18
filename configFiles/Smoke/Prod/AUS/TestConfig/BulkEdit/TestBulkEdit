@@ -1,0 +1,62 @@
+#All section names and keys must be in lower case characters only
+#Section is the Entity Name as in EntityId.cfg
+#Keys are properties for that Entity
+#Currently fields of type Checkbox are not supported.
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in flows config file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = false
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = suppliers flow 1
+
+#Maximum No of Records for List Data. Default Value is 20. (0 is not allowed)
+maxrecordsforlistdata = 200
+#ListDataOffset. Default Value is 0
+listdataoffset = 0
+
+#Maximum No of Records on which Bulk Edit will be performed. Default Value is 3. (0 is not allowed)
+maxrecordsforbulkedit = 1
+
+#Maximum No of Records to validate on Show Page. Default Value is 3. (0 is not allowed)
+maxrecordsforshow = 3
+
+#NotificationMessage: The notification string/message on successful submission.
+notificationmessage = Your request has been successfully submitted
+
+#CheckShowPageIsBlocked: Whether to check if show page is blocked or not. Possible Values are True or False. Default Value is True.
+checkshowpageisblocked = false
+
+#WaitForScheduler: Whether to wait for Scheduler to complete Bulk Action or not. Possible Values are True or False. Default Value is True.
+#If set to True then will wait for the Time specified in property 'SchedulerWaitTimeout'. Otherwise will dump data to file which can be verified later.
+waitforscheduler = true
+
+#KillAllSchedulerTasks: Whether to kill all the Scheduler Tasks before Performing Bulk Action or not. Possible Values are True or False. Default Value is False.
+killallschedulertasks = true
+
+#SchedulerPollingTime: The time interval between requests to Check if Bulk Action Scheduler Job is finished (in milliseconds). Default Value is 5000;
+schedulerpollingtime = 5000
+
+#SchedulerWaitTimeOut: The timeout for the Bulk Action Scheduler (in milliseconds). This property is used only when WaitForScheduler is set to True.
+#Default Value is 1200000 milliseconds.
+schedulerwaittimeout = 60000
+
+#FailTestIfJobNotCompletedWithinSchedulerTimeOut: Whether to fail test If Bulk Action Job not Completed wihtin Scheduler Time Out or not.
+#Possible Values are True or False. Default Value is True.
+failtestifjobnotcompletedwithinschedulertimeout = false
+
+#BulkEditFlows Config File Details
+flowsconfigfilename = BulkEditFlows.cfg
+
+#Section DefaultValues specify all the default values that will be used for each Field Type in Bulk Edit.
+#Key here is Field Type. Keys must be in lower case characters only.
+#For Fields of Type (Text), default Value will serve as Prefix only. The suffix would be the Random String generated dynamically.
+#For Fields of Type Date, the value must be in the same format as it is supported on the Host Environment.
+
+[defaultvalues]
+text = Test
+date = 07-20-2017
+stakeholder = Naveen Kr. Gupta
+number = 50

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Integration" thread-count="1">
+
+<!--    <test name="Generic Integration Test Data Creation">
+      <classes>
+          <class name="com.sirionlabs.helper.Integration.CsvDataCreation"></class>
+      </classes>
+  </test>-->
+
+   <!-- <test name="Generic Integration">
+        <classes>
+            <class name="com.sirionlabs.test.integration.TestGenericIntegration"></class>
+        </classes>
+    </test>-->
+
+    <test name="VF Integration">
+        <classes>
+            <class name="com.sirionlabs.test.integration.TestVFIntegration"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Supplier Wisdom">
+        <classes>
+            <class name="com.sirionlabs.test.integration.TestSupplierWisdomNewModule"></class>
+        </classes>
+    </test>-->
+
+    <!--<test name="Docu Sign">
+        <classes>
+            <class name="com.sirionlabs.test.integration.TestDocuSignIntegration"></class>
+        </classes>
+    </test>-->
+
+
+</suite>

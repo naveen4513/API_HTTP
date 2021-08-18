@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Email Schenario Verificiation" thread-count="1">
+
+    <test name="Test Email Schenario ">
+        <classes>
+            <class name="com.sirionlabs.test.TestEmailFeature"></class>
+        </classes>
+    </test>
+
+
+</suite>

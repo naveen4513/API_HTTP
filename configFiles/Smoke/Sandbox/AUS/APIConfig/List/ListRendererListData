@@ -1,0 +1,214 @@
+offset=0
+size=25
+
+#default size is used for the list Data when first call=true.
+defaultsize=20
+orderbycolumnname=id
+orderdirection=desc nulls last
+
+#Boolean Flag for restricting tab url validation for show page. Default is false.
+istaburlvalidationrequired=false
+
+#Document History tab url
+doucmenthistorytaburl = 231,232,233,234,235,409
+
+#Entities to skip the validation for show page. Provide the comma separated entity ids.
+entitiestoskip=
+
+#Boolean Flag for applying randomisation on filters. Default value = true. Possible values (true,false)
+userandomizationonlistingfilters = true
+
+#Provide the max number of filter options to be validated. Default value = 3
+maxfilteroptionstobevalidated = 5
+
+#Provide the maxRandomOptions for Applying Randomization on columns for selectedColumn under downloadingGraphWithData feature. default value is 5.
+maxrandomoptions = 3
+
+#following 3 flags for downloading list data in excel file
+testforallentities = false
+entitytotest =  suppliers,vendors,obligations,child obligations,service levels,child service levels,issues,actions,contracts,invoices,contract draft request,purchase orders,service data,clauses,contract templates,definition,consumptions
+allentitytotest = suppliers,vendors,obligations,child obligations,issues,actions,contracts
+
+[default]
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholdergroupsdelemeter = ::
+stakeholderonegroupdelemeter = |
+stakeholdergroupentityid = ,
+testreportsforentities = all
+
+
+[actions]
+test = 29
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[change requests]
+test = 88
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[obligations]
+test = 58
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[suppliers]
+test = 48
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[child obligations]
+test = 17
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[service levels]
+test = 330
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[child service levels]
+test = 91
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[interpretations]
+test = 53
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[issues]
+test = 45
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[disputes]
+test = 315
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[contracts]
+test = 49
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[invoices]
+test = 79
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[work order requests]
+test = 96
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+
+[governance body]
+test = 261
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[governance body meetings]
+test = 264
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[contract draft request]
+test = 324
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[service data]
+test = 324
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[invoice line item]
+test = 324
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[purchase orders]
+test = 324
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[references]
+test = 324
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+

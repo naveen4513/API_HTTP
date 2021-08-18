@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Line Item Suite" thread-count="1">
+<!--Scrapping the xml-->
+
+<!--    <test name="Invoice Line Item Upload">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.invoiceLineItem.TestInvoiceLineItemUpload"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Invoice Line Item Download">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.invoiceLineItem.TestInvoiceLineItemDownload"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Invoice Line Item Linking Back to Service Data">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.invoiceLineItem.TestLinkingBackToServiceData"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+
+<!--    <test name="Invoice Line Item Split type Service Data">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.invoiceLineItem.TestInvoiceLineItemSplitServiceData"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Invoice Line Item Reference Tab Validation">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.invoiceLineItem.TestInvoiceLineItemReferenceTab"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+<!--    Commenting the test as changes required -->
+<!--    <test name="Invoice ReValidation Scenarios">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.invoiceLineItem.TestRevalidationScenarios"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Currency Conv Scenarios">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.invoice.TestCurrencyConversionValidation"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

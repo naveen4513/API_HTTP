@@ -1,0 +1,112 @@
+#All section names & keys must be in lower case characters only (Except for Special Filters)
+#All charts with NEW FRAMEWORK(dev) = 17,18,20,24,26,27,29,34,35,37,38,39,40,42,45,46,50,51,60,61,62,63,65,66,67,68,69,70,71,72,75,76,77,78,79,80,81,82,84,85,86,88,89,90,91,92,93,94,95,96,97,98,99,101,102,105,106,108,109,110,111
+#All charts with OLD FRAMEWORK(dev) = 19,21,22,23,25,28,30,31,32,33,36,41,43,44,47,48,49,52,53,54,55,56,57,58,59,64,73,74,83,87,100
+#for the above chart ids(OLD FRAMEWORK(dev)) untill the bug SIR-97466 is not resolved, the script should be run with provided Cookies( paste the valid cookies from the browser and change useCookies=yes in environment cfg file)
+#Dashboard ChartTypes :
+#[scrollStackedColumn2D] ==> 17,18,20,37,84
+#[TreeMap] ==>19,48
+#[doughnut2d] = 24,29,60,80,82,99,101
+#[World8] ==>26,27,59
+#[StackedColumn2D] ==> 34,35,38,39,50,53,81,89,94,97
+#[collapsibletree] ==> 40,45,58,59
+#[msstackedcolumn2dlinedy] ==> 42,46,47,49,51,77,88,93
+#[bubble] ==> 61,62
+#[Column2D] ==> 65,66
+#[StackedBar2D] ==> 67,68,79,85,86,91,92
+#[MSColumn2D] ==> 69
+#[radar] ==> 70,71
+#[MSLine] ==> 72,90,96
+#[heatmap] ==> 75,76,78,95
+#[mscombi2d] ==> 102
+
+#Boolean flag for running dashboard suite on separate environment. Possible values = [true,false]. Default is false.
+testondifferentenv = false
+
+#environment config file name on which dashboard suite need to be run. Do not provide cfg extension
+envfilename = qa_auto
+
+#DelimiterForValues is used to separate the values
+delimiterforvalues = ,
+
+#DelimiterForRoleGroups is used to separate roleGroup and its value.
+delimiterforrolegroups = ->
+
+#DelimiterForOwners is used to separate all values of a roleGroup.
+delimiterforowners = |
+
+#Id of All Charts designed as per new framework
+chartsidwithnewframework = 26,27,42,46
+#26,27,42,46,51,65,66,68,70,71,72,75,77,78,80,82,88,90,93,96,99,101,102,108,109
+
+#Id of All Charts designed as per old framework.
+chartsidwitholdframework = 26,27,42,46
+#17,18,20,24,29,34,35,37,38,39,40,45,47,48,49,50,53,58,59,59,60,61,62,69,76,79,81,84,85,86,89,91,92,94,97,105,106,110,111
+
+#All chart Ids which require DashboardLocalFilter api call for getting local filters. These charts are on new framework.
+chartswithlocalfilterapi = 17,18,20,24,26,27,29,34,35,37,38,39,40,42,45,46,47,50,51,60,61,62,63,65,66,67,68,69,70,71,72,75,76,77,78,79,80,81,82,84,85,86,88,89,90,91,92,93,94,95,96,97,98,99,101,102,105,106,108,109,110,111
+
+#Formation of request payload for Chart Type = doughnut2d is handled in a different way. Provide the chartIds belows which are of doughnut2d type.
+doughnut2dcharts = 24,29,60,80,82,99,101,109,111
+
+#Charts with dependent filters.
+chartswithdependentfilters = 96
+
+#offset and size for chartTableMetadata in records
+offset = 0
+size = 100
+
+#min and max values for Slider type filters. These values can be put empty also.
+minslidervalue =
+maxslidervalue = 15000
+
+#dashboard listId/urlId
+dashboardlistid = 343
+
+#Boolean flag to specifiy whether to test dashboard records api or not. Possible Values (True, False). Default Value is true.
+validaterecordsapi = false
+
+#ValidateData flag specifies whether to test Dashboard Records Data or not. Possible Values (True, False). Default Value is False
+validatedata = false
+
+#TestAllFilters flag specifies whether to test all Filters in a Chart or defined filters only. Possible Values (True, False). Default Value is True
+#If this flag is set to false then it will pick only Special Filters for a chart.
+testallfilters = true
+
+#ApplyRandomization flag turns on/off Randomization for the Options of All Filters. Possible Values (True, False). Default Value is True
+#It doesn't apply on SpecialFilters.
+applyrandomizationonlocalfilters = true
+applyrandomizationonglobalfilters = true
+
+#MaxRandomOptions: Max no of Random Options to be picked for validation. This will apply only if ApplyRandomization is set to True and only on Non-Special Filters.
+#Default Value is 3
+maxrandomoptions = 1
+
+#DashboardChart Hierarchy mapping
+#Default mapping chartType : scrollStackedColumn2D,StackedColumn2D,bubble,StackedBar2D,MSColumn2D,radar,MSLine,heatmap,mscombi2d
+#For JsonArray give arrayName with [*]. Here * will define to search the whole array. $ is the base node(root node)
+[charttype]
+default = $.dataset[*].data[*].link
+treemap = $.dataset[*].children[*].link
+doughnut2d = $.data[*].link
+bar2d = $.data[*].link
+world8 = $.globalChartData.link
+collapsibletree = $.dataset.children[*].children[*].link
+msstackedcolumn2dlinedy = $.dataset[*].dataset[*].data[*].link
+column2d = $.data[*].link
+
+#SpecialFilters specify the filters for any Chart on which the Randomization shouldn't apply even if its set to True.
+#Key name here is specialFilter i.e. Attribute Label. Values are specific options separated by DelimiterForValues.
+#If no specific option is provided for any SpecialFilter then all the options will be picked for validation.
+#NOTE: Key here i.e. SpecialFilter Name must be in lower case characters only.
+
+#Stakeholders as a Special Filter needs special format. One or more roleGroup and then one or more values for each roleGroup. They need to separated by Specific delimiters.
+#DelimiterForValues would separate the roleGroups.
+#DelimiterForRoleGroups would separate roleGroup from its value.
+#DelimiterForOwners would separate all values of a roleGroup.
+#Considering above delimiters for the example below as: DelimiterForValues = ,    DelimiterForRoleGroups = ->      DelimiterForOwners = |
+#Stakeholders must be in following format: Stakeholder = roleGroup1 -> ownerName1 | ownerName2 , roleGroup2 -> ownerName1 | ownerName2
+#The above format specifies to run for Stakeholder for Role Groups roleGroup1 and roleGroup2 having values ownerName1, ownerName2, ownerName3, ownerName4 respectively.
+
+[24]
+supplier = OLA Supplier
+stakeholders = action_owner -> 123 Garg | Client User , action_special_rolegroup -> Anay A | Anubhav Bhatnagar

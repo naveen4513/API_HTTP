@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Minor Release Entity Filters Validation">
+    <parameter name="TestingType" value="minor"/>
+    <parameter name="Environment" value="multi_supplier_off"/>
+    <parameter name="Entities" value=""/>
+    <suite-files>
+
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+        <listeners>
+            <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+        </listeners>
+
+        <suite-file path="../../Default/Filters.xml"></suite-file>
+
+    </suite-files>
+</suite>

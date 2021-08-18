@@ -1,0 +1,31 @@
+[rule invoice sdbox VMWare Inc 1]
+#supplier = [{"name":"ABC News Actual","id":1374}]
+supplier = [{"name":"VMWare Inc","id":1065}]
+ruleType = {"id": 2,"name": "Value Update"}
+entityType = {"id": 67,"name": "Invoice"}
+
+[rule line item sdbox VMWare Inc 1]
+#supplier = [{"name":"ABC News Actual","id":1374}]
+supplier = [{"name":"VMWare Inc","id":1065}]
+ruleType = {"id": 2,"name": "Value Update"}
+entityType = {"id": 165,"name": "Invoice Line Item"}
+
+[rule billing data sdbox VMWare Inc 1]
+supplier = [{"name":"VMWare Inc","id":1065}]
+ruleType = {"id": 2,"name": "Value Update"}
+entityType = {"id": 324,"name": "Billing Data"}
+
+[rule line item pp Supplier Automation 1]
+supplier = [{"name":"Supplier Automation","id":1459}]
+ruleType = {"id": 2,"name": "Value Update"}
+entityType = {"id": 165,"name": "Invoice Line Item"}
+
+[rule invoice pp Supplier Automation 1]
+supplier = [{"name":"Supplier Automation","id":1459}]
+ruleType = {"id": 2,"name": "Value Update"}
+entityType = {"id": 67,"name": "Invoice"}
+
+[rule billing data pp Supplier Automation 1]
+supplier = [{"name":"Supplier Automation","id":1459}]
+ruleType = {"id": 2,"name": "Value Update"}
+entityType = {"id": 324,"name": "Billing Data"}

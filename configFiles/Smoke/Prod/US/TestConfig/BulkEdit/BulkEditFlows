@@ -1,0 +1,27 @@
+#This file has all the flows to be tested in BulkEdit.
+
+#Section Name is the Flow Name. Each Section has three keys. All the keys must be in lower case characters.
+#Entity represents the Entity Name as in EntityId.cfg.
+#Field represents the Field Label as on UI.
+#Value represents the Field Value which is to be passed against Field. If no value is specified then default value on the basis of its Type will be picked from TestBulkEdit.cfg.
+#Currently Bulk Edit Suite supports only one field at a time.
+
+[contracts flow 1]
+entity = contracts
+field = name
+value = bulk edit contracts flow 1
+
+[suppliers flow 1]
+entity = suppliers
+field = functions
+value = IT
+
+[service levels flow 1]
+entity = service levels
+field = title change
+value = bulkEditUpdateServiceLevel
+
+[contracts flow 2]
+entity = contracts
+field = Contract Manager
+value = Akshay User

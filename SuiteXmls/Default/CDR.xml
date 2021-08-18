@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CDR Suite" thread-count="1">
+
+  <!--  <test name="CDR creation with WF and Non WF action">
+        <classes>
+            <class name="com.sirionlabs.test.cdr.TestCDR_WFNonWFActions"></class>
+        </classes>
+    </test>-->
+
+    <test name="CTS creation with WF and Non WF action">
+        <classes>
+            <class name="com.sirionlabs.test.cdr.TestCTS_WFNonWFActions"></class>
+        </classes>
+    </test>
+
+    <test name="Document Upload Test">
+        <classes>
+            <class name="com.sirionlabs.test.cdr.TestDocumentUploadCDR"></class>
+        </classes>
+    </test>
+
+    <test name="CDR to contract Move to Tree">
+        <classes>
+            <class name="com.sirionlabs.test.cdr.TestMoveToTreeCDR"></class>
+        </classes>
+    </test>
+
+<!--    <test name="Test Classification Functionality">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.cdr.TestClassificationDocumentUploadCDR"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

@@ -1,0 +1,18 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Validate Contract Document Get Entities API from Submitted to Completed Stage with valid parameters, valid authorization",
+    "validAuthorization" : true,
+    "validAcceptHeader" : true,
+    "acceptHeader" : "application/json, text/javascript, */*; q=0.01",
+    "expectedStatusCode": 200
+  },
+  {
+    "testCaseId": "2",
+    "description": "Validate Contract Document Get Entities API from Submitted to Completed Stage with valid parameters, and non valid authorization",
+    "validAuthorization" : false,
+    "validAcceptHeader" : true,
+    "acceptHeader" : "application/json, text/javascript, */*; q=0.01",
+    "expectedStatusCode": 401
+  }
+]

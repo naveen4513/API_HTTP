@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bulk create and update Feature">
+    <parameter name="TestingType" value="minor"/>
+    <parameter name="Environment" value="automation_dev"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <test name="BulkCreate Feature">
+            <classes>
+                <class name="com.sirionlabs.test.bulkCreate.TestBulkCreate"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

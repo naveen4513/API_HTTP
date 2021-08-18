@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Report Render Suite" data-provider-thread-count="15">
+    <test name="Verify Report Renderer Column Sorting">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestReportColumnsSorting"></class>
+        </classes>
+    </test>
+
+</suite>

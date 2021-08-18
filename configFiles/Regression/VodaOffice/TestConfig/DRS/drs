@@ -1,0 +1,22 @@
+
+###cllientId's having AWS and FIle Sytem Configuration
+filesystemclientid = 1006
+awsclientid = 1007
+
+#client-Id for which KMS is not configured
+kmsnotclientid = 1002
+# please true/false  if you need to validate data in DB or not
+validateindb = true
+envdetail = QA
+
+
+validfilename = TestDRS.pdf
+sizemaxfilename = maxsize.pdf
+invalidextensionfilename = testxls.xlsx
+
+
+dbname = documentdb
+dbhostaddress = 192.168.2.158
+dbportname = 5432
+dbusername = postgres
+dbpassword = T8k2H){6D$

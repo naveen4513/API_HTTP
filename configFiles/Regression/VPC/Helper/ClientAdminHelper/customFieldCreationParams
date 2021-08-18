@@ -1,0 +1,146 @@
+# - (hyphen) is replaced with underscore to respective values in CustomField class for purpose. Please check the create logic(in customField class) for further doubts
+[common]
+_multiEntitySupport= on
+_listReportId= 1
+_listReportExcelId= 1
+_filterListReportIds= 1
+_searchable= on
+active= true
+_active= on
+_sirionBI= on
+_autocomplete= on
+optionsSize=
+_enableListView= on
+_alphabeticalSort= on
+_enableHtmlParsing= on
+_createClauseTag= on
+masterList-id=
+
+[invoice text field basic information]
+entityType-id= 67
+subHeader-id= 606
+htmlType-id= 1
+dynamicFieldValidations--validationType = MAX_CHAR
+dynamicFieldValidations--parameter= 20
+dynamicFieldValidations--message= error
+
+[invoice date field basic information]
+entityType-id= 67
+subHeader-id= 606
+htmlType-id= 8
+
+[invoice numeric field basic information]
+entityType-id= 67
+subHeader-id= 606
+htmlType-id= 18
+dynamicFieldValidations--validationType = MAX
+dynamicFieldValidations--parameter= 10
+dynamicFieldValidations--message= error
+
+[invoice textarea field basic information]
+entityType-id= 67
+subHeader-id= 606
+htmlType-id= 2
+dynamicFieldValidations--validationType = MAX_CHAR
+dynamicFieldValidations--parameter= 100
+dynamicFieldValidations--message= error
+
+[service data text field basic information]
+entityType-id= 64
+subHeader-id= 1430
+htmlType-id= 1
+dynamicFieldValidations--validationType = MAX_CHAR
+dynamicFieldValidations--parameter= 20
+dynamicFieldValidations--message= error
+
+[line item text field basic information]
+entityType-id= 165
+subHeader-id= 3871
+htmlType-id= 1
+dynamicFieldValidations--validationType = MAX_CHAR
+dynamicFieldValidations--parameter= 20
+dynamicFieldValidations--message= error
+
+[line item numeric field basic information]
+entityType-id= 165
+subHeader-id= 3871
+htmlType-id= 18
+dynamicFieldValidations--validationType = MAX
+dynamicFieldValidations--parameter= 10
+dynamicFieldValidations--message= error
+
+[service data numeric field basic information]
+entityType-id= 64
+subHeader-id= 1430
+htmlType-id= 18
+dynamicFieldValidations--validationType = MAX
+dynamicFieldValidations--parameter= 10
+dynamicFieldValidations--message= error
+
+[line item textarea field basic information]
+entityType-id= 165
+subHeader-id= 3871
+htmlType-id= 2
+dynamicFieldValidations--validationType = MAX_CHAR
+dynamicFieldValidations--parameter= 100
+dynamicFieldValidations--message= error
+
+[service data textarea field basic information]
+entityType-id= 64
+subHeader-id= 1430
+htmlType-id= 2
+dynamicFieldValidations--validationType = MAX_CHAR
+dynamicFieldValidations--parameter= 100
+dynamicFieldValidations--message= error
+
+[line item date field basic information]
+entityType-id= 165
+subHeader-id= 3871
+htmlType-id= 8
+
+[service data date field basic information]
+entityType-id= 64
+subHeader-id= 1430
+htmlType-id= 8
+
+[invoice date with timezone field basic information]
+entityType-id= 67
+subHeader-id= 606
+htmlType-id= 20
+
+[service data single select field basic information]
+entityType-id= 64
+subHeader-id= 1430
+htmlType-id= 3
+dynamicFieldOptionValues--name: Select Category 1
+dynamicFieldOptionValues--orderSeq: 1
+dynamicFieldOptionValues--active: on
+dynamicFieldOptionValues---name: Select Category 2
+dynamicFieldOptionValues---orderSeq: 2
+dynamicFieldOptionValues---active: on
+dynamicFieldOptionValues----name: Select Category 3
+dynamicFieldOptionValues----orderSeq: 3
+dynamicFieldOptionValues----active: on
+#_dynamicFieldOptionValues--clientActive: on
+
+[service data multi select field basic information]
+entityType-id= 64
+subHeader-id= 1430
+htmlType-id= 4
+dynamicFieldOptionValues--name: Select Category 1
+dynamicFieldOptionValues--orderSeq: 1
+dynamicFieldOptionValues--active: on
+dynamicFieldOptionValues---name: Select Category 2
+dynamicFieldOptionValues---orderSeq: 2
+dynamicFieldOptionValues---active: on
+dynamicFieldOptionValues----name: Select Category 3
+dynamicFieldOptionValues----orderSeq: 3
+dynamicFieldOptionValues----active: on
+
+[service data text area field basic information]
+entityType-id= 64
+subHeader-id= 1430
+htmlType-id= 2
+dynamicFieldValidations--validationType = MAX_CHAR
+dynamicFieldValidations--parameter= 20
+dynamicFieldValidations--message= error

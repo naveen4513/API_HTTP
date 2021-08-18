@@ -1,0 +1,71 @@
+supplier user 1 = automation_supplier_user_001
+supplier user 1 password = admin123
+supplier user 2 = automation_supplier_user_002
+supplier user 2 password = admin123
+
+vendor id for user 1 = 4138
+vendor id for user 2 = 4139
+
+vendor name for user 1 = Please Do Not Use Used in some Automation Scenario Supplier User1 (RL01285)
+vendor name for user 2 = Please Do Not Use Used in some Automation Scenario Supplier User2 (RL01286)
+
+entities to test = child obligations
+#,obligations,suppliers,vendors,service levels,child service levels,issues,actions,disputes,change requests,governance body
+#obligations,suppliers,vendors,service levels,child service levels,issues,actions,disputes,change requests,governance body
+
+entities to check for vendor id = suppliers,vendors
+
+[child obligations]
+payload = {"filterMap":{"entityTypeId":13,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":12292,"columnQueryName":"bulkcheckbox"},{"columnId":82,"columnQueryName":"id"},{"columnId":84,"columnQueryName":"relation"}]}
+supplier column id = 84
+id column id = 82
+
+[suppliers]
+payload = {"filterMap":{"entityTypeId":1,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14625,"columnQueryName":"bulkcheckbox"},{"columnId":39,"columnQueryName":"id"},{"columnId":11613,"columnQueryName":"vendorhierarchy"}]}
+vendor column id = 11613
+id column id = 39
+
+[vendors]
+payload = {"filterMap":{"entityTypeId":3,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":11450,"columnQueryName":"id"}]}
+vendor column id = 11450
+id column id = 11450
+
+[obligations]
+payload = {"filterMap":{"entityTypeId":12,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":276,"columnQueryName":"bulkcheckbox"},{"columnId":56,"columnQueryName":"id"},{"columnId":58,"columnQueryName":"relation"}]}
+id column id = 56
+supplier column id = 58
+
+[service levels]
+payload = {"filterMap":{"entityTypeId":14,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":277,"columnQueryName":"bulkcheckbox"},{"columnId":110,"columnQueryName":"id"},{"columnId":113,"columnQueryName":"suppliername"}]}
+id column id = 110
+supplier column id = 113
+
+[child service levels]
+payload = {"filterMap":{"entityTypeId":15,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":13338,"columnQueryName":"bulkcheckbox"},{"columnId":11648,"columnQueryName":"suppliername"},{"columnId":11631,"columnQueryName":"id"}]}
+id column id = 11631
+supplier column id = 11648
+
+[issues]
+payload = {"filterMap":{"entityTypeId":17,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14618,"columnQueryName":"bulkcheckbox"},{"columnId":155,"columnQueryName":"id"},{"columnId":157,"columnQueryName":"relation"}]}
+id column id = 155
+supplier column id = 157
+
+[actions]
+payload = {"filterMap":{"entityTypeId":18,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14619,"columnQueryName":"bulkcheckbox"},{"columnId":178,"columnQueryName":"id"},{"columnId":180,"columnQueryName":"relation"}]}
+id column id = 178
+supplier column id = 180
+
+[disputes]
+payload = {"filterMap":{"entityTypeId":28,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14623,"columnQueryName":"bulkcheckbox"},{"columnId":11938,"columnQueryName":"id"},{"columnId":11940,"columnQueryName":"relation"}]}
+id column id = 11938
+supplier column id = 11940
+
+[change requests]
+payload = {"filterMap":{"entityTypeId":63,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":1,"columnQueryName":"id"},{"columnId":5,"columnQueryName":"supplier"}]}
+id column id = 1
+supplier column id = 5
+
+[governance body]
+payload = {"filterMap":{"entityTypeId":86,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":17394,"columnQueryName":"bulkcheckbox"},{"columnId":11229,"columnQueryName":"id"},{"columnId":11233,"columnQueryName":"suppliers"}]}
+id column id = 11229
+supplier column id = 11233

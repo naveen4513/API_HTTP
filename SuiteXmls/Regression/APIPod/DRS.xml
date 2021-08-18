@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Pod Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_voda"/>
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <test name="TestDocumentCheckApi">
+        <classes>
+            <class name="com.sirionlabs.test.drs.TestDocumentServiceCheckApi"></class>
+        </classes>
+    </test>
+
+        <test name="TestDocumentUploadApi">
+            <classes>
+                <class name="com.sirionlabs.test.drs.TestDocumentServiceUploadApi"></class>
+            </classes>
+        </test>
+        <test name="TestDocumentDownloadApi">
+            <classes>
+                <class name="com.sirionlabs.test.drs.TestDocumentServiceDownloadApi"></class>
+            </classes>
+        </test>
+
+        <test name="TestDocumentInfoApi">
+            <classes>
+                <class name="com.sirionlabs.test.drs.TestDocumentServiceInfoApi"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

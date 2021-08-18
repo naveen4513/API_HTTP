@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="vpcEnv"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+<!--        <suite-file path="../Default/InvoiceCreateRule.xml"></suite-file>-->
+<!--        <test name="Proforma Invoice Test">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.listing.TestListing"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+<!--        <test name="Sanity Invoice Test">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.SanityFlowForSandbox.InvoiceSanityFlow"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+            <test name="Service Data Bulk Update Test">
+                <classes>
+                    <class name="com.sirionlabs.test.serviceData.TestServiceDataBulkUpdate"/>
+                </classes>
+            </test>
+
+
+    </suite-files>
+</suite>

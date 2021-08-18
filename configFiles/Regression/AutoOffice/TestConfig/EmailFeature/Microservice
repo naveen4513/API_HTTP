@@ -1,0 +1,149 @@
+[letterbox]
+domain = http://192.168.2.103:8080
+dbhost = 192.168.2.110
+dbport = 5432
+maintenancedb = letterbox
+dbusername = rouser1
+dbpassword = rouser1@123
+
+[mainapp]
+domain = http://qa.api.office
+
+[email]
+workflowtaskid = 77430
+defaultuseremail = srijan.samanta@sirionqa.office
+user2email = akhil@sirionqa.office
+englishlanguage = English
+russianlanguage = Russian
+serbianlanguage = Serbian
+expirationdateemailmessage = has been archived
+archiveemailmessage = has been archived
+reviewemailsubject = requires your review
+expectedsubjectclientname = MS Supplier
+expectedbodycontractname = Test MS Automation
+
+[actionsflowdown]
+contractrolegroupid = 2001
+supplierrolegroupid = 2000
+supplierid = 1038
+contractid = 24827
+originalusername = Anay User
+originaluserid = 1044
+changedusername = Naveen User
+changeduserid = 1045
+
+[issuesflowdown]
+contractrolegroupid = 2001
+supplierrolegroupid = 2000
+supplierid = 1038
+contractid = 24827
+originalusername = Anay User
+originaluserid = 1044
+changedusername = Naveen User
+changeduserid = 1045
+
+[todo_1]
+occurrence = weekly
+entitycreation = revamptodoupcoming
+status = Newly Created
+status2 = Submit
+status3 = Close
+status4 = Approve
+
+[todo_2]
+occurrence = daily
+entitycreation = revamptodotoday
+status = Newly Created
+status2 = Submit
+status3 = Close
+status4 = Approve
+
+[calendar]
+month = 8
+year = 2020
+calendara = false
+expectedenddate =
+
+[search]
+functions = Human Resources,IT
+services = Applications Development & Maintenance,Applications Servers,End-User Computing,LAN,Mainframe Services,Network MNS,Projects,Service Desk
+
+[actionsearchflowdown]
+entityname = suppliers,contracts
+parententitytypeid = 1,61
+parentrolegroupid = 2000,2001
+parententityid = 1038,24827
+originalusername = Anay User
+originaluserid = 1044
+changedusername = Naveen User
+changeduserid = 1045
+rolegroupname = Suppliers Manager,Contract Manager
+
+[searchmisc]
+othercontractseqid = 26499
+othercontractentitytypeid = 76
+otherentityid = 27238
+title = Do Not Delete Other Contract
+keyword = TestC90857
+
+[c90862]
+statusjson = { "name": "status", "id": 40, "multiEntitySupport": false, "values": { "name": "Newly Created", "id": 1603 } }
+status = Newly Created
+titlejson = { "name": "title", "id": 38, "multiEntitySupport": false, "values": "other" }
+title = other
+
+[solrquerysearchattach]
+keyword = {"test","master"}
+keyword2 = {"test,contract"}
+keyword3 = {"test tab" ~2,test,tab}
+keyword4 = {t????}
+keyword5 = {o*,*o*,*o}
+keyword6 = {test~}
+keyword7 = {"test"}
+keyword8 = {"test,test","test"AND,"test"OR,"test"NOT,"test"!,OR"test",AND"test"}
+keyword9 = {!"tab"AND"test",s*AND*s,o* OR *o}
+
+[solrquerycontractdoc]
+keyword = {"agreement","contract"}
+keyword2 = {"services,provided"}
+keyword3 = {"master agreement" ~1,master,agreement}
+keyword4 = {t????}
+keyword5 = {o*,*o*,*o}
+keyword6 = {test~}
+keyword7 = {"test"}
+keyword8 = {"test,test","test"AND,"test"OR,"test"NOT,"test"!,OR"test",AND"test"}
+keyword9 = {!"tab"AND"test",s*AND*s,o* OR *o}
+
+[c90473]
+suppliers = {1038,1026}
+rolegroupid = 2000
+payload = {"body":{"data":{"entityTypeId":{"name":"entityTypeId","values":61},"searchParam":{"offset":{"name":"offset","values":0},"size":{"name":"size","values":500}},"stakeHolders":{"name":"stakeHolders","values":{"rg_3167":{"values":[{"name":"Anay User","id":1044,"idType":2},{"name":"pertyy perfrr","id":1043,"idType":2}],"name":"rg_3167","label":"Suppliers Manager"}}},"relations":{"name":"relations","id":39,"multiEntitySupport":false,"values":[{"name":"Pacificorp"}]}}}}
+
+[c90870]
+contractname = Test MS Automation Other Contract
+suppliername = MS Supplier
+querytext = stories
+url = #/show/tblcontracts/27239
+contractid = 27239
+
+[c141105]
+payload = {"body":{"data":{"entityTypeId":{"name":"entityTypeId","values":61},"searchParam":{"offset":{"name":"offset","values":0},"size":{"name":"size","values":5}},"title":{"name":"title","id":38,"multiEntitySupport":false,"values":"\"tes"}}}}
+errormessage = Invalid Query: Your Search Query Has Incorrect Syntax For Field Title, Please Fix And Re-try
+
+[c141106]
+payload = {"body":{"data":{"entityTypeId":{"name":"entityTypeId","values":61},"searchParam":{"offset":{"name":"offset","values":0},"size":{"name":"size","values":5}},"title":{"name":"title","id":38,"multiEntitySupport":false,"values":"\"tes"},"name":{"name":"name","id":37,"multiEntitySupport":false,"values":"\"Test\""}}}}
+errormessage = Invalid Query: Your Search Query Has Incorrect Syntax For Field Title, Please Fix And Re-try
+
+[c141107]
+payload = {"body":{"data":{"entityTypeId":{"name":"entityTypeId","values":61},"searchParam":{"offset":{"name":"offset","values":0},"size":{"name":"size","values":5}},"dynamicMetadata":{"dyn101082":{"name":"dyn101082","id":101082,"multiEntitySupport":false,"values":"\"test"}}}}}
+errormessage = Invalid Query: Your Search Query Has Incorrect Syntax For Field Test Field, Please Fix And Re-try
+
+[c141108]
+payload = {"body":{"data":{"entityTypeId":{"name":"entityTypeId","values":61},"searchParam":{"offset":{"name":"offset","values":0},"size":{"name":"size","values":5}},"dynamicMetadata":{"dyn101082":{"name":"dyn101082","id":101082,"multiEntitySupport":false,"values":"\"test"},"name":{"name":"name","id":37,"multiEntitySupport":false,"values":"\"Test\""}}}}}
+errormessage = Invalid Query: Your Search Query Has Incorrect Syntax For Field Test Field, Please Fix And Re-try
+
+[nonwfmail]
+contractid = 30708
+contractseqid = CO29969
+actionid = 11700
+actionseqid = AC11304

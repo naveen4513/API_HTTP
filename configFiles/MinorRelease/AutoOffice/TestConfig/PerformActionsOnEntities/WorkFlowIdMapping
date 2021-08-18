@@ -1,0 +1,334 @@
+# WorkFlow as section
+# Other constants as properties
+#All keys must be in lower case characters only
+
+[startcomputation]
+child service levels = work-1138
+
+[rejectcomputation]
+child service levels = work-10961
+
+[approvecomputation]
+child service levels = work-10958
+
+[submit]
+child service levels = work-10963
+purchase orders = work-1882
+actions = work-1269
+child obligations = work-1209
+change requests = work-42737
+work order requests = work-4899
+issues = work-1332
+
+[resubmit]
+purchase orders = work-6907
+actions = work-6478
+child obligations = work-1220
+change requests = work-6586
+
+[return]
+child service levels = work-10971
+
+[submitforcustomerapprove]
+child service levels = work-10975
+
+[startmeeting]
+governance body meetings = work-1248
+
+[endmeeting]
+governance body meetings = work-2251
+
+[cancelmeeting]
+governance body meetings = work-2248
+
+[sendforapproval]
+invoice line item = work-7421
+
+[submitforapproval]
+invoice line item = work-46348
+
+[resubmitforapproval]
+invoice line item = work-7425
+
+[paid]
+invoice line item = work-7426
+
+
+[activate]
+suppliers = work-1004
+vendors =
+obligations = work-7178
+child obligations =
+service levels = work-10923
+child service levels =
+interpretations =
+issues =
+actions =
+disputes =
+contracts =
+change requests =
+invoices =
+work order requests =
+governance body =
+governance body meetings =
+contract draft request =
+purchase orders =
+invoice line item =
+service data =
+references =
+work order =
+clauses =
+contract templates =
+
+[approve]
+consumptions = work-42769
+obligations = work-7177
+child obligations = work-7214
+service levels = work-10916
+child service levels = work-10980
+interpretations =
+issues =
+actions = work-6480
+disputes =
+contracts = work-7018
+change requests = work-42745
+invoices = work-6756
+work order requests =
+governance body = work-6439
+governance body meetings =
+contract draft request = work-7291
+purchase orders = work-6908
+invoice line item = work-46348
+service data =
+references =
+work order =
+clauses = work-7258
+contract templates = work-7275
+
+[inactivate]
+suppliers =
+vendors =
+obligations = work-7180
+child obligations =
+service levels = work-10921
+child service levels =
+interpretations =
+issues =
+actions =
+disputes =
+contracts = work-7020
+change requests =
+invoices =
+work order requests =
+governance body = work-6444
+governance body meetings =
+contract draft request =
+purchase orders =
+invoice line item =
+service data =
+references =
+work order =
+clauses = work-7265
+contract templates = work-7281
+
+[internalreviewcomplete]
+suppliers =
+vendors =
+obligations =
+child obligations =
+service levels = work-10910
+child service levels =
+interpretations =
+issues =
+actions =
+disputes =
+contracts = work-7015
+change requests =
+invoices =
+work order requests =
+governance body = work-6433
+governance body meetings =
+contract draft request =
+purchase orders =
+invoice line item =
+service data =
+references =
+work order =
+clauses =
+contract templates =
+
+[peerreviewcomplete]
+suppliers =
+vendors =
+obligations =
+child obligations =
+service levels = work-10906
+child service levels =
+interpretations =
+issues =
+actions =
+disputes =
+contracts = work-7013
+change requests =
+invoices =
+work order requests =
+governance body =
+governance body meetings =
+contract draft request =
+purchase orders =
+invoice line item =
+service data =
+references =
+work order =
+clauses =
+contract templates =
+
+[publish]
+suppliers =
+vendors =
+obligations =
+child obligations =
+service levels = work-10918
+child service levels =
+interpretations =
+issues =
+actions =
+disputes =
+contracts = work-7019
+change requests =
+invoices =
+work order requests =
+governance body = work-6441
+governance body meetings =
+contract draft request =
+purchase orders =
+invoice line item =
+service data = work-43530
+references =
+work order =
+clauses = work-7262
+contract templates = work-7278
+
+[reject]
+suppliers =
+vendors =
+obligations = work-7176
+child obligations = work-7212
+service levels = work-10914
+child service levels = work-10977
+interpretations =
+issues =
+actions = work-6476
+disputes =
+contracts = work-7017
+change requests =
+work order requests =
+governance body = work-6437
+governance body meetings =
+contract draft request = work-7289
+purchase orders = work-6905
+invoice line item = work-7423
+service data =
+references =
+work order =
+clauses = work-7256
+contract templates = work-7273
+
+[sendforclientreview]
+service levels = work-10912
+contracts = work-42658
+governance body = work-6435
+contract draft request = work-1988
+clauses = work-7254
+contract templates = work-7271
+
+[sendforinternalreview]
+service levels = work-10908
+contracts = work-7014
+governance body = work-1227
+
+
+[sendforpeerreview]
+service levels = work-3955
+contracts = work-42658
+
+
+[sendforownerreview]
+obligations = work-4612
+
+[reviewcomplete]
+obligations = work-42734
+child service levels = 10973
+
+
+[sendforsmeapproval]
+invoices = work-1729
+
+[smeapprove]
+invoices = work-6756
+
+[sendforfinanceapproval]
+invoices = work-6761
+
+[financeapprove]
+invoices = work-6767
+change requests = work-42750
+
+[finalapproval]
+change requests = work-42750
+
+[sendforfinalapproval]
+invoices = work-6772
+
+[finalapprove]
+invoices = work-6774
+
+[sendforpaymentapproval]
+invoices = work-6775
+
+[paymentapprove]
+invoices = work-6777
+
+[sendforpayment]
+invoices = work-6779
+
+[paymentcomplete]
+invoices = work-6780
+
+[smereject]
+invoices = work-6755
+
+[financereject]
+invoices = work-6766
+
+[finalreject]
+invoices = work-6773
+
+[paymentreject]
+invoices = work-6776
+
+[returntosupplier]
+invoices = work-6748
+change requests = work-6584
+
+[receivedfromsupplier]
+invoices = work-6749
+
+[sendquerytoclient]
+invoices = work-6745
+
+[submitquery]
+interpretations = work-1424
+
+[submitclarification]
+interpretations = work-6630
+
+
+[receivedfromclient]
+invoices = work-6746
+
+[vpapproval]
+change requests = work-6587
+
+[acknowlegdeissue]
+disputes = work-1525

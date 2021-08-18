@@ -1,0 +1,1232 @@
+{
+  "body": {
+    "data": {
+      "parentShortCodeId": {
+        "name": "parentShortCodeId",
+        "multiEntitySupport": false
+      },
+      "additionalACV": {
+        "name": "additionalACV",
+        "id": 513,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "functions": {
+        "name": "functions",
+        "id": 508,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "contractingClientEntities": {
+        "name": "contractingClientEntities",
+        "multiEntitySupport": false
+      },
+      "integrationSystem": {
+        "name": "integrationSystem",
+        "multiEntitySupport": false
+      },
+      "aggregateFYCV": {
+        "name": "aggregateFYCV",
+        "id": 545,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "parentEntityId": {
+        "name": "parentEntityId",
+        "multiEntitySupport": false
+      },
+      "recipientHubs": {
+        "name": "recipientHubs",
+        "multiEntitySupport": false
+      },
+      "globalRegions": {
+        "name": "globalRegions",
+        "id": 510,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "globalCountries": {
+        "name": "globalCountries",
+        "id": 511,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "serviceCategory": {
+        "name": "serviceCategory",
+        "id": 11466,
+        "multiEntitySupport": false
+      },
+      "supplierAccess": {
+        "name": "supplierAccess",
+        "multiEntitySupport": false
+      },
+      "stakeHolders": {
+        "name": "stakeHolders",
+        "values": {
+          "rg_2297": {
+            "values": [],
+            "name": "rg_2297",
+            "label": "Supplier Legal",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2159": {
+            "values": [],
+            "name": "rg_2159",
+            "label": "Supplier Owner",
+            "userType": [
+              2
+            ]
+          },
+          "rg_2193": {
+            "values": [],
+            "name": "rg_2193",
+            "label": "Supplier type owner",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2327": {
+            "values": [],
+            "name": "rg_2327",
+            "label": "Supplier aces",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2296": {
+            "values": [],
+            "name": "rg_2296",
+            "label": "Supplier Contract Manager",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2295": {
+            "values": [],
+            "name": "rg_2295",
+            "label": "RBI Legal",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2294": {
+            "values": [],
+            "name": "rg_2294",
+            "label": "RBI Contract Manager",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2051": {
+            "values": [],
+            "name": "rg_2051",
+            "label": "Suppliers Manager",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          }
+        },
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "canSupplierBeParent": true,
+      "acv": {
+        "name": "acv",
+        "id": 542,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "signatureAllowed": {
+        "name": "signatureAllowed",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "supplier": {
+        "name": "supplier",
+        "multiEntitySupport": false
+      },
+      "initiatives": {
+        "name": "initiatives",
+        "id": 4911,
+        "multiEntitySupport": false
+      },
+      "id": {
+        "name": "id",
+        "multiEntitySupport": false
+      },
+      "parentEntityIds": {
+        "name": "parentEntityIds",
+        "multiEntitySupport": false
+      },
+      "state": {
+        "name": "state",
+        "multiEntitySupport": false
+      },
+      "actualParentEntityTypeId": {
+        "name": "actualParentEntityTypeId",
+        "multiEntitySupport": false
+      },
+      "contractingHubs": {
+        "name": "contractingHubs",
+        "multiEntitySupport": false
+      },
+      "cycleTime": {
+        "name": "cycleTime",
+        "multiEntitySupport": false
+      },
+      "parentHalting": {
+        "name": "parentHalting",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "weekType": {
+        "name": "weekType",
+        "id": 12427,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "stagingPrimaryKey": {
+        "name": "stagingPrimaryKey",
+        "multiEntitySupport": false
+      },
+      "timeZone": {
+        "name": "timeZone",
+        "id": 11649,
+        "multiEntitySupport": false
+      },
+      "dynamicMetadata": {
+        "dyn102270": {
+          "name": "dyn102270",
+          "id": 102270,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102151": {
+          "name": "dyn102151",
+          "id": 102151,
+          "multiEntitySupport": false
+        },
+        "dyn102199": {
+          "name": "dyn102199",
+          "id": 102199,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102278": {
+          "name": "dyn102278",
+          "id": 102278,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102312": {
+          "name": "dyn102312",
+          "id": 102312,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102279": {
+          "name": "dyn102279",
+          "id": 102279,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102115": {
+          "name": "dyn102115",
+          "id": 102115,
+          "multiEntitySupport": false,
+          "values": "test"
+        },
+        "dyn102239": {
+          "name": "dyn102239",
+          "id": 102239,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101462": {
+          "name": "dyn101462",
+          "id": 101462,
+          "multiEntitySupport": false
+        },
+        "dyn101461": {
+          "name": "dyn101461",
+          "id": 101461,
+          "multiEntitySupport": false
+        },
+        "dyn101460": {
+          "name": "dyn101460",
+          "id": 101460,
+          "multiEntitySupport": false
+        },
+        "dyn102261": {
+          "name": "dyn102261",
+          "id": 102261,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102142": {
+          "name": "dyn102142",
+          "id": 102142,
+          "multiEntitySupport": false
+        },
+        "dyn102263": {
+          "name": "dyn102263",
+          "id": 102263,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102340": {
+          "name": "dyn102340",
+          "id": 102340,
+          "multiEntitySupport": false
+        },
+        "dyn102065": {
+          "name": "dyn102065",
+          "id": 102065,
+          "multiEntitySupport": false
+        },
+        "dyn102341": {
+          "name": "dyn102341",
+          "id": 102341,
+          "multiEntitySupport": false
+        },
+        "dyn102100": {
+          "name": "dyn102100",
+          "id": 102100,
+          "multiEntitySupport": false
+        },
+        "dyn102265": {
+          "name": "dyn102265",
+          "id": 102265,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102067": {
+          "name": "dyn102067",
+          "id": 102067,
+          "multiEntitySupport": false
+        },
+        "dyn102300": {
+          "name": "dyn102300",
+          "id": 102300,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102269": {
+          "name": "dyn102269",
+          "id": 102269,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102305": {
+          "name": "dyn102305",
+          "id": 102305,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102292": {
+          "name": "dyn102292",
+          "id": 102292,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102096": {
+          "name": "dyn102096",
+          "id": 102096,
+          "multiEntitySupport": false
+        },
+        "dyn102130": {
+          "name": "dyn102130",
+          "id": 102130,
+          "multiEntitySupport": false
+        },
+        "dyn102133": {
+          "name": "dyn102133",
+          "id": 102133,
+          "multiEntitySupport": false
+        },
+        "dyn102298": {
+          "name": "dyn102298",
+          "id": 102298,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102255": {
+          "name": "dyn102255",
+          "id": 102255,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102135": {
+          "name": "dyn102135",
+          "id": 102135,
+          "multiEntitySupport": false
+        },
+        "dyn102256": {
+          "name": "dyn102256",
+          "id": 102256,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102338": {
+          "name": "dyn102338",
+          "id": 102338,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "dyn102340": {
+                "name": "dyn102340",
+                "id": 102340,
+                "multiEntitySupport": false,
+                "values": ""
+              },
+              "dyn102339": {
+                "name": "dyn102339",
+                "id": 102339,
+                "multiEntitySupport": false,
+                "values": ""
+              }
+            }
+          ]
+        },
+        "dyn102339": {
+          "name": "dyn102339",
+          "id": 102339,
+          "multiEntitySupport": false
+        },
+        "dyn102282": {
+          "name": "dyn102282",
+          "id": 102282,
+          "multiEntitySupport": false
+        },
+        "dyn102283": {
+          "name": "dyn102283",
+          "id": 102283,
+          "multiEntitySupport": false
+        },
+        "dyn102163": {
+          "name": "dyn102163",
+          "id": 102163,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102284": {
+          "name": "dyn102284",
+          "id": 102284,
+          "multiEntitySupport": false
+        },
+        "dyn102164": {
+          "name": "dyn102164",
+          "id": 102164,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102241": {
+          "name": "dyn102241",
+          "id": 102241,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102285": {
+          "name": "dyn102285",
+          "id": 102285,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102320": {
+          "name": "dyn102320",
+          "id": 102320,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102166": {
+          "name": "dyn102166",
+          "id": 102166,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": null
+        },
+        "dyn102200": {
+          "name": "dyn102200",
+          "id": 102200,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "name": "Option1",
+              "id": 1052
+            },
+            {
+              "name": "Option2",
+              "id": 1053
+            }
+          ]
+        },
+        "dyn102289": {
+          "name": "dyn102289",
+          "id": 102289,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102248": {
+          "name": "dyn102248",
+          "id": 102248,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "name": "APS",
+              "id": 1329
+            }
+          ]
+        },
+        "dyn102006": {
+          "name": "dyn102006",
+          "id": 102006,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102205": {
+          "name": "dyn102205",
+          "id": 102205,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": {
+            "name": "AP Supplier",
+            "id": 1336
+          }
+        },
+        "dyn102007": {
+          "name": "dyn102007",
+          "id": 102007,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102206": {
+          "name": "dyn102206",
+          "id": 102206,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102008": {
+          "name": "dyn102008",
+          "id": 102008,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101704": {
+          "name": "dyn101704",
+          "id": 101704,
+          "multiEntitySupport": false
+        },
+        "dyn102080": {
+          "name": "dyn102080",
+          "id": 102080,
+          "multiEntitySupport": false
+        }
+      },
+      "shareId": {
+        "name": "shareId",
+        "id": 7002,
+        "multiEntitySupport": false
+      },
+      "leadTimes": {
+        "name": "leadTimes",
+        "multiEntitySupport": false
+      },
+      "clientHoliday": {
+        "name": "clientHoliday",
+        "multiEntitySupport": false
+      },
+      "additionalTCV": {
+        "name": "additionalTCV",
+        "id": 512,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "projectLevels": {
+        "name": "projectLevels",
+        "id": 4931,
+        "multiEntitySupport": false
+      },
+      "fycv": {
+        "name": "fycv",
+        "id": 544,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "conversionRuleId": {
+        "name": "conversionRuleId",
+        "multiEntitySupport": false
+      },
+      "taxId": {
+        "name": "taxId",
+        "id": 7005,
+        "multiEntitySupport": false
+      },
+      "name": {
+        "name": "name",
+        "id": 503,
+        "multiEntitySupport": false
+      },
+      "rootInfo": {
+        "name": "rootInfo",
+        "multiEntitySupport": false
+      },
+      "aggregateACV": {
+        "name": "aggregateACV",
+        "id": 543,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "projectId": {
+        "name": "projectId",
+        "id": 8150,
+        "multiEntitySupport": false
+      },
+      "status": {
+        "name": "status",
+        "id": 502,
+        "multiEntitySupport": false
+      },
+      "contractingMarkets": {
+        "name": "contractingMarkets",
+        "multiEntitySupport": false
+      },
+      "aggregateTCV": {
+        "name": "aggregateTCV",
+        "id": 541,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "tiers": {
+        "name": "tiers",
+        "id": 505,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "excludeWeekends": {
+        "name": "excludeWeekends",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "searchParam": {
+        "size": {
+          "name": "size",
+          "values": 0,
+          "multiEntitySupport": false
+        },
+        "offset": {
+          "name": "offset",
+          "values": 0,
+          "multiEntitySupport": false
+        }
+      },
+      "additionalFYCV": {
+        "name": "additionalFYCV",
+        "id": 514,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "parentEntityType": {
+        "name": "parentEntityType",
+        "multiEntitySupport": false
+      },
+      "contracts": {
+        "name": "contracts",
+        "multiEntitySupport": false
+      },
+      "recipientClientEntities": {
+        "name": "recipientClientEntities",
+        "multiEntitySupport": false
+      },
+      "tier": {
+        "name": "tier",
+        "multiEntitySupport": false
+      },
+      "adhocUser": {
+        "firstName": {
+          "name": "firstName",
+          "id": 78,
+          "multiEntitySupport": false
+        },
+        "lastName": {
+          "name": "lastName",
+          "id": 79,
+          "multiEntitySupport": false
+        },
+        "loginId": {
+          "name": "loginId",
+          "id": 80,
+          "multiEntitySupport": false
+        },
+        "userType": {
+          "name": "userType",
+          "id": 83,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "uniqueLoginId": {
+          "name": "uniqueLoginId",
+          "id": 82,
+          "multiEntitySupport": false
+        },
+        "email": {
+          "name": "email",
+          "id": 81,
+          "multiEntitySupport": false
+        }
+      },
+      "vendor": {
+        "name": "vendor",
+        "id": 7216,
+        "values": {
+          "url": "/tblvendors/show/null"
+        },
+        "multiEntitySupport": false
+      },
+      "alias": {
+        "name": "alias",
+        "id": 504,
+        "multiEntitySupport": false
+      },
+      "vendorContractingParty": {
+        "name": "vendorContractingParty",
+        "multiEntitySupport": false
+      },
+      "currency": {
+        "name": "currency",
+        "multiEntitySupport": false
+      },
+      "email": {
+        "name": "email",
+        "id": 81,
+        "multiEntitySupport": false
+      },
+      "ageing": {
+        "name": "ageing",
+        "multiEntitySupport": false
+      },
+      "address": {
+        "name": "address",
+        "id": 506,
+        "multiEntitySupport": false
+      },
+      "actualParentEntityId": {
+        "name": "actualParentEntityId",
+        "multiEntitySupport": false
+      },
+      "tcv": {
+        "name": "tcv",
+        "id": 540,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "sourceEntityTypeId": {
+        "name": "sourceEntityTypeId",
+        "multiEntitySupport": false
+      },
+      "recipientMarkets": {
+        "name": "recipientMarkets",
+        "multiEntitySupport": false
+      },
+      "services": {
+        "name": "services",
+        "id": 509,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "contractCountries": {
+        "name": "contractCountries",
+        "multiEntitySupport": false
+      },
+      "parentEntityTypeId": {
+        "name": "parentEntityTypeId",
+        "multiEntitySupport": false
+      },
+      "recipientCompanyCodes": {
+        "name": "recipientCompanyCodes",
+        "multiEntitySupport": false
+      },
+      "oldSystemId": {
+        "name": "oldSystemId",
+        "id": 11308,
+        "multiEntitySupport": false
+      },
+      "governanceBodies": {
+        "name": "governanceBodies",
+        "id": 4832,
+        "multiEntitySupport": false
+      },
+      "shortCodeId": {
+        "name": "shortCodeId",
+        "id": 501,
+        "multiEntitySupport": false
+      },
+      "excludeFromHoliday": {
+        "name": "excludeFromHoliday",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "sourceEntityId": {
+        "name": "sourceEntityId",
+        "multiEntitySupport": false
+      },
+      "entityTypeId": {
+        "name": "entityTypeId",
+        "values": 1,
+        "multiEntitySupport": false
+      },
+      "comment": {
+        "requestedBy": {
+          "name": "requestedBy",
+          "id": 12244,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "shareWithSupplier": {
+          "name": "shareWithSupplier",
+          "id": 12409,
+          "multiEntitySupport": false
+        },
+        "comments": {
+          "name": "comments",
+          "id": 86,
+          "multiEntitySupport": false
+        },
+        "documentTags": {
+          "name": "documentTags",
+          "id": 12428,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "draft": {
+          "name": "draft",
+          "multiEntitySupport": false
+        },
+        "actualDate": {
+          "name": "actualDate",
+          "id": 12243,
+          "multiEntitySupport": false
+        },
+        "privateCommunication": {
+          "name": "privateCommunication",
+          "id": 12242,
+          "multiEntitySupport": false
+        },
+        "changeRequest": {
+          "name": "changeRequest",
+          "id": 12246,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "workOrderRequest": {
+          "name": "workOrderRequest",
+          "id": 12247,
+          "multiEntitySupport": false
+        },
+        "commentDocuments": {
+          "values": []
+        }
+      },
+      "relations": {
+        "name": "relations",
+        "multiEntitySupport": false
+      },
+      "contractRegions": {
+        "name": "contractRegions",
+        "multiEntitySupport": false
+      },
+      "contractingCompanyCodes": {
+        "name": "contractingCompanyCodes",
+        "multiEntitySupport": false
+      },
+      "dyn102270": {
+        "name": "dyn102270",
+        "id": 102270,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102151": {
+        "name": "dyn102151",
+        "id": 102151,
+        "multiEntitySupport": false
+      },
+      "dyn102199": {
+        "name": "dyn102199",
+        "id": 102199,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102278": {
+        "name": "dyn102278",
+        "id": 102278,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102312": {
+        "name": "dyn102312",
+        "id": 102312,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102279": {
+        "name": "dyn102279",
+        "id": 102279,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102115": {
+        "name": "dyn102115",
+        "id": 102115,
+        "multiEntitySupport": false,
+        "values": "test"
+      },
+      "dyn102239": {
+        "name": "dyn102239",
+        "id": 102239,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101462": {
+        "name": "dyn101462",
+        "id": 101462,
+        "multiEntitySupport": false
+      },
+      "dyn101461": {
+        "name": "dyn101461",
+        "id": 101461,
+        "multiEntitySupport": false
+      },
+      "dyn101460": {
+        "name": "dyn101460",
+        "id": 101460,
+        "multiEntitySupport": false
+      },
+      "dyn102261": {
+        "name": "dyn102261",
+        "id": 102261,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102142": {
+        "name": "dyn102142",
+        "id": 102142,
+        "multiEntitySupport": false
+      },
+      "dyn102263": {
+        "name": "dyn102263",
+        "id": 102263,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102340": {
+        "name": "dyn102340",
+        "id": 102340,
+        "multiEntitySupport": false
+      },
+      "dyn102065": {
+        "name": "dyn102065",
+        "id": 102065,
+        "multiEntitySupport": false
+      },
+      "dyn102341": {
+        "name": "dyn102341",
+        "id": 102341,
+        "multiEntitySupport": false
+      },
+      "dyn102100": {
+        "name": "dyn102100",
+        "id": 102100,
+        "multiEntitySupport": false
+      },
+      "dyn102265": {
+        "name": "dyn102265",
+        "id": 102265,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102067": {
+        "name": "dyn102067",
+        "id": 102067,
+        "multiEntitySupport": false
+      },
+      "dyn102300": {
+        "name": "dyn102300",
+        "id": 102300,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102269": {
+        "name": "dyn102269",
+        "id": 102269,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102305": {
+        "name": "dyn102305",
+        "id": 102305,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102292": {
+        "name": "dyn102292",
+        "id": 102292,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102096": {
+        "name": "dyn102096",
+        "id": 102096,
+        "multiEntitySupport": false
+      },
+      "dyn102130": {
+        "name": "dyn102130",
+        "id": 102130,
+        "multiEntitySupport": false
+      },
+      "dyn102133": {
+        "name": "dyn102133",
+        "id": 102133,
+        "multiEntitySupport": false
+      },
+      "dyn102298": {
+        "name": "dyn102298",
+        "id": 102298,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102255": {
+        "name": "dyn102255",
+        "id": 102255,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102135": {
+        "name": "dyn102135",
+        "id": 102135,
+        "multiEntitySupport": false
+      },
+      "dyn102256": {
+        "name": "dyn102256",
+        "id": 102256,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102338": {
+        "name": "dyn102338",
+        "id": 102338,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "dyn102340": {
+              "name": "dyn102340",
+              "id": 102340,
+              "multiEntitySupport": false,
+              "values": ""
+            },
+            "dyn102339": {
+              "name": "dyn102339",
+              "id": 102339,
+              "multiEntitySupport": false,
+              "values": ""
+            }
+          }
+        ]
+      },
+      "dyn102339": {
+        "name": "dyn102339",
+        "id": 102339,
+        "multiEntitySupport": false
+      },
+      "dyn102282": {
+        "name": "dyn102282",
+        "id": 102282,
+        "multiEntitySupport": false
+      },
+      "dyn102283": {
+        "name": "dyn102283",
+        "id": 102283,
+        "multiEntitySupport": false
+      },
+      "dyn102163": {
+        "name": "dyn102163",
+        "id": 102163,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102284": {
+        "name": "dyn102284",
+        "id": 102284,
+        "multiEntitySupport": false
+      },
+      "dyn102164": {
+        "name": "dyn102164",
+        "id": 102164,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102241": {
+        "name": "dyn102241",
+        "id": 102241,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102285": {
+        "name": "dyn102285",
+        "id": 102285,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102320": {
+        "name": "dyn102320",
+        "id": 102320,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102166": {
+        "name": "dyn102166",
+        "id": 102166,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": null
+      },
+      "dyn102200": {
+        "name": "dyn102200",
+        "id": 102200,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "name": "Option1",
+            "id": 1052
+          },
+          {
+            "name": "Option2",
+            "id": 1053
+          }
+        ]
+      },
+      "dyn102289": {
+        "name": "dyn102289",
+        "id": 102289,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102248": {
+        "name": "dyn102248",
+        "id": 102248,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "name": "APS",
+            "id": 1329
+          }
+        ]
+      },
+      "dyn102006": {
+        "name": "dyn102006",
+        "id": 102006,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102205": {
+        "name": "dyn102205",
+        "id": 102205,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": {
+          "name": "AP Supplier",
+          "id": 1336
+        }
+      },
+      "dyn102007": {
+        "name": "dyn102007",
+        "id": 102007,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102206": {
+        "name": "dyn102206",
+        "id": 102206,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102008": {
+        "name": "dyn102008",
+        "id": 102008,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101704": {
+        "name": "dyn101704",
+        "id": 101704,
+        "multiEntitySupport": false
+      },
+      "dyn102080": {
+        "name": "dyn102080",
+        "id": 102080,
+        "multiEntitySupport": false
+      }
+    },
+    "globalData": {
+      "entityIds": [
+        1050
+      ],
+      "fieldIds": [
+        102166,
+        102248,
+        102205,
+        102200,
+        102115
+      ],
+      "isGlobalBulk": true
+    }
+  }
+}

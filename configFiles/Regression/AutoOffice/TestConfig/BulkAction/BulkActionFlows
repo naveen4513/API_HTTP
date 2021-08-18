@@ -1,0 +1,161 @@
+#This file contains all the Flows for the BulkAction
+
+#Below are the Flows to best tested Sections. Each Section represents one flow to be tested.
+#Section Property Entity: EntityName as in EntityId.cfg & EntityIdMapping.cfg
+#FromStatus: FromStatus value to be used in BulkAction. It is case-sensitive.
+#ToStatus: ToStatus value to be used in BulkAction. It is case-sensitive.
+#RecordIds: If want to perform bulk action on specific records and not on random records then can specify the record ids here. If not present then will pick random records.
+#Clone: Whether to try to clone record ids and use new record ids for flow or not. If set to false then will use given record ids only.
+#ExpectedResult: Possible Values are Success or Failure. Default Value is Success.
+#Success Represents that the Status of the Entity should be updated from FromStatus to ToStatus successfully.
+#Failure Represents that Status of the Entity should not be updated and the BulkAction should fail. This should be used to verify negative test cases
+
+#NOTE: Provide only one status. Conjunctions like 'Or' are not allowed.
+#For ex. If From Status On UI is 'Upcoming or Overdue' then provide either Upcoming or Overdue.
+
+[obligations flow 1]
+entity = obligations
+fromstatus = Newly Created
+tostatus = Archive
+recordids = 3971
+
+#Commenting this test case as permission is not there for this action.
+#[obligations flow 2]
+#entity = obligations
+#fromstatus = Newly Created
+#tostatus = Send for Owner Review
+
+[child obligations flow 1]
+entity = child obligations
+fromstatus = Archive
+tostatus = Restore
+
+[child obligations flow 2]
+entity = child obligations
+fromstatus = Upcoming
+tostatus = Archive
+
+[service levels flow 1]
+entity = service levels
+fromstatus = Newly Created
+tostatus = Archive
+
+[service levels flow 2]
+entity = service levels
+fromstatus = Archive
+tostatus = Restore
+
+#Commenting this test case as permission is not there for this action.
+#[service levels flow 2]
+#entity = service levels
+#fromstatus = Newly Created
+#tostatus = Send For Peer Review
+
+#Commenting this test case as permission is not there for this action.
+#[child service levels flow 1]
+#entity = child service levels
+#fromstatus = Upcoming
+#tostatus = Archive
+
+#Commenting this test case as permission is not there for this action.
+#[child service levels flow 2]
+#entity = child service levels
+#fromstatus = Upcoming
+#tostatus = Start Computation
+
+[service data flow 1]
+entity = service data
+fromstatus = Uploaded
+tostatus = Archive
+
+[service data flow 2]
+entity = service data
+fromstatus = Archive
+tostatus = Restore
+
+[invoice flow 1]
+entity = invoices
+fromstatus = Newly Created
+tostatus = Archive
+
+[invoice flow 2]
+entity = invoices
+fromstatus = Archive
+tostatus = Restore
+
+#Commenting this test case as permission is not there for this action.
+#[invoice flow 3]
+#entity = invoices
+#fromstatus = Newly Created
+#tostatus = Return To Supplier
+
+[consumption flow 1]
+entity = consumptions
+fromstatus = Upcoming
+tostatus = Archive
+
+[consumption flow 2]
+entity = consumptions
+fromstatus = Archive
+tostatus = Restore
+
+#Commenting this test case as the current workflow doesn't allow this.
+#[consumption flow 3]
+#entity = consumptions
+#fromstatus = Upcoming
+#tostatus = Approve
+
+[contracts flow 1]
+entity = contracts
+fromstatus = Newly Created
+tostatus = Archive
+recordids = 9996
+clone = false
+
+[contracts flow 2]
+entity = contracts
+fromstatus = Archive
+tostatus = Restore
+recordids = 9996
+clone = false
+
+[contracts flow 3]
+entity = contracts
+fromstatus = Newly Created
+tostatus = On Hold
+recordids = 10304
+clone = false
+
+[contracts flow 4]
+entity = contracts
+fromstatus = On Hold
+tostatus = Activate
+recordids = 10304
+clone = false
+
+#Commenting this test case as permission is not there for this action.
+#[contracts flow 5]
+#entity = contracts
+#fromstatus = Newly Created
+#tostatus = Send For Peer Review
+
+[sub contracts flow 1]
+entity = sub contracts
+fromstatus = Newly Created
+tostatus = On Hold
+
+#Commenting this test case as permission is not there for this action.
+#[sub contracts flow 2]
+#entity = contracts
+#fromstatus = Newly Created
+#tostatus = Send For Peer Review
+
+[governance body flow 1]
+entity = governance body
+fromstatus = Newly Created
+tostatus = Archive
+
+[governance body flow 2]
+entity = governance body
+fromstatus = Archive
+tostatus = Restore

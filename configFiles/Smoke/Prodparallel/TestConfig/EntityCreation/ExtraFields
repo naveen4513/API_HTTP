@@ -1,0 +1,148 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[contracts]
+contractDocuments = {"name":"contractDocuments","values":[]}
+rateCardsApplicable = {"name":"rateCardsApplicable","id":29,"values":{"name":"USD - INR","id":1003}}
+rateCardFromDate = {"name":"rateCardFromDate","id":30,"values":"05-01-2018 00:00:00"}
+rateCardToDate = {"name":"rateCardToDate","id":31,"values":"08-31-2018 00:00:00"}
+brief = {"name":"brief","id":5,"values":""}
+name = {"name":"name","id":37,"values":"contract creation test"}
+title = {"name":"title","id":38,"values":"contract creation test"}
+timeZone = {"name":"timeZone","id":7,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America/Anchorage"}}
+days = {"name":"days","id":18,"values":0}
+months = {"name":"months","id":17,"values":1}
+years = {"name":"years","id":16,"values":12}
+tier = {"name":"tier","id":12,"values":{"name":"Tier - 3","id":1014}}
+effectiveDate = {"name":"effectiveDate","id":14,"values":"05-01-2018 00:00:00"}
+expirationDate = {"name":"expirationDate","id":15,"values":"05-31-2030 00:00:00"}
+conversionType = {"name":"conversionType","id":28,"values":{"name":"Direct Conversion","id":1}}
+currency = {"name":"currency","id":27,"values":{"name":"Australian Dollar (AUD)","id":3,"shortName":"AUD","parentName":"Australian Dollar (AUD)"}}
+contractCurrencies = {"name":"contractCurrencies","id":26,"values":[{"name":"Australian Dollar (AUD)","id":3,"shortName":"AUD","parentName":"Australian Dollar (AUD)"}]}
+
+[governance body]
+name = {"name":"name","id":4700,"values":"GB creation test"}
+description = {"name":"description","id":4701,"values":"test"}
+goal = {"name":"goal","id":4702,"values":"test"}
+startTime ={"name":"startTime","id":4720,"values":{"name":"06:30","id":14}}
+duration = {"name":"duration","id":4713,"values":{"name":"1 Hour","id":2}}
+location = {"name":"location","id":4726,"values":"delhi"}
+frequencyType = {"name":"frequencyType","id":4705,"values":{"name":"Once","id":1001}}
+frequency = {"name":"frequency","id":4706,"values":{"name":"One-Time","id":1009,"parentId":1001}}
+weekType = {"name":"weekType","id":4707,"values":{"name":"Five Day","id":1}}
+startDate = {"name":"startDate","id":4708,"values":"05-01-2018 00:00:00"}
+expDate = {"name":"expDate","id":4709,"values":"05-31-2030 00:00:00"}
+patternDate = {"name":"patternDate","id":4712,"values":"05-01-2018 00:00:00"}
+effectiveDate = {"name":"effectiveDate","id":4841,"values":"05-01-2018 00:00:00"}
+
+[issues]
+name = {"name":"name","id":102,"values":"issues creation test"}
+dynamicMetadata = {"date":{"name":"date","id":100705,"values":"05-01-2018 00:00:00"},"numericEntity":{"name":"numericEntity","id":100752},"issueDate1":{"name":"issueDate1","id":100643},"filter":{"name":"filter","id":100361},"dyn101345":{"name":"dyn101345","id":101345},"dyn101323":{"name":"dyn101323","id":101323},"dyn101322":{"name":"dyn101322","id":101322},"dyn101321":{"name":"dyn101321","id":101321},"dyn101177":{"name":"dyn101177","id":101177},"dyn101320":{"name":"dyn101320","id":101320},"dyn101056":{"name":"dyn101056","id":101056},"dyn101176":{"name":"dyn101176","id":101176},"dyn101076":{"name":"dyn101076","id":101076}}
+issueDate = {"name":"issueDate","id":118,"values":"05-30-2018 12:19:34"}
+priority = {"name":"priority","id":114,"values":{"name":"High","id":1}}
+issueType = {"name":"issueType","id":105,"values":{"name":"Customer Satisfaction","id":1008}}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":119,"values":"05-31-2030 00:00:00"}
+
+[change requests]
+#timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+
+[interpretations]
+title = {"name":"title","id":703,"values":"interpretations creation test"}
+areaOfDisagreement = {"name":"areaOfDisagreement","id":705,"values":"test"}
+background = {"name":"background","id":704,"values":"test"}
+priority = {"name":"priority","id":707,"values":{"name":"Medium","id":3}}
+tier = {"name":"tier","id":754,"values":{"name":"Tier - 1 _tier 1","id":1012}}
+dynamicMetadata = {"responsibility":{"name":"responsibility","id":100441,"values":{"name":"Product","id":74}}}
+
+[work order requests]
+name = {"name":"name","id":901,"values":"wor creation test"}
+briefDescription = {"name":"briefDescription","id":904,"values":"test"}
+description = {"name":"description","id":902,"values":"test"}
+priority = {"name":"priority","id":905,"values":{"name":"Medium","id":3}}
+effectiveDate = {"name":"effectiveDate","id":913,"values":"05-01-2018 00:00:00"}
+expirationDate = {"name":"expirationDate","id":914,"values":"05-31-2030 00:00:00"}
+pageReference = {"name":"pageReference","values":[{"contractReference":{"extension":"doc","numberOfPagesToExclude":null,"metaDataCreated":true,"pageNumber":null,"viewerAvailable":true,"noOfPages":433,"startPageNumber":null,"name":"Test file.doc","contractId":1879,"imageCreated":false,"id":1317,"fileId":1323},"coordinates":null,"clause":"c","pageNumber":1}]}
+
+[contract draft request]
+#functions = {"name":"functions","id":508,"values":[{"name":"IT","id":1002}]}
+#services = {"name":"services","id":509,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002}]}
+#globalRegions = {"name":"globalRegions","id":510,"values":[{"name":"APAC","id":1002,"parentId":1002}]}
+#globalCountries = {"name":"globalCountries","id":511,"values":[{"name":"South Korea","id":129,"parentId":1002}]}
+
+[purchase orders]
+poNumber = {"name":"poNumber","id":11383,"values":"test"}
+name = {"name":"name","id":11384,"values":"potest1"}
+countries = {"name":"countries","id":11390,"values":[{"name":"Bahamas","id":18}]}
+states = {"name":"states","id":11389,"values":[{"name":"Bimini","id":575,"parentId":18,"parentName":"Bahamas"}]}
+
+[service data]
+invoicingType = values -> {"name": "ARC/RRC","id": 3}
+serviceIdSupplier = {"name": "serviceIdSupplier", "values": "apitestsupplier1"}
+billingPeriod = values -> {"name": "Yearly","id": 3}
+startDate = Date -> MM-dd-yyyy -> -5
+serviceIdClient = {"name": "serviceIdClient","values": "apitestclient1"}
+name = {"name": "name","values": "apitestname"}
+serviceDataServiceCategory = values -> {"name": "Service Category - 1","id": 1007}
+serviceSubCategory = values -> {"name": "Service Sub-Category - 1","id":1006,"parentId":1007}
+endDate = Date -> MM-dd-yyyy -> +10
+
+
+[suppliers]
+name = {"name":"name","id":503,"values":"supplier creation test"}
+alias = {"name":"alias","id":504,"values":"api07"}
+tiers = {"name":"tiers","id":505,"values":[{"name":"Tier - 1 _tier 1","id":1012}]}
+functions = {"name":"functions","id":508,"values":[{"name":"IT","id":1006,"active":false,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false}]}
+services = {"name":"services","id":509,"values":[{"name":"Applications Development & Maintenance","id":1017,"parentId":1006,"active":false,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"parentName":"IT"}]}
+globalRegions = {"name":"globalRegions","id":510,"values":[{"name":"APAC","id":1012,"active":false,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false}]}
+globalCountries = {"name":"globalCountries","id":511,"values":[{"name":"Australia","id":15,"parentId":1012,"active":false,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false,"parentName":"APAC"}]}
+
+
+[obligations]
+name = {"name":"name","id":303,"values":"obligation creation test"}
+
+[disputes]
+name = {"name":"name","id":11182,"values":"disputes creation test"}
+priority = {"name":"priority","id":11189,"values":{"name":"High","id":1}}
+description = {"name":"description","id":11188,"values":"<p>test</p>"}
+tier = {"name":"tier","id":11169,"values":{"name":"Tier 4","id":1028}}
+timeZone = {"name":"timeZone","id":11186,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America/Anchorage"}}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":11193,"values":"05-31-2030 00:00:00"}
+deliveryCountries = {"name":"deliveryCountries","id":11191,"values":[{"name":"Afghanistan","id":1}]}
+issueDate = {"name":"issueDate","id":11192,"values":"05-01-2018 00:00:00"}
+
+[vendors]
+#functions = {"name":"functions","id":508,"values":[{"name":"IT","id":1002}]}
+#services = {"name":"services","id":509,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002}]}
+#globalRegions = {"name":"globalRegions","id":510,"values":[{"name":"APAC","id":1002,"parentId":1002}]}
+#globalCountries = {"name":"globalCountries","id":511,"values":[{"name":"South Korea","id":129,"parentId":1002}]}
+
+[invoices]
+name = {"name":"name","id":602,"values":"invoice creation test"}
+invoiceDate = {"name":"invoiceDate","id":611,"values":"05-01-2018 00:00:00"}
+
+[actions]
+name = {"name":"name","id":403,"values":"actions creation test"}
+description = {"name":"description","id":404,"values":"test"}
+actionType = {"name":"actionType","id":409,"values":{"name":"Complaiance","id":1010}}
+priority = {"name":"priority","id":410,"values":{"name":"Medium","id":3}}
+responsibility = {"name":"responsibility","id":411,"values":{"name":"Client & Supplier","id":2}}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"values":"05-31-2030 00:00:00"}
+requestedOn = {"values":"05-27-2018 00:00:00","name":"requestedOn"}
+dynamicMetadata = {"dropDown":{"name":"dropDown","id":100433},"customField1":{"name":"customField1","id":100430},"customField2":{"name":"customField2","id":100431},"cdtw":{"name":"cdtw","id":100646},"dyn100768":{"name":"dyn100768","id":100768},"multi":{"name":"multi","id":100657},"dyn100767":{"name":"dyn100767","id":100767},"dyn101305":{"name":"dyn101305","id":101305,"values":{"name":"s111","id":8106,"clientActive":true}},"dyn101304":{"name":"dyn101304","id":101304},"dyn101026":{"name":"dyn101026","id":101026},"dyn101466":{"name":"dyn101466","id":101466},"dyn100771":{"name":"dyn100771","id":100771},"dyn101420":{"name":"dyn101420","id":101420},"newDate":{"name":"newDate","id":100640},"text":{"name":"text","id":100656},"dyn101091":{"name":"dyn101091","id":101091},"cf1DynamicGroup":{"name":"cf1DynamicGroup","id":100468},"cf3DynamicGroup":{"name":"cf3DynamicGroup","id":100470},"minmax":{"name":"minmax","id":100439},"actiontext1":{"name":"actiontext1","id":100759},"dropdown":{"name":"dropdown","id":100750},"multiselect":{"name":"multiselect","id":100435},"dyn100766":{"name":"dyn100766","id":100766},"dyn100765":{"name":"dyn100765","id":100765},"dyn100764":{"name":"dyn100764","id":100764},"dyn101258":{"name":"dyn101258","id":101258},"dyn101257":{"name":"dyn101257","id":101257},"dyn101411":{"name":"dyn101411","id":101411},"dyn101256":{"name":"dyn101256","id":101256},"dyn101255":{"name":"dyn101255","id":101255},"dyn101254":{"name":"dyn101254","id":101254},"dyn101133":{"name":"dyn101133","id":101133},"dyn101253":{"name":"dyn101253","id":101253},"dyn101175":{"name":"dyn101175","id":101175},"dyn101093":{"name":"dyn101093","id":101093},"cf2DynamicGroup":{"name":"cf2DynamicGroup","id":100469},"supplierOwners":{"name":"supplierOwners","id":100420},"dyn101249":{"name":"dyn101249","id":101249},"dyn101128":{"name":"dyn101128","id":101128},"dyn101325":{"name":"dyn101325","id":101325},"dyn101246":{"name":"dyn101246","id":101246},"dyn101289":{"name":"dyn101289","id":101289},"dynamicGroup":{"name":"dynamicGroup","id":100467},"dyn101245":{"name":"dyn101245","id":101245},"dyn100991":{"name":"dyn100991","id":100991},"alpha":{"name":"alpha","id":100677},"checkbox":{"name":"checkbox","id":100437},"dyn101084":{"name":"dyn101084","id":101084},"actionDate":{"name":"actionDate","id":100472},"dyn101306":{"name":"dyn101306","id":101306,"values":[]},"dyn101108":{"name":"dyn101108","id":101108},"dyn100786":{"name":"dyn100786","id":100786},"cstom_dynamic1":{"name":"cstom_dynamic1","id":100471,"values":[{"cf1DynamicGroup":{"name":"cf1DynamicGroup","id":100468,"values":""},"cf2DynamicGroup":{"name":"cf2DynamicGroup","id":100469,"values":""},"cf3DynamicGroup":{"name":"cf3DynamicGroup","id":100470,"values":""}}]}}

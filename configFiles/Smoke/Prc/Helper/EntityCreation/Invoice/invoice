@@ -1,0 +1,38 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = contracts
+sourcename = Notification Alert
+sourceid = 129388
+
+[fixed fee flow 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431
+
+[performance_flow1]
+sourceentity = contracts
+sourcename = Instelca S.L.U. Agency VF ES-Elektronic
+sourceid = 3617
+
+[arc flow 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText941
+sourceid = 129431

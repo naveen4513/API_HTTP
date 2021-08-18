@@ -1,0 +1,106 @@
+#Pricing Template Details
+pricingtemplatefilepath = src/test/resources/TestConfig/Invoice
+invoiceflowsconfigfilepath = src/test/resources/TestConfig/Invoice
+invoiceflowsconfigfilename = InvoiceFlows.cfg
+
+#For DFT
+#changerequestname = (CR07339) Change Request Name
+changerequestname = (CR07421) Change request 1.37
+change_request_id = 7745
+
+#For DFT
+cdrname = (CDR06006) test cdr for memo
+cdrid = 6261
+
+#For DFT
+contractid = 27553
+
+#For DFT
+approve_steps_invoice = ApproveInvoice
+#Submit->DataValid->Valid->SendtoBusiness->Approve Invoice
+
+
+[validation_status_no_memo_found]
+flows to test = fixed fee flow 1
+
+[memo creation with pricing change flows]
+flows to test = fixed fee flow 1
+pricing change flows = cdr flow,change request flow
+#change request flow,cdr flow
+#arc flow 1
+
+[validation_status_same_as_previous_line_item]
+flows to test = fixed fee flow 1
+
+
+[memo line item status as previous fixed fee flow 1]
+expectedlineitemstatus = Total Discrepancy
+
+[change request flow fixed fee flow 1]
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstkomal123*
+emplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 90
+ratecolumnvalues = 90
+
+[cdr flow fixed fee flow 1]
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 90
+ratecolumnvalues = 90
+
+[change request flow arc flow 1]
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 90
+ratecolumnvalues = 90
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+[cdr flow arc flow 1]
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 90
+ratecolumnvalues = 90
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13

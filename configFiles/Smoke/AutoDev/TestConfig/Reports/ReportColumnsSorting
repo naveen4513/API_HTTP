@@ -1,0 +1,89 @@
+#put the page size here
+#And Put the entity name to test in entitytotest (comma seperated)
+#default size is used for the list Data when first call=true.
+# testreportsforallentitiesallreports if this flag is true it will verify sorting on every reports of every entities from listreportRenderer API Response
+# testreportsforallentities if this flag is true it will verify sorting on every reports of every entities mentioned in config file
+# if both testreportsforallentitiesallreports , testreportsforallentities flag is not true than it will test entities there in entitiestotest with report id mentioned in config file
+offset=0
+size=100
+defaultsize=20
+orderdirectiondesc="desc nulls last"
+orderdirectionasc="asc nulls first"
+testreportsforallentitiesallreports = false
+testreportsforallentities = false
+entitiestotest = invoices,invoice line item
+skipreportids = 59,282,281,378,379,330
+
+
+[invoices]
+test = 51
+#test = 93,94,78,81,1008,79,80,90,51
+
+[invoice line item]
+test = 359
+
+
+
+[actions]
+test = 30
+reportnames = Actions - Tracker
+
+[change requests]
+test = 52
+reportnames = Change Requests - Tracker
+
+[child obligations]
+test = 13
+reportnames = Child Obligations - Tracker
+
+[child service levels]
+test = 91
+
+[contract draft request]
+test = 324
+reportnames = Contract Draft Request- Tracker
+
+[contracts]
+test = 49
+
+[disputes]
+test = 315
+reportnames = Dispute - Tracker
+
+[governance body]
+test = 261
+reportnames = Governance Body- Tracker
+
+[governance body meetings]
+test = 264
+reportnames = Governance Body Meeting- Tracker
+
+[interpretations]
+test = 37
+reportnames = Interpretations - Tracker
+
+
+[issues]
+test = 40
+reportnames = Issues - Tracker
+
+[obligations]
+test = 153
+reportnames = Master Obligations - Tracker
+
+[service data]
+test = 355
+reportnames = Service Data - Tracker
+
+[suppliers]
+test = 48
+reportnames = Suppliers - Tracker
+
+[work order requests]
+test = 275
+reportnames = Work Order Requests - Tracker
+
+
+
+
+

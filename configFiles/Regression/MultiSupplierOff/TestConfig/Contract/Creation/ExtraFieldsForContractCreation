@@ -1,0 +1,53 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+name = {"name":"name","id":37,"values":"Test Contract"}
+title = {"name":"title","id":38,"values":"Test Contract"}
+tier = {"name":"tier","id":12,"values":{"name":"Tier - 3","id":1008}}
+effectiveDate = {"name":"effectiveDate","id":14,"values":"07-01-2018 00:00:00"}
+expirationDate = {"name":"expirationDate","id":15,"values":"07-31-2030 00:00:00"}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2163":{"values":[{"name":"Anay User","id":1200,"type":2}],"name":"rg_2163","label":"Contract Manager","userType":[2,1,3,4]}}}
+currency = {"name":"currency","id":27,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}}
+contractCurrencies = {"name":"contractCurrencies","id":26,"values":[{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}]}
+contractDocuments = {"name": "contractDocuments","values": []}
+days = {"name":"days","id":18,"values":0}
+months = {"name":"months","id":17,"values":1}
+years = {"name":"years","id":16,"values":12}
+rateCardsApplicable = {"name":"rateCardsApplicable","id":29,"values":{"name":"USD - INR","id":1004}}
+rateCardFromDate = {"name":"rateCardFromDate","id":30,"values":"07-01-2018 00:00:00"}
+rateCardToDate = {"name":"rateCardToDate","id":31,"values":"07-31-2030 00:00:00"}
+brief = {"name":"brief","id":5,"values":""}
+
+
+[flow 1]
+timeZone = {"name":"timeZone","id":7,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"}}
+agreementNumber = {"name":"agreementNumber","id":4,"values":"Test Agreement No Less than 256"}
+name = {"name":"name","id":37,"values":"Test Contract Creation flow 1"}
+title = {"name":"title","id":38,"values":"Test Contract 1"}
+deliveryCountries = {"name":"deliveryCountries","id":11,"values":[{"name":"Afghanistan","id":1}]}
+
+
+[flow 2]
+name = {"name":"name","id":37,"values":"Test Other Contract Creation flow 2"}
+title = {"name":"title","id":38,"values":"Test Other Contract Creation flow 2"}
+
+[flow 3]
+createdFor = {"name":"createdFor","id":11612,"values":[{"name":"ICP01","id":1003},{"name":"ICP02","id":1004}]}

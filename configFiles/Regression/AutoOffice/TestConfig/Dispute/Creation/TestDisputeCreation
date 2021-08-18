@@ -1,0 +1,142 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Dispute/Creation
+extrafieldsconfigfilename = ExtraFieldsForDisputeCreation.cfg
+
+
+#TC-C9028: Create Dispute with Blank Title
+[flow 1]
+sourceentity = contracts
+sourcename = API Automation Contract for Issue Creation Test
+sourceid = 4005
+expectedresult = failure
+
+#TC-C9028: Create Dispute from Supplier
+[flow 2]
+sourceentity = suppliers
+sourcename = SUP1
+sourceid = 1118
+expectedresult = success
+
+#TC-C9028: Create Dispute from Contract of MSA/PSA Type
+[flow 3]
+sourceentity = contracts
+sourcename = API Automation Contract for Issue Creation Test
+sourceid = 4005
+expectedresult = success
+
+#TC-C9028: Create Dispute from Issue
+[flow 4]
+sourceentity = issues
+sourcename = API Automation Issue
+sourceid = 1661
+expectedresult = success
+
+#TC-C9028: Create Dispute from Change Request
+[flow 5]
+sourceentity = change requests
+sourcename = API Automation CR
+sourceid = 2695
+expectedresult = success
+
+#TC-C9028: Create Dispute from Obligation
+[flow 6]
+sourceentity = obligations
+sourcename = API Automation Obligation
+sourceid = 2468
+expectedresult = success
+
+#TC-C9028: Create Dispute from Service Level
+[flow 7]
+sourceentity = service levels
+sourcename = API Automation SL
+sourceid = 5171
+expectedresult = success
+
+#TC-C9028: Create Dispute from Child Service Level
+[flow 8]
+sourceentity = child service levels
+sourcename = bulkEditUpdateServiceLevel
+sourceid = 1492
+expectedresult = success
+
+#Commenting this flow as currently it is not working on Auto Office.
+#TC-C9028: Create Dispute from Invoice
+#[flow 9]
+#sourceentity = invoices
+#sourcename = API Automation Invoice
+#sourceid = 7175
+#expectedresult = success
+
+#Commenting this flow as currently the workflow is not configured properly.
+#TC-C9028: Create Dispute from Contract of SOW/WO Type
+#[flow 10]
+#sourceentity = contracts
+#sourcename = Statement Of Work - Bloomberg
+#sourceid = 1119
+#expectedresult = success
+
+#TC-C9028: Create Dispute from Action
+[flow 11]
+sourceentity = actions
+sourcename = HPE Engagement Tracker - OB SLGBTraining Log - ABC News
+sourceid = 1001
+expectedresult = success
+
+#TC-C9028: Create Dispute from Child Obligation
+#[flow 12]
+#sourceentity = child obligations
+#sourcename = Syslog Monitoring - Dell Technologies
+#sourceid = 1244
+#expectedresult = success
+
+#TC-C9028: Create Dispute from Work Order Request
+[flow 13]
+sourceentity = work order requests
+sourcename = L48: Perryton Office Closure - ABC News
+sourceid = 27
+expectedresult = success
+
+#TC-C9028: Create Dispute from Interpretation
+[flow 14]
+sourceentity = interpretations
+sourcename = test
+sourceid = 1160
+expectedresult = success
+
+#Commenting this flow as currently it is not working on Auto Office.
+#TC-C9028: Create Dispute from Purchase Order
+#[flow 15]
+#sourceentity = purchase orders
+#sourcename = te444
+#sourceid = 1737
+#expectedresult = success
+
+#TC-C8297: Create Dispute from GBM
+[flow 16]
+sourceentity = governance body meetings
+sourcename = Executive Governamce Meeting - Berkshire Hathaway
+sourceid = 4222
+expectedresult = success
+
+#TC-C90393: Create Dispute from Multi Supplier Contract
+[flow 17]
+sourceentity = contracts
+sourcename = API Automation Multi Supplier Contract for Child Creation test
+sourceid = 17708
+multisupplier = true
+multiparentsupplierid = 1027
+expectedresult = success

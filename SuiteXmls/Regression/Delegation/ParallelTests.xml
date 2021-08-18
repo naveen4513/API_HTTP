@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Delegation Parallel Tests" parallel="tests" thread-count="7" data-provider-thread-count="15">
+
+    <test name="TestDelegationCreateApi">
+        <classes>
+            <class name="com.sirionlabs.test.delegation.TestDelegationCreateApi"></class>
+        </classes>
+    </test>
+
+    <test name="Delegation Improvement SIR 1918">
+        <classes>
+            <class name="com.sirionlabs.test.bePod.TestDelegationImprovementSIR1918"></class>
+        </classes>
+    </test>
+
+
+
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+

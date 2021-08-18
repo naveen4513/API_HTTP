@@ -1,0 +1,400 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = contracts
+sourcename = Notification Alert
+sourceid = 129388
+
+[fixed fee flow 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow 3]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+
+[fixed fee flow 8]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[performance_flow1]
+sourceentity = contracts
+sourcename = MHM COMPUTER HUNGARIA -Elektronic
+sourceid = 3613
+
+[arc flow 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 3]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 4]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 5]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 6]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 7]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 8]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 9]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 3]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[invoice line item misc]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[service data misc fixed fee]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[service data misc arc rrc]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[service data misc forecast]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+
+[test case neg 1]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[test case neg 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[test case neg 3]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[test case neg 4]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[test case neg 5]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[test case neg 6]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[test case neg 7]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow rate card]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow rate card]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow rate card]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[invoice line item split service data]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow 4]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow 5]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow 6]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow 7]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 2]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 4]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 5]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 6]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 7]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 8]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 9]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 10]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow 11]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[monthly frequency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[quarterly frequency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[split monthly frequency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[split quarterly frequency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[consumption reference tab validation single invoice]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[currency conv defined]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[currency conv not defined]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[curr oth than client service data date range lie in conv matrix]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[curr same as client service data date range lie in conv matrix]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[curr oth than client service data date range not lie in conv matrix]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow amount discrepency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow currency conv factor unavailable2]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow pricing unavailable]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow invalid service period]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow currency conv factor unavailable1]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow consumption unavailable]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow amount discrepancy]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow total discrepancy]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[vol pricing flow consumption unapproved]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow multiple li]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow multiple li]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow multiple li]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow 1 for qa sdbox]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow invalid currency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow invalid currency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow invalid currency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow no invoicing currency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[arc flow no invoicing currency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[forecast flow no invoicing currency]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[fixed fee flow for create rule]
+sourceentity = contracts
+sourcename = Automation_DefaultText4423895
+sourceid = 1899
+
+[bulk update]
+sourceentity = contracts
+sourcename = bulk edit contracts flow 1
+sourceid = 1031

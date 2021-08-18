@@ -1,0 +1,70 @@
+
+payload = {"delegatedDomainUser":{"startDate":"${startDate}","endDate":"${endDate}","delegatedUser":{"id":"${delegatedUser}"}},"delegationRequests":[${delegationRequests}],"sourceUserId":"${sourceUserId}"}
+delegationrequest = {"entityTypeId":${entityTypeId},"entityId":${entityId},"roleGroupId":${roleGroupId},"flowDown":false}
+
+delegateduser = Gaurav Bhadani
+delegatedusername = gaurav_user
+delegateduserid = 2173
+delegateduserpassword = admin123
+
+sourceuser = Anay User
+sourceuserid = 1044
+sourceusername = anay_user
+sourcepassword = admin1234a
+
+
+[flow1]
+delegateduserid = 2173
+sourceuserid = 1044
+enddatevalue = +1
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = true
+expectedmessage =
+
+
+[flow2]
+delegateduserid = 2173
+sourceuserid = 1044
+enddatevalue = +2
+startdatevalue = -5
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = false
+expectedmessage = Start Date Should Not Be In The Past ,
+
+[flow3]
+enddatevalue = -2
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = false
+expectedmessage = End Date Should Not Be Less Than Start Date ,
+
+
+[flow4]
+tousername = Gaurav Bhadani
+touserid = 2173
+enddatevalue =+1
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue = null
+expectedstatus = false
+expectedmessage = Supplier Does Not Match For Delegation ,Supplier Does Not Match For Delegation ,Supplier Does Not Match For Delegation ,
+
+[flow5]
+noofentitiestodelegate = 2
+delegateduserid = 2173
+sourceuserid = 1044
+enddatevalue = +1
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = true
+expectedmessage =

@@ -1,0 +1,115 @@
+#BA Env
+invoice sheet name = Invoice
+line item sheet name = Invoice Line Item
+template id = 1013
+contract id = 600555
+supplier id = 95298
+startdate = 01-01-2019
+enddate = 31-03-2019
+
+bulk create neg flows to test = static fields neg sce 1,dyn field val neg sce 1,dyn field val neg sce 2
+#dyn field val neg sce 1,dyn field val neg sce 2
+
+bulk create pos flows to test = contract scenario,supplier scenario
+#contract scenario,supplier scenario
+
+[column values invoice bulk create]
+100000001 = 1
+637 = Automation_DefaultText1023796 ( SP94426 )
+638 = Automation_DefaultText1041238 ( CO595896 )
+602 = Test Automation
+609 = Indian Rupee (INR)
+#605 = Mountain Time (GMT -07:00)
+611 = 01-01-2020
+612 = 01-01-2020
+613 = 31-03-2020
+617 = 10-01-2019
+621 = APAC
+622 = India
+100000002 = Yes
+
+[column values line item bulk create]
+100000001 = 1
+100000003 = 1
+11047 = Automation Line Item
+11137 = ARC-RRC and Transaction Based
+11066 = Test Service Data !@#$%^&*() (newSupplier2020_07_31_14_35_02_325_4)
+11792 = Asia/Kolkata (GMT +05:30)
+11067 = 01-01-2019
+11068 = 31-01-2019
+11052 = United States Dollar (USD)
+11070 = Desktop/Laptop
+11072 = 10
+11054 = 10
+11073 = 10
+11074 = 100
+11057 = 1000
+11063 = 100
+
+#C526 C527
+[static fields neg sce 1]
+100000001 = 1
+637 = Automation_DefaultText1023796 ( SP94426 )
+638 = Automation_DefaultText1041238 ( CO595896 )
+602 = Test Automation
+#Missing mandatory Field Currency
+#609 = Indian Rupee (INR)
+#605 = Mountain Time (GMT -07:00)
+611 = 01-01-2020
+612 = 01-01-2020
+613 = 31-03-2019
+617 = 10-01-2019
+621 = APAC
+622 = India
+100000002 = Yes
+
+[dynamic field values]
+#Dynamic Fields Numeric
+103487 = 31
+#Dynamic Fields Text Field
+103501 = ABCDEFGHIJKL!@#$%^&*()1234
+#Dynamic Fields Currency
+103502 = 30
+#Dynamic Fields TEXT AREA
+103503 = ABCDEFGHIJKL!@#$%^&*()1234
+#Dynamic Fields Date
+103504 = 01-01-2020
+#Dynamic Fields MULTI SELECT
+103505 = Option1;Option2
+
+#C525 C517 C520
+[dyn field val neg sce 1]
+#Dynamic Fields Numeric
+103487 = ABC
+#Dynamic Fields Text Field
+103501 = ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()1234
+#Dynamic Fields Currency
+103502 = 30
+#Dynamic Fields TEXT AREA
+103503 = ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()1234
+#Dynamic Fields Date
+103504 = ABCD
+#Dynamic Fields MULTI SELECT
+103505 = Option1;Option2
+
+#C521,C522,C523,C524
+[dyn field val neg sce 2]
+#Dynamic Fields Numeric
+103487 = 90
+#Dynamic Fields Text Field
+103501 = ABCDEFGHIJKL!@#$%^&*()1234
+#Dynamic Fields Currency
+103502 = 90
+#Dynamic Fields TEXT AREA
+103503 = ABCDEFGHIJKL!@#$%^&*()1234
+#Dynamic Fields Date
+103504 = ABCD
+#Dynamic Fields MULTI SELECT
+103505 = Option1;Option2
+
+#Expected Error in Response Excel
+[expected response neg scenarios]
+#The Key is scenario name
+dyn field val neg sce 1 = (Basic Information - Automation Text Field,Maximum vales allowed 30)&&(Basic Information - Automation TEXT AREA,Max value can't be greater than 32767)
+dyn field val neg sce 2 = (Basic Information - Automation Numeric,MinValue Can't Be Less than 0)&&(Basic Information - Automation Currency,Min value can't be less than 32767)
+static fields neg sce 1 = (Basic Information - Currency,Currency value cannot be blank)

@@ -1,0 +1,92 @@
+[
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review,Internal Review Complete,Send For Client Review,Approve,Publish,Inactivate",
+    "description": "hit validate access API For Archive Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "10"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review,Internal Review Complete,Send For Client Review,Approve,Publish,On Hold",
+    "description": "hit validate access API For Archive Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "2"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review,Internal Review Complete,Send For Client Review,Approve",
+    "description": "hit validate access API For Archive Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "5"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review,Internal Review Complete,Send For Client Review",
+    "description": "hit validate access API For Archive Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "6"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review,Internal Review Complete",
+    "description": "hit validate access API For Archive Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "7"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review",
+    "description": "hit validate access API For Archive Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "8"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review",
+    "description": "hit validate access API For Archive Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "9"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Delete Case",
+    "description": "hit API With Invalid authentication token in header section",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "4"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review,Internal Review Complete,Send For Client Review,Approve,Publish,Archive",
+    "description": "hit validate access API For On Hold Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "false",
+    "testCaseId": "3"
+  },
+  {
+    "expectedStatusCode": "200",
+    "gbStatus":"Send For Internal Review,Internal Review Complete,Send For Client Review,Approve,Publish",
+    "description": "hit validate access API For Publish Gb",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "true",
+    "testCaseId": "1"
+  }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ListRenderer Listing Data Suite" data-provider-thread-count="25">
+
+    <test name="List Data">
+         <classes>
+             <class name="com.sirionlabs.test.listing.TestListData"></class>
+         </classes>
+     </test>
+
+</suite>

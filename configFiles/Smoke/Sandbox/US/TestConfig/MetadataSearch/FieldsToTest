@@ -1,0 +1,96 @@
+#All section names must be in lower case characters only
+#Section name is the EntityName and must be same as in TestSearchMetadata.cfg
+
+#For Split-Fields, need to specify From and To values. Specify it in format: fromValue to toValue.
+#Ex. for Split-Field of type date. 08-01-2017 to 08-31-2017
+#Ex. for Split-Field of type Number. 10000 to 10000000
+#NOTE: For Split-Fields of Type Date/DateTime the dateFormat must be as specified in TestSearchMetadata.cfg file.
+
+[obligations]
+Status = Approved
+Title = Test
+Performance Type = Deliver
+Category = Contracts
+Priority = Medium
+
+#********************************************************************************
+
+[contracts]
+Status
+Name
+Term Type
+Regions
+
+#********************************************************************************
+
+[actions]
+Status Action = Overdue
+Source = Contract
+Type = Analysis
+Functions
+Services
+
+#********************************************************************************
+
+[child obligations]
+Title
+Description
+Category
+Performance Status
+Delivery Countries
+
+#********************************************************************************
+
+[disputes]
+Status
+Title
+Description
+Currency
+Financial Impact = 1 to 10000000
+
+#********************************************************************************
+
+[interpretations]
+Time Zone
+Type
+Question
+
+#********************************************************************************
+
+[issues]
+Responsibility
+Source
+Priority Sandbox
+
+#********************************************************************************
+
+[invoices]
+Payment Status
+Service Category
+Invoice Date
+
+#********************************************************************************
+
+[suppliers]
+Name = Test
+Alias = test
+Tier
+Week Type = Five Day
+Functions = IT
+Services = MNS
+Service Category = Test Transition
+Regions = APAC
+Countries = Brazil
+Suppliers Manager = Chinmaya Nayak
+Tcv = 100 to 50000
+Project Levels = Build
+
+#********************************************************************************
+
+[vendors]
+Name = Test
+Alias = vendor
+Functions = Human Resources
+Services = Applications Servers
+Regions = EMEA
+Countries = Australia

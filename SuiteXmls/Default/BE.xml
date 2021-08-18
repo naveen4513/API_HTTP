@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BE Test" thread-count="1">
+
+    <test name="Source Field AutoComplete SIR 199644">
+        <classes>
+            <class name="com.sirionlabs.test.bePod.TestSourceFieldSIR199644"></class>
+        </classes>
+    </test>
+
+    <test name="Date Time Field SIR 140162">
+        <classes>
+            <class name="com.sirionlabs.test.bePod.TestDateTimeCustomFieldSIR140162"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Created For Field SIR 202326">
+        <classes>
+            <class name="com.sirionlabs.test.bePod.TestContractCreatedForSIR202326"></class>
+        </classes>
+    </test>
+
+    <test name ="Week Type Test for Contract and Supplier">
+        <classes>
+            <class name="com.sirionlabs.test.bePod.WeekTypeTest"></class>
+       </classes>
+    </test>
+
+    <!--<test name="Docusign Validation at Workflow Steps SIR 222303">
+        <classes>
+            <class name="com.sirionlabs.test.bePod.TestDocusignAtWorkflowSIR222303"></class>
+        </classes>
+    </test>-->
+
+    <test name="check bulk update user API">
+        <classes>
+            <class name="com.sirionlabs.test.api.bulkIntegration.TestBulkUpdateUserAPI"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Delegation Improvement SIR 1918">
+        <classes>
+            <class name="com.sirionlabs.test.bePod.TestDelegationImprovementSIR1918"></class>
+        </classes>
+    </test>-->
+
+    <test name="Name Title HyperLink SIR 4261">
+        <classes>
+            <class name="com.sirionlabs.test.bePod.TestNameTitleHyperLinkSIR4261"></class>
+        </classes>
+    </test>
+
+</suite>

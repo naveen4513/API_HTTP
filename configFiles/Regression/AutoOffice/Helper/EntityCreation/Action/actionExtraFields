@@ -1,0 +1,282 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+
+[default]
+requestedOn = Date -> MM-dd-yyyy -> -3
+plannedCompletionDate = Date -> MM-dd-yyyy -> +10
+
+[flow 1]
+requestedOn = Date -> MM-dd-yyyy -> -3
+plannedCompletionDate = Date -> MM-dd-yyyy -> +10
+
+[governance_bodies_action]
+requestedOn = Date -> MM-dd-yyyy HH:mm:ss-> -3
+plannedCompletionDate = Date -> MM-dd-yyyy HH:mm:ss -> +10
+
+[action creation from cdr]
+requestedOn = Date -> MM-dd-yyyy HH:mm:ss-> -3
+plannedCompletionDate = Date -> MM-dd-yyyy HH:mm:ss -> +10
+services = {"name":"services","id":419,"values":[{"name":"Applications Servers","id":1002,"parentId":1002,"parentName":"IT","active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"additionalOption":false},{"name":"End-User Computing","id":1008,"parentId":1003,"parentName":"Human Resources","active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"additionalOption":false}],"options":null,"multiEntitySupport":false,"additionalOption":false}
+
+[action_delete_comment]
+requestedOn = Date -> MM-dd-yyyy HH:mm:ss-> -3
+plannedCompletionDate = Date -> MM-dd-yyyy HH:mm:ss -> +10
+comment={"requestedBy":{"name":"requestedBy","id":12244,"options":null,"multiEntitySupport":false},"shareWithSupplier":{"name":"shareWithSupplier","id":12409,"multiEntitySupport":false},"comments":{"name":"comments","id":18,"multiEntitySupport":false,"values":"<p>hiiiii</p>"},"documentTags":{"name":"documentTags","id":12428,"options":null,"multiEntitySupport":false},"draft":{"name":"draft","multiEntitySupport":false},"actualDate":{"name":"actualDate","id":12243,"multiEntitySupport":false},"privateCommunication":{"name":"privateCommunication","id":12242,"multiEntitySupport":false,"values":false},"changeRequest":{"name":"changeRequest","id":12246,"options":null,"multiEntitySupport":false},"workOrderRequest":{"name":"workOrderRequest","id":12247,"multiEntitySupport":false},"commentDocuments":{"values":[]}}
+
+[flowdown contract]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action Title"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"Account Management","id":1002}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Client","id":1}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America\/Anchorage"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"03-19-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"03-28-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"EMEA","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[flowdown supplier]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action Title"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"Account Management","id":1002}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Client","id":1}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America\/Anchorage"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"03-19-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"03-28-2021 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"EMEA","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[revamptodoupcoming]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action Title"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"Account Management","id":1002}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Client","id":1}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America\/Anchorage"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"03-19-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"03-28-2021 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"EMEA","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[revamptodotoday]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action Title"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"Account Management","id":1002}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Client","id":1}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America\/Anchorage"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"03-19-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"02-26-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"EMEA","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[revamptodoupcomingtier2]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action Title"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"Account Management","id":1002}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Client","id":1}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America\/Anchorage"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"03-19-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"03-28-2021 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 2","id":1007}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"EMEA","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[revamptodotodaytier2]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action Title"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"Account Management","id":1002}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Client","id":1}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America\/Anchorage"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"03-19-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"02-26-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 2","id":1007}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"EMEA","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[c10357]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action GOT 1"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"3rd Party Contracts","id":1001}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Both - Client & Supplier","id":2}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Baker Island (GMT -12:00)","id":25,"timeZone":"Etc\/GMT+12"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"04-06-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Akshay User","id":1047,"type":2,"email":"akshay_user_dft@sirionqa.office"},{"name":"pertyy perfrr","id":1043,"type":2,"email":"ajay_user_dft@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[c10341]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action GOT 1"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"3rd Party Contracts","id":1001}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Both - Client & Supplier","id":2}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Baker Island (GMT -12:00)","id":25,"timeZone":"Etc\/GMT+12"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"04-06-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Akshay User","id":1047,"type":2,"email":"akshay_user_dft@sirionqa.office"},{"name":"pertyy perfrr","id":1043,"type":2,"email":"ajay_user_dft@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[c10359]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action GOT 1"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"3rd Party Contracts","id":1001}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Both - Client & Supplier","id":2}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Baker Island (GMT -12:00)","id":25,"timeZone":"Etc\/GMT+12"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"04-06-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Akshay User","id":1047,"type":2,"email":"akshay_user_dft@sirionqa.office"},{"name":"pertyy perfrr","id":1043,"type":2,"email":"ajay_user_dft@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[c10370]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action GOT 1"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"3rd Party Contracts","id":1001}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Both - Client & Supplier","id":2}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Baker Island (GMT -12:00)","id":25,"timeZone":"Etc\/GMT+12"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"04-06-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Akshay User","id":1047,"type":2,"email":"akshay_user_dft@sirionqa.office"},{"name":"pertyy perfrr","id":1043,"type":2,"email":"ajay_user_dft@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[c10371]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action GOT 1"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"3rd Party Contracts","id":1001}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Both - Client & Supplier","id":2}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Baker Island (GMT -12:00)","id":25,"timeZone":"Etc\/GMT+12"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"04-06-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 2","id":1007}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Akshay User","id":1047,"type":2,"email":"akshay_user_dft@sirionqa.office"},{"name":"pertyy perfrr","id":1043,"type":2,"email":"ajay_user_dft@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"EMEA","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[action_from_obligation]
+requestedOn = Date -> MM-dd-yyyy HH:mm:ss-> -3
+plannedCompletionDate = Date -> MM-dd-yyyy HH:mm:ss -> +10
+
+[action_from_obligation]
+requestedOn = Date -> MM-dd-yyyy HH:mm:ss-> -3
+plannedCompletionDate = Date -> MM-dd-yyyy HH:mm:ss -> +10
+timeZone = values -> {"name": "Asia/Kolkata (GMT +05:30)","timeZone": "Asia/Kolkata","id": 8,"multiEntitySupport":false}
+
+
+[c10334]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action GOT 1"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"3rd Party Contracts","id":1001}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Both - Client & Supplier","id":2}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Baker Island (GMT -12:00)","id":25,"timeZone":"Etc\/GMT+12"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"04-06-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Akshay User","id":1047,"type":2,"email":"akshay_user_dft@sirionqa.office"},{"name":"pertyy perfrr","id":1043,"type":2,"email":"ajay_user_dft@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[c10340]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action GOT 1"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"3rd Party Contracts","id":1001}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Both - Client & Supplier","id":2}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Baker Island (GMT -12:00)","id":25,"timeZone":"Etc\/GMT+12"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"04-06-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Akshay User","id":1047,"type":2,"email":"akshay_user_dft@sirionqa.office"},{"name":"pertyy perfrr","id":1043,"type":2,"email":"ajay_user_dft@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[c10372]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Action GOT 1"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Description"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"3rd Party Contracts","id":1001}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Both - Client & Supplier","id":2}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Baker Island (GMT -12:00)","id":25,"timeZone":"Etc\/GMT+12"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"04-06-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionlabs.com"}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Akshay User","id":1047,"type":2,"email":"akshay_user_dft@sirionqa.office"},{"name":"pertyy perfrr","id":1043,"type":2,"email":"ajay_user_dft@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[c90594]
+name = {"name":"name","id":403,"multiEntitySupport":false,"values":"Test Flow Down Calendar"}
+description = {"name":"description","id":404,"multiEntitySupport":false,"values":"Test Flow Down Calendar"}
+actionType = {"name":"actionType","id":409,"options":null,"multiEntitySupport":false,"values":{"name":"Account Management","id":1002}}
+priority = {"name":"priority","id":410,"options":null,"multiEntitySupport":false,"values":{"name":"High","id":1}}
+responsibility = {"name":"responsibility","id":411,"options":null,"multiEntitySupport":false,"values":{"name":"Client","id":1}}
+currency = {"name":"currency","id":415,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":false}}
+timeZone = {"name":"timeZone","id":414,"options":null,"multiEntitySupport":false,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America\/Anchorage"}}
+requestedOn = {"name":"requestedOn","id":416,"values":"03-19-2020 00:00:00","multiEntitySupport":false}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":417,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+tier = {"name":"tier","id":448,"options":null,"multiEntitySupport":false,"values":{"name":"Tier - 1","id":1006}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3159":{"values":[],"name":"rg_3159","label":"Contract Manager","userType":[2,1,3,4]},"rg_2008":{"values":[{"name":"Akshay User","id":1047,"idType":2}],"name":"rg_2008","label":"Actions Manager","userType":[2,1,3,4]},"rg_3160":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionqa.office"}],"name":"rg_3160","label":"Suppliers Manager","userType":[2,1,3,4]}},"options":null,"multiEntitySupport":false}
+globalRegions = {"name":"globalRegions","id":420,"options":null,"multiEntitySupport":false,"values":[{"name":"EMEA","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}]}
+globalCountries = {"name":"globalCountries","id":421,"options":null,"multiEntitySupport":false,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}]}
+
+[action_from_dispute]
+requestedOn = Date -> MM-dd-yyyy HH:mm:ss-> -3
+plannedCompletionDate = Date -> MM-dd-yyyy HH:mm:ss -> +10
+timeZone = values -> {"name": "Asia/Kolkata (GMT +05:30)","timeZone": "Asia/Kolkata","id": 8,"multiEntitySupport":false}

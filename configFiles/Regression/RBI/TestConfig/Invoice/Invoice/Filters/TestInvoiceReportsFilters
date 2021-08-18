@@ -1,0 +1,30 @@
+#All keys must be in lower case characters only
+
+#ListData Details
+#Offset: Default value is 0.
+offset = 0
+#Size: Default value is 20.
+size = 1000
+
+testallreports = false
+reportidstotest = 93,94,78,81,1008,79,80,90,201,51
+skipreportsid = 93,94,78,81,1008,79,80,90,201
+
+
+
+# This is to test the filters with multiple random values
+# testrandondata values can be true/false
+# randomcount field values will be the numbers of data on which filter should be applied
+# validaterandomrecordfromshowpage is count of records that will be verified from show page
+
+[default]
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholdergroupsdelemeter = ::
+stakeholderonegroupdelemeter = |
+stakeholdergroupentityid = ,
+testrandondata = true
+randomcount = 10
+validaterandomrecordfromshowpage = 5

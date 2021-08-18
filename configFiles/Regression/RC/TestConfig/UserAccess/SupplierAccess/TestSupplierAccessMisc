@@ -1,0 +1,25 @@
+#All keys and section names must be in lower case only.
+
+[client admin user details]
+username = vikas.admin
+password = Admin@1234
+
+[client end user details]
+username = akshay_user
+password = admin123
+
+[supplier type user details]
+username = akshay_supplier
+password = admin123
+
+[tc-c8342]
+checked = false
+displaymode = editable
+
+[tc-c8345]
+checked = false
+displaymode = editable
+
+[tc-c8349]
+checked = false
+displaymode = editable

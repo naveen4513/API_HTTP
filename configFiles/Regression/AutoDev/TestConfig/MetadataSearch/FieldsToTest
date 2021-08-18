@@ -1,0 +1,281 @@
+#All section names must be in lower case characters only
+#Section name is the EntityName and must be same as in TestSearchMetadata.cfg
+
+#For Split-Fields, need to specify From and To values. Specify it in format: fromValue to toValue.
+#Ex. for Split-Field of type date. 08-01-2017 to 08-31-2017
+#Ex. for Split-Field of type Number. 10000 to 10000000
+#NOTE: For Split-Fields of Type Date/DateTime the dateFormat must be as specified in TestSearchMetadata.cfg file.
+
+[obligations]
+Status = Approved
+Title = Test
+Description = Test
+Supplier = Apple
+Contract = Test
+Performance Type = Deliverable
+Category
+Delivery Countries = Albania
+Currency = Indian Rupee (INR)
+Priority = Medium
+Phase = Contract Term
+Frequency Type = Once
+Frequency = Weekly
+Start Date = 08-01-2016 to 08-31-2017
+End Date
+Effective Date
+Functions = Automobile
+Services = Enginnering
+Regions = Global Region
+Contract Regions
+Contract Countries
+Vendor Contracting Party
+Recipient Client Entity
+Company Code
+Contracting Client Entity
+Contracting Company Code
+Responsibility
+Impact Type
+Project ID
+Initiatives
+Project Levels
+
+#********************************************************************************
+
+[contracts]
+Status
+Name
+Title
+Supplier
+Agreement No.
+Brief
+Business Unit
+Document Type
+Governance Bodies
+Created For
+Spend Type
+Delivery Countries
+Term Type
+Contract Type
+Calendar Type
+Contract Paper
+Recipient Client Entity
+Company Code
+Contracting Client Entity
+Contracting Company Code
+Vendor Contracting Party
+Term
+Expiration Date
+Functions
+Services
+Regions
+Countries
+Region Country Structure
+Contract Countries
+Contract Manager
+Currencies
+Reporting Currency
+Currency Conversion Matrix
+TCV = 1 to 10000000
+Additional TCV = 1 to 10000000
+Aggregate TCV = 1 to 10000000
+ACV = 1 to 10000000
+Additional ACV = 1 to 10000000
+Aggregate ACV = 1 to 10000000
+FACV = 1 to 10000000
+Additional FACV = 1 to 10000000
+Additional FACV = 1 to 10000000
+Conversion Type
+Financial Impact = 1 to 10000000
+Project Levels
+Initiatives
+Project ID
+
+#********************************************************************************
+
+[actions]
+Status = Overdue
+Title
+Description = HELLO
+Contract
+Type
+Priority = High
+Currency
+Countries = Afghanistan
+Source = Contract
+Due date
+Functions
+Services
+Actions Manager
+Approval date
+Rejection date
+Submission date
+Recipient client entity = Contracting
+Initiatives = SPRING
+Project levels = Build
+Project id = Project 101 Edit
+
+#********************************************************************************
+
+[service levels]
+Status = active
+Title = Incident
+Description = approval
+Sl id = A_1.4
+Currency
+Supplier
+Contract = MSA
+Priority
+Frequency
+Sl category
+Delivery countries = Afghanistan
+Currency = Indian Rupee (INR)
+Priority = Critical
+Minimum/Maximum?
+Unit of sl measurement = Percentage
+Functions
+Services
+Impact Type
+
+#********************************************************************************
+
+[child obligations]
+Title
+Description
+Supplier
+Contract
+Category
+Performance Status = Archived
+Delivery Countries
+Phase
+Services
+Regions
+Recipient Client Entity
+Child Obligations Manager
+Project Levels
+
+#********************************************************************************
+
+[child service levels]
+Title
+Description
+Supplier
+Contract
+SLA Category
+Currency
+Priority
+Application Group
+Functions
+Contract Regions
+
+#********************************************************************************
+
+[disputes]
+Status
+Title
+Description
+Supplier
+Contract
+Source
+Type
+Financial Impact = 1 to 10000000
+Functions
+Services
+Regions
+Countries
+
+#********************************************************************************
+
+[interpretations]
+Status
+Title
+Background
+Type
+Priority
+Supplier
+Question
+Submission Date
+Functions
+Services
+Regions
+Countries
+Contract Regions
+Initiatives
+
+#********************************************************************************
+
+[issues]
+Status
+Title
+Description
+Supplier
+Contract
+Type
+Currency
+Financial Impact = 1 to 10000000
+Issue Date
+Functions
+Services
+Service Category
+Regions
+Project Levels
+
+#********************************************************************************
+
+[suppliers]
+Name = Test
+Alias = testn
+Tier
+Week Type = Five Day
+Functions = IT
+Services = End-User Computing
+Service Category = Account Payable
+Regions = APAC
+Countries = Australia
+Suppliers Manager = Akshay User
+Tcv = 100 to 50000
+Project Levels = Build
+
+#********************************************************************************
+
+[vendors]
+Name = Test
+Alias = Morgan Stanley
+Functions = Human Resources
+Services
+Regions = EMEA
+Acv = 100 to 100000
+
+#********************************************************************************
+
+[governance body]
+Status = Active
+Title = Blue
+Governance Body Type = 	Executive Governance Board
+Supplier = ABC News
+Contract = Master Services Agreement - ABC News
+Start Time = 00:00
+Duration = 1 Hour
+Frequency Type = Monthly
+Frequency = Annually
+Week Type = Five Day
+Include End Date = true
+Functions
+Services
+Service Category
+Regions = EMEA
+Countries = Taiwan
+
+#********************************************************************************
+
+[governance body meetings]
+Title = Vendor
+Supplier = ABC News
+Contract = Master Services Agreement - ABC News
+Start Time = 00:00
+Duration = 1 Hour
+Meeting Status = Upcoming Meeting
+Functions
+Services
+Service Category
+Regions = EMEA
+Countries = Taiwan

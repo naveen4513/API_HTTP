@@ -1,0 +1,25 @@
+
+
+payload = {"body":{"data":{"endDate":{"name":"endDate","id":12422,"multiEntitySupport":false,"values":"${endDateValue}"},"users":{"name":"users","id":12420,"options":null,"multiEntitySupport":false,"values":{"name":"${toUserName}","id":${toUserId}}},"startDate":{"name":"startDate","id":12421,"multiEntitySupport":false,"values":"${startDateValue}"},"delegationRequests":[${delegationRequest}]}}}
+delegationRequest = {"entityTypeId":${entityTypeIdValue},"entityId":${entityIdValue},"roleGroupId":${roleGroupIdValue}, "flowDown":false}
+
+delegateduser = Jyoti User
+delegatedusername = jyoti_user
+delegateduserid = 1245
+delegateduserpassword = admin123
+
+sourceuser = Chinmaya Nayak RC- replica
+sourceuserid = 2649
+sourceusername = chinmaya_user
+sourcepassword = admin123
+
+[flow1]
+tousername = Jyoti  User
+touserid = 1245
+enddatevalue = +1
+startdatevalue = 0
+entitytypeidvalue =
+entityidvalue =
+rolegroupidvalue =
+expectedstatus = success
+expectedmessage = Delegation Created Successfully

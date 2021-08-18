@@ -1,0 +1,11 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Validate API is returning correct data for valid Button Id.",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "buttonId": 1002,
+    "expectedStatusCode": 200,
+    "expectedErrorMessage": null
+  }
+]

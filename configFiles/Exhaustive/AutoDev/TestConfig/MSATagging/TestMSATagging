@@ -1,0 +1,58 @@
+#EntitiesToTest: All those entities which are to be tested after Tier Setting is updated on User Account Page. For Multiple Entities use delimiter , (comma).
+entitiestotest = contracts, suppliers
+
+#FlowsToTest: All the flows which are to be validated where each flow represents validation of records with different Tier Value.
+#Use delimiter , (comma) for multiple flows.
+flowstotest = tier 1, tier 2, tier 3
+
+
+#Listing Details below
+#List Size: The size of the listing records. Default value is 20.
+listsize = 50
+#List Offset: Default Value is 0.
+listoffset = 0
+
+#ApplyRandomization: Whether to apply Randomization or not. Possible values are True or False. Default value is False.
+#If this flag is set to True then will pick random records and validate those only. Otherwise will validate all the records returned by List Data API.
+applyrandomization = false
+
+#MaxNoOfRecordsToValidate: Max No of Records to Validate. Default Value is 10. This property is used only if ApplyRandomization flag is set to True.
+maxnoofrecordstovalidate = 50
+
+#TierMapping: Section is used to maintain mapping of Tier Id and Tier Value.
+#Key is Tier Id as in User Account Settings and Value is Tier Value as in Show Page Response.
+[tiermapping]
+1006 = Tier - 1
+1007 = Tier - 2
+1008 = Tier - 3
+
+#Default Properties: This Section contains the original state of the User Account.
+#All the keys are case-sensitive for this section.
+[default properties]
+firstName = Anay
+lastName = User
+contactNo = 987654321
+questionId = 1
+answer =
+language = 1
+timeZone = 8
+tierId = 0
+sessionTierId =
+_showContractDocumentOnShowpage = on
+_showContractDocumentOnEditpage = on
+fontSize = 1
+defaultHomePage =
+id = 1044
+
+
+
+#Each flow has properties where Key is User Account property and Value is the value to be provided to that property.
+#All the keys are case-sensitive for below sections.
+[tier 1]
+tierId = 1006
+
+[tier 2]
+tierId = 1007
+
+[tier 3]
+tierId = 1008

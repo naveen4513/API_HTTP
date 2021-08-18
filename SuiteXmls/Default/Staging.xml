@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Staging">
+
+    <test name="Contracts Staging Test">
+        <classes>
+            <class name="com.sirionlabs.test.staging.TestStagingContracts"></class>
+        </classes>
+    </test>
+
+</suite>

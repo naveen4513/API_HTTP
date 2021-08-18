@@ -1,0 +1,46 @@
+flowstotest = happy flow
+datecolumnids =8054,8055,11345,11346
+templatefilepath =src/test/resources/TestConfig/ServiceData/BulkCreate
+templateid =1028
+bulkcreatetemplatefilename =CDR SD BULK1.xlsm
+cdrpermissions=917,924
+
+sheetnames = service data,pricing,arcrrc
+cdrid = 2660
+#2104
+#3782
+#3728
+
+
+[happy flow service data]
+expectedresult=success
+100000001=1
+4038=test name
+8051=Indian Rupee (INR)
+12460=Indian Rupee (INR)
+11333=Yes
+11335=No
+11430=Yes
+11431=Monthly
+11336=Fixed Fee
+8054=43831.0
+8055=43861.0
+11626=Description
+11657=All currecny conversion
+12231=Service End Date
+11733=APAC
+11731=Human Resources
+11732=Employee Training
+11330=Workstation Services
+11766=Accounts Receivable
+100000002=Yes
+
+[happy flow pricing]
+expectedresult=success
+100000001=1
+100000003=1
+11345=43831.0
+11346=43861.0
+8052=12
+11348=3
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Backup Target Suite">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="Backup target folder">
+        <classes>
+            <class name="com.sirionlabs.test.BackUpTarget"></class>
+        </classes>
+    </test>
+
+</suite>

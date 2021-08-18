@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Purchase Order">
+
+    <!--Working fine on 4Nov2020 -->
+    <test name="PO Flow Test">
+        <classes>
+            <class name="com.sirionlabs.test.purchaseOrder.TestPurchaseOrderFlow"></class>
+        </classes>
+    </test>
+
+    <!--Working fine on 4Nov2020 -->
+    <test name="PO Listing Validation">
+        <classes>
+            <class name="com.sirionlabs.test.purchaseOrder.TestPurchaseOrderListing"></class>
+        </classes>
+    </test>
+
+<!--    &lt;!&ndash;Working fine on 4Nov2020 &ndash;&gt;-->
+    <test name="PO Show Page Validation">
+        <classes>
+            <class name="com.sirionlabs.test.purchaseOrder.TestPurchaseOrderShowPage"></class>
+        </classes>
+    </test>
+
+<!--    &lt;!&ndash;Working fine on 4Nov2020 &ndash;&gt;-->
+    <test name="PO Update Validation">
+        <classes>
+            <class name="com.sirionlabs.test.purchaseOrder.TestPurchaseOrderUpdate"></class>
+        </classes>
+    </test>
+
+<!--    &lt;!&ndash;Working fine on 4Nov2020 &ndash;&gt;-->
+    <test name="PO Misc Test Cases">
+        <classes>
+            <class name="com.sirionlabs.test.purchaseOrder.TestPurchaseOrderMisc"></class>
+        </classes>
+    </test>
+
+</suite>

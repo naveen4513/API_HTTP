@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Multi Supplier Contract Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_dev"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <suite-file path="../Regression/Microservice/Minor/MultiSupplierContract.xml"></suite-file>
+
+
+    </suite-files>
+</suite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Login" thread-count="1">
+
+    <test name="Login Check">
+        <classes>
+            <class name="com.sirionlabs.api.commonAPI.Login"></class>
+        </classes>
+    </test>
+
+</suite>

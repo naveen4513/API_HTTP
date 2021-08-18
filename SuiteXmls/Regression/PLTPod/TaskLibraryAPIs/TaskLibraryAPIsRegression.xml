@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Task Library APIs Regression">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_qavfrc"/>
+
+    <suite-files>
+        <!-- Login and Configuration -->
+        <suite-file path="SuiteXmls/Default/Configuration.xml"></suite-file>
+        <suite-file path="SuiteXmls/Default/Login.xml"></suite-file>
+
+        <!-- Task Library Suite -->
+
+        <suite-file path="CreateTaskAPI.xml"></suite-file>
+        <suite-file path="DeleteTaskAPI.xml"></suite-file>
+        <suite-file path="FetchTaskAPI.xml"></suite-file>
+        <suite-file path="UpdateTaskAPI.xml"></suite-file>
+
+    </suite-files>
+</suite>

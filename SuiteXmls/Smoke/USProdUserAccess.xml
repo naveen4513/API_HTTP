@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="RC"/>
+    <parameter name="Environment" value="USProd"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+    </suite-files>
+
+   <test name="Test User Access client Admin US-Prod">
+        <classes>
+            <class name="com.sirionlabs.test.userAccess.TestUserPermissionClientAdminUSProd"></class>
+        </classes>
+    </test>
+
+    <test name="Test Project Access US-Prod">
+        <classes>
+            <class name="com.sirionlabs.test.userAccess.TestUserAccessClientAdminUSProd"></class>
+        </classes>
+    </test>
+
+    <test name="JWT Auth Token Generator">
+        <classes>
+            <class name="com.sirionlabs.utils.commonUtils.JWTEncode"></class>
+        </classes>
+    </test>
+
+</suite>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Snow Integration" thread-count="1">
+
+    <test name="Test Snow Integration">
+        <classes>
+            <class name="com.sirionlabs.test.TestSnowIntegration"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name=" Update Workflow Data API Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_qavfrc"/>
+
+    <test name="Update workflow Data API">
+        <classes>
+            <class name="com.sirionlabs.test.WorkflowLibraryAPI.TestUpdateWorkflowAPI"></class>
+        </classes>
+    </test>
+
+
+</suite>

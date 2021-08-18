@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="PreSignature">
+
+    <test name="PreSignature Validation">
+        <classes>
+            <class name="com.sirionlabs.test.preSignature.TestPreSignatureNew"></class>
+        </classes>
+    </test>
+
+
+</suite>

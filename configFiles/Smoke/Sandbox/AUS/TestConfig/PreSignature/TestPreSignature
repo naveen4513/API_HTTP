@@ -1,0 +1,31 @@
+#All keys must be in lower case only.
+
+#variables for cdr listing
+urlid = 279
+size = 10
+offset = 0
+orderbycolumnname = id
+orderdirection = desc nulls last
+
+
+#Boolean flag for creating local entity or global entity
+createlocalcdr = false
+
+#Provide the section name as mentioned in cdr.cfg file under helper package
+cdrsectionname = presignature flow
+
+#Provide the section name as mentioned in clause.cfg file under helper package
+clausesectionname = presignature flow
+
+#Provide the section name as mentioned in contractTemplate.cfg file under helper package
+contracttemplatesectionname = presignature flow
+
+#Provide the section name as mentioned in definition.cfg file under helper package
+definitionsectionname = presignature flow
+
+#Provide the section name as mentioned in contractTemplateStructure.cfg file under helper package
+ctssectionname = presignature flow
+
+
+#Boolean flag to delete the created entity
+deleteentity = true

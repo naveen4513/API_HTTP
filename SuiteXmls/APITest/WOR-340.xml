@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="WOR 340" data-provider-thread-count="3">
+
+    <test name="WOR 340 CreateForm API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.wor340.TestSpecialEntityFieldCreateFormAPI"></class>
+        </classes>
+    </test>
+
+    <test name="WOR 340 End to End">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestWOR340"></class>
+        </classes>
+    </test>
+
+</suite>

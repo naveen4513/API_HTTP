@@ -1,0 +1,82 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+dynamic filter id = 1001103
+dynamic filter name = 106560
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+category = {"name": "category","id":7368,"values":{"name": "Acceptance","id": 1188}}
+group = {"name":"group","id":11837,"values":{"name":"Clause","id":1}}
+
+dynamicMetadata = {"dyn106576":{"name":"dyn106576","id":106576,"multiEntitySupport":false,"values":"Text Field"},"dyn106645":{"name":"dyn106645","id":106645,"multiEntitySupport":false,"values":121},"dyn106661":{"name":"dyn106661","id":106661,"options":null,"multiEntitySupport":false,"values":{"name":"Option1","id":9096}},]"dyn106678":{"name":"dyn106678","id":106678,"options":null,"multiEntitySupport":false,"values":[{"name":"Option1","id":9130},{"name":"Option2","id":9131}]},"dyn106614":{"name":"dyn106614","id":106614,"multiEntitySupport":false,"values":"09-03-2020"},"dyn106595":{"name":"dyn106595","id":106595,"multiEntitySupport":false,"values":"Text Area"},"dyn106560":{"name":"dyn106560","id":106560,"multiEntitySupport":false,"values":unqString}}
+
+#Automation Text Field
+dyn106576 = {"name":"dyn106576","id":106576,"multiEntitySupport":false,"values":"Text Field"}
+
+#Automation Currency
+dyn106645 = {"name":"dyn106645","id":106645,"multiEntitySupport":false,"values":121}
+
+#Automation Single SELECT
+dyn106661 = {"name":"dyn106661","id":106661,"options":null,"multiEntitySupport":false,"values":{"name":"Option1","id":9096}}
+
+#Automation MULTI SELECT
+dyn106678 = {"name":"dyn106678","id":106678,"options":null,"multiEntitySupport":false,"values":[{"name":"Option1","id":9130},{"name":"Option2","id":9131}]}
+
+#Automation Date
+dyn106614 = {"name":"dyn106614","id":106614,"multiEntitySupport":false,"values":"09-03-2020"}
+
+#Automation TEXT AREA
+dyn106595 = {"name":"dyn106595","id":106595,"multiEntitySupport":false,"values":"Text Area"}
+
+#Automation Numeric
+dyn106560 = {"name":"dyn106560","id":106560,"multiEntitySupport":false,"values":unqString}
+
+[flow 2]
+name = {"name":"name","id":7367,"values":"API Automation Clause"}
+headerLabel = {"name":"headerLabel","id":11464,"values":"API Automation Clause"}
+subHeader = {"name":"subHeader","id":12036,"values":"API Automation Clause"}
+suppliers = {"name":"suppliers","id":7369,"values":[{"name":"ABC News","id":1024}]}
+contractingEntity = {"name":"contractingEntity","id":7371,"values":{"name":"Apple Inc","id":1026}}
+termType = {"name":"termType","id":7372,"values":{"name":"Fixed","id":1012}}
+type = {"name":"type","id":7370,"options":null,"values":{"name":"Exchange","id":1006}}
+functions = {"name":"functions","id":11549,"options":null,"values":[{"name":"Human Resources","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false}]}
+services = {"name":"services","id":11550,"options":null,"values":[{"name":"End-User Computing","id":1008,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"parentName":"Human Resources"}]}
+riskTypes = {"name":"riskTypes","id":7389,"options":null,"values":[{"name":"Compliance Risk","id":1004}]}
+industryTypes = {"name":"industryTypes","id":7373,"options":null,"values":[{"name":"Automobiles & Components","id":1001}]}
+companyPosition = {"name":"companyPosition","id":7374,"options":null,"values":{"name":"Preferred","id":1003}}
+agreementTypes = {"name":"agreementTypes","id":7375,"options":null,"values":[{"name":"End User License Agreement","id":1003}]}
+transactionTypes = {"name":"transactionTypes","id":7377,"options":null,"values":[{"name":"General","id":1007}]}
+contractServices = {"name":"contractServices","id":7378,"options":null,"values":[{"name":"DCHS-MVS - System-NA","id":1198}]}
+minTcv = {"name":"minTcv","id":7380,"values":"100"}
+maxTcv = {"name":"maxTcv","id":7381,"values":"500"}
+recipientMarkets ={"name":"recipientMarkets","id":11846,"options":null,"values":[{"name":"Qatar","id":1004}]}
+globalRegions = {"name":"globalRegions","id":7391,"options":null,"values":[{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false}]}
+globalCountries = {"name":"globalCountries","id":7392,"options":null,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false,"parentName":"APAC"}]}
+
+[flow 3]
+name = {"name":"name","id":7367,"values":""}
+
+[flow 4]
+name = {"name":"name","id":7367,"values":"API Automation !@#%% 987778"}
+functions = {"name":"functions","id":11549,"options":null,"values":[{"name":"Human Resources","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false}]}
+services = {"name":"services","id":11550,"options":null,"values":[{"name":"End-User Computing","id":1008,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"parentName":"Human Resources"}]}
+
+[flow 1]
+functions = {"name":"functions","id":11549,"options":null,"values":[{"name":"Human Resources","id":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false}]}
+services = {"name":"services","id":11550,"options":null,"values":[{"name":"End-User Computing","id":1008,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"parentName":"Human Resources"}]}

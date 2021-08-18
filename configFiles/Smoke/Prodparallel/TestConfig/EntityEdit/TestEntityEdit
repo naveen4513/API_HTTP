@@ -1,0 +1,48 @@
+#All keys must be in lower case characters only
+
+
+#Specify all the flows to be validated
+flowstotest =  suppliers flow 1, contracts flow 1, obligations flow 1, service levels flow 1, actions flow 1, issues flow 1, disputes flow 1, change requests flow 1, interpretations flow 1, work order requests flow 1, purchase orders flow 1, invoices flow 1
+
+
+#Entity Edit Flows Config file details.
+flowsconfigfilepath = src/test/resources/TestConfig/EntityEdit
+flowsconfigfilename = EntityEditFlows.cfg
+
+#Extra Fields Config file details.
+extrafieldsconfigfilepath = src/test/resources/TestConfig/EntityEdit
+extrafieldsconfigfilename = ExtraFieldsForEntityEdit.cfg
+
+#DefaultNoOfFieldsToEdit: If No of Fields to Edit in a flow is not defined then default value will be picked as mentioned against this property. Default Value is 1.
+defaultnooffieldstoedit = 1
+
+
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = AutoEdit_
+
+defaulttext =
+defaultdate = 03-20-2018
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+
+#FieldsToIgnoreMapping: This section contains mapping of the entities and the fields that should be ignored for that entity for Editing.
+#Key is Entity Name. It is case sensitive and must be in lower case characters only.
+#Value is Field Name. It is case sensitive and must match exactly as in API Response.
+
+[fieldstoignoremapping]
+suppliers = additionalFYCV, additionalTCV, additionalACV, projectId, initiatives, tiers
+contracts = agreementNumber, contractNumber, contractingEntity, governanceBodies, oldSystemId, fieldComment, numberOfRenewals, contractPaper, vendorClassification, contractingHubs, contractingMarkets, contractingClientEntities, contractingCompanyCodes, recipientHubs, recipientMarkets, Internal Contracting Party, recipientCompanyCodes, vendorContractingParty, years, months, days, creditClauses, earnbackClauses, contractCurrencies, rateCardFromDate, rateCardToDate, rateCardsApplicable, rateCard, additionalTCV, additionalACV, additionalFYCV, conversionType, financialImpact, initiatives, projectId, legal, businessCase, globalRegions, expirationNoticePeriod, noticeLeadDays
+obligations = contractReference, clause, pageNumber, documentPageNumber, vendorContractingParty, currency, financialImpactCurrencyValue, financialImpactClause, creditImpactCurrencyValue, creditImpactClause, impactDays, projectId, initiatives
+service levels = regionType, currency, performanceComputationCalculationQuery, performanceDataCalculationQuery, uniqueDataCriteria, pageReference, clause, pageNum, threshold, minimum, expected, sigMinMax, creditClauses, creditClause, invoiceCreditPercentage, categoryCreditPercentage, subCategoryCreditPercentage, lineItemCreditPercentage, earnbackClauses,earnbackClause, categoryEarnbackPercentage, subCategoryEarnbackPercentage, lineItemEarnbackPercentage, continuousImprovementClause, vendorContractingParty, financialImpactCurrencyValue, financialImpactClause, creditImpactCurrencyValue, creditImpactClause, impactDays
+actions = currency
+issues = currency, projectId, initiatives
+disputes = currency
+change requests = contractReferences, assumptions, contractingEntity, originalTcv, originalTcvCurrency, revisedTcv, revisedTcvCurrency, varianceTcv, varianceTcvCurrency, originalAcv, originalAcvCurrency, revisedAcv, revisedAcvCurrency, variance, varianceCurrency, originalFacv, originalFacvCurrency, revisedFacv, revisedFacvCurrency, varianceFacv, varianceTcvCurrency, projectId, initiatives
+interpretations = contractReference, clause, pageNumber, documentPageNumber
+work order requests = currency, contractingEntity, years, months, days, additionalTCV, additionalACV, additionalFACV, initiatives
+contract draft request = clientContractingEntity, counterPartyContractingEntity, transactionTypes, businessLines, currency, acv, tcv, years, months, days, recipientMarkets, createdFor, legal, businessCase
+purchase orders = poNumber, requisitionNumber, trackingNumber, contractingEntity
+invoices = invoiceNumber, poNumber, currency, contractingEntity, invoiceAmount, supplierIdNew, clientIdNew, supplierName, sirionSupplierId, costCenterCode, emailAddress, phoneNumber, previousInvoiceId, creditPeriod, amountApproved, discrepancyAmount, noLineItems, noLineItemsWithDiscrepancy, paidAmount, resolvedDiscrepancy, disputeAmount, projectId, initiatives
+governance body = projectId, initiatives

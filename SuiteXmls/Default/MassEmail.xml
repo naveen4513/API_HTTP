@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Mass Email" thread-count="1">
+
+    <test name="Email Mass Test">
+        <classes>
+            <class name="com.sirionlabs.test.TestMassEmail"></class>
+        </classes>
+    </test>
+
+</suite>

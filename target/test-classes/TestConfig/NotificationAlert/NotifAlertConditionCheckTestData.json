@@ -1,0 +1,90 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Positive scenario",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133699,
+    "ruleId": 1329,
+    "currentDate": 20200220,
+    "responseBody": "true"
+  },
+  {
+    "testCaseId": "2",
+    "description": "Entity on which the alert condition doesn't meet",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133698,
+    "ruleId": 1329,
+    "currentDate": 20200220,
+    "responseBody": "false"
+  },
+  {
+    "testCaseId": "3",
+    "description": "Date on which the alert condition doesn't meet",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133698,
+    "ruleId": 1329,
+    "currentDate": 20200210,
+    "responseBody": "false"
+  },
+  {
+    "testCaseId": "4",
+    "description": "Invalid Date",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133699,
+    "ruleId": 1329,
+    "currentDate": 20200240,
+    "responseBody": "applicationError"
+  },
+  {
+    "testCaseId": "5",
+    "description": "String entityId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": "sadsad",
+    "ruleId": 1329,
+    "currentDate": 20200220,
+    "responseBody": "applicationError"
+  },
+  {
+    "testCaseId": "6",
+    "description": "String ruleId",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133699,
+    "ruleId": "asdsad",
+    "currentDate": 20200220,
+    "responseBody": "applicationError"
+  },
+  {
+    "testCaseId": "7",
+    "description": "String currentDate",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 200,
+    "entityId": 133699,
+    "ruleId": 1329,
+    "currentDate": "sadadsad",
+    "responseBody": "applicationError"
+  },
+  {
+    "testCaseId": "8",
+    "description": "Bad / Invalid headers",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "expectedStatusCode": 400,
+    "entityId": "",
+    "ruleId": "",
+    "currentDate": "",
+    "responseBody": "applicationError"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "Fixed Fee": {
+    "6": {
+      "name": "Volume",
+      "type": "singleselect",
+      "options": [
+        "110"
+      ]
+    },
+    "7": {
+      "name": "Rate",
+      "type": "singleselect",
+      "options": [
+        "10"
+      ]
+    },
+    "templateInfo": {
+      "dataSheetName": "Pricing",
+      "startRow": 5,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -1,
+      "dateFormate": "MM-dd-yyyy",
+      "numberOfRowsToBeEdited": 1
+    }
+  },
+  "ARCRRC": {
+    "6": {
+      "name": "Lower Level",
+      "type": "singleselect",
+      "options": [
+        "70"
+      ]
+    },
+    "7": {
+      "name": "Upper Level",
+      "type": "singleselect",
+      "options": [
+        "90"
+      ]
+    },
+    "8": {
+      "name": "Rate",
+      "type": "singleselect",
+      "options": [
+        "11"
+      ]
+    },
+    "9": {
+      "name": "Type",
+      "type": "singleselect",
+      "options": [
+        "RRC"
+      ]
+    },
+    "templateInfo": {
+      "dataSheetName": "ARCRRC",
+      "startRow": 5,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -1,
+      "dateFormate": "MM-dd-yyyy",
+      "numberOfRowsToBeEdited": 1
+    }
+  }
+}

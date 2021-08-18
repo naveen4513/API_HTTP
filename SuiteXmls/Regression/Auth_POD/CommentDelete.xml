@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="delete comment">
+    <test name="Test delete comment">
+        <classes>
+            <class name="com.sirionlabs.test.deleteComment.TestDeleteComment"></class>
+        </classes>
+    </test>
+</suite>

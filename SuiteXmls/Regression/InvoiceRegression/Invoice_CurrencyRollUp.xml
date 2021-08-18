@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <!-- Test OK on 16 Feb 2021-->
+        <test name = "TCV Currency Roll Up feature">
+            <classes>
+                <class name="com.sirionlabs.test.contract.CurrencyRollUpFeature.TestCurrencyRollUp"></class>
+            </classes>
+        </test>
+
+        <!-- Test OK on 16 Feb 2021-->
+        <test name = "TCV Currency Roll Up Scenarios Vendor Roll up">
+            <classes>
+                <class name="com.sirionlabs.test.contract.CurrencyRollUpFeature.TestCurrencyRollUpVendor"></class>
+            </classes>
+        </test>
+
+        <!-- Test OK on 16 Feb 2021-->
+        <test name = "TCV Currency Roll Up Scenarios Updating ReportingCurrency">
+            <classes>
+                <class name="com.sirionlabs.test.contract.CurrencyRollUpFeature.TestCurrRollUp_UpdReportCurrency"></class>
+            </classes>
+        </test>
+
+        <!-- Test OK on 16 Feb 2021-->
+        <test name = "TCV Currency Roll Up Scenarios Updating Rate card">
+            <classes>
+                <class name="com.sirionlabs.test.contract.CurrencyRollUpFeature.TestCurrencyRollUp_UpdRateCard"></class>
+            </classes>
+        </test>
+
+        <!-- Test OK on 16 Feb 2021-->
+        <test name = "TCV Currency Roll Up Scenarios Effective Date Null">
+            <classes>
+                <class name="com.sirionlabs.test.contract.CurrencyRollUpFeature.TestCurrencyRollUp_EffecDateNull"></class>
+            </classes>
+        </test>
+
+        <!-- Test OK on 16 Feb 2021-->
+        <test name = "TCV Currency Roll Up Scenarios Roll Up Supplier">
+            <classes>
+                <class name="com.sirionlabs.test.contract.CurrencyRollUpFeature.TestCurrencyRollUp_Supplier"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="APIMATS">
+    <parameter name="Environment" value="Rc"/>
+    <suite-files>
+        <suite-file path="../Configuration.xml"></suite-file>
+        <suite-file path="../Login.xml"></suite-file>
+        <suite-file path="../InvoiceData.xml"></suite-file>
+        <!--<suite-file path="ShowPage.xml"></suite-file>-->
+
+
+    </suite-files>
+</suite>

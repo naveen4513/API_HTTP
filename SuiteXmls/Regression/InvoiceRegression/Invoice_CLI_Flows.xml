@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+<!--        <test name="Invoice Bulk Create Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.TestInvoiceBulkCreate"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="Invoice Line Item Bulk Create">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoiceLineItem.TestInvoiceLineItemBulkCreate"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+        <test name="Service Data Bulk Create Validation">
+            <classes>
+                <class name="com.sirionlabs.test.serviceData.TestServiceDataBulkCreate"></class>
+            </classes>
+        </test>
+
+        <test name = "Bulk Create Entities">
+            <classes>
+                <class name="com.sirionlabs.test.bulkCreate.BulkCreateAllEntities"></class>
+            </classes>
+        </test>
+
+        <test name="Bulk Update Consumption Validation">
+            <classes>
+                <class name="com.sirionlabs.test.consumption.Test_SIR9698"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

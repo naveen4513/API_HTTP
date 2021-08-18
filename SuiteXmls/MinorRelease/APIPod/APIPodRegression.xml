@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Pod Regression Suite">
+    <parameter name="TestingType" value="minor"/>
+    <parameter name="Environment" value="automation_dev"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+        <!--<listeners>
+            <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+        </listeners>-->
+
+        <suite-file path="NonParallel.xml"></suite-file>
+        <suite-file path="ParallelTests.xml"></suite-file>
+
+
+
+
+    </suite-files>
+</suite>

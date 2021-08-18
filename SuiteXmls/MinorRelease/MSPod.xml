@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MS Pod Suite">
+
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+
+    <suite-files>
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+        <listeners>
+            <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+        </listeners>
+        <suite-file path="../Regression/Microservice/Minor/MicroserviceTest.xml"></suite-file>
+        <suite-file path="../Regression/Microservice/Minor/NonParallel.xml"></suite-file>
+        <suite-file path="../Regression/Microservice/Minor/ParallelMethods.xml"></suite-file>
+        <suite-file path="../Regression/Microservice/Minor/ParallelTests.xml"></suite-file>
+
+    </suite-files>
+</suite>

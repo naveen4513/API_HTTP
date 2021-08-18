@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MSA Tagging" thread-count="1">
+
+    <test name="Test MSA Tagging">
+        <classes>
+            <class name="com.sirionlabs.test.TestMSATagging"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="rc_bi"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../BI/Login.xml"></suite-file>
+        <suite-file path="../BI/SisenseLogin.xml"></suite-file>
+        <suite-file path="../BI/AnalyticsServiceLogin.xml"></suite-file>
+
+        <!--        <suite-file path="../BI/TestInternationalisation.xml"></suite-file>
+                <suite-file path="../BI/TestDynamicColumn.xml"></suite-file>-->
+
+        <suite-file path="../BI/TestRBAC.xml"></suite-file>
+
+    </suite-files>
+</suite>

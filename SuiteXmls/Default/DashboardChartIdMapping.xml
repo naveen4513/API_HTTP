@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="DashboardChartIdMapping" parallel="tests" data-provider-thread-count="2">
+
+    <test name="Test DashboardChartNameID Mapping">
+        <classes>
+            <class name="com.sirionlabs.test.dashboard.TestDashboardChartNameIdMapping"></class>
+        </classes>
+    </test>
+
+</suite>

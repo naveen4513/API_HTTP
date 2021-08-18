@@ -1,0 +1,187 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[contracts]
+name = {"name":"name","id":37,"values":"contract creation test"}
+title = {"name":"title","id":38,"values":"contract creation test"}
+timeZone = {"name":"timeZone","id":7,"values":{"name":"Alaska Time (GMT -09:00)","id":29,"timeZone":"America/Anchorage"}}
+contractingEntity = {"name":"contractingEntity","id":9,"values":{"name":"contract 101","id":1012}}
+dynamicMetadata = {"reviewDate":{"name":"reviewDate","id":100226,"values":"05-01-2018 00:00:00"}}
+deliveryCountries = {"name":"deliveryCountries","id":11,"values":[{"name":"Afghanistan","id":1}]}
+effectiveDate = {"name":"effectiveDate","id":14,"values":"05-01-2018 00:00:00"}
+expirationDate = {"name":"expirationDate","id":15,"values":"09-30-2030 00:00:00"}
+noticeDate = {"name":"noticeDate","id":4772,"values":"09-30-2030 00:00:00"}
+contractCurrencies = {"name":"contractCurrencies","id":26,"values":[{"name":"Euro Member Countries (EUR)","id":2,"shortName":"EUR","parentName":"Euro Member Countries (EUR)"}]}
+currency = {"name":"currency","id":27,"values":{"name":"Euro Member Countries (EUR)","id":2,"shortName":"EUR","parentName":"Euro Member Countries (EUR)"}}
+rateCardFromDate = {"name":"rateCardFromDate","id":30,"values":"05-01-2018 00:00:00"}
+rateCardToDate = {"name":"rateCardToDate","id":31,"values":"10-31-2018 00:00:00"}
+rateCardsApplicable = {"name":"rateCardsApplicable","id":29,"values":{"name":"Rate1","id":1008}}
+conversionType = {"name":"conversionType","id":28,"values":{"name":"Direct Conversion","id":1}}
+contractDocuments = {"name": "contractDocuments","values": []}
+brief = {"name":"brief","id":5,"values":""}
+days = {"name":"days","id":7205,"values":5}
+months = {"name":"months","id":17,"values":0}
+years = {"name":"years","id":16,"values":3}
+
+[governance body]
+name = {"name":"name","id":4700,"values":"GB Creation test"}
+description = {"name":"description","id":4701,"values":"test"}
+goal = {"name":"goal","id":4702,"values":"<p><span style=\"font-size: 12px;\">test</span></p>"}
+governanceBodyType = {"name":"governanceBodyType","id":4725,"values":{"name":"Type 11","id":1004}}
+timeZone = {"name":"timeZone","id":4740,"values":{"name":"Africa/Dar_es_Salaam (GMT +03:00)","id":3,"timeZone":"Africa/Dar_es_Salaam"}}
+startTime = {"name":"startTime","id":4720,"values":{"name":"07:00","id":15}}
+duration = {"name":"duration","id":4713,"values":{"name":"1 Hour","id":2}}
+frequencyType = {"name":"frequencyType","id":4705,"values":{"name":"Daily","id":1002}}
+frequency = {"name":"frequency","id":4706,"values":{"name":"Daily","id":1014,"parentId":1002}}
+weekType = {"name":"weekType","id":4707,"values":{"name":"Five Day","id":1}}
+startDate = {"name":"startDate","id":4708,"values":"08-01-2030 00:00:00"}
+expDate = {"name":"expDate","id":4709,"values":"08-01-2030 00:00:00"}
+includeStartDate = {"name":"includeStartDate","id":4710,"values":true}
+includeExpDate = {"name":"includeExpDate","id":4711,"values":true}
+relations = {"name":"relations","id":12545,"values":[{"name":"Testing Purpose","id":1009}],"multiEntitySupport":false}
+
+[actions]
+requestedOn = Date -> MM-dd-yyyy -> -3
+plannedCompletionDate = Date -> MM-dd-yyyy -> +10
+#actionType = {"name":"actionType","id":409,"values":{"name":"Contract Pricing Adjustment","id":1005,"active":true,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false}}
+#responsibility = {"name":"responsibility","id":411,"values":{"name":"Both - Client & Supplier","id":2}}
+#priority = {"name":"priority","id":410,"values":{"name":"Low","id":2}}
+
+[issues]
+name = {"name":"name","id":102,"values":"issue creation test"}
+priority = {"name":"priority","id":114,"values":{"name":"Medium","id":3}}
+issueType = {"name":"issueType","id":105,"values":{"name":"3rd party contracts","id":1001}}
+currency = {"name":"currency","id":106,"values":{"name":"United States Dollar (USD)","id":1,"shortName":"USD"}}
+plannedCompletionDate = {"name":"plannedCompletionDate","id":119,"values":"06-30-2030 00:00:00"}
+#actionTaken = {"name":"actionTaken","id":129,"values":""}
+deliveryCountries = {"name":"deliveryCountries","id":116,"values":[{"name":"Afghanistan","id":1}]}
+description = {"name":"description","id":111,"values":"test"}
+#processAreaImpacted = {"name":"processAreaImpacted","id":128,"values":""}
+#resolutionRemarks = {"name":"resolutionRemarks","id":130,"values":""}
+
+[change requests]
+name = {"name":"name","id":801,"values":"change requests creation test"}
+priority = {"name":"priority","id":807,"values":{"name":"High","id":1}}
+timeZone = {"name":"timeZone","id":804,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"}}
+tier = {"name":"tier","id":846,"values":{"name":"Tier 2","id":1013}}
+effectiveDate = {"name":"effectiveDate","id":814,"values":"05-31-2030 00:00:00"}
+functions = {"name":"functions","id":816,"values":[{"name":"Financial Services","id":1027,"active":false,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false}]}
+services = {"name":"services","id":817,"values":[{"name":"Collaboration","id":1224,"parentId":1027,"active":false,"blocked":false,"createdFromListPage":false,"bulkOperation":false,"blockedForBulk":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"parentName":"Financial Services"}]}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2138":{"values":[{"name":"APIAutomation User","id":2567,"idType":2}],"name":"rg_2138","label":"Change Rerquest","userType":[2,1,3,4]},"rg_2710":{"values":[{"name":"APIAutomation User","id":2567,"type":2,"email":"rohillaakshay22@gmail.com"}],"name":"rg_2710","label":"CR_Manager","userType":[2,1,3,4]},"rg_2857":{"values":[{"name":"APIAutomation User","id":2567,"type":2,"email":"rohillaakshay22@gmail.com"}],"name":"rg_2857","label":"CR","userType":[2,1,3,4]}}}
+
+[interpretations]
+title = {"name":"title","id":703,"values":"interpretations creation test"}
+type = {"name":"type","id":706,"values":{"name":"Baseline.","id":1003}}
+timeZone = {"name":"timeZone","id":804,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"}}
+tier = {"name":"tier","id":12,"values":{"name":"Tier 2","id":1013}}
+background = {"name":"background","id":704,"values":"test"}
+priority = {"name":"priority","id":114,"values":{"name":"Low","id":2}}
+plannedSubmissionDate = {"name":"plannedSubmissionDate","id":713,"values":"05-31-2030 00:00:00"}
+questions = {"name":"questions","values":[{"pageReferenceForQuestion":[{}],"question":"test"}]}
+
+[work order requests]
+name = {"name":"name","id":901,"values":"WOR Creation Test"}
+title = {"name":"title","id":703,"values":"WOR creation test"}
+briefDescription = {"name":"briefDescription","id":904,"values":"test"}
+description = {"name":"description","id":902,"values":"Test WOR Creation"}
+priority = {"name":"priority","id":114,"values":{"name":"Low","id":2}}
+#types = {"name":"types","id":906,"values":[{"name":"12","id":1001}]}
+types = {"name":"types","id":906,"values":[{"name": "Application Development","id": 1001}]}
+billingTypes = {"name":"billingTypes","id":907,"values":[{"name":"Advance Payment","id":7}]}
+responsibility = {"name":"responsibility","id":908,"values":{"name":"Both - Client & Supplier","id":2}}
+deliveryCountries = {"name":"deliveryCountries","id":911,"values":[{"name":"Afghanistan","id":1}]}
+#timeZone = {"name":"timeZone","id":804,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"}}
+#effectiveDate = {"name":"effectiveDate","id":913,"values":"05-01-2018 00:00:00","displayValues":"05-01-2018 12:00:00 AM +03:00"}
+#expirationDate = {"name":"expirationDate","id":914,"values":"05-31-2030 00:00:00","displayValues":"05-31-2030 00:00:00"}
+effectiveDate = {"name":"effectiveDate","id":913,"values":"05-01-2018 00:00:00","displayValues":"01-05-2018 00:00"}
+expirationDate = {"name":"expirationDate","id":914,"values":"05-31-2030 00:00:00","displayValues":"31-05-2030 00:00"}
+years = {"name":"years","id":915,"values":12}
+months = {"name":"months","id":916,"values":1}
+days = {"name":"days","id":917,"values":0}
+contractingEntity = {"name":"contractingEntity","id":910,"values":{"name":"contract 101","id":1012}}
+approvalDate= {"name": "approvalDate","id": 918,"multiEntitySupport": false,"values": "01-30-2021 00:00:00","displayValues": "30-01-2021 00:00"}
+requestDate=  {"name": "requestDate","id": 934,"multiEntitySupport": false,"values": "01-25-2021 12:01:58","displayValues": "25-01-2021 12:01"}
+
+[contract draft request]
+#functions = {"name":"functions","id":508,"values":[{"name":"IT","id":1002}]}
+#services = {"name":"services","id":509,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002}]}
+#globalRegions = {"name":"globalRegions","id":510,"values":[{"name":"APAC","id":1002,"parentId":1002}]}
+#globalCountries = {"name":"globalCountries","id":511,"values":[{"name":"South Korea","id":129,"parentId":1002}]}
+
+[purchase orders]
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+#countries = {"name":"countries","id":11390,"values":[{"name":"Sudan","id":218}]}
+#poNumber = {"name":"poNumber","id":11383,"values":"PO0100200"}
+#states = {"name":"states","id":11389,"values":[{"name":"Jnqall","id":2822,"parentId":218}]}
+
+[service data]
+invoicingType = values -> {"name": "ARC/RRC","id": 3}
+serviceIdSupplier = {"name": "serviceIdSupplier", "values": "apitestsupplier1"}
+billingPeriod = values -> {"name": "Yearly","id": 3}
+startDate = Date -> MM-dd-yyyy -> -5
+serviceIdClient = {"name": "serviceIdClient","values": "apitestclient1"}
+name = {"name": "name","values": "apitestname"}
+serviceDataServiceCategory = values -> {"name": "Service Category - 1","id": 1007}
+serviceSubCategory = values -> {"name": "Service Sub-Category - 1","id":1006,"parentId":1007}
+endDate = Date -> MM-dd-yyyy -> +10
+
+
+[suppliers]
+#tiers = {"name":"tiers","id":505,"values":[{"name":"Tier - 1","id":1006}]}
+#functions = {"name":"functions","id":508,"values":[{"name":"Human Resources","id":1003}]}
+#services = {"name":"services","id":509,"values":[{"name":"End-User Computing","id":1008,"parentId":1003},{"name":"Projects","id":1006,"parentId":1003},{"name":"Service Desk","id":1007,"parentId":1003}]}
+#globalRegions = {"name":"globalRegions","id":510,"values":[{"name":"EMEA","id":1003,"parentId":1002}]}
+#globalCountries = {"name":"globalCountries","id":511,"values":[{"name":"Bulgaria","id":37,"parentId":1003}]}
+
+[obligations]
+outputType = {"name":"outputType","id":307,"values":{"name":"Deliverable","id":1001}}
+category = {"name":"category","id":308,"values":{"name":"Audits","id":1002}}
+priority = {"name":"priority","id":310,"values":{"name":"High","id":null}}
+phase = {"name":"phase","id":311,"values":{"name":"Contract Term","id":1007}}
+pageReference = {"name":"pageReference","values":[{"contractReference":{"extension":"docx","numberOfPagesToExclude":null,"metaDataCreated":true,"pageNumber":null,"viewerAvailable":true,"noOfPages":1,"startPageNumber":null,"name":"MSA DOC.docx","contractId":4115,"imageCreated":true,"id":5081,"fileId":5432},"coordinates":null,"clause":"1","pageNumber":1}]}
+
+
+[disputes]
+#tier = {"name":"tier","id":11169,"values":{"name":"Tier - 1","id":1006}}
+#timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+#plannedCompletionDate = Date -> MM-dd-yyyy -> +10
+#deliveryCountries = {"name":"deliveryCountries","id":11191,"values":[{"name":"Afghanistan","id":1}]}
+#issueDate = Date -> MM-dd-yyyy -> -1
+
+[vendors]
+#functions = {"name":"functions","id":508,"values":[{"name":"IT","id":1002}]}
+#services = {"name":"services","id":509,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002}]}
+#globalRegions = {"name":"globalRegions","id":510,"values":[{"name":"APAC","id":1002,"parentId":1002}]}
+#globalCountries = {"name":"globalCountries","id":511,"values":[{"name":"South Korea","id":129,"parentId":1002}]}
+
+[invoices]
+invoiceNumber = {"name":"invoiceNumber","id":601,"values":"test"}
+title = {"name":"title","id":703,"values":"invoice creation test"}
+poNumber = {"name":"poNumber","id":604,"values":"test"}
+timeZone = {"name":"timeZone","id":804,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"}}
+invoiceAmount = {"name":"invoiceAmount","id":610,"displayValues":"","values":"10000"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"05-01-2020 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"05-31-2021 00:00:00"}
+actualReceiptDate = {"name":"actualReceiptDate","id":616,"values":"05-01-2018 00:00:00"}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2139":{"values":[{"name":"APIAutomation User","id":2567,"idType":2}],"name":"rg_2139","label":"Invoice Manager","userType":[2,1,3,4]},"rg_3410":{"values":[],"name":"rg_3410","label":"Invoice Supplier Owner","userType":[4]}}}
+noLineItems = {"name":"noLineItems","id":627,"values":1}
+
+[service levels]
+stakeHolders = {"name":"stakeHolders","values":{"rg_3117":{"values":[{"name":"TW_UG","id":1001,"idTypes":[2]}],"name":"rg_3117","label":"Supplier Stakeholder","userType":[4]},"rg_2071":{"values":[{"name":"APIAutomation User","id":2567,"type":2,"email":"rohillaakshay22@gmail.com"}],"name":"rg_2071","label":"Client Stakeholder","userType":[2,1,3,4]}}}

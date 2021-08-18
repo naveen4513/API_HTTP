@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Service Data Suite">
+
+    <test name="Service Data Pricing Template Bulk Upload Validation">
+        <classes>
+            <class name="com.sirionlabs.test.serviceData.TestServiceDataPricingTemplateBulkUpload"></class>
+        </classes>
+    </test>
+
+    <test name="Service Data Bulk Create Validation">
+        <classes>
+            <class name="com.sirionlabs.test.serviceData.TestServiceDataBulkCreate"></class>
+        </classes>
+    </test>
+
+    <test name="Service Data Update Validation">
+        <classes>
+            <class name="com.sirionlabs.test.serviceData.TestServiceDataUpdate"></class>
+        </classes>
+    </test>
+
+    <test name="Service Data Misc Test Cases">
+        <classes>
+            <class name="com.sirionlabs.test.serviceData.TestServiceDataMisc"></class>
+        </classes>
+    </test>
+
+
+
+    <test name="Tabs Testing Service Data">
+        <classes>
+            <class name="com.sirionlabs.test.serviceData.TestTabListingServiceData"></class>
+        </classes>
+    </test>
+
+    <test name = "Proforma">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.ProformaInvoice"></class>
+        </classes>
+    </test>
+
+</suite>

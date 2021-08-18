@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="WOR 525" data-provider-thread-count="3">
+
+    <test name="WOR 525 Create API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowRoleGroupFlowDown.TestWorkflowRoleGroupFlowDownCreateAPI"></class>
+        </classes>
+    </test>
+
+    <test name="WOR 525 End to End Flow">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestWOR525EndToEnd"></class>
+        </classes>
+    </test>
+
+</suite>

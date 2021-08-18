@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Column Sorting" thread-count="1">
+
+    <test name="Test Column Sorting">
+        <classes>
+            <class name="com.sirionlabs.test.listRenderer.TestEntityListingColumnSorting"></class>
+        </classes>
+    </test>
+
+<!--    <test name="Verify Report Renderer Column Sorting">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.reportRenderer.TestReportColumnsSorting"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Show Page Tabs Column Sorting">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.TestShowPageTabColumnSorting"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

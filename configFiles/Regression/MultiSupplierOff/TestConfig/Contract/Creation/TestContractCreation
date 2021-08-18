@@ -1,0 +1,43 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 2
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Contract/Creation
+extrafieldsconfigfilename = ExtraFieldsForContractCreation.cfg
+
+#TC-23683
+[flow 1]
+sourceentity = suppliers
+sourcename = QAVF SUPPLIER
+sourceid = 1898
+parententitytype = msa
+expectedresult = success
+
+#TC-23708
+[flow 2]
+sourceentity = contracts
+sourcename = API Automation Contract Other Test
+sourceid = 133784
+parententitytype = other
+parentsourceid = 133778
+expectedresult = success
+
+
+#TC-C63577: Created For Field - Multi Select Type.
+[flow 3]
+sourceentity = suppliers
+sourcename = QAVF SUPPLIER
+sourceid = 1898
+parententitytype = msa
+expectedresult = success

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Elastic Listing Regression Suite">
+
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+
+<!--        Check for different client also-->
+        <suite-file path="EntityCreationListing.xml"></suite-file>
+
+<!--        <suite-file path="EntityEdit.xml"></suite-file>-->
+
+    <!--    <test name="BulkCreate Feature">
+            <classes>
+                <class name="com.sirionlabs.test.bulkCreate.TestBulkCreate"></class>
+            </classes>
+        </test>
+
+        <test name = "Bulk Create Invoice Cases">
+            <classes>
+                <class name="com.sirionlabs.test.bulkCreate.TestBulkCreateV2"></class>
+            </classes>
+        </test>-->
+
+<!--        <test name="BulkEdit Test">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.TestBulkEdit"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="Bulk Action Feature Test">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.bulkAction.TestBulkAction"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+    </suite-files>
+</suite>

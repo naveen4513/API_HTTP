@@ -1,0 +1,161 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+dynamic filter id = 1000939
+dynamic filter name = 106456
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+#dynamicMetadata = dyn106456 -> {"name":"dyn106456","id":106456,"multiEntitySupport":false,"values":unqString}
+#dyn106456 = {"name":"dyn106456","id":106456,"multiEntitySupport":false,"values":unqString}
+
+
+[flow 1]
+name = {"name":"name","id":303,"values":"TestObligation512 TestObligation512 TestObligation512 123@#$%^ TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512"}
+
+[flow 2]
+name = {"name":"name","id":303,"values":"TestObligation512 TestObligation512 TestObligation512 123@#$%^ TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 TestObligation512 more"}
+
+[flow 3]
+description = {"name":"description","id":304,"values":""}
+
+[flow 4]
+description = {"name":"description","id":304,"values":"OB Description Test OB 1234%^&*56 Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test OB Description Test"}
+
+[flow 5]
+outputType = {"name":"outputType","id":307,"options":null,"values":{"name":"Deliverable","id":1004}}
+category = {"name":"category","id":308,"options":null,"values":{"name":"Certificates","id":1006}}
+
+[flow 6]
+pageReference = {"name":"pageReference","options":null,"values":[{"contractReference":{"extension":"docx","numberOfPagesToExclude":null,"metaDataCreated":true,"pageNumber":null,"viewerAvailable":true,"noOfPages":9,"startPageNumber":null,"name":"Software As A Service Agreement - Dell Technologies.docx","contractId":1039,"imageCreated":true,"id":1027,"fileId":1027},"coordinates":null,"clause":"Parties","pageNumber":1}]}
+
+[flow 7]
+deliveryCountries = {"name":"deliveryCountries","id":326,"values":[],"options":null}
+
+[flow 8]
+frequency = {"name":"frequency","id":316,"values":{"name":"One-Time","id":1009}}
+frequencyType = {"name":"frequencyType","id":360}
+
+[flow 9]
+startDate = {"name":"startDate","id":318,"values":"06-04-2019 00:00:00"}
+expDate = {"name":"expDate","id":319,"values":"06-01-2019 00:00:00"}
+
+[flow 11]
+name = {"name":"name","id":303,"values":"Test Obligation Child Creation through schedular"}
+timeZone = {"name":"timeZone","id":325,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"},"multiEntitySupport":false}
+frequencyType = {"name":"frequencyType","id":360,"values":{"name":"Daily","id":1002},"multiEntitySupport":false}
+frequency = {"name":"frequency","id":316,"values":{"name":"daily","id":1016},"multiEntitySupport":false}
+weekType = {"name":"weekType","id":317,"values":{"name":"Seven Day","id":3},"multiEntitySupport":false}
+excludeFromHoliday = {"name":"excludeFromHoliday","id":12193,"values":false,"multiEntitySupport":false}
+excludeWeekends = {"name":"excludeWeekends","id":12377,"values":false,"multiEntitySupport":false}
+includeExpDate = {"name":"includeExpDate","id":321,"values":true,"multiEntitySupport":false}
+includeStartDate = {"name":"includeStartDate","id":320,"values":true,"multiEntitySupport":false}
+startDate = Date -> MM-dd-yyyy hh:mm:ss -> -2
+expDate = Date -> MM-dd-yyyy hh:mm:ss -> +2
+patternDate = Date -> MM-dd-yyyy -> -2
+effectiveDate = Date -> MM-dd-yyyy hh:mm:ss -> -2
+
+[flow 11 show page]
+functions=Human Resources
+globalRegions=EMEA
+globalCountries=Bulgaria,Netherlands,Rest of EMEA,Turkey,Norway,Ukraine,United Arab Emirates,Ireland,United Kingdom,Israel,Italy,Poland,Portugal,Croatia,Czech Republic,Romania,Denmark,Russia,Lebanon,Egypt,Lithuania,Luxembourg,Austria,Finland,France,Slovenia,Bahrain,South Africa,Belarus,Spain,Belgium,Germany,Bosnia and Herzegovina,Greece,Sweden,Switzerland
+includeExpDate=true
+includeStartDate=true
+supplierAccess=true
+supplier=Dell Technologies
+timeZone=Asia/Kolkata (GMT +05:30)
+contract=bulk edit contracts flow 1
+clientCurrency=Indian Rupee (INR)
+startDate=Date -> MM-dd-yyyy -> -2
+dueDate=Date -> MM-dd-yyyy -> 0
+expDate=Date -> MM-dd-yyyy -> +2
+status=Active
+currency=United States Dollar (USD)
+services=End-User Computing,Projects,Service Desk
+frequency=daily
+weekType=Seven Day
+name=Test Obligation Child Creation through schedular
+tier=Tier - 3
+[flow 12]
+name = {"name":"name","id":303,"values":"Test Obligation Child Creation through schedular"}
+timeZone = {"name":"timeZone","id":325,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"},"multiEntitySupport":false}
+triggered = {"name":"triggered","id":315,"values":true,"multiEntitySupport":false}
+
+[flow 11 listing page]
+functions=Human Resources
+globalRegions=EMEA
+globalCountries=Bulgaria,Netherlands,Rest of EMEA,Turkey,Norway,Ukraine,United Arab Emirates,Ireland,United Kingdom,Israel,Italy,Poland,Portugal,Croatia,Czech Republic,Romania,Denmark,Russia,Lebanon,Egypt,Lithuania,Luxembourg,Austria,Finland,France,Slovenia,Bahrain,South Africa,Belarus,Spain,Belgium,Germany,Bosnia and Herzegovina,Greece,Sweden,Switzerland
+tiername=Tier - 3
+datecreated=MM-dd-yyyy -> 0
+currency=United States Dollar (USD)
+createdby=Anay User
+name=Test Obligation Child Creation through schedular
+expDate=Date -> MM-dd-yyyy -> +2
+id=
+status=Newly Created
+services=End-User Computing,Projects,Service Desk
+
+
+
+[flow 13]
+name = {"name":"name","id":303,"values":"Test WeekType"}
+timeZone = {"name":"timeZone","id":325,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"},"multiEntitySupport":false}
+frequencyType = {"name":"frequencyType","id":360,"values":{"name":"Daily","id":1002},"multiEntitySupport":false}
+frequency = {"name":"frequency","id":316,"values":{"name":"daily","id":1016},"multiEntitySupport":false}
+weekType = {"name":"weekType","id":317,"values":{"name":"Five Day","id":1},"multiEntitySupport":false}
+excludeFromHoliday = {"name":"excludeFromHoliday","id":12193,"values":false,"multiEntitySupport":false}
+excludeWeekends = {"name":"excludeWeekends","id":12377,"values":false,"multiEntitySupport":false}
+includeExpDate = {"name":"includeExpDate","id":321,"values":true,"multiEntitySupport":false}
+includeStartDate = {"name":"includeStartDate","id":320,"values":true,"multiEntitySupport":false}
+startDate = {"name":"startDate","id":318,"values":"04-11-2020 00:00:00","displayValues":"Apr-11-2020","multiEntitySupport":false}
+expDate = {"name":"expDate","id":319,"values":"04-14-2020 00:00:00","displayValues":"Apr-14-2020","multiEntitySupport":false}
+patternDate = {"name":"patternDate","id":358,"values":"04-11-2020","displayValues":"Apr-11-2020","multiEntitySupport":false}
+effectiveDate = {"name":"effectiveDate","id":359,"values":"04-11-2020 00:00:00","displayValues":"Apr-11-2020","multiEntitySupport":false}
+
+
+[flow 14]
+name = {"name":"name","id":303,"values":"Test Frequency"}
+timeZone = {"name":"timeZone","id":325,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"},"multiEntitySupport":false}
+frequencyType = {"name": "frequencyType", "id": 360, "values": {"name": "Monthly", "id": 1005}, "multiEntitySupport": false}
+frequency = {"name": "frequency", "id": 316, "values": {"name": "Monthly (Date)", "id": 1003}, "multiEntitySupport": false}
+weekType = {"name":"weekType","id":317,"values":{"name":"Seven Day","id":3},"multiEntitySupport":false}
+excludeFromHoliday = {"name":"excludeFromHoliday","id":12193,"values":false,"multiEntitySupport":false}
+excludeWeekends = {"name":"excludeWeekends","id":12377,"values":false,"multiEntitySupport":false}
+includeExpDate = {"name":"includeExpDate","id":321,"values":true,"multiEntitySupport":false}
+includeStartDate = {"name":"includeStartDate","id":320,"values":true,"multiEntitySupport":false}
+startDate = {"name":"startDate","id":318,"values":"04-01-2020 00:00:00","displayValues":"Apr-01-2020","multiEntitySupport":false}
+expDate = {"name":"expDate","id":319,"values":"08-01-2020 00:00:00","displayValues":"Apr-01-2021","multiEntitySupport":false}
+patternDate = {"name":"patternDate","id":358,"values":"04-04-2020","displayValues":"Apr-04-2020","multiEntitySupport":false}
+effectiveDate = {"name":"effectiveDate","id":359,"values":"04-01-2020 00:00:00","displayValues":"Apr-01-2020","multiEntitySupport":false}
+
+
+[duplicate_cob]
+name = {"name":"name","id":303,"values":"Test Frequency"}
+timeZone = {"name":"timeZone","id":325,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"},"multiEntitySupport":false}
+frequencyType = {"name": "frequencyType", "id": 360, "values": {"name": "Monthly", "id": 1005}, "multiEntitySupport": false}
+frequency = {"name": "frequency", "id": 316, "values": {"name": "Monthly (Date)", "id": 1003}, "multiEntitySupport": false}
+weekType = {"name":"weekType","id":317,"values":{"name":"Five Day","id":1},"multiEntitySupport":false}
+excludeFromHoliday = {"name":"excludeFromHoliday","id":12193,"values":false,"multiEntitySupport":false}
+excludeWeekends = {"name":"excludeWeekends","id":12377,"values":false,"multiEntitySupport":false}
+includeExpDate = {"name":"includeExpDate","id":321,"values":true,"multiEntitySupport":false}
+includeStartDate = {"name":"includeStartDate","id":320,"values":true,"multiEntitySupport":false}
+startDate = {"name":"startDate","id":318,"values":"01-01-2020","displayValues":"Jan-01-2020","multiEntitySupport":false}
+expDate = {"name":"expDate","id":319,"values":"10-31-2020","displayValues":"Oct-31-2020","multiEntitySupport":false}
+patternDate = {"name":"patternDate","id":358,"values":"01-01-2020","displayValues":"Jan-01-2020","multiEntitySupport":false}
+effectiveDate = {"name":"effectiveDate","id":359,"values":"01-01-2020","displayValues":"Jan-01-2020","multiEntitySupport":false}

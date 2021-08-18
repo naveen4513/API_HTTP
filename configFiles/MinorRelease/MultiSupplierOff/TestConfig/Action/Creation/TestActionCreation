@@ -1,0 +1,74 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Action/Creation
+extrafieldsconfigfilename = ExtraFieldsForActionCreation.cfg
+
+#TC-C8347: Create Action from Suppliers
+[flow 1]
+sourceentity = suppliers
+sourcename = sarthak SUP1
+sourceid = 1906
+expectedresult = success
+
+#TC-C8350: Create Action from Contract of MSA/PSA Type.
+[flow 3]
+sourceentity = contracts
+sourcename = Test Contract Creation
+sourceid = 133797
+expectedresult = success
+
+#TC-C8358: Create Action from Service Level
+[flow 9]
+sourceentity = service levels
+sourcename = rc2.13
+sourceid = 7490
+expectedresult = success
+
+#TC-C8360: Create Action from Invoices
+[flow 11]
+sourceentity = invoices
+sourcename = sdfgfhj
+sourceid = 10127
+expectedresult = success
+
+#TC-C8362: Create Action from Issue
+[flow 13]
+sourceentity = issues
+sourcename = Issues from CDR
+sourceid = 1916
+expectedresult = success
+
+#TC-C9029: Create Action from Interpretation
+[flow 14]
+sourceentity = interpretations
+sourcename = Payment Terms
+sourceid = 1121
+expectedresult = success
+
+#TC-C8297: Create Action from GBM
+[flow 15]
+sourceentity = governance body meetings
+sourcename = Regression 5 feb
+sourceid = 25053
+expectedresult = success
+
+#Create Action from CDR
+[flow 17]
+sourceentity = contract draft request
+sourcename = Regression CDR
+sourceid = 2756
+supplierid = 1184
+expectedresult = success

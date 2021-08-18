@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Distribution List" thread-count="10">
+
+    <test name="Distribution List APIs Test">
+        <classes>
+             <!--<class name="com.sirionlabs.test.distributionList.TestDistributionLIst"></class>-->
+            <class name="com.sirionlabs.test.common.ActionIssuesFromCDRAndWeekType"></class>
+        </classes>
+    </test>
+</suite>

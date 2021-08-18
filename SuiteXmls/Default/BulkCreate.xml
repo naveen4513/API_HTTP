@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bulk Create Suite">
+
+    <test name="BulkCreate Feature">
+        <classes>
+            <class name="com.sirionlabs.test.bulkCreate.TestBulkCreate"></class>
+        </classes>
+    </test>
+
+    <test name="BulkCreate End User Download Template">
+        <classes>
+            <class name="com.sirionlabs.test.bulkCreate.TestBulkCreateEndUserDownloadTemplate"></class>
+        </classes>
+    </test>
+
+    <test name="BulkCreate End User Upload Template">
+        <classes>
+            <class name="com.sirionlabs.test.bulkCreate.TestBulkCreateEndUserUploadTemplate"></class>
+        </classes>
+    </test>
+
+    <test name="BulkCreate Field Provisioning">
+        <classes>
+            <class name="com.sirionlabs.test.bulkCreate.TestBulkCreateFieldProvisioning"></class>
+        </classes>
+    </test>
+
+</suite>

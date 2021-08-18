@@ -1,0 +1,114 @@
+#All keys must be in lower case only.
+
+#ExpectedResult: The final Invoice Line Item Validation Status is to be mentioned here.
+basecontractid = 601715
+invoicestartdate = 03-01-2018
+invoiceenddate = 03-31-2018
+adjustment lineitem type id = 1314
+list columns to validate = invoiceamount,invoicenumber,name,invoicedate,currency,ponumber,paymentterm
+
+#system user = Jyoti User
+audit log system user = Ajay Admin
+audit log requested by user = Jyoti User
+
+audit log action name after validation = Validated 123
+
+adj line item type = 1314
+
+test_sdheirarcyflows = vol pricing sd heirarchy flow
+#fixed fee flow 1,arc flow sd heirarchy flow,vol pricing sd heirarchy flow
+
+change request value = (CR01046) PLEASE DO NOT USER THIS CHANGE REQUEST
+change request id =1768
+cdr value = (CDR01160) Used In Automation Please Do not Delete
+cdr id =2905
+
+#Pricing Template Details
+pricingtemplatefilepath = src/test/resources/TestConfig/Invoice
+arc sheet name = ARC RRC
+
+
+[vol pricing sd heirarchy flow]
+contractsectionname = vol pricing sd heirarchy flow
+servicedatasectionname = vol pricing sd heirarchy flow
+invoicesectionname = vol pricing sd heirarchy flow
+invoicelineitemsectionname =vol pricing sd heirarchy flow
+
+uploadpricing = false
+servicedatatype = arc
+type = Volume Pricing
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,Volume Pricing
+finalconsumptionvalues = 101
+
+expectedresult = Amount Discrepancy
+
+rate card to disp = true
+exp num of rows = 0
+rate card row 0 = amount->20,charge_type->ARC,line_item_amount->20,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4,pricingentityname->,currency_conversion_rate->1,rate->5,service_data_currency->INR
+rate card row 1 = amount->200,charge_type->ARC,line_item_amount->200,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1,rate->10,service_data_currency->INR
+rate card row 2 = amount->15,charge_type->ARC,line_item_amount->15,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1,pricingentityname->,currency_conversion_rate->1,rate->15,service_data_currency->INR
+
+audit log values = System Rate->5,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->101,Discrepancy Quantity->0,System Amount->505,Discrepancy Amount->-795,System Total->605,Discrepancy Total->505,System Variance->25,Discrepancy Rate->-5,Discrepancy Variance->22,System Base Volume->101,Discrepancy Base Volume->0,System Tax->100,VALIDATION STATUS->Amount Discrepancy
+child 1 service year = 2019
+child 2 service year = 2020
+start date 1=01-01-2019
+end date 1=12-31-2019
+start date 2=01-01-2020
+end date 2=12-31-2020
+exp amt sd cur child 1 = 1010
+exp amt sd cur child 2 = 4200
+
+[arc flow sd heirarchy flow]
+contractsectionname = arc flow sd heirarchy flow
+servicedatasectionname = arc flow sd heirarchy flow
+invoicesectionname = arc flow sd heirarchy flow
+invoicelineitemsectionname = arc flow sd heirarchy flow
+
+uploadpricing = true
+servicedatatype = arc
+type = ARC
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+expectedresult = No Discrepancy
+
+rate card to disp = true
+exp num of rows = 2
+rate card row 0 = amount->100,charge_type->Charges,line_item_amount->500,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->,pricingentityid->,volume->10,pricingentityname->,currency_conversion_rate->5,rate->10,service_data_currency->INR
+rate card row 1 = amount->60,charge_type->ARC,line_item_amount->300,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->100 - 150,pricingentityid->,volume->5,pricingentityname->,currency_conversion_rate->5,rate->12,service_data_currency->INR
+
+audit log values = System Rate->1.52,System Conversion Rate->5,Discrepancy Conversion Rate->4,System Quantity->105,Discrepancy Quantity->0,System Amount->800,Discrepancy Amount->0,System Total->800,Discrepancy Total->0,System Variance->95,Discrepancy Rate->-8.48,Discrepancy Variance->92,System Base Volume->10,Discrepancy Base Volume->0,VALIDATION STATUS->No Discrepancy
+child 1 service year = 2019
+child 2 service year = 2020
+start date 1=01-01-2019
+end date 1=12-31-2019
+start date 2=01-01-2020
+end date 2=12-31-2020

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Contract Suite" thread-count="1">
+
+    <test name="Contract Update Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestContractUpdate"></class>
+        </classes>
+    </test>
+
+    <test name="Credit EarnBack Update Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestCreditEarnBackUpdate"></class>
+        </classes>
+    </test>
+
+    <test name="Application Group Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestApplicationGroup"></class>
+        </classes>
+    </test>
+
+</suite>

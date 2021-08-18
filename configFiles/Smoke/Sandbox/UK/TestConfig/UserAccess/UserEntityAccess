@@ -1,0 +1,133 @@
+supplier user 1 = automation_supplier_user_001
+supplier user 1 password = admin123
+supplier user 2 = automation_supplier_user_002
+supplier user 2 password = admin123
+
+vendor id for user 1 = 1209
+vendor id for user 2 = 1210
+
+vendor name for user 1 = Please Do Not Use Used in some Automation Scenario Supplier User1 (RL01026)
+vendor name for user 2 = Please Do Not Use Used in some Automation Scenario Supplier User2 (RL01027)
+
+entities to test = contracts,obligations,child obligations,invoices,invoice line item,service data,purchase orders,consumptions,actions,disputes
+
+entities to check for vendor id = suppliers,vendors
+
+[consumptions]
+payload ={"filterMap":{"entityTypeId":176,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14482,"columnQueryName":"bulkcheckbox"},{"columnId":14430,"columnQueryName":"id"},{"columnId":14433,"columnQueryName":"supplier"}]}
+supplier column id = 14433
+id column id = 14430
+report ids to test = 385
+report payload 385= {"filterMap":{"entityTypeId":176,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}},"selectedColumns":[{"columnId":15085,"columnQueryName":"id"},{"columnId":15088,"columnQueryName":"supplier"}]}
+id column id report 385= 15085
+supplier column id report 385= 15088
+
+[purchase orders]
+payload = {"filterMap":{"entityTypeId":181,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":12538,"columnQueryName":"id"},{"columnId":12540,"columnQueryName":"relation"}]}
+supplier column id = 12540
+id column id = 12538
+
+[service data]
+payload = {"filterMap":{"entityTypeId":64,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14483,"columnQueryName":"bulkcheckbox"},{"columnId":14219,"columnQueryName":"id"},{"columnId":14222,"columnQueryName":"supplier"}]}
+supplier column id = 14222
+id column id = 14219
+report ids to test = 355
+report payload 355= {"filterMap":{"entityTypeId":64,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}},"selectedColumns":[{"columnId":14238,"columnQueryName":"id"},{"columnId":14241,"columnQueryName":"supplier"}]}
+id column id report 355= 14238
+supplier column id report 355= 14241
+
+
+[invoices]
+payload = {"filterMap":{"entityTypeId":67,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14556,"columnQueryName":"bulkcheckbox"},{"columnId":203,"columnQueryName":"id"},{"columnId":208,"columnQueryName":"relation"}]}
+supplier column id = 208
+id column id = 203
+report ids to test = 51
+report payload 51= {"filterMap":{"entityTypeId":67,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}},"selectedColumns":[{"columnId":3061,"columnQueryName":"id"},{"columnId":3066,"columnQueryName":"relationname"}]}
+id column id report 51= 3061
+supplier column id report 51= 3066
+
+[invoice line item]
+payload = {"filterMap":{"entityTypeId":165,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":13903,"columnQueryName":"id"},{"columnId":13908,"columnQueryName":"supplier"}]}
+supplier column id = 13908
+id column id = 13903
+report ids to test = 359
+report payload 359= {"filterMap":{"entityTypeId":165,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}},"selectedColumns":[{"columnId":13948,"columnQueryName":"id"},{"columnId":13953,"columnQueryName":"supplier"}]}
+id column id report 359= 13948
+supplier column id report 359= 13953
+
+[interpretations]
+payload = {"filterMap":{"entityTypeId":16,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":237,"columnQueryName":"id"},{"columnId":240,"columnQueryName":"suppliername"}]}
+supplier column id = 240
+id column id = 237
+
+[contracts]
+payload = {"filterMap":{"entityTypeId":61,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":11751,"columnQueryName":"bulkcheckbox"},{"columnId":17,"columnQueryName":"id"},{"columnId":19,"columnQueryName":"relationname"}]}
+supplier column id = 19
+id column id = 17
+
+[child obligations]
+payload = {"filterMap":{"entityTypeId":13,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":13339,"columnQueryName":"bulkcheckbox"},{"columnId":82,"columnQueryName":"id"},{"columnId":84,"columnQueryName":"relation"}]}
+supplier column id = 84
+id column id = 82
+report ids to test = 13
+report payload 13= {"filterMap":{"entityTypeId":13,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}},"selectedColumns":[{"columnId":1000,"columnQueryName":"id"},{"columnId":1002,"columnQueryName":"relation"}]}
+id column id report 13= 1000
+supplier column id report 13= 1002
+
+[suppliers]
+payload = {"filterMap":{"entityTypeId":1,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14625,"columnQueryName":"bulkcheckbox"},{"columnId":39,"columnQueryName":"id"},{"columnId":11613,"columnQueryName":"vendorhierarchy"}]}
+vendor column id = 11613
+id column id = 39
+
+[vendors]
+payload = {"filterMap":{"entityTypeId":3,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":11450,"columnQueryName":"id"}]}
+vendor column id = 11450
+id column id = 11450
+
+[obligations]
+payload = {"filterMap":{"entityTypeId":12,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":276,"columnQueryName":"bulkcheckbox"},{"columnId":56,"columnQueryName":"id"},{"columnId":58,"columnQueryName":"relation"}]}
+id column id = 56
+supplier column id = 58
+report ids to test = 153
+report payload 153= {"filterMap":{"entityTypeId":12,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}},"selectedColumns":[{"columnId":10751,"columnQueryName":"id"},{"columnId":10754,"columnQueryName":"relationname"}]}
+id column id report 153= 10751
+supplier column id report 153= 10754
+
+[service levels]
+payload = {"filterMap":{"entityTypeId":14,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":277,"columnQueryName":"bulkcheckbox"},{"columnId":110,"columnQueryName":"id"},{"columnId":113,"columnQueryName":"suppliername"}]}
+id column id = 110
+supplier column id = 113
+
+[child service levels]
+payload = {"filterMap":{"entityTypeId":15,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":12148,"columnQueryName":"bulkcheckbox"},{"columnId":12145,"columnQueryName":"id"},{"columnId":12147,"columnQueryName":"suppliername"}]}
+id column id = 12145
+supplier column id = 12147
+
+[issues]
+payload = {"filterMap":{"entityTypeId":17,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14618,"columnQueryName":"bulkcheckbox"},{"columnId":155,"columnQueryName":"id"},{"columnId":157,"columnQueryName":"relation"}]}
+id column id = 155
+supplier column id = 157
+
+[actions]
+payload = {"filterMap":{"entityTypeId":18,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14619,"columnQueryName":"bulkcheckbox"},{"columnId":178,"columnQueryName":"id"},{"columnId":180,"columnQueryName":"relation"}]}
+id column id = 178
+supplier column id = 180
+
+[disputes]
+payload = {"filterMap":{"entityTypeId":28,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":14515,"columnQueryName":"bulkcheckbox"},{"columnId":13170,"columnQueryName":"id"},{"columnId":13172,"columnQueryName":"relation"}]}
+id column id = 13170
+supplier column id = 13172
+report ids to test = 315
+report payload 315= {"filterMap":{"entityTypeId":28,"offset":0,"size":20,"orderByColumnName":"id","orderDirection":"desc","filterJson":{}},"selectedColumns":[{"columnId":13328,"columnQueryName":"id"},{"columnId":13308,"columnQueryName":"relation"}]}
+id column id report 315= 13328
+supplier column id report 315= 13308
+
+[change requests]
+payload = {"filterMap":{"entityTypeId":63,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":1,"columnQueryName":"id"},{"columnId":5,"columnQueryName":"supplier"}]}
+id column id = 1
+supplier column id = 5
+
+[governance body]
+payload = {"filterMap":{"entityTypeId":86,"offset":0,"size":100,"orderByColumnName":"id","orderDirection":"desc nulls last","filterJson":{}},"selectedColumns":[{"columnId":17394,"columnQueryName":"bulkcheckbox"},{"columnId":11229,"columnQueryName":"id"},{"columnId":11233,"columnQueryName":"suppliers"}]}
+id column id = 11229
+supplier column id = 11233

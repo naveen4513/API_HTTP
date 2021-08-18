@@ -1,0 +1,41 @@
+@SUMIF(state.map.fixed, 1, and(eq(doc['exception'], false), eq(src['Valid'], 'No')),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(eq(doc['exception'], false), neq(src['Valid'], 'Yes')));
+
+@SUMIF(state.map.fixed, 1, and(Eq(doc['exception'], false), Eq(src['Valid'], 'No')),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(Eq(doc['exception'], false), Neq(src['Valid'], 'Yes')));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No')),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes')));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),lte(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),lte(doc['Number'], 5)));
+
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),lte(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),lte(doc['Number'], 5)));
+
+
+
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),Lte(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),Lte(doc['Number'], 5)));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),LTE(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),LTE(doc['Number'], 5)));
+
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),lt(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),lt(doc['Number'], 5)));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),Lt(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),Lt(doc['Number'], 5)));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),LT(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),LT(doc['Number'], 5)));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),gt(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),gt(doc['Number'], 5)));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),Gt(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),Gt(doc['Number'], 5)));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),GT(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),GT(doc['Number'], 5)));
+
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),gte(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),gt(doc['Number'], 5)));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),Gte(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),Gte(doc['Number'], 5)));
+
+@SUMIF(state.map.fixed, 1, and(NEQ(doc['exception'], false), EQ(src['Valid'], 'No'),GTE(doc['Number'], 5)),doc['exception'], false) );@SUMIF(state.map.notfixed, 1, and(EQ(doc['exception'], false), NEQ(src['Valid'], 'Yes'),GTE(doc['Number'], 5)));
+
+
+
+

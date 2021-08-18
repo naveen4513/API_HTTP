@@ -1,0 +1,25 @@
+#Section is Entity Name
+#Key is accessRestriction area
+#Value is permission (true) allowed or (false) restricted
+
+
+entitysectionsplitter = ,
+testforallentities = false
+entitytotest =  actions
+allentitytotest = vendors,suppliers,obligations,child obligations,service levels,child service levels,interpretations,issues,actions,disputes,contracts,change requests,invoices,work order requests,governance body,governance body meetings,contract draft request,purchase orders
+
+
+[request_payload]
+offset = 0
+size = 10
+
+
+[actions]
+entityid = 1912
+archive = true
+onhold = true
+clone = true
+delete = false
+
+
+

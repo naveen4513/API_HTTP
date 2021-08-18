@@ -1,0 +1,38 @@
+#All section names and keys must be in lower case characters only
+
+#DeleteEntity: Whether to delete the record or not.
+deleteentity = true
+
+#Show Page Sub Tabs: This section is to test Show Page Sub-Tabs like General, Communication, Audit Log for Purchase Order.
+[show page sub tabs]
+maxrecordstovalidate = 5
+
+
+#Communication Tab: This section contains properties for Show Page Communication Tab Test.
+[communication tab]
+expectedcommentvalue = purchase order show page comments test
+downloadfilepath = src/test/resources/TestConfig/PurchaseOrder/Show
+downloadfilename = DocumentFile.txt
+tablistdatasize = 5
+
+
+#Audit Log Tab Requested By: This section contains extraFields properties for Audit Log Tab tests.
+[audit log tab requested by]
+comment = {"requestedBy":{"name":"requestedBy","id":12244,"values":{"name":"Anay User","id":1044,"idType":2}},"comments":{"name":"comments","id":86,"values":""},"draft":{"name":"draft"},"actualDate":{"name":"actualDate","id":12243},"privateCommunication":{"name":"privateCommunication","id":12242,"values":false},"changeRequest":{"name":"changeRequest","id":12246},"workOrderRequest":{"name":"workOrderRequest","id":12247},"commentDocuments":{"values":[]}}
+
+#Audit Log Pagination Section
+[audit log pagination]
+listdatasize = 1
+
+#Document File Upload: This section contains properties to Upload Document File.
+[document file upload]
+uploadfilepath = src/test/resources/TestConfig/PurchaseOrder/Show
+uploadfilename = UploadDocumentFile.txt
+
+
+#PO Creation 1: This section contains the config file related information.
+[po creation 1]
+configfilepath = src/test/resources/Helper/EntityCreation/PurchaseOrder
+configfilename = purchaseOrder.cfg
+extrafieldsconfigfilename = purchaseOrderExtraFields.cfg
+sectionname = purchase order show page communication tab test auto office

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SLIF Test Cases">
+
+
+        <test name="SLIF - Email Validations">-->
+             <classes>
+                 <class name="com.sirionlabs.test.SL_Stories.slif.test_After_Scheduler_UploadRawData"></class>
+             </classes>
+        </test>
+
+        <test name="SLIF - Service Now Source and Destination Creation">
+            <classes>
+                <class name="com.sirionlabs.test.SL_Stories.slif.Test_SLIF_Schemas"></class>
+            </classes>
+        </test>
+
+            <test name="SLIF - Service Now BP Destination">
+            <classes>
+                <class name="com.sirionlabs.test.SL_Stories.slif.test_BP_SLIF"></class>
+            </classes>
+        </test>
+
+<!--    <test name="SLIF - Cherwell Source and Destination">-->
+<!--                <classes>-->
+<!--                    <class name="com.sirionlabs.test.SL_Stories.slif.test_Cherwell_SLIF"></class>-->
+<!--                </classes>-->
+<!--            </test>-->
+
+        <test name="SLIF - Source and Destination Error Scenarios">
+            <classes>
+                <class name="com.sirionlabs.test.SL_Stories.slif.test_Message_Scenarios"></class>
+            </classes>
+        </test>
+
+            <test name="SLIF - Source Validations">
+            <classes>
+                <class name="com.sirionlabs.test.SL_Stories.slif.Test_SLIF_SourceValidations"></class>
+            </classes>
+            </test>
+
+            <test name="SLIF - Destination Validations">
+            <classes>
+               <class name="com.sirionlabs.test.SL_Stories.slif.Test_DestinationValidations"></class>
+            </classes>
+        </test>
+
+</suite>
+
+

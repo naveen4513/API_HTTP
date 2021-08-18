@@ -1,0 +1,138 @@
+[envinfo]
+domain = http://192.168.2.231:8080/
+clientid = 1020
+jwtsecretkey = secret
+jwtissuer = sirion
+jwtexpirytime = 15
+
+[flow1]
+serviceid = 1002
+status = success
+statuscode = 200
+responsestatus = true
+authorization = yes
+
+[flow2]
+serviceid = 1004
+status = success
+statuscode = 200
+responsestatus = true
+authorization = yes
+
+[flow3]
+serviceid = 1003
+status = success
+statuscode = 200
+responsestatus = true
+authorization = yes
+
+[flow4]
+serviceid = 1005
+status = success
+statuscode = 200
+responsestatus = true
+authorization = yes
+
+[negativeflow1]
+casetype = removekeyfrombody
+casedesc = withoutclientid
+statusforrequest = success
+clientid = 1020
+serviceid = 1002
+keytoremove = clientId
+valuetoremove = 1020
+status = false
+statuscode = 400
+errormessage = ["invalid request, clientid is null"]
+authorization = yes
+
+[negativeflow2]
+casetype = removekeyfrombody
+casedesc = withoutserviceid
+statusforrequest = success
+clientid = 1020
+serviceid = 1002
+keytoremove = serviceId
+valuetoremove = 1002
+status = false
+statuscode = 400
+errormessage = ["invalid request, serviceid is null"]
+authorization = yes
+
+[negativeflow3]
+casetype = removebody
+casedesc = withoutbody
+statusforrequest = success
+clientid = 1020
+serviceid = 1002
+status = false
+statuscode = 400
+errormessage = ["invalid request. could not convert request parameters."]
+authorization = yes
+
+[negativeflow4]
+casetype = invalidvalueofkey
+casedesc = wrongclientid
+clientid = 999999
+serviceid = 1002
+statusforrequest = success
+status = false
+statuscode = 200
+errormessage = ["invalid callback request"]
+authorization = yes
+
+
+[negativeflow5]
+casetype = invalidvalueofkey
+casedesc = wrongserviceid
+clientid = 1020
+serviceid = 999999
+statusforrequest = success
+status = false
+statuscode = 200
+errormessage = ["invalid callback request"]
+authorization = yes
+
+[negativeflow6]
+casetype = invalidvalueofkey
+casedesc = wrongstatus
+clientid = 1020
+serviceid = 1002
+statusforrequest = randomstatus
+status = false
+statuscode = 400
+errormessage = ["invalid request. could not convert request parameters."]
+authorization = yes
+
+[negativeflow7]
+casetype = invalidvalueofkey
+casedesc = stringclientid
+clientid = randomstring
+serviceid = 1002
+statusforrequest = success
+status = false
+statuscode = 400
+errormessage = ["invalid request. could not convert request parameters."]
+authorization = yes
+
+[negativeflow8]
+casetype = invalidvalueofkey
+casedesc = stringserviceid
+clientid = 1020
+serviceid = randomstring
+statusforrequest = success
+status = false
+statuscode = 400
+errormessage = ["invalid request. could not convert request parameters."]
+authorization = yes
+
+[negativeflow9]
+casetype = invalidvalueofkey
+casedesc = stringwrongstatus
+clientid = 1020
+serviceid = 1002
+statusforrequest = falasetrue
+status = false
+statuscode = 400
+errormessage = ["invalid request. could not convert request parameters."]
+authorization = yes

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Workflow Rule Template APIs Test" data-provider-thread-count="3">
+
+    <test name="Workflow Rule Template Create Form API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowRuleTemplate.TestWorkflowRuleTemplateCreateFormAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Rule Template Create API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowRuleTemplate.TestWorkflowRuleTemplateCreateAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Rule Template Show API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowRuleTemplate.TestWorkflowRuleTemplateShowAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Rule Template Edit Get API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowRuleTemplate.TestWorkflowRuleTemplateEditGetAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Rule Template Edit Post API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowRuleTemplate.TestWorkflowRuleTemplateEditPostAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Rule Template End to End Flow">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestWorkflowRuleTemplateEndToEnd"></class>
+        </classes>
+    </test>
+
+</suite>

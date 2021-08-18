@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Workflow Library APIs Regression">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_qavfrc"/>
+
+    <suite-files>
+        <!-- Login and Configuration -->
+        <suite-file path="SuiteXmls/Default/Configuration.xml"></suite-file>
+        <suite-file path="SuiteXmls/Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <!-- Regression Test Files -->
+        <suite-file path="FetchWorkflowDataAPI.xml"></suite-file>
+        <suite-file path="CreateWorkflowAPI.xml"></suite-file>
+        <suite-file path="DeleteWorkflowAPI.xml"></suite-file>
+        <suite-file path="UpdateWorkflowAPI.xml"></suite-file>
+
+    </suite-files>
+</suite>

@@ -1,0 +1,294 @@
+#Section is Entity Name
+#Key is accessRestriction area
+#Value is permission (true) allowed or (false) restricted
+# -> is the parser for defining actions depe
+# validactions is when we need to create performance testing
+#  validworkflowaction is the part of smoke that we need to do on any given entity
+#  validnonworkflowaction is the part of smoke that we need to do on any given entity
+# this is default configuration : entitytotest =  contracts,suppliers,obligations,service levels,actions,issues,disputes,change requests,interpretations,work order requests,contract draft request,vendors,purchase orders,invoices,governance body
+
+
+
+entitysectionsplitter = ,
+testforallentities = false
+entitytotest = work order requests,contracts,governance body
+allentitytotest = obligations,service levels,actions,disputes,change requests,work order requests,purchase orders,invoices,governance body
+pagesize = 10
+maxentitiescount = 120000
+parser = ,
+
+[actions]
+validactions = archive,onhold,submit,reject,resubmit,approve
+validnonworkflowaction = onhold
+archive = independent
+onhold =  independent
+submit = independent
+reject = submit
+resubmit = submit->reject
+approve = submit->reject->resubmit
+
+
+[vendors]
+validactions = edit,print
+
+[suppliers]
+validactions = archive,onhold,activate
+validworkflowaction = activate
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+activate = independent
+
+
+[contracts]
+validactions = archive,onhold,sendforpeerreview,peerreviewcomplete,sendforinternalreview,internalreviewcomplete,sendforclientreview,reject,approve,publish,inactivate
+validworkflowaction = sendforpeerreview
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+sendforpeerreview = independent
+peerreviewcomplete = sendforpeerreview
+sendforinternalreview = sendforpeerreview->peerreviewcomplete
+internalreviewcomplete = sendforpeerreview->peerreviewcomplete->sendforinternalreview
+sendforclientreview = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete
+reject = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview
+approve = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview
+publish = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview->approve
+inactivate = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview->approve->publish
+
+
+
+[consumptions]
+validactions = archive,onhold
+archive = independent
+onhold = independent
+
+
+
+
+[obligations]
+validactions = archive,onhold,sendforownerreview,reviewcomplete,reject,approve,activate,inactivate
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+sendforownerreview = independent
+reviewcomplete = independent
+reject = sendforownerreview->reviewcomplete
+approve = sendforownerreview->reviewcomplete
+activate = sendforownerreview->reviewcomplete->approve
+inactivate = sendforownerreview->reviewcomplete->approve->activate
+
+[child obligations]
+validactions = archive,onhold,submit,reject,resubmit,approve
+validworkflowaction = submit
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+submit = independent
+reject = submit
+resubmit = submit->reject
+approve = submit
+
+
+[service levels]
+validactions = archive,onhold,sendforpeerreview,peerreviewcomplete,sendforinternalreview,internalreviewcomplete,sendforclientreview,reject,approve,publish,inactivate,activate
+validnonworkflowaction = onhold
+validworkflowaction = sendforpeerreview
+archive = independent
+onhold = independent
+sendforpeerreview = independent
+peerreviewcomplete = sendforpeerreview
+sendforinternalreview = sendforpeerreview->peerreviewcomplete
+internalreviewcomplete = sendforpeerreview->peerreviewcomplete->sendforinternalreview
+sendforclientreview = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete
+reject = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview
+approve = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview
+publish = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview->approve
+inactivate = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview->approve->publish
+activate = sendforpeerreview->peerreviewcomplete->sendforinternalreview->internalreviewcomplete->sendforclientreview->approve->publish->inactivate
+
+
+
+[child service levels]
+validactions = archive,onhold,startcomputation,rejectcomputation,approvecomputation,submit,return,reviewcomplete,submitforcustomerapprove,reject,approve
+validworkflowaction = startcomputation
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+startcomputation = independent
+rejectcomputation = startcomputation
+approvecomputation = startcomputation
+submit = startcomputation->approvecomputation
+return = startcomputation->approvecomputation->submit
+reviewcomplete = startcomputation->approvecomputation->submit
+submitforcustomerapprove = startcomputation->approvecomputation->submit->reviewcomplete
+reject = startcomputation->approvecomputation->submit->reviewcomplete->submitforcustomerapprove
+approve = startcomputation->approvecomputation->submit->reviewcomplete->submitforcustomerapprove->reject
+
+
+
+[disputes]
+validactions = archive,onhold
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+acknowlegdeissue = independent
+
+
+
+[interpretations]
+validactions = archive,onhold,submitquery,submitclarification
+validworkflowaction = submitquery
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+submitquery = independent
+submitclarification = submitquery
+
+[issues]
+validactions = archive,onhold
+validworkflowaction = submit
+validnonworkflowaction = onhold
+archive = independent
+onhold = independent
+submit = independent
+
+
+[change requests]
+validactions = archive,onhold,submit,returntosupplier,resubmit,vpapproval,financeapprove
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+submit = independent
+returntosupplier = submit
+resubmit = submit->returntosupplier
+vpapproval = submit
+financeapprove = submit->vpapproval
+
+
+
+[service data]
+validactions = archive,onhold
+archive = independent
+onhold = independent
+
+[invoices]
+validactions = archive,onhold,sendforsmeapproval,smeapprove,sendforfinanceapproval,financeapprove,sendforfinalapproval,finalapprove,sendforpaymentapproval,paymentapprove,sendforpayment,paymentcomplete,smereject,financereject,finalreject,paymentreject,returntosupplier,receivedfromsupplier,sendquerytoclient,receivedfromclient
+validnonworkflowaction = onhold
+archive = independent
+onhold = independent
+sendforsmeapproval = independent
+smeapprove = sendforsmeapproval
+sendforfinanceapproval = sendforsmeapproval->smeapprove
+financeapprove = sendforsmeapproval->smeapprove->sendforfinanceapproval
+sendforfinalapproval = sendforsmeapproval->smeapprove->sendforfinanceapproval->financeapprove
+finalapprove = sendforsmeapproval->smeapprove->sendforfinanceapproval->financeapprove->sendforfinalapproval
+sendforpaymentapproval = sendforsmeapproval->smeapprove->sendforfinanceapproval->financeapprove->sendforfinalapproval->finalapprove
+paymentapprove = sendforsmeapproval->smeapprove->sendforfinanceapproval->financeapprove->sendforfinalapproval->finalapprove->sendforpaymentapproval
+sendforpayment = sendforsmeapproval->smeapprove->sendforfinanceapproval->financeapprove->sendforfinalapproval->finalapprove->sendforpaymentapproval->paymentapprove
+paymentcomplete = sendforsmeapproval->smeapprove->sendforfinanceapproval->financeapprove->sendforfinalapproval->finalapprove->sendforpaymentapproval->paymentapprove->sendforpayment
+smereject = sendforsmeapproval
+financereject = sendforsmeapproval->smeapprove->sendforfinanceapproval
+finalreject = sendforsmeapproval->smeapprove->sendforfinanceapproval->financeapprove->sendforfinalapproval
+paymentreject = sendforsmeapproval->smeapprove->sendforfinanceapproval->financeapprove->sendforfinalapproval->finalapprove->sendforpaymentapproval
+returntosupplier = independent
+receivedfromsupplier = returntosupplier
+sendquerytoclient = independent
+receivedfromclient = sendquerytoclient
+
+
+[invoice line item]
+validactions = archive,onhold,sendforapproval,reject,approve,resubmitforapproval,paid
+archive = independent
+onhold = independent
+sendforapproval = independent
+reject = sendforapproval
+approve = sendforapproval
+resubmitforapproval  = sendforapproval->reject
+paid = sendforapproval->approve
+
+
+
+[work order requests]
+validactions = archive,onhold,submit
+validworkflowaction = sendforspquery
+validnonworkflowaction = onhold
+sendforspquery = independent
+archive = independent
+onhold = independent
+submit = independent
+
+[governance body]
+validactions = archive,onhold,sendforinternalreview,internalreviewcomplete,sendforclientreview,approve,reject,publish,inactivate
+validnonworkflowaction = archive
+validworkflowaction = sendforinternalreview
+archive = independent
+onhold = independent
+sendforinternalreview = independent
+internalreviewcomplete = sendforinternalreview
+sendforclientreview = sendforinternalreview->internalreviewcomplete
+reject = sendforinternalreview->internalreviewcomplete->sendforclientreview
+approve = sendforinternalreview->internalreviewcomplete->sendforclientreview
+publish = sendforinternalreview->internalreviewcomplete->sendforclientreview->approve
+inactivate = sendforinternalreview->internalreviewcomplete->sendforclientreview->approve->publish
+
+[governance body meetings]
+validactions = archive,onhold,startmeeting,endmeeting,cancelmeeting
+validworkflowaction = startmeeting
+validnonworkflowaction = onhold
+archive = independent
+onhold = independent
+startmeeting = independent
+endmeeting = startmeeting
+cancelmeeting = independent
+
+
+
+[contract draft request]
+validactions = archive,onhold,sendforclientreview,approve,reject
+validworkflowaction = sendforclientreview
+validnonworkflowaction = archive
+archive = independent
+onhold = independent
+sendforclientreview = independent
+approve = sendforclientreview
+reject = sendforclientreview
+
+[contract templates]
+validactions = archive,onhold,sendforclientreview,approve,reject,publish,inactivate
+archive = independent
+onhold = independent
+sendforclientreview = independent
+approve = sendforclientreview
+reject = sendforclientreview
+publish = sendforclientreview->approve
+inactivate = sendforclientreview->approve->publish
+
+
+[clauses]
+validactions = archive,onhold,sendforclientreview,approve,reject,publish,inactivate
+archive = independent
+onhold = independent
+sendforclientreview = independent
+approve = sendforclientreview
+reject = sendforclientreview
+publish = sendforclientreview->approve
+inactivate = sendforclientreview->approve->publish
+
+
+[purchase orders]
+validactions = archive,onhold,submit,reject,resubmit,approve
+validworkflowaction = submit
+validnonworkflowaction = archive
+submit = independent
+reject = submit
+resubmit = submit->reject
+approve = submit->reject->resubmit
+
+
+[service data]
+validactions = archive,onhold,publish
+validworkflowaction = publish
+validnonworkflowaction = archive
+publish = independent
+

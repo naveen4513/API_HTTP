@@ -1,0 +1,147 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[arc flow 1]
+invoicingType = values -> {"name":"ARC/RRC","id":3}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-01-2018 00:00:00","displayValues":"May-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client arc flow 1"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier arc flow 1"}
+name = {"name": "name","values": "service data arc flow 1"}
+endDate = {"name":"endDate","id":8055,"values":"08-31-2018 00:00:00","displayValues":"Aug-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+consumptionAvailable = {"name":"consumptionAvailable","id":11335,"values":true}
+
+
+[arc flow 2]
+invoicingType = values -> {"name":"ARC/RRC","id":3}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-04-2018 00:00:00","displayValues":"May-04-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client arc flow 2"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier arc flow 2"}
+name = {"name": "name","values": "service data arc flow 2"}
+endDate = {"name":"endDate","id":8055,"values":"05-02-2018 00:00:00","displayValues":"May-02-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+consumptionAvailable = {"name":"consumptionAvailable","id":11335,"values":true}
+
+
+[arc flow 3]
+invoicingType = values -> {"name":"ARC/RRC","id":3}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-01-2018 00:00:00","displayValues":"May-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client arc flow 1"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier arc flow 1"}
+name = {"name": "name","values": "service data arc flow 3"}
+endDate = {"name":"endDate","id":8055,"values":"08-31-2018 00:00:00","displayValues":"Aug-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+consumptionAvailable = {"name":"consumptionAvailable","id":11335,"values":true}
+
+
+[fixed fee flow 1]
+invoicingType = values -> {"name": "Fixed Fee","id": 2}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-01-2018 00:00:00","displayValues":"May-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client fixed fee flow 1"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier fixed fee flow 1"}
+name = {"name": "name","values": "service data fixed fee flow 1"}
+endDate = {"name":"endDate","id":8055,"values":"08-31-2018 00:00:00","displayValues":"Aug-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+
+
+[fixed fee flow 2]
+invoicingType = values -> {"name": "Fixed Fee","id": 2}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-04-2018 00:00:00","displayValues":"May-04-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client fixed fee flow 2"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier fixed fee flow 2"}
+name = {"name": "name","values": "service data fixed fee flow 2"}
+endDate = {"name":"endDate","id":8055,"values":"05-02-2018 00:00:00","displayValues":"May-02-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+
+
+[fixed fee flow 3]
+invoicingType = values -> {"name": "Fixed Fee","id": 2}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-01-2018 00:00:00","displayValues":"May-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client fixed fee flow 1"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier fixed fee flow 1"}
+name = {"name": "name","values": "service data fixed fee flow 3"}
+endDate = {"name":"endDate","id":8055,"values":"08-31-2018 00:00:00","displayValues":"Aug-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+
+
+[forecast flow 1]
+invoicingType = values -> {"name":"Forecast","id":1}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-01-2018 00:00:00","displayValues":"May-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client forecast flow 1"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier forecast flow 1"}
+name = {"name": "name","values": "service data forecast flow 1"}
+endDate = {"name":"endDate","id":8055,"values":"08-31-2018 00:00:00","displayValues":"Aug-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+consumptionAvailable = {"name":"consumptionAvailable","id":11335,"values":true}
+forecastingAvailable = {"name":"forecastingAvailable","id":11429,"values":true}
+forecastFrequency = {"name":"forecastFrequency","id":11447,"values":{"name":"Monthly","id":1}}
+forecastDataType = {"name":"forecastDataType","id":11377,"values":{"name":"Absolute","id":1}}
+forecastRollingPeriodType = {"name":"forecastRollingPeriodType","id":11448,"values":{"name":"60 Days","id":2}}
+lastAcceptableForecastDay = {"name":"lastAcceptableForecastDay","id":11339,"values":60}
+
+
+[forecast flow 2]
+invoicingType = values -> {"name":"Forecast","id":1}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-04-2018 00:00:00","displayValues":"May-04-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client forecast flow 2"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier forecast flow 2"}
+name = {"name": "name","values": "service data forecast flow 2"}
+endDate = {"name":"endDate","id":8055,"values":"05-02-2018 00:00:00","displayValues":"May-02-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+consumptionAvailable = {"name":"consumptionAvailable","id":11335,"values":true}
+forecastingAvailable = {"name":"forecastingAvailable","id":11429,"values":true}
+forecastFrequency = {"name":"forecastFrequency","id":11447,"values":{"name":"Monthly","id":1}}
+forecastDataType = {"name":"forecastDataType","id":11377,"values":{"name":"Absolute","id":1}}
+forecastRollingPeriodType = {"name":"forecastRollingPeriodType","id":11448,"values":{"name":"60 Days","id":2}}
+lastAcceptableForecastDay = {"name":"lastAcceptableForecastDay","id":11339,"values":60}
+
+
+[forecast flow 3]
+invoicingType = values -> {"name":"Forecast","id":1}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"05-01-2018 00:00:00","displayValues":"May-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "service data client forecast flow 1"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "service data supplier forecast flow 1"}
+name = {"name": "name","values": "service data forecast flow 3"}
+endDate = {"name":"endDate","id":8055,"values":"08-31-2018 00:00:00","displayValues":"Aug-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+consumptionAvailable = {"name":"consumptionAvailable","id":11335,"values":true}
+forecastingAvailable = {"name":"forecastingAvailable","id":11429,"values":true}
+forecastFrequency = {"name":"forecastFrequency","id":11447,"values":{"name":"Monthly","id":1}}
+forecastDataType = {"name":"forecastDataType","id":11377,"values":{"name":"Absolute","id":1}}
+forecastRollingPeriodType = {"name":"forecastRollingPeriodType","id":11448,"values":{"name":"60 Days","id":2}}
+lastAcceptableForecastDay = {"name":"lastAcceptableForecastDay","id":11339,"values":60}

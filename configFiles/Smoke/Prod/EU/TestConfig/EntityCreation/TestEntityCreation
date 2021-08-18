@@ -1,0 +1,207 @@
+#All keys must be in lower case characters only
+
+#DelimiterForEntities is used to separate Entities to be Created
+delimiterforentities = ,
+
+#Specify all Entities to be Created
+entitiestocreate = contracts, work order requests, governance body
+
+#Flags to either enable or disable Entity Creation from Source Entity i.e. Local or Directly i.e. Global (true to enable, false to disable)
+globalentitycreation = false
+localentitycreation = true
+
+#DeleteEntity Flag to either Delete Newly create entity after creation or not. Possible values (true to enable, false to disable). Default value is True.
+deleteentity = true
+
+#Dump Entity Details
+dumpfilepath = src/test/output
+dumpfilename = dump.txt
+
+#Results CSV File details.
+#NOTE: DO NOT Provide File extension. It will always be CSV.
+csvfilepath = src/test/output
+csvfilename = EntityCreationResults
+
+#ConvertCsvToXlsx: Whether to convert CSV file to XLSX or not.
+convertcsvtoxlsx = yes
+
+#UseExcelSheet: Whether to use Excel Sheet for Entity Creation or not. (true to enable, false to disable). (Default value is false)
+#If enabled then will use only fields defined in Excel and Extra Fields. If disabled then will ignore excel sheet and proceed with old approach.
+useexcelsheet = false
+
+#To specify value of any field, one can use excel file. Sheet name must be the Entity Name.
+#Excel File Details below.
+excelfilepath = src/test/resources/TestConfig/EntityCreation
+excelfilename = EntityCreation.xlsx
+
+#Whether to Update Excel Headers with the Mapped values or not. (True to enable, false to disable). (Default value is false)
+updateexcelheaders = false
+
+#Excel Headers Mapping file details.
+excelheadersmappingfilepath = src/test/resources/TestConfig/EntityCreation
+excelheadersmappingfilename = ExcelHeadersMapping.cfg
+
+#EnableTestColumnName is the Excel column name that defines whether to test the record or not.
+enabletestcolumnname = Runmode
+
+#ExcelColumnsIgnoreList: All the column names which are to be ignored for Api. Separated by delimiter ,
+[excelcolumnsignorelist]
+contracts = testCaseID,Runmode,Results,Error,coParentType,coDownload,coContractCountries,coRegionCountry,coContractRegions,coDocumentName,coViewer,coSearch,coDownload,coFinancial,coLegal,coBusiness,coDocumentType,coParent,coVendorContractingParty,coUploadFile,coCustomNumbering
+governance body = testCaseID,Runmode,Results,Error,gbGoal,gbContracts,gbUploadFile,gbSupplier
+suppliers = testCaseID,Runmode,Results,Error,supplierUploadFile,supplierParent
+vendors = testCaseID,Runmode,Results,Error,vhUploadFile
+obligations = testCaseID,Runmode,Results,Error,obUploadFile,obSourceName,obContractRegions
+#For Service Levels, Columns 'slMinimumMaximumValue,slMinimumMaximumSelection,slSignificantlyMinMax' are of type threshold and its not handled currently. Values for these can be given by Extra Fields Only
+service levels = testCaseID,Runmode,Results,Error,slSLCreditLineItem,slSLItem,slSourceName,slContractRegions,slEarnbackSubCategory,slUploadFile,slMinimumMaximumValue,slSLCreditCategory,slCreditOfInvoice,slEarnbackCategory,slEarnbackLineItem,slRegionType,slMinimumMaximumSelection,slSignificantlyMinMax,slSLCreditSubCategory
+contract draft request = testCaseID,Runmode,Results,Error,cdrUploadFile
+actions = testCaseID,Runmode,Results,Error,actionUploadFile,actionSourceName,actionSourceType,actionContractRegions
+issues = testCaseID,Runmode,Results,Error,issueUploadFile,issueSourceName,issueSourceType,issueContractRegions
+#For Change Requests, Columns 'crVarianceTCV,crVarianceACV,crVarianceFACV,crVarianceTCVCurrency,crVarianceACVCurrency,crVarianceFACVCurrency' have same label on UI, so they are not handled currently. Values for these can be given by Extra Fields only.
+change requests = testCaseID,Runmode,Results,Error,crUploadFile,crSupplier,crSourceType,crSourceName,crVarianceTCV,crVarianceACV,crVarianceFACV,crVarianceTCVCurrency,crVarianceACVCurrency,crVarianceFACVCurrency,crContractRegions,crContractCountries
+purchase orders = testCaseID,Runmode,Results,Error,poUploadFile,poSourceName,poSourceType,poSource
+work order requests = testCaseID,Runmode,Results,Error,worUploadFiles,worSupplier,worSourceType,worSourceName,worContractCountries,worContractRegions
+
+#ExcelSheetName Section defines sheet name for every entity
+[excelsheetname]
+contracts = contracts
+governance body = GB
+suppliers = suppliers
+vendors = vendors
+obligations = obligations
+service levels = SL
+contract draft request = CDR
+actions = actions
+issues = issue
+purchase orders = PO
+change requests = CR
+work order requests = WOR
+
+#ColumnNamePrefix is the section that defines the prefix for each entity in Excel Sheet. Key here is Entity Name.
+#If no value is provided then default prefix would be applied i.e. Short code of each entity.
+[columnnameprefix]
+contracts = co
+suppliers = supplier
+vendors = vh
+actions = action
+issues = issue
+
+#ParentType section is to define the mapping of All values defined in Excel against field ParentType and its Entity Name as in EntityId.cfg
+#For ex. key is Supplier and value is suppliers.
+#If any value which is defined in Excel but not defined under this section then it will consider it is same as the value in EntityId.cfg.
+#NOTE: All keys under this section must be in lower case characters only.
+[parenttype]
+supplier = suppliers
+contract = contracts
+
+#Section is the Entity Name as in EntityId.cfg
+#SourceEntity specifies the Source Entity under which the new entity should be created. Possible values are (contracts, suppliers, vendors, etc).
+#SourceEntity will be used only for Global Entity creation.
+
+#For Contracts, SourceEntity can be suppliers, contracts
+#For Creating Contracts additional parameter is required i.e. Type Of Contract (msa, psa, sow). Specify any one of these at contracttype key for Contracts Entity.
+#ParentEntityType should match Entity Name as in EntityId.cfg
+[contracts]
+sourceentity = suppliers
+sourcename = Abhi_Supplier
+sourceid = 1023
+parententitytype = msa
+
+#For Governance Body, SourceEntity can only be Contracts.
+[governance body]
+sourceentity = contracts
+contractname = MSA 28 feb 2016
+sourceid = 1153
+supplierid = 1009
+suppliername = Testing Purpose
+
+#For Suppliers, SourceEntity can only be vendors.
+[suppliers]
+sourceentity = vendors
+sourceid = 7216
+
+#For Obligations, SourceEntity can only be contracts.
+[obligations]
+sourceentity = contracts
+sourcename = MSA 28 feb 2016
+sourceid = 1153
+parententitytype = msa
+
+#For Service Levels, SourceEntity can be contracts, suppliers
+[service levels]
+sourceentity = contracts
+sourcename = MSA-Test
+sourceid = 4115
+parententitytype = msa
+
+#For Actions, SourceEntity can be contracts, suppliers
+[actions]
+sourceentity = contracts
+sourcename = MSA 28 feb 2016
+sourceid = 1153
+parententitytype = msa
+
+#For Issues, SourceEntity can be contracts, suppliers, etc.
+[issues]
+sourceentity = contracts
+sourcename = MSA 28 feb 2016
+sourceid = 1153
+parententitytype = msa
+parentname = Master Services Agreement - ABC News
+parentid = 1025
+
+#For Disputes, SourceEntity can be suppliers, obligations, etc.
+[disputes]
+sourceentity = suppliers
+sourcename = APS
+sourceid = 1487
+
+#For Change Requests, SourceEntity can be suppliers, obligations, etc.
+[change requests]
+sourceentity = suppliers
+sourcename = APS
+sourceid = 1487
+parententitytype = supplier
+
+#For Interpretations, SourceEntity can be contracts, suppliers, etc.
+[interpretations]
+sourceentity = suppliers
+sourcename = APS
+sourceid = 1487
+parententitytype = MSA
+contractid = 1199
+
+#For Work Order Requests, SourceEntity can be contracts only
+[work order requests]
+sourceentity = contracts
+sourcename = MSA 28 feb 2016
+sourceid = 1153
+parententitytype = msa
+
+#For Contract Draft Request, SourceEntitiy can only be suppliers
+[contract draft request]
+sourceentity = suppliers
+sourcename = APS
+sourceid = 1487
+
+#For Vendors, SourceEntity can only be client
+[vendors]
+sourceentity = client
+sourceid = 1002
+
+#For Purchase Orders, SourceEntity can be suppliers, contracts
+[purchase orders]
+sourceentity = contracts
+sourcename = MSA-Test
+sourceid = 4115
+
+#For Service Data, SourceEntity can be contracts
+[service data]
+sourceentity = contracts
+sourcename = Product Sales Agreement - Bloomberg
+sourceid = 1246
+
+#For Invoices, SourceEntity must be contracts
+[invoices]
+sourceentity = contracts
+sourcename = MSA-Test
+sourceid = 4115

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="multi_supplier_off"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <suite-file path="../../../Default/PurchaseOrder.xml"></suite-file>
+        <suite-file path="../../../Default/InvoiceEntity.xml"></suite-file>
+        <listeners>
+            <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+        </listeners>
+        <test name="ContractPriceBook Test">
+            <classes>
+                <class name="com.sirionlabs.test.contractPriceBook.TestContractPriceBook"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

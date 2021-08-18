@@ -1,0 +1,165 @@
+#put the page size here
+#And Put the entity name to test in entitytotest (comma seperated)
+#default size is used for the list Data when first call=true.
+# testreportsforallentitiesallreports if this flag is true it will verify sorting on every reports of every entities from listreportRenderer API Response
+# testreportsforallentities if this flag is true it will verify sorting on every reports of every entities mentioned in config file
+# if both testreportsforallentitiesallreports , testreportsforallentities flag is not true than it will test entities there in entitiestotest with report id mentioned in config file
+offset=0
+size=500
+defaultsize=20
+orderdirectiondesc="desc nulls last"
+orderdirectionasc="asc nulls first"
+testreportsforallentitiesallreports = true
+testreportsforallentities = false
+#entitiestotest = obligations
+entitiestotest = contracts,contract draft request,child obligations,obligations
+skipreportids = 59,282,281,378,379,330
+
+
+[child obligations]
+test = 13
+reportnames = Child Obligations - Tracker
+
+[obligations]
+test = 153
+reportnames = Master Obligations - Tracker
+
+[contract draft request]
+test = 324,1011
+reportnames = Contract Draft Request- Tracker,Contract Draft Request- Lead Time
+
+[contracts]
+test = 222,270
+reportnames = Contract - PIPELINE REPORT,Contract - PIPELINE REPORT - NEW
+
+
+[actions]
+test = 30
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[change requests]
+test = 88
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[suppliers]
+test = 48
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+
+[service levels]
+test = 1010
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[child service levels]
+test = 91
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[interpretations]
+test = 53
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[issues]
+test = 45
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[disputes]
+test = 315
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[invoices]
+test = 79
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[work order requests]
+test = 96
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+
+[governance body]
+test = 261
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[governance body meetings]
+test = 264
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[service data]
+test = 355
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[invoice line item]
+test = 359
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+
+
+
+
+
+

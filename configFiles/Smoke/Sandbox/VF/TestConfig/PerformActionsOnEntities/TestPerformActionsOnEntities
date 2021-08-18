@@ -1,0 +1,65 @@
+#Section is Entity Name
+#Key is accessRestriction area
+#Value is permission (true) allowed or (false) restricted
+
+[vendors]
+entityid = 1450
+
+[suppliers]
+entityid = 1285
+
+
+[contracts]
+entityid = 1891
+
+
+[obligations]
+entityid = 1361
+
+[child obligations]
+entityid = 8750
+
+[service levels]
+entityid = 4172
+
+[child service levels]
+entityid = 9878
+
+[interpretations]
+entityid = 1352
+
+[disputes]
+entityid = 1201
+
+[invoices]
+entityid = 5479
+
+[work order requests]
+entityid = 304
+
+[purchase orders]
+entityid = 1061
+
+[contract draft request]
+entityid = 1342
+
+[governance body]
+entityid = 1208
+
+[governance body meetings]
+entityid = 3689
+
+[actions]
+entityid = 1614
+
+[issues]
+entityid = 1459
+
+[change requests]
+entityid = 1435
+
+
+
+
+
+

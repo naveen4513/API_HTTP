@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="List Renderer" data-provider-thread-count="10">
+
+    <test name="Test List Data">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sirionlabs.test.listRenderer.TestListRendererListData"></class>
+        </classes>
+    </test>
+
+
+    <test name="Download List Data">
+        <classes>
+            <class name="com.sirionlabs.test.listRenderer.TestDownloadListData"></class>
+        </classes>
+    </test>
+
+</suite>

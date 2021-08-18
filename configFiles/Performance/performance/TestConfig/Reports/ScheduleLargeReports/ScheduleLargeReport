@@ -1,0 +1,29 @@
+#All keys must be in lower case characters only
+#Put Users in comma seperated (ajay_user@sirionqa.office,pradeep@sirionqa.office) othewise it take the first user of All Users as a recipient
+#schedule task id values will be updated on every test run
+#The expected number of rows value will be updated after previous run of schedule large report
+
+offset = 0
+size = 20
+orderbycolumnname = id
+orderdirection = desc nulls last
+sheet name = Sheet0
+
+schedule task id 51=1087
+exp num of records 51=12345678
+
+schedule task id 79=1087
+exp num of records 79=12345678
+
+schedule task id 80=1087
+exp num of records 80=12345678
+
+schedule task id 81=1087
+exp num of records 81=12345678
+
+[invoices]
+#test = 51,79,80,81
+test = 80
+
+#[child obligations]
+#test = 13

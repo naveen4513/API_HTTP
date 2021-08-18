@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Minor Release Reports Data Validation Suite">
+    <parameter name="TestingType" value="minor"/>
+    <parameter name="Environment" value="automation_dev"/>
+    <suite-files>
+
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/ReportDownload.xml"></suite-file>
+
+    </suite-files>
+</suite>

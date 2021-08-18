@@ -1,0 +1,13 @@
+#All section names and keys must be in lower case characters only
+
+#NoOfContractsToTest: Total no of contracts to test. Default value is 1.
+noofcontractstotest = 2
+
+#StagingListId: Search Url Id/List Id of Staging
+staginglistid = 5aaa7d6de4b00f6bfa7a1c47
+
+#List Data Details
+#Default Value for List Data Size is 20.
+#Default Value for List Data Offset is 0.
+listdatasize = 20
+listdataoffset = 0

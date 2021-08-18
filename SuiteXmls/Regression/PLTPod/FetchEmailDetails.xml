@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Email Details API Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="rc_vf"/>
+
+    <test name="Fetch Email Details API">
+        <classes>
+            <class name="com.sirionlabs.test.microservice.workflowTwo.TestFetchEmailDetails"></class>
+        </classes>
+    </test>
+</suite>

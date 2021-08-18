@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Delegation" thread-count="10">
+
+    <test name="AutoExtraction APIs Test">
+        <classes>
+            <class name="com.sirionlabs.test.delegation.TestDelegationAPIs"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,100 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[default]
+invoicingType = values -> {"name": "Fixed Fee","id": 2}
+#serviceIdSupplier = {"name": "serviceIdSupplier", "values": "apitestsupplier1"}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"03-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "apitestclient1"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "apitestsupplier1"}
+name = {"name": "name","values": "apitestname"}
+serviceDataServiceCategory = values -> {"name": "Travel & Expenses","id": 1111}
+serviceSubCategory = values -> {"name": "Mainframe","id":1129,"parentId":1111}
+endDate = {"name":"endDate","id":8055,"values":"03-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+unitType = values -> {"name": "Desktop", "id": 1064}
+
+[fixed fee flow 1]
+invoicingType = values -> {"name": "Fixed Fee","id": 2}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"03-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "new client"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "new supplier"}
+name = {"name": "name","values": "servicedatafixedflow1"}
+serviceDataServiceCategory = values -> {"name": "Travel & Expenses","id": 1093}
+serviceSubCategory = values -> {"name": "Mainframe","id":1111,"parentId":1093}
+endDate = {"name":"endDate","id":8055,"values":"03-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+unitType = values -> {"name": "Desktop", "id": 1064}
+
+[performance_flow1]
+invoicingType = values -> {"name": "Fixed Fee","id": 2}
+#serviceIdSupplier = {"name": "serviceIdSupplier", "values": "apitestsupplier1"}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+startDate = {"name":"startDate","id":8054,"values":"03-01-2018"}
+serviceIdClient = {"name": "serviceIdClient","values": "apitestclient1"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "apitestsupplier1"}
+name = {"name": "name","values": "apitestname"}
+serviceDataServiceCategory = values -> {"name": "Travel & Expenses","id": 1120}
+serviceSubCategory = values -> {"name": "Mainframe","id":1138,"parentId":1120}
+endDate = {"name":"endDate","id":8055,"values":"03-31-2018"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+unitType = values -> {"name": "Desktop", "id": 1064}
+
+[fixed fee flow for sanity]
+name = {"name": "name","id":4038,"values": "servicedatafixedflow1"}
+invoicingType = values -> {"name": "Fixed Fee","id": 2}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+serviceIdClient = {"name": "serviceIdClient","values": "new client"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "new supplier"}
+serviceDataServiceCategory = values -> {"name": "Travel & Expenses","id": 1111}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+unitType = values -> {"name": "Desktop", "id": 1064}
+conversionData = values -> {"name": "BILLING CURRENCY", "id": 1035}
+#invoicingCurrency = values -> {"name": "Indian Rupee (INR)", "id": 8,"shortName":"INR"}
+intermediateCurrency = values -> {"name": "Indian Rupee (INR)", "id": 8,"shortName":"INR"}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3700":{"values":[{"name":"APIAutomation User","id":8323,"type":2,"email":"rohillaakshay22@gmail.com","properties":{}}],"name":"rg_3700","label":"SERVICE DATA MANAGER","userType":[2,1,3,4]}},"options":null}
+currency = values -> {"name": "Indian Rupee (INR)", "id": 8,"shortName":"INR"}
+description = { "name": "description", "id": 11626, "multiEntitySupport": false, "values": "sample description" }
+startDate = { "name": "startDate", "id": 8054, "multiEntitySupport": false, "values": "01-01-2018", "displayValues": "2018-Jan-01" }
+endDate = { "name": "endDate", "id": 8055, "multiEntitySupport": false, "values": "03-31-2018", "displayValues": "2018-Mar-31" }
+
+[arc flow for sanity]
+name = {"name": "name","id":4038,"values": "servicedatafixedflow1"}
+invoicingType = values -> {"name": "ARC/RRC","id": 3}
+billingPeriod = values -> {"name": "Monthly","id": 1}
+serviceIdClient = {"name": "serviceIdClient","values": "new client"}
+serviceIdSupplier = {"name": "serviceIdSupplier","values": "new supplier"}
+billingAvailable = {"name": "billingAvailable", "id": 11333, "values": true}
+pricingAvailable = {"name": "pricingAvailable", "id": 11430, "values": true}
+consumptionAvailable = {"name": "consumptionAvailable", "id": 11335, "values": true}
+unitType = values -> {"name": "Desktop/Laptop", "id": 1039}
+conversionData = values -> {"name": "BILLING CURRENCY", "id": 1035}
+#invoicingCurrency = values -> {"name": "Indian Rupee (INR)", "id": 8,"shortName":"INR"}
+intermediateCurrency = values -> {"name": "Indian Rupee (INR)", "id": 8,"shortName":"INR"}
+stakeHolders = {"name":"stakeHolders","values":{"rg_3700":{"values":[{"name":"APIAutomation User","id":8323,"type":2,"email":"rohillaakshay22@gmail.com","properties":{}}],"name":"rg_3700","label":"SERVICE DATA MANAGER","userType":[2,1,3,4]},"rg_3314":{"values":[{"name":"APIAutomation User","id":8323,"type":2,"email":"rohillaakshay22@gmail.com","properties":{}}],"name":"rg_3314","label":"Service data","userType":[2,1,3,4]}},"options":null}
+currency = values -> {"name": "Indian Rupee (INR)", "id": 8,"shortName":"INR"}
+startDate = { "name": "startDate", "id": 8054, "multiEntitySupport": false, "values": "01-01-2018", "displayValues": "2018-Jan-01" }
+endDate = { "name": "endDate", "id": 8055, "multiEntitySupport": false, "values": "03-31-2018", "displayValues": "2018-Mar-31" }

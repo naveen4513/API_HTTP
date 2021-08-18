@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Custom Fields related test cases">
+
+
+        <test name="Custom Fields related test cases">
+            <classes>
+                <class name="com.sirionlabs.test.SL_Stories.CustomFields.TestNegativeValuesForCustomCurrencyFields"></class>
+            </classes>
+        </test>
+
+
+</suite>
+
+

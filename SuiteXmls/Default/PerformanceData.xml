@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Performance Data Suite">
+
+    <test name="Create Entities">
+        <classes>
+            <class name="com.sirionlabs.helper.PerformanceData.CreateEntities"></class>
+        </classes>
+    </test>
+
+    <!--  <test name="Perform Actions">
+          <classes>
+              <class name="com.sirionlabs.helper.PerformanceData.PerformActionsOnEntities"></class>
+          </classes>
+      </test>-->
+
+</suite>

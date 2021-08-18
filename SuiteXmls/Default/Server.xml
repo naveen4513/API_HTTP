@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Switch Server" thread-count="1">
+
+    <test name="Switch Server">
+        <classes>
+            <class name="com.sirionlabs.test.autoExtraction.SetServer"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Entity Misc Tests Suite" thread-count="1" data-provider-thread-count="10">
+
+    <test name="VH Misc">
+        <classes>
+            <class name="com.sirionlabs.test.vendorHierarchy.TestVHMisc"></class>
+        </classes>
+    </test>
+
+    <test name="Supplier Misc">
+        <classes>
+            <class name="com.sirionlabs.test.supplier.TestSupplierMisc"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Misc">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestContractMisc"></class>
+        </classes>
+    </test>
+
+    <test name="Action Misc">
+        <classes>
+            <class name="com.sirionlabs.test.action.TestActionMisc"></class>
+        </classes>
+    </test>
+
+    <test name="Issue Misc">
+        <classes>
+            <class name="com.sirionlabs.test.issue.TestIssueMisc"></class>
+        </classes>
+    </test>
+
+    <test name="Invoice Misc">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.TestInvoiceMisc"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Listing Default Columns and Filters">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestListingDefaultColumnsAndFilters"></class>
+        </classes>
+    </test>-->
+
+</suite>

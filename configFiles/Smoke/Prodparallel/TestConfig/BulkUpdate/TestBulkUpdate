@@ -1,0 +1,70 @@
+#All section names and keys must be in lower case characters only
+#Section is the Entity Name as in EntityId.cfg
+#Keys are properties for that Entity
+
+NOTE: CURRENTLY FIELDS OF TYPE DATE, MULTI-SELECT, CHECKBOX ARE NOT SUPPORTED IN BULK UPDATE.
+
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in BulkUpdateFlows.cfg file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = obligations flow 1
+
+#WaitForScheduler: Whether to wait for Scheduler to complete Bulk Update or not. Possible Values are True or False. Default Value is True.
+#If set to True then will wait for the Time specified in property 'SchedulerWaitTimeout'. Otherwise will dump data to file which can be verified later.
+waitforscheduler = true
+
+#KillAllSchedulerTasks: Whether to kill all the Scheduler Tasks before Performing Bulk Update or not. Possible Values are True or False. Default Value is False.
+killallschedulertasks = true
+
+#SchedulerPollingTime: The time interval between requests to Check if Bulk Updatae Scheduler Job is finished (in milliseconds). Default Value is 5000;
+schedulerpollingtime = 5000
+
+#SchedulerWaitTimeOut: The timeout for the Bulk Update Scheduler (in milliseconds). This property is used only when WaitForScheduler is set to True.
+#Default Value is 1200000 milliseconds.
+schedulerwaittimeout = 60000
+
+#FailTestIfJobNotCompletedWithinSchedulerTimeOut: Whether to fail test If Bulk Update Job not Completed wihtin Scheduler Time Out or not.
+#Possible Values are True or False. Default Value is True.
+failtestifjobnotcompletedwithinschedulertimeout = false
+
+#Bulk Action Flows Config File Details
+flowsconfigfilename = BulkUpdateFlows.cfg
+
+#ExcelFilePath: Path where all the excel sheets will be stored for Bulk Update flows.
+excelfilepath = src/test/resources/TestConfig/BulkUpdate/ExcelSheets
+
+#BulkUpdateTemplateDownload Section below is to test Bulk Update Template Download. Whether the template is being downloaded successfully or not.
+
+[bulkupdatetemplatedownload]
+templatepath = src/test/resources/TestConfig/BulkUpdate
+templatename = bulkUpdateTemplateDownloadTest.xlsm
+templateid = 1019
+entitytypeid = 12
+entityids = 1593
+
+#EntityTemplateSheetNameMapping: Under this section the mapping of Entity Name and the Sheet Name in the Bulk Update Template for that Entity is maintained.
+#For ex. For Obligations Entity, the Bulk Update Template has Sheet named 'Obligation' where all the record details are mentioned.
+#Key here is Entity Name as in BulkUpdateFlows.cfg field 'entity' and Value is sheet name. Key must be in lower case characters only
+
+[entitytemplatesheetnamemapping]
+obligations = obligation
+
+#TemplateFieldShowPageFieldMapping: Under this section the mapping of the Field Label in the Bulk Update Template and the corresponding Show Page Field Name is maintained.
+#Key must be in lower case characters only.
+#For ex. For Obligations Entity, we are updating Title, the Bulk Update Template has field Label as 'Basic Information - Title' which is actually Title of a record on Show Page.
+#In above case, the key should be 'Basic Information - Title' and the value must be title which is the section in ShowFieldHierarchy file.
+#This keyword (key) must be specified in the property fields updated in BulkUpdateFlows.cfg.
+
+[templatefieldshowpagefieldmapping]
+basic information - title = title
+basic information - description = description
+basic information - performance type = performanceType
+basic information - time zone = timeZone
+important dates - frequency = frequency
+stakeholders - master obligations manager = stakeholders
+basic information - delivery countries = deliveryCountries

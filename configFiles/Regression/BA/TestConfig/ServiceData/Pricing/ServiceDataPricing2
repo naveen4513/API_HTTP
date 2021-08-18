@@ -1,0 +1,169 @@
+
+downloadFileName=file.xlsm
+downloadFilePath=src/test/resources/TestConfig/ServiceData/Pricing/
+
+entitynamepricingid=11653
+waitforpricingscheduler=true
+
+[flows]
+c1=fixed fee flow 1
+c2=fixed fee flow 1
+ccr1=service data version change scenario
+cdr1=cdr creation from contract
+sd1=fixed fee flow 1
+cdr from sup=cdr creation from supplier
+sdarc=arc flow 1
+contractmulti=contract multisupplier
+servicedatamultisup=service data multi supplier
+ccrmultisup=service data version change scenario multi sup
+cdrmultisup=cdr creation from multisupplier
+
+[fixed fee flow 1]
+uploadpricing = true
+arcsheetname = ARCRRC
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+[env]
+host=192.168.2.222
+key=tomcat7@123
+user=tomcat7
+withkey=no
+
+#associate service data has 3 pricing rows and 2 arc rrc rows
+[c89541]
+servicedataid=18527
+rowvaluessection=c89541values
+
+#sheetname&$%rownumber&$%columnnumber&$%intvalue
+#&$% is the delimiter
+# @@@ is replaced in code with . (dot)
+[c89541values]
+Data&$%6&$%0&$%&$%fail
+Data&$%6&$%0&$%0&$%fail
+Data&$%6&$%0&$%-1&$%fail
+Data&$%6&$%0&$%a&$%fail
+Data&$%6&$%0&$%@&$%fail
+Data&$%6&$%0&$%1@@@2&$%fail
+Pricing&$%6&$%0&$%&$%fail
+Pricing&$%6&$%0&$%0&$%fail
+Pricing&$%6&$%0&$%-1&$%fail
+Pricing&$%6&$%0&$%a&$%fail
+Pricing&$%6&$%0&$%@&$%fail
+Pricing&$%6&$%0&$%1@@@2&$%fail
+Pricing&$%6&$%0&$%1&$%fail,Pricing&$%7&$%0&$%1&$%fail
+ARCRRC&$%6&$%0&$%&$%fail
+ARCRRC&$%6&$%0&$%0&$%fail
+ARCRRC&$%6&$%0&$%-1&$%fail
+ARCRRC&$%6&$%0&$%a&$%fail
+ARCRRC&$%6&$%0&$%@&$%fail
+ARCRRC&$%6&$%0&$%1@@@2&$%fail
+ARCRRC&$%6&$%0&$%1&$%fail,ARCRRC&$%7&$%0&$%1&$%fail
+
+
+
+[c10377]
+flows=fixed fee flow 1,arc flow 1,forecast flow 1,vol pricing flow total discrepancy
+
+[vol pricing flow total discrepancy]
+contractsectionname = vol pricing flow total discrepancy
+servicedatasectionname = vol pricing flow total discrepancy
+invoicesectionname = vol pricing flow total discrepancy
+invoicelineitemsectionname = vol pricing flow total discrepancy
+
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = VolumePricingFlow2PricingUnavailable.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,10,Volume Pricing
+finalconsumptionvalues = 130
+
+expectedresult = Total Discrepancy
+
+[forecast flow 1]
+contractsectionname = forecast flow 1
+servicedatasectionname = forecast flow 1
+invoicesectionname = forecast flow 1
+invoicelineitemsectionname = forecast flow 1
+
+uploadpricing = true
+servicedatatype = forecast
+
+pricingstemplatefilename = ForeCastFlow1Pricing.xlsm
+forecasttemplatefilename = Forecast_Template_Sheet.xlsx
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 100
+ratecolumnvalues = 10
+
+finalconsumptionvalues = 130
+
+forecastsheetrownumber = 2
+forecastsheetcolumnnumber = 0,2
+forecastsheetvalue  =  clientid,150
+
+expectedresult = No Discrepancy
+
+
+[arc flow 1]
+contractsectionname = arc flow 1
+servicedatasectionname = arc flow 1
+invoicesectionname = arc flow 1
+invoicelineitemsectionname = arc flow 1
+
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARCRRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 13
+
+expectedresult = No Discrepancy
+
+
+[c90840]
+cdrmultisuppayload=values -> [{"name":"ABC News","id":1024},{"name":"Apple Inc","id":1026}]
+s1=1024
+s2=1026
+s3=1042
+
+[c90833]
+s1=1024
+s2=1026
+s3=1042

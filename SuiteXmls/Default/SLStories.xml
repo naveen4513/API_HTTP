@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SL Stories Suite">
+
+
+<!--    <test name="SIR-133409 Numerator Denominator">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.test_SIR133409"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!-- -->
+<!--    <test name="SIR-217957 Allow value updates for nested objects of Entity Pages">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.SL_Stories.test_SIR217957"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="RC1_37 SIR-217932 Allow earn backs only for certain types of credits">
+        <classes>
+            <class name="com.sirionlabs.test.SL_Stories.test_SIR217932"></class>
+        </classes>
+    </test>
+
+    <test name="RC1_37 SIR-215263 Test the Sirion function MaxPeriodDays">
+        <classes>
+            <class name="com.sirionlabs.test.SL_Stories.test_SIR215263"></class>
+        </classes>
+    </test>
+
+</suite>

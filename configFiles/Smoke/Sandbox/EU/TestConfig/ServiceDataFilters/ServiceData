@@ -1,0 +1,25 @@
+#All section names and keys must be in lower case characters only
+#Section is the Entity Name as in EntityIdMapping.cfg
+
+# entity name is the Key of the config
+# tabspecificidforservicedatatab : it is the id used for tablistData API while seeing contract Service Data Tab
+# tabspecificidforauditlogtab : it is the id used for tablistData API while seeing contract Audit Log Tab
+# Put all the Id comma seperated like (test=3123,3227,1234) on which we want to run out test
+# testforallcontractids should be yes only if we want to test on all contract Ids of List Contracts API
+
+[default]
+hierarchy=true
+offset=0
+maxrecordsforlistdata=10
+tabspecificidforservicedatatab = 63
+tabspecificidforauditlogtab = 61
+slider_min=2
+slider_max= 5
+date_from = -1
+date_to = 1
+testforallcontractids = no
+
+
+[contracts]
+test=3123,3227
+

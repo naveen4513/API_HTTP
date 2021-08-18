@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Show page validation for specific tabs" thread-count="1">
+
+
+    <test name="Tab Verification">
+        <classes>
+            <class name="com.sirionlabs.test.tabverification.TestTabVerifications"></class>
+        </classes>
+    </test>
+
+
+</suite>

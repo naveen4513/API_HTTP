@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="EntityClickable Actions Test" thread-count="1">
+
+    <test name="Test Entity Action Clickable actions">
+        <classes>
+            <class name="com.sirionlabs.test.WorkflowAndNonWorkflowActions.TestEntityClickableActions"></class>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,312 @@
+{
+  "Child Obligations": {
+    "1": {
+      "json_column": "shortCodeId",
+      "type": "ID"
+    },
+    "2": {
+      "json_column": "name"
+    },
+    "3": {
+      "json_column": "dueDate",
+      "type": "DATE",
+      "formate": "MM-dd-yyyy"
+    },
+    "4": {
+      "json_column": "description"
+    },
+    "5": {
+      "json_column": "performanceStatus",
+      "values": "values.name"
+    },
+    "6": {
+      "json_column": "supplier",
+      "type": "SUPPLIER",
+      "values": "values.name"
+    },
+    "7": {
+      "json_column": "contract",
+      "type": "CONTRACT",
+      "values": "values.name"
+    },
+    "8": {
+      "json_column": "stakeHolders",
+      "type": "STAKEHOLDER"
+    },
+    "rowColInfo": {
+      "startRow": 3,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -1,
+      "dateFormate": "MM-dd-yyyy"
+    }
+  },
+  "Actions": {
+    "1": {
+      "json_column": "shortCodeId",
+      "type": "ID"
+    },
+    "2": {
+      "json_column": "name"
+    },
+    "3": {
+      "json_column": "plannedCompletionDate",
+      "type": "DATE",
+      "formate": "MM-dd-yyyy HH:mm:ss"
+    },
+    "4": {
+      "json_column": "status",
+      "values": "values.name"
+    },
+    "5": {
+      "json_column": "supplier",
+      "type": "SUPPLIER",
+      "values": "values.name"
+    },
+    "6": {
+      "json_column": "sourceTitle",
+      "type": "CONTRACT",
+      "values": "values.name"
+    },
+    "7": {
+      "json_column": "stakeHolders",
+      "type": "STAKEHOLDER"
+    },
+    "rowColInfo": {
+      "startRow": 3,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -1,
+      "dateFormate": "MM-yyyy-dd HH:mm:ss"
+    }
+  },
+  "Issues": {
+    "1": {
+      "json_column": "shortCodeId",
+      "type": "ID"
+    },
+    "2": {
+      "json_column": "name"
+    },
+    "3": {
+      "json_column": "plannedCompletionDate",
+      "type": "DATE",
+      "formate": "MM-dd-yyyy HH:mm:ss"
+    },
+    "4": {
+      "json_column": "status",
+      "values": "values.name"
+    },
+    "5": {
+      "json_column": "supplier",
+      "type": "SUPPLIER",
+      "values": "values.name"
+    },
+    "6": {
+      "json_column": "contractFromParent",
+      "type": "CONTRACT",
+      "values": "values.name"
+    },
+    "7": {
+      "json_column": "stakeHolders",
+      "type": "STAKEHOLDER"
+    },
+    "rowColInfo": {
+      "startRow": 3,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -2,
+      "dateFormate": "MM-yyyy-dd HH:mm:ss"
+    }
+  },
+  "Change Requests": {
+    "1": {
+      "json_column": "shortCodeId",
+      "type": "ID"
+    },
+    "2": {
+      "json_column": "name"
+    },
+    "3": {
+      "json_column": "plannedCompletionDate",
+      "type": "DATE",
+      "formate": "MM-dd-yyyy"
+    },
+    "4": {
+      "json_column": "status",
+      "values": "values.name"
+    },
+    "5": {
+      "json_column": "supplier",
+      "type": "SUPPLIER",
+      "values": "values.name"
+    },
+    "6": {
+      "json_column": "contract",
+      "type": "CONTRACT",
+      "values": "values.name"
+    },
+    "7": {
+      "json_column": "stakeHolders",
+      "type": "STAKEHOLDER"
+    },
+    "rowColInfo": {
+      "startRow": 3,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -2,
+      "dateFormate": "MM-yyyy-dd HH:mm:ss"
+    }
+  },
+  "Interpretations": {
+    "1": {
+      "json_column": "shortCodeId",
+      "type": "ID"
+    },
+    "2": {
+      "json_column": "name"
+    },
+    "3": {
+      "json_column": "plannedSubmissionDate",
+      "type": "DATE",
+      "formate": "MM-dd-yyyy"
+    },
+    "4": {
+      "json_column": "status",
+      "values": "values.name"
+    },
+    "5": {
+      "json_column": "supplier",
+      "type": "SUPPLIER",
+      "values": "values.name"
+    },
+    "6": {
+      "json_column": "rootInfo",
+      "type": "CONTRACT"
+    },
+    "7": {
+      "json_column": "stakeHolders",
+      "type": "STAKEHOLDER"
+    },
+    "rowColInfo": {
+      "startRow": 3,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -2,
+      "dateFormate": "MM-yyyy-dd HH:mm:ss"
+    }
+  },
+  "Governance Body Meeting": {
+    "1": {
+      "json_column": "shortCodeId",
+      "type": "ID"
+    },
+    "2": {
+      "json_column": "name"
+    },
+    "3": {
+      "json_column": "occurrenceDate",
+      "type": "DATE",
+      "formate": "dd-MM-yyyy HH:mm:ss"
+    },
+    "4": {
+      "json_column": "status",
+      "values": "values.name"
+    },
+    "5": {
+      "json_column": "supplier",
+      "type": "SUPPLIER",
+      "values": "values.name"
+    },
+    "6": {
+      "json_column": "contract",
+      "type": "CONTRACT",
+      "values": "values.name|values.documentTitle"
+    },
+    "7": {
+      "json_column": "stakeHolders",
+      "type": "STAKEHOLDER"
+    },
+    "rowColInfo": {
+      "startRow": 3,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -2,
+      "dateFormate": "MM-yyyy-dd HH:mm:ss"
+    }
+  },
+  "Child Service Levels": {
+    "1": {
+      "json_column": "shortCodeId",
+      "type": "ID"
+    },
+    "2": {
+      "json_column": "name"
+    },
+    "3": {
+      "json_column": "dueDate",
+      "type": "DATE",
+      "formate": "dd-MM-yyyy HH:mm:ss"
+    },
+    "4": {
+      "json_column": "performanceStatus",
+      "values": "values.name"
+    },
+    "5": {
+      "json_column": "supplier",
+      "type": "SUPPLIER",
+      "values": "values.name"
+    },
+    "6": {
+      "json_column": "contract",
+      "type": "CONTRACT",
+      "values": "values.name|values.documentTitle"
+    },
+    "7": {
+      "json_column": "stakeHolders",
+      "type": "STAKEHOLDER"
+    },
+    "rowColInfo": {
+      "startRow": 3,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -2,
+      "dateFormate": "MM-yyyy-dd HH:mm:ss"
+    }
+  },
+  "Contracts": {
+    "1": {
+      "json_column": "shortCodeId",
+      "type": "ID"
+    },
+    "2": {
+      "json_column": "name"
+    },
+    "3": {
+      "json_column": "status",
+      "values": "values.name"
+    },
+    "4": {
+      "json_column": "supplier",
+      "type": "SUPPLIER",
+      "values": "values.name"
+    },
+    "5": {
+      "json_column": "parentDocument",
+      "type": "CONTRACT",
+      "fallback": "",
+      "values": "values.name"
+    },
+    "6": {
+      "json_column": "stakeHolders",
+      "type": "STAKEHOLDER"
+    },
+    "rowColInfo": {
+      "startRow": 3,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -2,
+      "dateFormate": "MM-yyyy-dd HH:mm:ss"
+    }
+  }
+}

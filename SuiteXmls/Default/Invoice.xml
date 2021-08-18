@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Suite">
+
+    <test name="Invoice End to End Flow Validation">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.flow.TestInvoiceFlow"></class>
+        </classes>
+    </test>
+
+    <test name="Service Data Validation">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.flow.TestServiceData"></class>
+        </classes>
+    </test>
+
+    <test name="Test Invoice Validation">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.flow.TestInvoice"></class>
+        </classes>
+    </test>
+
+    <test name="Service Data Charges Validation">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.flow.TestServiceDataCharges"></class>
+        </classes>
+    </test>
+
+</suite>

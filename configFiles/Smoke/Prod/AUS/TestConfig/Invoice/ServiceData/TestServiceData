@@ -1,0 +1,78 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = arc flow 1, arc flow 2, arc flow 3
+
+#DeleteEntity: Whether to delete entity or not. Possible values are True or False. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Invoice/ServiceData
+extrafieldsconfigfilename = ExtraFieldsForServiceDataTest.cfg
+
+[arc flow 1]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = success
+
+#End date is before Start date
+[arc flow 2]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = failure
+
+#Already existing Service Id Client & Supplier
+[arc flow 3]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = failure
+
+
+[fixed fee flow 1]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = success
+
+#End date is before Start date
+[fixed fee flow 2]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = failure
+
+#Already existing Service Id Client & Supplier
+[fixed fee flow 3]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = failure
+
+[forecast flow 1]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = success
+
+#End date is before Start date
+[forecast flow 2]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = failure
+
+#Already existing Service Id Client & Supplier
+[forecast flow 3]
+sourceentity = contracts
+sourcename = For API Automation Please Do Not Touch
+sourceid = 16417
+expectedresult = failure

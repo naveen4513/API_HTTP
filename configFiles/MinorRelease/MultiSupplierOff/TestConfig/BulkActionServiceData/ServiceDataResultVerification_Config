@@ -1,0 +1,27 @@
+#All section names and keys must be in lower case characters only
+
+# apinames : contains the names used in tablistdata API for specific entry 
+# cloumnnumberstobetaken : coulmn numbers to be taken from the file , these will be as per Bulk_Action_ServiceData_Config.json file
+
+
+
+[apinames]
+display_name = display_name
+servicesubcategory = servicesubcategory
+invoicingtype = invoicingtype
+serviceclient = serviceclient
+servicesupplier = servicesupplier
+
+action_name = action_name
+requested_by = requested_by
+filename = fileName
+
+
+[cloumnnumberstobetaken]
+display_name = 3,5
+servicesubcategory = 8
+invoicingtype = 18
+serviceclient = 5
+servicesupplier = 6
+
+action_name = Data Uploaded

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice List Data Download Validation" data-provider-thread-count="15">
+
+    <test name="List Data Download Validation">
+        <classes>
+            <class name="com.sirionlabs.test.listdatadownload.TestListDataDownloadValidations"></class>
+        </classes>
+    </test>
+
+</suite>

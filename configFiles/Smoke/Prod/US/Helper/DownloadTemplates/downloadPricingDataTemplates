@@ -1,0 +1,23 @@
+#All section names and keys must be in lower case characters only
+#Section is the Entity Name as in EntityIdMapping.cfg.cfg
+
+# entity name is the Key of the config
+# dataentitynametobetested is the nane of tested entity , so it will be Service Data
+# contractidsatshowpage is tblcontracts ID in the show page , it differs for each contract
+# runexecutionpart is the field to specify if it need to run upload service data or verification of the upload results : it will be upload/verification
+# tabspecificidforservicedatatab : it is the id used for tablistData API while seeing contract Service Data Tab
+# tabspecificidforauditlogtab : it is the id used for tablistData API while seeing contract Audit Log Tab
+
+[default]
+#servicedataupload/pricingdataupload/pricingdataverification
+runexecutionpart = servicedataupload
+tabspecificidforservicedatatab = 63
+tabspecificidforauditlogtab = 61
+
+[contracts]
+dataentitynametobetested = service data
+contract_ids_at_showpage_for_fixed_fee = 129386
+contract_ids_at_showpage_for_arc_rrc = 1672
+contract_ids_at_showpage_for_forecast = 1672
+# Add the Invoice Types to be tested  , it can be either arc_rrc or fixed_fee or forecast or any combination separated by comma
+invoice_types = fixed_fee

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sisense RBAC Functional Tests" thread-count="1">
+
+    <test name="RBAC Functional Tests">
+        <classes>
+            <class name="com.sirionlabs.test.sisenseBI.TestRBAC"></class>
+        </classes>
+    </test>
+
+
+</suite>

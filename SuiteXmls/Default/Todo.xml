@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Todo" parallel="methods" data-provider-thread-count="10">
+
+    <test name="Approvals Test">
+        <classes>
+            <class name="com.sirionlabs.test.todo.TestTodoApprovals"></class>
+        </classes>
+    </test>
+
+    <test name="Tasks Test">
+        <classes>
+            <class name="com.sirionlabs.test.todo.TestTodoTasks"></class>
+        </classes>
+    </test>
+
+    <test name="Tasks Test">
+        <classes>
+            <class name="com.sirionlabs.test.todo.TestTodoMeetings"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Pending Approvals and Tasks">
+        <classes>
+            <class name="com.sirionlabs.test.todo.TestTodoPendingApprovalsAndTasks"></class>
+        </classes>
+    </test>-->
+
+</suite>  

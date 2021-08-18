@@ -1,0 +1,13 @@
+#Mention only those fields here which are to validated on Show Page for a chart.
+#Section here is Chart Id.
+#Key here is Filter/Attribute Label. Key must be in lowercase characters only.
+#Value here is the Section name as in Show Field Hierarchy Mapping file.
+#Ex. To validate field Aging on Show Page: Specify key as Filter Name of Aging. Value would be key name as used in Show Field Hierarchy Mapping (section name).
+#It will Pick the correct Json Response hierarchy for Filter Aging from Show Config File and then test its value on Show Page.
+#If for any chart a filter name is not specified under its section then it will fallback to default value of that key from
+#NOTE: The Value i.e. Section Name in Show Field Hierarchy must be present in Show Field Hierarchy Mapping File.
+
+aging = aging
+
+[71]
+responsibility = responsibility

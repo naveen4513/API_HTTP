@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Frequency Module Test Cases">
+
+
+        <test name="Service Level Frequency Module Tests">
+            <classes>
+                <class name="com.sirionlabs.test.serviceLevel.TestServiceLevelFrequencyModuleTestCases"></class>
+            </classes>
+        </test>
+
+</suite>

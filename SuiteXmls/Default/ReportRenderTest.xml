@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Report Render Suite" data-provider-thread-count="20">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="Report Render Test">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestReportRender"></class>
+        </classes>
+    </test>
+
+    <test name="Test Schedule Report">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestScheduleReport"></class>
+        </classes>
+    </test>
+
+    <test name="Verify Schedule Large Report">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestScheduleLargeReport"></class>
+        </classes>
+    </test>
+
+
+    <test name="DownloadGraph">
+        <classes>
+            <class name="com.sirionlabs.test.TestDownloadGraph"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Verify Report Renderer Column Sorting">-->
+    <!--<classes>-->
+    <!--<class name="com.sirionlabs.test.reportRenderer.TestReportColumnsSorting"></class>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+
+</suite>

@@ -1,0 +1,67 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 10
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Issue/Creation
+extrafieldsconfigfilename = ExtraFieldsForIssueCreation.cfg
+
+#TC-C8049: Create Issue from Supplier
+[flow 1]
+sourceentity = suppliers
+sourcename = sarthak SUP1
+sourceid = 1906
+expectedresult = success
+
+#TC-C8049: Create Issue from Contract
+[flow 3]
+sourceentity = contracts
+sourcename = Test Contract Creation
+sourceid = 133797
+expectedresult = success
+
+#TC-C8049: Create Issue from Obligation
+[flow 6]
+sourceentity = obligations
+sourcename = TEST CHECK OB_workflow
+sourceid = 3067
+expectedresult = success
+
+#TC-C8049: Create Issue from Service Level
+[flow 7]
+sourceentity = service levels
+sourcename = SteelBird Air
+sourceid = 7384
+expectedresult = success
+
+#TC-C8049: Create Issue from Invoice
+[flow 9]
+sourceentity = invoices
+sourcename = sdfgfhj
+sourceid = 10127
+expectedresult = success
+
+#TC-C8297: Create Issue from GBM
+[flow 10]
+sourceentity = governance body meetings
+sourcename = Regression 5 feb
+sourceid = 25053
+expectedresult = success
+
+#Create Issue from CDR
+#[flow 15]
+#sourceentity = contract draft request
+#sourcename = Regression CDR
+#sourceid = 2756
+#supplierid = 1184
+#expectedresult = success

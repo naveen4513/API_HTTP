@@ -1,0 +1,14 @@
+[contract from cdr]
+sourceentity = contract draft request
+sourceid = 4391
+supplierids = 2530
+parententitytype = psa
+
+[contract draft request fields for supplier inheritance]
+sourceentity = suppliers
+sourcename = Akshay_Chawla
+sourceid = 2530
+parententitytype = msa
+
+[sow from cdr]
+parententitytype = sow

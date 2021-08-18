@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Entity Misc Tests Suite" thread-count="1" data-provider-thread-count="3">
+
+    <test name="Test Entity Tabs">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestEntityTabs"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+<!--    <parameter name="Environment" value="automation"/>-->
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <test name="Currency Conv Scenarios">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.TestCurrencyConversionValidation"></class>
+            </classes>
+        </test>
+
+        <test name="Currency Conversion Validation">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.TestCurrConvDynamicFields"></class>
+            </classes>
+        </test>
+
+        <test name="Currency Conversion Supplier">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.currencyconv.TestCurrConvSupplier"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

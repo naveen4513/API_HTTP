@@ -1,0 +1,221 @@
+#This file contains all the Flows for TestInvoiceFlow Suite.
+
+#ContractSectionName: This is used only when Create Contract Flag is set to True.
+#Specify the Contract Column Name here which should be used to Create Contract from the Contract Configuration File. Default value is 'default'
+
+#As above property is used for Contract. Similarly above property is used for other Entities as well like (Service Data, Invoice, Invoice Line Item)
+
+#UploadPricing: Whether to upload Pricing or not. Possible values are True or False. Default value is True.
+#If set to True then will upload Pricing and proceed further. Otherwise will skip Pricing Upload and directly create Invoice & Line Item.
+#This flag is set to False for negative cases only.
+
+
+#PricingTemplateFileName: Name of the Pricing Template File. The pricing sheet will be downloaded with this name and then will be uploaded.
+#PricingTemplateSheetName: Name of the Pricing Template Sheet which is to be updated.
+#NumberOfRowsToEdit: No. of rows to edit in Pricing Sheet
+#StartingRowNum: Starting Row No. from where to start editing pricing data.
+#VolumeColumnNum: Column No. where volume is defined.
+#RateColumnNum: Column No. where rate is defined.
+#VolumeColumnValues: All the values of the volumes to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+#RateColumnValues: All the values of the rates to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+
+#Volume Discrepency  Discrepency quantity not null and not zero
+#Amount Discrepency  Discrepency amount not null and not zero
+#Total Discrepency Discrepency Total not null and not zero
+#No Discrepency	 Discrepency quantity Discrepency amount  Discrepency Total  null and zero
+
+
+#ExpectedResult: The final Invoice Line Item Validation Status is to be mentioned here.
+basecontractid = 27553
+invoicestartdate = 03-01-2018
+invoiceenddate = 03-31-2018
+adjustment lineitem type id = 1314
+
+#Total discrepancy Calculating System Values
+#C153090
+#arc flow 12 has no real significance
+[adj flow 1]
+contractsectionname = adj flow 1
+servicedatasectionname = adj flow 1
+invoicesectionname = adj flow 1
+invoicelineitemsectionname = adj flow 1
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 105
+
+#The rate card window rows
+#This logic is when base volume is set as 80 and final consumption as 105 pricing and ARC are set according to
+#"lowerVolume":100,"endDate":"03-31-2018","rate":5,"upperVolume":105,"startDate":"03-01-2018"},
+#"lowerVolume":105,"endDate":"03-31-2018","rate":10,"upperVolume":130,"startDate":"03-01-2018"},
+#"lowerVolume":130,"endDate":"03-31-2018","rate":15,"startDate":"03-01-2018"}],
+
+exp num of rows = 3
+rate card row 0 = amount->20,charge_type->ARC,line_item_amount->20,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4,pricingentityname->,currency_conversion_rate->1,rate->5,service_data_currency->INR
+rate card row 1 = amount->200,charge_type->ARC,line_item_amount->200,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1,rate->10,service_data_currency->INR
+rate card row 2 = amount->15,charge_type->ARC,line_item_amount->15,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1,pricingentityname->,currency_conversion_rate->1,rate->15,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+expectedresult = Amount Discrepancy
+
+[memo flow 1]
+contractsectionname = memo flow 1
+servicedatasectionname = memo flow 1
+invoicesectionname = memo flow 1
+invoicelineitemsectionname = memo flow 1
+
+#Specific to memo
+supplier amount = 36
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+lineitemexpectedresult = Amount Discrepancy
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20,charge_type->ARC,line_item_amount->20,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4,pricingentityname->,currency_conversion_rate->1,rate->5,service_data_currency->INR
+rate card row 1 = amount->200,charge_type->ARC,line_item_amount->200,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1,rate->10,service_data_currency->INR
+rate card row 2 = amount->15,charge_type->ARC,line_item_amount->15,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1,pricingentityname->,currency_conversion_rate->1,rate->15,service_data_currency->INR
+
+audit log values = System Rate->9.857142857,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105.0,Discrepancy Quantity->0.0,System Amount->1035.0,Discrepancy Amount->899.0,System Total->1035.0,Discrepancy Total->799.0,System Variance->25,Discrepancy Rate->-0.142857142857,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Amount Discrepancy
+supplier amount values = Supplier Amount->136.0,Supplier Quantity->105.0,Supplier Total->236.0,Supplier Rate->10.0,Supplier conversionRate->1
+
+[memo flow 2]
+contractsectionname = memo flow 2
+servicedatasectionname = memo flow 2
+invoicesectionname = memo flow 2
+invoicelineitemsectionname = memo flow 2
+
+#Specific to memo
+supplier amount = 799
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+lineitemexpectedresult = Amount Discrepancy
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20,charge_type->ARC,line_item_amount->20,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4,pricingentityname->,currency_conversion_rate->1,rate->5,service_data_currency->INR
+rate card row 1 = amount->200,charge_type->ARC,line_item_amount->200,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1,rate->10,service_data_currency->INR
+rate card row 2 = amount->15,charge_type->ARC,line_item_amount->15,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1,pricingentityname->,currency_conversion_rate->1,rate->15,service_data_currency->INR
+
+audit log values = System Rate->9.857142857,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105.0,Discrepancy Quantity->0.0,System Amount->1035.0,Discrepancy Amount->899.0,System Total->1035.0,Discrepancy Total->799.0,System Variance->25,Discrepancy Rate->-0.142857142857,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Amount Discrepancy
+supplier amount values = Supplier Amount->136.0,Supplier Quantity->105.0,Supplier Total->236.0,Supplier Rate->10.0,Supplier conversionRate->1
+
+[memo flow 3]
+contractsectionname = memo flow 3
+servicedatasectionname = memo flow 3
+invoicesectionname = memo flow 3
+invoicelineitemsectionname = memo flow 3
+
+#Specific to memo
+supplier total = 799
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+lineitemexpectedresult = Amount Discrepancy
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20,charge_type->ARC,line_item_amount->20,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4,pricingentityname->,currency_conversion_rate->1,rate->5,service_data_currency->INR
+rate card row 1 = amount->200,charge_type->ARC,line_item_amount->200,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1,rate->10,service_data_currency->INR
+rate card row 2 = amount->15,charge_type->ARC,line_item_amount->15,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1,pricingentityname->,currency_conversion_rate->1,rate->15,service_data_currency->INR
+
+audit log values = System Rate->9.857142857,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105.0,Discrepancy Quantity->0.0,System Amount->1035.0,Discrepancy Amount->899.0,System Total->1035.0,Discrepancy Total->799.0,System Variance->25,Discrepancy Rate->-0.142857142857,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Amount Discrepancy
+supplier amount values = Supplier Amount->136.0,Supplier Quantity->105.0,Supplier Total->236.0,Supplier Rate->10.0,Supplier conversionRate->1
+
+[memo flow 4]
+contractsectionname = memo flow 4
+servicedatasectionname = memo flow 4
+invoicesectionname = memo flow 4
+invoicelineitemsectionname = memo flow 4
+
+#Specific to memo
+supplier total = 100
+
+uploadpricing = false
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+numberofcolumntoeditforeachrowforarc = 4
+arcsheetname = ARC RRC
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+finalconsumptionvalues = 105
+
+lineitemexpectedresult = Amount Discrepancy
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20,charge_type->ARC,line_item_amount->20,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4,pricingentityname->,currency_conversion_rate->1,rate->5,service_data_currency->INR
+rate card row 1 = amount->200,charge_type->ARC,line_item_amount->200,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1,rate->10,service_data_currency->INR
+rate card row 2 = amount->15,charge_type->ARC,line_item_amount->15,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1,pricingentityname->,currency_conversion_rate->1,rate->15,service_data_currency->INR
+
+audit log values = System Rate->9.857142857,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105.0,Discrepancy Quantity->0.0,System Amount->1035.0,Discrepancy Amount->899.0,System Total->1035.0,Discrepancy Total->799.0,System Variance->25,Discrepancy Rate->-0.142857142857,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Amount Discrepancy
+supplier amount values = Supplier Amount->136.0,Supplier Quantity->105.0,Supplier Total->236.0,Supplier Rate->10.0,Supplier conversionRate->1

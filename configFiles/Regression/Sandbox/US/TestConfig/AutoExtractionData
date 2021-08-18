@@ -1,0 +1,111 @@
+hosturl = https://testwu.sirioninc.net
+contractid = 132570
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = KAMADALTD_DRSADraftR_3252013.docx
+docid = 50105
+clientid = 1002
+rolegroupid = 1033
+backendconfigration = AE1
+multicontractid = 15136
+multicontractdocid = 6792
+multientitytypeid = 316
+userid= 9293
+
+
+[searchable pdf document]
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = Searchable_pdf.pdf
+
+[non searchable pdf document]
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = Non_Searchable_pdf.pdf
+
+[image document attachment]
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = test1.jpg
+
+[docx attachment]
+fileuploadpath = src/test/resources/TestConfig/AutoExtraction/UploadFiles
+fileuploadname = KAMADALTD_DRSADraftR_3252013.docx
+
+[end user credentials]
+username = karuna_user
+password = admin123
+
+[end user credentials without stakeholder]
+username = akshay_chawla
+password = admin1234
+
+[client admin credentials]
+username = amarpal.singh
+password = admin123
+
+[mongo db credentionals]
+hosturl = 192.168.2.186
+port = 27017
+
+[sirion environment sftp]
+hostname = 192.168.2.164
+port = 22
+scheme = http
+username = tomcat7
+password = tomcat7@123
+downloadpath = /src/test/output/AutoExtractionDownloadedFiles/SirionAppsDownloadedFiles/
+
+[ae environment]
+hostname = US-Sandbox-AE-Internal-NLB-e101017f8c5847b2.elb.us-east-1.amazonaws.com
+port = 8090
+scheme = http
+
+[ae us production]
+hostname = 172.30.0.136
+port = 8090
+scheme = http
+
+[ae vf production]
+hostname = ECS-VF-Prod-AE-Internal-NLB-ea9232672fe93b5a.elb.eu-central-1.amazonaws.com
+port = 8090
+scheme = http
+
+[ae uk production]
+hostname = 172.31.9.142
+port = 8090
+scheme = http
+
+[ae eu production]
+hostname = 172.31.39.48
+port = 8090
+scheme = http
+
+[ae aus production]
+hostname = AutoExtraction-ECS-AUS-Prod-ba5cf4cf0021417f.elb.ap-southeast-2.amazonaws.com
+port = 8090
+scheme = http
+
+[ae vf sandbox]
+hostname = 172.31.23.121
+port = 8090
+scheme = http
+
+[ae2 environment]
+hostname = 192.168.2.107
+port = 8085
+scheme = http
+
+[scheduler environment]
+hostname = 172.30.0.233
+port = 8090
+scheme = http
+
+[postres sirion db details]
+host = 192.168.2.156
+port = 5432
+dbname = AE_POD_2_20
+username = postgres
+password = postgres
+
+[kafka server details]
+hostname = 192.168.2.174
+port = 22
+username = tomcat7
+password = tomcat7@123

@@ -1,0 +1,22 @@
+#All keys must be in lower case characters only
+
+#Date Buffer is the No Of Days that will be considered as buffer from actual date received from Calendar Data Response For Validation
+#Ex. If Actual date in response is 02-22-2017 and buffer for both before and after are 1 then it will be validated within range 02-21-2017 to 02-23-2017
+datevalidationbufferbefore = 1
+datevalidationbufferafter = 1
+
+#Expiration/Due Date Format in Show API Response. Do Not Include Time Zone in the format.
+dateformat = MMM-dd-yyyy
+
+#ApplyRandomization: When Set to True then pick some records randomly for Validation. If False then will pick all records for validation. (True to enable, False to disable).
+#Default Value is False. If Set to True then Max. No of Records to be validated will be picked from MaxRecordsToValidate property.
+applyrandomization = true
+
+#MaxRecordsToValidate: These many records will be picked randomly for Validation. (Default value is 3)
+maxrecordstovalidate = 1
+
+#TodoShowPageDueDateMapping: Mappings of Show Page Objects with Todo Due Date.
+#Key here is entityTypeId and Value is Show Page Object Name as in Show Page Field Hierarchy File.
+[todoshowpageduedatemapping]
+0 = expirationDate
+15 = reportingDate

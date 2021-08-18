@@ -1,0 +1,53 @@
+#Section here is the Entity Name as in the EntityId.cfg
+#Key is the Header Name in the Excel Sheet for that Entity.
+#Value is the Correct Name of the Header in the Api.
+#NOTE: Key is Case-Sensitive here. It must match the Header Name exactly.
+
+
+[actions]
+actionContractCountries = actionDeliveryCountries
+actionManagementCountries = actionCountries
+actionManagementRegions = actionRegions
+actionServicesCategory = actionServiceCategory
+
+[contracts]
+coCommentField = coCommentFieldStatus
+coConversionMatrix = coCurrencyConversionMatrix
+coContractNo = coContractNumber
+coNoOfRenewals = coNumberOfRenewals
+coManagementCountries = coCountries
+coManagementRegions = coRegions
+coExpirationNoticePeriod = coExpirationNoticePeriodInDays
+coRecipientCompanyCode = coContractingCompanyCode
+coConversionMatrixFrom = coFrom
+coConversionMatrixTo = coTo
+
+[vendors]
+vhAddditionalACV = vhAdditionalACV
+vhAddditionalFACV = vhAdditionalFACV
+vhAddditionalTCV = vhAdditionalTCV
+
+[obligations]
+obContractCountries = obDeliveryCountries
+obRecipientCompanyCode = obCompanyCode
+obManagementCountries = obCountries
+obManagementRegions = obRegions
+
+[service levels]
+slScope1 = slScopeOfService1
+slScope2 = slScopeOfService2
+slDataCriteria = slUniqueDataCriteria
+slKPI = slServiceLevelKPI
+slUnitofMeasurement = slUnitofSLMeasurement
+slManagementCountries = slCountries
+slManagementRegions = slRegions
+slDataCalculationData = slPerformanceDataCalculation
+slComputationCalculationData = slPerformanceComputationCalculation
+slRecipientCompanyCode = slContractingCompanyCode
+slContractCountries = slDeliveryCountries
+slSubjectTo = slSubjectToContinuousImprovement
+
+[contract draft request]
+cdrReqSubmissionDate = cdrRequestSubmissionDate
+cdrTermType = cdrTermTypes
+cdrExpCompletionDate = cdrExpectedCompletionDate

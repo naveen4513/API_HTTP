@@ -1,0 +1,18 @@
+# msl_id : Master Service Label DB ID for Which Snow Integration is being peformed
+# sysparm_.* : are params for service now API call
+# offset and size if for pagination
+# put integration_jar_executed flag true is integration jar has been executed otherwise false
+# downloaddirectory : this will store Child Service Level Performance Data Excel
+# dateformate :this it the formate for reporting date for CSL
+
+sysparm_query = inc_assignment_group.vendorsLIKE7ed85d454f8a520082d3a35e0210c76d^ORinc_assignment_group.vendorsLIKEb57eb6a34f821600eb9e2e35f110c70f^taskslatable_sla.nameSTARTSWITHE2E Infosys^taskslatable_sla.nameLIKEResponse^taskslatable_stageINachieved,breached^inc_priorityIN1,2^inc_resolved_atBETWEENjavascript:gs.dateGenerate('2017-08-15','00:00:00')@javascript:gs.dateGenerate('2017-10-15','23:59:59')
+sysparm_display_value = true
+sysparm_exclude_reference_link = true
+sysparm_fields = inc_number,inc_assignment_group,inc_category,taskslatable_sla,inc_u_incident_type,taskslatable_schedule,inc_priority,inc_state,inc_opened_at,inc_resolved_at,taskslatable_has_breached,taskslatable_duration,inc_location
+sysparm_limit = 1
+msl_id = 86272
+offset = 0
+size = 100
+integration_jar_executed = false
+downloaddirectory = src//test//resources//CSLData
+dateformate = MM-dd-yyyy

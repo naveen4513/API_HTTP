@@ -1,0 +1,11 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Validate API is returning correct data for valid Layout Id.",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "workflowLayoutId": 1001,
+    "expectedStatusCode": 200,
+    "expectedErrorMessage": null
+  }
+]

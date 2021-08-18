@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+<!--    <parameter name="Environment" value="vpcEnv"/>-->
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+<!--        <test name = "SIR-2755 Field Provisioning">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.clientAdmin.FieldProvisioningAPIs.SIR2755"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name = "UI-1989 Bulk Create">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.bulkCreate.UI1989"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name = "Bulk Create Entities">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.bulkCreate.BulkCreateAllEntities"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name = "Invoice Copy Generation (Client Admin API Integration)">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.clientAdmin.Test_InvoiceCopyGeneration"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name = "Test Data Creation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.TestDataCreation"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name = "Pricing upload through service data creation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.serviceData.Pricing.Test_PricingUploadDuringSDCreation"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--&lt;!&ndash;SIR-9177&ndash;&gt;-->
+<!--        <test name = "Revalidation Scenarios">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.revalidation.TestRevalidationScenarios"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--&lt;!&ndash;SIR-10073&ndash;&gt;-->
+<!--        <test name = "TCV Currency Roll Up feature">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.contract.CurrencyRollUpFeature.TestCurrencyRollUp"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+
+<!--        <test name = "Bulk Create Invoice Cases">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.bulkCreate.TestBulkCreateV2"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--Working fine        -->
+<!--        <test name = "Proforma">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.ProformaInvoice"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--8 october 2020-->
+<!--        <test name="Test_BillingDataScenarios Base Specific Yes">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.serviceData.Test_BillingDataScenBaseSpecificYes"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+
+<!--    Test_BillingDataScenarios-->
+        <test name="Test_BillingDataScenarios">
+            <classes>
+                <class name="com.sirionlabs.test.serviceData.Test_BillingDataScenarios"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

@@ -1,0 +1,34 @@
+#MetaData Search Payload Hierarchy Configuration File.
+#Here all the Payload Hierarchies are defined for any field which requires Special handling.
+#NOTE: For all the Special Hierarchies, ShowFieldHierarchy should also be updated. (Data Validation Hierarchy would be same)
+
+#All the Hierarchies are given a name are hard coded so must NOT be changed.
+#Below hierarchies are for all the Fields that DO NOT belong to Types Stakeholders, Select.
+#All the hierarchies defined below are taken care of in the code.
+#Here key is the Hierarchy Name and the Value suggest the hierarchy layout.
+
+[hierarchy]
+default = values[text]
+hierarchy1 = values[object] -> name[text]
+
+#By Default, all the Fields are considered to have Default Payload Hierarchy defined by 'DefaultHierarchy'.
+#If any field for an Entity requires any Special Payload Hierarchy then :
+#Specify the Section as the Entity Name as defined in EntityId.cfg file and is case-sensitive. If the Hierarchy for a Field is same across multiple Entities then could define\
+Field and its Hierarchy under Section named 'default'.
+#The Key would be Field Name as in LayoutComponent Object.
+#The value here would be the Hierarchy Name
+
+#The Hierarchy Picking Preference Order is as follows:
+#1. Hierarchy defined for a field under Section of Entity.
+#2. Hierarchy defined for a field under Section 'default'.
+#3. Default Hierarchy mentioned as in Section Hierarchy.
+
+#NOTE: All the Keys are Case-Sensitive.
+
+[default]
+contractFromParent = hierarchy1
+supplier = hierarchy1
+contract = hierarchy1
+
+[actions]
+#contractFromParent = hierarchy1

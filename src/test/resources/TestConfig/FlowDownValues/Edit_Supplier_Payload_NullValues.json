@@ -1,0 +1,1801 @@
+{
+  "body": {
+    "data": {
+      "parentShortCodeId": {
+        "name": "parentShortCodeId",
+        "values": {
+          "name": "RL01006",
+          "id": 1006
+        },
+        "multiEntitySupport": false
+      },
+      "additionalACV": {
+        "name": "additionalACV",
+        "id": 513,
+        "values": 2,
+        "displayValues": "2 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "functions": {
+        "name": "functions",
+        "id": 508,
+        "values": [
+          {
+            "name": "Automation",
+            "id": 1018,
+            "additionalOption": false
+          },
+          {
+            "name": "IT",
+            "id": 1006,
+            "additionalOption": false
+          },
+          {
+            "name": "Human Resources",
+            "id": 1007,
+            "additionalOption": false
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractingClientEntities": {
+        "name": "contractingClientEntities",
+        "multiEntitySupport": false
+      },
+      "integrationSystem": {
+        "name": "integrationSystem",
+        "multiEntitySupport": false
+      },
+      "aggregateFYCV": {
+        "name": "aggregateFYCV",
+        "id": 545,
+        "values": 34,
+        "displayValues": "34 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "parentEntityId": {
+        "name": "parentEntityId",
+        "values": 1006,
+        "multiEntitySupport": false
+      },
+      "recipientHubs": {
+        "name": "recipientHubs",
+        "multiEntitySupport": false
+      },
+      "globalRegions": {
+        "name": "globalRegions",
+        "id": 510,
+        "values": [
+          {
+            "name": "Europe",
+            "id": 1013,
+            "parentId": 1006,
+            "additionalOption": false
+          },
+          {
+            "name": "Global Region",
+            "id": 1011,
+            "parentId": 1006,
+            "additionalOption": false
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "globalCountries": {
+        "name": "globalCountries",
+        "id": 511,
+        "values": [
+          {
+            "name": "Bulgaria",
+            "id": 37,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Netherlands",
+            "id": 166,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Turkey",
+            "id": 236,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Norway",
+            "id": 176,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Ukraine",
+            "id": 241,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "United Arab Emirates",
+            "id": 242,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Ireland",
+            "id": 115,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "United Kingdom",
+            "id": 243,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Israel",
+            "id": 117,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Rest of Europe",
+            "id": 1013,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Italy",
+            "id": 118,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Poland",
+            "id": 187,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Portugal",
+            "id": 188,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Croatia",
+            "id": 61,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Czech Republic",
+            "id": 64,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Romania",
+            "id": 192,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Denmark",
+            "id": 65,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Russia",
+            "id": 193,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Lebanon",
+            "id": 134,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Egypt",
+            "id": 71,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Lithuania",
+            "id": 139,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Luxembourg",
+            "id": 140,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Austria",
+            "id": 16,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Finland",
+            "id": 81,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "France",
+            "id": 82,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Slovenia",
+            "id": 210,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Bahrain",
+            "id": 19,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "South Africa",
+            "id": 213,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Belarus",
+            "id": 23,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Spain",
+            "id": 215,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Belgium",
+            "id": 24,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Germany",
+            "id": 90,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Bosnia and Herzegovina",
+            "id": 30,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Greece",
+            "id": 94,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Sweden",
+            "id": 222,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Switzerland",
+            "id": 223,
+            "parentId": 1013,
+            "additionalOption": false
+          },
+          {
+            "name": "Afghanistan",
+            "id": 1,
+            "parentId": 1011,
+            "additionalOption": false
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "serviceCategory": {
+        "name": "serviceCategory",
+        "id": 11466,
+        "values": [
+          {
+            "name": "Account Payable",
+            "id": 1110,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Accounts Receivable",
+            "id": 1116,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Collections",
+            "id": 1117,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Competitive Intelligence",
+            "id": 1268,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Customer Invoicing",
+            "id": 1115,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Database Services",
+            "id": 1159,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Enhanced Fundamentals - India",
+            "id": 1139,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Fixed Asset Accounting",
+            "id": 1113,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "General Accounting",
+            "id": 1112,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Project Accountings",
+            "id": 1114,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Tax",
+            "id": 1118,
+            "disAllowDeselection": true
+          },
+          {
+            "name": "Travel & Expenses",
+            "id": 1111,
+            "disAllowDeselection": true
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "supplierAccess": {
+        "name": "supplierAccess",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "stakeHolders": {
+        "name": "stakeHolders",
+        "values": {
+          "rg_2051": {
+            "values": [
+              {
+                "name": "Anshul User",
+                "id": 1233,
+                "type": 2,
+                "email": null,
+                "properties": {}
+              },
+              {
+                "name": "Automation User (Inactived)",
+                "id": 1177,
+                "type": 2,
+                "email": null,
+                "properties": {}
+              },
+              {
+                "idTypes": [
+                  2
+                ],
+                "name": "ClientTypeUser",
+                "id": 1003
+              },
+              {
+                "name": "Donot select",
+                "id": 2423,
+                "type": 2,
+                "email": null,
+                "properties": {}
+              },
+              {
+                "name": "Neetu User1",
+                "id": 1261,
+                "type": 2,
+                "email": null,
+                "properties": {}
+              },
+              {
+                "name": "Prashant User",
+                "id": 1247,
+                "type": 2,
+                "email": null,
+                "properties": {}
+              },
+              {
+                "name": "Shikha User1",
+                "id": 1272,
+                "type": 2,
+                "email": null,
+                "properties": {}
+              },
+              {
+                "name": "vikas J jaiswal",
+                "id": 2360,
+                "type": 1,
+                "email": null,
+                "properties": {}
+              }
+            ],
+            "name": "rg_2051",
+            "label": "Suppliers Manager",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          }
+        },
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "canSupplierBeParent": true,
+      "acv": {
+        "name": "acv",
+        "id": 542,
+        "values": 36,
+        "displayValues": "36 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "signatureAllowed": {
+        "name": "signatureAllowed",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "supplier": {
+        "name": "supplier",
+        "multiEntitySupport": false
+      },
+      "initiatives": {
+        "name": "initiatives",
+        "id": 4911,
+        "values": [
+          {
+            "name": "SPRING",
+            "id": 1000
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "id": {
+        "name": "id",
+        "values": 1050,
+        "multiEntitySupport": false
+      },
+      "parentEntityIds": {
+        "name": "parentEntityIds",
+        "multiEntitySupport": false
+      },
+      "state": {
+        "name": "state",
+        "values": {},
+        "multiEntitySupport": false
+      },
+      "actualParentEntityTypeId": {
+        "name": "actualParentEntityTypeId",
+        "multiEntitySupport": false
+      },
+      "contractingHubs": {
+        "name": "contractingHubs",
+        "multiEntitySupport": false
+      },
+      "cycleTime": {
+        "name": "cycleTime",
+        "multiEntitySupport": false
+      },
+      "parentHalting": {
+        "name": "parentHalting",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "weekType": {
+        "name": "weekType",
+        "id": 12427,
+        "multiEntitySupport": false
+      },
+      "stagingPrimaryKey": {
+        "name": "stagingPrimaryKey",
+        "multiEntitySupport": false
+      },
+      "timeZone": {
+        "name": "timeZone",
+        "id": 11649,
+        "values": {
+          "name": "Asia/Kolkata (GMT +05:30)",
+          "id": 8,
+          "timeZone": "Asia/Kolkata"
+        },
+        "multiEntitySupport": false
+      },
+      "dynamicMetadata": {
+        "dyn102270": {
+          "name": "dyn102270",
+          "id": 102270,
+          "values": [],
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102292": {
+          "name": "dyn102292",
+          "id": 102292,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102151": {
+          "name": "dyn102151",
+          "id": 102151,
+          "values": "Avnish12",
+          "multiEntitySupport": false
+        },
+        "dyn102096": {
+          "name": "dyn102096",
+          "id": 102096,
+          "multiEntitySupport": false
+        },
+        "dyn102130": {
+          "name": "dyn102130",
+          "id": 102130,
+          "multiEntitySupport": false
+        },
+        "dyn102298": {
+          "name": "dyn102298",
+          "id": 102298,
+          "values": [
+            {
+              "name": "Zone 1",
+              "id": 1035
+            },
+            {
+              "name": "Zone 2",
+              "id": 1036
+            },
+            {
+              "name": "Zone 3",
+              "id": 1037
+            },
+            {
+              "name": "Zone 4",
+              "id": 1038
+            },
+            {
+              "name": "Zone 5",
+              "id": 1039
+            },
+            {
+              "name": "Zone 6",
+              "id": 1040
+            }
+          ],
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102133": {
+          "name": "dyn102133",
+          "id": 102133,
+          "multiEntitySupport": false
+        },
+        "dyn102199": {
+          "name": "dyn102199",
+          "id": 102199,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102255": {
+          "name": "dyn102255",
+          "id": 102255,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102135": {
+          "name": "dyn102135",
+          "id": 102135,
+          "multiEntitySupport": false
+        },
+        "dyn102256": {
+          "name": "dyn102256",
+          "id": 102256,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102278": {
+          "name": "dyn102278",
+          "id": 102278,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102279": {
+          "name": "dyn102279",
+          "id": 102279,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102115": {
+          "name": "dyn102115",
+          "id": 102115,
+          "values": "",
+          "multiEntitySupport": false
+        },
+        "dyn102239": {
+          "name": "dyn102239",
+          "id": 102239,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101462": {
+          "name": "dyn101462",
+          "id": 101462,
+          "multiEntitySupport": false
+        },
+        "dyn101461": {
+          "name": "dyn101461",
+          "id": 101461,
+          "multiEntitySupport": false
+        },
+        "dyn101460": {
+          "name": "dyn101460",
+          "id": 101460,
+          "multiEntitySupport": false
+        },
+        "dyn102282": {
+          "name": "dyn102282",
+          "id": 102282,
+          "multiEntitySupport": false
+        },
+        "dyn102261": {
+          "name": "dyn102261",
+          "id": 102261,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102283": {
+          "name": "dyn102283",
+          "id": 102283,
+          "multiEntitySupport": false
+        },
+        "dyn102163": {
+          "name": "dyn102163",
+          "id": 102163,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102284": {
+          "name": "dyn102284",
+          "id": 102284,
+          "multiEntitySupport": false
+        },
+        "dyn102142": {
+          "name": "dyn102142",
+          "id": 102142,
+          "values": "Avnish11",
+          "multiEntitySupport": false
+        },
+        "dyn102263": {
+          "name": "dyn102263",
+          "id": 102263,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102164": {
+          "name": "dyn102164",
+          "id": 102164,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102241": {
+          "name": "dyn102241",
+          "id": 102241,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102285": {
+          "name": "dyn102285",
+          "id": 102285,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102065": {
+          "name": "dyn102065",
+          "id": 102065,
+          "multiEntitySupport": false
+        },
+        "dyn102100": {
+          "name": "dyn102100",
+          "id": 102100,
+          "values": "Vik1411",
+          "multiEntitySupport": false
+        },
+        "dyn102166": {
+          "name": "dyn102166",
+          "id": 102166,
+          "values": null,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102265": {
+          "name": "dyn102265",
+          "id": 102265,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102067": {
+          "name": "dyn102067",
+          "id": 102067,
+          "multiEntitySupport": false
+        },
+        "dyn102200": {
+          "name": "dyn102200",
+          "id": 102200,
+          "values": [],
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102300": {
+          "name": "dyn102300",
+          "id": 102300,
+          "values": {
+            "name": "SIR-3241_01",
+            "id": 2676
+          },
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102289": {
+          "name": "dyn102289",
+          "id": 102289,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102269": {
+          "name": "dyn102269",
+          "id": 102269,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102248": {
+          "name": "dyn102248",
+          "id": 102248,
+          "values": [],
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102006": {
+          "name": "dyn102006",
+          "id": 102006,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102007": {
+          "name": "dyn102007",
+          "id": 102007,
+          "values": [],
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102205": {
+          "name": "dyn102205",
+          "id": 102205,
+          "values": null,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102305": {
+          "name": "dyn102305",
+          "id": 102305,
+          "values": [
+            {
+              "name": "SIR-3241_01",
+              "id": 2676
+            }
+          ],
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102206": {
+          "name": "dyn102206",
+          "id": 102206,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102008": {
+          "name": "dyn102008",
+          "id": 102008,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101704": {
+          "name": "dyn101704",
+          "id": 101704,
+          "multiEntitySupport": false
+        },
+        "dyn102080": {
+          "name": "dyn102080",
+          "id": 102080,
+          "values": "Global4",
+          "multiEntitySupport": false
+        }
+      },
+      "shareId": {
+        "name": "shareId",
+        "id": 7002,
+        "values": "SIDBRKH",
+        "multiEntitySupport": false
+      },
+      "leadTimes": {
+        "name": "leadTimes",
+        "values": {},
+        "multiEntitySupport": false
+      },
+      "clientHoliday": {
+        "name": "clientHoliday",
+        "multiEntitySupport": false
+      },
+      "additionalTCV": {
+        "name": "additionalTCV",
+        "id": 512,
+        "values": 2,
+        "displayValues": "2 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "projectLevels": {
+        "name": "projectLevels",
+        "id": 4931,
+        "values": [
+          {
+            "name": "Build",
+            "id": 1001
+          },
+          {
+            "name": "Operate",
+            "id": 1002
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "fycv": {
+        "name": "fycv",
+        "id": 544,
+        "values": 36,
+        "displayValues": "36 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "conversionRuleId": {
+        "name": "conversionRuleId",
+        "values": 1,
+        "multiEntitySupport": false
+      },
+      "taxId": {
+        "name": "taxId",
+        "id": 7005,
+        "values": "44",
+        "multiEntitySupport": false
+      },
+      "name": {
+        "name": "name",
+        "id": 503,
+        "values": "Berkshire Hathaway - test 1",
+        "multiEntitySupport": false
+      },
+      "rootInfo": {
+        "name": "rootInfo",
+        "multiEntitySupport": false
+      },
+      "aggregateACV": {
+        "name": "aggregateACV",
+        "id": 543,
+        "values": 34,
+        "displayValues": "34 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "projectId": {
+        "name": "projectId",
+        "id": 8150,
+        "values": [
+          {
+            "name": "ERP Project",
+            "id": 1005
+          },
+          {
+            "name": "MLM Project",
+            "id": 1007
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "status": {
+        "name": "status",
+        "id": 502,
+        "values": {
+          "name": "Active",
+          "id": 5
+        },
+        "multiEntitySupport": false
+      },
+      "contractingMarkets": {
+        "name": "contractingMarkets",
+        "multiEntitySupport": false
+      },
+      "aggregateTCV": {
+        "name": "aggregateTCV",
+        "id": 541,
+        "values": 9034,
+        "displayValues": "9.034 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "tiers": {
+        "name": "tiers",
+        "id": 505,
+        "values": [
+          {
+            "name": "Tier - 1 _tier 123",
+            "id": 1012
+          },
+          {
+            "name": "Tier - 2",
+            "id": 1013
+          },
+          {
+            "name": "Tier - 3",
+            "id": 1014
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "excludeWeekends": {
+        "name": "excludeWeekends",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "searchParam": {
+        "size": {
+          "name": "size",
+          "values": 0,
+          "multiEntitySupport": false
+        },
+        "offset": {
+          "name": "offset",
+          "values": 0,
+          "multiEntitySupport": false
+        }
+      },
+      "additionalFYCV": {
+        "name": "additionalFYCV",
+        "id": 514,
+        "values": 2,
+        "displayValues": "2 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "parentEntityType": {
+        "name": "parentEntityType",
+        "values": {
+          "name": "Vendor Hierarchy",
+          "id": 3
+        },
+        "multiEntitySupport": false
+      },
+      "contracts": {
+        "name": "contracts",
+        "multiEntitySupport": false
+      },
+      "recipientClientEntities": {
+        "name": "recipientClientEntities",
+        "multiEntitySupport": false
+      },
+      "tier": {
+        "name": "tier",
+        "multiEntitySupport": false
+      },
+      "adhocUser": {
+        "firstName": {
+          "name": "firstName",
+          "id": 78,
+          "multiEntitySupport": false
+        },
+        "lastName": {
+          "name": "lastName",
+          "id": 79,
+          "multiEntitySupport": false
+        },
+        "loginId": {
+          "name": "loginId",
+          "id": 80,
+          "multiEntitySupport": false
+        },
+        "userType": {
+          "name": "userType",
+          "id": 83,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "uniqueLoginId": {
+          "name": "uniqueLoginId",
+          "id": 82,
+          "multiEntitySupport": false
+        },
+        "email": {
+          "name": "email",
+          "id": 81,
+          "multiEntitySupport": false
+        }
+      },
+      "vendor": {
+        "name": "vendor",
+        "id": 7216,
+        "values": {
+          "name": "Berkshire Hathaway",
+          "id": 1006,
+          "url": "/tblvendors/show/1006"
+        },
+        "multiEntitySupport": false
+      },
+      "alias": {
+        "name": "alias",
+        "id": 504,
+        "values": "berk",
+        "multiEntitySupport": false
+      },
+      "vendorContractingParty": {
+        "name": "vendorContractingParty",
+        "multiEntitySupport": false
+      },
+      "currency": {
+        "name": "currency",
+        "values": {
+          "name": "Costa Rican Colon (CRC)",
+          "id": 76,
+          "shortName": "Costa Rican Colon (CRC)"
+        },
+        "multiEntitySupport": false
+      },
+      "email": {
+        "name": "email",
+        "id": 81,
+        "values": "supplier@SIDBRKH.way",
+        "multiEntitySupport": false
+      },
+      "ageing": {
+        "name": "ageing",
+        "multiEntitySupport": false
+      },
+      "address": {
+        "name": "address",
+        "id": 506,
+        "values": "Omaha, Nebraska, United States",
+        "multiEntitySupport": false
+      },
+      "actualParentEntityId": {
+        "name": "actualParentEntityId",
+        "multiEntitySupport": false
+      },
+      "tcv": {
+        "name": "tcv",
+        "id": 540,
+        "values": 9036,
+        "displayValues": "9.036 Costa Rican Colon (CRC)",
+        "multiEntitySupport": false
+      },
+      "sourceEntityTypeId": {
+        "name": "sourceEntityTypeId",
+        "multiEntitySupport": false
+      },
+      "recipientMarkets": {
+        "name": "recipientMarkets",
+        "multiEntitySupport": false
+      },
+      "services": {
+        "name": "services",
+        "id": 509,
+        "values": [
+          {
+            "name": "Application Support and Maintenance",
+            "id": 1072,
+            "parentId": 1018
+          },
+          {
+            "name": "Projects",
+            "id": 1095,
+            "parentId": 1018
+          },
+          {
+            "name": "Applications Development & Maintenance",
+            "id": 1017,
+            "parentId": 1006
+          },
+          {
+            "name": "Application Services",
+            "id": 1070,
+            "parentId": 1006
+          },
+          {
+            "name": "Applications Servers",
+            "id": 1018,
+            "parentId": 1006
+          },
+          {
+            "name": "LAN",
+            "id": 1019,
+            "parentId": 1006
+          },
+          {
+            "name": "Mainframe Services",
+            "id": 1020,
+            "parentId": 1006
+          },
+          {
+            "name": "Network MNS",
+            "id": 1021,
+            "parentId": 1006
+          },
+          {
+            "name": "End-User Computing",
+            "id": 1024,
+            "parentId": 1007
+          },
+          {
+            "name": "Projects",
+            "id": 1022,
+            "parentId": 1007
+          },
+          {
+            "name": "Service Desk",
+            "id": 1023,
+            "parentId": 1007
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractCountries": {
+        "name": "contractCountries",
+        "multiEntitySupport": false
+      },
+      "parentEntityTypeId": {
+        "name": "parentEntityTypeId",
+        "values": 3,
+        "multiEntitySupport": false
+      },
+      "recipientCompanyCodes": {
+        "name": "recipientCompanyCodes",
+        "multiEntitySupport": false
+      },
+      "oldSystemId": {
+        "name": "oldSystemId",
+        "id": 11308,
+        "values": "ECCIDBRKH",
+        "multiEntitySupport": false
+      },
+      "governanceBodies": {
+        "name": "governanceBodies",
+        "id": 4832,
+        "values": [
+          {
+            "name": "07-DecGovernance Body",
+            "id": 1218
+          },
+          {
+            "name": "13-DEC-2017",
+            "id": 1221
+          },
+          {
+            "name": "1 Holiday Testing Contract 32",
+            "id": 1225
+          },
+          {
+            "name": "30-july-1.1",
+            "id": 1462
+          },
+          {
+            "name": "9-july-g.b-1.1",
+            "id": 1453
+          },
+          {
+            "name": "9-july-g.b-1.1",
+            "id": 1452
+          },
+          {
+            "name": "abc test",
+            "id": 1461
+          },
+          {
+            "name": "Berkshire _GB",
+            "id": 1349
+          },
+          {
+            "name": "Berkshire _GB 2507",
+            "id": 1355
+          },
+          {
+            "name": "berkshire_Test",
+            "id": 1399
+          },
+          {
+            "name": "Big Blue - Executive Governance Body - Berkshire Hathaway",
+            "id": 1017
+          },
+          {
+            "name": "Big Blue - Relationship Management - Berkshire Hathaway",
+            "id": 1034
+          },
+          {
+            "name": "Executive Governamce Meeting - Berkshire Hathaway",
+            "id": 1027
+          },
+          {
+            "name": "Executive Governance Body (Monthly) - Berkshire Hathaway",
+            "id": 1033
+          },
+          {
+            "name": "GB 17March",
+            "id": 1258
+          },
+          {
+            "name": "GB1Holiday1",
+            "id": 1211
+          },
+          {
+            "name": "GB for sandbox testing",
+            "id": 1257
+          },
+          {
+            "name": "GB Test",
+            "id": 1210
+          },
+          {
+            "name": "gb_test_2",
+            "id": 1430
+          },
+          {
+            "name": "GB_Test_7may",
+            "id": 1428
+          },
+          {
+            "name": "GB Test cloned",
+            "id": 1215
+          },
+          {
+            "name": "GB Test cloned1",
+            "id": 1213
+          },
+          {
+            "name": "GB Test Holiday3",
+            "id": 1217
+          },
+          {
+            "name": "GB Test Test",
+            "id": 1241
+          },
+          {
+            "name": "GB Test Test New 31st Jan",
+            "id": 1242
+          },
+          {
+            "name": "GB Test Test New Few",
+            "id": 1243
+          },
+          {
+            "name": "Governance body creation for Regression testing",
+            "id": 1246
+          },
+          {
+            "name": "Governance body meeting1",
+            "id": 1255
+          },
+          {
+            "name": "Governance Body Meeting 1605",
+            "id": 1303
+          },
+          {
+            "name": "Holiday GB",
+            "id": 1212
+          },
+          {
+            "name": "Holiday GB 1",
+            "id": 1214
+          },
+          {
+            "name": "Holiday Test Bug Verify",
+            "id": 1219
+          },
+          {
+            "name": "Jhakkas GB",
+            "id": 1232
+          },
+          {
+            "name": "new GB",
+            "id": 1280
+          },
+          {
+            "name": "N-Governance",
+            "id": 1408
+          },
+          {
+            "name": "N-Governance",
+            "id": 1199
+          },
+          {
+            "name": "Operational Governance Body (Monthly) - Berkshire Hathaway",
+            "id": 1022
+          },
+          {
+            "name": "Service Management Governance Body (Monthly) - Berkshire Hathaway",
+            "id": 1028
+          },
+          {
+            "name": "Service Management Governance Body (Monthly) test- Berkshire Hathaway",
+            "id": 1123
+          },
+          {
+            "name": "Test 39427",
+            "id": 1253
+          },
+          {
+            "name": "Test Creation",
+            "id": 1247
+          },
+          {
+            "name": "Test Creation1",
+            "id": 1248
+          },
+          {
+            "name": "Test Creation1",
+            "id": 1249
+          },
+          {
+            "name": "Test Creation2",
+            "id": 1250
+          },
+          {
+            "name": "test GB",
+            "id": 1405
+          },
+          {
+            "name": "test GB",
+            "id": 1406
+          },
+          {
+            "name": "test GB",
+            "id": 1404
+          },
+          {
+            "name": "testhj",
+            "id": 1454
+          },
+          {
+            "name": "Testing GB",
+            "id": 1359
+          },
+          {
+            "name": "wde",
+            "id": 1294
+          }
+        ],
+        "multiEntitySupport": false
+      },
+      "shortCodeId": {
+        "name": "shortCodeId",
+        "id": 501,
+        "values": "SP01004",
+        "multiEntitySupport": false
+      },
+      "excludeFromHoliday": {
+        "name": "excludeFromHoliday",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "sourceEntityId": {
+        "name": "sourceEntityId",
+        "multiEntitySupport": false
+      },
+      "entityTypeId": {
+        "name": "entityTypeId",
+        "values": 1,
+        "multiEntitySupport": false
+      },
+      "comment": {
+        "requestedBy": {
+          "name": "requestedBy",
+          "id": 12244,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "shareWithSupplier": {
+          "name": "shareWithSupplier",
+          "id": 12409,
+          "multiEntitySupport": false
+        },
+        "comments": {
+          "name": "comments",
+          "id": 86,
+          "multiEntitySupport": false
+        },
+        "documentTags": {
+          "name": "documentTags",
+          "id": 12428,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "draft": {
+          "name": "draft",
+          "multiEntitySupport": false
+        },
+        "actualDate": {
+          "name": "actualDate",
+          "id": 12243,
+          "multiEntitySupport": false
+        },
+        "privateCommunication": {
+          "name": "privateCommunication",
+          "id": 12242,
+          "multiEntitySupport": false,
+          "values": false
+        },
+        "changeRequest": {
+          "name": "changeRequest",
+          "id": 12246,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "workOrderRequest": {
+          "name": "workOrderRequest",
+          "id": 12247,
+          "multiEntitySupport": false
+        },
+        "commentDocuments": {
+          "values": []
+        }
+      },
+      "relations": {
+        "name": "relations",
+        "multiEntitySupport": false
+      },
+      "contractRegions": {
+        "name": "contractRegions",
+        "multiEntitySupport": false
+      },
+      "contractingCompanyCodes": {
+        "name": "contractingCompanyCodes",
+        "multiEntitySupport": false
+      },
+      "dyn102270": {
+        "name": "dyn102270",
+        "id": 102270,
+        "values": [],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102292": {
+        "name": "dyn102292",
+        "id": 102292,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102151": {
+        "name": "dyn102151",
+        "id": 102151,
+        "values": "Avnish12",
+        "multiEntitySupport": false
+      },
+      "dyn102096": {
+        "name": "dyn102096",
+        "id": 102096,
+        "multiEntitySupport": false
+      },
+      "dyn102130": {
+        "name": "dyn102130",
+        "id": 102130,
+        "multiEntitySupport": false
+      },
+      "dyn102298": {
+        "name": "dyn102298",
+        "id": 102298,
+        "values": [
+          {
+            "name": "Zone 1",
+            "id": 1035
+          },
+          {
+            "name": "Zone 2",
+            "id": 1036
+          },
+          {
+            "name": "Zone 3",
+            "id": 1037
+          },
+          {
+            "name": "Zone 4",
+            "id": 1038
+          },
+          {
+            "name": "Zone 5",
+            "id": 1039
+          },
+          {
+            "name": "Zone 6",
+            "id": 1040
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102133": {
+        "name": "dyn102133",
+        "id": 102133,
+        "multiEntitySupport": false
+      },
+      "dyn102199": {
+        "name": "dyn102199",
+        "id": 102199,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102255": {
+        "name": "dyn102255",
+        "id": 102255,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102135": {
+        "name": "dyn102135",
+        "id": 102135,
+        "multiEntitySupport": false
+      },
+      "dyn102256": {
+        "name": "dyn102256",
+        "id": 102256,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102278": {
+        "name": "dyn102278",
+        "id": 102278,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102279": {
+        "name": "dyn102279",
+        "id": 102279,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102115": {
+        "name": "dyn102115",
+        "id": 102115,
+        "values": "",
+        "multiEntitySupport": false
+      },
+      "dyn102239": {
+        "name": "dyn102239",
+        "id": 102239,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101462": {
+        "name": "dyn101462",
+        "id": 101462,
+        "multiEntitySupport": false
+      },
+      "dyn101461": {
+        "name": "dyn101461",
+        "id": 101461,
+        "multiEntitySupport": false
+      },
+      "dyn101460": {
+        "name": "dyn101460",
+        "id": 101460,
+        "multiEntitySupport": false
+      },
+      "dyn102282": {
+        "name": "dyn102282",
+        "id": 102282,
+        "multiEntitySupport": false
+      },
+      "dyn102261": {
+        "name": "dyn102261",
+        "id": 102261,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102283": {
+        "name": "dyn102283",
+        "id": 102283,
+        "multiEntitySupport": false
+      },
+      "dyn102163": {
+        "name": "dyn102163",
+        "id": 102163,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102284": {
+        "name": "dyn102284",
+        "id": 102284,
+        "multiEntitySupport": false
+      },
+      "dyn102142": {
+        "name": "dyn102142",
+        "id": 102142,
+        "values": "Avnish11",
+        "multiEntitySupport": false
+      },
+      "dyn102263": {
+        "name": "dyn102263",
+        "id": 102263,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102164": {
+        "name": "dyn102164",
+        "id": 102164,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102241": {
+        "name": "dyn102241",
+        "id": 102241,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102285": {
+        "name": "dyn102285",
+        "id": 102285,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102065": {
+        "name": "dyn102065",
+        "id": 102065,
+        "multiEntitySupport": false
+      },
+      "dyn102100": {
+        "name": "dyn102100",
+        "id": 102100,
+        "values": "Vik1411",
+        "multiEntitySupport": false
+      },
+      "dyn102166": {
+        "name": "dyn102166",
+        "id": 102166,
+        "values": null,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102265": {
+        "name": "dyn102265",
+        "id": 102265,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102067": {
+        "name": "dyn102067",
+        "id": 102067,
+        "multiEntitySupport": false
+      },
+      "dyn102200": {
+        "name": "dyn102200",
+        "id": 102200,
+        "values": [],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102300": {
+        "name": "dyn102300",
+        "id": 102300,
+        "values": {
+          "name": "SIR-3241_01",
+          "id": 2676
+        },
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102289": {
+        "name": "dyn102289",
+        "id": 102289,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102269": {
+        "name": "dyn102269",
+        "id": 102269,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102248": {
+        "name": "dyn102248",
+        "id": 102248,
+        "values": [],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102006": {
+        "name": "dyn102006",
+        "id": 102006,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102007": {
+        "name": "dyn102007",
+        "id": 102007,
+        "values": [],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102205": {
+        "name": "dyn102205",
+        "id": 102205,
+        "values": null,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102305": {
+        "name": "dyn102305",
+        "id": 102305,
+        "values": [
+          {
+            "name": "SIR-3241_01",
+            "id": 2676
+          }
+        ],
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102206": {
+        "name": "dyn102206",
+        "id": 102206,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102008": {
+        "name": "dyn102008",
+        "id": 102008,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101704": {
+        "name": "dyn101704",
+        "id": 101704,
+        "multiEntitySupport": false
+      },
+      "dyn102080": {
+        "name": "dyn102080",
+        "id": 102080,
+        "values": "Global4",
+        "multiEntitySupport": false
+      }
+    }
+  }
+}

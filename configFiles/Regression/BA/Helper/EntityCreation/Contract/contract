@@ -1,0 +1,509 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = suppliers
+sourcename = Supply wisdom test 1
+sourceid = 1233
+parententitytype = psa
+
+[fixed fee flow 1]
+sourceentity = suppliers
+sourcename = VMWare Inc
+sourceid = 1918
+parententitytype = msa
+
+[fixed fee flow 2]
+sourceentity = suppliers
+sourcename = VMWare Inc
+sourceid = 1918
+parententitytype = psa
+
+[fixed fee flow 3]
+sourceentity = suppliers
+sourcename = VMWare Inc
+sourceid = 1918
+parententitytype = psa
+
+[performance_flow1]
+sourceentity = suppliers
+sourcename = VMWare Inc
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 1]
+sourceentity = suppliers
+sourcename = VMWare Inc
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 2]
+sourceentity = suppliers
+sourcename = VMWare Inc
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 3]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 4]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 5]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 6]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 7]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 8]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 9]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 10]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 11]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 12]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[adj flow 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[tc96956]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 2]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 3]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 4]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 5]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 6]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 7]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 8]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 9]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 10]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow 11]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+
+[invoice line item misc]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+
+[service data misc]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[fixed fee flow rate card]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow rate card]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow rate card]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[invoice line item split service data]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[fixed fee flow 4]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[fixed fee flow 5]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[fixed fee flow 6]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+
+[fixed fee flow 7]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[fixed fee flow 8]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow data creation]
+sourceentity = suppliers
+sourcename = LINE ITEM VALIDATION SUPPLIER
+sourceid = 1416
+parententitytype = psa
+
+[contract for move to tree]
+sourceentity = suppliers
+sourcename = API Automation Supplier for Move To Tree Test
+sourceid = 2529
+parententitytype = msa
+
+[contract for date time custom field]
+sourceentity = suppliers
+sourcename = Supplier for Custom Date Time Field API Automation
+sourceid = 2673
+parententitytype = msa
+
+[consumption reference tab validation single invoice]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[currency conv defined]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[currency conv not defined]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[curr oth than client service data date range lie in conv matrix]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[curr same as client service data date range lie in conv matrix]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[curr oth than client service data date range not lie in conv matrix]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow volume discrepancy]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow pricing unavailable]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow invalid service period]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow consumption unavailable]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow consumption unapproved]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow currency conv factor unavailable1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow currency conv factor unavailable2]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow amount discrepancy]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+
+[vol pricing flow total discrepancy]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[contract misc test c8836]
+sourceentity = suppliers
+sourcename = Supplier for Custom Date Time Field API Automation
+sourceid = 2673
+parententitytype = msa
+
+[fixed fee flow multiple li]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[forecast flow multiple li]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow multiple li]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow 1 for qa sdbox]
+sourceentity = suppliers
+sourcename = LOVELAND INNOVATIONS
+sourceid = 1918
+parententitytype = psa
+
+[fixed fee flow for create rule]
+sourceentity = suppliers
+sourcename = Novation
+sourceid = 1431
+parententitytype = msa
+
+[universal contract]
+sourceentity = suppliers
+sourcename = Novation
+sourceid = 1431
+parententitytype = msa
+
+[roll up scenario 1]
+sourceentity = suppliers
+sourcename = Auto
+sourceid = new supplier
+parententitytype = msa
+
+[roll up scenario 2]
+sourceentity = contracts
+sourcename = Novation
+sourceid = new contract
+parententitytype = sow
+
+[roll up scenario 3]
+sourceentity = contracts
+sourcename = Novation
+sourceid = new contract
+parentsourceid = new contract
+parententitytype = work order
+
+[vol pricing flow system values calc 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[hierarchical flow]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[invalid currency 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[memo flow 1]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[memo flow 2]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[memo flow 3]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[memo flow 4]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[base specific yes arc]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[base specific yes rrc]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[arc flow bulk approve consumption]
+sourceentity = suppliers
+sourcename = VMWare Inc
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing flow billing scenario]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa
+
+[vol pricing sd heirarchy flow]
+sourceentity = suppliers
+sourcename = ABC News
+sourceid = 1918
+parententitytype = psa

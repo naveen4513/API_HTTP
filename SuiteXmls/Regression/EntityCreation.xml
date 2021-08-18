@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Entity Creation" parallel="tests" thread-count="1">
+
+    <test name="Create Entity">
+        <classes>
+            <class name="com.sirionlabs.test.EntityCreation.TestEntityCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Supplier Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.supplier.TestSupplierCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestContractCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Credit EarnBack Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestCreditEarnBackCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Obligation Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestObligationCreation"></class>
+        </classes>
+    </test>
+
+    <test name="SL Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.serviceLevel.TestServiceLevelCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Invoice Line Item Creation">
+        <classes>
+            <class name="com.sirionlabs.test.invoiceLineItem.TestInvoiceLineItemCreation"></class>
+        </classes>
+    </test>
+
+    <test name="PO Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.purchaseOrder.TestPurchaseOrderCreation"></class>
+        </classes>
+    </test>
+
+        <test name="Invoices">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.TestInvoiceCreation"></class>
+            </classes>
+        </test>
+
+    Listing Done till here
+
+    <test name="CR Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.changeRequest.TestChangeRequestCreation"></class>
+        </classes>
+    </test>
+
+    <test name="WOR Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.wor.TestWORCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Interpretation Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.interpretation.TestInterpretationCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Action Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.action.TestActionCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Issue Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.issue.TestIssueCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Dispute Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.dispute.TestDisputeCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Clause Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.clause.TestClauseCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Definition Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.definition.TestDefinitionCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Template Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.contractTemplate.TestContractTemplateCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Template Structure Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.contractTemplateStructure.TestContractTemplateStructureCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Governance Body Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.governanceBody.TestGovernanceBodyCreation"></class>
+        </classes>
+    </test>
+
+    <test name="CDR Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.cdr.TestCDRCreation"></class>
+        </classes>
+    </test>
+
+
+<!--    <test name="CSV Injection Entity Creation Tests">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.EntityCreation.TestEntityCreationCSVInjection"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="List Renderer APIs Test" data-provider-thread-count="3">
+
+    <!--<test name="List Data API Test">
+        <classes>
+            <class name="com.sirionlabs.test.api.listRenderer.TestListDataAPI"></class>
+        </classes>
+    </test>-->
+
+    <test name="Tab List Data API Test">
+        <classes>
+            <class name="com.sirionlabs.test.api.listRenderer.TestTabListDataAPI"></class>
+        </classes>
+    </test>
+
+</suite>

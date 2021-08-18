@@ -1,0 +1,55 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = suppliers
+sourcename = SUP1
+sourceid = 1118
+parententitytype = psa
+
+[presignature flow]
+sourceentity = suppliers
+sourcename = SUP1
+sourceid = 1118
+
+[performance_flow1]
+sourceentity = suppliers
+sourcename = CISCO
+sourceid = 1303
+
+[cdr for date time custom field]
+sourceentity = suppliers
+sourcename = Supplier for Custom Date Time Field API Automation
+sourceid = 2673
+
+
+[cdr creation from contract]
+sourceentity = contracts
+sourcename = API Automation Contract for CDR Creation Test
+sourceid = 8463
+
+[cdr_delete_comment]
+sourceentity = contracts
+sourcename = API Automation Contract for Docusign at Workflow Test
+sourceid = 10811
+
+[docusign cdr]
+sourceentity = contracts
+sourcename = API Automation Contract for Docusign at Workflow Test
+sourceid = 10811

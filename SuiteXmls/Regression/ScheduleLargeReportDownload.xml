@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Schedule Large Report Regression">
+    <parameter name="TestingType" value="performance"/>
+<!--    <parameter name="Environment" value="baOffice"/>-->
+    <parameter name="Environment" value="performance"/>
+
+    <!--This Test Suite Should run almost a day after Schedule Large Report XML as after 5-6 hours
+     large report is generated
+     -->
+    <suite-files>
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+
+        <test name="Schedule Large Report Tests">
+            <classes>
+                <class name="com.sirionlabs.test.reportRenderer.TestScheduleLargeReportDownload"></class>
+            </classes>
+        </test>
+    </suite-files>
+</suite>

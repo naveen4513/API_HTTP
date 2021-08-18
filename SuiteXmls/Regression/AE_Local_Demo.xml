@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Auto Extraction Regression">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="autoextraction"/>
+    <suite-files>
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <test name="Auto Extraction Regression Test">
+            <classes>
+                <class name="com.sirionlabs.test.autoExtraction.BatchCreation"></class>
+                <class name="com.sirionlabs.test.autoExtraction.BulkEditAutoExtraction"></class>
+                <class name="com.sirionlabs.test.autoExtraction.testWorkBench"></class>
+                <class name="com.sirionlabs.test.autoExtraction.DownloadDocViewerDocument"></class>
+                <class name="com.sirionlabs.test.autoExtraction.documentUploadFeature"></class>
+                <class name="com.sirionlabs.test.autoExtraction.MetadataCrudOperations"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AEExtractionSummary"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestSubmitAEFeedback"></class>
+                <class name="com.sirionlabs.test.autoExtraction.autoExtractionSearch"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AETestAdvanceFilter"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AEBlankFilters"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestAECheckboxTypeReportFilters"></class>
+                <class name="com.sirionlabs.test.autoExtraction.Assignment"></class>
+                <!--Disabled the feature as client is not using : Jira against the change AE-2981
+                <class name="com.sirionlabs.test.autoExtraction.References"></class>-->
+                <class name="com.sirionlabs.test.autoExtraction.testAutoExtractionTrackerReport"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AETestFilters"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AutoExtractionTestReportListFilters"></class>
+                <class name="com.sirionlabs.test.autoExtraction.QCLevelAllocation"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestCommunication"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AETestWorkflow"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestAEDashboard"></class>
+                <class name="com.sirionlabs.test.autoExtraction.DocumentTree"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestListingColumn"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestAEReportColumns"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AEDownloadSelectedDocs"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestDownloadAE"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestPartialReset"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AEPorting"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestFailedReset"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestDuplicateFeature"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ViewExtractedTextLink"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestAutoExtractionView"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AECDRPorting"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ContractCreationViaAE"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestPartialReset"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestClauseDeviation"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ClauseDeviationScoreInContracts"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AuditLogForBlockedDocuments"></class>
+
+            </classes>
+        </test>
+    </suite-files>
+</suite>

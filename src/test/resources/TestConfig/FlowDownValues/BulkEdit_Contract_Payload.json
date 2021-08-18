@@ -1,0 +1,4887 @@
+{
+  "body": {
+    "data": {
+      "contractDocuments": {
+        "name": "contractDocuments",
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "parentShortCodeId": {
+        "name": "parentShortCodeId",
+        "multiEntitySupport": false
+      },
+      "additionalACV": {
+        "name": "additionalACV",
+        "id": 33,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "contractPaper": {
+        "name": "contractPaper",
+        "id": 4903,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "functions": {
+        "name": "functions",
+        "id": 19,
+        "multiEntitySupport": false
+      },
+      "clientAcvValue": {
+        "name": "clientAcvValue",
+        "multiEntitySupport": false
+      },
+      "integrationSystem": {
+        "name": "integrationSystem",
+        "multiEntitySupport": false
+      },
+      "parentEntityId": {
+        "name": "parentEntityId",
+        "multiEntitySupport": false
+      },
+      "globalRegions": {
+        "name": "globalRegions",
+        "id": 21,
+        "multiEntitySupport": false
+      },
+      "globalCountries": {
+        "name": "globalCountries",
+        "id": 22,
+        "multiEntitySupport": false
+      },
+      "years": {
+        "name": "years",
+        "id": 16,
+        "multiEntitySupport": false
+      },
+      "serviceDataCCR": {
+        "name": "serviceDataCCR",
+        "multiEntitySupport": false
+      },
+      "supplierAccess": {
+        "name": "supplierAccess",
+        "id": 13,
+        "multiEntitySupport": false,
+        "values": false
+      },
+      "signatureAllowed": {
+        "name": "signatureAllowed",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "supplier": {
+        "name": "supplier",
+        "multiEntitySupport": false
+      },
+      "initiatives": {
+        "name": "initiatives",
+        "id": 4912,
+        "multiEntitySupport": false
+      },
+      "clientAdditionalFyacvValue": {
+        "name": "clientAdditionalFyacvValue",
+        "multiEntitySupport": false
+      },
+      "id": {
+        "name": "id",
+        "id": 77,
+        "multiEntitySupport": false
+      },
+      "parentEntityIds": {
+        "name": "parentEntityIds",
+        "id": 93,
+        "multiEntitySupport": false
+      },
+      "state": {
+        "name": "state",
+        "id": 11844,
+        "multiEntitySupport": false
+      },
+      "contractProjects": {
+        "name": "contractProjects",
+        "id": 12452,
+        "multiEntitySupport": false
+      },
+      "contractingEntity": {
+        "name": "contractingEntity",
+        "id": 9,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractingHubs": {
+        "name": "contractingHubs",
+        "id": 11241,
+        "multiEntitySupport": false
+      },
+      "cycleTime": {
+        "name": "cycleTime",
+        "multiEntitySupport": false
+      },
+      "clientAdditionalAcvValue": {
+        "name": "clientAdditionalAcvValue",
+        "multiEntitySupport": false
+      },
+      "clientCurrency": {
+        "name": "clientCurrency",
+        "multiEntitySupport": false
+      },
+      "stagingPrimaryKey": {
+        "name": "stagingPrimaryKey",
+        "multiEntitySupport": false
+      },
+      "timeZone": {
+        "name": "timeZone",
+        "id": 7,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "rateCardFromDate": {
+        "name": "rateCardFromDate",
+        "id": 30,
+        "multiEntitySupport": false
+      },
+      "leadTimes": {
+        "name": "leadTimes",
+        "multiEntitySupport": false
+      },
+      "parentDocument": {
+        "name": "parentDocument",
+        "id": 6,
+        "multiEntitySupport": false
+      },
+      "clientHoliday": {
+        "name": "clientHoliday",
+        "id": 12191,
+        "multiEntitySupport": false
+      },
+      "autoextractedDocuments": {
+        "name": "autoextractedDocuments",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "projectLevels": {
+        "name": "projectLevels",
+        "id": 4932,
+        "multiEntitySupport": false
+      },
+      "integrationStatus": {
+        "name": "integrationStatus",
+        "id": 11774,
+        "multiEntitySupport": false
+      },
+      "status": {
+        "name": "status",
+        "id": 40,
+        "multiEntitySupport": false
+      },
+      "contractingMarkets": {
+        "name": "contractingMarkets",
+        "id": 11242,
+        "multiEntitySupport": false
+      },
+      "aggregateTCV": {
+        "name": "aggregateTCV",
+        "id": 100,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "fieldComment": {
+        "name": "fieldComment",
+        "id": 7029,
+        "multiEntitySupport": false
+      },
+      "termType": {
+        "name": "termType",
+        "id": 4902,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "recipientClientEntities": {
+        "name": "recipientClientEntities",
+        "id": 4882,
+        "multiEntitySupport": false
+      },
+      "creditClauses": {
+        "name": "creditClauses",
+        "id": 11984,
+        "multiEntitySupport": false
+      },
+      "clientTcvValue": {
+        "name": "clientTcvValue",
+        "multiEntitySupport": false
+      },
+      "vendorContractingParty": {
+        "name": "vendorContractingParty",
+        "id": 4739,
+        "multiEntitySupport": false
+      },
+      "currency": {
+        "name": "currency",
+        "id": 27,
+        "multiEntitySupport": false
+      },
+      "contractTypes": {
+        "name": "contractTypes",
+        "id": 4906,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "clientAggregateAcvValue": {
+        "name": "clientAggregateAcvValue",
+        "multiEntitySupport": false
+      },
+      "createdFor": {
+        "name": "createdFor",
+        "id": 11612,
+        "multiEntitySupport": false
+      },
+      "calendarType": {
+        "name": "calendarType",
+        "id": 11746,
+        "multiEntitySupport": false
+      },
+      "actualParentEntityId": {
+        "name": "actualParentEntityId",
+        "multiEntitySupport": false
+      },
+      "recipientMarkets": {
+        "name": "recipientMarkets",
+        "id": 4881,
+        "multiEntitySupport": false
+      },
+      "services": {
+        "name": "services",
+        "id": 20,
+        "multiEntitySupport": false
+      },
+      "parentEntityTypeId": {
+        "name": "parentEntityTypeId",
+        "id": 92,
+        "multiEntitySupport": false
+      },
+      "noticeLeadDays": {
+        "name": "noticeLeadDays",
+        "id": 4771,
+        "multiEntitySupport": false
+      },
+      "mappedContractTemplates": {
+        "name": "mappedContractTemplates",
+        "multiEntitySupport": false
+      },
+      "oldSystemId": {
+        "name": "oldSystemId",
+        "id": 7001,
+        "multiEntitySupport": false
+      },
+      "governanceBodies": {
+        "name": "governanceBodies",
+        "id": 10,
+        "multiEntitySupport": false
+      },
+      "earnbackClauses": {
+        "name": "earnbackClauses",
+        "id": 11985,
+        "multiEntitySupport": false
+      },
+      "clientAggregateFacvValue": {
+        "name": "clientAggregateFacvValue",
+        "multiEntitySupport": false
+      },
+      "days": {
+        "name": "days",
+        "id": 7205,
+        "multiEntitySupport": false
+      },
+      "entityTypeId": {
+        "name": "entityTypeId",
+        "values": 61,
+        "multiEntitySupport": false
+      },
+      "relations": {
+        "name": "relations",
+        "id": 39,
+        "values": [],
+        "multiEntitySupport": false
+      },
+      "contractRegions": {
+        "name": "contractRegions",
+        "id": 23,
+        "multiEntitySupport": false
+      },
+      "effectiveDate": {
+        "name": "effectiveDate",
+        "id": 14,
+        "multiEntitySupport": false
+      },
+      "clientAdditionalTcvValue": {
+        "name": "clientAdditionalTcvValue",
+        "multiEntitySupport": false
+      },
+      "agreementType": {
+        "name": "agreementType",
+        "id": 12251,
+        "multiEntitySupport": false
+      },
+      "businessUnit": {
+        "name": "businessUnit",
+        "id": 11786,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "documentNumber": {
+        "name": "documentNumber",
+        "multiEntitySupport": false
+      },
+      "contractingClientEntities": {
+        "name": "contractingClientEntities",
+        "id": 11243,
+        "multiEntitySupport": false
+      },
+      "noticeLeadDate": {
+        "name": "noticeLeadDate",
+        "id": 7016,
+        "multiEntitySupport": false
+      },
+      "aggregateFYCV": {
+        "name": "aggregateFYCV",
+        "id": 3004,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "recipientHubs": {
+        "name": "recipientHubs",
+        "id": 4880,
+        "multiEntitySupport": false
+      },
+      "conversionType": {
+        "name": "conversionType",
+        "id": 28,
+        "multiEntitySupport": false
+      },
+      "serviceCategory": {
+        "name": "serviceCategory",
+        "id": 11474,
+        "multiEntitySupport": false
+      },
+      "stakeHolders": {
+        "name": "stakeHolders",
+        "values": {
+          "rg_2308": {
+            "values": [],
+            "name": "rg_2308",
+            "label": "Rg4",
+            "userType": [
+              2
+            ]
+          },
+          "rg_2319": {
+            "values": [],
+            "name": "rg_2319",
+            "label": "Egregre",
+            "userType": [
+              2
+            ]
+          },
+          "rg_2208": {
+            "values": [],
+            "name": "rg_2208",
+            "label": "Contract Owner Name",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2307": {
+            "values": [],
+            "name": "rg_2307",
+            "label": "Rg3",
+            "userType": [
+              2
+            ]
+          },
+          "rg_2207": {
+            "values": [],
+            "name": "rg_2207",
+            "label": "Created By",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2306": {
+            "values": [],
+            "name": "rg_2306",
+            "label": "Csr",
+            "userType": [
+              2
+            ]
+          },
+          "rg_2206": {
+            "values": [],
+            "name": "rg_2206",
+            "label": "Reviewer _User",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2305": {
+            "values": [],
+            "name": "rg_2305",
+            "label": "Hr",
+            "userType": [
+              2,
+              4
+            ]
+          },
+          "rg_2309": {
+            "values": [],
+            "name": "rg_2309",
+            "label": "Rg5",
+            "userType": [
+              2
+            ]
+          },
+          "rg_2344": {
+            "values": [],
+            "name": "rg_2344",
+            "label": "Accounts Manager",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2255": {
+            "values": [],
+            "name": "rg_2255",
+            "label": "Roleg",
+            "userType": [
+              1
+            ]
+          },
+          "rg_2354": {
+            "values": [],
+            "name": "rg_2354",
+            "label": "Contract Access",
+            "userType": [
+              2
+            ]
+          },
+          "rg_2188": {
+            "values": [],
+            "name": "rg_2188",
+            "label": "Client Type Owner",
+            "userType": [
+              2
+            ]
+          },
+          "rg_2187": {
+            "values": [],
+            "name": "rg_2187",
+            "label": "Sirionlabs Type Owner",
+            "userType": [
+              1
+            ]
+          },
+          "rg_2198": {
+            "values": [],
+            "name": "rg_2198",
+            "label": "Feeeeeeee",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2205": {
+            "values": [],
+            "name": "rg_2205",
+            "label": "AApprover UUser",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2204": {
+            "values": [],
+            "name": "rg_2204",
+            "label": "Added By",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2257": {
+            "values": [],
+            "name": "rg_2257",
+            "label": "Ef",
+            "userType": [
+              1
+            ]
+          },
+          "rg_2312": {
+            "values": [],
+            "name": "rg_2312",
+            "label": "Executives",
+            "userType": [
+              2,
+              1
+            ]
+          },
+          "rg_2186": {
+            "values": [],
+            "name": "rg_2186",
+            "label": "Supplier Type Owner",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          },
+          "rg_2052": {
+            "values": [],
+            "name": "rg_2052",
+            "label": "Contract Manager",
+            "userType": [
+              2,
+              1,
+              3,
+              4
+            ]
+          }
+        },
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "canSupplierBeParent": true,
+      "acv": {
+        "name": "acv",
+        "id": 3001,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "actualParentEntityTypeId": {
+        "name": "actualParentEntityTypeId",
+        "multiEntitySupport": false
+      },
+      "clientFyacvValue": {
+        "name": "clientFyacvValue",
+        "multiEntitySupport": false
+      },
+      "months": {
+        "name": "months",
+        "id": 17,
+        "multiEntitySupport": false
+      },
+      "parentHalting": {
+        "name": "parentHalting",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "weekType": {
+        "name": "weekType",
+        "id": 12431,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractNumber": {
+        "name": "contractNumber",
+        "id": 11093,
+        "multiEntitySupport": false
+      },
+      "sourceTitle": {
+        "name": "sourceTitle",
+        "id": 12187,
+        "multiEntitySupport": false
+      },
+      "dynamicMetadata": {
+        "stockProtection": {
+          "name": "stockProtection",
+          "id": 100503,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "earlyPaymentDiscountPresent": {
+          "name": "earlyPaymentDiscountPresent",
+          "id": 100512,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102152": {
+          "name": "dyn102152",
+          "id": 102152,
+          "multiEntitySupport": false
+        },
+        "specialConditions": {
+          "name": "specialConditions",
+          "id": 100714,
+          "multiEntitySupport": false
+        },
+        "timeToExpired": {
+          "name": "timeToExpired",
+          "id": 100355,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "applicationSupportResponsibilityOnSupplier": {
+          "name": "applicationSupportResponsibilityOnSupplier",
+          "id": 100522,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101743": {
+          "name": "dyn101743",
+          "id": 101743,
+          "multiEntitySupport": false
+        },
+        "dyn101615": {
+          "name": "dyn101615",
+          "id": 101615,
+          "multiEntitySupport": false
+        },
+        "dyn101744": {
+          "name": "dyn101744",
+          "id": 101744,
+          "multiEntitySupport": false
+        },
+        "dyn101745": {
+          "name": "dyn101745",
+          "id": 101745,
+          "multiEntitySupport": false
+        },
+        "dyn101866": {
+          "name": "dyn101866",
+          "id": 101866,
+          "multiEntitySupport": false
+        },
+        "dyn101856": {
+          "name": "dyn101856",
+          "id": 101856,
+          "multiEntitySupport": false
+        },
+        "dyn101857": {
+          "name": "dyn101857",
+          "id": 101857,
+          "multiEntitySupport": false
+        },
+        "dyn101621": {
+          "name": "dyn101621",
+          "id": 101621,
+          "multiEntitySupport": false
+        },
+        "dyn100773": {
+          "name": "dyn100773",
+          "id": 100773,
+          "multiEntitySupport": false
+        },
+        "dyn101620": {
+          "name": "dyn101620",
+          "id": 101620,
+          "multiEntitySupport": false,
+          "values": ""
+        },
+        "dyn101069": {
+          "name": "dyn101069",
+          "id": 101069,
+          "multiEntitySupport": false
+        },
+        "contractWizard": {
+          "name": "contractWizard",
+          "id": 100558,
+          "multiEntitySupport": false
+        },
+        "dyn101066": {
+          "name": "dyn101066",
+          "id": 101066,
+          "multiEntitySupport": false
+        },
+        "dyn101065": {
+          "name": "dyn101065",
+          "id": 101065,
+          "multiEntitySupport": false
+        },
+        "commentss": {
+          "name": "commentss",
+          "id": 100735,
+          "multiEntitySupport": false
+        },
+        "testGroup20": {
+          "name": "testGroup20",
+          "id": 100562,
+          "multiEntitySupport": false
+        },
+        "dyn101060": {
+          "name": "dyn101060",
+          "id": 101060,
+          "multiEntitySupport": false
+        },
+        "signatureTypeName": {
+          "name": "signatureTypeName",
+          "id": 100638,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "fxRateClause": {
+          "name": "fxRateClause",
+          "id": 100535,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102262": {
+          "name": "dyn102262",
+          "id": 102262,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "externalContractingPartyCurrency": {
+          "name": "externalContractingPartyCurrency",
+          "id": 100578,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "specifyApplicableDeliverableRecipients": {
+          "name": "specifyApplicableDeliverableRecipients",
+          "id": 100713,
+          "multiEntitySupport": false
+        },
+        "vpcDocumentClass": {
+          "name": "vpcDocumentClass",
+          "id": 100596,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "specifyDeviationsFromStandardTaxTerms": {
+          "name": "specifyDeviationsFromStandardTaxTerms",
+          "id": 100619,
+          "multiEntitySupport": false
+        },
+        "dyn102143": {
+          "name": "dyn102143",
+          "id": 102143,
+          "multiEntitySupport": false
+        },
+        "dyn102264": {
+          "name": "dyn102264",
+          "id": 102264,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "ecpPaymentTermsForLdClause": {
+          "name": "ecpPaymentTermsForLdClause",
+          "id": 100715,
+          "multiEntitySupport": false
+        },
+        "dyn102266": {
+          "name": "dyn102266",
+          "id": 102266,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101730": {
+          "name": "dyn101730",
+          "id": 101730,
+          "multiEntitySupport": false
+        },
+        "dyn101731": {
+          "name": "dyn101731",
+          "id": 101731,
+          "multiEntitySupport": false
+        },
+        "version": {
+          "name": "version",
+          "id": 100730,
+          "multiEntitySupport": false
+        },
+        "dyn100999": {
+          "name": "dyn100999",
+          "id": 100999,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101975": {
+          "name": "dyn101975",
+          "id": 101975,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "dyn101976": {
+                "name": "dyn101976",
+                "id": 101976,
+                "multiEntitySupport": false,
+                "values": ""
+              }
+            }
+          ]
+        },
+        "dyn100998": {
+          "name": "dyn100998",
+          "id": 100998,
+          "multiEntitySupport": false
+        },
+        "dyn101976": {
+          "name": "dyn101976",
+          "id": 101976,
+          "multiEntitySupport": false
+        },
+        "masterAgreementType": {
+          "name": "masterAgreementType",
+          "id": 100588,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "level3MaterialCategory": {
+          "name": "level3MaterialCategory",
+          "id": 100590,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "lastUpdateUpdate": {
+          "name": "lastUpdateUpdate",
+          "id": 100724,
+          "multiEntitySupport": false
+        },
+        "dyn101613": {
+          "name": "dyn101613",
+          "id": 101613,
+          "multiEntitySupport": false
+        },
+        "dyn101845": {
+          "name": "dyn101845",
+          "id": 101845,
+          "multiEntitySupport": false
+        },
+        "dyn101846": {
+          "name": "dyn101846",
+          "id": 101846,
+          "multiEntitySupport": false
+        },
+        "assignmentAllowed": {
+          "name": "assignmentAllowed",
+          "id": 100529,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101968": {
+          "name": "dyn101968",
+          "id": 101968,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "terminationForConvenience": {
+          "name": "terminationForConvenience",
+          "id": 100521,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101727": {
+          "name": "dyn101727",
+          "id": 101727,
+          "multiEntitySupport": false
+        },
+        "dyn101969": {
+          "name": "dyn101969",
+          "id": 101969,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "contractDocumentAttachment": {
+          "name": "contractDocumentAttachment",
+          "id": 100617,
+          "multiEntitySupport": false
+        },
+        "dyn101729": {
+          "name": "dyn101729",
+          "id": 101729,
+          "multiEntitySupport": false
+        },
+        "lastUpdate": {
+          "name": "lastUpdate",
+          "id": 100611,
+          "multiEntitySupport": false
+        },
+        "dyn101298": {
+          "name": "dyn101298",
+          "id": 101298,
+          "multiEntitySupport": false
+        },
+        "dyn101297": {
+          "name": "dyn101297",
+          "id": 101297,
+          "multiEntitySupport": false
+        },
+        "dyn101295": {
+          "name": "dyn101295",
+          "id": 101295,
+          "multiEntitySupport": false
+        },
+        "subcontractorNames": {
+          "name": "subcontractorNames",
+          "id": 100360,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "applicableLocalMarketsName": {
+          "name": "applicableLocalMarketsName",
+          "id": 100639,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "subContractingNoticeRequirements": {
+          "name": "subContractingNoticeRequirements",
+          "id": 100570,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102010": {
+          "name": "dyn102010",
+          "id": 102010,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102131": {
+          "name": "dyn102131",
+          "id": 102131,
+          "multiEntitySupport": false
+        },
+        "limitationOfLiabilityClausePresent": {
+          "name": "limitationOfLiabilityClausePresent",
+          "id": 100509,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102011": {
+          "name": "dyn102011",
+          "id": 102011,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "jurisdiction": {
+          "name": "jurisdiction",
+          "id": 100567,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102012": {
+          "name": "dyn102012",
+          "id": 102012,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102134": {
+          "name": "dyn102134",
+          "id": 102134,
+          "multiEntitySupport": false
+        },
+        "parentalGuaranteeProvided": {
+          "name": "parentalGuaranteeProvided",
+          "id": 100519,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101960": {
+          "name": "dyn101960",
+          "id": 101960,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101840": {
+          "name": "dyn101840",
+          "id": 101840,
+          "multiEntitySupport": false
+        },
+        "dyn101961": {
+          "name": "dyn101961",
+          "id": 101961,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102258": {
+          "name": "dyn102258",
+          "id": 102258,
+          "multiEntitySupport": false
+        },
+        "dyn101721": {
+          "name": "dyn101721",
+          "id": 101721,
+          "multiEntitySupport": false
+        },
+        "responseDate": {
+          "name": "responseDate",
+          "id": 100723,
+          "multiEntitySupport": false
+        },
+        "dyn101723": {
+          "name": "dyn101723",
+          "id": 101723,
+          "multiEntitySupport": false
+        },
+        "dyn101844": {
+          "name": "dyn101844",
+          "id": 101844,
+          "multiEntitySupport": false
+        },
+        "dyn100997": {
+          "name": "dyn100997",
+          "id": 100997,
+          "multiEntitySupport": false
+        },
+        "specifyDeviationsFromStdInsuranceTerms": {
+          "name": "specifyDeviationsFromStdInsuranceTerms",
+          "id": 100712,
+          "multiEntitySupport": false
+        },
+        "dyn101838": {
+          "name": "dyn101838",
+          "id": 101838,
+          "multiEntitySupport": false
+        },
+        "dyn101839": {
+          "name": "dyn101839",
+          "id": 101839,
+          "multiEntitySupport": false
+        },
+        "dyn101288": {
+          "name": "dyn101288",
+          "id": 101288,
+          "multiEntitySupport": false
+        },
+        "dyn101287": {
+          "name": "dyn101287",
+          "id": 101287,
+          "multiEntitySupport": false
+        },
+        "requestDate": {
+          "name": "requestDate",
+          "id": 100720,
+          "multiEntitySupport": false
+        },
+        "dyn101286": {
+          "name": "dyn101286",
+          "id": 101286,
+          "multiEntitySupport": false
+        },
+        "vgcSigner": {
+          "name": "vgcSigner",
+          "id": 100610,
+          "multiEntitySupport": false
+        },
+        "approver": {
+          "name": "approver",
+          "id": 100609,
+          "multiEntitySupport": false,
+          "values": [
+            {}
+          ]
+        },
+        "a": {
+          "name": "a",
+          "id": 100652,
+          "multiEntitySupport": false
+        },
+        "b": {
+          "name": "b",
+          "id": 100654,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "exclusivityProvided": {
+          "name": "exclusivityProvided",
+          "id": 100511,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "contractText1": {
+          "name": "contractText1",
+          "id": 100660,
+          "multiEntitySupport": false
+        },
+        "dyn102243": {
+          "name": "dyn102243",
+          "id": 102243,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102123": {
+          "name": "dyn102123",
+          "id": 102123,
+          "multiEntitySupport": false,
+          "values": "testbulkedit"
+        },
+        "documentVersions": {
+          "name": "documentVersions",
+          "id": 100728,
+          "multiEntitySupport": false
+        },
+        "performanceBondProvided": {
+          "name": "performanceBondProvided",
+          "id": 100520,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101831": {
+          "name": "dyn101831",
+          "id": 101831,
+          "multiEntitySupport": false
+        },
+        "dyn102249": {
+          "name": "dyn102249",
+          "id": 102249,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "name": "ABC News",
+              "id": 1047,
+              "clientActive": true
+            }
+          ]
+        },
+        "recordRetentionClausePresent": {
+          "name": "recordRetentionClausePresent",
+          "id": 100525,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102009": {
+          "name": "dyn102009",
+          "id": 102009,
+          "multiEntitySupport": false
+        },
+        "dyn100983": {
+          "name": "dyn100983",
+          "id": 100983,
+          "multiEntitySupport": false
+        },
+        "dyn101947": {
+          "name": "dyn101947",
+          "id": 101947,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "answer": {
+          "name": "answer",
+          "id": 100722,
+          "multiEntitySupport": false
+        },
+        "questionToStakeholder": {
+          "name": "questionToStakeholder",
+          "id": 100721,
+          "multiEntitySupport": false
+        },
+        "specifyDeviationsFromIprTerms": {
+          "name": "specifyDeviationsFromIprTerms",
+          "id": 100622,
+          "multiEntitySupport": false
+        },
+        "dyn102071": {
+          "name": "dyn102071",
+          "id": 102071,
+          "multiEntitySupport": false
+        },
+        "dyn102192": {
+          "name": "dyn102192",
+          "id": 102192,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "name": "Option1",
+              "id": 1052
+            },
+            {
+              "name": "Option2",
+              "id": 1053
+            }
+          ]
+        },
+        "supplierToProvideNoticeOfEpidemicFailure": {
+          "name": "supplierToProvideNoticeOfEpidemicFailure",
+          "id": 100536,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101780": {
+          "name": "dyn101780",
+          "id": 101780,
+          "multiEntitySupport": false
+        },
+        "dyn102078": {
+          "name": "dyn102078",
+          "id": 102078,
+          "multiEntitySupport": false
+        },
+        "obligations": {
+          "name": "obligations",
+          "id": 100576,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102079": {
+          "name": "dyn102079",
+          "id": 102079,
+          "multiEntitySupport": false
+        },
+        "additionalContractingExternalPartyEccId": {
+          "name": "additionalContractingExternalPartyEccId",
+          "id": 100584,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101418": {
+          "name": "dyn101418",
+          "id": 101418,
+          "multiEntitySupport": false
+        },
+        "documentVersion": {
+          "name": "documentVersion",
+          "id": 100614,
+          "multiEntitySupport": false
+        },
+        "dateAdded": {
+          "name": "dateAdded",
+          "id": 100731,
+          "multiEntitySupport": false
+        },
+        "dyn101417": {
+          "name": "dyn101417",
+          "id": 101417,
+          "multiEntitySupport": false
+        },
+        "terminationForCause": {
+          "name": "terminationForCause",
+          "id": 100532,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101416": {
+          "name": "dyn101416",
+          "id": 101416,
+          "multiEntitySupport": false
+        },
+        "terminationNoticeRequired": {
+          "name": "terminationNoticeRequired",
+          "id": 100538,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101301": {
+          "name": "dyn101301",
+          "id": 101301,
+          "multiEntitySupport": false
+        },
+        "dyn101300": {
+          "name": "dyn101300",
+          "id": 101300,
+          "multiEntitySupport": false
+        },
+        "topCommercialRisksLongText": {
+          "name": "topCommercialRisksLongText",
+          "id": 100624,
+          "multiEntitySupport": false
+        },
+        "insuranceRequirementsPresent": {
+          "name": "insuranceRequirementsPresent",
+          "id": 100504,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "natureOfIndemnity": {
+          "name": "natureOfIndemnity",
+          "id": 100595,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102070": {
+          "name": "dyn102070",
+          "id": 102070,
+          "multiEntitySupport": false
+        },
+        "dyn102191": {
+          "name": "dyn102191",
+          "id": 102191,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "frozenPeriod": {
+          "name": "frozenPeriod",
+          "id": 100528,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "specifyDeviationsFromOtherFinancialTerms": {
+          "name": "specifyDeviationsFromOtherFinancialTerms",
+          "id": 100620,
+          "multiEntitySupport": false
+        },
+        "dyn102182": {
+          "name": "dyn102182",
+          "id": 102182,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102066": {
+          "name": "dyn102066",
+          "id": 102066,
+          "multiEntitySupport": false
+        },
+        "dyn101891": {
+          "name": "dyn101891",
+          "id": 101891,
+          "multiEntitySupport": false
+        },
+        "dyn102069": {
+          "name": "dyn102069",
+          "id": 102069,
+          "multiEntitySupport": false
+        },
+        "materialCategory": {
+          "name": "materialCategory",
+          "id": 100587,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101897": {
+          "name": "dyn101897",
+          "id": 101897,
+          "multiEntitySupport": false
+        },
+        "dyn101898": {
+          "name": "dyn101898",
+          "id": 101898,
+          "multiEntitySupport": false
+        },
+        "dyn101899": {
+          "name": "dyn101899",
+          "id": 101899,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "specifyDeviationsFromStandardDeliveryTerms": {
+          "name": "specifyDeviationsFromStandardDeliveryTerms",
+          "id": 100621,
+          "multiEntitySupport": false
+        },
+        "retentionCommentsLongText": {
+          "name": "retentionCommentsLongText",
+          "id": 100631,
+          "multiEntitySupport": false
+        },
+        "insuranceToBeMaintainedBy": {
+          "name": "insuranceToBeMaintainedBy",
+          "id": 100600,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "specifyDeviationsFromStandardInsuranceTerms": {
+          "name": "specifyDeviationsFromStandardInsuranceTerms",
+          "id": 100623,
+          "multiEntitySupport": false
+        },
+        "applicableLocalMarkets": {
+          "name": "applicableLocalMarkets",
+          "id": 100592,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102291": {
+          "name": "dyn102291",
+          "id": 102291,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "subContractingAllowed": {
+          "name": "subContractingAllowed",
+          "id": 100496,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102293": {
+          "name": "dyn102293",
+          "id": 102293,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102173": {
+          "name": "dyn102173",
+          "id": 102173,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "supplierToProvideAlternativeProduct": {
+          "name": "supplierToProvideAlternativeProduct",
+          "id": 100582,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102296": {
+          "name": "dyn102296",
+          "id": 102296,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "contractSupplierId": {
+          "name": "contractSupplierId",
+          "id": 100356,
+          "multiEntitySupport": false
+        },
+        "dyn101880": {
+          "name": "dyn101880",
+          "id": 101880,
+          "multiEntitySupport": false
+        },
+        "dyn101881": {
+          "name": "dyn101881",
+          "id": 101881,
+          "multiEntitySupport": false
+        },
+        "dyn102299": {
+          "name": "dyn102299",
+          "id": 102299,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": {
+            "name": "Amdocs",
+            "id": 1285
+          }
+        },
+        "invoicingInAdvanceOrArrears": {
+          "name": "invoicingInAdvanceOrArrears",
+          "id": 100580,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101765": {
+          "name": "dyn101765",
+          "id": 101765,
+          "multiEntitySupport": false
+        },
+        "specifyLatestHsPolicyAndRelatedProvisions": {
+          "name": "specifyLatestHsPolicyAndRelatedProvisions",
+          "id": 100711,
+          "multiEntitySupport": false
+        },
+        "dyn101636": {
+          "name": "dyn101636",
+          "id": 101636,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn100799": {
+          "name": "dyn100799",
+          "id": 100799,
+          "multiEntitySupport": false
+        },
+        "dyn101878": {
+          "name": "dyn101878",
+          "id": 101878,
+          "multiEntitySupport": false
+        },
+        "dyn100798": {
+          "name": "dyn100798",
+          "id": 100798,
+          "multiEntitySupport": false
+        },
+        "approvalLevelName": {
+          "name": "approvalLevelName",
+          "id": 100635,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101879": {
+          "name": "dyn101879",
+          "id": 101879,
+          "multiEntitySupport": false
+        },
+        "dyn100797": {
+          "name": "dyn100797",
+          "id": 100797,
+          "multiEntitySupport": false
+        },
+        "dyn100793": {
+          "name": "dyn100793",
+          "id": 100793,
+          "multiEntitySupport": false
+        },
+        "dyn101089": {
+          "name": "dyn101089",
+          "id": 101089,
+          "multiEntitySupport": false
+        },
+        "paymentTermMaterialCategoryLevel1": {
+          "name": "paymentTermMaterialCategoryLevel1",
+          "id": 100594,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101088": {
+          "name": "dyn101088",
+          "id": 101088,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "paymentTermMaterialCategoryLevel2": {
+          "name": "paymentTermMaterialCategoryLevel2",
+          "id": 100569,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101087": {
+          "name": "dyn101087",
+          "id": 101087,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101086": {
+          "name": "dyn101086",
+          "id": 101086,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "ecpPaymentTermsForLatePaymentsClause": {
+          "name": "ecpPaymentTermsForLatePaymentsClause",
+          "id": 100716,
+          "multiEntitySupport": false
+        },
+        "acceptedPurchaseOrderVariationDateLongText": {
+          "name": "acceptedPurchaseOrderVariationDateLongText",
+          "id": 100628,
+          "multiEntitySupport": false
+        },
+        "dyn101083": {
+          "name": "dyn101083",
+          "id": 101083,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101082": {
+          "name": "dyn101082",
+          "id": 101082,
+          "multiEntitySupport": false
+        },
+        "dyn102290": {
+          "name": "dyn102290",
+          "id": 102290,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102280": {
+          "name": "dyn102280",
+          "id": 102280,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "lastChangedByDate": {
+          "name": "lastChangedByDate",
+          "id": 100726,
+          "multiEntitySupport": false
+        },
+        "dyn102281": {
+          "name": "dyn102281",
+          "id": 102281,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "optionalServicesClausePresent": {
+          "name": "optionalServicesClausePresent",
+          "id": 100508,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "specifyDeviationsFromStandardInvoicingTerms": {
+          "name": "specifyDeviationsFromStandardInvoicingTerms",
+          "id": 100710,
+          "multiEntitySupport": false
+        },
+        "dyn102286": {
+          "name": "dyn102286",
+          "id": 102286,
+          "multiEntitySupport": false
+        },
+        "vendorManagementReplenishment": {
+          "name": "vendorManagementReplenishment",
+          "id": 100515,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "custom": {
+          "name": "custom",
+          "id": 100554,
+          "multiEntitySupport": false
+        },
+        "dyn102287": {
+          "name": "dyn102287",
+          "id": 102287,
+          "multiEntitySupport": false
+        },
+        "communicationAndTraining": {
+          "name": "communicationAndTraining",
+          "id": 100603,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101870": {
+          "name": "dyn101870",
+          "id": 101870,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102288": {
+          "name": "dyn102288",
+          "id": 102288,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "ecpEarlyPaymentDiscountDefinition": {
+          "name": "ecpEarlyPaymentDiscountDefinition",
+          "id": 100717,
+          "multiEntitySupport": false
+        },
+        "dyn101871": {
+          "name": "dyn101871",
+          "id": 101871,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101872": {
+          "name": "dyn101872",
+          "id": 101872,
+          "multiEntitySupport": false
+        },
+        "dyn101873": {
+          "name": "dyn101873",
+          "id": 101873,
+          "multiEntitySupport": false
+        },
+        "dyn101994": {
+          "name": "dyn101994",
+          "id": 101994,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101874": {
+          "name": "dyn101874",
+          "id": 101874,
+          "multiEntitySupport": false
+        },
+        "dyn101875": {
+          "name": "dyn101875",
+          "id": 101875,
+          "multiEntitySupport": false
+        },
+        "dyn101876": {
+          "name": "dyn101876",
+          "id": 101876,
+          "multiEntitySupport": false
+        },
+        "dyn101877": {
+          "name": "dyn101877",
+          "id": 101877,
+          "multiEntitySupport": false
+        },
+        "dyn101635": {
+          "name": "dyn101635",
+          "id": 101635,
+          "multiEntitySupport": false
+        },
+        "dyn101746": {
+          "name": "dyn101746",
+          "id": 101746,
+          "multiEntitySupport": false
+        },
+        "dyn101867": {
+          "name": "dyn101867",
+          "id": 101867,
+          "multiEntitySupport": false
+        },
+        "dyn101634": {
+          "name": "dyn101634",
+          "id": 101634,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "dyn101621": {
+                "name": "dyn101621",
+                "id": 101621,
+                "multiEntitySupport": false,
+                "values": ""
+              },
+              "dyn101635": {
+                "name": "dyn101635",
+                "id": 101635,
+                "multiEntitySupport": false,
+                "values": ""
+              }
+            }
+          ]
+        },
+        "dyn101747": {
+          "name": "dyn101747",
+          "id": 101747,
+          "multiEntitySupport": false
+        },
+        "dyn101868": {
+          "name": "dyn101868",
+          "id": 101868,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "contractCurrency1": {
+          "name": "contractCurrency1",
+          "id": 100662,
+          "multiEntitySupport": false
+        },
+        "dyn101869": {
+          "name": "dyn101869",
+          "id": 101869,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "thirdPartyMaterialsUsed": {
+          "name": "thirdPartyMaterialsUsed",
+          "id": 100533,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "ccmSegment": {
+          "name": "ccmSegment",
+          "id": 100599,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "freeOfChargeSamples": {
+          "name": "freeOfChargeSamples",
+          "id": 100518,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "masterAgreementAttachment": {
+          "name": "masterAgreementAttachment",
+          "id": 100616,
+          "multiEntitySupport": false
+        },
+        "esignCommentLongText": {
+          "name": "esignCommentLongText",
+          "id": 100626,
+          "multiEntitySupport": false
+        },
+        "dyn100801": {
+          "name": "dyn100801",
+          "id": 100801,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn100800": {
+          "name": "dyn100800",
+          "id": 100800,
+          "multiEntitySupport": false
+        },
+        "textField": {
+          "name": "textField",
+          "id": 100446,
+          "multiEntitySupport": false
+        },
+        "terminationForCauseRightsTo": {
+          "name": "terminationForCauseRightsTo",
+          "id": 100573,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101346": {
+          "name": "dyn101346",
+          "id": 101346,
+          "multiEntitySupport": false
+        },
+        "dyn101466": {
+          "name": "dyn101466",
+          "id": 101466,
+          "multiEntitySupport": false
+        },
+        "additionalContractingExternalParty": {
+          "name": "additionalContractingExternalParty",
+          "id": 100571,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101465": {
+          "name": "dyn101465",
+          "id": 101465,
+          "multiEntitySupport": false
+        },
+        "review": {
+          "name": "review",
+          "id": 100615,
+          "multiEntitySupport": false
+        },
+        "dyn101464": {
+          "name": "dyn101464",
+          "id": 101464,
+          "multiEntitySupport": false
+        },
+        "forecastingObligationsPresent": {
+          "name": "forecastingObligationsPresent",
+          "id": 100540,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "invoicePrice": {
+          "name": "invoicePrice",
+          "id": 100583,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102301": {
+          "name": "dyn102301",
+          "id": 102301,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "contractDocumentName": {
+          "name": "contractDocumentName",
+          "id": 100632,
+          "multiEntitySupport": false
+        },
+        "q&a": {
+          "name": "q&a",
+          "id": 100613,
+          "multiEntitySupport": false
+        },
+        "dyn102306": {
+          "name": "dyn102306",
+          "id": 102306,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "additionalCurrencies": {
+          "name": "additionalCurrencies",
+          "id": 100709,
+          "multiEntitySupport": false
+        },
+        "dyn101455": {
+          "name": "dyn101455",
+          "id": 101455,
+          "multiEntitySupport": false
+        },
+        "versions": {
+          "name": "versions",
+          "id": 100732,
+          "multiEntitySupport": false
+        },
+        "dyn101694": {
+          "name": "dyn101694",
+          "id": 101694,
+          "multiEntitySupport": false
+        },
+        "thirdPartyIndemnificationClausePresent": {
+          "name": "thirdPartyIndemnificationClausePresent",
+          "id": 100514,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "priceBookAttachmentName": {
+          "name": "priceBookAttachmentName",
+          "id": 100718,
+          "multiEntitySupport": false
+        },
+        "compelledDisclosureClausePresent": {
+          "name": "compelledDisclosureClausePresent",
+          "id": 100516,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101559": {
+          "name": "dyn101559",
+          "id": 101559,
+          "multiEntitySupport": false,
+          "values": false
+        },
+        "dyn101438": {
+          "name": "dyn101438",
+          "id": 101438,
+          "multiEntitySupport": false
+        },
+        "dyn101444": {
+          "name": "dyn101444",
+          "id": 101444,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101686": {
+          "name": "dyn101686",
+          "id": 101686,
+          "multiEntitySupport": false
+        },
+        "terminationForConvenienceRightsTo": {
+          "name": "terminationForConvenienceRightsTo",
+          "id": 100566,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101443": {
+          "name": "dyn101443",
+          "id": 101443,
+          "multiEntitySupport": false
+        },
+        "dyn101685": {
+          "name": "dyn101685",
+          "id": 101685,
+          "multiEntitySupport": false,
+          "values": false
+        },
+        "dyn101440": {
+          "name": "dyn101440",
+          "id": 101440,
+          "multiEntitySupport": false
+        },
+        "dyn101561": {
+          "name": "dyn101561",
+          "id": 101561,
+          "multiEntitySupport": false
+        },
+        "dyn101560": {
+          "name": "dyn101560",
+          "id": 101560,
+          "multiEntitySupport": false
+        },
+        "requirementToProvideSupplierRoadmap": {
+          "name": "requirementToProvideSupplierRoadmap",
+          "id": 100513,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "selfServiceName": {
+          "name": "selfServiceName",
+          "id": 100636,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102083": {
+          "name": "dyn102083",
+          "id": 102083,
+          "multiEntitySupport": false
+        },
+        "internalContractingPartyCurrency": {
+          "name": "internalContractingPartyCurrency",
+          "id": 100601,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102088": {
+          "name": "dyn102088",
+          "id": 102088,
+          "multiEntitySupport": false
+        },
+        "level2MaterialCategory": {
+          "name": "level2MaterialCategory",
+          "id": 100574,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "contractDurationClauseLongText": {
+          "name": "contractDurationClauseLongText",
+          "id": 100627,
+          "multiEntitySupport": false
+        },
+        "dyn101797": {
+          "name": "dyn101797",
+          "id": 101797,
+          "multiEntitySupport": false
+        },
+        "highlyconfidential": {
+          "name": "highlyconfidential",
+          "id": 100753,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101798": {
+          "name": "dyn101798",
+          "id": 101798,
+          "multiEntitySupport": false
+        },
+        "dyn101799": {
+          "name": "dyn101799",
+          "id": 101799,
+          "multiEntitySupport": false
+        },
+        "dyn101437": {
+          "name": "dyn101437",
+          "id": 101437,
+          "multiEntitySupport": false
+        },
+        "dyn101558": {
+          "name": "dyn101558",
+          "id": 101558,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101557": {
+          "name": "dyn101557",
+          "id": 101557,
+          "multiEntitySupport": false,
+          "values": ""
+        },
+        "dyn101556": {
+          "name": "dyn101556",
+          "id": 101556,
+          "multiEntitySupport": false
+        },
+        "highlyconf1": {
+          "name": "highlyconf1",
+          "id": 100754,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101312": {
+          "name": "dyn101312",
+          "id": 101312,
+          "multiEntitySupport": false
+        },
+        "dyn101554": {
+          "name": "dyn101554",
+          "id": 101554,
+          "multiEntitySupport": false
+        },
+        "dyn101311": {
+          "name": "dyn101311",
+          "id": 101311,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "vpcBusinessArea": {
+          "name": "vpcBusinessArea",
+          "id": 100602,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101310": {
+          "name": "dyn101310",
+          "id": 101310,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101430": {
+          "name": "dyn101430",
+          "id": 101430,
+          "multiEntitySupport": false
+        },
+        "taxIncludedInFees": {
+          "name": "taxIncludedInFees",
+          "id": 100539,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "textArea": {
+          "name": "textArea",
+          "id": 100445,
+          "multiEntitySupport": false
+        },
+        "dateOfReviews": {
+          "name": "dateOfReviews",
+          "id": 100734,
+          "multiEntitySupport": false
+        },
+        "contractDate": {
+          "name": "contractDate",
+          "id": 100556,
+          "multiEntitySupport": false
+        },
+        "autoPriceAdjustmentPostBenchmark": {
+          "name": "autoPriceAdjustmentPostBenchmark",
+          "id": 100531,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "vodafoneRightToTerminateForEpidemicFailure": {
+          "name": "vodafoneRightToTerminateForEpidemicFailure",
+          "id": 100593,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "commentsLongText": {
+          "name": "commentsLongText",
+          "id": 100630,
+          "multiEntitySupport": false
+        },
+        "dyn102114": {
+          "name": "dyn102114",
+          "id": 102114,
+          "multiEntitySupport": false
+        },
+        "changingMethodologyLongText": {
+          "name": "changingMethodologyLongText",
+          "id": 100629,
+          "multiEntitySupport": false
+        },
+        "reviewComments": {
+          "name": "reviewComments",
+          "id": 100733,
+          "multiEntitySupport": false
+        },
+        "dyn102238": {
+          "name": "dyn102238",
+          "id": 102238,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101933": {
+          "name": "dyn101933",
+          "id": 101933,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "nameOfVgcEsigner": {
+          "name": "nameOfVgcEsigner",
+          "id": 100727,
+          "multiEntitySupport": false
+        },
+        "dyn101149": {
+          "name": "dyn101149",
+          "id": 101149,
+          "multiEntitySupport": false
+        },
+        "reviews": {
+          "name": "reviews",
+          "id": 100741,
+          "multiEntitySupport": false
+        },
+        "externalContractingPartyPaymentTermEccId": {
+          "name": "externalContractingPartyPaymentTermEccId",
+          "id": 100577,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "materialCategoryLevel4Id": {
+          "name": "materialCategoryLevel4Id",
+          "id": 100598,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "clmStatus": {
+          "name": "clmStatus",
+          "id": 100597,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "reviewed": {
+          "name": "reviewed",
+          "id": 100742,
+          "multiEntitySupport": false
+        },
+        "dyn101263": {
+          "name": "dyn101263",
+          "id": 101263,
+          "multiEntitySupport": false
+        },
+        "dyn101261": {
+          "name": "dyn101261",
+          "id": 101261,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "topLegalRisksLongText": {
+          "name": "topLegalRisksLongText",
+          "id": 100625,
+          "multiEntitySupport": false
+        },
+        "questionsAndAnswers": {
+          "name": "questionsAndAnswers",
+          "id": 100719,
+          "multiEntitySupport": false
+        },
+        "contractDate1": {
+          "name": "contractDate1",
+          "id": 100661,
+          "multiEntitySupport": false
+        },
+        "riskRegister": {
+          "name": "riskRegister",
+          "id": 100517,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "kpi": {
+          "name": "kpi",
+          "id": 100527,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "paymentSetup": {
+          "name": "paymentSetup",
+          "id": 100568,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102220": {
+          "name": "dyn102220",
+          "id": 102220,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102101": {
+          "name": "dyn102101",
+          "id": 102101,
+          "multiEntitySupport": false
+        },
+        "dyn101009": {
+          "name": "dyn101009",
+          "id": 101009,
+          "multiEntitySupport": false
+        },
+        "dyn101019": {
+          "name": "dyn101019",
+          "id": 101019,
+          "multiEntitySupport": false
+        },
+        "dyn102219": {
+          "name": "dyn102219",
+          "id": 102219,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101018": {
+          "name": "dyn101018",
+          "id": 101018,
+          "multiEntitySupport": false
+        },
+        "handoverRequired": {
+          "name": "handoverRequired",
+          "id": 100530,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101017": {
+          "name": "dyn101017",
+          "id": 101017,
+          "multiEntitySupport": false,
+          "values": false
+        },
+        "dyn101259": {
+          "name": "dyn101259",
+          "id": 101259,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101014": {
+          "name": "dyn101014",
+          "id": 101014,
+          "multiEntitySupport": false
+        },
+        "obligation": {
+          "name": "obligation",
+          "id": 100497,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101013": {
+          "name": "dyn101013",
+          "id": 101013,
+          "multiEntitySupport": false
+        },
+        "dyn101012": {
+          "name": "dyn101012",
+          "id": 101012,
+          "multiEntitySupport": false
+        },
+        "dyn101010": {
+          "name": "dyn101010",
+          "id": 101010,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "servicesWarrantiesPresent": {
+          "name": "servicesWarrantiesPresent",
+          "id": 100526,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "level1MaterialCategory": {
+          "name": "level1MaterialCategory",
+          "id": 100575,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102331": {
+          "name": "dyn102331",
+          "id": 102331,
+          "multiEntitySupport": false
+        },
+        "dyn102332": {
+          "name": "dyn102332",
+          "id": 102332,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "dyn102331": {
+                "name": "dyn102331",
+                "id": 102331,
+                "multiEntitySupport": false,
+                "values": ""
+              }
+            }
+          ]
+        },
+        "dyn102333": {
+          "name": "dyn102333",
+          "id": 102333,
+          "multiEntitySupport": false
+        },
+        "dyn102334": {
+          "name": "dyn102334",
+          "id": 102334,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102335": {
+          "name": "dyn102335",
+          "id": 102335,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn102336": {
+          "name": "dyn102336",
+          "id": 102336,
+          "multiEntitySupport": false
+        },
+        "dyn102337": {
+          "name": "dyn102337",
+          "id": 102337,
+          "multiEntitySupport": false
+        },
+        "dyn101911": {
+          "name": "dyn101911",
+          "id": 101911,
+          "multiEntitySupport": false
+        },
+        "dyn101007": {
+          "name": "dyn101007",
+          "id": 101007,
+          "multiEntitySupport": false
+        },
+        "dyn101912": {
+          "name": "dyn101912",
+          "id": 101912,
+          "multiEntitySupport": false
+        },
+        "dyn101913": {
+          "name": "dyn101913",
+          "id": 101913,
+          "multiEntitySupport": false
+        },
+        "dyn101005": {
+          "name": "dyn101005",
+          "id": 101005,
+          "multiEntitySupport": false
+        },
+        "dyn101126": {
+          "name": "dyn101126",
+          "id": 101126,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101247": {
+          "name": "dyn101247",
+          "id": 101247,
+          "multiEntitySupport": false
+        },
+        "dyn101004": {
+          "name": "dyn101004",
+          "id": 101004,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101915": {
+          "name": "dyn101915",
+          "id": 101915,
+          "multiEntitySupport": false
+        },
+        "dyn101003": {
+          "name": "dyn101003",
+          "id": 101003,
+          "multiEntitySupport": false
+        },
+        "dyn101124": {
+          "name": "dyn101124",
+          "id": 101124,
+          "multiEntitySupport": false
+        },
+        "reviewDate": {
+          "name": "reviewDate",
+          "id": 101068,
+          "multiEntitySupport": false
+        },
+        "governingApplicableLaw": {
+          "name": "governingApplicableLaw",
+          "id": 100585,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "productOwnershipClausePresent": {
+          "name": "productOwnershipClausePresent",
+          "id": 100523,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101483": {
+          "name": "dyn101483",
+          "id": 101483,
+          "multiEntitySupport": false
+        },
+        "dyn101482": {
+          "name": "dyn101482",
+          "id": 101482,
+          "multiEntitySupport": false
+        },
+        "level4MaterialCategory": {
+          "name": "level4MaterialCategory",
+          "id": 100572,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "approvalTerminalTerms": {
+          "name": "approvalTerminalTerms",
+          "id": 100637,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "acceptanceClausePresent": {
+          "name": "acceptanceClausePresent",
+          "id": 100494,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "contractingExternalPartyEccId": {
+          "name": "contractingExternalPartyEccId",
+          "id": 100581,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102322": {
+          "name": "dyn102322",
+          "id": 102322,
+          "multiEntitySupport": false,
+          "values": [
+            {
+              "dyn102323": {
+                "name": "dyn102323",
+                "id": 102323,
+                "options": null,
+                "multiEntitySupport": false,
+                "values": null
+              },
+              "dyn102324": {
+                "name": "dyn102324",
+                "id": 102324,
+                "options": null,
+                "multiEntitySupport": false,
+                "values": []
+              }
+            }
+          ]
+        },
+        "dyn102323": {
+          "name": "dyn102323",
+          "id": 102323,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "escrowObligationsPresent": {
+          "name": "escrowObligationsPresent",
+          "id": 100537,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102202": {
+          "name": "dyn102202",
+          "id": 102202,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn102324": {
+          "name": "dyn102324",
+          "id": 102324,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "antiBriberOrAnticorruptionClausePresent": {
+          "name": "antiBriberOrAnticorruptionClausePresent",
+          "id": 100534,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101109": {
+          "name": "dyn101109",
+          "id": 101109,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "dyn101910": {
+          "name": "dyn101910",
+          "id": 101910,
+          "multiEntitySupport": false
+        },
+        "dyn101117": {
+          "name": "dyn101117",
+          "id": 101117,
+          "options": null,
+          "multiEntitySupport": false,
+          "values": []
+        },
+        "dyn101902": {
+          "name": "dyn101902",
+          "id": 101902,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "contractDocumentNames": {
+          "name": "contractDocumentNames",
+          "id": 100729,
+          "multiEntitySupport": false
+        },
+        "dyn101908": {
+          "name": "dyn101908",
+          "id": 101908,
+          "multiEntitySupport": false
+        },
+        "dyn101909": {
+          "name": "dyn101909",
+          "id": 101909,
+          "multiEntitySupport": false
+        },
+        "taxLiabilityTo": {
+          "name": "taxLiabilityTo",
+          "id": 100591,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "lastChangedBy": {
+          "name": "lastChangedBy",
+          "id": 100725,
+          "multiEntitySupport": false
+        }
+      },
+      "deliveryCountries": {
+        "name": "deliveryCountries",
+        "id": 11,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "regionCountryStructure": {
+        "name": "regionCountryStructure",
+        "id": 25,
+        "multiEntitySupport": false
+      },
+      "vendorClassification": {
+        "name": "vendorClassification",
+        "id": 4904,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "additionalTCV": {
+        "name": "additionalTCV",
+        "id": 32,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "fycv": {
+        "name": "fycv",
+        "id": 3003,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "name": {
+        "name": "name",
+        "id": 37,
+        "multiEntitySupport": false
+      },
+      "rootInfo": {
+        "name": "rootInfo",
+        "multiEntitySupport": false
+      },
+      "clientAggregateTcvValue": {
+        "name": "clientAggregateTcvValue",
+        "multiEntitySupport": false
+      },
+      "aggregateACV": {
+        "name": "aggregateACV",
+        "id": 3002,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "projectId": {
+        "name": "projectId",
+        "id": 35,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "rateCardsApplicable": {
+        "name": "rateCardsApplicable",
+        "id": 29,
+        "multiEntitySupport": false
+      },
+      "existingRateCards": {
+        "name": "existingRateCards",
+        "values": [],
+        "multiEntitySupport": false
+      },
+      "numberOfRenewals": {
+        "name": "numberOfRenewals",
+        "id": 7009,
+        "multiEntitySupport": false
+      },
+      "effectiveDateOriginal": {
+        "name": "effectiveDateOriginal",
+        "id": 7011,
+        "multiEntitySupport": false
+      },
+      "excludeWeekends": {
+        "name": "excludeWeekends",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "searchParam": {
+        "size": {
+          "name": "size",
+          "values": 0,
+          "multiEntitySupport": false
+        },
+        "offset": {
+          "name": "offset",
+          "values": 0,
+          "multiEntitySupport": false
+        }
+      },
+      "documentType": {
+        "name": "documentType",
+        "id": 8,
+        "multiEntitySupport": false
+      },
+      "additionalFYCV": {
+        "name": "additionalFYCV",
+        "id": 34,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "parentEntityType": {
+        "name": "parentEntityType",
+        "multiEntitySupport": false
+      },
+      "contracts": {
+        "name": "contracts",
+        "multiEntitySupport": false
+      },
+      "title": {
+        "name": "title",
+        "id": 38,
+        "multiEntitySupport": false
+      },
+      "spendType": {
+        "name": "spendType",
+        "id": 11570,
+        "multiEntitySupport": false
+      },
+      "tier": {
+        "name": "tier",
+        "id": 12,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "expirationNoticePeriod": {
+        "name": "expirationNoticePeriod",
+        "id": 7015,
+        "multiEntitySupport": false
+      },
+      "adhocUser": {
+        "firstName": {
+          "name": "firstName",
+          "id": 78,
+          "multiEntitySupport": false
+        },
+        "lastName": {
+          "name": "lastName",
+          "id": 79,
+          "multiEntitySupport": false
+        },
+        "loginId": {
+          "name": "loginId",
+          "id": 80,
+          "multiEntitySupport": false
+        },
+        "userType": {
+          "name": "userType",
+          "id": 83,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "uniqueLoginId": {
+          "name": "uniqueLoginId",
+          "id": 82,
+          "multiEntitySupport": false
+        },
+        "email": {
+          "name": "email",
+          "id": 81,
+          "multiEntitySupport": false
+        }
+      },
+      "financialImpact": {
+        "name": "financialImpact",
+        "id": 7024,
+        "multiEntitySupport": false
+      },
+      "expirationDateOriginal": {
+        "name": "expirationDateOriginal",
+        "id": 7013,
+        "multiEntitySupport": false
+      },
+      "expirationDate": {
+        "name": "expirationDate",
+        "id": 15,
+        "multiEntitySupport": false
+      },
+      "brief": {
+        "name": "brief",
+        "id": 5,
+        "multiEntitySupport": false
+      },
+      "ageing": {
+        "name": "ageing",
+        "multiEntitySupport": false
+      },
+      "tcv": {
+        "name": "tcv",
+        "id": 99,
+        "displayValues": "",
+        "multiEntitySupport": false
+      },
+      "sourceEntityTypeId": {
+        "name": "sourceEntityTypeId",
+        "multiEntitySupport": false
+      },
+      "contractCountries": {
+        "name": "contractCountries",
+        "id": 24,
+        "multiEntitySupport": false
+      },
+      "contractCurrencies": {
+        "name": "contractCurrencies",
+        "id": 26,
+        "multiEntitySupport": false
+      },
+      "rateCardToDate": {
+        "name": "rateCardToDate",
+        "id": 31,
+        "multiEntitySupport": false
+      },
+      "agreementNumber": {
+        "name": "agreementNumber",
+        "id": 4,
+        "multiEntitySupport": false
+      },
+      "recipientCompanyCodes": {
+        "name": "recipientCompanyCodes",
+        "id": 4883,
+        "multiEntitySupport": false
+      },
+      "shortCodeId": {
+        "name": "shortCodeId",
+        "id": 98,
+        "multiEntitySupport": false
+      },
+      "excludeFromHoliday": {
+        "name": "excludeFromHoliday",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "sourceEntityId": {
+        "name": "sourceEntityId",
+        "multiEntitySupport": false
+      },
+      "noticeDate": {
+        "name": "noticeDate",
+        "id": 4772,
+        "multiEntitySupport": false
+      },
+      "comment": {
+        "requestedBy": {
+          "name": "requestedBy",
+          "id": 12244,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "shareWithSupplier": {
+          "name": "shareWithSupplier",
+          "id": 12409,
+          "multiEntitySupport": false
+        },
+        "comments": {
+          "name": "comments",
+          "id": 86,
+          "multiEntitySupport": false
+        },
+        "documentTags": {
+          "name": "documentTags",
+          "id": 12428,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "draft": {
+          "name": "draft",
+          "multiEntitySupport": false
+        },
+        "actualDate": {
+          "name": "actualDate",
+          "id": 12243,
+          "multiEntitySupport": false
+        },
+        "privateCommunication": {
+          "name": "privateCommunication",
+          "id": 12242,
+          "multiEntitySupport": false
+        },
+        "changeRequest": {
+          "name": "changeRequest",
+          "id": 12246,
+          "options": null,
+          "multiEntitySupport": false
+        },
+        "workOrderRequest": {
+          "name": "workOrderRequest",
+          "id": 12247,
+          "multiEntitySupport": false
+        },
+        "commentDocuments": {
+          "values": []
+        }
+      },
+      "hierarchyData": {
+        "name": "hierarchyData",
+        "values": false,
+        "multiEntitySupport": false
+      },
+      "contractingCompanyCodes": {
+        "name": "contractingCompanyCodes",
+        "id": 11244,
+        "multiEntitySupport": false
+      },
+      "customer": {
+        "name": "customer",
+        "id": 12336,
+        "multiEntitySupport": false
+      },
+      "stockProtection": {
+        "name": "stockProtection",
+        "id": 100503,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "earlyPaymentDiscountPresent": {
+        "name": "earlyPaymentDiscountPresent",
+        "id": 100512,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102152": {
+        "name": "dyn102152",
+        "id": 102152,
+        "multiEntitySupport": false
+      },
+      "specialConditions": {
+        "name": "specialConditions",
+        "id": 100714,
+        "multiEntitySupport": false
+      },
+      "timeToExpired": {
+        "name": "timeToExpired",
+        "id": 100355,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "applicationSupportResponsibilityOnSupplier": {
+        "name": "applicationSupportResponsibilityOnSupplier",
+        "id": 100522,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101743": {
+        "name": "dyn101743",
+        "id": 101743,
+        "multiEntitySupport": false
+      },
+      "dyn101615": {
+        "name": "dyn101615",
+        "id": 101615,
+        "multiEntitySupport": false
+      },
+      "dyn101744": {
+        "name": "dyn101744",
+        "id": 101744,
+        "multiEntitySupport": false
+      },
+      "dyn101745": {
+        "name": "dyn101745",
+        "id": 101745,
+        "multiEntitySupport": false
+      },
+      "dyn101866": {
+        "name": "dyn101866",
+        "id": 101866,
+        "multiEntitySupport": false
+      },
+      "dyn101856": {
+        "name": "dyn101856",
+        "id": 101856,
+        "multiEntitySupport": false
+      },
+      "dyn101857": {
+        "name": "dyn101857",
+        "id": 101857,
+        "multiEntitySupport": false
+      },
+      "dyn101621": {
+        "name": "dyn101621",
+        "id": 101621,
+        "multiEntitySupport": false
+      },
+      "dyn100773": {
+        "name": "dyn100773",
+        "id": 100773,
+        "multiEntitySupport": false
+      },
+      "dyn101620": {
+        "name": "dyn101620",
+        "id": 101620,
+        "multiEntitySupport": false,
+        "values": ""
+      },
+      "dyn101069": {
+        "name": "dyn101069",
+        "id": 101069,
+        "multiEntitySupport": false
+      },
+      "contractWizard": {
+        "name": "contractWizard",
+        "id": 100558,
+        "multiEntitySupport": false
+      },
+      "dyn101066": {
+        "name": "dyn101066",
+        "id": 101066,
+        "multiEntitySupport": false
+      },
+      "dyn101065": {
+        "name": "dyn101065",
+        "id": 101065,
+        "multiEntitySupport": false
+      },
+      "commentss": {
+        "name": "commentss",
+        "id": 100735,
+        "multiEntitySupport": false
+      },
+      "testGroup20": {
+        "name": "testGroup20",
+        "id": 100562,
+        "multiEntitySupport": false
+      },
+      "dyn101060": {
+        "name": "dyn101060",
+        "id": 101060,
+        "multiEntitySupport": false
+      },
+      "signatureTypeName": {
+        "name": "signatureTypeName",
+        "id": 100638,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "fxRateClause": {
+        "name": "fxRateClause",
+        "id": 100535,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102262": {
+        "name": "dyn102262",
+        "id": 102262,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "externalContractingPartyCurrency": {
+        "name": "externalContractingPartyCurrency",
+        "id": 100578,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "specifyApplicableDeliverableRecipients": {
+        "name": "specifyApplicableDeliverableRecipients",
+        "id": 100713,
+        "multiEntitySupport": false
+      },
+      "vpcDocumentClass": {
+        "name": "vpcDocumentClass",
+        "id": 100596,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "specifyDeviationsFromStandardTaxTerms": {
+        "name": "specifyDeviationsFromStandardTaxTerms",
+        "id": 100619,
+        "multiEntitySupport": false
+      },
+      "dyn102143": {
+        "name": "dyn102143",
+        "id": 102143,
+        "multiEntitySupport": false
+      },
+      "dyn102264": {
+        "name": "dyn102264",
+        "id": 102264,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "ecpPaymentTermsForLdClause": {
+        "name": "ecpPaymentTermsForLdClause",
+        "id": 100715,
+        "multiEntitySupport": false
+      },
+      "dyn102266": {
+        "name": "dyn102266",
+        "id": 102266,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101730": {
+        "name": "dyn101730",
+        "id": 101730,
+        "multiEntitySupport": false
+      },
+      "dyn101731": {
+        "name": "dyn101731",
+        "id": 101731,
+        "multiEntitySupport": false
+      },
+      "version": {
+        "name": "version",
+        "id": 100730,
+        "multiEntitySupport": false
+      },
+      "dyn100999": {
+        "name": "dyn100999",
+        "id": 100999,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101975": {
+        "name": "dyn101975",
+        "id": 101975,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "dyn101976": {
+              "name": "dyn101976",
+              "id": 101976,
+              "multiEntitySupport": false,
+              "values": ""
+            }
+          }
+        ]
+      },
+      "dyn100998": {
+        "name": "dyn100998",
+        "id": 100998,
+        "multiEntitySupport": false
+      },
+      "dyn101976": {
+        "name": "dyn101976",
+        "id": 101976,
+        "multiEntitySupport": false
+      },
+      "masterAgreementType": {
+        "name": "masterAgreementType",
+        "id": 100588,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "level3MaterialCategory": {
+        "name": "level3MaterialCategory",
+        "id": 100590,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "lastUpdateUpdate": {
+        "name": "lastUpdateUpdate",
+        "id": 100724,
+        "multiEntitySupport": false
+      },
+      "dyn101613": {
+        "name": "dyn101613",
+        "id": 101613,
+        "multiEntitySupport": false
+      },
+      "dyn101845": {
+        "name": "dyn101845",
+        "id": 101845,
+        "multiEntitySupport": false
+      },
+      "dyn101846": {
+        "name": "dyn101846",
+        "id": 101846,
+        "multiEntitySupport": false
+      },
+      "assignmentAllowed": {
+        "name": "assignmentAllowed",
+        "id": 100529,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101968": {
+        "name": "dyn101968",
+        "id": 101968,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "terminationForConvenience": {
+        "name": "terminationForConvenience",
+        "id": 100521,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101727": {
+        "name": "dyn101727",
+        "id": 101727,
+        "multiEntitySupport": false
+      },
+      "dyn101969": {
+        "name": "dyn101969",
+        "id": 101969,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractDocumentAttachment": {
+        "name": "contractDocumentAttachment",
+        "id": 100617,
+        "multiEntitySupport": false
+      },
+      "dyn101729": {
+        "name": "dyn101729",
+        "id": 101729,
+        "multiEntitySupport": false
+      },
+      "lastUpdate": {
+        "name": "lastUpdate",
+        "id": 100611,
+        "multiEntitySupport": false
+      },
+      "dyn101298": {
+        "name": "dyn101298",
+        "id": 101298,
+        "multiEntitySupport": false
+      },
+      "dyn101297": {
+        "name": "dyn101297",
+        "id": 101297,
+        "multiEntitySupport": false
+      },
+      "dyn101295": {
+        "name": "dyn101295",
+        "id": 101295,
+        "multiEntitySupport": false
+      },
+      "subcontractorNames": {
+        "name": "subcontractorNames",
+        "id": 100360,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "applicableLocalMarketsName": {
+        "name": "applicableLocalMarketsName",
+        "id": 100639,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "subContractingNoticeRequirements": {
+        "name": "subContractingNoticeRequirements",
+        "id": 100570,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102010": {
+        "name": "dyn102010",
+        "id": 102010,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102131": {
+        "name": "dyn102131",
+        "id": 102131,
+        "multiEntitySupport": false
+      },
+      "limitationOfLiabilityClausePresent": {
+        "name": "limitationOfLiabilityClausePresent",
+        "id": 100509,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102011": {
+        "name": "dyn102011",
+        "id": 102011,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "jurisdiction": {
+        "name": "jurisdiction",
+        "id": 100567,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102012": {
+        "name": "dyn102012",
+        "id": 102012,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102134": {
+        "name": "dyn102134",
+        "id": 102134,
+        "multiEntitySupport": false
+      },
+      "parentalGuaranteeProvided": {
+        "name": "parentalGuaranteeProvided",
+        "id": 100519,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101960": {
+        "name": "dyn101960",
+        "id": 101960,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101840": {
+        "name": "dyn101840",
+        "id": 101840,
+        "multiEntitySupport": false
+      },
+      "dyn101961": {
+        "name": "dyn101961",
+        "id": 101961,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102258": {
+        "name": "dyn102258",
+        "id": 102258,
+        "multiEntitySupport": false
+      },
+      "dyn101721": {
+        "name": "dyn101721",
+        "id": 101721,
+        "multiEntitySupport": false
+      },
+      "responseDate": {
+        "name": "responseDate",
+        "id": 100723,
+        "multiEntitySupport": false
+      },
+      "dyn101723": {
+        "name": "dyn101723",
+        "id": 101723,
+        "multiEntitySupport": false
+      },
+      "dyn101844": {
+        "name": "dyn101844",
+        "id": 101844,
+        "multiEntitySupport": false
+      },
+      "dyn100997": {
+        "name": "dyn100997",
+        "id": 100997,
+        "multiEntitySupport": false
+      },
+      "specifyDeviationsFromStdInsuranceTerms": {
+        "name": "specifyDeviationsFromStdInsuranceTerms",
+        "id": 100712,
+        "multiEntitySupport": false
+      },
+      "dyn101838": {
+        "name": "dyn101838",
+        "id": 101838,
+        "multiEntitySupport": false
+      },
+      "dyn101839": {
+        "name": "dyn101839",
+        "id": 101839,
+        "multiEntitySupport": false
+      },
+      "dyn101288": {
+        "name": "dyn101288",
+        "id": 101288,
+        "multiEntitySupport": false
+      },
+      "dyn101287": {
+        "name": "dyn101287",
+        "id": 101287,
+        "multiEntitySupport": false
+      },
+      "requestDate": {
+        "name": "requestDate",
+        "id": 100720,
+        "multiEntitySupport": false
+      },
+      "dyn101286": {
+        "name": "dyn101286",
+        "id": 101286,
+        "multiEntitySupport": false
+      },
+      "vgcSigner": {
+        "name": "vgcSigner",
+        "id": 100610,
+        "multiEntitySupport": false
+      },
+      "approver": {
+        "name": "approver",
+        "id": 100609,
+        "multiEntitySupport": false,
+        "values": [
+          {}
+        ]
+      },
+      "a": {
+        "name": "a",
+        "id": 100652,
+        "multiEntitySupport": false
+      },
+      "b": {
+        "name": "b",
+        "id": 100654,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "exclusivityProvided": {
+        "name": "exclusivityProvided",
+        "id": 100511,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractText1": {
+        "name": "contractText1",
+        "id": 100660,
+        "multiEntitySupport": false
+      },
+      "dyn102243": {
+        "name": "dyn102243",
+        "id": 102243,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102123": {
+        "name": "dyn102123",
+        "id": 102123,
+        "multiEntitySupport": false,
+        "values": "testbulkedit"
+      },
+      "documentVersions": {
+        "name": "documentVersions",
+        "id": 100728,
+        "multiEntitySupport": false
+      },
+      "performanceBondProvided": {
+        "name": "performanceBondProvided",
+        "id": 100520,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101831": {
+        "name": "dyn101831",
+        "id": 101831,
+        "multiEntitySupport": false
+      },
+      "dyn102249": {
+        "name": "dyn102249",
+        "id": 102249,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "name": "ABC News",
+            "id": 1047,
+            "clientActive": true
+          }
+        ]
+      },
+      "recordRetentionClausePresent": {
+        "name": "recordRetentionClausePresent",
+        "id": 100525,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102009": {
+        "name": "dyn102009",
+        "id": 102009,
+        "multiEntitySupport": false
+      },
+      "dyn100983": {
+        "name": "dyn100983",
+        "id": 100983,
+        "multiEntitySupport": false
+      },
+      "dyn101947": {
+        "name": "dyn101947",
+        "id": 101947,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "answer": {
+        "name": "answer",
+        "id": 100722,
+        "multiEntitySupport": false
+      },
+      "questionToStakeholder": {
+        "name": "questionToStakeholder",
+        "id": 100721,
+        "multiEntitySupport": false
+      },
+      "specifyDeviationsFromIprTerms": {
+        "name": "specifyDeviationsFromIprTerms",
+        "id": 100622,
+        "multiEntitySupport": false
+      },
+      "dyn102071": {
+        "name": "dyn102071",
+        "id": 102071,
+        "multiEntitySupport": false
+      },
+      "dyn102192": {
+        "name": "dyn102192",
+        "id": 102192,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "name": "Option1",
+            "id": 1052
+          },
+          {
+            "name": "Option2",
+            "id": 1053
+          }
+        ]
+      },
+      "supplierToProvideNoticeOfEpidemicFailure": {
+        "name": "supplierToProvideNoticeOfEpidemicFailure",
+        "id": 100536,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101780": {
+        "name": "dyn101780",
+        "id": 101780,
+        "multiEntitySupport": false
+      },
+      "dyn102078": {
+        "name": "dyn102078",
+        "id": 102078,
+        "multiEntitySupport": false
+      },
+      "obligations": {
+        "name": "obligations",
+        "id": 100576,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102079": {
+        "name": "dyn102079",
+        "id": 102079,
+        "multiEntitySupport": false
+      },
+      "additionalContractingExternalPartyEccId": {
+        "name": "additionalContractingExternalPartyEccId",
+        "id": 100584,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101418": {
+        "name": "dyn101418",
+        "id": 101418,
+        "multiEntitySupport": false
+      },
+      "documentVersion": {
+        "name": "documentVersion",
+        "id": 100614,
+        "multiEntitySupport": false
+      },
+      "dateAdded": {
+        "name": "dateAdded",
+        "id": 100731,
+        "multiEntitySupport": false
+      },
+      "dyn101417": {
+        "name": "dyn101417",
+        "id": 101417,
+        "multiEntitySupport": false
+      },
+      "terminationForCause": {
+        "name": "terminationForCause",
+        "id": 100532,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101416": {
+        "name": "dyn101416",
+        "id": 101416,
+        "multiEntitySupport": false
+      },
+      "terminationNoticeRequired": {
+        "name": "terminationNoticeRequired",
+        "id": 100538,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101301": {
+        "name": "dyn101301",
+        "id": 101301,
+        "multiEntitySupport": false
+      },
+      "dyn101300": {
+        "name": "dyn101300",
+        "id": 101300,
+        "multiEntitySupport": false
+      },
+      "topCommercialRisksLongText": {
+        "name": "topCommercialRisksLongText",
+        "id": 100624,
+        "multiEntitySupport": false
+      },
+      "insuranceRequirementsPresent": {
+        "name": "insuranceRequirementsPresent",
+        "id": 100504,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "natureOfIndemnity": {
+        "name": "natureOfIndemnity",
+        "id": 100595,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102070": {
+        "name": "dyn102070",
+        "id": 102070,
+        "multiEntitySupport": false
+      },
+      "dyn102191": {
+        "name": "dyn102191",
+        "id": 102191,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "frozenPeriod": {
+        "name": "frozenPeriod",
+        "id": 100528,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "specifyDeviationsFromOtherFinancialTerms": {
+        "name": "specifyDeviationsFromOtherFinancialTerms",
+        "id": 100620,
+        "multiEntitySupport": false
+      },
+      "dyn102182": {
+        "name": "dyn102182",
+        "id": 102182,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102066": {
+        "name": "dyn102066",
+        "id": 102066,
+        "multiEntitySupport": false
+      },
+      "dyn101891": {
+        "name": "dyn101891",
+        "id": 101891,
+        "multiEntitySupport": false
+      },
+      "dyn102069": {
+        "name": "dyn102069",
+        "id": 102069,
+        "multiEntitySupport": false
+      },
+      "materialCategory": {
+        "name": "materialCategory",
+        "id": 100587,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101897": {
+        "name": "dyn101897",
+        "id": 101897,
+        "multiEntitySupport": false
+      },
+      "dyn101898": {
+        "name": "dyn101898",
+        "id": 101898,
+        "multiEntitySupport": false
+      },
+      "dyn101899": {
+        "name": "dyn101899",
+        "id": 101899,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "specifyDeviationsFromStandardDeliveryTerms": {
+        "name": "specifyDeviationsFromStandardDeliveryTerms",
+        "id": 100621,
+        "multiEntitySupport": false
+      },
+      "retentionCommentsLongText": {
+        "name": "retentionCommentsLongText",
+        "id": 100631,
+        "multiEntitySupport": false
+      },
+      "insuranceToBeMaintainedBy": {
+        "name": "insuranceToBeMaintainedBy",
+        "id": 100600,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "specifyDeviationsFromStandardInsuranceTerms": {
+        "name": "specifyDeviationsFromStandardInsuranceTerms",
+        "id": 100623,
+        "multiEntitySupport": false
+      },
+      "applicableLocalMarkets": {
+        "name": "applicableLocalMarkets",
+        "id": 100592,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102291": {
+        "name": "dyn102291",
+        "id": 102291,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "subContractingAllowed": {
+        "name": "subContractingAllowed",
+        "id": 100496,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102293": {
+        "name": "dyn102293",
+        "id": 102293,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102173": {
+        "name": "dyn102173",
+        "id": 102173,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "supplierToProvideAlternativeProduct": {
+        "name": "supplierToProvideAlternativeProduct",
+        "id": 100582,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102296": {
+        "name": "dyn102296",
+        "id": 102296,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "contractSupplierId": {
+        "name": "contractSupplierId",
+        "id": 100356,
+        "multiEntitySupport": false
+      },
+      "dyn101880": {
+        "name": "dyn101880",
+        "id": 101880,
+        "multiEntitySupport": false
+      },
+      "dyn101881": {
+        "name": "dyn101881",
+        "id": 101881,
+        "multiEntitySupport": false
+      },
+      "dyn102299": {
+        "name": "dyn102299",
+        "id": 102299,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": {
+          "name": "Amdocs",
+          "id": 1285
+        }
+      },
+      "invoicingInAdvanceOrArrears": {
+        "name": "invoicingInAdvanceOrArrears",
+        "id": 100580,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101765": {
+        "name": "dyn101765",
+        "id": 101765,
+        "multiEntitySupport": false
+      },
+      "specifyLatestHsPolicyAndRelatedProvisions": {
+        "name": "specifyLatestHsPolicyAndRelatedProvisions",
+        "id": 100711,
+        "multiEntitySupport": false
+      },
+      "dyn101636": {
+        "name": "dyn101636",
+        "id": 101636,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn100799": {
+        "name": "dyn100799",
+        "id": 100799,
+        "multiEntitySupport": false
+      },
+      "dyn101878": {
+        "name": "dyn101878",
+        "id": 101878,
+        "multiEntitySupport": false
+      },
+      "dyn100798": {
+        "name": "dyn100798",
+        "id": 100798,
+        "multiEntitySupport": false
+      },
+      "approvalLevelName": {
+        "name": "approvalLevelName",
+        "id": 100635,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101879": {
+        "name": "dyn101879",
+        "id": 101879,
+        "multiEntitySupport": false
+      },
+      "dyn100797": {
+        "name": "dyn100797",
+        "id": 100797,
+        "multiEntitySupport": false
+      },
+      "dyn100793": {
+        "name": "dyn100793",
+        "id": 100793,
+        "multiEntitySupport": false
+      },
+      "dyn101089": {
+        "name": "dyn101089",
+        "id": 101089,
+        "multiEntitySupport": false
+      },
+      "paymentTermMaterialCategoryLevel1": {
+        "name": "paymentTermMaterialCategoryLevel1",
+        "id": 100594,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101088": {
+        "name": "dyn101088",
+        "id": 101088,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "paymentTermMaterialCategoryLevel2": {
+        "name": "paymentTermMaterialCategoryLevel2",
+        "id": 100569,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101087": {
+        "name": "dyn101087",
+        "id": 101087,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101086": {
+        "name": "dyn101086",
+        "id": 101086,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "ecpPaymentTermsForLatePaymentsClause": {
+        "name": "ecpPaymentTermsForLatePaymentsClause",
+        "id": 100716,
+        "multiEntitySupport": false
+      },
+      "acceptedPurchaseOrderVariationDateLongText": {
+        "name": "acceptedPurchaseOrderVariationDateLongText",
+        "id": 100628,
+        "multiEntitySupport": false
+      },
+      "dyn101083": {
+        "name": "dyn101083",
+        "id": 101083,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101082": {
+        "name": "dyn101082",
+        "id": 101082,
+        "multiEntitySupport": false
+      },
+      "dyn102290": {
+        "name": "dyn102290",
+        "id": 102290,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102280": {
+        "name": "dyn102280",
+        "id": 102280,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "lastChangedByDate": {
+        "name": "lastChangedByDate",
+        "id": 100726,
+        "multiEntitySupport": false
+      },
+      "dyn102281": {
+        "name": "dyn102281",
+        "id": 102281,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "optionalServicesClausePresent": {
+        "name": "optionalServicesClausePresent",
+        "id": 100508,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "specifyDeviationsFromStandardInvoicingTerms": {
+        "name": "specifyDeviationsFromStandardInvoicingTerms",
+        "id": 100710,
+        "multiEntitySupport": false
+      },
+      "dyn102286": {
+        "name": "dyn102286",
+        "id": 102286,
+        "multiEntitySupport": false
+      },
+      "vendorManagementReplenishment": {
+        "name": "vendorManagementReplenishment",
+        "id": 100515,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "custom": {
+        "name": "custom",
+        "id": 100554,
+        "multiEntitySupport": false
+      },
+      "dyn102287": {
+        "name": "dyn102287",
+        "id": 102287,
+        "multiEntitySupport": false
+      },
+      "communicationAndTraining": {
+        "name": "communicationAndTraining",
+        "id": 100603,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101870": {
+        "name": "dyn101870",
+        "id": 101870,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102288": {
+        "name": "dyn102288",
+        "id": 102288,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "ecpEarlyPaymentDiscountDefinition": {
+        "name": "ecpEarlyPaymentDiscountDefinition",
+        "id": 100717,
+        "multiEntitySupport": false
+      },
+      "dyn101871": {
+        "name": "dyn101871",
+        "id": 101871,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101872": {
+        "name": "dyn101872",
+        "id": 101872,
+        "multiEntitySupport": false
+      },
+      "dyn101873": {
+        "name": "dyn101873",
+        "id": 101873,
+        "multiEntitySupport": false
+      },
+      "dyn101994": {
+        "name": "dyn101994",
+        "id": 101994,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101874": {
+        "name": "dyn101874",
+        "id": 101874,
+        "multiEntitySupport": false
+      },
+      "dyn101875": {
+        "name": "dyn101875",
+        "id": 101875,
+        "multiEntitySupport": false
+      },
+      "dyn101876": {
+        "name": "dyn101876",
+        "id": 101876,
+        "multiEntitySupport": false
+      },
+      "dyn101877": {
+        "name": "dyn101877",
+        "id": 101877,
+        "multiEntitySupport": false
+      },
+      "dyn101635": {
+        "name": "dyn101635",
+        "id": 101635,
+        "multiEntitySupport": false
+      },
+      "dyn101746": {
+        "name": "dyn101746",
+        "id": 101746,
+        "multiEntitySupport": false
+      },
+      "dyn101867": {
+        "name": "dyn101867",
+        "id": 101867,
+        "multiEntitySupport": false
+      },
+      "dyn101634": {
+        "name": "dyn101634",
+        "id": 101634,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "dyn101621": {
+              "name": "dyn101621",
+              "id": 101621,
+              "multiEntitySupport": false,
+              "values": ""
+            },
+            "dyn101635": {
+              "name": "dyn101635",
+              "id": 101635,
+              "multiEntitySupport": false,
+              "values": ""
+            }
+          }
+        ]
+      },
+      "dyn101747": {
+        "name": "dyn101747",
+        "id": 101747,
+        "multiEntitySupport": false
+      },
+      "dyn101868": {
+        "name": "dyn101868",
+        "id": 101868,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractCurrency1": {
+        "name": "contractCurrency1",
+        "id": 100662,
+        "multiEntitySupport": false
+      },
+      "dyn101869": {
+        "name": "dyn101869",
+        "id": 101869,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "thirdPartyMaterialsUsed": {
+        "name": "thirdPartyMaterialsUsed",
+        "id": 100533,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "ccmSegment": {
+        "name": "ccmSegment",
+        "id": 100599,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "freeOfChargeSamples": {
+        "name": "freeOfChargeSamples",
+        "id": 100518,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "masterAgreementAttachment": {
+        "name": "masterAgreementAttachment",
+        "id": 100616,
+        "multiEntitySupport": false
+      },
+      "esignCommentLongText": {
+        "name": "esignCommentLongText",
+        "id": 100626,
+        "multiEntitySupport": false
+      },
+      "dyn100801": {
+        "name": "dyn100801",
+        "id": 100801,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn100800": {
+        "name": "dyn100800",
+        "id": 100800,
+        "multiEntitySupport": false
+      },
+      "textField": {
+        "name": "textField",
+        "id": 100446,
+        "multiEntitySupport": false
+      },
+      "terminationForCauseRightsTo": {
+        "name": "terminationForCauseRightsTo",
+        "id": 100573,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101346": {
+        "name": "dyn101346",
+        "id": 101346,
+        "multiEntitySupport": false
+      },
+      "dyn101466": {
+        "name": "dyn101466",
+        "id": 101466,
+        "multiEntitySupport": false
+      },
+      "additionalContractingExternalParty": {
+        "name": "additionalContractingExternalParty",
+        "id": 100571,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101465": {
+        "name": "dyn101465",
+        "id": 101465,
+        "multiEntitySupport": false
+      },
+      "review": {
+        "name": "review",
+        "id": 100615,
+        "multiEntitySupport": false
+      },
+      "dyn101464": {
+        "name": "dyn101464",
+        "id": 101464,
+        "multiEntitySupport": false
+      },
+      "forecastingObligationsPresent": {
+        "name": "forecastingObligationsPresent",
+        "id": 100540,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "invoicePrice": {
+        "name": "invoicePrice",
+        "id": 100583,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102301": {
+        "name": "dyn102301",
+        "id": 102301,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractDocumentName": {
+        "name": "contractDocumentName",
+        "id": 100632,
+        "multiEntitySupport": false
+      },
+      "q&a": {
+        "name": "q&a",
+        "id": 100613,
+        "multiEntitySupport": false
+      },
+      "dyn102306": {
+        "name": "dyn102306",
+        "id": 102306,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "additionalCurrencies": {
+        "name": "additionalCurrencies",
+        "id": 100709,
+        "multiEntitySupport": false
+      },
+      "dyn101455": {
+        "name": "dyn101455",
+        "id": 101455,
+        "multiEntitySupport": false
+      },
+      "versions": {
+        "name": "versions",
+        "id": 100732,
+        "multiEntitySupport": false
+      },
+      "dyn101694": {
+        "name": "dyn101694",
+        "id": 101694,
+        "multiEntitySupport": false
+      },
+      "thirdPartyIndemnificationClausePresent": {
+        "name": "thirdPartyIndemnificationClausePresent",
+        "id": 100514,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "priceBookAttachmentName": {
+        "name": "priceBookAttachmentName",
+        "id": 100718,
+        "multiEntitySupport": false
+      },
+      "compelledDisclosureClausePresent": {
+        "name": "compelledDisclosureClausePresent",
+        "id": 100516,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101559": {
+        "name": "dyn101559",
+        "id": 101559,
+        "multiEntitySupport": false,
+        "values": false
+      },
+      "dyn101438": {
+        "name": "dyn101438",
+        "id": 101438,
+        "multiEntitySupport": false
+      },
+      "dyn101444": {
+        "name": "dyn101444",
+        "id": 101444,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101686": {
+        "name": "dyn101686",
+        "id": 101686,
+        "multiEntitySupport": false
+      },
+      "terminationForConvenienceRightsTo": {
+        "name": "terminationForConvenienceRightsTo",
+        "id": 100566,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101443": {
+        "name": "dyn101443",
+        "id": 101443,
+        "multiEntitySupport": false
+      },
+      "dyn101685": {
+        "name": "dyn101685",
+        "id": 101685,
+        "multiEntitySupport": false,
+        "values": false
+      },
+      "dyn101440": {
+        "name": "dyn101440",
+        "id": 101440,
+        "multiEntitySupport": false
+      },
+      "dyn101561": {
+        "name": "dyn101561",
+        "id": 101561,
+        "multiEntitySupport": false
+      },
+      "dyn101560": {
+        "name": "dyn101560",
+        "id": 101560,
+        "multiEntitySupport": false
+      },
+      "requirementToProvideSupplierRoadmap": {
+        "name": "requirementToProvideSupplierRoadmap",
+        "id": 100513,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "selfServiceName": {
+        "name": "selfServiceName",
+        "id": 100636,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102083": {
+        "name": "dyn102083",
+        "id": 102083,
+        "multiEntitySupport": false
+      },
+      "internalContractingPartyCurrency": {
+        "name": "internalContractingPartyCurrency",
+        "id": 100601,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102088": {
+        "name": "dyn102088",
+        "id": 102088,
+        "multiEntitySupport": false
+      },
+      "level2MaterialCategory": {
+        "name": "level2MaterialCategory",
+        "id": 100574,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractDurationClauseLongText": {
+        "name": "contractDurationClauseLongText",
+        "id": 100627,
+        "multiEntitySupport": false
+      },
+      "dyn101797": {
+        "name": "dyn101797",
+        "id": 101797,
+        "multiEntitySupport": false
+      },
+      "highlyconfidential": {
+        "name": "highlyconfidential",
+        "id": 100753,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101798": {
+        "name": "dyn101798",
+        "id": 101798,
+        "multiEntitySupport": false
+      },
+      "dyn101799": {
+        "name": "dyn101799",
+        "id": 101799,
+        "multiEntitySupport": false
+      },
+      "dyn101437": {
+        "name": "dyn101437",
+        "id": 101437,
+        "multiEntitySupport": false
+      },
+      "dyn101558": {
+        "name": "dyn101558",
+        "id": 101558,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101557": {
+        "name": "dyn101557",
+        "id": 101557,
+        "multiEntitySupport": false,
+        "values": ""
+      },
+      "dyn101556": {
+        "name": "dyn101556",
+        "id": 101556,
+        "multiEntitySupport": false
+      },
+      "highlyconf1": {
+        "name": "highlyconf1",
+        "id": 100754,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101312": {
+        "name": "dyn101312",
+        "id": 101312,
+        "multiEntitySupport": false
+      },
+      "dyn101554": {
+        "name": "dyn101554",
+        "id": 101554,
+        "multiEntitySupport": false
+      },
+      "dyn101311": {
+        "name": "dyn101311",
+        "id": 101311,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "vpcBusinessArea": {
+        "name": "vpcBusinessArea",
+        "id": 100602,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101310": {
+        "name": "dyn101310",
+        "id": 101310,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101430": {
+        "name": "dyn101430",
+        "id": 101430,
+        "multiEntitySupport": false
+      },
+      "taxIncludedInFees": {
+        "name": "taxIncludedInFees",
+        "id": 100539,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "textArea": {
+        "name": "textArea",
+        "id": 100445,
+        "multiEntitySupport": false
+      },
+      "dateOfReviews": {
+        "name": "dateOfReviews",
+        "id": 100734,
+        "multiEntitySupport": false
+      },
+      "contractDate": {
+        "name": "contractDate",
+        "id": 100556,
+        "multiEntitySupport": false
+      },
+      "autoPriceAdjustmentPostBenchmark": {
+        "name": "autoPriceAdjustmentPostBenchmark",
+        "id": 100531,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "vodafoneRightToTerminateForEpidemicFailure": {
+        "name": "vodafoneRightToTerminateForEpidemicFailure",
+        "id": 100593,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "commentsLongText": {
+        "name": "commentsLongText",
+        "id": 100630,
+        "multiEntitySupport": false
+      },
+      "dyn102114": {
+        "name": "dyn102114",
+        "id": 102114,
+        "multiEntitySupport": false
+      },
+      "changingMethodologyLongText": {
+        "name": "changingMethodologyLongText",
+        "id": 100629,
+        "multiEntitySupport": false
+      },
+      "reviewComments": {
+        "name": "reviewComments",
+        "id": 100733,
+        "multiEntitySupport": false
+      },
+      "dyn102238": {
+        "name": "dyn102238",
+        "id": 102238,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101933": {
+        "name": "dyn101933",
+        "id": 101933,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "nameOfVgcEsigner": {
+        "name": "nameOfVgcEsigner",
+        "id": 100727,
+        "multiEntitySupport": false
+      },
+      "dyn101149": {
+        "name": "dyn101149",
+        "id": 101149,
+        "multiEntitySupport": false
+      },
+      "reviews": {
+        "name": "reviews",
+        "id": 100741,
+        "multiEntitySupport": false
+      },
+      "externalContractingPartyPaymentTermEccId": {
+        "name": "externalContractingPartyPaymentTermEccId",
+        "id": 100577,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "materialCategoryLevel4Id": {
+        "name": "materialCategoryLevel4Id",
+        "id": 100598,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "clmStatus": {
+        "name": "clmStatus",
+        "id": 100597,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "reviewed": {
+        "name": "reviewed",
+        "id": 100742,
+        "multiEntitySupport": false
+      },
+      "dyn101263": {
+        "name": "dyn101263",
+        "id": 101263,
+        "multiEntitySupport": false
+      },
+      "dyn101261": {
+        "name": "dyn101261",
+        "id": 101261,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "topLegalRisksLongText": {
+        "name": "topLegalRisksLongText",
+        "id": 100625,
+        "multiEntitySupport": false
+      },
+      "questionsAndAnswers": {
+        "name": "questionsAndAnswers",
+        "id": 100719,
+        "multiEntitySupport": false
+      },
+      "contractDate1": {
+        "name": "contractDate1",
+        "id": 100661,
+        "multiEntitySupport": false
+      },
+      "riskRegister": {
+        "name": "riskRegister",
+        "id": 100517,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "kpi": {
+        "name": "kpi",
+        "id": 100527,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "paymentSetup": {
+        "name": "paymentSetup",
+        "id": 100568,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102220": {
+        "name": "dyn102220",
+        "id": 102220,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102101": {
+        "name": "dyn102101",
+        "id": 102101,
+        "multiEntitySupport": false
+      },
+      "dyn101009": {
+        "name": "dyn101009",
+        "id": 101009,
+        "multiEntitySupport": false
+      },
+      "dyn101019": {
+        "name": "dyn101019",
+        "id": 101019,
+        "multiEntitySupport": false
+      },
+      "dyn102219": {
+        "name": "dyn102219",
+        "id": 102219,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101018": {
+        "name": "dyn101018",
+        "id": 101018,
+        "multiEntitySupport": false
+      },
+      "handoverRequired": {
+        "name": "handoverRequired",
+        "id": 100530,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101017": {
+        "name": "dyn101017",
+        "id": 101017,
+        "multiEntitySupport": false,
+        "values": false
+      },
+      "dyn101259": {
+        "name": "dyn101259",
+        "id": 101259,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101014": {
+        "name": "dyn101014",
+        "id": 101014,
+        "multiEntitySupport": false
+      },
+      "obligation": {
+        "name": "obligation",
+        "id": 100497,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101013": {
+        "name": "dyn101013",
+        "id": 101013,
+        "multiEntitySupport": false
+      },
+      "dyn101012": {
+        "name": "dyn101012",
+        "id": 101012,
+        "multiEntitySupport": false
+      },
+      "dyn101010": {
+        "name": "dyn101010",
+        "id": 101010,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "servicesWarrantiesPresent": {
+        "name": "servicesWarrantiesPresent",
+        "id": 100526,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "level1MaterialCategory": {
+        "name": "level1MaterialCategory",
+        "id": 100575,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102331": {
+        "name": "dyn102331",
+        "id": 102331,
+        "multiEntitySupport": false
+      },
+      "dyn102332": {
+        "name": "dyn102332",
+        "id": 102332,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "dyn102331": {
+              "name": "dyn102331",
+              "id": 102331,
+              "multiEntitySupport": false,
+              "values": ""
+            }
+          }
+        ]
+      },
+      "dyn102333": {
+        "name": "dyn102333",
+        "id": 102333,
+        "multiEntitySupport": false
+      },
+      "dyn102334": {
+        "name": "dyn102334",
+        "id": 102334,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102335": {
+        "name": "dyn102335",
+        "id": 102335,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn102336": {
+        "name": "dyn102336",
+        "id": 102336,
+        "multiEntitySupport": false
+      },
+      "dyn102337": {
+        "name": "dyn102337",
+        "id": 102337,
+        "multiEntitySupport": false
+      },
+      "dyn101911": {
+        "name": "dyn101911",
+        "id": 101911,
+        "multiEntitySupport": false
+      },
+      "dyn101007": {
+        "name": "dyn101007",
+        "id": 101007,
+        "multiEntitySupport": false
+      },
+      "dyn101912": {
+        "name": "dyn101912",
+        "id": 101912,
+        "multiEntitySupport": false
+      },
+      "dyn101913": {
+        "name": "dyn101913",
+        "id": 101913,
+        "multiEntitySupport": false
+      },
+      "dyn101005": {
+        "name": "dyn101005",
+        "id": 101005,
+        "multiEntitySupport": false
+      },
+      "dyn101126": {
+        "name": "dyn101126",
+        "id": 101126,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101247": {
+        "name": "dyn101247",
+        "id": 101247,
+        "multiEntitySupport": false
+      },
+      "dyn101004": {
+        "name": "dyn101004",
+        "id": 101004,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101915": {
+        "name": "dyn101915",
+        "id": 101915,
+        "multiEntitySupport": false
+      },
+      "dyn101003": {
+        "name": "dyn101003",
+        "id": 101003,
+        "multiEntitySupport": false
+      },
+      "dyn101124": {
+        "name": "dyn101124",
+        "id": 101124,
+        "multiEntitySupport": false
+      },
+      "reviewDate": {
+        "name": "reviewDate",
+        "id": 101068,
+        "multiEntitySupport": false
+      },
+      "governingApplicableLaw": {
+        "name": "governingApplicableLaw",
+        "id": 100585,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "productOwnershipClausePresent": {
+        "name": "productOwnershipClausePresent",
+        "id": 100523,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101483": {
+        "name": "dyn101483",
+        "id": 101483,
+        "multiEntitySupport": false
+      },
+      "dyn101482": {
+        "name": "dyn101482",
+        "id": 101482,
+        "multiEntitySupport": false
+      },
+      "level4MaterialCategory": {
+        "name": "level4MaterialCategory",
+        "id": 100572,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "approvalTerminalTerms": {
+        "name": "approvalTerminalTerms",
+        "id": 100637,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "acceptanceClausePresent": {
+        "name": "acceptanceClausePresent",
+        "id": 100494,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractingExternalPartyEccId": {
+        "name": "contractingExternalPartyEccId",
+        "id": 100581,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102322": {
+        "name": "dyn102322",
+        "id": 102322,
+        "multiEntitySupport": false,
+        "values": [
+          {
+            "dyn102323": {
+              "name": "dyn102323",
+              "id": 102323,
+              "options": null,
+              "multiEntitySupport": false,
+              "values": null
+            },
+            "dyn102324": {
+              "name": "dyn102324",
+              "id": 102324,
+              "options": null,
+              "multiEntitySupport": false,
+              "values": []
+            }
+          }
+        ]
+      },
+      "dyn102323": {
+        "name": "dyn102323",
+        "id": 102323,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "escrowObligationsPresent": {
+        "name": "escrowObligationsPresent",
+        "id": 100537,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102202": {
+        "name": "dyn102202",
+        "id": 102202,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn102324": {
+        "name": "dyn102324",
+        "id": 102324,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "antiBriberOrAnticorruptionClausePresent": {
+        "name": "antiBriberOrAnticorruptionClausePresent",
+        "id": 100534,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101109": {
+        "name": "dyn101109",
+        "id": 101109,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "dyn101910": {
+        "name": "dyn101910",
+        "id": 101910,
+        "multiEntitySupport": false
+      },
+      "dyn101117": {
+        "name": "dyn101117",
+        "id": 101117,
+        "options": null,
+        "multiEntitySupport": false,
+        "values": []
+      },
+      "dyn101902": {
+        "name": "dyn101902",
+        "id": 101902,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "contractDocumentNames": {
+        "name": "contractDocumentNames",
+        "id": 100729,
+        "multiEntitySupport": false
+      },
+      "dyn101908": {
+        "name": "dyn101908",
+        "id": 101908,
+        "multiEntitySupport": false
+      },
+      "dyn101909": {
+        "name": "dyn101909",
+        "id": 101909,
+        "multiEntitySupport": false
+      },
+      "taxLiabilityTo": {
+        "name": "taxLiabilityTo",
+        "id": 100591,
+        "options": null,
+        "multiEntitySupport": false
+      },
+      "lastChangedBy": {
+        "name": "lastChangedBy",
+        "id": 100725,
+        "multiEntitySupport": false
+      }
+    },
+    "globalData": {
+      "entityIds": [
+        136651
+      ],
+      "fieldIds": [
+        102123,
+        102299,
+        102249,
+        102182,
+        102192
+      ],
+      "isGlobalBulk": true
+    }
+  }
+}

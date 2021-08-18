@@ -1,0 +1,60 @@
+#This file contains all the Flows for the BulkAction
+
+#Below are the Flows to best tested Sections. Each Section represents one flow to be tested.
+#Section Property Entity: EntityName as in EntityId.cfg & EntityIdMapping.cfg
+#FromStatus: FromStatus value to be used in BulkAction. It is case-sensitive.
+#ToStatus: ToStatus value to be used in BulkAction. It is case-sensitive.
+#ExpectedResult: Possible Values are Success or Failure. Default Value is Success.
+#Success Represents that the Status of the Entity should be updated from FromStatus to ToStatus successfully.
+#Failure Represents that Status of the Entity should not be updated and the BulkAction should fail. This should be used to verify negative test cases
+
+#NOTE: Provide only one status. Conjunctions like 'Or' are not allowed.
+#For ex. If From Status On UI is 'Upcoming or Overdue' then provide either Upcoming or Overdue.
+
+[obligations flow 1]
+entity = obligations
+fromstatus = Newly Created
+tostatus = Archive
+expectedresult = success
+
+[obligations flow 2]
+entity = obligations
+fromstatus = Newly Created
+tostatus = Send for Owner Review
+expectedresult = failure
+
+[child obligations flow 1]
+entity = child obligations
+fromstatus = Upcoming
+tostatus = Archive
+expectedresult = success
+
+[child obligations flow 2]
+entity = child obligations
+fromstatus = Upcoming
+tostatus = Submit
+expectedresult = failure
+
+[service levels flow 1]
+entity = service levels
+fromstatus = Newly Created
+tostatus = Archive
+expectedresult = success
+
+[service levels flow 2]
+entity = service levels
+fromstatus = Newly Created
+tostatus = Send For Peer Review
+expectedresult = failure
+
+[child service levels flow 1]
+entity = child service levels
+fromstatus = Upcoming
+tostatus = Archive
+expectedresult = success
+
+[child service levels flow 2]
+entity = child service levels
+fromstatus = Upcoming
+tostatus = Start Computation
+expectedresult = failure

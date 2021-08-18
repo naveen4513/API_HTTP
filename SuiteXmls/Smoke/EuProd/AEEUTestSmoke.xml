@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke">
+    <parameter name="TestingType" value="smoke"/>
+    <parameter name="Environment" value="Prod/AEEU"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+
+
+        <test name="AutoExtraction APIs Test">
+            <classes>
+
+                <class name="com.sirionlabs.test.autoExtraction.AutoExtractionSmoke"></class>
+
+
+            </classes>
+        </test>
+    </suite-files>
+</suite>

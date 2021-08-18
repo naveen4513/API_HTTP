@@ -1,0 +1,12 @@
+#Section is Entity Name
+#Key is accessRestriction area
+#Value is permission (true) allowed or (false) restricted
+# Part of Contract Tree View Download and Replace
+
+hierarchy = true
+offset = 0
+maxrecordsforlistdata = 100000
+
+[contracts]
+view = true
+download = true

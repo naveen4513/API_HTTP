@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Work Flow Task">
+
+        <test name="Work Flow Task positive test case">
+            <classes>
+                <class name="com.sirionlabs.test.workflowPod.TestWorkFlowTask"></class>
+            </classes>
+        </test>
+
+        <test name="Work Flow Task negative test case">
+            <classes>
+                <class name="com.sirionlabs.test.workflowPod.TestNegativeCaseWorkFlowValueUpdateTask"></class>
+            </classes>
+        </test>
+
+    <test name ="Work Flow Manual Task test case">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestNegativeCaseManualTask"></class>
+        </classes>
+    </test>
+
+</suite>

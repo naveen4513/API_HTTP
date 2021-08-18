@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Internationalization Suite" thread-count="1">
+
+    <test name="Supplier Internationalization">
+        <classes>
+            <class name="com.sirionlabs.test.supplier.TestSupplierInternationalization"></class>
+        </classes>
+    </test>
+
+    <test name="Obligation Internationalization">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.ObligationInternationalization"></class>
+        </classes>
+    </test>
+
+    <test name="Todo Internationalization">
+        <classes>
+            <class name="com.sirionlabs.test.todo.TodoInternationalization"></class>
+        </classes>
+    </test>
+
+    <test name="Calendar Internationalization">
+        <classes>
+            <class name="com.sirionlabs.test.calendar.CalendarInternationalization"></class>
+        </classes>
+    </test>
+
+    <test name="Search Internationalization">
+        <classes>
+            <class name="com.sirionlabs.test.search.SearchInternationalization"></class>
+        </classes>
+    </test>
+
+    <test name="Report Internationalization">
+        <classes>
+            <class name="com.sirionlabs.test.reports.ReportsInternationalization"></class>
+        </classes>
+    </test>
+
+    <test name="User Profile Internationalization">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestUserProfileInternationalization"></class>
+        </classes>
+    </test>
+
+    <test name="Credit Earnback Internationalization">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestCreditEarnBackInternationalization"></class>
+        </classes>
+    </test>
+
+</suite>

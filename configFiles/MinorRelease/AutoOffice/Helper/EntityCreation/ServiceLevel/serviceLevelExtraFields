@@ -1,0 +1,292 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+projectId = {"name": "projectId", "id": 8156, "values": [{"name": "MLM Project","id": 1004},{"name": "ERP Project","id": 1001}]}
+initiatives = {"name": "initiatives", "id": 4915, "values": [{"name": "SPRING","id": 1000}]}
+projectLevels = {"name": "projectLevels", "id": 4935, "values": [{"name": "Build","id": 1001},{"name": "Operate","id": 1002}]}
+slaId = {"name": "slaId", "id": 205, "values": "sl automation flow"}
+slKpi = {"name": "slKpi","id": 11704,"options": null,"values": {"name": "Service Level","id": 1001}}
+supplierAccess = {"name": "supplierAccess", "id": 273, "values": true}
+reportingFrequencyType = {"name": "reportingFrequencyType","id": 11697,"options": null,"values": {"name": "Monthly","id": 1005}}
+regionType = {"name": "regionType","id": 11695,"values": {"name": "Local","id": 2}}
+category = {"name": "category","id": 208,"values": {"name": "CSAT","id": 1003}}
+financialImpactApplicable = {"name": "financialImpactApplicable", "id": 255, "values": false}
+functions = values -> [{"name": "Human Resources","id": 1003}]
+services = values -> [{"name": "Projects","id": 1006,"parentId": 1003}]
+measurementWindow = {"name": "measurementWindow","id": 221,"values": {"name": "Weekly","id": 1}}
+measurementUnit = {"name": "measurementUnit","id": 217,"values": {"name": "Percentage","id": 1}}
+globalRegions = values -> [{"name": "EMEA","id": 1003,"active": false,"blocked": false,"createdFromListPage": false,"summaryGroupData": false,"bulkOperation": false,"blockedForBulk": false,"autoExtracted": false,"canOverdue": false,"autoCreate": false,"validationError": false,"isReject": false,"parentHalting": false,"autoTaskFailed": false,"compareHistory": false,"flagForClone": false,"createStakeHolder": false,"escapeValueUpdateTask": false,"excludeFromHoliday": false,"excludeWeekends": false,"datetimeEnabled": false,"uploadAllowed": false,"downloadAllowed": false,"saveCommentDocOnValueUpdate": false,"overdue": false,"autoTask": false}]
+globalCountries = values -> [{"name": "Greece","id": 94,"parentId": 1003,"active": false,"blocked": false,"createdFromListPage": false,"summaryGroupData": false,"bulkOperation": false,"blockedForBulk": false,"autoExtracted": false,"canOverdue": false,"autoCreate": false,"validationError": false,"isReject": false,"parentHalting": false,"autoTaskFailed": false,"compareHistory": false,"flagForClone": false,"createStakeHolder": false,"escapeValueUpdateTask": false,"excludeFromHoliday": false,"excludeWeekends": false,"datetimeEnabled": false,"uploadAllowed": false,"downloadAllowed": false,"saveCommentDocOnValueUpdate": false,"selected": false,"management": false,"overdue": false,"autoTask": false,"parentName": "EMEA"}]
+scopeOfServiceOne = {"name": "scopeOfServiceOne","id": 11712,"values": {"name": "Application Development","id": 1176}}
+scopeOfServiceTwo = {"name": "scopeOfServiceTwo","id": 11713,"values": {"name": "2G","id": 1176}}
+timeZone = {"name": "timeZone","id": 248,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+frequency = {"name": "frequency","id": 240,"values": {"name": "Monthly (Date)","id": 1003,"parentId": 1005}}
+reportingFrequency = {"name": "reportingFrequency","id": 11698,"values": {"name": "Monthly (Date)","id": 1003,"parentId":1005}}
+dataFrequency = {"name": "dataFrequency","id": 241,"values": {"name": "Monthly","id": 4}}
+frequencyType = values -> {"name": "Monthly", "id": 1005}
+creditApplicable = {"name": "creditApplicable", "id": 224, "values": false}
+currency = {"name": "currency","id": 209,"values": {"name": "Indian Rupee (INR)","id": 8,"shortName":"INR"}}
+deliveryCountries = values -> [{"name": "Argentina","id": 11}]
+startDate = {"name": "startDate", "id": 243, "values": "06-01-2019 00:00:00","displayValues":"Jun-01-2019"}
+patternDate = {"name": "patternDate", "id": 295, "values": "06-01-2019 00:00:00","displayValues":"Jun-01-2019"}
+effectiveDate = {"name": "effectiveDate", "id": 296, "values": "06-01-2019 00:00:00","displayValues":"Jun-01-2019"}
+reportingPatternDate = {"name": "reportingPatternDate", "id": 11699, "values": "06-01-2019 00:00:00","displayValues":"Jun-01-2019"}
+reportingEffectiveDate = {"name": "reportingEffectiveDate", "id": 11700, "values": "06-01-2019 00:00:00","displayValues":"Jun-01-2019"}
+expDate = {"name": "expDate", "id": 244, "values": "12-31-2019 00:00:00","displayValues":"Dec-31-2019"}
+#threshold = {"name": "threshold","id": 216,"values": {"name": "Maximum","id": 8}}
+
+
+[sl automation flow]
+name = {"name": "name", "id": 203, "values": "sl automation flow"}
+description = {"name": "description", "id": 204, "values": "sl automation flow"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Maximum - 3 level","id": 4}}
+expected = {"name": "expected", "id": 219, "values": 80}
+minimum = {"name": "minimum", "id": 218, "values": 110}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 120}
+
+
+[sl automation flow error in computation]
+name = {"name": "name", "id": 203, "values": "sl automation flow"}
+description = {"name": "description", "id": 204, "values": "sl automation flow"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Maximum - 3 level","id": 4}}
+expected = {"name": "expected", "id": 219, "values": 80}
+minimum = {"name": "minimum", "id": 218, "values": 110}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 120}
+
+
+[sl max level 1]
+name = {"name": "name", "id": 203, "values": "sl automation flow max level 1"}
+description = {"name": "description", "id": 204, "values": "sl automation flow max level 1"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Maximum - 1 level","id": 6}}
+expected = {"name": "expected", "id": 219, "values": 80}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+
+
+[sl max level 2]
+name = {"name": "name", "id": 203, "values": "sl automation flow max level 2"}
+description = {"name": "description", "id": 204, "values": "sl automation flow max level 2"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Maximum - 2 level","id": 8}}
+expected = {"name": "expected", "id": 219, "values": 80}
+minimum = {"name": "minimum", "id": 218, "values": 100}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+
+[sl max level 3]
+name = {"name": "name", "id": 203, "values": "sl automation flow max level 3"}
+description = {"name": "description", "id": 204, "values": "sl automation flow max level 3"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Maximum - 3 level","id": 4}}
+expected = {"name": "expected", "id": 219, "values": 80}
+minimum = {"name": "minimum", "id": 218, "values": 100}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 110}
+
+[sl min level 1]
+name = {"name": "name", "id": 203, "values": "sl automation flow min level 1"}
+description = {"name": "description", "id": 204, "values": "sl automation flow min level 1"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 1 level","id": 5}}
+expected = {"name": "expected", "id": 219, "values": 100}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+
+[sl min level 2]
+name = {"name": "name", "id": 203, "values": "sl automation flow min level 2"}
+description = {"name": "description", "id": 204, "values": "sl automation flow min level 2"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 2 level","id": 7}}
+expected = {"name": "expected", "id": 219, "values": 100}
+minimum = {"name": "minimum", "id": 218, "values": 80}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+
+[sl min level 3]
+name = {"name": "name", "id": 203, "values": "sl automation flow min level 3"}
+description = {"name": "description", "id": 204, "values": "sl automation flow min level 3"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 3 level","id": 3}}
+expected = {"name": "expected", "id": 219, "values": 110}
+minimum = {"name": "minimum", "id": 218, "values": 100}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 80}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+
+[sl misc 2]
+name = {"name": "name", "id": 203, "values": "sl automation flow"}
+description = {"name": "description", "id": 204, "values": "sl automation flow"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Maximum - 3 level","id": 4}}
+expected = {"name": "expected", "id": 219, "values": 80}
+minimum = {"name": "minimum", "id": 218, "values": 110}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Bandbreite"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 120}
+
+[sl misc 3]
+name = {"name": "name", "id": 203, "values": "AG_1.35_W_WIth_Close_Flag"}
+description = {"name": "description", "id": 204, "values": "AG_1.35_W_WIth_Close_Flag"}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Maximum - 3 level","id": 4}}
+expected = {"name": "expected", "id": 219, "values": 80}
+minimum = {"name": "minimum", "id": 218, "values": 110}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Incident ID"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 120}
+
+[sl rag applicable no]
+name = {"name": "name", "id": 203, "values": "sl rag applicable no"}
+description = {"name": "description", "id": 204, "values": "sl rag applicable no"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+
+[sl with rag applicable as no]
+name = {"name": "name", "id": 203, "values": "sl rag applicable no"}
+description = {"name": "description", "id": 204, "values": "sl rag applicable no"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "No","id": 1002}}
+
+#sl with credit applicable single occurrence sl met not status
+[sl with cr flow 1]
+slaId = {"name": "slaId", "id": 205, "values": "sl with credit applicable single occurrence sl met not status and earnback condition as sl met"}
+name = {"name": "name", "id": 203, "values": "sl with credit applicable single occurrence sl met not status and earnback condition as sl met"}
+description = {"name": "description", "id": 204, "values": "sl with credit applicable single occurrence sl met not status and earnback condition as sl met"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+creditClauses = {"name": "creditClauses","values": [{"id":1034,"clauseName":"Single occurrence  SL NOT MET status","creditClausePriority":1,"description":"Single occurrence  SL NOT MET status","creditMode":{"name":"Percentage Of Invoice","id":2},"fieldForCreditCalculation":{"name":"Supplier Total","id":2},"value":1000,"creditAmount":null}],"options":null}
+earnbackClauses = {"name": "earnbackClauses","values": [{"id":1055,"clauseName":"earnback with single occurence sl met","earnbackClausePriority":1,"description":"earnback with single occurence sl met","earnbackMode":{"name":"Fixed Amount","id":1},"fieldForEarnbackCalculation":null,"value":10,"earnbackAmount":null}],"options":null}
+creditApplicable = {"name": "creditApplicable","id": 224,"values": true}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 1 level","id": 5}}
+expected = {"name": "expected", "id": 219, "values": 100}
+earnbackApplicableDate = {"name": "earnbackApplicableDate", "id": 232, "values": "08-01-2019 00:00:00"}
+earnbackApplicable = {"name": "earnbackApplicable", "id": 12018, "values": true}
+
+
+[service_level_delete_comment]
+slaId = {"name": "slaId", "id": 205, "values": "sl with credit applicable single occurrence sl met not status and earnback condition as sl met"}
+name = {"name": "name", "id": 203, "values": "sl with credit applicable single occurrence sl met not status and earnback condition as sl met"}
+description = {"name": "description", "id": 204, "values": "sl with credit applicable single occurrence sl met not status and earnback condition as sl met"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+creditClauses = {"name": "creditClauses","values": [{"id":1034,"clauseName":"Single occurrence  SL NOT MET status","creditClausePriority":1,"description":"Single occurrence  SL NOT MET status","creditMode":{"name":"Percentage Of Invoice","id":2},"fieldForCreditCalculation":{"name":"Supplier Total","id":2},"value":1000,"creditAmount":null}],"options":null}
+earnbackClauses = {"name": "earnbackClauses","values": [{"id":1055,"clauseName":"earnback with single occurence sl met","earnbackClausePriority":1,"description":"earnback with single occurence sl met","earnbackMode":{"name":"Fixed Amount","id":1},"fieldForEarnbackCalculation":null,"value":10,"earnbackAmount":null}],"options":null}
+creditApplicable = {"name": "creditApplicable","id": 224,"values": true}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 1 level","id": 5}}
+expected = {"name": "expected", "id": 219, "values": 100}
+earnbackApplicableDate = {"name": "earnbackApplicableDate", "id": 232, "values": "08-01-2019 00:00:00"}
+earnbackApplicable = {"name": "earnbackApplicable", "id": 12018, "values": true}
+comment={"requestedBy":{"name":"requestedBy","id":12244,"options":null,"multiEntitySupport":false},"shareWithSupplier":{"name":"shareWithSupplier","id":12409,"multiEntitySupport":false},"comments":{"name":"comments","id":14,"multiEntitySupport":false,"values":"<p>hiiiii</p>"},"documentTags":{"name":"documentTags","id":12428,"options":null,"multiEntitySupport":false},"draft":{"name":"draft","multiEntitySupport":false},"actualDate":{"name":"actualDate","id":12243,"multiEntitySupport":false},"privateCommunication":{"name":"privateCommunication","id":12242,"multiEntitySupport":false,"values":false},"changeRequest":{"name":"changeRequest","id":12246,"options":null,"multiEntitySupport":false},"workOrderRequest":{"name":"workOrderRequest","id":12247,"multiEntitySupport":false},"commentDocuments":{"values":[]}}
+
+
+
+#sl with earnback not applied
+[sl with cr flow 2]
+slaId = {"name": "slaId", "id": 205, "values": "sl with credit applicable single occurrence sl not met and sl not reported"}
+slaId = {"name": "slaId", "id": 205, "values": "sl with actual performance after x instance in y occurrence equal to minimum"}
+name = {"name": "name", "id": 203, "values": "sl with actual performance after x instance in y occurrence equal to minimum"}
+description = {"name": "description", "id": 204, "values": "sl with actual performance after x instance in y occurrence equal to minimum"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+creditClauses = {"name": "creditClauses","values": [{"id":1033,"clauseName":"Earnback Not Allowed Case 2","creditClausePriority":1,"description":"Earnback Not Allowed Case 2 Please Donot update without prior information","creditMode":{"name":"Fixed Amount","id":1},"fieldForCreditCalculation":null,"value":1000,"creditAmount":null}],"options":null}
+earnbackClauses = {"name": "earnbackClauses","values": [{"id":1055,"clauseName":"earnback with single occurence sl met","earnbackClausePriority":1,"description":"earnback with single occurence sl met","earnbackMode":{"name":"Fixed Amount","id":1},"fieldForEarnbackCalculation":null,"value":10,"earnbackAmount":null}],"options":null}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 3 level","id": 3}}
+expected = {"name": "expected", "id": 219, "values": 110}
+minimum = {"name": "minimum", "id": 218, "values": 100}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 80}
+earnbackApplicableDate = {"name": "earnbackApplicableDate", "id": 232, "values": "08-01-2019 00:00:00"}
+earnbackApplicable = {"name": "earnbackApplicable", "id": 12018, "values": true}
+creditApplicableDate = {"name": "creditApplicableDate", "id": 1174, "values": "06-01-2019 00:00:00"}
+creditApplicable = {"name": "creditApplicable","id": 224,"values": true}
+
+#sl with credit clause in and condition and earnback from last applied credit
+[sl with cr flow 3]
+slaId = {"name": "slaId", "id": 205, "values": "sl with credit clause in and condition and earnback from last applied credit"}
+name = {"name": "name", "id": 203, "values": "sl with credit clause in and condition and earnback from last applied credit"}
+description = {"name": "description", "id": 204, "values": "sl with credit clause in and condition and earnback from last applied credit"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+creditClauses = {"name": "creditClauses","values": [{"id":1060,"clauseName":"Credit clause with and condition","creditClausePriority":1,"description":"Credit clause with and condition","creditMode":{"name":"Percentage Of Invoice","id":2},"fieldForCreditCalculation":{"name":"Supplier Total","id":2},"value":1000,"creditAmount":null}],"options":null}
+creditApplicable = {"name": "creditApplicable","id": 224,"values": true}
+earnbackClauses = {"name": "earnbackClauses","values": [{"id":1061,"clauseName":"Earnback From Last Applied Credit","earnbackClausePriority":1,"description":"Earnback From Last Applied Credit","earnbackMode":{"name":"Percentage Of Last Credit","id":2},"fieldForEarnbackCalculation":null,"value":7,"earnbackAmount":null}],"options":null}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 3 level","id": 3}}
+expected = {"name": "expected", "id": 219, "values": 110}
+minimum = {"name": "minimum", "id": 218, "values": 100}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 80}
+earnbackApplicableDate = {"name": "earnbackApplicableDate", "id": 232, "values": "08-01-2019 00:00:00"}
+earnbackApplicable = {"name": "earnbackApplicable", "id": 12018, "values": true}
+creditApplicableDate = {"name": "creditApplicableDate", "id": 1174, "values": "06-01-2019 00:00:00"}
+creditApplicable = {"name": "creditApplicable","id": 224,"values": true}
+
+
+#Earnback without Credit
+[sl with cr flow 4]
+slaId = {"name": "slaId", "id": 205, "values": "Earnback without Credit"}
+name = {"name": "name", "id": 203, "values": "Earnback without Credit"}
+description = {"name": "description", "id": 204, "values": "Earnback without Credit"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+earnbackClauses = {"name": "earnbackClauses","values": [{"id":1062,"clauseName":"Earnback without Credit","earnbackClausePriority":1,"description":"Earnback without Credit","earnbackMode":{"name":"Percentage Of Last Credit","id":2},"fieldForEarnbackCalculation":null,"value":10,"earnbackAmount":null}],"options":null}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 3 level","id": 3}}
+expected = {"name": "expected", "id": 219, "values": 110}
+minimum = {"name": "minimum", "id": 218, "values": 100}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 80}
+earnbackApplicableDate = {"name": "earnbackApplicableDate", "id": 232, "values": "08-01-2019 00:00:00"}
+earnbackApplicable = {"name": "earnbackApplicable", "id": 12018, "values": true,"multiEntitySupport":false}
+
+#sl with actual performance equal to significantly maximum with x occurrences in y instances
+[sl with cr flow 5]
+slaId = {"name": "slaId", "id": 205, "values": "sl with actual performance single occurrence less than significantly maximum"}
+name = {"name": "name", "id": 203, "values": "sl with actual performance single occurrence less than significantly maximum"}
+description = {"name": "description", "id": 204, "values": "sl with actual performance single occurrence less than significantly maximum"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+creditClauses = {"name": "creditClauses","values": [{"id":1054,"clauseName":"After 1 occurrence in 2 instances","creditClausePriority":1,"description":"After 1 occurrence in 2 instances with Actual Performance equal to Sig Min","creditMode":{"name":"Percentage Of Invoice","id":2},"fieldForCreditCalculation":{"name":"Supplier Total","id":2},"value":1000,"creditAmount":null}],"options":null}
+earnbackClauses = {"name": "earnbackClauses","values": [{"id":1057,"clauseName":"Earnback After 1 Occurence in 2 Instances with Actual Performance Less Than Expected","earnbackClausePriority":1,"description":"Earnback After 1 Occurence in 2 Instances with Actual Performance Less Than Expected","earnbackMode":{"name":"Fixed Amount","id":1},"fieldForEarnbackCalculation":null,"value":10,"earnbackAmount":null}],"options":null}
+creditApplicable = {"name": "creditApplicable","id": 224,"values": true}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 3 level","id": 3}}
+expected = {"name": "expected", "id": 219, "values": 110}
+minimum = {"name": "minimum", "id": 218, "values": 100}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 80}
+earnbackApplicableDate = {"name": "earnbackApplicableDate", "id": 232, "values": "08-01-2019 00:00:00"}
+earnbackApplicable = {"name": "earnbackApplicable", "id": 12018, "values": true}
+
+#Average Performance in 2 occurrences Less Than Sig Min
+[sl with cr flow 6]
+slaId = {"name": "slaId", "id": 205, "values": "Average Performance in 2 occurrences Less Than Sig Min"}
+name = {"name": "name", "id": 203, "values": "Average Performance in 2 occurrences Less Than Sig Min"}
+description = {"name": "description", "id": 204, "values": "Average Performance in 2 occurrences Less Than Sig Min"}
+uniqueDataCriteria = {"name": "uniqueDataCriteria", "id": 7151, "values": "Number"}
+ragApplicable = {"name": "ragApplicable","id": 11996,"values": {"name": "Yes","id": 1001}}
+creditClauses = {"name": "creditClauses","values": [{"id":1058,"clauseName":"Credit Average Performance in 2 occurrences Less Than Sig Min","creditClausePriority":1,"description":"Average Performance in 2 occurrences Less Than Sig Min","creditMode":{"name":"Percentage Of Invoice","id":2},"fieldForCreditCalculation":{"name":"Supplier Total","id":2},"value":1000,"creditAmount":null}],"options":null}
+earnbackClauses = {"name": "earnbackClauses","values": [{"id":1057,"clauseName":"Earnback After 1 Occurence in 2 Instances with Actual Performance Less Than Expected","earnbackClausePriority":1,"description":"Earnback After 1 Occurence in 2 Instances with Actual Performance Less Than Expected","earnbackMode":{"name":"Fixed Amount","id":1},"fieldForEarnbackCalculation":null,"value":10,"earnbackAmount":null}],"options":null}
+threshold = {"name": "threshold","id": 216,"values": {"name": "Minimum - 3 level","id": 3}}
+expected = {"name": "expected", "id": 219, "values": 110}
+minimum = {"name": "minimum", "id": 218, "values": 100}
+sigMinMax = {"name": "sigMinMax", "id": 220, "values": 80}
+earnbackApplicableDate = {"name": "earnbackApplicableDate", "id": 232, "values": "08-01-2019 00:00:00"}
+earnbackApplicable = {"name": "earnbackApplicable", "id": 12018, "values": true}
+creditApplicableDate = {"name": "creditApplicableDate", "id": 1174, "values": "06-01-2019 00:00:00"}
+creditApplicable = {"name": "creditApplicable","id": 224,"values": true}
+
+[sl for maxperiod days function]
+startDate = {"name": "startDate", "id": 243, "values": "06-01-2019 00:00:00","displayValues":"Jun-01-2019"}
+expDate = {"name": "expDate", "id": 244, "values": "06-30-2020 00:00:00","displayValues":"Jun-30-2020"}
+
+[c8228]

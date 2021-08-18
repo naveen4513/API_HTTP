@@ -1,0 +1,125 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = contracts
+sourcename = Instelca S.L.U. Agency VF ES-Elektronic
+sourceid = 3617
+parententitytype = msa
+
+[flow 1]
+sourceentity = contracts
+sourcename = Instelca S.L.U. Agency VF ES-Elektronic
+sourceid = 3617
+parententitytype = msa
+
+[governance_bodies_action]
+sourceentity = governance body meetings
+sourceid =
+
+[action_delete_comment]
+sourceentity = contracts
+sourcename = Instelca S.L.U. Agency VF ES-Elektronic
+sourceid = 3617
+parententitytype = msa
+
+[action creation from cdr]
+sourceentity = contract draft request
+sourcename = API Automation CDR for Action & Issue Creation Test
+sourceid = 2353
+parententitytype = contract draft request
+suppliername = ABC News
+supplierid = 1024
+
+[flowdown contract]
+sourceentity = contracts
+sourcename = Test Contract Creation
+sourceid = 24827
+parententitytype = msa
+
+[flowdown supplier]
+sourceentity = suppliers
+sourcename = PacifiCorp
+sourceid = 1038
+
+[revamptodoupcoming]
+sourceentity = suppliers
+sourcename = PacifiCorp
+sourceid = 1038
+
+[revamptodotoday]
+sourceentity = suppliers
+sourcename = PacifiCorp
+sourceid = 1038
+
+[c10357]
+sourceentity = contracts
+sourcename = test
+sourceid = 4391
+parententitytype = sow
+
+[c10341]
+sourceentity = contracts
+sourcename = Automation_api_1
+sourceid = 2624
+parententitytype = psa
+
+[c10359]
+sourceentity = contracts
+sourcename = API Automation 1197326
+sourceid = 9902
+parententitytype = work order
+
+[c10370]
+sourceentity = actions
+sourcename = Do Not Delete
+sourceid = 10561
+
+[c10371]
+sourceentity = issues
+sourcename = Do Not Delete
+sourceid = 8044
+
+[action_from_obligation]
+sourceentity = obligations
+sourceid =
+
+[c10334]
+sourceentity = child service levels
+sourcename = Yamaha_Access_Criteria_tetsing1
+sourceid = 33744
+
+[c10340]
+sourceentity = contracts
+sourcename = Do Not Delete
+sourceid = 28439
+parententitytype = msa
+
+[c10372]
+sourceentity = invoices
+sourcename = Do Not Delete
+sourceid = 20367
+
+[c90594]
+sourceentity = suppliers
+sourcename = PacifiCorp
+sourceid = 1038
+[action_from_dispute]
+sourceentity = disputes
+sourceid =

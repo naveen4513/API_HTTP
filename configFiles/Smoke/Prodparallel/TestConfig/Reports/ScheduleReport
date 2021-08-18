@@ -1,0 +1,109 @@
+#All keys must be in lower case characters only
+#Put Users in comma seperated (ajay_user@sirionqa.office,pradeep@sirionqa.office) othewise it take the first user of All Users as a recipient
+
+schedulebymereportapiurlid = 102
+sharedbymereportapiurld = 103
+scheduledjobsapiurlid = 225
+
+timezoneId = 8
+selectedusers = anay_user_dft@sirionqa.office,anay_user1_dft@sirionqa.office
+frequencytype = REPEATONCE
+
+
+
+[default]
+schedulereportsforentities = specified
+
+
+
+#skip report ids are the reports to be skipped , it can contains the id of reports which have download feature , schedule feature etc..
+#each id should be seperated by comma
+skipreportids = 59
+
+#this actions report id : 30 "Action Aging Report" would be verified as part of Email Scenario check so never modified this
+[actions]
+test = 30
+
+
+[change requests]
+test = 88
+
+[obligations]
+test = 58
+
+
+
+[suppliers]
+test = 48
+
+
+
+[child obligations]
+test = 17
+
+
+[service levels]
+test = 330
+
+
+
+[child service levels]
+test = 91
+
+
+
+[interpretations]
+test = 53
+
+
+
+[issues]
+test = 45
+
+
+
+[disputes]
+test = 315
+
+
+[contracts]
+test = 49
+
+
+[invoices]
+test = 79
+
+
+[work order requests]
+test = 96
+
+
+
+[governance body]
+test = 261
+
+
+
+[governance body meetings]
+test = 264
+
+
+
+[contract draft request]
+test = 324
+
+
+[service data]
+test = 324
+
+
+[invoice line item]
+test = 324
+
+
+[purchase orders]
+test = 324
+
+
+[references]
+test = 324

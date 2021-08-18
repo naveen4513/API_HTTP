@@ -1,0 +1,21 @@
+
+###cllientId's having AWS and FIle Sytem Configuration
+filesystemclientid = 1033
+awsclientid = 1002
+#client-Id for which KMS is not configured
+kmsnotclientid =
+# please true/false  if you need to validate data in DB or not
+validateindb = false
+envdetail = US-SANDBOX
+
+
+validfilename = TestDRS.pdf
+sizemaxfilename = maxsize.pdf
+invalidextensionfilename = testxls.xlsx
+
+
+dbname =
+dbhostaddress =
+dbportname =
+dbusername =
+dbpassword =

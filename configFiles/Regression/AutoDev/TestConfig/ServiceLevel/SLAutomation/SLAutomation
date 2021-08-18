@@ -1,0 +1,364 @@
+#All section names and keys must be in lower case characters only
+
+uploadfilepath = src/test/resources/TestConfig/ServiceLevel/SLAutomation
+downloadfilepath = src/test/resources/TestConfig/ServiceLevel/SLAutomation
+
+downloadrawdatafilename = CSL04358_PerformanceData_15Jun2019.csv
+
+bulkupdatefilename = bulkupdate.xlsm
+
+performancedataformatfilename = PerformanceDataFormat.xlsm
+sl_template_filename_ba_pod = SL Raw Data Format BA POD.xlsm
+performancedataformatfilenamebulkupload = PerformanceDataFormatBulkUpload.xlsm
+
+performancedataformat_filename_timedifference = PerformanceDataFormatTimeDifference.xlsm
+performancedataformat_filename_timedifference_diff_date_formats = RawDataTimeDifference_DifferentDateFormats_.xlsm
+
+performancedataformat_filename_maxperioddays = PerformanceDataFormatMaxPeriodDays.xlsm
+
+performancedataformatfilenameesquery = PerformanceDataFormatES.xlsm
+sltemplatefilediffcomb = SLTemplateDiffComb.xlsm
+sltemplatefilenamepdf = SLTemplatePdf.pdf
+sltemplatefilenametxt = SLTemplateTxt.txt
+rawdatafilename = RawDataFile.xlsx
+rawdatafilenameesquery = RawDataCalculationES.xlsx
+rawdatafilenduplicaterecords = RawDataFile_DuplicateRecord.xlsx
+rawdatafilenamedonewitherror = RawDataFileInError.xlsx
+rawdatafilenamemultiplesheets = RawDataFileMultipleSheet.xlsx
+
+rawdatafile_timedifference = RawDataTimeDifference.xlsx
+rawdatafilename_bulkuploadrawdata = RawDataBulkUploadRawData.xlsx
+
+bulkuploadrawdatazipfilename =  dft-BulkUploadRawData-date
+bulkuploadrawdatazipfilenameiinerfilesprefix = SLRawData-
+sltemplatemisc1 = SLTemplateMisc1.xlsm
+sltemplatemisc2 = SLTemplateMisc2.xlsm
+sltemplatemisc3 = SLTemplateMisc3.xlsm
+sltemplatemisc4 = SLTemplateMisc4.xlsm
+
+cslrawdatamisc1 = RawDataMisc1.xlsx
+cslrawdatamisc2 = RawDataMisc2.xlsx
+cslrawdatamisc3 = RawDataMisc3.xlsx
+cslrawdatamisc4 = RawDataMisc4.xlsx
+
+sltemplatepcqcalc = SLTemplatePCQCalc.xlsm
+cslrawdatapcqcalc = RawDataPCQCalc.xlsx
+
+bulkuploadperformancedatafilename = BulkUploadPerformanceData.xlsx
+bulkcreateslfilename = BulkCreate SL.xlsm
+
+slmetadatafileforerrorinrawdata = SLTemplateForErrorInRawData.xlsm
+bulkuploadrawdatafileinvalidtypes =  SLTemplatePdf.pdf,SLTemplateTxt.txt,bulkupdate.xlsm
+
+bulkcreateragno =  BulkCreate SL RAG No SLMET Fields Populated.xlsm
+
+cslbulkupdatetemplateid = 1021
+slbulkupdatetemplateid = 1026
+slbulkcreatetemplateid = 1015
+
+#performancedatuploadsuccessmsg = 200:;basic:;Your request has been successfully submitted.:;create
+performancedatuploadsuccessmsg = 200:;
+rawdatafilesuccessmsg = 200:;basic:;Your Request Has Been Successfully Submitted.
+rawdatafilemultiplesheeterrmsg = 500:;basic:;Template is not correct
+performancedatuploadfailuremsgwrongfiletype = 500:;basic:;File extension pdf not supported
+
+uploadidslperformancecdatatab = 187
+slmetadatauploadtemplateid = 1005
+createdbyuser = Anay User
+adminuser = Automation Admin
+
+servicelevelidforwrongfiletype = 5633
+
+cslperformancecalulation = ReComputePerformance->ApproveComputation
+slactiveworkflowsteps = SendForPeerReview->PeerReviewComplete->SendForInternalReview->InternalReviewComplete->SendForClientReview->Approve->Publish
+cslerrorincomputationworkflowsteps = ReComputePerformance->ApproveComputation
+
+numberofchildservicelevel = 5
+
+slmetflowstovalidate = sl max level 3
+#sl max level 1,sl max level 2,sl max level 3,sl min level 1,sl min level 2,sl min level 3
+
+slmetgraphflowstovalidate = sl max level 3
+#sl max level 1,sl max level 2,sl max level 3,sl min level 1,sl min level 2,sl min level 3
+
+frequency module flows = sl with week type 5,sl with week type 6,sl with week type 7
+
+[auditlogactioname]
+SendForPeerReview = Awaiting Peer Review
+PeerReviewComplete = Peer Review Completed
+SendForInternalReview = Awaiting Internal Review
+InternalReviewComplete = Internal Review Completed
+SendForClientReview = Awaiting Client Review
+Approve = Approved
+Publish = Active
+ReComputePerformance = Re Computation Performed
+ApproveComputation = Computation Approved
+
+
+[sl max level 1]
+slmetstatustovalidate = Not Met,Met Expected
+finalnumvalue = 81,80
+finaldenominavalue = 100,100
+colorcode = #EE0006,#008100
+columnnumtoedit = 9,10
+
+[sl max level 2]
+slmetstatustovalidate = Not Met,Met Expected,Met Minimum
+finalnumvalue = 101,80,81
+finaldenominavalue = 100,100,100
+colorcode = #EE0006,#008100,#FF9800
+columnnumtoedit = 9,10
+
+[sl max level 3]
+slmetstatustovalidate = Met Expected,Met Minimum,Met Sig Min,Not Met
+finalnumvalue = 80,81,111,121
+finaldenominavalue = 100,100,100,100
+colorcode = #008100,#FF9800,#F7B74F,#EE0006
+columnnumtoedit = 9,10
+
+[sl min level 1]
+slmetstatustovalidate = Not Met,Met Expected
+finalnumvalue = 99,100
+finaldenominavalue = 100,100
+colorcode = #EE0006,#00a650
+columnnumtoedit = 9,10
+
+[sl min level 2]
+slmetstatustovalidate = Not Met,Met Min,Met Expected
+finalnumvalue = 79,80,100
+finaldenominavalue = 100,100,100
+colorcode = #EE0006,#00a650,#00a650
+columnnumtoedit = 9,10
+
+[sl min level 3]
+slmetstatustovalidate = Met Expected,Met Min,Met Significantly Minimum,Not Met
+finalnumvalue = 110,100,80,79
+finaldenominavalue = 100,100,100,100
+colorcode = #00a650,#00a650,#f8931d,#EE0006
+columnnumtoedit = 9,10
+
+[bulkuploadperformancedata]
+columnnames = actualnumerator,actualdenominator,actualperformance,suppliernumerator,supplierdenominator,suppliercalculation,finalnumerator,finaldenominator,finalperformance,slmetval
+rowcolumnnumbers2 = 20,21,22,23,24,25,26,27,28,29
+rowcolumnvalues2 = 100,10,1000,100,1000,10,10,100,100,Met Minimum 123
+rowcolumnnumbers3 = 20,21,22,23,24,25,26,27,28,29
+rowcolumnvalues3 = 100,10,1000,100,1000,10,10,10,9,Met Expected
+rowcolumnnumbers4 = 20,21,22,23,24,25,26,27,28,29
+rowcolumnvalues4 = 100,10,1000,100,1000,10,10,110,130,Not Met
+rowcolumnnumbers5 = 20,21,22,23,24,25,26,27,28,29
+rowcolumnvalues5 = 100,10,1000,100,1000,10,10,10,120,Met Significantly Minimum
+
+[tagetvaluescalculationflow1]
+actualnumerator = 20.0
+actualdenominator = 100.0
+actualperformance = 20.0
+suppliernumerator = 10.0
+supplierdenominator = 0.0
+suppliercalculation = null
+finalnumerator = 10.0
+finaldenominator = 30.0
+finalperformance = 33.333333
+slmetval = Met Expected
+
+[tagetvaluescalculationflow2]
+actualnumerator = 9.0
+actualdenominator = 9.0
+actualperformance = 100.0
+suppliernumerator = null
+supplierdenominator = null
+suppliercalculation = null
+finalnumerator = 9.0
+finaldenominator = 9.0
+finalperformance = 100.0
+slmetval = Met Minimum 123
+
+[graphvalidationscenario]
+sl max level 1 = 2
+sl max level 2 = 3
+sl max level 3 = 4
+sl min level 1 = 2
+sl min level 2 = 3
+sl min level 3 = 4
+finalnumerator = 81
+finaldenominator = 100
+finalperformance = 81
+listid = 7
+calendartype = 1001
+sl min level 1 expected = 100
+sl min level 2 expected = 100
+sl min level 3 expected = 110
+sl max level 1 expected = 80
+sl max level 2 expected = 80
+sl max level 3 expected = 80
+
+sl min level 1 minimum = 100
+sl min level 2 minimum = 80
+sl min level 3 minimum = 100
+sl max level 1 minimum = 100
+sl max level 2 minimum = 100
+sl max level 3 minimum = 100
+
+sl min level 1 sigminimum = 100
+sl min level 2 sigminimum = 100
+sl min level 3 sigminimum = 80
+sl max level 1 sigminimum = 100
+sl max level 2 sigminimum = 100
+sl max level 3 sigminimum = 110
+
+[rawdatadownloadflow]
+csdidstring = CSL ID
+csltitlestring = CSL Title
+generatedbystring = Generated By
+generatedonstring = Generated On
+filtersstring = Filters Applied
+
+
+[bulkedit]
+fieldids = 1148,1147,1149,1106,1111,1110,1103,1104,1101,1107,1109,1108
+
+[estargetvaluescalculation]
+flowstotest = SLMet0,SLMet1,SLMet2,SLMet3,SLMet4,SLMet5,SLMet6,SLMet7,SLMet8,SLMet9
+#SLMet0,SLMet1,SLMet2,SLMet3,SLMet4,SLMet5,SLMet6,SLMet7,SLMet8,SLMet9
+slmetvalues =
+actualnumerator = 20.0
+actualdenominator = 100.0
+suppliernumerator = 10.0
+supplierdenominator = 0.0
+actualperformance = 20.0
+finalnumerator = 10.0
+finaldenominator = 30.0
+finalperformance = 33.333333
+
+[slflowsforirrelevanttargets]
+flowstotest = sl rag applicable no,sl max level 1,sl max level 2,sl min level 1,sl min level 2
+
+[customfieldvalidation]
+#Not in use in code Just for Info = Service Level Integer Custom Field API Automation,Service Level String Custom Field API Automation
+customfieldstocheck = dyn101998,dyn101999
+customfieldvalidation = 10,String
+
+[sl rag applicable no scenario]
+fieldstobeabsent = threshold,sigMinMax,minimum,expected
+bulkupdatefilename = Bulk Update Rag No.xlsm
+
+[time_difference_calculation_diff_flows]
+dateformatstovalidate = dd-MM-yyyy,MM-dd-yyyy
+#dateformatstovalidate = MM-dd-yyyy,dd-MM-yyyy,dd/MM/yyyy,MM/dd/yyyy
+
+[read metadata via es query]
+sltemplatefile = SL Raw Data Format.xlsm
+rawdatafile = Raw Data File.xlsx
+
+[snow integration flow]
+uploadfilepath = src\test\resources\TestConfig\ServiceLevel\SLAutomation\SIR_1739
+sltemplatefile = SL Raw Data Format.xlsm
+rawdatafile = Raw Data File.xlsx
+expectedcompletedby = Akhil Gupta
+
+[bulk create]
+bulkfilepath =src\test\resources\TestConfig\ServiceLevel\SLAutomation
+bulkfilename =BulkCreateSL.xlsm
+parententitytypeid =61
+parentid =2117
+100000001 =1
+206 =API Automation Supplier for Child Entities Creation Test ( SP01236 )
+207 =API Automation Contract for Service Level Creation Test ( CO01383 )
+203 =Automation Bulk Create SL
+204 =Automation Bulk Create SL
+205 =Automation Bulk Create SL
+11704 =Service Level
+208 =Site Availability
+210 =Service Request
+211 =New Joiner End-to-End Speed (Europe)
+11712 =Hardware
+11713 =4G
+248 =Asia/Kolkata (GMT +05:30)
+249 =India
+11695 =Global
+209 =Indian Rupee (INR)
+273 =Yes
+292 =Tier - 1
+#298 ={"aggs": {"group_by_sl_met": {"scripted_metric": {"map_script": "if (doc['exception'].value=='F'){if(doc['Time Taken (Seconds)'].size() != 0){if(doc['Time Taken (Seconds)'].value < 28800){state.map.met++; }else{state.map.notMet++}}}else{if(doc['Time Taken (Seconds)'].size() != 0){if(doc['Time Taken (Seconds)'].value < 28800){state.map.notMet++; }else{state.map.met++}}}", "init_script": "state['map'] = ['met':0, 'notMet':0]", "reduce_script": "params.result = ['Actual_Numerator':20, 'Actual_Denominator':100, 'Supplier_Numerator':10, 'Supplier_Denominator':0, 'Final_Numerator':10, 'Final_Denominator':30]; if(params.result.Final_Denominator <= 100){params.result.Target = 100; params.result.Breach = 102; params.result.Default = 107;} return params.result", "combine_script": "return state;"}}}, "size": 0, "query": {"bool": {"must": [{"match": {"childslaId": "childSLAId"}}]}}}
+#299 ={"query": {"bool": {"must": [{"match": {"childslaId": "childSLAId"}}]}}}
+7151 =Incident ID
+101166 =SLA Creation from Bulk Create
+100002 =Anay User
+217 =Percentage
+11996 =Yes
+221 =Monthly
+11776 =Gregorian
+216 =Maximum - 1 level
+219 =100
+243 =01-01-2020
+244 =01-01-2022
+241 =Monthly
+12192 =Yes
+297 =Monthly
+12045 =Seven Day
+240 =Monthly (Date)
+295 =01-01-2020
+296 =01-01-2020
+11697 =Monthly
+12049 =Seven Day
+11698 =Monthly (Date)
+11699 =01-01-2020
+11700 =01-01-2020
+246 =Human Resources
+247 =Projects (Human Resources)
+11860 =Yes
+86 =Bulk Create SL Automation
+87 =01-01-2020
+88 =Anay User
+89 =(CR05729) test
+100000002 =Yes
+flows to test = sl max level 3,sl min level 3
+#sl max level 1,sl max level 2,sl max level 3,sl min level 1,sl min level 2,sl min level 3
+bulkcreatesloncontract = 2117
+supplier name = Berkshire Hathaway - test 1 ( SP01004 )
+contract name = Sirion Performance Contracts ( CO01035 )
+expectedmax1 = 80.0
+expectedmax2 = 110.0
+max1=100.0
+max2= 110.0
+sigmax = 120.0
+expectedmin = 110.0
+min= 100.0
+sigmin1 = 120.0
+sigmin2 = 80.0
+
+[fx function]
+contractid = 136650
+fileuploadpath = src\test\resources\TestConfig\ServiceLevel\Fx Function
+template file 1 = Function Change Format.xlsm
+raw data file 1 = Function Change Raw Data.xlsx
+template file 2 = Function Change Format_DCQ_TEST.xlsm
+raw data file 2 = Function Change Raw Data.xlsx
+template file 3 = Business hours Metadata Format.xlsm
+raw data file 3 = Business Hours Raw Data.xlsx
+
+[raw data file upload different scenarios]
+sl id  = 9319
+csl id = 38843
+csl id already submitted = 38846
+csl id not submitted but indexed = 38841
+csl id not submitted not indexed = 38844
+
+[raw data tab filter scenarios]
+csl id = 40010
+#Fields must be present in raw data file
+incident id string = Incident ID
+incident id = 11
+open time string = Open Time
+service module name string = Service Module Name
+service module name value = SERVICE
+service module name value raw data tab = SERVICE DESK
+exception string = exception
+exception value = true
+exception value raw data tab = Yes
+duplicate string = duplicateRecord
+duplicate value = false
+duplicate value raw data tab = No
+active value raw data tab = No
+open time value raw data tab = 02-01-2018
+sirionfunction = Time Taken (Seconds)
+sirionfunctionvalue = 151200

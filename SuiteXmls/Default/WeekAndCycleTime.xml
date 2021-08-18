@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Week and Cycle TIme" thread-count="10">
+
+    <test name="Week Time and Cycle Time API's">
+        <classes>
+            <class name="com.sirionlabs.test.common.TestWeekTimeForEntities"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="DownloadGraph" parallel="tests" thread-count="1">
+
+    <test name="DownloadGraph">
+        <classes>
+            <class name="com.sirionlabs.test.TestDownloadGraph"></class>
+        </classes>
+    </test>
+
+</suite>

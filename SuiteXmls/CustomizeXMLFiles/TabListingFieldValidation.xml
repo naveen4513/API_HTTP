@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Tabs Fields Renaming Validation" thread-count="1">
+
+    <test name="Show Page Tabs Validation">
+        <classes>
+            <class name="com.sirionlabs.test.TestShowPageTabs"></class>
+        </classes>
+    </test>
+
+
+
+
+</suite>

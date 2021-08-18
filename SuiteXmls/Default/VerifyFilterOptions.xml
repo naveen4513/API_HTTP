@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Filter Option Validation Blank Include Exclude" thread-count="1">
+
+    <test name="Filter Option Validation Blank Include Exclude">
+        <classes>
+            <class name="com.sirionlabs.test.filters.TestFiltersOptions"></class>
+        </classes>
+    </test>
+
+
+</suite>

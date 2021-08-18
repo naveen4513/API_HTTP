@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MS Tests" thread-count="1">
+
+    <!--<test name="Inbound Email Action Test - MIC-80">
+        <classes>
+            <class name="com.sirionlabs.test.inboundEmailAction.TestInboundEmailAction"></class>
+        </classes>
+    </test>
+
+    <test name="Notification Alert - i18n">
+        <classes>
+            <class name="com.sirionlabs.test.notificationAlert.TestNotificationAlert"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Email - i18n">
+        <classes>
+            <class name="com.sirionlabs.test.email.TestEmaili18n"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Email - Send Email check">
+        <classes>
+            <class name="com.sirionlabs.test.email.TestSendEmailNo"></class>
+        </classes>
+    </test>-->
+
+    <test name="Email Action">
+        <classes>
+            <class name="com.sirionlabs.test.email.TestEmailAction"></class>
+        </classes>
+    </test>
+
+    <test name="Languages for Email Action">
+        <classes>
+            <class name="com.sirionlabs.test.email.TestLanguagesForEmailAction"></class>
+        </classes>
+    </test>
+
+    <test name="Email Data Templates">
+        <classes>
+            <class name="com.sirionlabs.test.email.TestEmailData"></class>
+        </classes>
+    </test>
+
+    <test name="Admin Date Update - Check Date Format Update">
+        <classes>
+            <class name="com.sirionlabs.test.datetimeformat.TestDateFormat"></class>
+        </classes>
+    </test>
+
+</suite>   

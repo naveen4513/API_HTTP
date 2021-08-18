@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FilterSupplierListCDR" thread-count="1">
+
+
+    <test name="FilterSupplierListCDR">
+        <classes>
+            <class name="com.sirionlabs.test.SL_Stories.Test_FilterSupplierListCDR"></class>
+        </classes>
+    </test>
+
+
+</suite>

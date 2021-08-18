@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Dashboard" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Test Dashboard">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sirionlabs.test.dashboard.TestDashboard"></class>
+            <class name="com.sirionlabs.test.dashboard.TestDashboardSLPerformance"></class>
+            <class name="com.sirionlabs.test.dashboard.TestDashboardSLExecutiveData"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,47 @@
+#All keys must be in lower case only.
+
+#variables for cdr listing
+urlid = 279
+size = 10
+offset = 0
+orderbycolumnname = id
+orderdirection = desc nulls last
+
+
+#Boolean flag for creating local entity or global entity
+createlocalcdr = false
+
+#Provide the section name as mentioned in cfg file under helper/entityCreation package
+sectionname = presignature complete flow
+
+#Boolean flag to delete the created entity
+deleteentity = false
+
+#tab list id for Contract- LinkedEntities
+linkedentitiestablistid = 381
+
+#tab list id for CDR- ContractDocument tab
+cdrcontractdocumenttablistid = 367
+
+#tab list id for Contract- ContractDocument tab
+contractdocumenttablistid = 409
+
+#document Status Id For marking document as final
+documentstatusidforstatusfinal = 2
+documentstatusidfordraft = 1
+
+#variables required for inheriting files from CDR to Contract
+sourcetabid = 2
+statusid = 1
+
+#scheduler Waiting out Time to process submitted request. time in milliseconds
+schedulerwaitingtime = 1800000
+
+#scheduler Polling Time in milliseconds
+schedulerpollingtime = 10000
+
+#Boolean flag to kill all user specific tasks
+killalltasks = true
+
+[extra fields]
+clauses = {"name": "clauses","id": 7419,"values": [{"clauseCategory": {"name": "Acceptation","id": "1080"},"clause": {"name": "Automation_Clause5007754","id": 3616},"clauseGroup": {"name": "Clause","id": 1},"order": 1,"mandatory": null}]}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Consumption Suite" thread-count="1">
+
+    <test name="Consumption Miscellaneous Tests">
+        <classes>
+            <class name="com.sirionlabs.test.consumption.TestConsumptionMiscellaneousTests"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Performance Actions On Entities Suite">
+    <test name="Perform Actions">
+        <classes>
+            <class name="com.sirionlabs.test.WorkflowAndNonWorkflowActions.TestPerformActionsOnEntities"></class>
+        </classes>
+    </test>
+
+</suite>

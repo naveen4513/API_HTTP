@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Workflow Layout APIs Test" data-provider-thread-count="3">
+
+    <test name="Workflow Layout Create Form API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowLayout.TestWorkflowLayoutCreateFormAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Layout Create Form Layout Info API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowLayout.TestWorkflowLayoutCreateFormLayoutInfo"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Layout Create API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowLayout.TestWorkflowLayoutCreateAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Layout Show API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowLayout.TestWorkflowLayoutShowAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Layout Edit Get API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowLayout.TestWorkflowLayoutEditGetAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Layout Edit Post API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowLayout.TestWorkflowLayoutEditPostAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Layout End to End WOR-2">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestWorkflowLayoutEndToEnd"></class>
+        </classes>
+    </test>
+
+</suite>

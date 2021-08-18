@@ -1,0 +1,255 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+dynamic filter id = 1000912
+dynamic filter name = 106413
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+dynamicMetadata = {"dyn106523":{"name":"dyn106523","id":106523,"multiEntitySupport":false,"values":"Text Field"},"dyn106534":{"name":"dyn106534","id":106534,"multiEntitySupport":false,"values":121},"dyn106539":{"name":"dyn106539","id":106539,"options":null,"multiEntitySupport":false,"values":{"name":"Option1","id":9071}},"dyn106543":{"name":"dyn106543","id":106543,"options":null,"multiEntitySupport":false,"values":[{"name":"Option1","id":9075},{"name":"Option2","id":9076}]},"dyn106530":{"name":"dyn106530","id":106530,"multiEntitySupport":false,"values":"09-03-2020"},"dyn106527":{"name":"dyn106527","id":106527,"multiEntitySupport":false,"values":"Text Area"},"dyn106413":{"name":"dyn106413","id":106413,"multiEntitySupport":false,"values":unqString}}
+
+#Automation Text Field
+dyn106523 = {"name":"dyn106523","id":106523,"multiEntitySupport":false,"values":"Text Field"}
+
+#Automation Currency
+#dyn106534 = {"name":"dyn106534","id":106534,"multiEntitySupport":false,"values":121}
+
+#Automation Single SELECT
+dyn106539 = {"name":"dyn106539","id":106539,"options":null,"multiEntitySupport":false,"values":{"name":"Option1","id":9071}}
+
+#Automation MULTI SELECT
+dyn106543 = {"name":"dyn106543","id":106543,"options":null,"multiEntitySupport":false,"values":[{"name":"Option1","id":9075},{"name":"Option2","id":9076}]}
+
+#Automation Date
+dyn106530 = {"name":"dyn106530","id":106530,"multiEntitySupport":false,"values":"09-03-2020"}
+
+#Automation TEXT AREA
+dyn106527 = {"name":"dyn106527","id":106527,"multiEntitySupport":false,"values":"Text Area"}
+
+#Automation Numeric
+dyn106413 = {"name":"dyn106413","id":106413,"multiEntitySupport":false,"values":unqString}
+
+discrepancyResolutionAmountSupplier =  {"name": "discrepancyResolutionAmountSupplier","id": 11128,"displayValues": "","multiEntitySupport": false,"values": 101}
+discrepancyResolutionAmountClient = {"name": "discrepancyResolutionAmountClient","id": 11129,"displayValues": "","multiEntitySupport": false,"values": 102}
+discrepancyResolutionAmount = {"name": "discrepancyResolutionAmountClient","id": 11129,"displayValues": "","multiEntitySupport": false,"values": 103}
+discrepencyResolutionPendingAmount = {"name": "discrepencyResolutionPendingAmount","id": 11130,"displayValues": "","multiEntitySupport": false,"values": 104}
+approvedAmount = {"name": "approvedAmount","id": 11799,"displayValues": "","multiEntitySupport": false,"values": 106}
+
+[arc flow 1]
+name = {"values":"line item arc flow 1 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+baseVolume = {"name":"baseVolume","id":11457,"values":1}
+variance = {"name":"variance","id":11076,"values":1}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+unit = {"name":"unit","id":11070,"values":{"name":"Desktop","id":1046}}
+lineItemType = {"name":"lineItemType","id":11137,"values":{"name":"ARC-RRC and Transaction Based","id":1067}}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data arc rrc test","id":57076,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[arc flow 2]
+name = {"values":"line item arc flow 2 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+baseVolume = {"name":"baseVolume","id":11457,"values":1}
+variance = {"name":"variance","id":11076,"values":1}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+unit = {"name":"unit","id":11070,"values":{"name":"Desktop","id":1046}}
+lineItemType = {"name":"lineItemType","id":11137,"values":{"name":"ARC-RRC and Transaction Based","id":1067}}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-02-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-01-2018 00:00:00"}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data arc rrc test","id":18414,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[arc flow 3]
+name = {"values":"line item arc flow 3 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+baseVolume = {"name":"baseVolume","id":11457,"values":1}
+variance = {"name":"variance","id":11076,"values":1}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+unit = {"name":"unit","id":11070,"values":{"name":"Desktop","id":1046}}
+lineItemType = {"values":{"name":"Base Charges and Passthrough","id":1066},"name":"lineItemType","id":11137}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data arc rrc test","id":18414,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[arc flow 4]
+name = {"values":"line item arc flow 4 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+baseVolume = {"name":"baseVolume","id":11457,"values":1}
+variance = {"name":"variance","id":11076,"values":1}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+unit = {"name":"unit","id":11070,"values":{"name":"Desktop","id":1046}}
+lineItemType = {"name":"lineItemType","id":11137,"values":{"name":"ARC-RRC and Transaction Based","id":1067}}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+serviceIdClient = {"name":"serviceIdClient","id":11064,"values":"wrong sd id"}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[fixed fee flow 1]
+name = {"values":"line item fixed fee flow 1 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+lineItemType = {"values":{"name":"Base Charges and Passthrough","id":1066},"name":"lineItemType","id":11137}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+#serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data fixed fee test","id":18413,"active":false}}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data fixed fee test","id":57074,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[fixed fee flow 2]
+name = {"values":"line item fixed fee flow 2 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+lineItemType = {"values":{"name":"Base Charges and Passthrough","id":1066},"name":"lineItemType","id":11137}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-02-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-01-2018 00:00:00"}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data fixed fee test","id":18413,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[fixed fee flow 3]
+name = {"values":"line item fixed fee flow 3 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+lineItemType = {"name":"lineItemType","id":11137,"values":{"name":"ARC-RRC and Transaction Based","id":1067}}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data fixed fee test","id":18413,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[fixed fee flow 4]
+name = {"values":"line item fixed fee flow 4 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+lineItemType = {"values":{"name":"Base Charges and Passthrough","id":1066},"name":"lineItemType","id":11137}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+serviceIdClient = {"name":"serviceIdClient","id":11064,"values":"wrong sd id"}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+[forecast flow 1]
+name = {"values":"line item forecast flow 1 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+baseVolume = {"name":"baseVolume","id":11457,"values":10}
+variance = {"name":"variance","id":11076,"values":1}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+unit = {"name":"unit","id":11070,"values":{"name":"Desktop","id":1046}}
+lineItemType = {"name":"lineItemType","id":11137,"values":{"name":"Forecast","id":1070}}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data forecast test","id":57075,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[forecast flow 2]
+name = {"values":"line item forecast flow 2 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+baseVolume = {"name":"baseVolume","id":11457,"values":10}
+variance = {"name":"variance","id":11076,"values":1}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+unit = {"name":"unit","id":11070,"values":{"name":"Desktop","id":1046}}
+lineItemType = {"name":"lineItemType","id":11137,"values":{"name":"Forecast","id":1070}}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-02-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-01-2018 00:00:00"}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data forecast test","id":18415,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[forecast flow 3]
+name = {"values":"line item forecast flow 3 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+baseVolume = {"name":"baseVolume","id":11457,"values":10}
+variance = {"name":"variance","id":11076,"values":1}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+unit = {"name":"unit","id":11070,"values":{"name":"Desktop","id":1046}}
+lineItemType = {"values":{"name":"Base Charges and Passthrough","id":1066},"name":"lineItemType","id":11137}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+serviceIdSupplier = {"name":"serviceIdSupplier","id":11066,"values":{"name":"service data forecast test","id":18415,"active":false}}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}
+
+
+[forecast flow 4]
+name = {"values":"line item forecast flow 4 test","name":"name","id":11047}
+amount = {"name":"amount","id":11057,"displayValues":"","values":100}
+baseVolume = {"name":"baseVolume","id":11457,"values":10}
+variance = {"name":"variance","id":11076,"values":1}
+total = {"name":"total","id":11063,"displayValues":"","values":100}
+quantity = {"name":"quantity","id":11073,"values":10}
+unit = {"name":"unit","id":11070,"values":{"name":"Desktop","id":1046}}
+lineItemType = {"name":"lineItemType","id":11137,"values":{"name":"Forecast","id":1070}}
+serviceStartDate = {"name":"serviceStartDate","id":11067,"values":"06-01-2018 00:00:00"}
+serviceEndDate = {"name":"serviceEndDate","id":11068,"values":"06-30-2018 00:00:00"}
+serviceIdClient = {"name":"serviceIdClient","id":11064,"values":"wrong sd id"}
+rate = {"name":"rate","id":11072,"values":10}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+conversionRate = {"name":"conversionRate","id":11054,"values":1}
+currency = values -> {"name":"Indian Rupee (INR)","id":8}

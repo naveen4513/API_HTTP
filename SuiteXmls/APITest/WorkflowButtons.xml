@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Workflow Buttons APIs Test" data-provider-thread-count="3">
+
+    <test name="Workflow Buttons Create API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowButtons.TestWorkflowButtonsCreateAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Buttons Show API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowButtons.TestWorkflowButtonsShowAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Create Form API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowButtons.TestWorkflowButtonsCreateFormAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Buttons Edit API">
+        <classes>
+            <class name="com.sirionlabs.test.api.workflowPod.workflowButtons.TestWorkflowButtonsEditAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Workflow Buttons End to End WOR-3">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestWorkflowButtonsEndToEnd"></class>
+        </classes>
+    </test>
+
+</suite>

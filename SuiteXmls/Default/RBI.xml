@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RBI Suite" thread-count="1">
+
+
+    <test name="Test Create RBI">
+        <classes>
+            <class name="com.sirionlabs.test.rbi.TestCreatePageFields"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Create Entity">
+        <classes>
+            <class name="com.sirionlabs.test.EntityCreation.TestEntityCreation"></class>
+        </classes>
+    </test>-->
+
+    <test name="Test Edit Page RBI">
+        <classes>
+            <class name="com.sirionlabs.test.rbi.TestEditPageFields"></class>
+        </classes>
+    </test>
+
+    <test name="Entity Edit Test">
+        <classes>
+            <class name="com.sirionlabs.test.TestEntityEdit"></class>
+        </classes>
+    </test>
+
+    <test name="Test MetaDataSearch Fields RBI">
+        <classes>
+            <class name="com.sirionlabs.test.rbi.TestMetaDataSearchFields"></class>
+        </classes>
+    </test>
+
+    <test name="MetadataSearch Test">
+        <classes>
+            <class name="com.sirionlabs.test.TestSearchMetadata"></class>
+        </classes>
+    </test>
+
+    <test name="Test BulkEdit Fields RBI">
+        <classes>
+            <class name="com.sirionlabs.test.rbi.TestBulkEditFields"></class>
+        </classes>
+    </test>
+
+</suite>

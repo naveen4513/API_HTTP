@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Auto Extraction Regression">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="autoextraction_sandbox"/>
+    <parameter name="Server" value="A_Server"/>
+
+    <listeners>
+        <listener class-name="com.sirionlabs.listeners.MethodInterceptor" />
+    </listeners>
+
+    <suite-files>
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Server.xml"></suite-file>
+
+        <suite-file path="../Default/Login.xml"></suite-file>
+
+        <!-- AutoExtraction Suite -->
+
+        <suite-file path="../Default/AutoExtraction.xml"></suite-file>
+
+
+    </suite-files>
+</suite>

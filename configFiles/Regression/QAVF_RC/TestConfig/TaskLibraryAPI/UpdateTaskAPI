@@ -1,0 +1,32 @@
+[envinfo]
+domain = http://qavf.rc.office
+dbhost = 192.168.2.110
+dbport = 5432
+maintenancedb = rc_1.22
+dbusername = postgres
+dbpassword = postgres
+
+[flow0]
+testcasetype =positive
+statuscode =200
+taskName =Automation Updated
+entitytypeid=18
+entitytypename=Actions
+taskid=300
+testtype = valid
+
+[flow1]
+testcasetype =positive
+statuscode =200
+taskName =Automation Updated
+entitytypeid=61
+entitytypename=Contracts
+taskid=300
+testtype = valid
+
+[flow2]
+testcasetype = negative
+statuscode = 200
+taskid = 10asd
+testtype = stringtaskid
+errormessage = applicationError

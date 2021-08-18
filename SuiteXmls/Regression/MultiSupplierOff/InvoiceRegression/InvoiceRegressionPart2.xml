@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="multi_supplier_off"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+<!--        <test name="Service Data Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.flow.TestServiceData"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="Service Data Charges Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.flow.TestServiceDataCharges"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="Invoice Bulk Create Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.TestInvoiceBulkCreate"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="Invoice Details Tab Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.TestInvoiceDetails"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+        <test name="Forecast Bulk Upload Validation">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.TestForecastBulkUpload"></class>
+            </classes>
+        </test>
+
+<!--        <test name="Currency Conversion Validation">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.invoice.TestCurrencyConversionValidation"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+    </suite-files>
+</suite>

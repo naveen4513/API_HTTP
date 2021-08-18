@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SL Bugs Automation" thread-count="1">
+
+<!--    <test name="Release 1_36 Bugs">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.SL.Test_RC1_36_Bugs"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Bugs Automation Month Feb 2020">
+        <classes>
+            <class name="com.sirionlabs.test.SL.Test_Feb2020Bugs"></class>
+        </classes>
+    </test>
+
+
+</suite>

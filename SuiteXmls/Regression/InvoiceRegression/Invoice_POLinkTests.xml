@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice PO Link Tests">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+<!--        <test name="PO Link Tests">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.purchaseOrder.TestPOLinkDuringSDCreation"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--        <test name="PO Link Tests Invoice Line Item">-->
+<!--            <classes>-->
+<!--                <class name="com.sirionlabs.test.purchaseOrder.TestPOLinkDuringLineItemCreation"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+        <test name="PO Burn Tests">
+            <classes>
+                <class name="com.sirionlabs.test.purchaseOrder.TestPOBurnScenarios"></class>
+            </classes>
+        </test>
+
+
+    </suite-files>
+</suite>

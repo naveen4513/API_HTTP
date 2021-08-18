@@ -1,0 +1,46 @@
+#All key and section name must be in lower case
+
+#comma separated list of entities to test
+entitiestotest = change requests, work order requests, contract draft requests
+
+#Waiting time for scheduler to upload the signed document on communication tab. time in seconds
+schedulerwaitingtime = 300
+
+#number of records to display on communication tab listing
+communicationtablistingsize = 2
+
+
+#payload Data for docusign send api
+#Either Keep recipientsemail or (recipientsuserid and recipientsname) comment (Use only one at a time)
+[change requests]
+entityid = 1508
+entitytypeid = 63
+documentname = abc
+documentid = 273019
+doctype = txt
+recipientsuserid = 1185
+recipientsname = Vijay User
+#recipientsemail = sarthak.garg@sirionlabs.com, sarthak.garg1@sirionlabs.com, sarthak.garg2@sirionlabs.com
+commtablistid = 65
+
+[work order requests]
+entityid = 369
+entitytypeid = 80
+documentname = New Headers for Show-Pages
+documentid = 269319
+doctype = docx
+recipientsuserid = 1185
+recipientsname = Vijay User
+#recipientsemail = sarthak.garg@sirionlabs.com, sarthak.garg1@sirionlabs.com, sarthak.garg2@sirionlabs.com
+commtablistid = 65
+
+[contract draft requests]
+entityid = 2064
+entitytypeid = 160
+documentname = test_Sarthak, test_Sarthak1, test_Sarthak2
+documentid = 273108,273107,273109
+doctype = pdf, pdf, pdf
+recipientsuserid = 1185,1185
+recipientsname = Vijay User,Vijay User
+#recipientsemail = sarthak.garg@sirionlabs.com, sarthak.garg1@sirionlabs.com, sarthak.garg2@sirionlabs.com
+commtablistid = 65

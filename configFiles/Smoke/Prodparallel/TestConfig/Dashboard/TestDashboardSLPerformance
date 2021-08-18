@@ -1,0 +1,39 @@
+#All section names & keys must be in lower case characters only (Except for Special Filters)
+
+#DelimiterForValues is used to separate the values
+delimiterforvalues = ,
+
+#dashboard- SL Performance ListId
+dashboardslperformancelistid = 344
+
+#Provide the below configuration for charts. Default values are : #limit=20, #offset=0, #orderByColumnName=alphabatic, #orderDirection=ASC
+limit = 20
+offset = 0
+orderbycolumnname = alphabatic
+orderdirection = ASC
+
+#Child Service Level show page tabUrlId
+taburlid = 7
+
+#Provide the below possible values for Sorting. This is required for validating sorting order feature in SL Performance.
+#For priority-ASC means sorting from critical to key
+orderbycolumnnameforsorting = alphabatic,priority
+orderdirectionforsorting = ASC,DESC
+
+
+#validateChartData flag specifies whether to test SL Performance Chart Data or not. Possible Values (true, false). Default Value is false
+validatechartdata = false
+
+#ApplyRandomization flag turns on/off Randomization for the Options of All Filters. Possible Values (True, False). Default Value is True
+#It doesn't apply on SpecialFilters.
+applyrandomizationonprimaryfilters = true
+applyrandomizationonadvancedfilters = true
+
+#MaxRandomOptions: Max no of Random Options to be picked for validation. This will apply only if ApplyRandomization is set to True and only on Non-Special Filters.
+#Default Value is 3
+maxrandomoptions = 1
+
+#maxRandomOptionsOfPrimaryFilters : Max no. of random options under each primary filters should be applied for validating advanced filters. Default value is 1.
+#This does not depend on applyrandomizationonprimaryfilters flag.
+#For validating advanced filters, randomization on primary filter is always applied.
+maxrandomoptionsofprimaryfilters = 1

@@ -1,0 +1,81 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Obligation/Creation
+extrafieldsconfigfilename = ExtraFieldsForObligationCreation.cfg
+
+#************ Obligation Creation Flows Below *******************
+
+#TC-C8839: Create Obligations having 512 characters in Title including Special Characters and Numbers.
+[flow 1]
+sourceentity = contracts
+sourcename = API Automation Contract for Obligation Creation Test
+sourceid = 2132
+parententitytype = msa
+expectedresult = success
+
+
+#TC-C8839: Create Obligations with Blank Description
+[flow 3]
+sourceentity = contracts
+sourcename = API Automation Contract for Obligation Creation Test
+sourceid = 2132
+parententitytype = msa
+expectedresult = success
+
+#TC-C8839: Create Obligations with Description having more than 2000 characters including special characters and numbers.
+[flow 4]
+sourceentity = contracts
+sourcename = API Automation Contract for Obligation Creation Test
+sourceid = 2132
+parententitytype = msa
+expectedresult = success
+
+#TC-C8843: Create Obligations with Performance Type and Category fields
+[flow 5]
+sourceentity = contracts
+sourcename = API Automation Contract for Obligation Creation Test
+sourceid = 2132
+parententitytype = msa
+expectedresult = success
+
+#TC-C8849: Create Obligations with Contract Reference
+[flow 6]
+sourceentity = contracts
+sourcename = API Automation Contract for Obligation Creation Test
+sourceid = 2132
+parententitytype = msa
+expectedresult = success
+
+
+#TC-C90396: Create Obligation from Multi Supplier Contract
+[flow 10]
+sourceentity = contracts
+sourcename = API Automation Multi Supplier Contract for Child Creation test
+sourceid = 17708
+parententitytype = msa
+multisupplier = true
+multiparentsupplierid = 1027
+expectedresult = success
+
+[flow 11]
+sourceentity = contracts
+sourcename = bulk edit contracts flow 1
+sourceid = 1039
+parententitytype = msa
+expectedresult = success
+
+
+#************* End of Obligation Creation Flows ****************

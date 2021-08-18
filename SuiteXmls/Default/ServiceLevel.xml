@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Service Level Test Cases">
+
+
+
+    <test name="Service Level Automation">
+        <classes>
+            <class name="com.sirionlabs.test.serviceLevel.TestChildServiceLevelAutomation"></class>
+        </classes>
+    </test>
+
+<!--    <test name="Service Level Automation Extra Test Cases">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.serviceLevel.TestServiceLevelExtraTestCases"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+
+
+
+    <!--    <test name="SLIF - client admin configuration for data source (manual)">-->
+    <!--        <classes>-->
+    <!--            <class name="com.sirionlabs.test.SL_Stories.test_SLIF_ClientAdmin_1889"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+<!--    <test name="Release 1_36 Bugs">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.SL.Test_RC1_36_Bugs"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="SIR-133409 Numerator Denominator">-->
+<!--        <classes>-->
+<!--            <class name="com.sirionlabs.test.test_SIR133409"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>

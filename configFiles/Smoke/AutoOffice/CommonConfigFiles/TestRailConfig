@@ -1,0 +1,25 @@
+#All Sections and keys must be in lower case characters only.
+
+#UpdateTests: Flag whether to Update Tests in TestRail or not.
+updatetests = false
+
+host = http://testrail.sirionlabs.office
+username = akshay.rohilla@sirionlabs.com
+password = Password12345a
+
+#ProjectId: Id of the Project in TestRail. This field is required only when CreateTestRun flag is true.
+projectid = 2
+
+#SuiteId: The Id of the Test Suite. This field is required only when CreateSuite flag is turned off.
+suiteid = 32
+
+#MilestoneId: The Id of the Milestone.
+milestoneid = 53
+
+#CreateTestRun: Whether to Create New Test Run or not.
+createtestrun = true
+
+testrunnameprefix = API Automation Smoke Run
+
+#TestRunId: The Id of the Test Run. This field is required only when CreateTestRun flag is turned off.
+testrunid = 82

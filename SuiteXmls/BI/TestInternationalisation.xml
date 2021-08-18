@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Internationalisation" thread-count="1">
+
+    <test name="InterNationalised Field Checks">
+        <classes>
+            <class name="com.sirionlabs.test.sisenseBI.TestInternationalisationFieldRenaming"></class>
+        </classes>
+    </test>
+
+</suite>   

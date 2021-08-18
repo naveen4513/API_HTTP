@@ -1,0 +1,39 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/PurchaseOrder/Creation
+extrafieldsconfigfilename = ExtraFieldsForPurchaseOrderCreation.cfg
+
+fieldgroupstoverify = basic information, organization information, important dates, geography, function, financial information
+
+basic information = poNumber, name, description, contractingEntity, requisitionNumber, trackingNumber, timeZone, currency, active, tier, contract, supplier
+organization information = businessUnits, departments, costCenters
+important dates = startDate, endDate
+geography = countries, states
+function = functions, services
+financial information = poTotal, expectedPoBurn, poBurn, poAvailable
+
+
+#******************* Creation Flows Below *******************
+
+#Positive flow for Contracts (TC-98605, TC-98606, TC-98608, TC-98610)
+[flow 1]
+sourceentity = contracts
+sourcename = Auto Contract For PO Creation (PLEASE DO NOT USE)
+sourceid = 601157
+expectedresult = success
+
+
+#******************* End of Creation Flows *******************

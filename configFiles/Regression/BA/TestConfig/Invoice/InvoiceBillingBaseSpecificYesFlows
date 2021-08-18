@@ -1,0 +1,96 @@
+#This file contains all the Flows for TestInvoiceFlow Suite.
+
+#ContractSectionName: This is used only when Create Contract Flag is set to True.
+#Specify the Contract Column Name here which should be used to Create Contract from the Contract Configuration File. Default value is 'default'
+
+#As above property is used for Contract. Similarly above property is used for other Entities as well like (Service Data, Invoice, Invoice Line Item)
+
+#UploadPricing: Whether to upload Pricing or not. Possible values are True or False. Default value is True.
+#If set to True then will upload Pricing and proceed further. Otherwise will skip Pricing Upload and directly create Invoice & Line Item.
+#This flag is set to False for negative cases only.
+
+
+#PricingTemplateFileName: Name of the Pricing Template File. The pricing sheet will be downloaded with this name and then will be uploaded.
+#PricingTemplateSheetName: Name of the Pricing Template Sheet which is to be updated.
+#NumberOfRowsToEdit: No. of rows to edit in Pricing Sheet
+#StartingRowNum: Starting Row No. from where to start editing pricing data.
+#VolumeColumnNum: Column No. where volume is defined.
+#RateColumnNum: Column No. where rate is defined.
+#VolumeColumnValues: All the values of the volumes to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+#RateColumnValues: All the values of the rates to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+
+#Volume Discrepency  Discrepency quantity not null and not zero
+#Amount Discrepency  Discrepency amount not null and not zero
+#Total Discrepency Discrepency Total not null and not zero
+#No Discrepency	 Discrepency quantity Discrepency amount  Discrepency Total  null and zero
+
+
+#ExpectedResult: The final Invoice Line Item Validation Status is to be mentioned here.
+basecontractid = 601748
+invoicestartdate = 03-01-2018
+invoiceenddate = 03-31-2018
+adjustment lineitem type id = 1314
+
+flows to test = base specific yes arc,base specific yes rrc
+#base specific yes arc,base specific yes rrc
+
+#Total discrepancy Calculating System Values
+#C153090 C153505
+[base specific yes arc]
+contractsectionname = base specific yes arc
+servicedatasectionname = base specific yes arc
+invoicesectionname = base specific yes arc
+invoicelineitemsectionname = base specific yes arc
+
+uploadpricing = false
+servicedatatype = arc
+
+finalconsumptionvalues = 400
+billing record sd amount base charge line item=100.00
+billing record sd amount arc line item=1200.00
+
+#The rate card window rows
+#This logic is when base volume is set as 50 and final consumption as 400 pricing and ARC are set according to
+#"lowerVolume":100,"endDate":"03-31-2020","rate":2,"upperVolume":200,"startDate":"03-01-2020"},
+#"lowerVolume":200,"endDate":"03-31-2020","rate":3,"upperVolume":400,"startDate":"03-01-2020"},
+#"lowerVolume":400,"endDate":"03-31-2020","rate":4,"startDate":"03-01-2020"}],
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20,charge_type->ARC,line_item_amount->20,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4,pricingentityname->,currency_conversion_rate->1,rate->5,service_data_currency->INR
+rate card row 1 = amount->200,charge_type->ARC,line_item_amount->200,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1,rate->10,service_data_currency->INR
+rate card row 2 = amount->15,charge_type->ARC,line_item_amount->15,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1,pricingentityname->,currency_conversion_rate->1,rate->15,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+expectedresult = Amount Discrepancy
+
+[base specific yes rrc]
+contractsectionname = base specific yes rrc
+servicedatasectionname = base specific yes rrc
+invoicesectionname = base specific yes rrc
+invoicelineitemsectionname = base specific yes rrc
+
+uploadpricing = false
+servicedatatype = rrc
+
+finalconsumptionvalues = 25
+
+billing record sd amount base charge line item=500
+billing record sd amount arc line item=-85
+
+#The rate card window rows
+#This logic is when base volume is set as 50 and final consumption as 25 pricing and ARC are set according to
+#"lowerVolume":0,"upperVolume":50,"endDate":"03-31-2020","rate":2,"startDate":"03-01-2020"},
+#"lowerVolume":50,"upperVolume":80,"endDate":"03-31-2020","rate":3,"startDate":"03-01-2020"},
+#"lowerVolume":80,"upperVolume":100,"endDate":"03-31-2020","rate":4,"startDate":"03-01-2020"}],
+
+rate card to disp = true
+exp num of rows = 3
+rate card row 0 = amount->20,charge_type->ARC,line_item_amount->20,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 105,pricingentityid->,volume->4,pricingentityname->,currency_conversion_rate->1,rate->5,service_data_currency->INR
+rate card row 1 = amount->200,charge_type->ARC,line_item_amount->200,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Below 130,pricingentityid->,volume->20,pricingentityname->,currency_conversion_rate->1,rate->10,service_data_currency->INR
+rate card row 2 = amount->15,charge_type->ARC,line_item_amount->15,pricingentitytype->,effectivedate->,invoicing_type->ARC/RRC,volume_band->Above 130,pricingentityid->,volume->1,pricingentityname->,currency_conversion_rate->1,rate->15,service_data_currency->INR
+
+audit log values = System Rate->9.4,System Conversion Rate->1,Discrepancy Conversion Rate->0,System Quantity->105,Discrepancy Quantity->92,System Amount->235,Discrepancy Amount->-1789,System Total->235,Discrepancy Total->95,System Variance->25,Discrepancy Rate->-0.6,Discrepancy Variance->22,System Base Volume->80,Discrepancy Base Volume->70,VALIDATION STATUS->Volume Discrepancy
+
+expectedresult = Amount Discrepancy

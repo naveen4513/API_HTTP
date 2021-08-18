@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Schedule Report" thread-count="1">
+
+    <test name="Test Schedule Report">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestScheduleReport"></class>
+        </classes>
+    </test>
+
+    <test name="Test Schedule Report Negative Test Cases">
+        <classes>
+            <class name="com.sirionlabs.test.reportRenderer.TestScheduleReportNegativeCases"></class>
+        </classes>
+    </test>
+
+</suite>

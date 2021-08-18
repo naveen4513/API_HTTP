@@ -1,0 +1,257 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#Always give Full JSON object as Value for any key.
+
+#**********************************************************************************
+[entity common extra fields map]
+suppliers = supplier common extra fields
+contracts = contract common extra fields
+obligations = obligations common extra fields
+service levels = service levels common extra fields
+child service levels = child service levels common extra fields
+actions = actions common extra fields
+issues = issues common extra fields
+disputes = disputes common extra fields
+change requests = change requests common extra fields
+interpretations = interpretations common extra fields
+work order requests = work order requests common extra fields
+contract draft request = contract draft request common extra fields
+purchase orders = purchase order common extra fields
+invoices = invoice common extra fields
+governance body = governance body common extra fields
+application group = application group common extra fields
+definition = definition common extra fields
+clauses = clauses common extra fields
+
+#**********************************************************************************
+
+[supplier common extra fields]
+
+[contract common extra fields]
+
+[obligations common extra fields]
+
+[service levels common extra fields]
+
+[child service levels common extra fields]
+
+[actions common extra fields]
+
+[issues common extra fields]
+
+[disputes common extra fields]
+
+[change requests common extra fields]
+
+[interpretations common extra fields]
+
+[work order requests common extra fields]
+
+[contract draft request common extra fields]
+
+[purchase order common extra fields]
+
+[invoice common extra fields]
+
+[governance body common extra fields]
+
+[application group common extra fields]
+
+[definition common extra fields]
+
+[clauses common extra fields]
+
+#**********************************************************************************
+
+[vendors flow 1]
+alias = {"name":"alias","id":6001,"values":"API&*"}
+address = {"name":"address","id":6002,"values":"Test Address API Automation"}
+functions = {"name":"functions","id":6005,"values":[{"name":"IT","id":1002,"additionalOption":false},{"name":"Human Resources","id":1003,"additionalOption":false}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":6006,"values":[{"name":"End-User Computing","id":1008,"additionalOption":false,"parentId":1003,"parentName":"Human Resources"},{"name":"Applications Development & Maintenance","id":1001,"additionalOption":false,"parentId":1002,"parentName":"IT"}],"multiEntitySupport":false,"options":null}
+
+#**********************************************************************************
+
+[suppliers flow 1]
+name = {"name":"name","id":503,"values":"Entity Edit Suppliers Flow 12"}
+functions = {"name":"functions","id":6005,"values":[{"name":"IT","id":1002,"additionalOption":false},{"name":"Human Resources","id":1003,"additionalOption":false}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":6006,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002,"parentName":"IT","additionalOption":false},{"name":"Service Desk","id":1007,"parentId":1003,"parentName":"Human Resources","additionalOption":false}],"multiEntitySupport":false,"options":null}
+globalRegions = {"name":"globalRegions","id":6007,"values":[{"name":"APAC","id":1002,"additionalOption":false,"parentId":1002},{"name":"EMEA","id":1003,"additionalOption":false,"parentId":1002}],"multiEntitySupport":false,"options":null}
+globalCountries = {"name":"globalCountries","id":6008,"values":[{"name":"Australia","id":15,"additionalOption":false,"parentId":1002},{"name":"Italy","id":118,"additionalOption":false,"parentId":1003}],"multiEntitySupport":false,"options":null}
+
+[suppliers flow 2]
+functions = {"name":"functions","id":508,"values":[]}}
+services = {"name":"services","id":509,"values":[]}
+
+#**********************************************************************************
+
+[contracts flow 1]
+functions = {"name":"functions","id":19,"values":[{"name":"IT","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false}],"options":null}
+services = {"name":"services","id":20,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"overdue":false,"autoTask":false,"parentName":"IT"}],"options":null}
+globalRegions = {"name":"globalRegions","id":21,"values":[{"name":"EMEA","id":1003,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false}],"options":null}
+globalCountries = {"name":"globalCountries","id":22,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false,"parentName":"EMEA"}],"options":null}
+
+[contracts flow 2]
+createdFor = {"name":"createdFor","id":11612,"values":[{"name":"ICP01","id":1003},{"name":"ICP02","id":1004}]}
+
+#**********************************************************************************
+
+[obligations flow 1]
+outputType = {"name":"outputType","id":307,"values":{"name":"Milestone","id":1005}}
+functions = {"name":"functions","id":323,"values":[{"name":"Human Resources","id":1003},{"name":"IT","id":1002}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":324,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002,"parentName":"IT"},{"name":"End-User Computing","id":1008,"parentId":1003,"parentName":"Human Resources"}],"multiEntitySupport":false,"options":null}
+
+#**********************************************************************************
+
+[service levels flow 1]
+threshold = {"name":"threshold","id":216,"options":null,"values":{"name":"Minimum - 2 level","id":7}}
+minimum = {"name":"minimum","id":218,"values":"80"}
+expected = {"name":"expected","id":219,"values":"88"}
+functions = {"name":"functions","id":246,"values":[{"name":"Human Resources","id":1003}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":247,"values":[{"name":"Projects","id":1006,"parentId":1003,"parentName":"Human Resources"}],"multiEntitySupport":false,"options":null}
+globalRegions = {"name":"globalRegions","id":21,"values":[{"name":"EMEA","id":1003,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false}],"options":null}
+globalCountries = {"name":"globalCountries","id":22,"values":[{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false,"parentName":"EMEA"}],"options":null}
+
+
+#**********************************************************************************
+
+[actions flow 1]
+name = {"name":"name","id":403,"values":"Action Name @%%!1466(8123"}
+priority = {"name":"priority","id":114,"values":{"name":"High","id":1}}
+functions = {"name":"functions","id":418,"values":[{"name":"Human Resources","id":1003},{"name":"IT","id":1002}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":419,"values":[{"name":"End-User Computing","id":1008,"parentId":1003,"parentName":"Human Resources"},{"name":"Applications Development & Maintenance","id":1001,"parentId":1002,"parentName":"IT"}],"multiEntitySupport":false,"options":null}
+globalRegions = {"name":"globalRegions","id":420,"values":[{"name":"APAC","id":1002,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false},{"name":"EMEA","id":1003,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}],"multiEntitySupport":false,"options":null}
+globalCountries = {"name":"globalCountries","id":421,"values":[{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false,"management":false},{"name":"Austria","id":16,"parentId":1003,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false,"management":false}],"multiEntitySupport":false,"options":null}
+
+[actions flow 2]
+priority = {"name":"priority","id":114,"values":{"name":"High","id":1}}
+name = {"name":"name","id":403,"values":""}
+
+[actions flow 3]
+name = {"name":"name","id":403,"values":"A"}
+
+[actions flow 4]
+name = {"name":"name","id":403,"values":"Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters12"}
+
+#**********************************************************************************
+
+[issues flow 1]
+priority = {"name":"priority","id":114,"values":{"name":"High","id":1}}
+
+
+#**********************************************************************************
+
+[disputes flow 1]
+name = {"name":"name","id":11182,"values":"test dispute 123455(*!@123"}
+priority = {"name":"priority","id":11189,"values":{"name":"High","id":1}}
+
+
+
+[disputes flow 2]
+name = {"name":"name","id":11182,"values":""}
+priority = {"name":"priority","id":11189,"values":{"name":"High","id":1}}
+
+[disputes flow 3]
+name = {"name":"name","id":11182,"values":"D"}
+
+[disputes flow 4]
+name = {"name":"name","id":11182,"values":"Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters Title field having 512 characters12"}
+
+#**********************************************************************************
+
+[change requests flow 1]
+contractReferences = {"name":"contractReferences","id":803,"values":[{"name":"Integration Services Agreement - Berkshire Hathaway.pdf","id":1026,"metaDataCreated":true,"imageCreated":true,"viewerAvailable":true,"noOfPages":10,"fileId":1026,"extension":"pdf","contractId":1037}]}
+functions = {"name":"functions","id":816,"values":[{"name":"IT","id":1006}],"multiEntitySupport":false}
+services = {"name":"services","id":817,"values":[{"name":"Applications Servers","id":1018,"parentId":1006}],"multiEntitySupport":false}
+
+[change requests flow 2]
+name = {"name":"name","id":801,"values":""}
+
+[change requests flow 3]
+name = {"name":"name","id":801,"values":"    "}
+
+#**********************************************************************************
+
+[interpretations flow 1]
+tier = {"name":"tier","id":754,"values":{"name":"Tier - 3","id":1008}}
+
+
+#**********************************************************************************
+
+[work order requests flow 1]
+briefDescription = {"name":"briefDescription","id":904,"values":"test"}
+functions = {"name":"functions","id":919,"values":[{"name":"IT","id":1006},{"name":"Human Resources","id":1007}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":920,"values":[{"name":"End-User Computing","id":1024,"parentId":1007,"parentName":"Human Resources"},{"name":"Applications Development & Maintenance","id":1017,"parentId":1006,"parentName":"IT"}],"multiEntitySupport":false,"options":null}
+
+#**********************************************************************************
+
+[contract draft request flow 1]
+tcv = {"name":"tcv","id":11024,"values":"200","displayValues":"200.00 USD"}
+functions = {"name":"functions","id":11551,"values":[{"name":"Human Resources","id":1003},{"name":"IT","id":1002}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":11552,"values":[{"name":"End-User Computing","id":1008,"parentId":1003,"parentName":"Human Resources"},{"name":"Applications Development & Maintenance","id":1001,"parentId":1002,"parentName":"IT"}],"multiEntitySupport":false,"options":null}
+#**********************************************************************************
+
+[purchase orders flow 1]
+tier = {"name":"tier","id":11405,"values":{"name":"Tier - 2","id":1007}}
+functions = {"name":"functions","id":11400,"values":[{"name":"Human Resources","id":1003},{"name":"IT","id":1002}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":11401,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002,"parentName":"IT","disAllowDeselection":true},{"name":"End-User Computing","id":1008,"parentId":1003,"parentName":"Human Resources","disAllowDeselection":true}],"multiEntitySupport":false,"options":null}
+#**********************************************************************************
+
+[invoices flow 1]
+taxPercentage = {"name":"taxPercentage","id":11087,"values":10}
+
+#**********************************************************************************
+
+[governance body flow 1]
+weekType = {"name":"weekType","id":4707,"values":{"name":"Six Day","id":2},"options":null}
+
+
+[governance body flow 2]
+weekType = {"name":"weekType","id":4707,"values":{"name":"Six Day","id":2},"options":null}
+#**********************************************************************************
+
+[application group flow 1]
+name = {"name":"name","id":4029,"values":"Test Application Group Entity Edit12"}
+active = {"name":"active","id":4031,"values":false}
+
+#**********************************************************************************
+
+[definition flow 1]
+name = {"name":"name","id":7367,"values":"Test Definition Edit !@$%%6723"}
+functions = {"name":"functions","id":11549,"values":[{"name":"Human Resources","id":1003},{"name":"IT","id":1002}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":11550,"values":[{"name":"Applications Development & Maintenance","id":1001,"parentId":1002,"parentName":"IT"},{"name":"End-User Computing","id":1008,"parentId":1003,"parentName":"Human Resources"}],"multiEntitySupport":false,"options":null}
+
+[definition flow 2]
+functions = {"name":"functions","id":11549,"values":[]}
+
+[definition flow 3]
+name = {"name":"name","id":7367,"values":"E"}
+
+#**********************************************************************************
+
+[clause flow 1]
+name = {"name":"name","id":7367,"values":"Test Clause Edit @!@#4561"}
+category = {"name":"category","id":7368,"values":{"name":"Assignment","id":1171},"options":null}
+
+#**********************************************************************************
+
+[child service levels flow 1]
+slMet = {"name":"slMet","id":1151,"options":null,"values":{"name":"Met Expected","id":3,"active":true,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"saveCommentDocOnValueUpdate":false,"colorCode":"#008100","shortCode":"Met Exp","orgPrefShortCode":"Met Exp","descriptionNeeded":false,"orgPrefDesc":"Met Expected","orderSeq":1,"overdue":false,"autoTask":false}}
+
+
+[invoice line item flow 1]
+name = {"name":"name","id":11047,"values":"For Entity Edit line item flow 1234"}
+
+[consumptions flow 1]
+name = {"name":"name","id":11047,"values":"For Entity Edit consumptions flow 1234"}
+
+
+[service data flow 1]
+name = {"name":"name","id":11047,"values":"For Entity Edit service data flow 1234"}
+functions = {"name":"functions","id":11731,"values":[{"name":"Human Resources","id":1007},{"name":"IT","id":1006}],"multiEntitySupport":false,"options":null}
+services = {"name":"services","id":11732,"values":[{"name":"Mainframe Services","id":1020,"parentId":1006},{"name":"Application Support and Maintenance","id":1072,"parentId":1018}],"multiEntitySupport":false,"options":null}
+
+

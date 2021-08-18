@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+
+        <!--<suite-file path="../Default/CalendarTest.xml"></suite-file>
+        <suite-file path="EntityCreation.xml"></suite-file>
+        <suite-file path="../Default/Insights.xml"></suite-file>
+        <suite-file path="../Default/MassEmail.xml"></suite-file>
+        <suite-file path="../Default/MSATagging.xml"></suite-file>
+        <suite-file path="../Default/Supplier.xml"></suite-file>
+        <suite-file path="../Default/Contract.xml"></suite-file>
+        <suite-file path="../Default/ListDataDownloadValidations.xml"></suite-file>
+       <!-- <suite-file path="../Default/UserAccess.xml"></suite-file>-->
+        <suite-file path="../Default/EntityMisc.xml"></suite-file>
+        <suite-file path="../Default/BE.xml"></suite-file>
+        <suite-file path="../Default/CDR.xml"></suite-file>
+        -->
+        <suite-file path="../Default/Misc.xml"></suite-file>
+        <!--<suite-file path="../Default/BE.xml"></suite-file>
+        <suite-file path="../Default/MoveToTree.xml"></suite-file>
+        <suite-file path="../Default/WeekAndCycleTime.xml"></suite-file>
+        <suite-file path="../Default/EntityMisc.xml"></suite-file>
+        <suite-file path="../Default/APIPOD.xml"></suite-file>
+        <suite-file path="../Default/WorkflowPod.xml"></suite-file>-->
+        <suite-file path="../Default/WeeklyReminder.xml"></suite-file>
+
+
+
+
+
+
+
+    </suite-files>
+
+</suite>

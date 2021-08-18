@@ -1,0 +1,83 @@
+#contractsectionname put the contract Section name against which contract will be created
+#servicedatasectionname put the servicedata section name against which service data will be created
+
+createservicedatanegativetestcasessectionname = test case neg 1,test case neg 2,test case neg 3,test case neg 4,test case neg 5,test case neg 6,test case neg 7
+
+#Pricing Template Details
+pricingtemplatefilepath = src/test/resources/TestConfig/Invoice
+
+#WaitForPricingScheduler: Whether to wait for Scheduler to Consume the Pricing Data or not. Possible Values are True or False. Default Value is True.
+#If set to True then will wait for the Time specified in property 'PricingSchedulerWaitTimeOut'. Otherwise will dump data to file which can be verified later.
+waitforpricingscheduler = true
+
+#for default
+contractsectionname = service data misc
+servicedatasectionnameforfixedfee = service data misc fixed fee
+servicedatasectionnameforarcrrc = service data misc arc rrc
+servicedatasectionnameforforecast = service data misc forecast
+
+#TC-C3438
+[test case neg 1]
+fieldvalidationkey = name
+expectederrormessage = Name cannot be empty
+
+#TC-C3438
+[test case neg 2]
+fieldvalidationkey = startDate
+expectederrormessage = Start date cannot be empty
+
+#TC-C3438
+[test case neg 3]
+fieldvalidationkey = endDate
+expectederrormessage = End date cannot be empty
+
+#TC-C3438
+[test case neg 4]
+fieldvalidationkey = invoicingType
+expectederrormessage = Invoicing Type cannot be empty
+
+#TC-C3438
+[test case neg 5]
+fieldvalidationkey = billingPeriod
+expectederrormessage = Billing Period cannot be empty
+
+
+#TC-C3740
+[test case neg 6]
+fieldvalidationkey = consumptionAvailable
+expectederrormessage = Fixed Fee services cannot have Consumption
+
+#TC-C3753
+[test case neg 7]
+errortype = generic
+expectederrormessage = Forecast details for forecast based invoice type cannot be empty
+
+
+#TC-C3647
+[service data version change scenario]
+uploadpricing = true
+servicedatatype = arc
+
+pricingstemplatefilename = ArcRrcFlow1Pricing.xlsm
+
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+crcolumnnum = 9
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+crvalue = (CR03117) test
+
+numberofcolumntoeditforeachrowforarc = 4
+arcrownumber = 6
+arccolumnnumber = 7,8,9,10
+arcvalue =  100,150,12,ARC
+
+chargestabid = 309
+filterid = 214
+filtername = pricingVersion
+selectid = 4003
+changerequestactionstoperform = submit
+#->approve->finalapproval

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bulk Action Test" thread-count="10">
+<!--    <listeners>-->
+<!--        <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>-->
+<!--    </listeners>-->
+
+    <test name="Bulk Action Feature Test">
+        <classes>
+            <class name="com.sirionlabs.test.bulkAction.TestBulkAction"></class>
+        </classes>
+    </test>
+
+</suite>

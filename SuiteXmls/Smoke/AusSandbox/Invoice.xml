@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Suite">
+
+    <test name="Service Data Validation">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.flow.TestServiceData"></class>
+        </classes>
+    </test>
+
+</suite>

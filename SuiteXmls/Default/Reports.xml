@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Reports Suite">
+
+    <test name="Test Status Transition Report">
+        <classes>
+            <class name="com.sirionlabs.test.reports.TestStatusTransitionReport"></class>
+        </classes>
+    </test>
+    <test name="Test Report Client Setup Admin">
+        <classes>
+            <class name="com.sirionlabs.test.reports.TestReportMetaDataOnClientSetupAdmin"></class>
+        </classes>
+    </test>
+    <test name ="report is downloadable">
+        <classes>
+            <class name="com.sirionlabs.test.reports.TestReportDownload"></class>
+        </classes>
+    </test>
+    
+</suite>

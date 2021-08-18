@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Create Rule Regression" data-provider-thread-count="1" >
+
+    <test name="Invoice Create Rule Test">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.InvoiceCreateRuleTest"></class>
+        </classes>
+    </test>
+
+</suite>

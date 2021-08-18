@@ -1,0 +1,137 @@
+{
+  "Actions": {
+    "0": {
+      "name": "Sl. No.",
+      "type": "incremental",
+      "options": [
+        "1"
+      ]
+    },
+    "1": {
+      "name": "Basic Information - Supplier",
+      "type": "singleselect",
+      "options": [
+        "Adjustment ( SP01102 )"
+      ]
+    },
+    "2": {
+      "name": "Basic Information - Contract",
+      "type": "singleselect",
+      "options": [
+        "msa created contract ( CO01459 )"
+      ]
+    },
+    "3": {
+      "name": "Basic Information - Name",
+      "type": "uniquename",
+      "options": [
+        "API_Testing"
+      ]
+    },
+    "5": {
+      "name": "Basic Information - Service Id (Client)",
+      "type": "uniquename",
+      "options": [
+        "API_Client_3"
+      ]
+    },
+    "6": {
+      "name": "Basic Information - Service Id (Supplier)",
+      "type": "uniquename",
+      "options": [
+        "API_Supplier_4"
+      ]
+    },
+    "7": {
+      "name": "Basic Information - Service Category",
+      "type": "singleselect_catagory",
+      "options": [
+        "Travel & Expenses"
+      ]
+    },
+    "8": {
+      "name": "Basic Information - Service Sub Category",
+      "type": "singleselect_subcatagory",
+      "options": [
+        {
+          "Travel & Expenses": [
+            "Mainframe"
+          ]
+        }
+      ]
+    },
+    "10": {
+      "name": "Basic Information - Currency",
+      "type": "singleselect",
+      "options": [
+        "Indian Rupee (INR)",
+        "United States Dollar (USD)"
+      ]
+    },
+    "13": {
+      "name": "Basic Information - Is Billable",
+      "type": "singleselect",
+      "options": [
+        "Yes"
+      ]
+    },
+    "14": {
+      "name": "Basic Information - Is Measurable",
+      "type": "singleselect",
+      "options": [
+        "Yes"
+      ]
+    },
+    "16": {
+      "name": "Basic Information - Pricing Available",
+      "type": "singleselect",
+      "options": [
+        "Yes"
+      ]
+    },
+    "18": {
+      "name": "Basic Information - Invoicing Type",
+      "type": "singleselect",
+      "options": [
+        "ARC/RRC"
+      ]
+    },
+    "37": {
+      "name": "IMPORTANT DATES - Service Start Date",
+      "type": "singleselect",
+      "options": [
+        "01-01-2018 00:00:00"
+      ]
+    },
+    "38": {
+      "name": "IMPORTANT DATES - Billing Period",
+      "type": "singleselect",
+      "options": [
+        "Monthly"
+      ]
+    },
+    "39": {
+      "name": "IMPORTANT DATES - Service End Date",
+      "type": "singleselect",
+      "options": [
+        "01-31-2018 00:00:00"
+      ]
+    },
+    "42": {
+      "name": "Process",
+      "type": "singleselect",
+      "options": [
+        "Yes"
+      ]
+    },
+    "templateInfo": {
+      "dataSheetName": "Data",
+      "startRow": 5,
+      "lastDataRow": -2,
+      "startCol": 0,
+      "lastDataCol": -1,
+      "dateFormate": "MM-dd-yyyy",
+      "numberOfRowsToBeCreated": 1
+    }
+  }
+}

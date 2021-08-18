@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Auto Extraction">
+
+    <test name="AutoExtraction APIs Test">
+        <classes>
+
+             <class name="com.sirionlabs.test.autoExtraction.documentUploadFeature"></class>
+             <class name="com.sirionlabs.test.autoExtraction.ProjectUpdate"></class>
+             <class name="com.sirionlabs.test.autoExtraction.InProgressDocWithStages"></class>
+             <class name="com.sirionlabs.test.autoExtraction.ClauseDevaitionAE849"></class>
+             <class name="com.sirionlabs.test.autoExtraction.ValidateCountOnListing"></class>
+             <class name="com.sirionlabs.test.autoExtraction.AutoExtractionInsights"></class>
+             <class name="com.sirionlabs.test.autoExtraction.ResetPermission"></class>
+             <class name="com.sirionlabs.test.autoExtraction.ProjectCreateAndEditPermission"></class>
+             <class name="com.sirionlabs.test.autoExtraction.ServiceLevelExtraction"></class>
+             <class name="com.sirionlabs.test.autoExtraction.TableExtraction"></class>
+             <class name="com.sirionlabs.test.autoExtraction.DefineFieldsToBeExtracted"></class>
+             <class name="com.sirionlabs.test.api.AutoExtraction.GlobalUpload.GlobalUploadAPI"></class>
+             <class name="com.sirionlabs.test.autoExtraction.DownloadDocViewerDocument"></class>
+             <class name="com.sirionlabs.test.autoExtraction.TestAutoExtractionAPIs"></class>
+             <class name="com.sirionlabs.test.autoExtraction.TestAutoExtractionAlgorithms"></class>
+             <class name="com.sirionlabs.test.api.AutoExtraction.ContractDocumentGetEntities.ContractDocumentGetEntitiesAPITest"></class>
+             <class name="com.sirionlabs.test.autoExtraction.testWorkBench"></class>
+             <class name="com.sirionlabs.test.autoExtraction.autoExtractionSearch"></class>
+             <class name="com.sirionlabs.test.autoExtraction.Assignment"></class>
+             <class name="com.sirionlabs.test.autoExtraction.BulkEditAutoExtraction"></class>
+             <class name="com.sirionlabs.test.autoExtraction.BatchCreation"></class>
+             <class name="com.sirionlabs.test.autoExtraction.References"></class>
+             <class name="com.sirionlabs.test.autoExtraction.TestDuplicateFeature"></class>
+             <class name="com.sirionlabs.test.autoExtraction.testAutoExtractionTrackerReport"></class>
+             <class name="com.sirionlabs.test.autoExtraction.ProjectLevelTrigger"></class>
+             <class name="com.sirionlabs.test.autoExtraction.AutoExtractionTestReportListFilters"></class>
+             <class name="com.sirionlabs.test.autoExtraction.AETestFilters"></class>
+             <class name="com.sirionlabs.test.autoExtraction.QCLevelAllocation"></class>
+             <class name="com.sirionlabs.test.autoExtraction.TestCommunication"></class>
+             <class name="com.sirionlabs.test.autoExtraction.AETestWorkflow"></class>
+             <class name="com.sirionlabs.test.autoExtraction.TestAEDashboard"></class>
+            <class name="com.sirionlabs.test.autoExtraction.AETestAdvanceFilter"></class>
+
+
+        </classes>
+    </test>
+
+</suite>

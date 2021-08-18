@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Listing Chart Data and Save API" parallel="tests" thread-count="1">
+
+    <test name="Listing Chart Axis">
+        <classes>
+
+            <class name="com.sirionlabs.test.listing.TestListingChartAxis"></class>
+        </classes>
+    </test>
+
+   <test name="Save chart">
+        <classes>
+
+            <class name="com.sirionlabs.test.listing.TestListingChartSave"></class>
+        </classes>
+    </test>
+
+</suite>

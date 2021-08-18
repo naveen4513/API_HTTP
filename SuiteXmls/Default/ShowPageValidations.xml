@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bread Crum and show page workflow buttons validations" thread-count="1">
+
+
+    <test name="Workflow Button Validation">
+        <classes>
+            <class name="com.sirionlabs.test.workflowbuttons.TestWorkflowValidations"></class>
+        </classes>
+    </test>
+
+
+</suite>

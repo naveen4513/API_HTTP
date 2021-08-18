@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Auth Non-Parallel Tests Suite" thread-count="1" data-provider-thread-count="1">
+    <parameter name="MultiLingual" value="false"/>
+    <parameter name="TestForAllColumns" value="false"/>
+
+   <test name="TestForcePasswordReset">
+        <classes>
+            <class name="com.sirionlabs.test.enduseremail.TestForcePasswordReset"></class>
+        </classes>
+    </test>
+
+    <test name="TestGetPasswordForm">
+        <classes>
+            <class name="com.sirionlabs.test.TestPasswordFlow.TestGetPasswordForm"></class>
+        </classes>
+    </test>
+    <test name="TestGetPassowrdApi">
+        <classes>
+            <class name="com.sirionlabs.test.TestPasswordFlow.TestGetPassowrdApi"></class>
+        </classes>
+    </test>
+
+          <test name="Test GB audit log">
+             <classes>
+                 <class name="com.sirionlabs.test.governanceBody.TestGBAuditLog"></class>
+             </classes>
+         </test>
+
+         <test name="Test audit log Column Sorting">
+             <classes>
+                 <class name="com.sirionlabs.test.governanceBody.TestAuditLogListingColumnSorting"></class>
+             </classes>
+         </test>
+
+         <test name="SIR-1460">
+             <classes>
+                 <class name="com.sirionlabs.test.api.QRCodeGeneration.TestQRCodeGenerationAPI"></class>
+             </classes>
+         </test>
+
+         <test name="SIR-1312">
+             <classes>
+                 <class name="com.sirionlabs.test.api.ValidateAccessTokenAPI.TestValidateAccessTokenAPI"></class>
+             </classes>
+         </test>
+
+         <test name="TFA Validation">
+             <classes>
+                 <class name="com.sirionlabs.test.common.TestTwoFactorAuthentication"></class>
+             </classes>
+         </test>
+
+         <test name="Common Filter Column">
+             <classes>
+                 <class name="com.sirionlabs.test.CommonColumnFilterAndListing.TestFilterColumnListing"></class>
+             </classes>
+         </test>
+        <test name="Test activation Email for all Type Users">
+         <classes>
+             <class name="com.sirionlabs.test.enduseremail.TestActivationEmail"></class>
+         </classes>
+     </test>
+
+         <test name="GB MISC">
+             <classes>
+                 <class name="com.sirionlabs.test.governanceBody.TestGBMISC"></class>
+             </classes>
+         </test>
+
+         <test name="Test Schedular Task">
+             <classes>
+                 <class name="com.sirionlabs.test.governanceBody.TestGBSchedularTask"></class>
+             </classes>
+         </test>
+
+    <test name="TestDisputeTab">
+        <classes>
+            <class name="com.sirionlabs.test.dispute.TestDisputeTab"></class>
+        </classes>
+    </test>
+
+        <test name="Adhoc Meeting API">
+            <classes>
+                <class name="com.sirionlabs.test.api.CheckEligibleForAdhocMeetingAPI.TestCheckEligibleForAdhocMeetingAPI"></class>
+            </classes>
+        </test>
+
+    <!--    <test name="outlook plugin ">-->
+    <!--        <classes>-->
+    <!--            <class name="com.sirionlabs.test.Plugin.TestPluginInfoAPI"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+
+
+</suite>

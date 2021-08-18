@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Performance suite">
+    <parameter name="TestingType" value="performance"/>
+    <parameter name="Environment" value="performance"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/PerfUpdateUserAdmin.xml"></suite-file>
+
+    </suite-files>
+</suite>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Workflow Pod Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="multi_supplier_off"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <suite-file path="../../APITest/WorkflowButtons.xml"></suite-file>
+        <suite-file path="../../APITest/WorkflowLayout.xml"></suite-file>
+        <suite-file path="../../APITest/WOR-340.xml"></suite-file>
+
+    </suite-files>
+
+    <test name="Insight on Listing Page WOR-226">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestInsightOnListingPageWOR226"></class>
+        </classes>
+    </test>
+
+    <test name="Vendor Delete WOR-336">
+        <classes>
+            <class name="com.sirionlabs.test.workflowPod.TestVendorDeleteWOR336"></class>
+        </classes>
+    </test>
+
+</suite>

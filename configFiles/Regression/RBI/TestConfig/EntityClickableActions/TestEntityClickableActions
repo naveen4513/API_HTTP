@@ -1,0 +1,64 @@
+#Section is Entity Name
+#Key is accessRestriction area
+#Value is permission (true) allowed or (false) restricted
+
+
+entitysectionsplitter = ,
+testforallentities = false
+entitytotest =  actions,suppliers,obligations,child obligations,contracts,contract draft request,contract templates
+allentitytotest = vendors,suppliers,obligations,child obligations,service levels,child service levels,interpretations,issues,actions,disputes,contracts,change requests,invoices,work order requests,governance body,governance body meetings,contract draft request,purchase orders
+
+
+[request_payload]
+offset = 0
+size = 10
+
+
+[actions]
+entityid = 4830
+#archive = true
+архив = true
+#onhold = true
+наудерживании = true
+
+[suppliers]
+entityid = 1358
+#archive = true
+архив = true
+#onhold = false
+наудерживании = false
+
+[obligations]
+entityid = 2365
+#archive = true
+архив = true
+#onhold = true
+наудерживании = true
+
+[child obligations]
+entityid = 9209
+#archive = true
+архив = true
+#onhold = false
+наудерживании = false
+
+[contracts]
+entityid = 129969
+#archive = true
+архив = true
+#onhold = true
+наудерживании = true
+
+[contract draft request]
+entityid = 1487
+#archive = true
+архив = true
+#onhold = true
+наудерживании = true
+
+[contract templates]
+entityid = 1604
+#archive = true
+архив = true
+#onhold = true
+наудерживании = true

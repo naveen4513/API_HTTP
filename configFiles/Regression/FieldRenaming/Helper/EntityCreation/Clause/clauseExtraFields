@@ -1,0 +1,41 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[default]
+category = {"name": "category","id":7368,"values":{"name": "Acceptance","id": 1080}}
+group = {"name":"group","id":11837,"values":{"name":"Clause","id":1}}
+
+[presignature flow]
+category = {"name": "category","id":7368,"values":{"name": "Acceptance","id": 1080}}
+group = {"name":"group","id":11837,"values":{"name":"Clause","id":1}}
+
+[performance_flow1]
+category = {"name": "category","id":7368,"values":{"name": "Acceptance","id": 1080}}
+group = {"name":"group","id":11837,"values":{"name":"Clause","id":1}}
+
+[presignature complete flow]
+group = {"name":"group","id":11837,"values":{"name":"Clause","id":1}}
+category = {"name": "category","id":7368,"values":{"name": "Acceptation","id": 1080}}
+agreementTypes = {"name": "agreementTypes","id": 7375,"values": [{"name": "NDA Mutual","id": 1007}]}
+#clauseText = {"name": "clauseText","id": 7386,"values": {"text": "Clause creation for automation analysis.","htmlText": "<style>.table-bordered, .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{\t border: 1px solid \\#ddd;      border-collapse: collapse;}.table {   width: 100%;    max-width: 100%;    margin-bottom: 20px;}</style><p>Clause creation for <span class=\"\"><span class=\"tagInsert\">automation analysis</span></span>.</p>"}}
+clauseText = {"name": "clauseText","id": 7386,"values": {"text": "text for clause tag","htmlText": "<style>.table-bordered, .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{\t border: 1px solid \\#ddd;      border-collapse: collapse;}.table {   width: 100%;    max-width: 100%;    margin-bottom: 20px;}</style><p>text for <span class=\"\" contenteditable=\"true\"><span class=\"tag_3249 tag\" contenteditable=\"false\" htmltagtype=\"1\"><span style=\"display:none\">${3249:</span>clause tag<span style=\"display:none\">}</span></span></span></p>"}}
+clauseTags = {"name": "clauseTags","id": 7382,"values": [{"id": 3249,"name": "${3249:clause tag}","tagHTMLType": {"id": "1","name": "Text Field"}}]}
+stakeHolders = {"name": "stakeHolders","values": {"rg_2067": {"values": [{"name": "Vijay User1","id": 1195,"type": 2,"email": "vijay_user1_mcd@sirionqa.office"  }],"name": "rg_2067","label": "Clause Manager","userType": [  2,  1,  3,  4]  },  "rg_2326": {"values": [],"name": "rg_2326","label": "Definition Manager","userType": [  2]  },  "rg_2325": {"values": [],"name": "rg_2325","label": "Clause Managers","userType": [  2]  },  "rg_2235": {"values": [  {"name": "Vijay User1","id": 1195,"idType": 2  }],"name": "rg_2235","label": "Lawer","userType": [  2,  1,  3,  4]  }}  }
+subClauses = {"name": "subClauses","values": [{"clauseReference": {"id": 4326,"name": "asdf"},"order": 1}]}

@@ -1,0 +1,98 @@
+[envinfo]
+domain = http://qavf.rc.office
+jwtsecretkey = s3crtF9Z8K19ftE0Ces
+jwtissuer = sirion
+jwtexpirytime = 15
+
+[flow1]
+testcasetype = positive
+statuscode = 200
+authorization = yes
+nodeid = 50
+action = update
+entitytypeid = 61
+clientid = 1007
+generaltaskid = 83
+generalautotaskids = 96
+
+[flow2]
+testcasetype = positive
+statuscode = 200
+authorization = yes
+nodeid = 51
+action = update
+entitytypeid = 61
+clientid = 1007
+generaltaskid = 91
+generalautotaskids = 97
+
+[flow3]
+testcasetype = positive
+statuscode = 200
+authorization = yes
+nodeid = 52
+action = update
+entitytypeid = 61
+clientid = 1007
+generaltaskid = 83
+generalautotaskids = 91,85,98
+
+[flow4]
+testcasetype = positive
+statuscode = 200
+authorization = yes
+nodeid = 53
+action = update
+entitytypeid = 61
+clientid = 1007
+generaltaskid = 83
+generalautotaskids = null
+
+[authflow1]
+testcasetype = negative
+statuscode = 401
+authorization = yes
+nodeid = 52
+action = update
+entitytypeid = 61
+clientid = 1007
+errormessage = unauthorized
+
+[authflow2]
+testcasetype = negative
+statuscode = 401
+authorization = no
+nodeid = 52
+action = update
+entitytypeid = 61
+clientid = 1007
+errormessage = unauthorized
+
+[negativeflow]
+testcasetype = negative
+statuscode = 200
+authorization = yes
+errormessage = applicationerror
+
+[negativeflow1]
+testcasetype = negative
+statuscode = 200
+authorization = yes
+isremovekey = true
+nodeid = 50
+entitytypeid = 1
+clientid = 1007
+action = update
+errormessage = ["node ids cannot be null"]
+statusfromresponse = false
+
+[negativeflow2]
+testcasetype = negative
+statuscode = 200
+authorization = yes
+isremovekey = false
+nodeid = 10001
+entitytypeid = 61
+clientid = 1007
+action = update
+statusfromresponse = true

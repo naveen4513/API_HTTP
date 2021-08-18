@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+    <!--    <parameter name="Environment" value="SLPodEnv"/>-->
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        // Need to ask from Gaurav
+        <!--        <test name="Flow Down of Values">-->
+        <!--            <classes>-->
+        <!--                <class name="com.sirionlabs.test.SL_Stories.test_FlowDownCustomFields"></class>-->
+        <!--            </classes>-->
+        <!--        </test>-->
+
+        <test name ="TODO CSL">
+            <classes>
+                <class name ="com.sirionlabs.test.serviceLevel.TestTODOCSL"></class>
+            </classes>
+        </test>
+
+        <test name ="Calendar CSL">
+            <classes>
+                <class name ="com.sirionlabs.test.serviceLevel.TestCalendarCSL"></class>
+            </classes>
+        </test>
+
+        <test name ="Custom Calendar SL">
+            <classes>
+                <class name ="com.sirionlabs.test.serviceLevel.TestCustomCalendarSL"></class>
+            </classes>
+        </test>
+
+        <test name ="SL Preferred View">
+            <classes>
+                <class name ="com.sirionlabs.test.serviceLevel.TestSLPreferredView"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

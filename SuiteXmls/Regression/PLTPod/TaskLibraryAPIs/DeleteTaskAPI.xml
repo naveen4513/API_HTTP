@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name=" TAsk Library DeleteAPI Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_qavfrc"/>
+
+    <test name="Delete Task APIs">
+        <classes>
+            <class name="com.sirionlabs.test.microservice.TaskLibraryAPI.TestDeleteTaskAPI"></class>
+        </classes>
+    </test>
+
+</suite>

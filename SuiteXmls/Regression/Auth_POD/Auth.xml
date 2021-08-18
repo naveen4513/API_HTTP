@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="OAuth Service Testing">
+    <test name="OAuth Service Testing">
+        <classes>
+            <class name="com.sirionlabs.test.api.OAuth.OAuth"></class>
+        </classes>
+    </test>
+
+
+</suite>

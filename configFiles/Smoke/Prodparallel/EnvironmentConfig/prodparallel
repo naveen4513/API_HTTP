@@ -1,0 +1,33 @@
+[default]
+Host = qa.pp.office
+Port = 80
+Scheme = http
+j_username = auto_user
+password = admin123
+
+clientUsername = auto_admin
+clientUserPassword = admin123
+
+#NoOfThreads: No of Threads to use in Multi-Threading. Default Value is 1.
+noOfThreads = 5
+
+#AddLatency: Whether to add Latency or not before API Calls. Possible Values are True or False. Default Value is false.
+addLatency = false
+#latencyTime: Latency Time (in milliseconds) to add if AddLatency is set to True.
+latencyTime = 1000
+
+UseCookies = no
+X-CSRF-TOKEN = 9350433c-95de-4b01-aa1b-85d93c16de2a
+useCSRFToken = yes
+Cookie = JSESSIONID=427B2C2D06B2FE401CF2FD13706824EE; Authorization="2064:e2b1e80e3911fab5dd9c383b65ae8730b9133ff8c293fa81d3897e3e199ccf02"
+isProxyEnabled = no
+proxyServerHost = 127.0.0.1
+proxyServerPort = 8888
+dbName = postgres
+dbHostAddress = 192.168.2.110
+dbPortName = 5432
+dbUserName = rls_user
+dbPassword = rls_user
+docusignHost = 192.168.2.91
+docusignPort = 8082
+docusignScheme = http

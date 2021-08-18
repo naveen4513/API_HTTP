@@ -1,0 +1,37 @@
+offset = 0
+size = 25
+orderbycolumnname = id
+orderdirection = desc nulls last
+
+#Boolean flag to determine whether to test all the entities. Default value is true.
+isallentitiestobetested = true
+
+#If the above flag is false. Then specify the entity ids to test.
+#If isallentitiestobetested is true then this variable will be ignored
+entitiestotest = contracts
+
+#Boolean flag to validate all insights for any entity. Default value is false. If its true then all the insights mentioned under entity section will be validated.
+validateallinsights = false
+
+#If above filter is false, then provide the insight names which needs to be validated. insight name should be present under corresponding entity section. Give comma(,) separated insight names.
+#if validateallinsights is true then this variable will be ignored
+#Insight names are case sensitive. Should be the exact name as fetched in insight entity-list api response.
+
+insightstotest = EXPIRING CONTRACTS in next 180 days, OPEN ISSUES > 30 DAYS, Fixed Term Contracts, INVOICE AMOUNT LAST 12 MONTHS
+
+
+[contracts]
+entity_type_id = 61
+entity_url_id = 2
+#insight details. format : insight_name -> filter_name. Separated by comma.
+insight_names = EXPIRING CONTRACTS in next 180 days -> expirationDate
+
+[issues]
+entity_type_id = 17
+entity_url_id = 8
+insight_names = OPEN ISSUES > 30 DAYS -> aging
+
+[invoices]
+entity_type_id = 67
+entity_url_id = 10
+insight_names = INVOICE AMOUNT LAST 12 MONTHS -> paymentDueDate

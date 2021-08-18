@@ -1,0 +1,80 @@
+#This file contains all the Flows for TestInvoiceFlow Suite.
+
+#ContractSectionName: This is used only when Create Contract Flag is set to True.
+#Specify the Contract Column Name here which should be used to Create Contract from the Contract Configuration File. Default value is 'default'
+
+#As above property is used for Contract. Similarly above property is used for other Entities as well like (Service Data, Invoice, Invoice Line Item)
+
+#UploadPricing: Whether to upload Pricing or not. Possible values are True or False. Default value is True.
+#If set to True then will upload Pricing and proceed further. Otherwise will skip Pricing Upload and directly create Invoice & Line Item.
+#This flag is set to False for negative cases only.
+
+#PricingTemplateFileName: Name of the Pricing Template File. The pricing sheet will be downloaded with this name and then will be uploaded.
+#PricingTemplateSheetName: Name of the Pricing Template Sheet which is to be updated.
+#NumberOfRowsToEdit: No. of rows to edit in Pricing Sheet
+#StartingRowNum: Starting Row No. from where to start editing pricing data.
+#VolumeColumnNum: Column No. where volume is defined.
+#RateColumnNum: Column No. where rate is defined.
+#VolumeColumnValues: All the values of the volumes to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+#RateColumnValues: All the values of the rates to be mentioned in Pricing Sheet. Multiple values must be separated by delimiter , (comma).
+
+#ExpectedResult: The final Invoice Line Item Validation Status is to be mentioned here.
+
+[fixed fee flow 1]
+contractsectionname = fixed fee flow 1
+servicedatasectionname = fixed fee flow 1
+invoicesectionname = fixed fee flow 1
+invoicelineitemsectionname = fixed fee flow 1
+
+uploadpricing = true
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 10
+ratecolumnvalues = 10
+
+expectedresult = No Discrepancy
+
+
+[fixed fee flow 2]
+contractsectionname = fixed fee flow 1
+servicedatasectionname = fixed fee flow 1
+invoicesectionname = fixed fee flow 1
+invoicelineitemsectionname = fixed fee flow 1
+
+uploadpricing = true
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+expectedresult = Volume Discrepancy
+
+
+[fixed fee flow 3]
+contractsectionname = fixed fee flow 1
+servicedatasectionname = fixed fee flow 1
+invoicesectionname = fixed fee flow 1
+invoicelineitemsectionname = fixed fee flow 1
+
+uploadpricing = false
+
+pricingstemplatefilename = FixedFeeFlow1Pricing.xlsm
+pricingstemplatesheetname = Pricing
+numberofrowstoedit = 1
+startingrownum = 6
+volumecolumnnum = 7
+ratecolumnnum = 8
+volumecolumnvalues = 15
+ratecolumnvalues = 10
+
+expectedresult = Pricing Unavailable

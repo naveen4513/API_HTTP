@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="List Renderer" thread-count="1">
+
+    <!--<test name="Test List Data">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sirionlabs.test.listRenderer.TestListRendererListData"></class>
+        </classes>
+    </test>-->
+
+
+    <test name="Download List Data">
+        <classes>
+            <class name="com.sirionlabs.test.listRenderer.TestDownloadListData"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Test Column Sorting">-->
+        <!--<classes>-->
+            <!--<class name="com.sirionlabs.test.listRenderer.TestEntityListingColumnSorting"></class>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+   <!-- <test name="List Data">
+        <classes>
+            <class name="com.sirionlabs.test.listing.TestListData"></class>
+        </classes>
+    </test>-->
+
+</suite>

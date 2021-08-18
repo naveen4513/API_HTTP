@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="User Entity Access" thread-count="1" data-provider-thread-count="25">
+
+    <test name="User Entity Access Supplier Type Users">
+        <classes>
+            <class name="com.sirionlabs.test.userAccess.TestUserEntityAccess"></class>
+        </classes>
+    </test>
+
+</suite>

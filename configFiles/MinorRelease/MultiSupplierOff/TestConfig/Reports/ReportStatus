@@ -1,0 +1,25 @@
+[reportmetadata]
+reportName = Contract Draft Request- Status Transition Report
+entityName = contract draft request
+reportId = 446
+clientId = 1007
+workFlowStatus = Active
+workFlowStatusId = 1656
+languageId = 1
+groupId = 850
+
+
+[filterdatadownload]
+filterName = status
+filterId = 6
+fieldName = Newly Created
+entityName = contract draft request
+reportName = Contract Draft Request- Status Transition Report
+reportId = 446
+selected = [{\"id\":\"4320\",\"name\":\"Newly Created\"}]
+excelFieldName = CURRENT STATUS
+
+
+
+[testcgbtrackerreportsir219945]
+payload = {"filterMap":{"entityTypeId":87,"offset":0,"size":20,"orderByColumnName":"status","orderDirection":"desc nulls last","filterJson":{"1":{"multiselectValues":{"SELECTEDDATA":[{"id":"1171","name":"ABC News"}]},"filterId":1,"filterName":"supplier","entityFieldHtmlType":null,"entityFieldId":null}}}}

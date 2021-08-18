@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Login APIs " data-provider-thread-count="1">
+
+    <test name="Test Login Apis">
+        <classes>
+            <class name="com.sirionlabs.test.login.TestLoginAPIs"></class>
+        </classes>
+    </test>
+
+</suite>

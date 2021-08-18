@@ -1,0 +1,82 @@
+#All key and section name must be in lower case
+
+#Integration Environment file name
+integrationenvfilename = supplierWisdomIntegrationService
+
+#Test Data. supplierId is the supplier wisdom id. same should be updated in supplierExtraFields.cfg
+clientid = 1005
+supplierid = 2
+entityid = 1244
+entitytypeid = 1
+
+#Waiting time for scheduler to update the supplier wisdom fields. time in seconds
+schedulerwaitingtime = 300
+
+#Boolean flag to run all the api specific test cases
+runallapispecifictestcases = true
+
+#Selected test cases(comma separated) to execute for publish api. Below parameter will be ignored if runallapispecifictestcases = true
+selectedapispecifictestcases =
+
+#Boolean flag to create to test on new supplier or existing supplier
+createnewentity = true
+
+#Boolean flag to delete newly created entity
+deletenewlycreatedentity = false
+
+#Comma separated supplier section(status) to validate on show page. Possible values = newlycreated,active,inactive,archive
+supplierstatustovalidate = newlycreated
+
+[api specific test cases]
+integrationservicewithcorrectparams = {"processData":{"clientId":"1005","action":"SupplyWisdom"},"rawData":{"supplierId":591,"entityId":1244,"entityTypeId":1}}
+integrationservicewithemptypayload = ""
+integrationservicewithincorrectclientid = {"processData":{"clientId":"1432","action":"SupplyWisdom"},"rawData":{"supplierId":591,"entityId":1244,"entityTypeId":1}}
+integrationservicewithoutclientid = {"processData":{"action":"SupplyWisdom"},"rawData":{"supplierId":591,"entityId":1244,"entityTypeId":1}}
+integrationservicewithemptyclientid = {"processData":{"clientId":"","action":"SupplyWisdom"},"rawData":{"supplierId":591,"entityId":1244,"entityTypeId":1}}
+integrationservicewithoutentitytypeid = {"processData":{"clientId":"1005","action":"SupplyWisdom"},"rawData":{"supplierId":591,"entityId":1244}}
+integrationservicewithincorrectentitytypeid = {"processData":{"clientId":"1005","action":"SupplyWisdom"},"rawData":{"supplierId":591,"entityId":1244,"entityTypeId":123}}
+integrationservicewithincorrectentityid = {"processData":{"clientId":"1005","action":"SupplyWisdom"},"rawData":{"supplierId":591,"entityId":11111,"entityTypeId":1}}
+integrationservicewithnorawdata = {"processData":{"clientId":"1005","action":"SupplyWisdom"}}
+integrationservicewithnoprocessdata = {"rawData":{"supplierId":591,"entityId":1244,"entityTypeId":1}}
+integrationservicewithincorrectsupplierid = {"processData":{"clientId":"1005","action":"SupplyWisdom"},"rawData":{"supplierId":59111,"entityId":1244,"entityTypeId":1}}
+integrationservicewithoutsupplierid = {"processData":{"clientId":"1005","action":"SupplyWisdom"},"rawData":{"entityId":1244,"entityTypeId":1}}
+
+#**********************************************
+
+#section for flow test. This will come into picture when createnewentity property value is false.
+[newlycreated]
+dbid = 1318
+supplierwisdomid = 2
+
+[active]
+dbid = 1315
+supplierwisdomid = 2
+
+[inactive]
+dbid = 1314
+supplierwisdomid = 2
+fieldvalues = 3.85,3.99
+#field values should not be empty/null
+
+[archive]
+dbid = 1309
+supplierwisdomid = 2
+fieldvalues = 3.85,3.99
+#field values should not be empty/null
+
+#**********************************************
+#totalRiskScore = last quarter(eg. Q2), lastquarter = last to last quarter(eg. Q1)
+[supplier wisdom fields]
+#supplywisdomid = dyn101460
+totalriskscore = dyn101461
+lastquarter = dyn101462
+
+
+#****************************section to perform workflow action
+[suppliers]
+validactions = activate,archive,inactivate
+validworkflowaction = activate
+validnonworkflowaction = archive
+archive = independent
+activate = independent
+inactivate = activate

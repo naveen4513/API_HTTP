@@ -1,0 +1,43 @@
+[envinfo]
+domain = http://192.168.2.231:8080/
+clientid = 1020
+jwtsecretkey = secret
+jwtissuer = sirion
+jwtexpirytime = 15
+
+[flow1]
+testcasetype = positve
+clientid = 1020
+statuscode = 200
+status = true
+authorization = yes
+
+[negativeflow1]
+testdesc = invalidclient
+clientid = 999999
+statuscode = 400
+status = false
+authorization = yes
+errormessage = no request found for this clientid
+
+[negativeflow2]
+testdesc = stringclient
+clientid = randomstring
+statuscode = 400
+status = false
+authorization = yes
+errormessage = ["invalid request. could not convert request parameters."]
+
+[authflow1]
+clientid = 1020
+statuscode = 401
+status = false
+authorization = no
+errormessage = ["invalid request. missing header parameter."]
+
+[authflow2]
+clientid = 1020
+statuscode = 401
+status = false
+authorization = invalid
+errormessage = ["authentication token not valid."]

@@ -1,0 +1,50 @@
+#All keys must be in lower case only.
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+testallflowssanity = false
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = vol pricing flow amount discrepancy
+flowstovalidatesanity = fixed fee flow 1,arc flow 1,forecast flow 1
+#fixed fee flow 6
+
+
+#Invoice Flows Config File Details
+flowsconfigfilepath = src/test/resources/TestConfig/Invoice
+flowsconfigfilename = InvoiceFlows.cfg
+
+#WaitForPricingScheduler: Whether to wait for Scheduler to Consume the Pricing Data or not. Possible Values are True or False. Default Value is True.
+#If set to True then will wait for the Time specified in property 'PricingSchedulerWaitTimeOut'. Otherwise will dump data to file which can be verified later.
+waitforpricingscheduler = true
+
+#KillAllSchedulerTasks: Whether to kill all the Scheduler Tasks before Uploading Pricing Sheet or not. Possible Values are True or False. Default Value is False.
+killallschedulertasks = true
+
+#PricingSchedulerPollingTime: The time interval between requests to Check if Pricing Scheduler Job is finished (in milliseconds). Default Value is 5000;
+pricingschedulerpollingtime = 5000
+
+#PricingSchedulerWaitTimeOut: The timeout for the Pricing Scheduler (in milliseconds). This property is used only when WaitForPricingScheduler is set to True.
+#Default Value is 1200000 milliseconds.
+pricingschedulerwaittimeout = 600000
+
+#Pricing Template Details
+pricingtemplatefilepath = src/test/resources/TestConfig/Invoice
+
+#FailTestIfJobNotCompletedWithinSchedulerTimeOut: Whether to fail test If Job not Completed within Scheduler Time Out or not.
+#Possible Values are True or False. Default Value is True.
+failtestifjobnotcompletedwithinschedulertimeout = false
+
+#LineItemValidationTimeOut: The timeout for the Invoice Line Item Validation (in milliseconds).
+#Default Value is 1200000 milliseconds
+lineitemvalidationtimeout = 600000
+
+#FailTestIfLineItemValidationNotCompletedWithinTimeOut: Whether to fail test if Invoice Line Item Validation not Completed within TimeOut or not.
+#Possible Values are True or False. Default Value is True.
+failtestiflineitemvalidationnotcompletedwithintimeout = false
+
+#Test SubServiceData Tab for the following flows
+flowsforsubservicedatatabvalidation = arc flow 1,forecast flow 1

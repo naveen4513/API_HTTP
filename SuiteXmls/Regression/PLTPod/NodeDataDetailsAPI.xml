@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Node data Details API Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="rc_vf"/>
+
+    <test name="Fetch Node Data Details API">
+        <classes>
+            <class name="com.sirionlabs.test.microservice.workflowTwo.TestNodeDataDetailsAPI"></class>
+        </classes>
+    </test>
+</suite>

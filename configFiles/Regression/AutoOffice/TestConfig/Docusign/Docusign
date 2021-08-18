@@ -1,0 +1,4 @@
+[ta-1018]
+test = :Verify that whether AdminRedirectUrl API is working or not
+clientids = 1002,1006
+parser = ,

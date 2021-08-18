@@ -1,0 +1,69 @@
+[ts-80704]
+test = :Verify that Failed Entity Report is working
+tablename = system_emails
+parser = ,
+columnname = subject,date_created,to_mail
+comparator = like,greaterthan,equal
+columnvalue = %Failed Email Report%,2018-01-01,admin@sirionqa.office
+filterrecordsorderbyquery = order by id desc limit 1
+daywindow = -150
+
+
+
+[ts-80703]
+test = Verify that User Activity Report is working
+tablename = system_emails
+parser = ,
+columnname = subject,date_created,to_mail
+comparator = like,greaterthan,equal
+columnvalue = %User Activity%,2018-01-01,admin@sirionqa.office
+filterrecordsorderbyquery = order by id desc limit 1
+daywindow = -150
+
+
+#this config is for testing the code only actual config can be updated in only schedular is working
+#tablecolumnnametoselect should have body at last always
+[ts-80699]
+test = Verify that Schedule Email is working
+tablename = system_emails
+reportname = Actions - Aging
+parser = ,
+columnname = subject,date_created,to_mail,sent_succesfully
+comparator = like,greaterthan,equal,equal
+columnvalue = %Actions - Aging%,2017-12-12,anay_user_qa@sirionqa.office,true
+tablecolumnnametoselect = id,to_mail,subject,date_created,body
+filterrecordsorderbyquery = order by id desc limit 1
+daywindow = -2
+
+
+#this config is for testing the code only actual config can be updated in only schedular is working
+#tablecolumnnametoselect should have body at last always
+[ts-80698]
+test = Verify that Schedule Large Report is working
+tablename = system_emails
+reportname = Child Obligations - Tracker
+parser = ,
+columnname = subject,date_created,to_mail,sent_succesfully
+comparator = like,greaterthan,equal,equal
+columnvalue = %Report Generated%,2017-12-12,anay_user1_dft@sirionqa.office,true
+tablecolumnnametoselect = id,to_mail,subject,date_created,body
+filterrecordsorderbyquery = order by id desc limit 1
+daywindow = -1
+
+
+#this config is for testing the code only actual config can be updated in only schedular is working
+#tablecolumnnametoselect should have body at last always
+#Here parser is ,, because subject can have ,
+[ts-80700]
+test = Verify that Manual Notification Alert is working
+tablename = system_emails
+parser = ,,
+columnname = subject,,date_created,,to_mail,,sent_succesfully
+comparator = like,,greaterthan,,equal,,equal
+columnvalue = %Berkshire Hathaway, action (#AC01024) has been archived%,,2018-04-09,,anay_user1_dft@sirionqa.office,,false
+tablecolumnnametoselect = id,,to_mail,,subject,,date_created,,body
+filterrecordsorderbyquery = order by id desc limit 1
+entityname = 181016/02 - Risk 165 - Berkshire Hathaway
+entityclientid = AC01024
+entityparententityname = Berkshire Hathaway
+daywindow = -1

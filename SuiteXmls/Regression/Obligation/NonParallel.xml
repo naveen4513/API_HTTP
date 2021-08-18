@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Obligation Non-Parallel" thread-count="1" data-provider-thread-count="1">
+    <parameter name="MultiLingual" value="false"/>
+    <parameter name="TestForAllColumns" value="false"/>
+
+    <test name="TestObligationCommunicationTab">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestObligationCommunicationTab"></class>
+        </classes>
+    </test>
+
+    <!--<test name="TestObligationSchedularTask">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestObligationSchedularTask"></class>
+        </classes>
+    </test>-->
+
+
+    <test name="TestObligationMisc">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestObligationMisc"></class>
+        </classes>
+    </test>
+
+
+
+
+
+</suite>

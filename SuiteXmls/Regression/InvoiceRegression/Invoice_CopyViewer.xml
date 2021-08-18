@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <!--Test OK On BA 17 Nov -->
+        <test name = "SIR-4016 Functionality">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.InvoiceCopyViewer.InvoiceCopyViewer"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

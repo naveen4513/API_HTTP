@@ -1,0 +1,212 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+name = {"name":"name","id":37,"values":"Test Contract"}
+title = {"name":"title","id":38,"values":"Test Contract"}
+tier = {"name":"tier","id":12,"values":{"name":"Tier - 3","id":1008}}
+effectiveDate = {"name":"effectiveDate","id":14,"values":"07-01-2018 00:00:00"}
+expirationDate = {"name":"expirationDate","id":15,"values":"07-31-2030 00:00:00"}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2001":{"values":[{"name":"Anay User","id":1044,"idType":2}],"name":"rg_2001","label":"Contract Manager","userType":[2,1,3,4]}}}
+currency = {"name":"currency","id":27,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}}
+contractCurrencies = {"name":"contractCurrencies","id":26,"values":[{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}]}
+contractDocuments = {"name": "contractDocuments","values": []}
+days = {"name":"days","id":18,"values":0}
+months = {"name":"months","id":17,"values":1}
+years = {"name":"years","id":16,"values":12}
+rateCardsApplicable = {"name":"rateCardsApplicable","id":29,"values":{"name":"USD - INR","id":1001}}
+rateCardFromDate = {"name":"rateCardFromDate","id":30,"values":"07-01-2018 00:00:00"}
+rateCardToDate = {"name":"rateCardToDate","id":31,"values":"07-31-2030 00:00:00"}
+brief = {"name":"brief","id":5,"values":""}
+
+
+[flow 1]
+timeZone = {"name":"timeZone","id":7,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"}}
+agreementNumber = {"name":"agreementNumber","id":4,"values":"Test Agreement No Less than 256"}
+name = {"name":"name","id":37,"values":"Test Contract Creation flow 1"}
+title = {"name":"title","id":38,"values":"Test Contract 1"}
+deliveryCountries = {"name":"deliveryCountries","id":11,"values":[{"name":"Afghanistan","id":1}]}
+
+
+[flow 2]
+name = {"name":"name","id":37,"values":"Test Other Contract Creation flow 2"}
+title = {"name":"title","id":38,"values":"Test Other Contract Creation flow 2"}
+
+[flow 4]
+spendType={"name":"spendType","id":11570,"options":null,"multiEntitySupport":false,"values":{"name":"A - Agency","id":1004}}
+timeZone = {"name":"timeZone","id":7,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"}}
+agreementNumber = {"name":"agreementNumber","id":4,"values":"Test Agreement No Less than 256"}
+deliveryCountries = {"name":"deliveryCountries","id":11,"values":[{"name":"Afghanistan","id":1}]}
+name = {"name":"name","id":37,"values":"Test Contract"}
+title = {"name":"title","id":38,"values":"Test Contract"}
+tier = {"name":"tier","id":12,"values":{"name":"Tier - 3","id":1008}}
+noticeDate = Date -> MM-dd-yyyy -> 0
+#{"name":"noticeDate","id":4772,"multiEntitySupport":false,"values":"10-13-2020"}
+expirationDate = Date -> MM-dd-yyyy -> 0
+#{"name":"expirationDate","id":15,"multiEntitySupport":false,"values":"10-13-2020"}
+expirationDateOriginal = Date -> MM-dd-yyyy -> 0
+#={"name":"expirationDateOriginal","id":7013,"multiEntitySupport":false,"values":"10-13-2020"}
+effectiveDateOriginal = Date -> MM-dd-yyyy -> 0
+#={"name":"effectiveDateOriginal","id":7011,"multiEntitySupport":false,"values":"10-13-2020"}
+noticeLeadDate = Date -> MM-dd-yyyy -> 0
+#={"name":"noticeLeadDate","id":7016,"multiEntitySupport":false,"values":"10-13-2020"}
+effectiveDate = Date -> MM-dd-yyyy -> 0
+#={"name":"effectiveDate","id":14,"multiEntitySupport":false,"values":"10-13-2020"}
+noticeLeadDays={"name":"noticeLeadDays","id":4771,"multiEntitySupport":false,"values":"2"}
+expirationNoticePeriod={"name":"expirationNoticePeriod","id":7015,"multiEntitySupport":false,"values":"2"}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2001":{"values":[{"name":"Anay User","id":1044,"idType":2}],"name":"rg_2001","label":"Contract Manager","userType":[2,1,3,4]}}}
+currency = {"name":"currency","id":27,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}}
+contractCurrencies = {"name":"contractCurrencies","id":26,"values":[{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","parentName":"Indian Rupee (INR)"}]}
+contractDocuments = {"name": "contractDocuments","values": []}
+days = {"name":"days","id":18,"values":0}
+months = {"name":"months","id":17,"values":1}
+years = {"name":"years","id":16,"values":12}
+rateCardsApplicable = {"name":"rateCardsApplicable","id":29,"values":{"name":"USD - INR","id":1001}}
+rateCardFromDate = {"name":"rateCardFromDate","id":30,"values":"07-01-2018 00:00:00"}
+rateCardToDate = {"name":"rateCardToDate","id":31,"values":"07-31-2030 00:00:00"}
+brief = {"name":"brief","id":5,"values":""}
+contractPaper={"name":"contractPaper","id":4903,"options":null,"multiEntitySupport":false,"values":{"name":"Client Paper","id":1016}}
+vendorContractingParty={"name":"vendorContractingParty","id":4739,"options":null,"multiEntitySupport":false,"values":[{"name":"ABC News","id":1025}]}
+initiatives={"name":"initiatives","id":4912,"options":null,"multiEntitySupport":false,"values":[{"name":"SPRING","id":1000}]}
+contractingEntity={"name":"contractingEntity","id":9,"options":null,"multiEntitySupport":false,"values":{"name":"Isilon Systems LLC","id":1046}}
+projectLevels={"name":"projectLevels","id":4932,"options":null,"multiEntitySupport":false,"values":[{"name":"Build","id":1001}]}
+termType={"name":"termType","id":4902,"options":null,"multiEntitySupport":false,"values":{"name":"Auto Renewal","id":1011}}
+contractTypes={"name":"contractTypes","id":4906,"options":null,"multiEntitySupport":false,"values":{"name":"Master Lease Agreement","id":1016}}
+createdFor={"name":"createdFor","id":11612,"options":null,"multiEntitySupport":false,"values":[{"name":"ICP01","id":1003,"parentId":1003,"customData":{"icpTypeName":"Group","id":"ICP01003","eccId":"ICP01"}},{"name":"ICP02","id":1004,"parentId":1004,"customData":{"icpTypeName":"Group","id":"ICP01004","eccId":"ICP02"}}]}
+calendarType={"name":"calendarType","id":11746,"options":null,"multiEntitySupport":false,"values":{"name":"Gregorian","id":1001}}
+contractingClientEntities={"name":"contractingClientEntities","id":11243,"options":null,"multiEntitySupport":false,"values":[{"name":"ICP01","id":1003,"parentId":1003,"customData":{"icpTypeName":"Group","id":"ICP01003","eccId":"ICP01"}}]}
+dynamicMetadata={"incoterms":{"name":"incoterms","id":100477,"options":null,"multiEntitySupport":false},"stockProtection":{"name":"stockProtection","id":100503,"options":null,"multiEntitySupport":false},"earlyPaymentDiscountPresent":{"name":"earlyPaymentDiscountPresent","id":100512,"options":null,"multiEntitySupport":false},"masterAgreementAttachment":{"name":"masterAgreementAttachment","id":100616,"multiEntitySupport":false},"esignCommentLongText":{"name":"esignCommentLongText","id":100626,"multiEntitySupport":false},"freeOfChargeSamples":{"name":"freeOfChargeSamples","id":100518,"options":null,"multiEntitySupport":false},"dyn106598":{"name":"dyn106598","id":106598,"multiEntitySupport":false,"values":"Testing Auto Office"},"applicationSupportResponsibilityOnSupplier":{"name":"applicationSupportResponsibilityOnSupplier","id":100522,"options":null,"multiEntitySupport":false},"terminationForCauseRightsTo":{"name":"terminationForCauseRightsTo","id":100573,"options":null,"multiEntitySupport":false},"additionalContractingExternalParty":{"name":"additionalContractingExternalParty","id":100571,"options":null,"multiEntitySupport":false},"earlyTerminationFeesApplicable":{"name":"earlyTerminationFeesApplicable","id":100481,"options":null,"multiEntitySupport":false},"review":{"name":"review","id":100615,"multiEntitySupport":false},"forecastingObligationsPresent":{"name":"forecastingObligationsPresent","id":100540,"options":null,"multiEntitySupport":false},"invoicePrice":{"name":"invoicePrice","id":100583,"options":null,"multiEntitySupport":false},"vendorManagementInventory":{"name":"vendorManagementInventory","id":100486,"options":null,"multiEntitySupport":false},"fxRateClause":{"name":"fxRateClause","id":100535,"options":null,"multiEntitySupport":false},"paymentTermsForLateDelivery":{"name":"paymentTermsForLateDelivery","id":100478,"options":null,"multiEntitySupport":false},"supplyChainFinanceModel":{"name":"supplyChainFinanceModel","id":100493,"options":null,"multiEntitySupport":false},"externalContractingPartyCurrency":{"name":"externalContractingPartyCurrency","id":100578,"options":null,"multiEntitySupport":false},"specifyDeviationsFromStandardTaxTerms":{"name":"specifyDeviationsFromStandardTaxTerms","id":100619,"multiEntitySupport":false},"vpcDocumentClass":{"name":"vpcDocumentClass","id":100596,"options":null,"multiEntitySupport":false},"renewalNoticeRequired":{"name":"renewalNoticeRequired","id":100490,"options":null,"multiEntitySupport":false},"dyn106622":{"name":"dyn106622","id":106622,"multiEntitySupport":false,"values":"10-13-2020"},"dyn106744":{"name":"dyn106744","id":106744,"multiEntitySupport":false,"values":123},"q&a":{"name":"q&a","id":100613,"multiEntitySupport":false},"latePaymentPenaltyPresent":{"name":"latePaymentPenaltyPresent","id":100475,"options":null,"multiEntitySupport":false},"masterAgreementType":{"name":"masterAgreementType","id":100588,"options":null,"multiEntitySupport":false},"level3MaterialCategory":{"name":"level3MaterialCategory","id":100590,"options":null,"multiEntitySupport":false},"auditRightsClausePresent":{"name":"auditRightsClausePresent","id":100499,"options":null,"multiEntitySupport":false},"assignmentAllowed":{"name":"assignmentAllowed","id":100529,"options":null,"multiEntitySupport":false},"terminationForConvenience":{"name":"terminationForConvenience","id":100521,"options":null,"multiEntitySupport":false},"ipClausePresent":{"name":"ipClausePresent","id":100474,"options":null,"multiEntitySupport":false},"contractDocumentAttachment":{"name":"contractDocumentAttachment","id":100617,"multiEntitySupport":false},"lastUpdate":{"name":"lastUpdate","id":100611,"multiEntitySupport":false},"anyPassThroughExpenses":{"name":"anyPassThroughExpenses","id":100498,"options":null,"multiEntitySupport":false},"contractSpendType":{"name":"contractSpendType","id":100589,"options":null,"multiEntitySupport":false},"thirdPartyIndemnificationClausePresent":{"name":"thirdPartyIndemnificationClausePresent","id":100514,"options":null,"multiEntitySupport":false},"healthAndSafety3StrikeProcess":{"name":"healthAndSafety3StrikeProcess","id":100484,"options":null,"multiEntitySupport":false},"dyn104430":{"name":"dyn104430","id":104430,"options":null,"multiEntitySupport":false},"subContractingNoticeRequirements":{"name":"subContractingNoticeRequirements","id":100570,"options":null,"multiEntitySupport":false},"limitationOfLiabilityClausePresent":{"name":"limitationOfLiabilityClausePresent","id":100509,"options":null,"multiEntitySupport":false},"jurisdiction":{"name":"jurisdiction","id":100567,"options":null,"multiEntitySupport":false},"dyn104431":{"name":"dyn104431","id":104431,"options":null,"multiEntitySupport":false},"dyn106454":{"name":"dyn106454","id":106454,"multiEntitySupport":false,"values":12},"compelledDisclosureClausePresent":{"name":"compelledDisclosureClausePresent","id":100516,"options":null,"multiEntitySupport":false},"parentalGuaranteeProvided":{"name":"parentalGuaranteeProvided","id":100519,"options":null,"multiEntitySupport":false},"dyn106579":{"name":"dyn106579","id":106579,"multiEntitySupport":false,"values":"Testing Auto Office"},"contractSummary":{"name":"contractSummary","id":100524,"options":null,"multiEntitySupport":false},"translationNeeded":{"name":"translationNeeded","id":100479,"options":null,"multiEntitySupport":false},"futureTechnologyEvolutionClausePresent":{"name":"futureTechnologyEvolutionClausePresent","id":100488,"options":null,"multiEntitySupport":false},"terminationForConvenienceRightsTo":{"name":"terminationForConvenienceRightsTo","id":100566,"options":null,"multiEntitySupport":false},"vgcSigner":{"name":"vgcSigner","id":100610,"multiEntitySupport":false},"keySupplierPersonnelRequirement":{"name":"keySupplierPersonnelRequirement","id":100489,"options":null,"multiEntitySupport":false},"requirementToProvideSupplierRoadmap":{"name":"requirementToProvideSupplierRoadmap","id":100513,"options":null,"multiEntitySupport":false},"approver":{"name":"approver","id":100609,"multiEntitySupport":false},"exclusivityProvided":{"name":"exclusivityProvided","id":100511,"options":null,"multiEntitySupport":false},"dyn106681":{"name":"dyn106681","id":106681,"options":null,"multiEntitySupport":false,"values":[{"name":"Option1","id":9136},{"name":"Option2","id":9137}]},"internalContractingPartyCurrency":{"name":"internalContractingPartyCurrency","id":100601,"options":null,"multiEntitySupport":false},"confidentialityClausePresent":{"name":"confidentialityClausePresent","id":100505,"options":null,"multiEntitySupport":false},"level2MaterialCategory":{"name":"level2MaterialCategory","id":100574,"options":null,"multiEntitySupport":false},"contractDurationClauseLongText":{"name":"contractDurationClauseLongText","id":100627,"multiEntitySupport":false},"performanceBondProvided":{"name":"performanceBondProvided","id":100520,"options":null,"multiEntitySupport":false},"dyn106849":{"name":"dyn106849","id":106849,"values":false,"multiEntitySupport":false},"recordRetentionClausePresent":{"name":"recordRetentionClausePresent","id":100525,"options":null,"multiEntitySupport":false},"vpcBusinessArea":{"name":"vpcBusinessArea","id":100602,"options":null,"multiEntitySupport":false},"specifyDeviationsFromIprTerms":{"name":"specifyDeviationsFromIprTerms","id":100622,"multiEntitySupport":false},"mostFavouredNationClausePresent":{"name":"mostFavouredNationClausePresent","id":100506,"options":null,"multiEntitySupport":false},"taxIncludedInFees":{"name":"taxIncludedInFees","id":100539,"options":null,"multiEntitySupport":false},"waiverOfSubrogationProvided":{"name":"waiverOfSubrogationProvided","id":100485,"options":null,"multiEntitySupport":false},"liquidatedDamagesClausePresent":{"name":"liquidatedDamagesClausePresent","id":100487,"options":null,"multiEntitySupport":false},"productWarrantiesPresent":{"name":"productWarrantiesPresent","id":100491,"options":null,"multiEntitySupport":false},"autoPriceAdjustmentPostBenchmark":{"name":"autoPriceAdjustmentPostBenchmark","id":100531,"options":null,"multiEntitySupport":false},"supplierToProvideNoticeOfEpidemicFailure":{"name":"supplierToProvideNoticeOfEpidemicFailure","id":100536,"options":null,"multiEntitySupport":false},"commentsLongText":{"name":"commentsLongText","id":100630,"multiEntitySupport":false},"vodafoneRightToTerminateForEpidemicFailure":{"name":"vodafoneRightToTerminateForEpidemicFailure","id":100593,"options":null,"multiEntitySupport":false},"obligations":{"name":"obligations","id":100576,"options":null,"multiEntitySupport":false},"changingMethodologyLongText":{"name":"changingMethodologyLongText","id":100629,"multiEntitySupport":false},"productDeliveryTermsClausePresent":{"name":"productDeliveryTermsClausePresent","id":100483,"options":null,"multiEntitySupport":false},"additionalContractingExternalPartyEccId":{"name":"additionalContractingExternalPartyEccId","id":100584,"options":null,"multiEntitySupport":false},"documentVersion":{"name":"documentVersion","id":100614,"multiEntitySupport":false},"transitionPlan":{"name":"transitionPlan","id":100482,"options":null,"multiEntitySupport":false},"terminationForCause":{"name":"terminationForCause","id":100532,"options":null,"multiEntitySupport":false},"terminationNoticeRequired":{"name":"terminationNoticeRequired","id":100538,"options":null,"multiEntitySupport":false},"topCommercialRisksLongText":{"name":"topCommercialRisksLongText","id":100624,"multiEntitySupport":false},"externalContractingPartyPaymentTermEccId":{"name":"externalContractingPartyPaymentTermEccId","id":100577,"options":null,"multiEntitySupport":false},"materialCategoryLevel4Id":{"name":"materialCategoryLevel4Id","id":100598,"options":null,"multiEntitySupport":false},"insuranceRequirementsPresent":{"name":"insuranceRequirementsPresent","id":100504,"options":null,"multiEntitySupport":false},"alternativeDisputeResolutionProvided":{"name":"alternativeDisputeResolutionProvided","id":100500,"options":null,"multiEntitySupport":false},"clmStatus":{"name":"clmStatus","id":100597,"options":null,"multiEntitySupport":false},"contractLanguage":{"name":"contractLanguage","id":100473,"options":null,"multiEntitySupport":false},"capOnDirectDamages":{"name":"capOnDirectDamages","id":100480,"options":null,"multiEntitySupport":false},"natureOfIndemnity":{"name":"natureOfIndemnity","id":100595,"options":null,"multiEntitySupport":false},"topLegalRisksLongText":{"name":"topLegalRisksLongText","id":100625,"multiEntitySupport":false},"specifyDeviationsFromOtherFinancialTerms":{"name":"specifyDeviationsFromOtherFinancialTerms","id":100620,"multiEntitySupport":false},"frozenPeriod":{"name":"frozenPeriod","id":100528,"options":null,"multiEntitySupport":false},"dyn106664":{"name":"dyn106664","id":106664,"options":null,"multiEntitySupport":false,"values":{"name":"Option1","id":9102}},"riskRegister":{"name":"riskRegister","id":100517,"options":null,"multiEntitySupport":false},"kpi":{"name":"kpi","id":100527,"options":null,"multiEntitySupport":false},"paymentSetup":{"name":"paymentSetup","id":100568,"options":null,"multiEntitySupport":false},"priceProtectionPresent":{"name":"priceProtectionPresent","id":100502,"options":null,"multiEntitySupport":false},"materialCategory":{"name":"materialCategory","id":100587,"options":null,"multiEntitySupport":false},"specifyDeviationsFromStandardDeliveryTerms":{"name":"specifyDeviationsFromStandardDeliveryTerms","id":100621,"multiEntitySupport":false},"retentionCommentsLongText":{"name":"retentionCommentsLongText","id":100631,"multiEntitySupport":false},"handoverRequired":{"name":"handoverRequired","id":100530,"options":null,"multiEntitySupport":false},"obligation":{"name":"obligation","id":100497,"options":null,"multiEntitySupport":false},"insuranceToBeMaintainedBy":{"name":"insuranceToBeMaintainedBy","id":100600,"options":null,"multiEntitySupport":false},"specifyDeviationsFromStandardInsuranceTerms":{"name":"specifyDeviationsFromStandardInsuranceTerms","id":100623,"multiEntitySupport":false},"servicesWarrantiesPresent":{"name":"servicesWarrantiesPresent","id":100526,"options":null,"multiEntitySupport":false},"indemnityClausePresent":{"name":"indemnityClausePresent","id":100501,"options":null,"multiEntitySupport":false},"applicableLocalMarkets":{"name":"applicableLocalMarkets","id":100592,"options":null,"multiEntitySupport":false},"subContractingAllowed":{"name":"subContractingAllowed","id":100496,"options":null,"multiEntitySupport":false},"level1MaterialCategory":{"name":"level1MaterialCategory","id":100575,"options":null,"multiEntitySupport":false},"handlingFee":{"name":"handlingFee","id":100492,"options":null,"multiEntitySupport":false},"supplierToProvideAlternativeProduct":{"name":"supplierToProvideAlternativeProduct","id":100582,"options":null,"multiEntitySupport":false},"invoicingInAdvanceOrArrears":{"name":"invoicingInAdvanceOrArrears","id":100580,"options":null,"multiEntitySupport":false},"benchmarkingClausePresent":{"name":"benchmarkingClausePresent","id":100476,"options":null,"multiEntitySupport":false},"governingApplicableLaw":{"name":"governingApplicableLaw","id":100585,"options":null,"multiEntitySupport":false},"dyn101089":{"name":"dyn101089","id":101089,"multiEntitySupport":false},"productOwnershipClausePresent":{"name":"productOwnershipClausePresent","id":100523,"options":null,"multiEntitySupport":false},"paymentTermMaterialCategoryLevel1":{"name":"paymentTermMaterialCategoryLevel1","id":100594,"options":null,"multiEntitySupport":false},"paymentTermMaterialCategoryLevel2":{"name":"paymentTermMaterialCategoryLevel2","id":100569,"options":null,"multiEntitySupport":false},"level4MaterialCategory":{"name":"level4MaterialCategory","id":100572,"options":null,"multiEntitySupport":false},"acceptedPurchaseOrderVariationDateLongText":{"name":"acceptedPurchaseOrderVariationDateLongText","id":100628,"multiEntitySupport":false},"natureOfTermination":{"name":"natureOfTermination","id":100579,"options":null,"multiEntitySupport":false},"dyn101083":{"name":"dyn101083","id":101083,"options":null,"multiEntitySupport":false},"dyn101082":{"name":"dyn101082","id":101082,"multiEntitySupport":false},"acceptanceClausePresent":{"name":"acceptanceClausePresent","id":100494,"options":null,"multiEntitySupport":false},"contractingExternalPartyEccId":{"name":"contractingExternalPartyEccId","id":100581,"options":null,"multiEntitySupport":false},"optionalServicesClausePresent":{"name":"optionalServicesClausePresent","id":100508,"options":null,"multiEntitySupport":false},"vendorManagementReplenishment":{"name":"vendorManagementReplenishment","id":100515,"options":null,"multiEntitySupport":false},"communicationAndTraining":{"name":"communicationAndTraining","id":100603,"options":null,"multiEntitySupport":false},"dyn103377":{"name":"dyn103377","id":103377,"multiEntitySupport":false},"escrowObligationsPresent":{"name":"escrowObligationsPresent","id":100537,"options":null,"multiEntitySupport":false},"antiBriberOrAnticorruptionClausePresent":{"name":"antiBriberOrAnticorruptionClausePresent","id":100534,"options":null,"multiEntitySupport":false},"contractingExternalParty":{"name":"contractingExternalParty","id":100586,"options":null,"multiEntitySupport":false},"terminationAssistanceApplicable":{"name":"terminationAssistanceApplicable","id":100495,"options":null,"multiEntitySupport":false},"publicityRestrictionsPresent":{"name":"publicityRestrictionsPresent","id":100507,"options":null,"multiEntitySupport":false},"dyn100785":{"name":"dyn100785","id":100785,"multiEntitySupport":false},"dyn100784":{"name":"dyn100784","id":100784,"multiEntitySupport":false},"thirdPartyMaterialsUsed":{"name":"thirdPartyMaterialsUsed","id":100533,"options":null,"multiEntitySupport":false},"taxLiabilityTo":{"name":"taxLiabilityTo","id":100591,"options":null,"multiEntitySupport":false},"ccmSegment":{"name":"ccmSegment","id":100599,"options":null,"multiEntitySupport":false},"freeOfChargeDummies":{"name":"freeOfChargeDummies","id":100510,"options":null,"multiEntitySupport":false}}
+vendorClassification={"name":"vendorClassification","id":4904,"options":null,"multiEntitySupport":false,"values":{"name":"Partner","id":1016}}
+projectId={"name":"projectId","id":35,"options":null,"multiEntitySupport":false,"values":[{"name":"ERP Project","id":1001}]}
+recipientCompanyCodes={"name":"recipientCompanyCodes","id":4883,"options":null,"multiEntitySupport":false,"values":[{"name":"AE00","id":1003,"parentId":1003,"customData":{"id":"CC01003","eccId":"AE00"}},{"name":"AL01","id":1004,"parentId":1004,"customData":{"id":"CC01004","eccId":"AL01"}}]}
+contractingCompanyCodes={"name":"contractingCompanyCodes","id":11244,"options":null,"multiEntitySupport":false,"values":[{"name":"AE00","id":1003,"parentId":1003,"customData":{"id":"CC01003","eccId":"AE00"}}]}
+recipientClientEntities={"name":"recipientClientEntities","id":4882,"options":null,"multiEntitySupport":false,"values":[{"name":"ICP01","id":1003,"parentId":1003,"customData":{"icpTypeName":"Group","id":"ICP01003","eccId":"ICP01"}},{"name":"ICP02","id":1004,"parentId":1004,"customData":{"icpTypeName":"Group","id":"ICP01004","eccId":"ICP02"}}]},"creditClauses":{"name":"creditClauses","id":11984,"multiEntitySupport":false}
+contractingClientEntities={"name":"contractingClientEntities","id":11243,"options":null,"multiEntitySupport":false,"values":[{"name":"ICP01","id":1003,"parentId":1003,"customData":{"icpTypeName":"Group","id":"ICP01003","eccId":"ICP01"}}]}
+
+[flow 3]
+createdFor = {"name":"createdFor","id":11612,"values":[{"name":"ICP01","id":1003},{"name":"ICP02","id":1004}]}
+
+
+[flow 4 show page]
+spendType=A - Agency
+agreementNumber = Test Agreement No Less than 256
+deliveryCountries = Afghanistan
+title = Test Contract
+tier = Tier - 3
+noticeDate = Date -> MM-dd-yyyy -> 0
+expirationDate = Date -> MM-dd-yyyy -> 0
+expirationDateOriginal = Date -> MM-dd-yyyy -> 0
+effectiveDateOriginal = Date -> MM-dd-yyyy -> 0
+noticeLeadDate = Date -> MM-dd-yyyy -> 0
+effectiveDate = Date -> MM-dd-yyyy -> 0
+noticeLeadDays = 2
+expirationNoticePeriod= 2
+currency = Indian Rupee (INR)
+contractCurrencies = Indian Rupee (INR)
+days =0
+months = 1
+years = 12
+contractPaper=Client Paper
+vendorContractingParty=ABC News
+initiatives=SPRING
+contractingEntity=Isilon Systems LLC
+projectLevels= Build
+termType=Auto Renewal
+contractTypes=Master Lease Agreement
+createdFor=ICP01,ICP02
+calendarType=Gregorian
+contractingClientEntities=ICP01
+vendorClassification=Partner
+projectId=ERP Project
+recipientCompanyCodes=AE00,AL01
+contractingCompanyCodes=AE00
+recipientClientEntities=ICP01,ICP02
+contractingClientEntities=ICP01
+globalRegions=APAC
+globalCountries=South Korea,Taiwan,Guam,Laos,Thailand,Cambodia,New Zealand,Rest of APAC,Hong Kong,Myanmar,Australia,India,Fiji,Singapore,China,Malaysia,Pakistan,French Guiana,Bangladesh,Japan,Vietnam,North Korea
+contractingHubs=AMEA
+timeZone=Asia/Kolkata (GMT +05:30)
+dynamicMetadata={dyn106598::Testing Auto Office:;dyn106622::10-13-2020:;dyn106744::123:;dyn106454::12:;dyn106579::Testing Auto Office:;dyn106681::Option1,Option2:;dyn106664::Option1}
+name = Test Contract
+services=Applications Development & Maintenance,Applications Servers,LAN,Mainframe Services,Network MNS,End-User Computing
+recipientMarkets=Safaricom,Qatar
+contractingMarkets=Safaricom
+recipientHubs=AMEA,Europe
+functions=Human Resources,IT
+
+
+[flow 4 listing page]
+projects=ERP Project
+contracttypes=Human Resources, IT
+documenttypename=Msa
+spendtype=A - Agency
+tiername=Tier - 3
+dyn106622=Oct-13-2020
+hubs=AMEA, Europe
+acvvalue=0
+clientacvvalue=0.00
+contractentity=Isilon Systems LLC
+noticeleaddays=2
+contractinghubs=AMEA
+agreementno=Test Agreement No Less than 256
+term=12years, 1months, 0days
+currency=INR
+vendorcontractingparty=ABC News
+globalregions=APAC
+calendartype=Gregorian
+cp_name=Client Paper
+createdby=Anay User
+dyn106664=Option1
+vendorhierarchy=Automation_DefaultText7441710
+projectlevels=Build
+name=Test Contract
+companycodes=AE00, AL01
+expdate=Date -> MMM-dd-yyyy -> 0
+effectivedate=Date -> MMM-dd-yyyy -> 0
+datemodified=Date -> MMM-dd-yyyy -> 0
+notice_lead_time=Date -> MMM-dd-yyyy -> 0
+noticedate=Date -> MMM-dd-yyyy -> 0
+datecreated=Date -> MMM-dd-yyyy -> 0
+contractingcompanycodes=AE00
+clientdyn106744=123.00
+relationname=MS Supplier
+tcvvalue=0
+dyn106598=Testing Auto Office
+lastmodifiedby=Anay User
+id=
+contractingmarkets=Safaricom
+status=Newly Created
+createdfor=ICP01, ICP02
+dyn106454=12
+dyn106579=Testing Auto Office
+dyn106681=Option1,Option2
+clienttcvvalue=0.00
+termtypename=Auto Renewal
+internalcontractingparties=ICP01, ICP02
+globalcountries=Australia, Bangladesh, Cambodia, China, Fiji, French Guiana, Guam, Hong Kong, India, Japan, Laos, Malaysia, Myanmar, New Zealand, North Korea, Pakistan, Rest of APAC, Singapore, South Korea, Taiwan, Thailand, Vietnam
+contractingcliententities=ICP01
+clientfyacvvalue=0.00
+markets=Qatar, Safaricom
+documenttitle=Test Contract
+Contract ManagerROLE_GROUP=Anay User
+fyacvvalue=0
+contractsubtypes=Applications Development & Maintenance, Applications Servers, End-User Computing, LAN, Mainframe Services, Network MNS
+Suppliers Manager Contracts 3167ROLE_GROUP=Anay User
+newcontracttypes=Master Lease Agreement

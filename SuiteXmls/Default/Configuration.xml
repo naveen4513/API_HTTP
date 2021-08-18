@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Configuration" thread-count="1">
+
+    <test name="Configure Constant Fields">
+        <classes>
+            <class name="com.sirionlabs.config.ConfigureConstantFields"></class>
+        </classes>
+    </test>
+
+    <test name="Update Config Files">
+        <classes>
+            <class name="com.sirionlabs.config.UpdateConfigFiles"></class>
+        </classes>
+    </test>
+
+    <test name="Configure Environment">
+        <classes>
+            <class name="com.sirionlabs.config.ConfigureEnvironment"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,70 @@
+[envinfo]
+domain =http://192.168.2.231:8070
+jwtsecretkey =s3crtF9Z8K19ftE0Ces
+jwtissuer =sirion
+jwtexpirytime =15
+
+[flow1]
+testcasetype = positive
+apipath=CREATE
+statuscode = 200
+authorization = yes
+entitytype = Relation
+entityname= entityAutomation
+clientid = 1007
+action = CREATE
+
+[flow2]
+testcasetype = negative
+apipath=CREATE
+statuscode = 400
+authorization = yes
+entitytype = Relation
+entityname= entityAutomation
+clientid = 1007
+action = CREATE
+errormessage=Bad Request
+
+[flow3]
+testcasetype = positive
+entityid=1947
+apipath=ONHOLD
+statuscode = 200
+authorization = yes
+entitytype = Relation
+entityname= entityAutomation
+clientid = 1007
+action = CREATE
+
+[flow4]
+testcasetype = positive
+entityid=1947
+apipath=ARCHIVE
+statuscode = 200
+authorization = yes
+entitytype = Relation
+entityname= entityAutomation
+clientid = 1007
+action = CREATE
+
+[flow5]
+testcasetype = positive
+entityid=1947
+apipath=RESTORE
+statuscode = 200
+authorization = yes
+entitytype = Relation
+entityname= entityAutomation
+clientid = 1007
+action = CREATE
+
+[flow6]
+testcasetype = positive
+entityid=1947
+apipath=ACTIVATE
+statuscode = 200
+authorization = yes
+entitytype = Relation
+entityname= entityAutomation
+clientid = 1007
+action = CREATE

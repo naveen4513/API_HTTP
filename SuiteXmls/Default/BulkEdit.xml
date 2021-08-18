@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bulk Edit Test" parallel="tests" thread-count="1">
+
+    <test name="BulkEdit Test">
+        <classes>
+            <class name="com.sirionlabs.test.TestBulkEdit"></class>
+        </classes>
+    </test>
+
+</suite>

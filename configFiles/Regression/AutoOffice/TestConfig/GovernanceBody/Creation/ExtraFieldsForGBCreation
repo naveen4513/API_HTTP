@@ -1,0 +1,161 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+name = {"name":"name","id":4700,"values":"GB Creation Test","multiEntitySupport":false}
+includeExpDate = {"name":"includeExpDate","id":4711,"values":false}
+includeStartDate = {"name":"includeStartDate","id":4710,"values":false}
+governanceBodyType = {"name":"governanceBodyType","id":4725,"values":{"name":"Executive Governance Board","id":1013}}
+timeZone = values -> {"name": "Pacific/Port_Moresby (GMT +10:00)","timeZone": "Pacific/Port_Moresby","id": 17}
+startTime = {"name":"startTime","id":4720,"values":{"name":"00:00","id":1}}
+duration = {"name":"duration","id":4713,"values":{"name":"30 Min","id":1}}
+frequencyType = {"name":"frequencyType","id":4705,"values":{"name":"Once","id":1001}}
+frequency = {"name":"frequency","id":4706,"values":{"name":"One-Time","id":1009,"parentId":1001}}
+weekType = {"name":"weekType","id":4707,"values":{"name":"Five Day","id":1}}
+
+
+
+[gb_elastic]
+globalRegions={"name":"globalRegions","id":4718,"values":[{"name":"EMEA","id":1003,"parentId":1002}],"multiEntitySupport":false}
+globalCountries={"name":"globalCountries","id":4719,"values":[{"name":"Bulgaria","id":37,"parentId":1003},{"name":"Netherlands","id":166,"parentId":1003},{"name":"Rest of EMEA","id":1003,"parentId":1003},{"name":"Turkey","id":236,"parentId":1003},{"name":"Norway","id":176,"parentId":1003},{"name":"Ukraine","id":241,"parentId":1003},{"name":"United Arab Emirates","id":242,"parentId":1003},{"name":"Ireland","id":115,"parentId":1003},{"name":"United Kingdom","id":243,"parentId":1003},{"name":"Israel","id":117,"parentId":1003},{"name":"Italy","id":118,"parentId":1003},{"name":"Poland","id":187,"parentId":1003},{"name":"Portugal","id":188,"parentId":1003},{"name":"Croatia","id":61,"parentId":1003},{"name":"Czech Republic","id":64,"parentId":1003},{"name":"Romania","id":192,"parentId":1003},{"name":"Denmark","id":65,"parentId":1003},{"name":"Russia","id":193,"parentId":1003},{"name":"Lebanon","id":134,"parentId":1003},{"name":"Egypt","id":71,"parentId":1003},{"name":"Lithuania","id":139,"parentId":1003},{"name":"Luxembourg","id":140,"parentId":1003},{"name":"Austria","id":16,"parentId":1003},{"name":"Finland","id":81,"parentId":1003},{"name":"France","id":82,"parentId":1003},{"name":"Slovenia","id":210,"parentId":1003},{"name":"Bahrain","id":19,"parentId":1003},{"name":"South Africa","id":213,"parentId":1003},{"name":"Belarus","id":23,"parentId":1003},{"name":"Spain","id":215,"parentId":1003},{"name":"Belgium","id":24,"parentId":1003},{"name":"Germany","id":90,"parentId":1003},{"name":"Bosnia and Herzegovina","id":30,"parentId":1003},{"name":"Greece","id":94,"parentId":1003},{"name":"Sweden","id":222,"parentId":1003},{"name":"Switzerland","id":223,"parentId":1003}],"multiEntitySupport":false}
+serviceCategory={"name":"serviceCategory","id":11478,"values":[{"name":"Travel & Expenses","id":1093}],"multiEntitySupport":false}
+contractingHubs={"name":"contractingHubs","id":11535,"values":[{"name":"Europe","id":1004,"attributes":{"id":"HB01004"}}],"multiEntitySupport":false}
+projectLevels={"name":"projectLevels","id":4942,"values":[{"name":"Operate","id":1002}],"multiEntitySupport":false}
+timeZone={"name":"timeZone","id":4740,"values":{"name":"Asia/Kolkata (GMT +05:30)","id":8,"timeZone":"Asia/Kolkata"},"multiEntitySupport":false}
+dynamicMetadata={"dyn106581":{"name":"dyn106581","id":106581,"values":"GB ES Testing","multiEntitySupport":false},"dyn106642":{"name":"dyn106642","id":106642,"values":[{"name":"Value 1","id":9085},{"name":"Value 2","id":9086}],"options":{"api":"","autoComplete":true,"data":null,"size":null,"sizeLimit":50,"enableListView":true,"filterName":null,"autoCompleteDropDownId":null,"entityFieldId":null},"multiEntitySupport":false},"dyn106643":{"name":"dyn106643","id":106643,"values":true,"multiEntitySupport":false},"dyn106563":{"name":"dyn106563","id":106563,"values":2,"multiEntitySupport":false},"dyn106641":{"name":"dyn106641","id":106641,"values":{"name":"Option 1","id":9083},"options":{"api":"","autoComplete":true,"data":null,"size":null,"sizeLimit":50,"enableListView":true,"filterName":null,"autoCompleteDropDownId":null,"entityFieldId":null},"multiEntitySupport":false},"dyn105258":{"name":"dyn105258","id":105258,"values":{"name":"opt1","id":9066},"options":{"api":null,"autoComplete":false,"data":[{"name":"opt1","id":9066},{"name":"opt2","id":9067}],"size":null,"sizeLimit":null,"enableListView":false,"filterName":null,"autoCompleteDropDownId":null,"entityFieldId":null},"multiEntitySupport":false},"dyn106600":{"name":"dyn106600","id":106600,"values":"GB ES Testing","multiEntitySupport":false},"dyn106644":{"name":"dyn106644","id":106644,"values":"09-09-2020 00:00:00","displayValues":"09-09-2020","multiEntitySupport":false},"dyn106615":{"name":"dyn106615","id":106615,"values":"09-09-2020","displayValues":"09-09-2020","multiEntitySupport":false},"dyn106648":{"name":"dyn106648","id":106648,"multiEntitySupport":false}}
+name = {"name":"name","id":4700,"multiEntitySupport":false,"values":"GB"}
+description={"name":"description","id":4701,"values":"GB ES Testing","multiEntitySupport":false}
+goal={"name":"goal","id":4702,"values":"GB ES Testing","multiEntitySupport":false}
+includeExpDate = {"name":"includeExpDate","id":4711,"values":true,"multiEntitySupport":false}
+includeStartDate = {"name":"includeStartDate","id":4710,"values":true,"multiEntitySupport":false}
+governanceBodyType = {"name":"governanceBodyType","id":4725,"values":{"name":"Executive Governance Board","id":1013},"multiEntitySupport":false}
+startTime = {"name":"startTime","id":4720,"values":{"name":"02:00","id":5},"multiEntitySupport":false}
+duration = {"name":"duration","id":4713,"values":{"name":"30 Min","id":1},"multiEntitySupport":false}
+frequencyType = {"name":"frequencyType","id":4705,"values":{"name":"Once","id":1001},"multiEntitySupport":false}
+frequency = {"name":"frequency","id":4706,"values":{"name":"One-Time","id":1009,"parentId":1001},"multiEntitySupport":false}
+weekType = {"name":"weekType","id":4707,"values":{"name":"Five Day","id":1},"multiEntitySupport":false}
+startDate = Date -> MM-dd-yyyy -> -3
+expDate = Date -> MM-dd-yyyy -> +10
+effectiveDate = Date -> MM-dd-yyyy -> -3
+patternDate = Date -> MM-dd-yyyy -> -3
+excludeFromHoliday={"name":"excludeFromHoliday","id":12194,"values":true,"multiEntitySupport":false}
+services={"name":"services","id":4717,"values":[{"name":"End-User Computing","id":1008,"parentId":1003},{"name":"Projects","id":1006,"parentId":1003},{"name":"Service Desk","id":1007,"parentId":1003}],"multiEntitySupport":false}
+recipientCompanyCodes={"name":"recipientCompanyCodes","id":11534,"values":[{"name":"AE00","id":1003,"parentId":1003,"attributes":{"id":"CC01003","eccId":"AE00"}}],"multiEntitySupport":false}
+recipientMarkets={"name":"recipientMarkets","id":11532,"values":[{"name":"Safaricom","id":1003,"parentId":1003,"attributes":{"id":"MKT01003"}}],"multiEntitySupport":false}
+recipientClientEntities={"name":"recipientClientEntities","id":11533,"values":[{"name":"ICP01","id":1003,"parentId":1003,"attributes":{"icpTypeName":"Group","id":"ICP01003","eccId":"ICP01"}}],"multiEntitySupport":false}
+contractingMarkets={"name":"contractingMarkets","id":11536,"values":[{"name":"Qatar","id":1004,"parentId":1004,"attributes":{"id":"MKT01004"}}],"multiEntitySupport":false}
+location={"name":"location","id":4726,"values":"India","multiEntitySupport":false}
+relations={"name":"relations","id":12545,"values":[{"name":"Berkshire Hathaway","id":1027}],"multiEntitySupport":false}
+calendarType={"name":"calendarType","id":11756,"values":{"name":"Gregorian","id":1001},"multiEntitySupport":false}
+contractClientHoliday={"name":"contractClientHoliday","id":12195,"values":{"name":"ES GB Contract","id":36604,"parentIds":[1027,1034],"url":"/tblcontracts/show/36604"},"multiEntitySupport":false}
+recipientHubs={"name":"recipientHubs","id":11531,"values":[{"name":"AMEA","id":1003,"attributes":{"id":"HB01003"}}],"multiEntitySupport":false}
+projectId={"name":"projectId","id":8160,"values":[{"name":"ERP Project","id":1001}],"multiEntitySupport":false}
+functions={"name":"functions","id":4716,"values":[{"name":"Human Resources","id":1003}],"options":null,"multiEntitySupport":false}
+contractingCompanyCodes={"name":"contractingCompanyCodes","id":11538,"options":null,"multiEntitySupport":false,"values":[{"name":"AE00","id":1003,"parentId":1003,"customData":{"id":"CC01003","eccId":"AE00"}},{"name":"AL01","id":1004,"parentId":1004,"customData":{"id":"CC01004","eccId":"AL01"}}]}
+contractingClientEntities={"name":"contractingClientEntities","id":11537,"options":null,"multiEntitySupport":false,"values":[{"name":"ICP01","id":1003,"parentId":1003,"customData":{"icpTypeName":"Group","id":"ICP01003","eccId":"ICP01"}},{"name":"ICP02","id":1004,"parentId":1004,"customData":{"icpTypeName":"Group","id":"ICP01004","eccId":"ICP02"}}]}
+initiatives={"name":"initiatives","id":4922,"options":null,"multiEntitySupport":false,"values":[{"name":"SPRING","id":1000}]},"id":{"name":"id","multiEntitySupport":false}
+
+
+[gb_elastic_show_page]
+globalRegions=EMEA
+globalCountries=Bulgaria,Netherlands,Rest of EMEA,Turkey,Norway,Ukraine,United Arab Emirates,Ireland,United Kingdom,Israel,Italy,Poland,Portugal,Croatia,Czech Republic,Romania,Denmark,Russia,Lebanon,Egypt,Lithuania,Luxembourg,Austria,Finland,France,Slovenia,Bahrain,South Africa,Belarus,Spain,Belgium,Germany,Bosnia and Herzegovina,Greece,Sweden,Switzerland
+serviceCategory=Travel & Expenses
+contractingHubs=Europe,AMEA
+projectLevels=Operate
+timeZone=Asia/Kolkata (GMT +05:30)
+dynamicMetadata={dyn106581::GB ES Testing:;dyn106642::Value 1,Value 2:;dyn106643::true:;dyn106563::2:;dyn106641::Option 1:;dyn105258::opt1:;dyn106600::GB ES Testing:;dyn106644::09-09-2020 00:00:00:;dyn106615::09-09-2020}
+name = GB
+description=GB ES Testing
+goal=GB ES Testing
+includeExpDate = true
+includeStartDate = true
+governanceBodyType = Executive Governance Board
+startTime = 02:00
+duration = 30 Min
+frequencyType =Once
+frequency = One-Time
+weekType = Five Day
+startDate = Date -> MM-dd-yyyy -> -3
+expDate = Date -> MM-dd-yyyy -> +10
+effectiveDate = Date -> MM-dd-yyyy -> -3
+patternDate = Date -> MM-dd-yyyy -> -3
+excludeFromHoliday=true
+services=End-User Computing,Projects,Service Desk
+recipientCompanyCodes=AE00
+recipientMarkets=Safaricom
+recipientClientEntities=ICP01
+contractingMarkets=Qatar,Safaricom
+location=India
+relations=Berkshire Hathaway
+calendarType=Gregorian
+contractClientHoliday=ES GB Contract
+recipientHubs=AMEA
+projectId=ERP Project
+functions=Human Resources
+contractingCompanyCodes=AE00,AL01
+contractingClientEntities="ICP01,ICP02
+initiatives=SPRING
+
+
+[gb_elastic_listing_page]
+companycodes= AE00
+Governance Body ManagerROLE_GROUP=Anay User
+contractinghubs=AMEA, Europe
+contractingmarkets=   Qatar, Safaricom
+contractingcliententities=ICP01, ICP02
+contractingcompanycodes= AE00, AL01
+time_zone=Asia/Kolkata (GMT +05:30)
+calendartype= Gregorian     
+createdby=  Anay User                                     
+name = GB       
+dyn106642 =Value 1,Value 2     
+dyn106641=  Option 1  
+dyn106581= GB ES Testing  
+dyn106643=Yes  
+dyn106644= Sep-09-2020
+dyn106563=2  
+dyn106615 =Sep-09-2020 
+dyn106600 =GB ES Testing   
+status=Newly Created             
+suppliers=Berkshire Hathaway:;1027      
+contracts= ES GB Contract     
+datecreated = Date -> MMM-dd-yyyy -> 0   
+patterndate = Date -> MMM-dd-yyyy -> -3    
+effectivedate = Date -> MMM-dd-yyyy -> -3
+startdate=Date -> MMM-dd-yyyy -> -3
+enddate=Date -> MMM-dd-yyyy -> +10
+datemodified =Date -> MMM-dd-yyyy -> 0
+lastmodifiedby=Date -> MMM-dd-yyyy -> 0
+id=       
+governancebodytype=Executive Governance Board
+vendorhierarchy=Berkshire Hathaway:;1036           
+frequency=One-Time 
+functions=Human Resources        
+services=End-User Computing, Projects, Service Desk
+regions=EMEA          
+countries=Austria, Bahrain, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Denmark, Egypt, Finland, France, Germany, Greece, Ireland, Israel, Italy, Lebanon, Lithuania, Luxembourg, Netherlands, Norway, Poland, Portugal, Rest of EMEA, Romania, Russia, Slovenia, South Africa, Spain, Sweden, Switzerland, Turkey, Ukraine, United Arab Emirates, United Kingdom          
+tier=null          
+hubs=AMEA                    
+markets = Safaricom          
+internalcontractingparties= ICP01
+ 
+               
+
+          

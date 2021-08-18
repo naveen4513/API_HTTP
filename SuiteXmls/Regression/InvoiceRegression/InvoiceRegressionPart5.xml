@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+
+        <test name = "Service data entity">
+            <classes>
+                <class name="com.sirionlabs.test.serviceData.Entity.ServiceDataEntity"></class>
+            </classes>
+        </test>
+        <test name="SIR-2230 Service Data Creation through CDR">
+            <classes>
+                <class name="com.sirionlabs.test.serviceData.ServiceDataCreationThroughCDR"></class>
+            </classes>
+        </test>
+        <test name = "Invoice create rule">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.InvoiceCreateRuleTest"></class>
+            </classes>
+        </test>
+
+
+
+    </suite-files>
+</suite>

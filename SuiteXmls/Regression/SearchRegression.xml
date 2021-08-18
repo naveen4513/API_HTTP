@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Search Suite" data-provider-thread-count="15">
+
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+
+    <suite-files>
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+    </suite-files>
+
+    <test name="MetadataSearch Feature Test">
+        <classes>
+            <class name="com.sirionlabs.test.search.TestSearchMetadata"></class>
+        </classes>
+    </test>
+
+    <test name="MetadataSearch Misc Cases">
+        <classes>
+            <class name="com.sirionlabs.test.search.TestMetadataSearchMisc"></class>
+        </classes>
+    </test>
+
+    <test name="DocumentTree Test">
+        <classes>
+            <class name="com.sirionlabs.test.search.TestSearchMisc"></class>
+            <class name="com.sirionlabs.test.TestSearchDocumentTree"></class>
+        </classes>
+    </test>
+
+    <test name="SearchAttachment Test">
+        <classes>
+            <class name="com.sirionlabs.test.search.TestSolrSearchQuery"></class>
+            <class name="com.sirionlabs.test.TestSearchAttachment"></class>
+        </classes>
+    </test>
+
+<!--Added By gaurav bhadani 0n 16-March-2020-->
+    <test name="Search Service Level Related Tests">
+        <classes>
+            <class name="com.sirionlabs.test.serviceLevel.TestServiceLevelSearchRelatedCases"></class>
+        </classes>
+    </test>
+
+
+</suite>

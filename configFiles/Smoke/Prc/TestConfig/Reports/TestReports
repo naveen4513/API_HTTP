@@ -1,0 +1,209 @@
+#Section is Entity Name
+#Key is accessRestriction area
+#Value is permission (true) allowed or (false) restricted
+#25,28,33,1003,29,100,35,101,23,24,34
+#stakeholders = 2289|12,43::2290|20,16
+# Seperaator Used :: for different stake Groups
+# Seperaator Used | for different stake Group ID and Group entry's ID
+# Seperaator Used , for different stake Groups entry's ID
+#testreportsforentities = all / specified
+
+#Result Analysis : Check all images in DownloadGraph under project output folder. If image contains "Chart Type not supported" it means those reports are differently handled with additional filters. Validate them manually.
+#eg. SLA Performance Trend
+
+
+#Provide the maxRandomOptions for Applying Randomization on columns for selectedColumn under downloadingGraphWithData feature. default value is 5.
+maxrandomoptions = 6
+filtercounttotestforsmoke = 5
+
+#Configuration for chart data records. default values are #offset=0, #size=20, #orderByColumnName=id, #orderDirection=desc
+offset =
+size =
+orderbycolumnname =
+orderdirection =
+testreportsforallentitiesallreports = false
+testreportsforallentities = true
+entitiestotest = contracts,contract draft request,child obligations,obligations
+skipreportids = 59,282,281,378,379,330
+
+
+
+
+[default]
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholdergroupsdelemeter = ::
+stakeholderonegroupdelemeter = |
+stakeholdergroupentityid = ,
+testreportsforentities = specified
+
+# This is to test the filters with multiple random values
+# testrandondata values can be true/false
+# randomcount field values will be the numbers of data on which filter should be applied
+
+testrandondata = true
+randomcount = 5
+
+#skip report ids are the reports to be skipped , it can contains the id of reports which have download feature , schedule feature etc..
+#each id should be seperated by comma
+skipreportids = 59,282,281,378,379,330
+
+
+[actions]
+test = 30
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[change requests]
+test = 88
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[obligations]
+test = 58
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[suppliers]
+test = 48
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[child obligations]
+test = 17
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[service levels]
+test = 1010
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[child service levels]
+test = 91
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[interpretations]
+test = 53
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[issues]
+test = 45
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[disputes]
+test = 315
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[contracts]
+test = 49
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[invoices]
+test = 79
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[work order requests]
+test = 96
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+
+[governance body]
+test = 261
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[governance body meetings]
+test = 264
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+
+[contract draft request]
+test = 324
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[service data]
+test = 355
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+
+[invoice line item]
+test = 359
+slider_min=2
+slider_max= 5
+date_from = -10
+date_to = 5
+stakeholders =
+

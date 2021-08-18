@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Reports Listing Filters Suite" data-provider-thread-count="15">
+
+    <test name="Report Filters Data Validation Suite">
+        <classes>
+            <class name="com.sirionlabs.test.reports.TestReportFilters"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Report Listing Data Validation Suite">
+        <classes>
+            <class name="com.sirionlabs.test.reports.TestReportListingData"></class>
+        </classes>
+    </test>-->
+
+</suite>

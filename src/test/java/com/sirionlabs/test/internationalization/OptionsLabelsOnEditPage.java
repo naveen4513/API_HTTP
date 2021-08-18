@@ -1,0 +1,56 @@
+package com.sirionlabs.test.internationalization;
+
+import com.sirionlabs.api.commonAPI.Edit;
+import com.sirionlabs.utils.commonUtils.CustomAssert;
+import com.sirionlabs.utils.commonUtils.ParseJsonResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.SkipException;
+
+import java.util.List;
+
+public class OptionsLabelsOnEditPage extends TestDisputeInternationalization{
+    private final static Logger logger = LoggerFactory.getLogger(FieldLabelsOnShowPage.class);
+    void verifyOptionsLabelsOnEditPage(String entityName, int recordId, CustomAssert csAssert) {
+        try {
+            logger.info("Validating Field Labels on Edit Page.");
+            Edit editObj = new Edit();
+            String editResponse = editObj.hitEdit(entityName, recordId);
+            if (ParseJsonResponse.validJsonResponse(editResponse)) {
+                List<String> allFieldNames = ParseJsonResponse.getAllFieldNamesOfSelectType(editResponse);
+                if (allFieldNames.isEmpty()) {
+                    throw new SkipException("Couldn't get All Field Names from Create Response.");
+                }
+                for ( String fieldName : allFieldNames ) {
+
+                    if(!fieldName.toLowerCase().contains("timeZone") && !fieldName.toLowerCase().contains("supplier") && !fieldName.toLowerCase().contains("governanceBodyChild")
+                            && !fieldName.toLowerCase().contains("startTime") && !fieldName.toLowerCase().contains("duration") && !fieldName.toLowerCase().contains("suppliers")) {
+                        List<String> fieldOptions = ParseJsonResponse.getAllOptionsForFieldAsJsonString(editResponse, fieldName, false);
+
+                        for ( String option : fieldOptions ) {
+
+                            if (option.isEmpty()) {
+                                csAssert.assertTrue(false, "Couldn't get Properties of Field Name " + fieldName + " from New Response.");
+                                continue;
+                            }
+                            if (expectedPostFix == null) {
+                                continue;
+                            }
+                            if (option.toLowerCase().contains(expectedPostFix.toLowerCase())) {
+                                csAssert.assertTrue(false, "[Option: + " + option + " +  contain " + expectedPostFix + " under $" + fieldName + "$ edit page of " + entityName + "];");
+                            } else {
+                                csAssert.assertTrue(true, "[Option: " + option + " does not contain " + expectedPostFix + " under $" + fieldName + "$ edit page of " + entityName + "];");
+                            }
+                        }
+                    }
+                }
+            } else {
+                csAssert.assertTrue(false, "Edit Get API Response for Record Id " + recordId + " of " + entityName + " is an Invalid JSON.");
+            }
+        } catch (SkipException e) {
+            throw new SkipException(e.getMessage());
+        } catch (Exception e) {
+            csAssert.assertTrue(false, "Exception while Validating Field Labels on Edit Page for Record Id " + recordId + " of "+entityName + e.getMessage());
+        }
+    }
+}

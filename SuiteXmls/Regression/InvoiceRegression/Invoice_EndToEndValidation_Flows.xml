@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+<!--    <parameter name="Environment" value="automation"/>-->
+    <parameter name="line item validation" value="yes"/>
+
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <test name="Invoice End to End Flow Validation" parallel ="methods" data-provider-thread-count="5">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.flow.TestInvoiceFlow"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel Tests" parallel="tests" thread-count="7" data-provider-thread-count="15">
+
+    <test name="TestActionIssueDisputeInGb">
+        <classes>
+            <class name="com.sirionlabs.test.APIPOD.TestActionIssueDisputeForGovernanceBody"></class>
+        </classes>
+    </test>
+
+    <test name="TestGBCommunicationTab">
+        <classes>
+            <class name="com.sirionlabs.test.governanceBody.TestGBCommunicationTab"></class>
+        </classes>
+    </test>
+
+    <test name="email token authentication">
+        <classes>
+            <class name="com.sirionlabs.test.api.EmailTokenAuthentication.TestEmailTokenAuthenticationAPI"></class>
+        </classes>
+    </test>
+
+    <test name="Test delete comment">
+        <classes>
+            <class name="com.sirionlabs.test.deleteComment.TestDeleteComment"></class>
+        </classes>
+    </test>
+
+    <test name="TestShareMOM">
+        <classes>
+            <class name="com.sirionlabs.test.governanceBody.TestShareMOM"></class>
+        </classes>
+    </test>
+
+    <test name="Test multi supplier">
+        <classes>
+            <class name="com.sirionlabs.test.governanceBody.TestGbMultiSuppliers"></class>
+        </classes>
+    </test>
+
+    <test name="Check Recent Activity">
+        <classes>
+            <class name="com.sirionlabs.test.TestRecentlyVisited"></class>
+        </classes>
+    </test>
+
+</suite>

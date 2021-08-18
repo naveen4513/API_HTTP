@@ -1,0 +1,535 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 30
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/ChangeRequest/Creation
+extrafieldsconfigfilename = ExtraFieldsForCRCreation.cfg
+
+#TC-30602, TC-30607, TC-30608, TC-30610, TC-30616, TC-30621, TC-30623, TC-30631, TC-30639, TC-30649, TC-30653, TC-30659, TC-30662, TC-30669, TC-30672, TC-30679, TC-30682, TC-30693, TC-30696, TC-30700, TC-30701, TC-30715
+[flow 1]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-30604, TC-30615, TC-30622, TC-30629, TC-30650, TC-30654, TC-30658, TC-30668, TC-30678, TC-30698, TC-30702
+[flow 2]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-30630
+[flow 3]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-30648
+[flow 4]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-30656
+#[flow 5]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-30657
+#[flow 6]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-30660
+[flow 7]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-30661
+[flow 8]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-30663
+[flow 9]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-30666
+#[flow 10]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-30667
+#[flow 11]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-30670
+[flow 12]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-30671
+[flow 13]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-30673
+[flow 14]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-30676
+#[flow 15]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-30677
+#[flow 16]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-30680
+[flow 17]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-30681
+[flow 18]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-30683
+[flow 19]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-30692
+#[flow 20]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-30697
+#[flow 21]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-30719
+#[flow 22]
+#sourceentity = actions
+#sourcename = API Automation Action for CR Creation Suite
+#sourceid = 1705
+#parententitytype = supplier
+#expectedresult = success
+
+#TC-30722
+#[flow 23]
+#sourceentity = change requests
+#sourcename = API Automation CR for CR Creation Suite
+#sourceid = 1510
+#parententitytype = supplier
+#expectedresult = success
+
+#TC-30725
+#[flow 24]
+#sourceentity = obligations
+#sourcename = API Automation OB for CR Creation Suite
+#sourceid = 1961
+#parententitytype = supplier
+#expectedresult = success
+
+#TC-30731
+#[flow 25]
+#sourceentity = service levels
+#sourcename = API Automation OB for CR Creation Suite
+#sourceid = 4707
+#parententitytype = supplier
+#expectedresult = success
+
+#TC-30737
+#[flow 26]
+#sourceentity = invoices
+#sourcename = API Automation Invoice for CR Creation Suite
+#sourceid = 5788
+#parententitytype = supplier
+#expectedresult = success
+
+#TC-30740, TC-30742
+#[flow 27]
+#sourceentity = work order requests
+#sourcename = API Automation WOR for CR Creation Test
+#sourceid = 529
+#parententitytype = supplier
+#expectedresult = success
+
+#TC-30743
+#[flow 28]
+#sourceentity = issues
+#sourcename = API Automation Issue for CR Creation Test
+#sourceid = 1506
+#parententitytype = supplier
+#expectedresult = success
+
+#TC-30745, TC-30746, TC-30747
+#[flow 29]
+#sourceentity = interpretations
+#sourcename = API Automation Interpretation for CR Creation Test
+#sourceid = 1399
+#parententitytype = supplier
+#expectedresult = success
+
+#TC-30748
+[flow 30]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-30728
+#[flow 31]
+#sourceentity = child obligations
+#sourcename = SNMP Monitoring - Dell Technologies
+#sourceid = 8730
+#parententitytype = obligations
+#expectedresult = success
+
+#TC-30734
+#[flow 32]
+#sourceentity = child service levels
+#sourcename = Oracle Monitoring - Berkshire Hathaway
+#sourceid = 4686
+#parententitytype = service levels
+#expectedresult = success
+
+#TC-C7877: Create CR with High Priority
+[flow 33]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7877: Create CR with Low Priority
+[flow 34]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7879: Create CR with Responsibility as Client
+[flow 35]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7879: Create CR with Responsibility as Supplier
+[flow 36]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7879: Create CR with Responsibility as Both Client and Supplier
+[flow 37]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7900: Create CR without Dependent Entity
+[flow 38]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7903: Create CR without CR Date
+[flow 39]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7910: Create CR without Functions
+[flow 40]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7912: Create CR without Services
+[flow 41]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7914: Create CR without Management Region
+[flow 42]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-C7914: Create CR without Management Countries
+[flow 43]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = failure
+
+#TC-C7929: Create CR with Original ACV having 18 digits
+[flow 44]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7931: Create CR without Revised ACV
+[flow 45]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7932: Create CR with Variance having 18 digits
+[flow 46]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7932: Create CR without Variance
+[flow 47]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7932: Create CR with Variance having more than 18 digits
+#Commenting this case as there is no check on API for no of digits. Can be tested only through UI.
+#[flow 48]
+#sourceentity = suppliers
+#sourcename = API Automation Supplier for CR Creation Test
+#sourceid = 1539
+#parententitytype = supplier
+#expectedresult = failure
+
+#TC-C7936: Create CR with Comment having Special Characters
+#TC-C7937: Create CR with Actual Date
+#TC-C7939: Create CR with Requested By other user
+#TC-C7941: Create CR with Change Request
+[flow 49]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7937: Create CR with Actual Date greater than current date
+[flow 50]
+sourceentity = suppliers
+sourcename = API Automation Supplier for CR Creation Test
+sourceid = 1539
+parententitytype = supplier
+expectedresult = success
+
+#TC-C7947: Create CR with Contract of MSA/PSA Type
+[flow 51]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 2241
+parententitytype = contracts
+expectedresult = success
+
+#TC-C7947: Create CR with Contract of SOW/WO Type
+[flow 52]
+sourceentity = contracts
+sourcename = API Automation Contract for Service Level Creation Test
+sourceid = 2117
+parententitytype = contracts
+expectedresult = success
+
+#TC-C44173: Create CR with Blank Title
+[flow 53]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = failure
+
+#TC-C44175: Create CR with Title having more than 512 characters
+[flow 54]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = failure
+
+#TC-C44176: Create CR with Blank Description
+[flow 55]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = success
+
+#TC-C44176: Create CR with Change Request Type
+[flow 56]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = success
+
+#TC-C44179: Create CR without TimeZone
+[flow 57]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = failure
+
+#TC-C44179: Create CR without TimeZone
+[flow 57]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = failure
+
+#TC-C44181: Create CR with Effective Date same as CR Date
+[flow 58]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = success
+
+#TC-C44181: Create CR with Effective Date less than CR Date
+[flow 59]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = success
+
+#TC-C44181: Create CR with Effective Date greater than CR Date
+[flow 60]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = success
+
+#TC-C44183: Create CR without Stakeholder
+[flow 61]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = success
+
+#TC-C44184: Create CR with ACV having characters
+[flow 62]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 1119
+parententitytype = contracts
+expectedresult = failure
+
+#TC-C90398: Create CR from Multi Supplier Contract
+[flow 63]
+sourceentity = contracts
+sourcename = API Automation Multi Supplier Contract for Child Creation test
+sourceid = 17708
+parententitytype = contracts
+multisupplier = true
+multiparentsupplierid = 1027
+expectedresult = success

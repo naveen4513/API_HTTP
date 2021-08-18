@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Filters Suite">
+
+    <test name="Test Filter Options RBI">
+        <classes>
+            <class name="com.sirionlabs.test.rbi.TestFilterOptions"></class>
+        </classes>
+    </test>
+
+    <test name="Supplier Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.supplier.TestSupplierFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Contracts Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestContractFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Obligation Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestObligationFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Child Obligation Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.childobligation.TestChildObligationFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Draft Request Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contractdraftrequest.TestContractDraftRequestFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Clauses Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.clauses.TestClausesFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Templates Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contracttemplate.TestContractTemplateFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Template Structure Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contracttemplatestructure.TestContractTemplateStructuresFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Action Entity Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.actionentity.TestActionFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Definitions Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.definitions.TestDefinitionsFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Issues Filters">
+        <classes>
+            <class name="com.sirionlabs.test.issues.TestIssuesFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Interpretations Filters">
+        <classes>
+            <class name="com.sirionlabs.test.interpretations.TestInterpretationsFilters"></class>
+        </classes>
+    </test>
+</suite>

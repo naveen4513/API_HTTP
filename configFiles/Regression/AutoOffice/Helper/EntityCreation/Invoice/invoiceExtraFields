@@ -1,0 +1,554 @@
+#NOTE: KEYS HERE ARE CASE SENSITIVE. IT SHOULD EXACTLY MATCH THE JSONOBJECT NAME AS IN NEW API RESPONSE
+
+#All section names must be in lower case characters only.
+#Section represents Entity Name as in EntityId.cfg
+#Key would be an Extra field.
+
+#DelimiterForValues is to separate the Extra field and its Value.
+delimiterforvalues = ->
+
+#If Json Key is a JsonObject or JsonArray then specify its key as well.
+#For ex. to specify an extra field like currency, use the format:  currency = values -> {"name": "Indian Rupee (INR)","id": 8,"shortName": "INR","parentName": "Indian Rupee (INR)"}
+#If Json Key is not a JsonObject or JsonArray then no need to specify its key. The fieldName will be considered its key.
+#For ex. to specify an extra field like goal, use the format: goal = {"values": "Infy_DefaultText522","name": "goal"}. Here goal would be considered as key.
+#For fields like Stakeholders and Fields which have AutoComplete option, pass whole JsonObject
+
+#If any field is of Date Type and requires date to be extracted at Runtime then Strictly use format: fieldName = Date -> DateFormat -> +/- NoOfDays.
+#For ex. to calculate 2 days plus from currentDate: plannedCompletionDate = Date -> MM:dd:yyyy -> +2
+#For ex. to calculate 2 days minus from currentDate: requestedOn = Date -> MM:dd:yyyy -> -2
+#If any date field requires specific value then just pass it as for others and not in above format.
+
+[common extra fields]
+#globalRegions = {"name":"globalRegions","id":621,"values":[{"name":"EMEA","id":1003,"parentId":1002}]}
+#globalCountries = {"name":"globalCountries","id":622,"values":[{"name":"Bulgaria","id":37,"parentId":1003}]}
+
+[default]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[invoice_delete_comment]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2020","displayValues":"01-04-2020"}
+comment={"requestedBy":{"name":"requestedBy","id":12244,"options":null,"multiEntitySupport":false},"shareWithSupplier":{"name":"shareWithSupplier","id":12409,"multiEntitySupport":false},"comments":{"name":"comments","id":67,"multiEntitySupport":false,"values":"<p>hiiiii</p>"},"documentTags":{"name":"documentTags","id":12428,"options":null,"multiEntitySupport":false},"draft":{"name":"draft","multiEntitySupport":false},"actualDate":{"name":"actualDate","id":12243,"multiEntitySupport":false},"privateCommunication":{"name":"privateCommunication","id":12242,"multiEntitySupport":false,"values":false},"changeRequest":{"name":"changeRequest","id":12246,"options":null,"multiEntitySupport":false},"workOrderRequest":{"name":"workOrderRequest","id":12247,"multiEntitySupport":false},"commentDocuments":{"values":[]}}
+
+[fixed fee flow 1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[fixed fee flow 2]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[fixed fee flow 3]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[fixed fee flow 7]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[fixed fee flow 8]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[performance_flow1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[arc flow 1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow1"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 2]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow2"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow2"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 4]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow4"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow4"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 5]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow5"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow5"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 6]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow6"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow6"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 7]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow7"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow7"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 8]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow8"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow8"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 9]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow9"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow9"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingforecastflow1"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 2]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast2"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow2"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 3]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow3"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 4]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast4"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow4"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 5]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast5"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow5"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 6]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast6"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow6"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 7]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast7"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow7"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 8]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast8"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow8"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 9]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast9"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow9"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 10]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast10"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow10"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 11]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast11"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow11"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[invoice line item misc]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow No Discrepancy"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestingarcflow"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+
+[fixed fee flow rate card]
+name = {"name":"name","id":602,"values":"For fixed fee flow rate card"}
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[arc flow rate card]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For arc flow rate card"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestingarcflow"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow rate card]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow rate card"}
+poNumber = {"name":"poNumber","id":604,"values":"POForcasRateCard"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testForcFlowRCard"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[invoice line item split service data]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For Invoice line item split service data"}
+poNumber = {"name":"poNumber","id":604,"values":"POLISplitServData"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"LI split serv data"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[fixed fee flow 4]
+name = {"name":"name","id":602,"values":"Fixed Fee Flow Inv Serv Period"}
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[fixed fee flow 5]
+name = {"name":"name","id":602,"values":"Fixed Fee Flow Conv Fac Unavail"}
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[fixed fee flow 6]
+name = {"name":"name","id":602,"values":"Fixed Fee Flow Conv Fac Unavai"}
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2012","displayValues":"01-04-2012"}
+
+[fixed fee flow 7]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[arc flow 3]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2012","displayValues":"01-04-2012"}
+name = {"name":"name","id":602,"values":"ARC Flow Conv Fact Unavail"}
+poNumber = {"name":"poNumber","id":604,"values":"PO ARC Flow3"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"Arcflow Conv Fact Unavail"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow 9]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2012","displayValues":"01-04-2012"}
+name = {"name":"name","id":602,"values":"Forc Flow 9 Conv Fact Unavail"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast9"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testforecastflow9"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2012 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2012 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[consumption reference tab validation single invoice]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"Cons Ref Tab Chk Sing Inv"}
+poNumber = {"name":"poNumber","id":604,"values":"PORefTabCheck"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"Cons Ref Tab Chk Sing Inv"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[currency conv defined]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"For currency conv defined"}
+poNumber = {"name":"poNumber","id":604,"values":"POCurrConvDef"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"Curr Conv Def"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+amountApproved = {"name": "amountApproved","id": 625,"displayValues": "","values": "100.12"}
+paidAmount  = {"name": "paidAmount","id": 629,"displayValues": "","values": "100.12"}
+disputeAmount = {"name": "disputeAmount","id": 631,"displayValues": "","values": "100.12"}
+discrepancyUndercharge = {"name": "discrepancyUndercharge","id": 11831,"displayValues": "","values": "100.12"}
+discrepancyOvercharge = {"name": "discrepancyOvercharge","id": 11830,"displayValues": "","values": "100.12"}
+netSavings = {"name": "netSavings","id": 11832,"displayValues": "","values": "100.12"}
+resolvedDiscrepancy = {"name": "resolvedDiscrepancy","id": 630,"displayValues": "","values": "100.12"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+#currency defined on 28 jun 2019 after failures
+currency = {"name": "currency","id": 609,"values": {"name": "Indian Rupee (INR)","id": 8,"timeZone": "INR"}}
+
+[currency conv not defined]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"Curr Conv Not Def"}
+poNumber = {"name":"poNumber","id":604,"values":"POCurrConvNotDef"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"Curr Conv Not Def"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+amountApproved = {"name": "amountApproved","id": 625,"displayValues": "","values": "100.12"}
+paidAmount  = {"name": "paidAmount","id": 629,"displayValues": "","values": "100.12"}
+disputeAmount = {"name": "disputeAmount","id": 631,"displayValues": "","values": "100.12"}
+discrepancyUndercharge = {"name": "discrepancyUndercharge","id": 11831,"displayValues": "","values": "100.12"}
+discrepancyOvercharge = {"name": "discrepancyOvercharge","id": 11830,"displayValues": "","values": "100.12"}
+netSavings = {"name": "netSavings","id": 11832,"displayValues": "","values": "100.12"}
+resolvedDiscrepancy = {"name": "resolvedDiscrepancy","id": 630,"displayValues": "","values": "100.12"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow amount discrepency]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"Vol Price Flow Amt Discp"}
+poNumber = {"name":"poNumber","id":604,"values":"vol pricing flow"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VolPriceFlowAmtDiscp"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow system values calc 1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"vol pricing flow system values calc 1"}
+poNumber = {"name":"poNumber","id":604,"values":"vol pricing flow"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VolPriceFlowAmtDiscp"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow system values calc 2]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"vol pricing flow system values calc 2"}
+poNumber = {"name":"poNumber","id":604,"values":"vol pricing flow"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VolPriceFlowAmtDiscp"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow pricing unavailable]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"VolPricPricUnavail"}
+poNumber = {"name":"poNumber","id":604,"values":"POVPFlowPricUnAva"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlowPricUnAva"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow invalid service period]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"Vol Pric Flow InvServPer"}
+poNumber = {"name":"poNumber","id":604,"values":"VPFlowInvServPer"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlowInvServPer"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow currency conv factor unavailable2]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2012","displayValues":"01-04-2012"}
+name = {"name":"name","id":602,"values":"VolPricFlowCurrConvFacUnAva2"}
+poNumber = {"name":"poNumber","id":604,"values":"VPFlwCurConFacUnAv"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlwCurConFacUnAv2"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow consumption unavailable]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"VPFlowConsUnAva"}
+poNumber = {"name":"poNumber","id":604,"values":"VPFlowConsUnAva"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlowConsUnAva"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow consumption unapproved]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"VPFlowConsUnApp"}
+poNumber = {"name":"poNumber","id":604,"values":"VPFlowConsUnApp"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlowConsUnApp"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow currency conv factor unavailable1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"VPFlowCurConvUnAva1"}
+poNumber = {"name":"poNumber","id":604,"values":"VPCurConvUnAva1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlowCurConvUnAva1"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow amount discrepancy]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"VPFlowAmtDisc"}
+poNumber = {"name":"poNumber","id":604,"values":"VPFlowAmtDisc"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlowAmtDisc"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow total discrepancy]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"VPFlowTotDisc"}
+poNumber = {"name":"poNumber","id":604,"values":"VPFlowTotDisc"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlowTotDisc"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[vol pricing flow volume discrepancy]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+name = {"name":"name","id":602,"values":"VPFlowVolDisc"}
+poNumber = {"name":"poNumber","id":604,"values":"VPFlowVolDisc"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"VPFlowVolDisc"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[fixed fee flow multiple li 1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+comment = {"comments":{"name":"comments","id":"86","values":"bla bla bla"}}
+
+
+[arc flow multiple li 1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow1"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"08-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow multiple li 1]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingforecastflow1"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"08-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[fixed fee flow multiple li 2]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"08-10-2018","displayValues":"10-08-2018"}
+
+[arc flow multiple li 2]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"08-10-2018","displayValues":"10-08-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow1"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"08-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[forecast flow multiple li 2]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"08-10-2018","displayValues":"10-08-2018"}
+name = {"name":"name","id":602,"values":"For Forecast Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestforecast1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingforecastflow1"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"08-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 1 for qa sdbox]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-03-2018","displayValues":"03-04-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 1 TESTING"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow1"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow1"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[c8238 part 3]
+name = {"name":"name","id":602,"values":"Fixed Fee Flow Inv Serv Period"}
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+
+[fixed fee flow for create rule]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"04-01-2018","displayValues":"01-04-2018"}
+globalRegions = {"name":"globalRegions","id":621,"values":[{"name":"Europe","id":1013,"parentId":1013}]}
+globalCountries = {"name":"globalCountries","id":622,"values":[{"name":"Bulgaria","id":37,"parentId":1013}]}
+paymentTerm = { "name": "paymentTerm", "id": 11077, "values": 26, "multiEntitySupport": false }
+invoiceAmount = { "name": "invoiceAmount", "id": 610, "displayValues": "", "values": 36, "multiEntitySupport": false }
+invoicePeriodFromDate = { "name": "invoicePeriodFromDate", "id": 612, "multiEntitySupport": false, "values": "01-01-2018", "displayValues": "2018-Jan-01" }
+invoicePeriodToDate = { "name": "invoicePeriodToDate", "id": 613, "multiEntitySupport": false, "values": "08-31-2018", "displayValues": "2018-Aug-31" }
+
+[c10420]
+name = {"name":"name","id":602,"multiEntitySupport":false,"values":"Test Invoice Calendar"}
+currency = {"name":"currency","id":609,"options":null,"multiEntitySupport":false,"values":{"name":"Indian Rupee (INR)","id":8,"shortName":"INR","additionalOption":true}}
+invoiceDate = {"name":"invoiceDate","id":611,"multiEntitySupport":false,"values":"03-31-2020 00:00:00"}
+paymentDueDate = {"name":"paymentDueDate","id":617,"multiEntitySupport":false,"values":"09-15-2020 00:00:00"}
+region = {"name":"region","id":621,"options":null,"multiEntitySupport":false,"values":{"name":"APAC","id":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"overdue":false,"autoTask":false,"additionalOption":false}}
+country = {"name":"country","id":622,"options":null,"multiEntitySupport":false,"values":{"name":"Australia","id":15,"parentId":1002,"active":false,"blocked":false,"createdFromListPage":false,"summaryGroupData":false,"bulkOperation":false,"blockedForBulk":false,"autoExtracted":false,"systemAdmin":false,"canOverdue":false,"autoCreate":false,"validationError":false,"isReject":false,"parentHalting":false,"autoTaskFailed":false,"compareHistory":false,"flagForClone":false,"createStakeHolder":false,"escapeValueUpdateTask":false,"excludeFromHoliday":false,"excludeWeekends":false,"datetimeEnabled":false,"uploadAllowed":false,"downloadAllowed":false,"signatureAllowed":false,"saveCommentDocOnValueUpdate":false,"selected":false,"management":false,"overdue":false,"autoTask":false}}
+stakeHolders = {"name":"stakeHolders","values":{"rg_2013":{"values":[{"name":"Anay User","id":1044,"type":2,"email":"srijan.samanta@sirionqa.office"}],"name":"rg_2013","label":"Invoice Manager","userType":[2,1,3,4]},"rg_2549":{"values":[],"name":"rg_2549","label":"BI major release went on 28th Sep","userType":[2]},"rg_2548":{"values":[],"name":"rg_2548","label":"invoices","userType":[2]}},"options":null,"multiEntitySupport":false}
+
+[arc flow 10]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 10"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow10"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow10"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 11]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 11"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow10"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow10"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+[arc flow 12]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For ARC RRC Flow 12"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow10"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow10"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}
+
+
+[hierarchical flow]
+invoiceDate = {"name":"invoiceDate","id":611,"values":"03-10-2018","displayValues":"10-03-2018"}
+name = {"name":"name","id":602,"values":"For hierarchical flow"}
+poNumber = {"name":"poNumber","id":604,"values":"POtestArcflow10"}
+invoiceNumber= {"name":"invoiceNumber","id":601,"values":"testingarcflow10"}
+invoicePeriodFromDate = {"name":"invoicePeriodFromDate","id":612,"values":"03-01-2018 00:00:00"}
+invoicePeriodToDate = {"name":"invoicePeriodToDate","id":613,"values":"03-31-2018 00:00:00"}
+timeZone = {"name": "timeZone","id": 605,"values": {"name": "Asia/Kolkata (GMT +05:30)","id": 8,"timeZone": "Asia/Kolkata"}}

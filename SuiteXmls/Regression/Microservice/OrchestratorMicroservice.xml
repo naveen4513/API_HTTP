@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Orchestrator Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+
+    <suite-files>
+        <!-- Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+    </suite-files>
+
+    <test name="Orchestrator Microservice">
+        <classes>
+            <class name="com.sirionlabs.test.microservice.orchestrator.TestClientDataDeletion"></class>
+            <class name="com.sirionlabs.test.microservice.orchestrator.TestDeleteAPICall"></class>
+            <class name="com.sirionlabs.test.microservice.orchestrator.TestFetchClientDataDeletionDetails"></class>
+        </classes>
+    </test>
+</suite>

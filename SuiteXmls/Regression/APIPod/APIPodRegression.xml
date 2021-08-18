@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Pod Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_voda"/>
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+        <listeners>
+            <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+        </listeners>
+        <suite-file path="ParallelTests.xml"></suite-file>
+        <suite-file path="NonParallel.xml"></suite-file>
+        <suite-file path="../Obligation/ParallelTests.xml"></suite-file>
+        <suite-file path="../Obligation/NonParallel.xml"></suite-file>
+        <suite-file path="../Delegation/ParallelTests.xml"></suite-file>
+        <suite-file path="../Delegation/NonParallel.xml"></suite-file>
+
+
+
+
+    </suite-files>
+</suite>

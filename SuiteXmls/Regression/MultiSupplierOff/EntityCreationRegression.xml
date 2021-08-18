@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Entity Creation Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="multi_supplier_off"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+    </suite-files>
+
+    <test name="Supplier Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.supplier.TestSupplierCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestContractCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Credit EarnBack Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.contract.TestCreditEarnBackCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Obligation Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestObligationCreation"></class>
+        </classes>
+    </test>
+    <test name="SL Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.serviceLevel.TestServiceLevelCreation"></class>
+        </classes>
+    </test>
+
+    <test name="PO Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.purchaseOrder.TestPurchaseOrderCreation"></class>
+        </classes>
+    </test>
+
+    <test name="CR Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.changeRequest.TestChangeRequestCreation"></class>
+        </classes>
+    </test>
+
+    <test name="WOR Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.wor.TestWORCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Interpretation Creation Validation">
+        <classes>
+            <class name="com.sirionlabs.test.interpretation.TestInterpretationCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Action Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.action.TestActionCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Issue Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.issue.TestIssueCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Dispute Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.dispute.TestDisputeCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Clause Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.clause.TestClauseCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Definition Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.definition.TestDefinitionCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Template Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.contractTemplate.TestContractTemplateCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Contract Template Structure Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.contractTemplateStructure.TestContractTemplateStructureCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Governance Body Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.governanceBody.TestGovernanceBodyCreation"></class>
+        </classes>
+    </test>
+
+    <test name="CDR Entity Creation Test">
+        <classes>
+            <class name="com.sirionlabs.test.cdr.TestCDRCreation"></class>
+        </classes>
+    </test>
+
+    <test name="Contract-Service Data-Invoice-Invoice Line Item Creation" parallel ="methods">
+        <parameter name="run type" value="sanity" />
+        <parameter name="line item validation" value="no" />
+        <classes>
+            <class name="com.sirionlabs.test.invoice.flow.TestInvoiceFlow"></class>
+        </classes>
+    </test>
+
+</suite>

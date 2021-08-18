@@ -1,0 +1,38 @@
+[envinfo]
+domain = http://qavf.rc.office
+clientadminusername = anay_admin
+clientadminpassword = admin123
+dbhost = 192.168.2.110
+dbport = 5432
+maintenancedb = rc_1.22
+dbusername = postgres
+dbpassword = postgres
+
+[flow1]
+testcasetype=positive
+statuscode = 200
+deletedtest=no
+workflowid = 29
+entitytypeid = 3
+entitytypename = Vendor
+nodenumber=3
+
+[flow2]
+testcasetype =negative
+deletedtest=yes
+statuscode = 200
+workflowid = 29
+entitytypeid = 3
+entitytypename = Vendor
+nodenumber=3
+errormessage=Error occurred!
+
+[flow3]
+testcasetype =negative
+deletedtest=no
+statuscode = 200
+workflowid = 999990
+entitytypeid = 3
+entitytypename = Vendor
+nodenumber=3
+errormessage=Error occurred!

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Internationalization Suite">
+<parameter name="TestingType" value="regression"/>
+<parameter name="Environment" value="baOffice"/>
+
+<suite-files>
+
+    <!-- Login and Configuration -->
+    <suite-file path="../../Default/Configuration.xml"></suite-file>
+    <suite-file path="../../Default/Login.xml"></suite-file>
+    <!-- Login and Configuration -->
+
+    <test name="Invoice Internationalization" parallel ="methods">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.internationalization.TestFieldRenaming"></class>
+        </classes>
+    </test>
+
+</suite-files>
+</suite>

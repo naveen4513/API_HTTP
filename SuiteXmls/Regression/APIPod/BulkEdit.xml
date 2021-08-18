@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_voda"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+
+
+        <test name="TestBulkEditClientSetup">
+            <classes>
+                <class name="com.sirionlabs.test.bulkEdit.TestBulkEditClientSetup"></class>
+            </classes>
+        </test>
+
+        <test name="TestBulkEditClientAdmin">
+            <classes>
+                <class name="com.sirionlabs.test.bulkEdit.TestBulkEditClientAdmin"></class>
+            </classes>
+        </test>
+
+
+
+
+    </suite-files>
+</suite>

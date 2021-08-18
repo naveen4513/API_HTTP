@@ -1,0 +1,43 @@
+#All section names and keys must be in lower case characters only
+
+#CreationFlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+creationflowstovalidate = flow 1, flow 2, flow 3
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/Obligation/Creation
+extrafieldsconfigfilename = ExtraFieldsForObligationCreation.cfg
+
+#************ Obligation Creation Flows Below *******************
+
+#TC-24342, TC-24345, TC-24346, TC-24348, TC-24349, TC-24361, TC-24389, TC-24415
+[flow 1]
+sourceentity = contracts
+sourcename = API Automation Contract for Obligation Creation Test
+sourceid = 2132
+parententitytype = msa
+expectedresult = success
+
+#TC-24344
+[flow 2]
+sourceentity = contracts
+sourcename = API Automation Contract for Obligation Creation Test
+sourceid = 2132
+parententitytype = msa
+expectedresult = failure
+
+#TC-24378
+[flow 3]
+sourceentity = contracts
+sourcename = bulk edit contracts flow 1
+sourceid = 1292
+parententitytype = msa
+expectedresult = failure
+
+#************* End of Obligation Creation Flows ****************
+
+[fields validation]
+contractid = 2132

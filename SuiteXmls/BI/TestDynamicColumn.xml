@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sisense Dynamic Metadata Functional Tests" thread-count="1">
+
+    <test name="Dynamic Meta Data Tests">
+        <classes>
+            <class name="com.sirionlabs.test.sisenseBI.TestDynamicMetaDataTests"></class>
+        </classes>
+    </test>
+
+
+</suite>

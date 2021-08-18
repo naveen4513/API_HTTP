@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+
+    <!--<test name="Email Microservice">-->
+        <!--<classes>-->
+            <!--<class name="com.sirionlabs.test.microservice.email.TestEmailMicroService"></class>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="Email Microservice">
+        <classes>
+            <class name="com.sirionlabs.test.microservice.email.TestURGMapperApi"></class>
+        </classes>
+    </test>
+</suite>

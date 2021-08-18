@@ -1,0 +1,37 @@
+#This file contains all the Flows for the Bulk Create
+
+#Below are the Flows to best tested Sections. Each Section represents one flow to be tested.
+#Section Property Entity: EntityName as in EntityId.cfg & EntityIdMapping.cfg. For which Entity bulk records are to be created.
+#TemplateId: Template Id for the Bulk Create for that Entity
+#ParentEntityTypeId: Parent Entity Type Id of the Entity.
+#ParentId: Parent Id of the Entity.
+#UploadMessage: Expected UploadBulkData API Response Message. The Response of UploadBulkData API should contain this message otherwise test will be considered failed.
+#ExcelFileName: Complete name of the Excel file which is to be uploaded for the flow. The path of the file will be picked from Property 'ExcelFilePath' in TestBulkCreate.cfg file.
+#TitleColumnNoInExcelFile = Column No in Excel Sheet where Title of the Entity is mentioned. The title field will be used to find out whether new entity actually got created or not.
+#NoOfRecords: Total no of records that are to be created i.e. no of rows filled in Excel Sheet for new records.
+
+#ExpectedResult: Possible Values are Success or Failure. Default Value is Success.
+#Success Represents that the records should be created successfully. Will also validate records on Show Page.
+#Failure Represents that the records should not be created. This is used for negative cases. Will not validate records on Show Page.
+
+[obligations flow 1]
+entity = obligations
+templateid = 1016
+parententitytypeid = 61
+parentid = 1292
+uploadmessage = Your request has been successfully submitted
+excelfilename = obligationsflow1.xlsm
+titlecolumnnoinexcelfile = 4
+noofrecords = 1
+expectedresult = success
+
+[obligations flow 2]
+entity = obligations
+templateid = 1016
+parententitytypeid = 61
+parentid = 1292
+uploadmessage = Does Not Contain Minimum Number Of Rows Allowed To Upload
+excelfilename = obligationsflow1.xlsm
+titlecolumnnoinexcelfile = 4
+noofrecords = 1
+expectedresult = failure

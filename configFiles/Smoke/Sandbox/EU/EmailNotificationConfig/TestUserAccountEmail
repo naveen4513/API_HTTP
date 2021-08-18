@@ -1,0 +1,18 @@
+#All keys must be in lower case characters only
+
+username = ajay_user
+useremail = neetu_user_qa@sirionqa.office
+subjects = ["Weekly Reminder"]
+subjectsdelimiter = ,
+numberofdays = 1
+messagestobesaved = true
+messagebodytobeverified = false
+attachmentstobedownload = true
+downloaddirectory = src//test//output//Emails//
+
+# MailExchage server details
+mailboxhost = 192.168.2.115
+mailboxusername = admin@sirionqa.office
+mailboxpassword = admin123
+mailboxisssl = false
+mailboxport = 143

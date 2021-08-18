@@ -1,0 +1,27 @@
+#This file contains all the Flows for the Bulk Update
+
+#Below are the Flows to best tested Sections. Each Section represents one flow to be tested.
+#Section Property Entity: EntityName as in EntityId.cfg & EntityIdMapping.cfg. For which Entity bulk records are to be updated.
+#TemplateId: Template Id for the Bulk Update for that Entity
+#UploadMessage: Expected UploadBulkData API Response Message. The Response of UploadBulkData API should contain this message otherwise test will be considered failed.
+#ExcelFileName: Complete name of the Excel file which is to be uploaded for the flow. The path of the file will be picked from Property 'ExcelFilePath' in TestBulkUpdate.cfg file.
+#NoOfRecords: Total no of records that are to be updated i.e. no of rows filled in Excel Sheet for new records.
+#RecordIds: Ids of all the records that are to be updated. Multiple records can be defined using delimiter , (comma).
+#FieldsToUpdate: The Field Label as in Bulk Update Template which are to be updated for that Flow. Multiple fields can be defined using delimiter , (comma).
+
+#ExpectedResult: Possible Values are as below. Default Value is Success.
+#Success: Represents that the records should be updated successfully. Will also validate records on Show Page.
+#Failure: Represents that the records should not be updated. The records should be processed by Scheduler though. This is used for negative cases. Will not validate records on Show Page.
+#FailAtUpload: Represents that the Bulk Update should fail at the time of Excel Upload. This is used for negative cases.
+#RecordsProcessFalse: Represents that the Process Column for all the records in the Bulk Update is set to False i.e. No. Zero records should be processed in this case.
+
+[obligations flow 1]
+entity = obligations
+templateid = 1019
+uploadmessage = Your request has been successfully submitted
+excelfilename = bulkupdateobligationsflow1.xlsm
+sheetname = obligation
+noofrecords = 1
+recordids = 1593
+fieldstoupdate = basic information - delivery countries, basic information - time zone
+expectedresult = success

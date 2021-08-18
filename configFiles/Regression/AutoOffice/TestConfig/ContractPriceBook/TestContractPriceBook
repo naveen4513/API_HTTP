@@ -1,0 +1,320 @@
+#All section names and keys must be in lower case characters only
+
+#FlowsToValidate: All the flows that are to be validated.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1
+
+#DeleteServiceData: Whether to delete Service Data Entity or not. Possible values are True or False. Default Value is True.
+deleteservicedata = true
+
+#PricingFileDownloadPath: Directory where the Pricing Template is to be downloaded.
+pricingfiledownloadpath = src/test/resources/TestConfig/ContractPriceBook
+pricingfiledownloadname = ServiceDataPricing.xlsm
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/ContractPriceBook
+extrafieldsconfigfilename = ExtraFieldsForContractPriceBook.cfg
+
+#SchedulerWaitTimeOut: Max timeout (in milliseconds) for Scheduler Job to finish Pricing Template Consumption. Default Value is 1200000
+schedulerwaittimeout = 600000
+
+#SchedulerPollingTime: Polling Time (in milliseconds) after which to check whether Scheduler has finished Pricing job or not. Default Value is 10000
+schedulerpollingtime = 5000
+
+#KillAllTasks: Whether to kill all Scheduler Tasks or not. Default Value is True.
+killalltasks = true
+
+#ListData Details
+#Offset: Default value is 0.
+offset = 0
+#Size: Default value is 20.
+size = 40
+
+#ApplyRandomization: When Set to True then pick some records randomly for Validation. If False then will pick all records for validation. (True to enable, False to disable).
+#Default Value is False. If Set to True then Max. No of Records to be validated will be picked from MaxRecordsToValidate property.
+applyrandomization = true
+
+#MaxRecordsToValidate: These many records will be picked randomly for Validation. (Default value is 3)
+maxrecordstovalidate = 5
+#MaxNoOfFiltersToValidate: Randomly pick these many filters for validation. Default value is 3. It is picked only if ApplyRandomization is True.
+maxnooffilterstovalidate = 10
+#MaxNoOfFilterOptionsToValidate: Randomly pick these many options from all the Options of a Filter. Default value is 3. It is picked only if ApplyRandomization is True.
+maxnooffilteroptionstovalidate = 10
+
+#FiltersToIgnore: All the filters which are to be ignored for validation. Filter Query names are to be provided.
+filterstoignore = serviceDataPricingBookPivot, pricingDataViewType, priceVersion, resourceUnit
+
+#Contract Price Book Flows below
+#******************************************************************************
+
+#Below are the flows to Test Contract Price Book.
+
+#ContractId: Id of the Contract which is to be used for Complete flow testing.
+#PreRequisiteSections: All the sections which are to considered for creating all the pre-requisite data to test. Multiple sections can be specified using delimiter , (comma).
+#These pre-requisite sections further contain all the details about pricing sheets and flows to be used.
+
+[flow 1]
+contractid = 1956
+prerequisitesections = fixed fee section 1, arc section 1, forecast section 1
+
+
+[flow 2]
+contractid = 2031
+prerequisitesections = fixed fee section 2, arc section 2, forecast section 2
+
+#End of Contract Price Book Flows
+#******************************************************************************
+
+
+#Flow Pre-Requisite Sections below
+#******************************************************************************
+
+#Below sections contain all the information about pricing sheet and pricing flows.
+#CreationSection: The section to be used to create a Service Data.
+#DefaultPricingEnabled: Whether to upload Default Version Pricing Sheet i.e. without CCR version.
+#DefaultPricingSection: The pricing section to be used for Default Version Pricing Data.
+#VersionPricingEnabled: Whether to upload a Version Pricing Sheet i.e. with CCR version.
+#VersionPricingSections: All the sections that are to be considered for creating CCR Version Pricing Data for that Service Data.
+#Multiple CCR Version Pricing Data can be created for a service data by giving multiple version pricing sections using delimiter , (comma).
+#This property is used only when VersionPricingEnabled flag is true.
+
+[fixed fee section 1]
+creationsection = fixed fee creation flow 1
+defaultpricingenabled = true
+defaultpricingsection = pricing flow 1
+versionpricingenabled = false
+versionpricingsections = version pricing flow 1, version pricing flow 3
+
+
+[arc section 1]
+creationsection = arc creation flow 1
+defaultpricingenabled = true
+defaultpricingsection = pricing flow 2
+versionpricingenabled = false
+versionpricingsections = version pricing flow 2
+
+
+[forecast section 1]
+creationsection = forecast creation flow 1
+defaultpricingenabled = true
+defaultpricingsection = pricing flow 3
+versionpricingenabled = false
+versionpricingsections =
+
+
+[fixed fee section 2]
+creationsection = fixed fee creation flow 2
+defaultpricingenabled = true
+defaultpricingsection = pricing flow 1
+versionpricingenabled = false
+versionpricingsections = version pricing flow 4
+
+
+[arc section 2]
+creationsection = arc creation flow 2
+defaultpricingenabled = true
+defaultpricingsection = pricing flow 2
+versionpricingenabled = false
+versionpricingsections = version pricing flow 5
+
+
+[forecast section 2]
+creationsection = forecast creation flow 2
+defaultpricingenabled = true
+defaultpricingsection = pricing flow 3
+versionpricingenabled = false
+versionpricingsections = version pricing flow 6
+
+#End of Flow Pre-Requisite Sections
+#******************************************************************************
+
+
+#Service Data Creation Flows below
+#******************************************************************************
+[fixed fee creation flow 1]
+sourceentity = contracts
+servicedatatype = fixed fee
+sourcename = API Automation Contract for Price Book Test
+sourceid = 1956
+
+
+[arc creation flow 1]
+sourceentity = contracts
+servicedatatype = arc
+sourcename = API Automation Contract for Price Book Test
+sourceid = 1956
+
+
+[forecast creation flow 1]
+sourceentity = contracts
+servicedatatype = forecast
+sourcename = API Automation Contract for Price Book Test
+sourceid = 1956
+
+[fixed fee creation flow 2]
+sourceentity = contracts
+servicedatatype = fixed fee
+sourcename = API Automation Contract for Price Book Test flow 2
+sourceid = 2031
+
+
+[arc creation flow 2]
+sourceentity = contracts
+servicedatatype = arc
+sourcename = API Automation Contract for Price Book Test flow 2
+sourceid = 2031
+
+
+[forecast creation flow 2]
+sourceentity = contracts
+servicedatatype = forecast
+sourcename = API Automation Contract for Price Book Test flow 2
+sourceid = 2031
+
+#End of Service Data Creation Flows
+#******************************************************************************
+
+
+#Service Data Pricing Flows below
+#******************************************************************************
+
+#NoOfRows in below pricing sections will tell how many rows of service data the excel file will have.
+
+[pricing flow 1]
+noofrows = 3
+ratevalue = 2,3,4
+volumevalue = 10,15,20
+
+
+[pricing flow 2]
+noofrows = 3
+ratevalue = 5,6,7
+volumevalue = 5,10,15
+arclowerlevelvalue = 100
+arcupperlevelvalue = 150
+arcratevalue = 5
+arctypevalue = ARC
+
+
+[pricing flow 3]
+noofrows = 3
+ratevalue = 1,3,5
+volumevalue = 12,17,22
+
+
+[pricing flow 4]
+noofrows = 3
+ratevalue = 9,8,7
+volumevalue = 16,22,28
+
+
+[pricing flow 5]
+noofrows = 3
+ratevalue = 2,4,6
+volumevalue = 30,35,40
+arclowerlevelvalue = 100
+arcupperlevelvalue = 150
+arcratevalue = 5
+arctypevalue = ARC
+
+
+[pricing flow 6]
+noofrows = 3
+ratevalue = 10,7,4
+volumevalue = 24,17,10
+
+#End of Service Data Pricing Flows
+#******************************************************************************
+
+
+#Service Data Version Pricing Flows below
+#******************************************************************************
+
+#Version Pricing Section: This section contains all the details required to create Pricing Data of different versions i.e. CCR.
+#PricingSection: Pricing Flow name which is to be used for creating this version pricing Data.
+#CCR Section: CCR Section name which is to be used to populate CCR Value in Data Sheet of Pricing Template.
+#CCR Sections further contain details such as CCRValue i.e. to populated in Data Sheet and CCRId i.e. the ID of CCR.
+
+[version pricing flow 1]
+pricing section = pricing flow 4
+ccr section = ccr section 1
+
+[version pricing flow 2]
+pricing section = pricing flow 5
+ccr section = ccr section 1
+
+[version pricing flow 3]
+pricing section = pricing flow 6
+ccr section = ccr section 2
+
+[version pricing flow 4]
+pricing section = pricing flow 4
+ccr section = ccr section 3
+
+[version pricing flow 5]
+pricing section = pricing flow 5
+ccr section = ccr section 3
+
+[version pricing flow 6]
+pricing section = pricing flow 6
+ccr section = ccr section 4
+
+
+#End of Service Data Version Pricing Flows
+#******************************************************************************
+
+
+#CCR Sections below
+#******************************************************************************
+
+#CCR Sections contain details such as CCRValue and CCRId that can be used in multiple Version Pricing Sections.
+
+[ccr section 1]
+ccrvalue = (CR01121) CR for API Automation Contract Price Book Test
+ccrid = 1445
+
+[ccr section 2]
+ccrvalue = (CR01124) CR for API Automation Contract Price Book Test 2
+ccrid = 1448
+
+[ccr section 3]
+ccrvalue = (CR01125) CR for API Automation Contract Price Book Test 3
+ccrid = 1449
+
+[ccr section 4]
+ccrvalue = (CR01127) CR for API Automation Contract Price Book Test 4
+ccrid = 1451
+
+#End of CCR Sections
+#******************************************************************************
+
+#Contract Price Book Filters Validation Flow below
+#******************************************************************************
+
+[filters validation]
+contractid = 1956
+
+#End of Contract Price Book Filters Validation Flow
+#******************************************************************************
+
+
+#Contract Price Book Filters Name and Show Page Object Mapping Section
+#******************************************************************************
+
+#Contract Price Book Filter Name and Show Page Objects Mapping are to be defined under FilterNameShowPageObjectMapping.
+#On Show Page, it will look for the Show Page Object Name to validate Data. If mapping is not found for a Filter, then it will not validate data on Show Page.
+#Key is Filter Label and Value is Show Page Object Name.
+#NOTE: This section and keys are case-sensitive.
+
+[filterNameShowPageObjectMapping]
+deliveryCountries = service data countries
+serviceSubCategory = service sub category
+contractService = contract service
+invoicingType = invoicing type
+resourceUnit = service data resource unit id
+serviceCategory = service category
+deliveryStates = states
+
+
+#End of Contract Price Book Filters Name and Show Page Object Mapping Section
+#******************************************************************************

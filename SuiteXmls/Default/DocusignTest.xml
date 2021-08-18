@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Microservice Test" >
+
+    <test name="docusign/send Test Cases">
+        <classes>
+            <class name="com.sirionlabs.test.docusign.TestSend"></class>
+        </classes>
+    </test>
+
+</suite>   

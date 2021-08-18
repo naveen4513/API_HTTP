@@ -1,0 +1,29 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 1, flow 2
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/PurchaseOrder/Update
+extrafieldsconfigfilename = ExtraFieldsForPurchaseOrderUpdate.cfg
+
+#TC-98681
+[flow 1]
+poid = 1424
+expectedresult = failure
+
+#TC-98683
+[flow 2]
+poid = 1424
+expectedresult = success
+
+#TC-98684
+[flow 3]
+poid = 1424
+expectedresult = success

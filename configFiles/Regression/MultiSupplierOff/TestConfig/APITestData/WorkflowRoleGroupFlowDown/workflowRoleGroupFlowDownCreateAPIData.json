@@ -1,0 +1,67 @@
+[
+  {
+    "testCaseId": "1",
+    "description": "Validate API is creating role group flow down for Parent Entity Contracts and Child Entity Action. One record and deleted false",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "parentEntityTypeId": "61",
+    "childEntityTypeId": "18",
+    "roleGroupId": "2092",
+    "clientId": "1005",
+    "deleted": "false",
+    "expectedStatusCode": 200,
+    "expectedErrorMessage": null
+  },
+  {
+    "testCaseId": "2",
+    "description": "Validate API is creating role group flow down for Parent Entity Suppliers and Child Entity Contracts. One record and deleted false",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "parentEntityTypeId": "1",
+    "childEntityTypeId": "61",
+    "roleGroupId": "2451",
+    "clientId": "1005",
+    "deleted": "false",
+    "expectedStatusCode": 200,
+    "expectedErrorMessage": null
+  },
+  {
+    "testCaseId": "3",
+    "description": "Validate API is Updating role group flow down for Parent Entity Suppliers and Child Entity Contracts. One record and deleted true",
+    "enabled": "yes",
+    "testingType": "smoke, regression",
+    "parentEntityTypeId": "1",
+    "childEntityTypeId": "61",
+    "roleGroupId": "2451",
+    "clientId": "1005",
+    "deleted": "true",
+    "expectedStatusCode": 200,
+    "expectedErrorMessage": null
+  },
+  {
+    "testCaseId": "4",
+    "description": "Validate API is not creating role group flow down when deleted is true.",
+    "enabled": "yes",
+    "testingType": "regression",
+    "parentEntityTypeId": "61",
+    "childEntityTypeId": "12",
+    "roleGroupId": "2374",
+    "clientId": "1005",
+    "deleted": "true",
+    "expectedStatusCode": 200,
+    "expectedErrorMessage": "not linked yet"
+  },
+  {
+    "testCaseId": "5",
+    "description": "Validate API is creating role group flow down for Multiple records",
+    "enabled": "yes",
+    "testingType": "regression",
+    "parentEntityTypeId": "61, 1",
+    "childEntityTypeId": "12, 61",
+    "roleGroupId": "2374, 2451",
+    "clientId": "1005, 1005",
+    "deleted": "false, false",
+    "expectedStatusCode": 200,
+    "expectedErrorMessage": null
+  }
+]

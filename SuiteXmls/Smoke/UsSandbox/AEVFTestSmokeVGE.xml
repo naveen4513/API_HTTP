@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke">
+    <parameter name="TestingType" value="smoke"/>
+    <parameter name="Environment" value="Sandbox/AEVF"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+
+        <test name="AutoExtraction APIs Test">
+            <classes>
+                <class name="com.sirionlabs.test.autoExtraction.BatchCreation"></class>
+                <class name="com.sirionlabs.test.autoExtraction.BulkEditAutoExtraction"></class>
+                <class name="com.sirionlabs.test.autoExtraction.testWorkBench"></class>
+                <class name="com.sirionlabs.test.autoExtraction.documentUploadFeature"></class>
+                <class name="com.sirionlabs.test.autoExtraction.autoExtractionSearch"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestDuplicateFeature"></class>
+                <class name="com.sirionlabs.test.autoExtraction.testAutoExtractionTrackerReport"></class>
+                <class name="com.sirionlabs.test.autoExtraction.QCLevelAllocation"></class>
+                <class name="com.sirionlabs.test.autoExtraction.TestCommunication"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AEBlankFilters"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AEPorting"></class>
+                <class name="com.sirionlabs.test.autoExtraction.MetadataCrudOperations"></class>
+                <class name="com.sirionlabs.test.autoExtraction.AEExtractionSummary"></class>
+                <class name="com.sirionlabs.test.autoExtraction.ViewExtractedTextLink"></class>
+
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

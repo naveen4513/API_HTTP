@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bulk Update Test">
+
+    <test name="BulkUpdate Feature">
+        <classes>
+            <class name="com.sirionlabs.test.bulkUpdate.TestBulkUpdateFeature"></class>
+        </classes>
+    </test>
+
+    <test name="BulkUpdate Field Provisioning">
+        <classes>
+            <class name="com.sirionlabs.test.bulkUpdate.TestBulkUpdateFieldProvisioning"></class>
+        </classes>
+    </test>
+
+    <test name="BulkUpdate End User Download Template">
+        <classes>
+            <class name="com.sirionlabs.test.bulkUpdate.TestBulkUpdateEndUserDownloadTemplate"></class>
+        </classes>
+    </test>
+
+    <test name="BulkUpdate End User Upload Template">
+        <classes>
+            <class name="com.sirionlabs.test.bulkUpdate.TestBulkUpdateEndUserUploadTemplate"></class>
+        </classes>
+    </test>
+
+</suite>

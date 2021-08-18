@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Regression Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+<!--    <parameter name="Environment" value="automation"/>-->
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <test name = "SIR-7983 Functionality">
+            <classes>
+                <class name="com.sirionlabs.test.listing.Test_SIR7983"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>

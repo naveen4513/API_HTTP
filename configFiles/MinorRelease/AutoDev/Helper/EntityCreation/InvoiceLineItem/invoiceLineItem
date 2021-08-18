@@ -1,0 +1,417 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = invoices
+sourcename = Automation_DefaultText318
+sourceid = 5401
+lineitemtypeid = 1066
+
+[fixed fee flow 1]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[fixed fee flow 2]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[fixed fee flow 3]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[performance_flow1]
+sourceentity = invoices
+sourcename = AMDOCS Invoice 1890
+sourceid = 36692
+lineitemtypeid = 1046
+
+[arc flow 1]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[forecast flow 1]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 2]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 3]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+
+[invoice line item misc]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[fixed fee flow rate card]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[arc flow rate card]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[forecast flow rate card]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+
+[invoice line item split service data]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[fixed fee flow 4]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[fixed fee flow 5]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[fixed fee flow 6]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[fixed fee flow 7]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[fixed fee flow 8]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[fixed fee flow 9]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[arc flow 2]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[arc flow 3]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[arc flow 4]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[arc flow 5]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[arc flow 6]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[arc flow 7]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[arc flow 8]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[arc flow 9]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[forecast flow 4]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 5]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 6]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 7]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 8]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 9]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 10]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[forecast flow 11]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[consumption reference tab validation single invoice]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[currency conv defined]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[currency conv not defined]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow amount discrepency]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow pricing unavailable]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow invalid service period]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow currency conv factor unavailable1]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow total discrepancy]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow amount discrepancy]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow consumption unavailable]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow consumption unapproved]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[vol pricing flow currency conv factor unavailable2]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[fixed fee flow multiple li 11]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[arc flow multiple li 11]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[forecast flow multiple li 11]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[fixed fee flow multiple li 12]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[arc flow multiple li 12]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[forecast flow multiple li 12]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[fixed fee flow multiple li 13]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[arc flow multiple li 13]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[forecast flow multiple li 13]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+
+[fixed fee flow multiple li 21]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[arc flow multiple li 21]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[forecast flow multiple li 21]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[fixed fee flow multiple li 22]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1066
+
+[arc flow multiple li 22]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[forecast flow multiple li 22]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1070
+
+[arc flow 1 for qa sdbox]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[fixed fee flow for no arc/rrc]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1067
+
+[fixed fee flow for create rule]
+sourceentity = invoices
+sourcename = Automation_DefaultText003
+sourceid = 5409
+lineitemtypeid = 1071

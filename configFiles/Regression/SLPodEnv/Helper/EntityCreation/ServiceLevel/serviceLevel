@@ -1,0 +1,195 @@
+#All keys must be in lower case characters only
+#Delimiter to be used throughout this config file to separate fields: ,
+#Delimiter to be used to separate extra fields and their values (Values is the Json Object/Array/String). For Ex. extrafields = title::-> "Test" , Alias::-> {"name": "Test2"}
+delimiterforextrafields = ::->
+
+
+#All the Default Properties/Other Values are to be stored in Section default.
+[default]
+#BasePrefix is the prefix that will be added to every new entity created
+baseprefix = Automation_
+
+defaulttext = DefaultText
+defaultdate = 07-20-2017
+
+#RequiredDateFormat: Convert all the date fields to this format
+requireddateformat = MM-dd-YYYY hh:mm:ss
+
+aliasprefix = AL
+maxlengthforalias = 5
+
+sourceentity = contracts
+sourcename = Instelca S.L.U. Agency VF ES-Elektronic
+sourceid = 3617
+parententitytype = msa
+
+[flow 1]
+sourceentity = contracts
+sourcename = Instelca S.L.U. Agency VF ES-Elektronic
+sourceid = 3617
+parententitytype = msa
+
+[sl automation flow]
+sourceentity = contracts
+#sourcename = Sirion Performance Contracts
+#sourceid = 1110
+sourcename = Sirion Performance Contracts
+sourceid = 136871
+parententitytype = psa
+expectedresult = success
+
+[sl automation flow error in computation]
+sourceentity = contracts
+#sourcename = Sirion Performance Contracts
+#sourceid = 1110
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl max level 1]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl max level 2]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl max level 3]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl min level 1]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl min level 2]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl min level 3]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl misc 2]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl misc 3]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl rag applicable no]
+sourceentity = contracts
+sourcename = Sirion Performance Contracts
+sourceid = 136871
+parententitytype = psa
+expectedresult = success
+
+[sl for snow integration]
+sourceentity = contracts
+sourcename = Sirion Performance Contracts
+sourceid = 1110
+parententitytype = psa
+expectedresult = success
+
+[sl with cr flow 1]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl with cr flow 2]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl with cr flow 3]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl with cr flow 4]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl with cr flow 5]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl with cr flow 6]
+sourceentity = contracts
+sourcename = Contract Flow Down Test
+sourceid = 136650
+parententitytype = psa
+expectedresult = success
+
+[sl with week type 5]
+sourceentity = contracts
+sourcename = Sirion Performance Contracts
+sourceid = 136871
+parententitytype = psa
+expectedresult = success
+
+[sl with week type 6]
+sourceentity = contracts
+sourcename = Sirion Performance Contracts
+sourceid = 136871
+parententitytype = psa
+expectedresult = success
+
+[sl with week type 7]
+sourceentity = contracts
+sourcename = Sirion Performance Contracts
+sourceid = 136871
+parententitytype = psa
+expectedresult = success
+
+[sl currency conversion flow]
+sourceentity = contracts
+sourcename = Automation Contract Currency Conversion - Do not Update
+sourceid = 136956
+parententitytype = msa
+expectedresult = success
+
+[sl credit and earnback fixed amount]
+sourceentity = contracts
+sourcename = Automation Credit and Earnback Contract
+sourceid = 136959
+parententitytype = msa
+expectedresult = success

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Docusign Service API Verificiation" thread-count="1">
+
+    <test name="Test Docusign Service">
+        <classes>
+            <class name="com.sirionlabs.test.docusign.TestDocusignService"></class>
+        </classes>
+    </test>
+
+
+</suite>

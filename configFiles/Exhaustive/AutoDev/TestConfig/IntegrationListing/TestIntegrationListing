@@ -1,0 +1,9 @@
+offset=0
+size=20
+
+#default size is used for the list Data when first call=true.
+defaultsize=20
+orderbycolumnname=id
+orderdirection=desc nulls last
+listid=5a1278dde4b056f2b55042b3
+integrationsystemid=1001

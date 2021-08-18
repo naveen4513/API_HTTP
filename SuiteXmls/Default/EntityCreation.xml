@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Entity Creation" thread-count="1">
+
+    <test name="Create Entity">
+        <classes>
+            <class name="com.sirionlabs.test.EntityCreation.TestEntityCreation"></class>
+        </classes>
+    </test>
+
+</suite>

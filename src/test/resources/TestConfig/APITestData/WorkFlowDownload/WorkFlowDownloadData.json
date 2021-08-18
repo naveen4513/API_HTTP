@@ -1,0 +1,22 @@
+[
+  {
+    "expectedStatusCode": "200",
+    "shortCodeId": "CSL32140",
+    "description": "Hit WorkflowId API With Valid shortCodeId of CSL",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "",
+    "status": "Success",
+    "testCaseId": "2"
+  },
+  {
+    "expectedStatusCode": "200",
+    "shortCodeId":"GB10000000000",
+    "description": "Hit WorkflowId API With Invalid shortCodeId",
+    "testingType": "regression",
+    "enabled": "yes",
+    "expectedResponseMessage": "Invalid EntityId :GB10000000000",
+    "status":"error",
+    "testCaseId": "1"
+  }
+]

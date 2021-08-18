@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Non RBI Filters Suite">
+
+    <test name="Vendor Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.vendor.TestVendorFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Child Service Level Filters">
+        <classes>
+            <class name="com.sirionlabs.test.childserviceLevel.TestChildServiceLevelFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Disputes Entity Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.disputes.TestDisputeFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Governance Body Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.governancebody.TestGovernanceBodyFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Governance Body Meetings Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.governancebodymeetings.TestGovernanceBodyMeetingFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Invoice Filters Validation">
+        <classes>
+            <class name="com.sirionlabs.test.invoice.TestInvoiceFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Invoice Line Item Filters">
+        <classes>
+            <class name="com.sirionlabs.test.invoiceLineItem.TestInvoiceLineItemFilters"></class>
+        </classes>
+    </test>
+
+    <test name="PO Filters Validation">
+        <classes>
+            <class name="com.sirionlabs.test.purchaseOrder.TestPurchaseOrderFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Service Data Filters Validation">
+        <classes>
+            <class name="com.sirionlabs.test.serviceData.TestServiceDataFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Service Level Filters">
+        <classes>
+            <class name="com.sirionlabs.test.serviceLevel.TestServiceLevelFilters"></class>
+        </classes>
+    </test>
+
+    <test name="Work Order Requests Entity Filter Validation">
+        <classes>
+            <class name="com.sirionlabs.test.workorderrequests.TestWorkOrderRequestsFilters"></class>
+        </classes>
+    </test>
+
+</suite>

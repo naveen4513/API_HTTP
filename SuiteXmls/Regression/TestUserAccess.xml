@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="RC-Replica"/>
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../Default/Configuration.xml"></suite-file>
+        <suite-file path="../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+    </suite-files>
+
+    AEPorting   <test name="Test User Access client Admin">
+          <classes>
+              <class name="com.sirionlabs.test.userAccess.TestUserAccessClientAdmin"></class>
+          </classes>
+      </test>
+
+    <test name="Test User Access Vendor Hierarchy">
+         <classes>
+             <class name="com.sirionlabs.test.userAccess.TestUserVendorHierarchyAccessCriteria"></class>
+         </classes>
+     </test>
+
+     <test name="Test User Access Supplier ">
+           <classes>
+               <class name="com.sirionlabs.test.userAccess.TestUserSupplierAccessCriteria"></class>
+           </classes>
+       </test>
+
+    <test name="Test User Access Contract">
+         <classes>
+             <class name="com.sirionlabs.test.userAccess.TestUserContractAccessCriteria"></class>
+         </classes>
+     </test>
+  <test name="Test User Access Contract Document">
+       <classes>
+           <class name="com.sirionlabs.test.userAccess.TestUserContractDocumentAccessCriteria"></class>
+       </classes>
+   </test>
+
+    <!--    <test name="Test User Role Group Creation for Performance Machine">
+            <classes>
+                <class name="com.sirionlabs.test.userAccess.TestURGCreatePerformance"></class>
+            </classes>
+        </test>
+
+      <test name="Test Supplier Access Misc">
+           <classes>
+               <class name="com.sirionlabs.test.userAccess.TestSupplierAccessMisc"></class>
+           </classes>
+       </test>-->
+
+</suite>
+

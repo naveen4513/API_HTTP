@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Duplicate Data Validation">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation"/>
+
+
+    <!-- Login and Configuration -->
+    <suite-file path="../Default/Configuration.xml"></suite-file>
+    <suite-file path="../Default/Login.xml"></suite-file>
+
+    <!-- Login and Configuration -->
+    <listeners>
+        <listener class-name= "com.sirionlabs.utils.RetryListener.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="TestDuplicateCOB">
+        <classes>
+            <class name="com.sirionlabs.test.obligation.TestDuplicateCOB"></class>
+        </classes>
+    </test>
+
+    <test name="Duplicate Data SL Sanity">
+        <classes>
+            <class name="com.sirionlabs.test.duplicateData.TestSLDuplicateData"></class>
+        </classes>
+    </test>
+
+    <test name="Duplicate Data CGB Sanity">
+        <classes>
+            <class name="com.sirionlabs.test.governanceBody.TestDuplicateCGB"></class>
+        </classes>
+    </test>
+
+
+</suite>

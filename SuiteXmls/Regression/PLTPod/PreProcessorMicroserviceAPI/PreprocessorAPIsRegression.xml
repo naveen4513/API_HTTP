@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="PreprocessorAPIsRegression API Suite">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="automation_qavfrc"/>
+
+    <suite-files>
+        <suite-file path="SuiteXmls/Default/Configuration.xml"></suite-file>
+        <test name="PreprocessorAPIsRegression API">
+            <classes>
+                <class name="com.sirionlabs.test.microservice.Preprocessor.TestCreatePreprocessorForGeneralTask"></class>
+            </classes>
+        </test>
+    </suite-files>
+</suite>

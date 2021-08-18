@@ -1,0 +1,27 @@
+#All section names and keys must be in lower case characters only
+
+#TestAllFlows: Whether to Test All Flows or not. Possible values are True or False. Default value is True.
+#If True then will test all the flows (sections) mentioned in this file.
+#Otherwise will test only those which are mentioned against property 'FlowsToValidate'.
+testallflows = true
+
+#FlowsToValidate: All the flows that are to be validated. This will be used only if TestAllFlows property is set to False.
+#Separate multiple flows using delimiter , (comma)
+flowstovalidate = flow 30
+
+#DeleteEntity: Whether to delete the entity after creation or not. Default Value is True.
+deleteentity = true
+
+#ExtraFields Config File Details
+extrafieldsconfigfilepath = src/test/resources/TestConfig/ChangeRequest/Creation
+extrafieldsconfigfilename = ExtraFieldsForCRCreation.cfg
+
+
+#TC-C7947: Create CR with Contract of MSA/PSA Type
+[csv injection scenario]
+sourceentity = contracts
+sourcename = API Automation Contract for CR Creation Test
+sourceid = 600961
+parententitytype = contracts
+expectedresult = failure
+

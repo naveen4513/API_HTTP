@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CA Part2">
+
+    <test name="CA Stories">
+        <classes>
+            <class name="com.sirionlabs.test.pod.ca.TestCurrConvOnCustFieldsForCDRAndContract"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestContractPortingStatusFieldOnAdmin"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCustomCurrencyFieldsOnAdmin"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestTemplateFormatting"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCDRStatusTransitionAndLeadTimeReports"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestClausesDefinitionsAndTemplates"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCDRDeviations"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestMultiSupplierContractCreationFromCDR"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestDateTimeCalculation"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCDRListingAndShowPage"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestContractFromCDR"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestClauseVersioningAndDownload"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCDR3rdPartyDocDeviations"></class>
+            <class name="com.sirionlabs.test.pod.ca.TestCDRDeleteDocument"></class>
+        </classes>
+    </test>
+
+</suite>

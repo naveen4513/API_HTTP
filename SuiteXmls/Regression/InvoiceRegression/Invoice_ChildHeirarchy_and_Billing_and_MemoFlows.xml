@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Invoice Child Hierarchy and_Billing and Memo Flows">
+    <parameter name="TestingType" value="regression"/>
+    <parameter name="Environment" value="baOffice"/>
+
+    <suite-files>
+
+        <!-- Login and Configuration -->
+        <suite-file path="../../Default/Configuration.xml"></suite-file>
+        <suite-file path="../../Default/Login.xml"></suite-file>
+        <!-- Login and Configuration -->
+
+        <!--Test OK On BA 1 Feb fixed fee flow has billing record not generated-->
+        <test name="Test_BillingDataScenarios">
+            <classes>
+                <class name="com.sirionlabs.test.serviceData.Test_BillingDataScenarios"></class>
+            </classes>
+        </test>
+
+        <!--Test OK On BA 1 Feb -->
+        <test name="Invoice Hierarchical service data">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.flow.TestHierarchicalSDFlow"></class>
+            </classes>
+        </test>
+
+<!--        &lt;!&ndash;Test OK On BA 1 Feb &ndash;&gt;-->
+        <test name="Invoice Adjustment and Memo Scenarios">
+            <classes>
+                <class name="com.sirionlabs.test.invoice.flow.TestInvMemoBillingAdjScenarios"></class>
+            </classes>
+        </test>
+
+<!--&lt;!&ndash; Test_BillingDataScenarios&ndash;&gt;&ndash;&gt;-->
+
+<!--        &lt;!&ndash;Test OK On BA 1 Feb &ndash;&gt;-->
+        <test name="Test_BillingDataScenarios Base Specific Yes">
+            <classes>
+                <class name="com.sirionlabs.test.serviceData.Test_BillingDataScenBaseSpecificYes"></class>
+            </classes>
+        </test>
+
+    </suite-files>
+</suite>
